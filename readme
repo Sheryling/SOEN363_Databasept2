@@ -1,0 +1,2 @@
+use this to create the table if the a1.db file is not created already: sqlite3 a1.db ".read code.sql" ".read info.sql"
+use this if it is created so you can run your created queries: sqlite3 a1.db  
