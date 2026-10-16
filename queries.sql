@@ -25,5 +25,15 @@ join Unit on UnitStay.unit_id = Unit.unit_id
 where (Unit.unit_type = 'CCU' or Unit.unit_type = 'ICU') 
 	and (julianday(UnitStay.exit_datetime) - julianday(UnitStay.entry_datetime)) > 7;
 
+--Q6 ESM
+/*
+	we need to display the patient names from the patient table and count 
+	how many admissions each patient had, using left or right join depending on the 
+	table would keep the patient ids with 0 admissions. Each patient name 
+	needs to be displayed with their individual count using the group by function
+*/
+select Patient.full_name, count(Admission.patient_id) from Patient
+left join Admission on Admission.patient_id = Patient.patient_id
+group by Patient.patient_id; 
 
 
