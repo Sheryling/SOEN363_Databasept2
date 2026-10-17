@@ -1,3 +1,26 @@
+-- Q1 Retrieves the names and admission dates of patients admitted for emergencies who received a high-priority triage classification.
+SELECT p.full_name, a.admission_datetime 
+FROM Patient p
+JOIN Admission a ON a.patient_id= p.patient_id
+JOIN TriageAssessment ta ON ta.admission_id= a.admission_id
+WHERE ta.priority_level = 'High' AND a.admission_type= 'Emergency';
+
+
+-- Q2 display patients identifier, name and total number of admissions who have been admitted more than 3 times.
+SELECT p.patient_id, p.full_name, COUNT(a.admission_id) AS total_admissions
+FROM Patient p
+JOIN Admission a ON a.patient_id= p.patient_id
+GROUP BY patient_id
+HAVING COUNT(admission_id) > 3;
+
+-- Q3 display the names, admission dates and discharge dates of patients who were discharged without undergoing any surgical procedure during the admission.
+SELECt p.full_name, a.admission_datetime, a.discharge_datetime
+FROM Patient p
+JOIN Admission a ON a.patient_id= p.patient_id
+LEFT JOIN SurgicalProcedure sp ON sp.admission_id= a.admission_id
+WHERE sp.procedure_id IS NULL AND a.admission_status= 'Discharged';
+
+
 --Q4 ESM
 /*
   	Question is asking for both surgical procedure and radiology in the same admission, to get the 
