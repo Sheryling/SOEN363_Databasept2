@@ -55,9 +55,9 @@ where (Unit.unit_type = 'CCU' or Unit.unit_type = 'ICU')
 select Patient.full_name, count(Admission.patient_id) from Patient
 left join Admission on Admission.patient_id = Patient.patient_id
 group by Patient.patient_id; 
---Q7 ESM
---Q8 ESM
---Q9 ESM
+--Q7 
+--Q8 
+--Q9 
 
 --Q10 
 /*
