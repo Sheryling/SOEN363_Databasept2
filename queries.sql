@@ -46,10 +46,20 @@ join Unit on UnitStay.unit_id = Unit.unit_id
 where (Unit.unit_type = 'CCU' or Unit.unit_type = 'ICU') 
 	and (julianday(UnitStay.exit_datetime) - julianday(UnitStay.entry_datetime)) > 7;
 --Q6 ESM
+/*
+	we need to display the patient names from the patient table and count 
+	how many admissions each patient had, using left or right join depending on the 
+	table would keep the patient ids with 0 admissions. Each patient name 
+	needs to be displayed with their individual count using the group by function
+*/
+select Patient.full_name, count(Admission.patient_id) from Patient
+left join Admission on Admission.patient_id = Patient.patient_id
+group by Patient.patient_id; 
 --Q7 ESM
 --Q8 ESM
 --Q9 ESM
---Q10 ESM
+
+--Q10 
 /*
 We are joining Patient and Admission with patient id to get the full name of the patient, 
 then we join the Admission, SurgicalProcedure table and UnitStay table  with admission_id
@@ -67,7 +77,7 @@ JOIN UnitStay us ON a.admission_id = us.admission_id
 JOIN Unit u ON u.unit_id = us.unit_id
 WHERE u.unit_type IN ('ICU', 'CCU') AND s.procedure_datetime < us.entry_datetime;
 
---Q11 ESM
+--Q11 
 /*
 I looked at the path through which we can link a patient name and the radiology exam count accross admissions. 
 We have the patient id as common rows in the admission and patient tables, whereas we have the admission_id 
@@ -84,7 +94,7 @@ LEFT JOIN RadiologyExamination r ON a.admission_id = r.admission_id
 GROUP BY p.patient_id, p.full_name
 ORDER BY num_radiology_exams DESC;
 
---Q12 ESM
+--Q12 
 /*
 Here we go through the patient->admission->clinical note path to get the patient name and the clinical note.
 We then filter the clinical notes to only include those of type 'Discharge Summary' and 
@@ -98,7 +108,7 @@ JOIN Admission a ON p.patient_id = a.patient_id
 JOIN ClinicalNote c ON a.admission_id = c.admission_id
 WHERE c.note_type = 'Discharge Summary' AND LOWER(c.note_text) LIKE '%recovery%';
 
---Q13 ESM
+--Q13 
 /*
 I reverse engineered it to exclude the patients to have been in the ICU or CCU units and then add the not exist key operator to them. 
 the path is admission->unitstay->unit to get the admission id and the unit type.
@@ -117,7 +127,7 @@ AND
         	WHERE us.admission_id= a.admission_id AND u.unit_type IN ('CCU', 'ICU')
       ));
 
---Q14 ESM
+--Q14 
 /*
 The discharge and admission times are in the admission table 
 so we just need to substract them to find the length of the stay and 
@@ -134,15 +144,15 @@ AND julianday(a.discharge_datetime) - julianday(a.admission_datetime) =(SELECT M
 	FROM Admission
 	WHERE discharge_datetime IS NOT NULL);
 
---Q15 ESM
+--Q15 
 
 
---Q16 ESM
+--Q16 
 
---Q17 ESM
+--Q17 
 
---Q18 ESM
+--Q18 
 
---Q19 ESM
+--Q19 
 
---Q20 ESM
+--Q20 
