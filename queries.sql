@@ -1,23 +1,47 @@
--- Q1 Retrieves the names and admission dates of patients admitted for emergencies who received a high-priority triage classification.
+-- Q1 
+/*
+    We need to display the name and admission dates of patients who were admitted for 
+    emergencies and received a high-priority triage classification. To do this, we join 
+    the Patient, Admission and TriageAssessment tables since getting the patient name 
+    comes from the Patient table and the admissions datetime comes from the admission 
+    table. We join the TriageAssessment table to the Admission table because we can filter
+    the results based on the priority levle of the triage and as an Emergency type of 
+    admission. 
+*/
 SELECT p.full_name, a.admission_datetime 
 FROM Patient p
 JOIN Admission a ON a.patient_id= p.patient_id
 JOIN TriageAssessment ta ON ta.admission_id= a.admission_id
 WHERE ta.priority_level = 'High' AND a.admission_type= 'Emergency';
 
--- Q2 display patients identifier, name and total number of admissions who have been admitted more than 3 times.
+-- Q2 
+/*
+    We need to display the patients identifier and name, which commes from the Patient 
+    table,and the total number of admissions who have been admitted more than 3 times,
+    which comes from the Admission table. To do this we join the Patient and Admission tables
+*/
 SELECT p.patient_id, p.full_name, COUNT(a.admission_id) AS total_admissions
 FROM Patient p
 JOIN Admission a ON a.patient_id= p.patient_id
-GROUP BY patient_id
+GROUP BY p.patient_id
 HAVING COUNT(admission_id) > 3;
 
--- Q3 display the names, admission dates and discharge dates of patients who were discharged without undergoing any surgical procedure during the admission.
-SELECt p.full_name, a.admission_datetime, a.discharge_datetime
+-- Q3 
+/*
+    We need to display the names, which comes from the Patient table, and the admission 
+    dates and discharges dates, which comes from the Admission table, of patients who were
+    discharged without undergoing any surgical procedure during the admission. To do this
+    we join the Patient and Admission tables and then left join the SurgicalProcedure 
+    table to the Admission table so that we can filter out any admissions that had a 
+    surgical procedure. We also filter for only those admissions that have a discharge
+    status of 'Discharged'.
+*/
+SELECT p.full_name, a.admission_datetime, a.discharge_datetime
 FROM Patient p
 JOIN Admission a ON a.patient_id= p.patient_id
 LEFT JOIN SurgicalProcedure sp ON sp.admission_id= a.admission_id
 WHERE sp.procedure_id IS NULL AND a.admission_status= 'Discharged';
+
 
 --Q4 ESM
 /*
