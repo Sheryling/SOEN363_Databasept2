@@ -55,9 +55,52 @@ where (Unit.unit_type = 'CCU' or Unit.unit_type = 'ICU')
 select Patient.full_name, count(Admission.patient_id) from Patient
 left join Admission on Admission.patient_id = Patient.patient_id
 group by Patient.patient_id; 
---Q7 
---Q8 
---Q9 
+
+--Q7
+/*
+    During one same admission, get the names of patients who entered through
+    the Emergency Department and got transferred to either the ICU or CCU
+ */
+SELECT DISTINCT Patient.full_name
+FROM Patient
+INNER JOIN Admission
+ON Patient.patient_id = Admission.patient_id
+INNER JOIN UnitStay
+ON Admission.admission_id = UnitStay.admission_id
+INNER JOIN Unit
+ON UnitStay.unit_id = Unit.unit_id
+WHERE Admission.admission_source = 'Emergency Department' AND (Unit.unit_type = 'ICU' OR Unit.unit_type = 'CCU');
+
+--Q8
+/*
+    Out of all admissions that included at least one stay at either the ICU
+    or CCU, get the most assigned primary diagnosis and show its ICD-9 code,
+    official description(aka: title), and number of times it was assigned
+ */
+SELECT ICD9_Code.icd9_code, ICD9_Code.official_title, COUNT(DISTINCT Diagnosis.diagnosis_id)
+FROM ICD9_Code
+INNER JOIN Diagnosis
+ON ICD9_Code.icd9_code = Diagnosis.icd9_code
+INNER JOIN UnitStay
+ON Diagnosis.admission_id = UnitStay.admission_id
+INNER JOIN Unit
+ON UnitStay.unit_id = Unit.unit_id
+WHERE Diagnosis.diagnosis_type = 'Primary' AND (Unit.unit_type = 'ICU' OR Unit.unit_type = 'CCU')
+GROUP BY ICD9_Code.icd9_code, ICD9_Code.official_title
+ORDER BY COUNT(DISTINCT Diagnosis.diagnosis_id) DESC
+LIMIT 1;
+
+--Q9
+/*
+    For each critical care unit type (MICU, SICU, ICU, CCU), compute
+    the average length of stay and display the unit type with its average
+ */
+SELECT Unit.unit_type, AVG(julianday(UnitStay.exit_datetime) - julianday(UnitStay.entry_datetime))
+FROM Unit
+INNER JOIN UnitStay
+ON Unit.unit_id = UnitStay.unit_id
+WHERE Unit.unit_type = 'MICU' OR Unit.unit_type = 'SICU' OR Unit.unit_type = 'ICU' OR Unit.unit_type = 'CCU'
+GROUP BY Unit.unit_type;
 
 --Q10 
 /*
