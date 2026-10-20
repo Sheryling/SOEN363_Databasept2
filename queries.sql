@@ -24,7 +24,7 @@ SELECT p.patient_id, p.full_name, COUNT(a.admission_id) AS total_admissions
 FROM Patient p
 JOIN Admission a ON a.patient_id= p.patient_id
 GROUP BY p.patient_id
-HAVING COUNT(admission_id) > 3;
+HAVING COUNT(a.admission_id) > 3;
 
 -- Q3 
 /*
@@ -215,15 +215,100 @@ AND julianday(a.discharge_datetime) - julianday(a.admission_datetime) = (
     WHERE a2.discharge_datetime IS NOT NULL
 );
 
---Q15 
+-- Q15
+/*
+Start from Patient and LEFT JOIN Admission and UnitStay so every patient is
+listed (patients with no unit stays get 0). Per admission, transfers = stays - 1,
+so per patient, transfers = total stays - number of admissions that have stays.
+GROUP BY patient, COUNT(unit_stay_id) counts all stays, COUNT(DISTINCT us.admission_id) 
+counts admissions with stays (COUNT skips NULLs, giving 0 - 0 = 0).
+*/
 
+SELECT a.patient_id, 
+	COUNT(us.unit_stay_id) - COUNT(DISTINCT us.admission_id) AS transfers
+FROM Admission a
+INNER JOIN UnitStay us ON us.admission_id = a.admission_id
+GROUP BY a.patient_id;
 
---Q16 
+-- Q16
+/*
+Join Admission to UnitStay and Unit (unit type), keep only critical care
+units (ICU, CCU, MICU, SICU), group by admission so types are compared within the
+same admission, HAVING keeps admissions with more than one distinct unit type,
+DISTINCT lists each qualifying patient once.
+*/
 
---Q17 
+SELECT DISTINCT a.patient_id
+FROM Admission a
+INNER JOIN UnitStay us ON us.admission_id = a.admission_id
+INNER JOIN Unit u on u.unit_id = us.unit_id
+WHERE u.unit_type IN ('ICU', 'CCU', 'MICU', 'SICU')
+GROUP BY a.admission_id, a.patient_id
+HAVING COUNT(DISTINCT u.unit_type) > 1;
 
---Q18 
+-- Q17
+/*
+Join Admission to Patient (name) and to Diagnosis ON admission_id, so each
+diagnosis stays with its own admission, group by admission, HAVING keeps admissions
+with more than one distinct ICD-9 code, COUNT(DISTINCT) ignores repeated diagnoses
+of the same code.
+*/
 
---Q19 
+SELECT p.full_name, a.admission_id, COUNT(Distinct d.icd9_code) AS num_idc9_codes
+FROM Admission a
+INNER JOIN Patient p ON p.patient_id = a.patient_id
+INNER JOIN Diagnosis d ON d.admission_id = a.admission_id
+GROUP BY p.full_name, a.admission_id
+HAVING COUNT(DISTINCT d.icd9_code) > 1;
 
---Q20 
+-- Q18
+/*
+Join ClinicalNote to Admission and Patient (notes link to patients through
+their admission). A correlated subquery finds, for the current row's patient, the
+latest note_datetime across all of that patient's admissions, the WHERE keeps only
+the note whose datetime equals that maximum.
+*/
+
+SELECT p.full_name, cn.note_type, cn.note_datetime, cn.note_text
+FROM ClinicalNote cn 
+INNER JOIN Admission a ON a.admission_id = cn.admission_id
+INNER JOIN Patient p ON p.patient_id = a.patient_id
+WHERE cn.note_datetime = (
+	SELECT MAX(cn2.note_datetime)
+	FROM ClinicalNote cn2
+	INNER JOIN Admission a2 ON a2.admission_id = cn2.admission_id
+	WHERE a2.patient_id = a.patient_id
+);
+
+-- Q19
+/*
+Start from Admission and join Patient (name, date of death). LEFT JOIN
+DischargeRecord so admissions without a discharge record are kept (they can still
+match on admission_status). LEFT JOIN Diagnosis on the same admission, with the
+'Primary' filter in ON so admissions without a primary diagnosis are not dropped,
+LEFT JOIN ICD9_Code for the diagnosis title. WHERE keeps admissions whose status OR
+discharge condition is 'Deceased'.
+*/
+
+SELECT p.full_name, a.admission_datetime, p.date_of_death, d.icd9_code, i.official_title
+FROM Admission a 
+INNER JOIN Patient p ON p.patient_id = a.patient_id
+LEFT JOIN DischargeRecord dr ON dr.admission_id = a.admission_id
+LEFT JOIN Diagnosis d ON d.admission_id = a.admission_id AND d.diagnosis_type = 'Primary'
+LEFT JOIN ICD9_Code i ON i.icd9_code = d.icd9_code
+WHERE (a.admission_status = 'Deceased' OR dr.condition_at_discharge = 'Deceased');
+
+-- Q20
+/*
+From Admission, join Patient (name), and join both SurgicalProcedure and
+RadiologyExamination on the same admission_id (same admission). This pairs every
+procedure with every exam of that admission, WHERE keeps only pairs whose DATE()
+parts match.
+*/
+
+SELECT p.full_name, a.admission_id, sp.procedure_type, re.exam_type, DATE(sp.procedure_datetime) AS common_date
+FROM Admission a
+INNER JOIN Patient p ON p.patient_id = a.patient_id
+INNER JOIN SurgicalProcedure sp ON sp.admission_id = a.admission_id
+INNER JOIN RadiologyExamination re ON re.admission_id = a.admission_id
+WHERE DATE(sp.procedure_datetime) = DATE(re.exam_datetime);
