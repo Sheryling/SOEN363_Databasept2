@@ -184,15 +184,17 @@ then we exclude the admissions that have been in the ICU or CCU units.
 */
 SELECT a.admission_id
 FROM Admission a
-WHERE EXISTS (SELECT 1 
-			FROM RadiologyExamination r 
-			WHERE r.admission_id = a.admission_id) 
-AND 
-( NOT EXISTS (SELECT 1
-			FROM UnitStay us
-			JOIN Unit u ON us.unit_id = u.unit_id
-        	WHERE us.admission_id= a.admission_id AND u.unit_type IN ('CCU', 'ICU')
-      ));
+WHERE EXISTS (
+    SELECT 1 
+    FROM RadiologyExamination r 
+    WHERE r.admission_id = a.admission_id
+) 
+AND NOT EXISTS (
+    SELECT 1
+    FROM UnitStay us
+    JOIN Unit u ON us.unit_id = u.unit_id
+    WHERE us.admission_id = a.admission_id AND u.unit_type IN ('CCU', 'ICU')
+);
 
 --Q14 
 /*
@@ -207,9 +209,11 @@ SELECT p.full_name, a.admission_id, julianday(a.discharge_datetime) - julianday(
 FROM Patient p
 JOIN Admission a ON p.patient_id = a.patient_id
 WHERE a.discharge_datetime IS NOT NULL
-AND julianday(a.discharge_datetime) - julianday(a.admission_datetime) =(SELECT MAX(julianday(a.discharge_datetime) - julianday(a.admission_datetime))
-	FROM Admission
-	WHERE discharge_datetime IS NOT NULL);
+AND julianday(a.discharge_datetime) - julianday(a.admission_datetime) = (
+    SELECT MAX(julianday(a2.discharge_datetime) - julianday(a2.admission_datetime))
+    FROM Admission a2
+    WHERE a2.discharge_datetime IS NOT NULL
+);
 
 --Q15 
 
