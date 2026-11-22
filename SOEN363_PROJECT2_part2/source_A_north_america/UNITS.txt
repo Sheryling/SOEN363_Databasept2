@@ -1,0 +1,13 @@
+UnitID|UnitName|UnitType
+1|Emergency Department|ED
+2|Medical ICU|MICU
+3|Surgical ICU|SICU
+4|General ICU|ICU
+5|Coronary Care Unit|CCU
+6|Medicine Ward 3A|MED/SURG
+7|Medicine Ward 3B|MED/SURG
+8|Surgical Ward 4A|MED/SURG
+9|Cardiology Ward 5|MED/SURG
+10|Orthopedic Ward 6|MED/SURG
+11|Oncology Ward 7|MED/SURG
+12|Step-Down Unit|STEPDOWN

@@ -1,0 +1,366 @@
+triage_id;episode_no;nurse_id;triage_datetime;blood_pressure;heart_rate;pain_level;symptoms;allergies;current_medication;triage_category;temp_c;spo2
+1;2;33;25/03/2024 21:10;139/86 mmHg;88;5;Head injury after fall;Latex;Levothyroxine;P2;37,5;95%
+2;3;33;13/05/2025 15:24;118/74 mmHg;102;8;Change in bowel habits;Peanuts;Furosemide;P2;36,5;94%
+3;4;36;11/07/2025 04:36;122/70 mmHg;97;8;Fatigue and dizziness;Peanuts;Salbutamol inhaler;P2;37,3;96%
+4;5;33;10/08/2025 11:25;122/80 mmHg;81;5;Confusion and muscle cramps;None known;Aspirin;P3;36,6;97%
+5;6;32;22/01/2024 20:30;176/116 mmHg;100;9;Wheezing and shortness of breath;None known;Aspirin;P1;38,7;92%
+6;7;33;09/06/2024 22:01;95/62 mmHg;139;6;Productive cough with fever;Penicillin;Furosemide;P1;38,9;88%
+7;8;36;25/09/2024 02:32;175/103 mmHg;102;6;Chest tightness with sweating;None known;Atorvastatin;P1;39,5;89%
+8;9;32;28 Oct 2024 21:46;136/79 mmHg;85;5;Chronic knee pain limiting walking;None known;Salbutamol inhaler;P2;37,5;92%
+9;12;36;15/10/2026 21:44;183/103 mmHg;125;9;Painful groin bulge;None known;Warfarin;P1;36,4;91%
+10;13;35;27/01/2024 22:21;97/65 mmHg;115;8;Wheezing and shortness of breath;None known;Levothyroxine;P1;37,4;90%
+11;14;34;21/05/2024 15:44;159/95 mmHg;116;6;Pleuritic chest pain;None known;Amlodipine;P1;38,0;89%
+12;18;35;13/01/2025 00:56;125/75 mmHg;86;3;Hip pain, unable to bear weight after fall;None known;Atorvastatin;P2;38,5;97%
+13;19;34;26/02/2025 18:35;162/96 mmHg;110;9;Increasing breathlessness over 3 days;None known;Metformin, Atorvastatin;P1;98,6;86%
+14;20;36;27/07/2025 03:05;142/87 mmHg;101;8;Fever, chills and confusion;Penicillin;Levothyroxine;P2;36,9;93%
+15;21;33;06/10/2025 14:45;121/73 mmHg;106;3;Fever with low blood pressure;Latex;Amlodipine;P2;37,2;94%
+16;23;31;25/01/2025 13:16;120/78 mmHg;93;3;Fever, chills and confusion;Penicillin;None;P3;37,2;97%
+17;24;36;05/02/2025 06:37;116/71 mmHg;86;5;Chronic knee pain limiting walking;None known;Metformin, Atorvastatin;P2;37,7;94%
+18;25;36;26/06/2025 04:24;116/78 mmHg;75;3;Hip pain, unable to bear weight after fall;Iodinated contrast;Atorvastatin;P3;37,5;99%
+19;26;32;08/11/2025 16:29;113/69 mmHg;107;5;Hip pain, unable to bear weight after fall;Penicillin;Levothyroxine;P2;36,8;95%
+20;29;33;24/06/2025 19:49;129/71 mmHg;110;4;Reduced urine output and swelling;None known;Lisinopril;P2;37,6;94%
+21;30;36;04/12/2025 07:06;139/81 mmHg;101;6;Redness and discharge at surgical wound;Sulfa drugs;Metformin;P2;37,6;97%
+22;32;34;10/08/2025 13:13;132/81 mmHg;93;2;Vomiting and abdominal distension;None known;None;P3;37,2;97%
+23;33;36;16/09/2025 07:19;134/77 mmHg;105;7;Upper abdominal pain after meals;None known;None;P2;37,8;93%
+24;37;35;09/03/2025 01:21;122/69 mmHg;72;1;Abdominal swelling and jaundice;Latex;Lisinopril;P3;98,6;98%
+25;38;36;16/06/2025 19:51;129/81 mmHg;97;6;Sudden right-sided weakness and slurred speech;None known;Metformin, Atorvastatin;P2;38,4;97%
+26;39;36;15/09/2024 23:29;124/78 mmHg;100;7;Painful swollen calf;Sulfa drugs;Furosemide;P2;38,1;95%
+27;40;36;21/12/2024 07:18;187/125 mmHg;106;10;Increasing breathlessness over 3 days;Codeine;Amlodipine;P1;38,2;88%
+28;41;32;11/01/2024 10:44;86/55 mmHg;106;9;Wheezing and shortness of breath;Iodinated contrast;None;P1;38,7;90%
+29;42;31;04/05/2024 15:07;98/55 mmHg;141;6;Productive cough with fever;None known;None;P1;38,6;86%
+30;43;34;11/03/2024 04:17;118/76 mmHg;100;3;Pleuritic chest pain;None known;None;P2;37,3;96%
+31;44;35;04/08/2024 12:25;96/61 mmHg;107;10;Brief loss of consciousness;Penicillin;Metformin;P1;36,9;92%
+32;45;33;30/10/2024 11:52;144/93 mmHg;91;4;Productive cough with fever;None known;None;P2;37,0;95%
+33;47;31;02/07/2024 04:35;180/105 mmHg;108;7;Leg swelling and orthopnea;Sulfa drugs;Furosemide;P1;36,7;91%
+34;48;35;19/04/2025 12:19;137/87 mmHg;110;3;Palpitations and dizziness;Penicillin;Aspirin;P2;37,1;94%
+35;49;33;24/08/2025 04:17;120/70 mmHg;89;5;Witnessed generalized seizure;None known;None;P3;36,6;96%
+36;50;33;12/10/2025 22:59;184/113 mmHg;134;10;Redness and discharge at surgical wound;Iodinated contrast;Aspirin;P1;36,6;88%
+37;51;32;04/09/2024 13:29;96/55 mmHg;142;9;Unintentional weight loss;Codeine;Salbutamol inhaler;P1;38,0;85%
+38;52;35;06/12/2024 22:45;186/108 mmHg;117;6;Abdominal swelling and jaundice;Iodinated contrast;None;P1;38,0;93%
+39;54;31;06/05/2025 05:56;149/92 mmHg;86;8;Upper abdominal pain after meals;Iodinated contrast;Aspirin;P2  ;37,9;92%
+40;55;34;16/01/2024 02:07;149/93 mmHg;91;7;Black tarry stools;None known;Aspirin;P2;36,4;97%
+41;57;31;22/09/2025 05:22;81/44 mmHg;139;10;Head injury after fall;None known;None;P1;37,7;85%
+42;58;35;04/03/2026 00:32;187/117 mmHg;111;7;Chest tightness with sweating;None known;Salbutamol inhaler;P1;39,1;91%
+43;59;36;13/05/2025 08:03;181/114 mmHg;126;10;Intoxicated, vomiting;Penicillin;Salbutamol inhaler;p1;37,9;89%
+44;60;32;06/10/2025 01:32;115/67 mmHg;67;3;Productive cough with fever;Sulfa drugs;Warfarin;P3;37,3;100%
+45;61;32;28/06/2025 16:56;173/103 mmHg;143;6;Reduced urine output and swelling;None known;None;P1;38,3;93%
+46;62;34;03/09/2025 23:29;100/59 mmHg;109;9;Head injury after fall;Peanuts;Furosemide;P1;38,0;88%
+47;63;32;06/03/2026 16:28;184/118 mmHg;145;6;Wheezing and shortness of breath;Iodinated contrast;Atorvastatin;P1;38,3;92%
+48;65;35;28/09/2024 17:27;85/50 mmHg;132;8;Extreme thirst and vomiting;Latex;None;P1;36,6;87%
+49;67;32;18/04/2025 06:34;149/91 mmHg;87;7;Productive cough with fever;None known;Metformin;P2;37,7;93%
+50;71;36;18/06/2024 08:43;134/85 mmHg;109;4;Unintentional weight loss;None known;Atorvastatin;P2;38,0;95%
+51;72;34;27/10/2024 06:30;118/79 mmHg;83;0;Unintentional weight loss;None known;Levothyroxine;P3;36,6;97%
+52;73;36;28/12/2024 18:43;124/83 mmHg;92;5;Chronic knee pain limiting walking;Penicillin;Amlodipine;P2;37,3;94%
+53;74;35;23/01/2025 14:39;169/107 mmHg;118;7;Palpitations and dizziness;None known;None;P1;38,3;88%
+54;76;31;02/10/2024 05:08;107/65 mmHg;93;3;Fever, chills and confusion;Iodinated contrast;None;P3;37,4;95%
+55;77;36;11/11/2024 10:16;139/85 mmHg;82;2;Painful groin bulge;None known;None;P3;36,2;97%
+56;78;36;09/03/2025 07:25;96/64 mmHg;132;6;Right lower quadrant abdominal pain;None known;Lisinopril;P1;39,6;88%
+57;79;35;15/07/2025 11:41;93/52 mmHg;100;8;Witnessed generalized seizure;Penicillin;Warfarin;P1;38,8;93%
+58;82;35;06/03/2025 02:57;113/63 mmHg;96;5;Black tarry stools;Iodinated contrast;None;P2;37,1;97%
+59;83;31;01/08/2025 05:01;132/87 mmHg;412;7;Low mood and poor sleep;None known;None;P2;37,9;92%
+60;84;35;03/10/2025 15:01;159/107 mmHg;107;10;Red, hot, swollen lower leg;Iodinated contrast;Salbutamol inhaler;P1;38,5;90%
+61;85;34;15/01/2024 04:07;130/77 mmHg;76;2;Red, hot, swollen lower leg;None known;Metformin;P3;37,6;100%
+62;86;34;26/01/2026 08:32;135/80 mmHg;90;4;Wheezing and shortness of breath;None known;Atorvastatin;P2;37,8;92%
+63;87;31;21/07/2024 16:06;125/70 mmHg;76;1;Fatigue and dizziness;Codeine;Aspirin;P3;36,4;99%
+64;89;36;16/03/2026 22:16;87/53 mmHg;107;10;Witnessed generalized seizure;Sulfa drugs;None;P1;38,7;86%
+65;90;32;14/11/2024 13:54;134/85 mmHg;109;6;Black tarry stools;Latex;Amlodipine;P2;38,0;94%
+66;91;31;12/01/2024 01:35;132/74 mmHg;86;1;Painful groin bulge;Latex;Amlodipine;P3;36,5;99%
+67;92;32;13/06/2024 06:39;88/51 mmHg;115;8;Painful swollen calf;None known;None;P1;38,8;88%
+68;93;34;26/07/2025 22:49;140/77 mmHg;91;8;Intoxicated, vomiting;Peanuts;Levothyroxine;P2;36,6;92%
+69;94;34;22/10/2025 23:22;147/84 mmHg;86;3;Palpitations and dizziness;Peanuts;None;P2;37,6;94%
+70;95;32;16/01/2025 17:21;89/50 mmHg;128;10;Leg swelling and orthopnea;None known;Warfarin;P1;37,0;91%
+71;96;32;20/05/2025 02:43;138/76 mmHg;98;6;Pleuritic chest pain;Latex;Salbutamol inhaler;  P2 ;37,7;94%
+72;97;33;10/09/2025 10:27;129/76 mmHg;81;4;Shortness of breath on exertion;None known;Aspirin;P3;36,6;95%
+73;98;35;12/11/2025 12:14;86/51 mmHg;122;9;Fever, chills and confusion;Sulfa drugs;Levothyroxine;P1;36,6;90%
+74;99;33;09/03/2026 00:00;121/77 mmHg;91;3;Wheezing and shortness of breath;Sulfa drugs;None;P2;36,7;92%
+75;100;33;19/07/2026 15:23;88/51 mmHg;118;9;Painful groin bulge;None known;Atorvastatin;P1;36,3;93%
+76;103;34;23/09/2024 12:18;145/84 mmHg;106;7;Palpitations and dizziness;Codeine;None;P2;37,7;97%
+77;104;36;12/12/2024 05:53;121/68 mmHg;96;3;Hip pain, unable to bear weight after fall;Codeine;Amlodipine;P2;36,8;96%
+78;106;34;12/08/2024 06:17;147/92 mmHg;86;3;Low mood and poor sleep;Codeine;Metformin;P2;36,5;96%
+79;107;33;05/02/2025 22:35;86/52 mmHg;110;6;Head injury after fall;None known;Warfarin;P1;36,7;88%
+80;108;31;31/08/2024 07:07;129/72 mmHg;84;2;Diarrhea and abdominal cramps;None known;Lisinopril;P3;36,6;99%
+81;109;31;11/10/2024 04:53;88/51 mmHg;107;7;Low mood and poor sleep;Peanuts;Salbutamol inhaler;P1;38,9;91%
+82;110;32;28/03/2026 20:40;177/118 mmHg;117;10;Fever, chills and confusion;None known;Atorvastatin;P1;38,1;90%
+83;111;36;26/10/2026 15:32;80/50 mmHg;109;6;Chest tightness with sweating;None known;None;P1;38,4;90%
+84;112;31;11/01/2026 20:28;80/53 mmHg;105;7;Fever, chills and confusion;Codeine;None;P1;37,3;93%
+85;113;34;10/08/2024 22:39;131/75 mmHg;96;6;Shortness of breath on exertion;None known;Metformin, Atorvastatin;P2;36,7;93%
+86;114;32;06/12/2025 03:27;144/86 mmHg;104;3;Sudden right-sided weakness and slurred speech;None known;Furosemide;P2;36,6;95%
+87;115;31;10/08/2025 18:32;91/60 mmHg;133;6;Leg swelling and orthopnea;None known;Lisinopril;P1;38,5;93%
+88;116;33;12/03/2024 05:21;119/70 mmHg;85;8;Productive cough with fever;Penicillin;Furosemide;P2;36,9;95%
+89;118;35;09/12/2024 22:23;178/106 mmHg;137;9;Chest tightness with sweating;None known;Furosemide;P1;39,0;86%
+90;119;33;24/08/2024 15:27;114/73 mmHg;93;6;Chronic knee pain limiting walking;Latex;Salbutamol inhaler;P2;38,5;92%
+91;120;32;10/10/2025 23:00;124/78 mmHg;94;2;Pleuritic chest pain;None known;None;P3;36,5;96%
+92;121;36;02/08/2025 04:45;156/100 mmHg;102;8;Change in bowel habits;None known;None;P1;38,7;92%
+93;122;32;26/09/2025 06:41;136/77 mmHg;81;1;Leg swelling and orthopnea;None known;Salbutamol inhaler;P3;37,1;96%
+94;123;36;07/02/2026 04:43;112/69 mmHg;64;3;Painful groin bulge;Sulfa drugs;None;P3;37,4;98%
+95;126;36;27/03/2025 14:12;138/76 mmHg;82;4;Fever with low blood pressure;None known;Salbutamol inhaler;P3;37,4;97%
+96;127;31;13/08/2025 13:01;96/58 mmHg;120;9;Witnessed generalized seizure;None known;None;P1;36,3;85%
+97;128;31;04/12/2025 20:47;134/78 mmHg;60;0;Painful groin bulge;None known;None;P3;36,6;100%
+98;129;33;07/11/2024 11:08;129/71 mmHg;100;4;Worst headache of life;None known;None;P2;36,5;95%
+99;130;36;11/03/2025 02:18;163/103 mmHg;120;7;Fever, chills and confusion;Penicillin;None;P1;39,2;91%
+100;131;33;23/09/2024 18:34;112/67 mmHg;104;4;Upper abdominal pain after meals;None known;Metformin;P2;38,3;93%
+101;134;32;18/06/2025 16:44;126/71 mmHg;110;6;Fever, chills and confusion;None known;Furosemide;P2;37,6;94%
+102;135;31;15/11/2025 15:48;136/83 mmHg;88;7;Upper abdominal pain after meals;Codeine;Salbutamol inhaler;P2;37,4;95%
+103;136;36;16/06/2025 08:32;142/92 mmHg;88;7;Palpitations and dizziness;Iodinated contrast;Atorvastatin;P2;37,6;92%
+104;138;36;20/05/2024 14:27;114/68 mmHg;85;6;Head injury after fall;None known;None;P2;36,7;97%
+105;140;31;03/10/2024 16:56;116/77 mmHg;103;8;Chest tightness with sweating;None known;None;P2;37,1;92%
+106;141;34;08/11/2024 14:23;114/71 mmHg;86;1;Diarrhea and abdominal cramps;Peanuts;Levothyroxine;P3;36,5;99%
+107;142;36;23/03/2024 10:57;126/77 mmHg;87;0;Chest tightness with sweating;Iodinated contrast;None;P3;37,4;100%
+108;143;36;13/07/2024 08:46;163/95 mmHg;134;10;Pleuritic chest pain;None known;Warfarin;P1;36,0;92%
+109;144;34;17/09/2024 17:21;147/97 mmHg;106;3;Painful groin bulge;Penicillin;None;P2;36,8;93%
+110;145;34;03/09/2024 21:12;125/78 mmHg;107;7;Brief loss of consciousness;None known;None;P2;37,1;93%
+111;147;33;03/08/2024 23:50;118/65 mmHg;93;7;Low mood and poor sleep;None known;Salbutamol inhaler;P2;37,8;95%
+112;150;33;02/10/2024 22:57;177/118 mmHg;112;10;Leg swelling and orthopnea;Latex;Metformin;P1;37,1;90%
+113;151;34;24/12/2024 14:38;177/101 mmHg;139;9;Diarrhea and abdominal cramps;None known;Salbutamol inhaler;P1;39,3;91%
+114;152;32;01/08/2024 11:11;157/105 mmHg;106;10;Productive cough with fever;Sulfa drugs;Aspirin;P1;37,2;87%
+115;154;31;21/10/2025 09:24;124/80 mmHg;105;3;Palpitations and dizziness;Peanuts;Warfarin;P2;36,7;97%
+116;155;33;23/01/2026 01:06;189/119 mmHg;106;8;Shortness of breath on exertion;Latex;Amlodipine;P1;37,2;90%
+117;157;33;01/01/2026 05:10;113/66 mmHg;69;4;Diarrhea and abdominal cramps;None known;Atorvastatin;P3;36,5;96%
+118;158;36;20/02/2026 14:35;92/58 mmHg;139;9;Fatigue and dizziness;None known;Aspirin;P1;38,7;90%
+119;160;36;03/12/2024 07:17;120/66 mmHg;91;3;Witnessed generalized seizure;Peanuts;Aspirin;P2;36,5;97%
+120;161;33;24/12/2024 05:43;112/67 mmHg;66;3;Witnessed generalized seizure;Latex;Furosemide;P3;36,8;100%
+121;164;36;11/05/2025 04:46;82/45 mmHg;145;8;Worst headache of life;None known;Salbutamol inhaler;P1;39,5;86%
+122;165;34;03/10/2025 04:37;132/84 mmHg;86;5;Red, hot, swollen lower leg;None known;None;P2;36,7;94%
+123;166;36;29/04/2024 03:24;122/72 mmHg;87;8;Fever, chills and confusion;Codeine;None;P2;36,8;94%
+124;167;35;10/09/2024 03:02;147/96 mmHg;87;3;Change in bowel habits;Penicillin;Warfarin;P2;38,3;140%
+125;168;31;22/02/2024 22:13;148/91 mmHg;99;5;Brief loss of consciousness;Peanuts;Metformin;P2;37,1;95%
+126;170;34;14/08/2024 10:05;128/74 mmHg;86;7;Extreme thirst and vomiting;None known;Metformin;P2;37,0;92%
+127;171;32;17/10/2024 11:50;157/97 mmHg;122;8;Wrist deformity after fall;Peanuts;Salbutamol inhaler;P1;38,8;93%
+128;172;33;23/01/2025 18:08;124/69 mmHg;94;5;Intoxicated, vomiting;None known;None;P3;36,9;96%
+129;173;35;25/10/2026 00:20;124/74 mmHg;88;4;Low mood and poor sleep;None known;None;P2;36,7;93%
+130;174;32;01/05/2025 08:21;135/83 mmHg;92;5;Change in bowel habits;None known;Metformin, Atorvastatin;P2;37,8;92%
+131;175;33;22/09/2025 12:35;117/66 mmHg;106;6;Sudden right-sided weakness and slurred speech;Codeine;Aspirin;P2;36,6;97%
+132;179;31;10/02/2025 03:54;119/70 mmHg;109;6;Low mood and poor sleep;Latex;Warfarin;P2;36,6;95%
+133;180;31;01/12/2024 21:52;146/82 mmHg;85;5;Sudden right-sided weakness and slurred speech;Latex;Salbutamol inhaler;P2;36,6;93%
+134;181;35;27/04/2025 06:35;174/112 mmHg;124;9;Abdominal swelling and jaundice;Latex;Atorvastatin;P1;37,8;91%
+135;183;35;30/01/2024 21:26;126/85 mmHg;71;3;Black tarry stools;Penicillin;None;P3;36,5;98%
+136;184;32;01/05/2024 17:14;130/78 mmHg;87;0;Abdominal swelling and jaundice;None known;Aspirin;P3;37,5;95%
+137;185;32;09/08/2024 13:49;138/90 mmHg;86;3;Abdominal swelling and jaundice;None known;None;P2;36,5;92%
+138;186;33;16/12/2024 12:31;85/50 mmHg;130;7;Reduced urine output and swelling;None known;Salbutamol inhaler; P1;38,0;84%
+139;187;31;10/05/2025 09:03;84/54 mmHg;127;7;Shortness of breath on exertion;Sulfa drugs;Levothyroxine;P1;37,7;85%
+140;189;33;12/07/2024 12:55;184/123 mmHg;134;8;Fever with low blood pressure;None known;Metformin;P1;38,9;90%
+141;190;33;26/01/2024 18:41;142/78 mmHg;105;4;Intoxicated, vomiting;Peanuts;Metformin;P2;36,7;95%
+142;191;34;21/02/2025 09:59;118/76 mmHg;91;5;Right lower quadrant abdominal pain;None known;Metformin, Atorvastatin;P3;37,0;95%
+143;192;32;17/11/2024 13:57;100/62 mmHg;128;7;Painful swollen calf;None known;Lisinopril;P1;39,0;89%
+144;194;36;09/07/2025 05:15;106/69 mmHg;70;0;Redness and discharge at surgical wound;Iodinated contrast;Salbutamol inhaler;P3;37,1;100%
+145;196;31;27/01/2025 06:13;136/83 mmHg;88;7;Confusion and muscle cramps;None known;Metformin;P2;38,2;94%
+146;197;36;18/03/2025 08:04;118/67 mmHg;94;1;Diarrhea and abdominal cramps;Peanuts;Salbutamol inhaler;P3;36,6;95%
+147;198;36;24/08/2025 23:05;99/62 mmHg;134;9;Productive cough with fever;Iodinated contrast;Aspirin;P1;36,5;87%
+148;199;34;02/06/2024 01:17;157/100 mmHg;101;8;Chest pain radiating to left arm;Sulfa drugs;Lisinopril;P1;37,6;86%
+149;200;34;06/12/2024 06:18;128/78 mmHg;89;6;Change in bowel habits;None known;Metformin;P2;37,8;92%
+150;201;34;25/07/2025 00:07;136/92 mmHg;80;5;Brief loss of consciousness;Latex;Furosemide;P3;37,6;97%
+151;202;33;28/09/2025 22:22;125/82 mmHg;102;5;Hip pain, unable to bear weight after fall;Penicillin;Lisinopril;P2;38,1;95%
+152;203;33;31/10/2025 04:22;138/88 mmHg;94;3;Red, hot, swollen lower leg;Penicillin;Warfarin;P2;37,8;92%
+153;204;36;26/04/2024 04:19;140/87 mmHg;106;5;Worst headache of life;None known;Lisinopril;P2;37,5;95%
+154;205;33;22/08/2025 19:22;138/76 mmHg;87;6;Palpitations and dizziness;Latex;None;P2;37,7;95%
+155;206;31;22/01/2026 00:37;140/93 mmHg;87;5;Right lower quadrant abdominal pain;Peanuts;None;P2;38,3;92%
+156;207;36;20/06/2024 18:25;96/57 mmHg;123;9;Diarrhea and abdominal cramps;None known;None;P1;36,8;84%
+157;208;32;18/07/2024 18:30;139/77 mmHg;85;5;Extreme thirst and vomiting;None known;Amlodipine;P2;37,9;96%
+158;209;32;02/08/2024 14:24;133/75 mmHg;110;4;Fatigue and dizziness;Peanuts;Salbutamol inhaler;P2;37,0;97%
+159;210;32;11/04/2024 20:48;113/76 mmHg;77;5;Chronic knee pain limiting walking;Latex;Metformin;P3;36,4;100%
+160;211;32;21/09/2025 14:06;114/75 mmHg;93;4;Fever, chills and confusion;None known;None;P3;36,6;98%
+161;212;36;20/10/2026 02:25;128/73 mmHg;90;7;Sudden right-sided weakness and slurred speech;Latex;Furosemide;P2;37,0;96%
+162;214;32;27/10/2024 22:59;88/55 mmHg;120;6;Increasing breathlessness over 3 days;Iodinated contrast;Aspirin;P1;37,5;85%
+163;215;34;29/12/2024 04:05;114/67 mmHg;74;1;Wrist deformity after fall;None known;None;P3;37,6;95%
+164;216;33;22/01/2025 07:40;123/68 mmHg;76;2;Palpitations and dizziness;None known;None;P3;37,4;99%
+165;217;36;28/06/2025 08:27;185/108 mmHg;NULL;7;Shortness of breath on exertion;Latex;None;P1;36,3;93%
+166;218;31;08/09/2024 15:33;158/99 mmHg;113;6;Chest pain radiating to left arm;Peanuts;Salbutamol inhaler;P1;36,2;92%
+167;219;35;31/12/2024 00:44;174/100 mmHg;122;10;Shortness of breath on exertion;None known;Metformin, Atorvastatin;P1;37,8;92%
+168;220;31;24/01/2025 21:54;90/55 mmHg;107;6;Palpitations and dizziness;None known;Warfarin;P1;39,3;88%
+169;221;32;19/07/2024 13:15;85/49 mmHg;109;10;Shortness of breath on exertion;Sulfa drugs;Levothyroxine;P1;39,0;85%
+170;222;32;15/09/2024 11:24;130/78 mmHg;94;2;Head injury after fall;None known;Metformin, Atorvastatin;P3;36,4;99%
+171;223;34;16/05/2024 22:37;126/69 mmHg;106;7;Fatigue and dizziness;None known;None;P2;38,5;93%
+172;224;31;07/10/2024 14:16;130/83 mmHg;65;2;Head injury after fall;None known;None;P3;37,0;98%
+173;225;31;14/11/2025 10:18;129/71 mmHg;66;0;Brief loss of consciousness;None known;None;P3;36,5;96%
+174;226;35;16/01/2024 21:09;164/98 mmHg;140;10;Shortness of breath on exertion;None known;None;P1;39,0;87%
+175;227;32;10/12/2025 13:38;120/78 mmHg;75;4;Witnessed generalized seizure;Penicillin;Metformin, Atorvastatin;P3;36,5;97%
+176;228;36;17/02/2026 16:17;141/89 mmHg;85;4;Upper abdominal pain after meals;None known;Metformin, Atorvastatin;P2;37,1;93%
+177;229;36;08/12/2025 17:55;81/49 mmHg;122;6;Extreme thirst and vomiting;None known;Furosemide;P1;38,9;89%
+178;230;36;10/03/2025 19:10;174/101 mmHg;144;6;Pleuritic chest pain;None known;Salbutamol inhaler;P1;38,0;88%
+179;232;32;22/12/2024 02:55;111/74 mmHg;86;8;Wheezing and shortness of breath;Latex;Salbutamol inhaler;p2;37,8;93%
+180;233;36;20/02/2025 00:16;92/56 mmHg;121;6;Pleuritic chest pain;Sulfa drugs;Metformin, Atorvastatin;P1;39,1;84%
+135;183;35;30/01/2024 21:26;126/85 mmHg;71;3;Black tarry stools;Penicillin;None;P3;36,5;98%
+181;234;36;04/08/2024 20:44;84/56 mmHg;108;7;Shortness of breath on exertion;Penicillin;None;P1;38,2;93%
+182;235;33;27/02/2024 03:45;180/122 mmHg;130;9;Chest pain radiating to left arm;Codeine;Levothyroxine;P1;36,5;84%
+183;236;33;06/05/2024 06:55;135/74 mmHg;75;2;Diarrhea and abdominal cramps;Codeine;Lisinopril;P3;36,6;99%
+184;238;34;11/10/2025 10:11;145/80 mmHg;106;4;Redness and discharge at surgical wound;None known;Lisinopril;P2;38,4;93%
+185;239;36;30/07/2024 06:35;134/84 mmHg;88;4;Brief loss of consciousness;Peanuts;None;P2;38,1;94%
+186;240;33;03/10/2024 11:38;93/59 mmHg;104;7;Sudden right-sided weakness and slurred speech;None known;Warfarin;P1;39,3;87%
+187;241;36;21/02/2025 17:55;87/51 mmHg;136;7;Fever with low blood pressure;None known;None;P1;36,8;88%
+188;242;32;24/04/2025 10:06;111/64 mmHg;92;5;Chest pain radiating to left arm;None known;None;P2;38,2;96%
+189;243;36;18/10/2026 22:45;111/63 mmHg;85;8;Fever with low blood pressure;Latex;Warfarin;P2;36,5;95%
+190;244;31;10/07/2025 09:51;135/75 mmHg;101;4;Red, hot, swollen lower leg;Penicillin;Amlodipine;P2;36,6;96%
+191;245;32;23/11/2025 08:58;180/118 mmHg;141;7;Vomiting and abdominal distension;Codeine;Atorvastatin;P1;37,5;84%
+192;246;32;14/01/2024 20:12;93/58 mmHg;136;6;Reduced urine output and swelling;Sulfa drugs;Warfarin;P1;39,5;88%
+193;248;32;15/04/2024 06:36;169/109 mmHg;115;9;Shortness of breath on exertion;Latex;Furosemide;P1;37,0;84%
+194;249;35;07/07/2024 23:28;142/94 mmHg;100;8;Worst headache of life;None known;Furosemide;P2;36,9;95%
+195;250;35;13/07/2024 11:29;124/80 mmHg;78;1;Shortness of breath on exertion;Peanuts;None;P3;36,5;98%
+196;251;36;08/11/2024 14:24;147/97 mmHg;98;8;Intoxicated, vomiting;Peanuts;Amlodipine;P2;38,3;93%
+197;252;31;05/06/2024 04:13;124/76 mmHg;87;8;Upper abdominal pain after meals;Penicillin;Metformin, Atorvastatin;P2;37,9;94%
+198;253;35;26/09/2024 23:02;183/113 mmHg;102;9;Chronic knee pain limiting walking;None known;None;P1;36,5;90%
+199;254;33;27/08/2025 00:38;85/52 mmHg;111;6;Pleuritic chest pain;None known;Warfarin;P1;39,0;84%
+200;255;32;25/12/2024 02:27;121/68 mmHg;74;0;Severe lower back pain after fall;Penicillin;Aspirin;P3;37,4;96%
+201;258;36;19/05/2025 04:56;131/84 mmHg;90;7;Right lower quadrant abdominal pain;Peanuts;Warfarin;P2;37,0;92%
+202;259;34;07/06/2025 21:45;179/119 mmHg;102;10;Diarrhea and abdominal cramps;Latex;None;P1;39,4;84%
+203;260;35;12/10/2024 00:24;132/85 mmHg;98;5;Upper abdominal pain after meals;None known;Levothyroxine;P2;36,6;93%
+204;262;32;18/08/2024 03:45;113/71 mmHg;91;3;Pleuritic chest pain;Codeine;Salbutamol inhaler;P2;37,8;97%
+205;264;34;11/12/2024 06:38;118/69 mmHg;81;2;Redness and discharge at surgical wound;Codeine;Lisinopril;P3;37,5;98%
+204;262;32;18/08/2024 03:45;113/71 mmHg;91;3;Pleuritic chest pain;Codeine;Salbutamol inhaler;P2;37,8;97%
+206;265;36;19/04/2025 14:36;112/69 mmHg;71;3;Hip pain, unable to bear weight after fall;None known;Aspirin;P3;37,4;96%
+207;266;32;15/06/2025 16:43;123/75 mmHg;92;3;Fever with low blood pressure;Latex;None;P3;37,0;97%
+208;267;33;13/09/2024 02:23;85/52 mmHg;132;7;Change in bowel habits;Sulfa drugs;Furosemide;P1;39,8;85%
+209;268;31;30/11/2024 07:08;115/75 mmHg;105;6;Diarrhea and abdominal cramps;Penicillin;None;P2;36,4;95%
+210;269;32;28/06/2024 11:17;180/115 mmHg;109;9;Pleuritic chest pain;None known;None;P1;37,1;92%
+211;270;32;10/09/2024 20:56;189/115 mmHg;143;8;Shortness of breath on exertion;None known;Salbutamol inhaler;P1;36,4;86%
+212;271;33;25/03/2025 22:58;165/98 mmHg;109;6;Hip pain, unable to bear weight after fall;Sulfa drugs;Furosemide;P1;39,3;87%
+213;273;34;13/10/2025 19:26;83/53 mmHg;107;10;Brief loss of consciousness;None known;Levothyroxine;P1;37,3;92%
+214;274;33;07/03/2025 04:18;91/55 mmHg;120;6;Wheezing and shortness of breath;None known;Warfarin;P1;39,3;86%
+215;275;33;13/06/2025 12:54;85/47 mmHg;111;8;Shortness of breath on exertion;None known;Metformin, Atorvastatin;P1;36,1;85%
+216;276;35;20/09/2025 09:53;174/97 mmHg;129;8;Cough with blood-streaked sputum;Iodinated contrast;Metformin;P1;37,1;92%
+217;277;35;30/08/2025 15:14;91/61 mmHg;126;8;Shortness of breath on exertion;Sulfa drugs;Metformin;P1;38,1;93%
+218;278;36;15/10/2025 02:50;114/73 mmHg;102;8;Brief loss of consciousness;None known;None;P2;37,7;95%
+219;279;32;16/03/2025 22:20;120/71 mmHg;110;6;Shortness of breath on exertion;None known;None;P2;37,4;93%
+220;280;34;08/07/2025 03:11;126/79 mmHg;73;4;Diarrhea and abdominal cramps;None known;Atorvastatin;P3;37,1;-5%
+221;281;36;03/12/2025 07:12;177/98 mmHg;140;8;Fever with low blood pressure;None known;Furosemide;P1;39,2;85%
+222;283;35;07/12/2024 13:36;149/91 mmHg;92;3;Witnessed generalized seizure;Latex;Metformin;P2;36,6;95%
+223;285;35;31/07/2024 03:11;138/80 mmHg;101;3;Change in bowel habits;None known;Amlodipine;P2;36,7;96%
+224;286;33;21/08/2024 06:38;174/100 mmHg;118;8;Pleuritic chest pain;Latex;Metformin, Atorvastatin;P1;38,2;89%
+225;287;33;24/08/2024 18:50;174/113 mmHg;130;7;Fever with low blood pressure;None known;None;P1;36,7;85%
+226;288;33;09/11/2025 05:12;163/98 mmHg;100;10;Diarrhea and abdominal cramps;Sulfa drugs;Lisinopril;P1;39,5;88%
+227;290;33;27/07/2024 12:15;144/79 mmHg;105;6;Fatigue and dizziness;Iodinated contrast;Furosemide;P2;36,7;93%
+228;292;33;17/08/2024 19:11;145/80 mmHg;106;8;Reduced urine output and swelling;None known;Atorvastatin;P2;36,5;94%
+229;293;34;28/01/2025 09:46;130/83 mmHg;90;6;Increasing breathlessness over 3 days;Penicillin;Warfarin;P2;36,9;92%
+230;294;33;08/03/2025 02:37;93/52 mmHg;140;8;Black tarry stools;Iodinated contrast;Atorvastatin;P1;38,3;88%
+231;295;32;13/08/2025 01:20;150/92 mmHg;93;6;Painful swollen calf;Latex;Lisinopril;P2;36,9;92%
+232;297;33;07/05/2025 13:21;157/93 mmHg;133;10;Pleuritic chest pain;Iodinated contrast;Warfarin;P1;39,0;84%
+233;298;35;07/07/2025 21:33;141/86 mmHg;99;3;Chest pain radiating to left arm;Peanuts;Warfarin;P2;37,9;93%
+234;300;31;01/07/2025 20:13;82/47 mmHg;123;7;Wheezing and shortness of breath;None known;None;P1;38,4;86%
+235;301;32;12/11/2025 06:47;190/121 mmHg;127;10;Diarrhea and abdominal cramps;None known;Amlodipine;P1;38,8;93%
+236;302;35;25/10/2026 22:40;182/111 mmHg;116;7;Right lower quadrant abdominal pain;Sulfa drugs;Metformin;P1;37,6;88%
+237;303;33;11/08/2024 17:47;142/80 mmHg;88;8;Wrist deformity after fall;None known;Metformin, Atorvastatin;P2;36,7;97%
+238;304;34;20/10/2026 22:33;115/67 mmHg;76;2;Redness and discharge at surgical wound;Penicillin;Amlodipine;P3;37,0;97%
+239;305;36;18/08/2024 03:37;121/74 mmHg;90;4;Chronic knee pain limiting walking;None known;Salbutamol inhaler;P2;36,5;92%
+240;306;31;13/09/2024 21:49;139/82 mmHg;79;3;Reduced urine output and swelling;None known;Metformin;P3;37,4;98%
+241;308;35;06/04/2024 11:42;165/110 mmHg;137;10;Palpitations and dizziness;None known;None;P1;39,1;92%
+242;310;34;08/07/2025 10:07;144/85 mmHg;91;3;Confusion and muscle cramps;Peanuts;Lisinopril;P2;37,2;94%
+243;312;31;08/09/2024 02:07;128/74 mmHg;61;2;Sudden right-sided weakness and slurred speech;Penicillin;Furosemide;P3;37,5;98%
+244;313;36;17/10/2024 00:06;136/79 mmHg;86;8;Reduced urine output and swelling;Latex;Lisinopril;P2;36,7;94%
+245;315;32;18/07/2024 03:37;127/73 mmHg;85;8;Wheezing and shortness of breath;Sulfa drugs;Lisinopril;P2;36,5;92%
+246;316;33;15/10/2026 12:29;135/75 mmHg;103;6;Vomiting and abdominal distension;None known;Lisinopril;P2;37,7;97%
+247;317;35;28/08/2025 10:35;111/71 mmHg;94;6;Chest pain radiating to left arm;None known;Furosemide;P2;37,3;93%
+248;318;32;23/12/2025 23:10;121/75 mmHg;70;1;Worst headache of life;None known;Amlodipine;P3;37,5;99%
+249;319;32;04/01/2026 00:07;144/83 mmHg;99;6;Painful groin bulge;Peanuts;Aspirin;P2;36,9;97%
+250;320;34;22/11/2024 23:24;183/101 mmHg;140;7;Redness and discharge at surgical wound;None known;None;P1;39,6;92%
+251;321;32;03/02/2025 00:55;141/95 mmHg;94;4;Low mood and poor sleep;None known;Lisinopril;P2;37,5;93%
+252;323;34;03/03/2025 12:53;117/66 mmHg;106;8;Extreme thirst and vomiting;Iodinated contrast;None;P2;38,4;97%
+253;325;35;20/10/2024 06:22;172/99 mmHg;142;6;Red, hot, swollen lower leg;Iodinated contrast;Metformin, Atorvastatin;P1;36,2;87%
+254;326;32;05/02/2024 22:48;181/109 mmHg;137;7;Redness and discharge at surgical wound;Sulfa drugs;None;P1;37,9;93%
+255;327;31;02/06/2024 01:33;118/65 mmHg;86;0;Witnessed generalized seizure;None known;None;P3;36,9;99%
+256;328;36;21/02/2025 14:52;126/84 mmHg;107;5;Fever, chills and confusion;Latex;None;P2;38,0;95%
+257;329;32;31/05/2025 21:35;173/96 mmHg;115;10;Extreme thirst and vomiting;None known;Furosemide;P1;38,9;87%
+258;330;35;04/10/2025 13:36;93/61 mmHg;113;8;Fatigue and dizziness;None known;None;P1;37,2;85%
+259;334;32;02/12/2025 10:58;86/51 mmHg;106;8;Diarrhea and abdominal cramps;Codeine;Atorvastatin;P1;36,1;88%
+260;336;34;22/01/2025 23:45;127/73 mmHg;104;7;Palpitations and dizziness;None known;Warfarin;P2;37,2;95%
+261;337;33;23/06/2025 23:57;89/51 mmHg;101;6;Brief loss of consciousness;Sulfa drugs;Salbutamol inhaler;P1;38,6;90%
+262;338;33;02/08/2025 19:48;180/99 mmHg;102;7;Black tarry stools;Penicillin;Amlodipine;P1;37,8;92%
+263;339;31;01/11/2024 12:46;125/84 mmHg;76;1;Intoxicated, vomiting;None known;Atorvastatin;NULL;37,1;96%
+264;340;32;27/02/2025 01:35;157/88 mmHg;131;6;Black tarry stools;Codeine;Atorvastatin;P1;39,3;92%
+265;341;33;23/06/2025 00:50;184/111 mmHg;135;8;Palpitations and dizziness;Codeine;Amlodipine;P1;38,2;91%
+266;344;33;27/04/2024 21:59;177/103 mmHg;NULL;7;Painful swollen calf;Latex;Atorvastatin;P1;38,4;93%
+267;345;34;02/07/2024 10:46;148/97 mmHg;100;5;Chronic knee pain limiting walking;None known;None;P2;38,3;94%
+268;346;31;24/08/2024 07:35;125/77 mmHg;89;8;Diarrhea and abdominal cramps;Penicillin;Warfarin;P2;37,1;96%
+269;347;36;21/01/2025 18:58;137/78 mmHg;90;4;Intoxicated, vomiting;None known;Atorvastatin;P2;38,3;94%
+270;348;33;26/06/2025 23:38;137/77 mmHg;73;2;Cough with blood-streaked sputum;Codeine;None;P3;36,6;97%
+271;349;35;25/11/2025 21:42;155/100 mmHg;131;9;Fever with low blood pressure;Latex;Metformin, Atorvastatin;P1;39,3;93%
+272;350;33;2024-08-26T12:58;90/60 mmHg;141;8;Fever, chills and confusion;Peanuts;Metformin, Atorvastatin;P1;38,5;84%
+273;351;35;07/11/2024 05:08;135/82 mmHg;98;7;Leg swelling and orthopnea;Peanuts;Atorvastatin;P2;37,4;92%
+274;352;35;27/01/2026 16:50;135/78 mmHg;93;1;Palpitations and dizziness;Iodinated contrast;None;P3;36,7;97%
+275;353;36;17/11/2024 18:11;118/66 mmHg;89;3;Right lower quadrant abdominal pain;None known;Furosemide;  P3 ;36,8;100%
+276;354;34;17/01/2025 10:31;89/54 mmHg;142;7;Brief loss of consciousness;Sulfa drugs;None;P1;37,2;86%
+277;357;34;20/11/2024 05:51;112/74 mmHg;107;6;Intoxicated, vomiting;Peanuts;None;P2;38,0;94%
+278;358;31;18/12/2024 02:52;95/54 mmHg;145;7;Palpitations and dizziness;Sulfa drugs;Aspirin;P1;98,6;86%
+279;359;35;27/04/2025 22:31;142/95 mmHg;106;7;Vomiting and abdominal distension;None known;None;P2;37,6;93%
+280;360;36;29/09/2025 03:50;174/113 mmHg;123;10;Fever, chills and confusion;None known;Metformin;P1;37,9;88%
+281;363;36;14/07/2025 02:15;156/93 mmHg;133;7;Pleuritic chest pain;Latex;None;P1;38,8;87%
+282;364;35;18/11/2025 21:47;121/69 mmHg;85;6;Head injury after fall;Peanuts;Warfarin;P2;38,2;96%
+283;365;32;20/11/2024 01:38;130/73 mmHg;93;6;Shortness of breath on exertion;None known;None;P2;36,4;93%
+284;367;35;19/01/2025 09:36;118/68 mmHg;93;7;Productive cough with fever;Sulfa drugs;None;P2;38,2;94%
+285;368;32;07/07/2025 10:55;162/93 mmHg;132;6;Wheezing and shortness of breath;Peanuts;None;P1;38,9;84%
+286;371;35;06/11/2025 12:23;98/61 mmHg;139;10;Vomiting and abdominal distension;Penicillin;Metformin;P1;36,9;92%
+287;373;33;13/08/2024 08:56;161/106 mmHg;109;10;Sudden right-sided weakness and slurred speech;None known;Warfarin;P1;36,6;91%
+288;374;35;10/11/2024 04:13;111/74 mmHg;97;4;Chest pain radiating to left arm;None known;Metformin;P2;36,7;93%
+289;375;35;05/02/2025 17:49;187/103 mmHg;133;7;Shortness of breath on exertion;None known;None;P1;36,1;86%
+290;378;34;11/08/2025 20:45;96/57 mmHg;141;6;Fever, chills and confusion;None known;Metformin, Atorvastatin;P1;37,6;87%
+291;379;36;14/11/2025 23:19;133/89 mmHg;66;4;Confusion and muscle cramps;None known;Atorvastatin;P3;36,3;98%
+292;381;34;19/05/2025 02:13;113/76 mmHg;87;4;Chronic knee pain limiting walking;None known;None;P2;37,9;96%
+293;382;33;06/09/2025 03:24;131/73 mmHg;99;4;Shortness of breath on exertion;Sulfa drugs;Metformin;P2;37,1;97%
+294;383;34;20/10/2024 21:56;130/71 mmHg;91;6;Fever with low blood pressure;Peanuts;Warfarin;P2;37,3;92%
+295;384;33;22/11/2024 13:23;127/79 mmHg;106;4;Right lower quadrant abdominal pain;Peanuts;Amlodipine;P2;37,1;93%
+296;385;33;06/03/2025 16:14;134/88 mmHg;62;2;Vomiting and abdominal distension;Sulfa drugs;Warfarin;P3;37,4;100%
+297;386;33;18/07/2025 16:22;137/91 mmHg;86;5;Vomiting and abdominal distension;None known;Aspirin;P3;36,5;99%
+298;388;31;04/10/2024 10:39;122/72 mmHg;78;2;Head injury after fall;Iodinated contrast;Metformin;P3;36,6;95%
+299;390;33;02/12/2024 08:40;137/86 mmHg;74;1;Painful groin bulge;Codeine;Metformin;P3;36,9;99%
+300;392;33;16/05/2025 04:12;91/58 mmHg;0;7;Diarrhea and abdominal cramps;Penicillin;Lisinopril;P1;38,8;90%
+301;393;31;15/12/2024 03:41;93/60 mmHg;140;8;Red, hot, swollen lower leg;None known;None;P1;37,6;87%
+302;394;36;02/05/2025 10:54;155/104 mmHg;113;8;Productive cough with fever;Penicillin;Atorvastatin;P1;36,7;86%
+303;395;35;16/08/2025 20:38;109/63 mmHg;67;2;Breast lump;Latex;Amlodipine;P3;37,5;100%
+180;233;36;20/02/2025 00:16;92/56 mmHg;121;6;Pleuritic chest pain;Sulfa drugs;Metformin, Atorvastatin;P1;39,1 ; see attached;84%
+304;396;34;17/01/2026 02:12;139/88 mmHg;94;8;Leg swelling and orthopnea;Sulfa drugs;Warfarin;P2;37,0;92%
+305;398;32;27/04/2026 20:08;90/53 mmHg;124;8;Extreme thirst and vomiting;Peanuts;Warfarin;P1;38,1;84%
+306;399;31;07/04/2024 00:45;95/60 mmHg;139;7;Chest tightness with sweating;Codeine;None;P1;39,8;84%
+307;400;34;24/04/2024 19:24;87/54 mmHg;144;6;Shortness of breath on exertion;None known;None;P1;37,4;92%
+308;402;31;08/02/2024 21:51;132/86 mmHg;110;7;Increasing breathlessness over 3 days;Latex;None;P2;38,1;94%
+309;404;33;24/02/2025 10:28;126/73 mmHg;110;5;Diarrhea and abdominal cramps;None known;Lisinopril;P2;36,7;97%
+240;306;31;13/09/2024 21:49;139/82 mmHg;79;3;Reduced urine output and swelling;None known;Metformin;P3;37,4;98%
+310;406;32;29/08/2024 02:51;143/83 mmHg;105;7;Productive cough with fever;None known;Warfarin;P2;37,9;97%
+311;408;34;03/10/2024 22:02;136/88 mmHg;97;8;Diarrhea and abdominal cramps;Iodinated contrast;None;P2;37,7;-5%
+312;410;31;14/11/2024 02:47;111/64 mmHg;63;2;Head injury after fall;None known;None;P3;36,6;100%
+313;413;32;13/06/2024 19:17;145/93 mmHg;106;4;Confusion and muscle cramps;None known;Furosemide;P2;36,5;93%
+314;414;31;26/10/2024 19:49;138/85 mmHg;98;8;Wrist deformity after fall;None known;Lisinopril;;36,9;96%
+315;415;33;15/01/2025 13:35;146/84 mmHg;105;7;Change in bowel habits;None known;None;P2;36,7;95%
+316;416;32;09/01/2024 01:39;119/69 mmHg;86;5;Brief loss of consciousness;Sulfa drugs;None;P3;37,6;95%
+317;417;36;02/02/2024 21:25;181/105 mmHg;116;9;Pleuritic chest pain;Sulfa drugs;Furosemide;P1;37,2;91%
+318;418;32;09/07/2024 20:58;81/46 mmHg;124;8;Head injury after fall;Codeine;None;P1;39,0;91%
+319;420;33;29/08/2024 07:11;92/61 mmHg;102;6;Extreme thirst and vomiting;Latex;Metformin, Atorvastatin;P1;37,0;84%
+320;421;33;30/11/2024 18:34;119/77 mmHg;71;4;Upper abdominal pain after meals;Penicillin;None;P3;37,4;99%
+321;423;32;06/03/2024 22:18;167/109 mmHg;129;7;Diarrhea and abdominal cramps;None known;None;P1;38,1;86%
+322;424;32;12/08/2024 06:52;86/50 mmHg;126;10;Head injury after fall;Sulfa drugs;Metformin;P1;39,5;84%
+323;425;34;25/04/2025 01:17;163/97 mmHg;142;10;Chest tightness with sweating;Latex;None;P1;39,6;85%
+324;426;33;22/05/2024 04:37;135/85 mmHg;80;4;Chest tightness with sweating;Latex;Levothyroxine;P3;37,1;100%
+325;427;31;22/03/2024 21:27;127/72 mmHg;106;5;Increasing breathlessness over 3 days;None known;Salbutamol inhaler;P2;37,1;96%
+326;428;31;20/05/2024 20:43;136/77 mmHg;85;6;Diarrhea and abdominal cramps;Iodinated contrast;Furosemide;P2;37,5;96%
+327;429;31;16/11/2025 22:53;144/87 mmHg;97;severe;Fever, chills and confusion;Latex;Metformin;P2;37,0;94%
+328;430;36;06/11/2024 22:22;174/102 mmHg;139;10;Fatigue and dizziness;Iodinated contrast;Lisinopril;P1;36,9;92%
+93;122;32;26/09/2025 06:41;136/77 mmHg;81
+329;431;34;24/01/2026 00:07;117/75 mmHg;91;4;Brief loss of consciousness;Latex;Metformin, Atorvastatin;P2;37,3;94%
+330;432;33;28/07/2024 07:18;82/49 mmHg;122;6;Painful groin bulge;None known;Amlodipine;P1;38,1;91%
+331;433;33;06/07/2025 15:07;148/98 mmHg;98;4;Fever, chills and confusion;None known;None;P2;37,6;97%
+332;434;32;03/08/2025 19:03;122/75 mmHg;70;0;Black tarry stools;Sulfa drugs;Atorvastatin;P3;36,2;95%
+333;435;31;21/10/2026 14:07;136/90 mmHg;61;4;Chest pain radiating to left arm;None known;Levothyroxine;P3;36,7;100%
+334;436;33;06/07/2024 19:31;176/116 mmHg;133;6;Palpitations and dizziness;Penicillin;Salbutamol inhaler;P1;39,1;92%
+335;437;34;20/10/2024 19:39;106/69 mmHg;80;1;Increasing breathlessness over 3 days;Latex;Atorvastatin;P3;36,4;96%
+336;439;34;09/04/2025 18:10;117/72 mmHg;85;5;Wrist deformity after fall;Latex;Metformin;P3;37,3;99%
+337;441;33;12/09/2025 05:53;113/62 mmHg;88;5;Redness and discharge at surgical wound;None known;Amlodipine;P2;37,7;94%
+338;442;36;22/04/2025 11:03;134/83 mmHg;86;6;Fatigue and dizziness;Penicillin;None;P2;36,5;93%
+339;443;35;30/09/2024 20:34;122/77 mmHg;102;4;Pleuritic chest pain;Peanuts;Warfarin;P2;37,8;95%
+340;444;31;18/02/2025 14:24;128/87 mmHg;100;4;Fatigue and dizziness;None known;Salbutamol inhaler;P2;37,3;94%
+341;448;33;31/03/2025 04:13;122/81 mmHg;93;5;Wheezing and shortness of breath;None known;Metformin;P2;37,5;93%
+342;449;33;02/07/2025 21:07;134/76 mmHg;105;8;Diarrhea and abdominal cramps;None known;Atorvastatin;P2;37,4;92%
+343;450;31;04/09/2025 06:30;129/81 mmHg;86;5;Reduced urine output and swelling;Latex;Salbutamol inhaler;P3;36,6;95%
+344;452;31;19/03/2025 23:18;122/69 mmHg;91;6;Hip pain, unable to bear weight after fall;Codeine;None; P2;37,1;93%
+345;454;35;11/09/2025 11:13;122/74 mmHg;109;7;Sudden right-sided weakness and slurred speech;Sulfa drugs;Amlodipine;P2;37,5;96%
+346;455;34;08/11/2025 22:32;130/84 mmHg;102;8;Leg swelling and orthopnea;Penicillin;None;P2;37,0;92%
+347;456;36;09/08/2024 18:15;140/87 mmHg;97;5;Increasing breathlessness over 3 days;None known;Amlodipine;P2;37,1;93%
+348;457;35;24/08/2024 09:29;127/76 mmHg;90;4;Brief loss of consciousness;None known;Furosemide;P2;36,8;95%
+349;458;34;26/12/2024 01:07;96/55 mmHg;137;7;Redness and discharge at surgical wound;None known;Salbutamol inhaler;P1;39,1;84%
+350;459;33;29/01/2025 11:46;132/77 mmHg;85;3;Severe lower back pain after fall;Latex;Aspirin;P2;38,3;93%
+351;460;35;07/03/2025 06:54;126/85 mmHg;86;8;Red, hot, swollen lower leg;None known;None;P2;37,3;94%
+302;394;36;02/05/2025 10:54;155/104 mmHg;113;8;Productive cough with fever;Penicillin;Atorvastatin;P1;36,7;86%
+352;461;36;26/01/2025 01:06;142/90 mmHg;94;4;Chest tightness with sweating;None known;Aspirin;P2;36,7;93%
+353;462;33;26/09/2024 16:21;127/79 mmHg;89;3;Reduced urine output and swelling;Iodinated contrast;Metformin;P3;37,1;98%
+354;463;35;10/05/2025 06:45;122/73 mmHg;85;5;Fatigue and dizziness;Sulfa drugs;Metformin;P2;36,9;93%
+355;464;33;21/06/2025 11:52;134/85 mmHg;79;4;Wheezing and shortness of breath;Iodinated contrast;Metformin;P3;37,3;97%
+356;465;32;23/08/2025 20:14;124/71 mmHg;93;8;Fever with low blood pressure;Sulfa drugs;Salbutamol inhaler;P2;37,7;93%
+357;466;34;12/02/2025 05:23;143/93 mmHg;87;5;Increasing breathlessness over 3 days;Sulfa drugs;Levothyroxine;P2;38,4;97%
+358;467;36;15/05/2025 03:46;128/75 mmHg;97;6;Pleuritic chest pain;Sulfa drugs;None;P2;36,7;96%
+359;469;34;03/08/2024 13:46;139/80 mmHg;107;6;Pleuritic chest pain;Peanuts;None;P2;38,4;92%

@@ -1,0 +1,454 @@
+DischargeId|AdmitID|DischargeDestination|ConditionAtDischarge|PrescribedMedications|FollowUpInstructions|FollowUpAppointments|ResponsiblePhysicianId
+1|1|HOME|IMPROVED|Metformin|Daily weights, low-salt diet|Family doctor in 1 week|3
+2|2|OTHER HOSPITAL|STABLE|Amlodipine|Complete antibiotic course|N/A|3
+3|3|HOME|STABLE|Metformin, Atorvastatin|Return if symptoms worsen|Surgical clinic in 10 days|4
+4|4|HOME|IMPROVED|Levothyroxine|N/A|N/A|2
+5|5|HOME|STABLE|Metformin|Keep wound dry for 7 days|Neurology clinic in 2 weeks|12
+6|6|HOME|STABLE|Furosemide|Daily weights, low-salt diet|Surgical clinic in 10 days|4
+7|7|N/A|IMPROVED||N/A|N/A|4
+8|8|OTHER HOSPITAL|UNCHANGED|N/A|Complete antibiotic course|N/A|20
+9|9|HOME|STABLE|Metformin, Atorvastatin|Daily weights, low-salt diet|N/A|1
+10|10|HOME|STABLE|Metformin|N/A|Surgical clinic in 10 days|2
+11|11|LONG-TERM CARE|STABLE|Aspirin|Return if symptoms worsen|Family doctor in 1 week|17
+12|12|REHABILITATION FACILITY|IMPROVED|Amlodipine|N/A|Surgical clinic in 10 days|3
+13|13|HOME|IMPROVED|N/A|Keep wound dry for 7 days|N/A|4
+14|14|HOME|UNCHANGED|Metformin|Return if symptoms worsen|Family doctor in 1 week|4
+15|15|REHABILITATION FACILITY|STABLE|Levothyroxine|Keep wound dry for 7 days|Cardiology clinic in 2 weeks|4
+16|16|HOME|STABLE|Aspirin|Keep wound dry for 7 days|Surgical clinic in 10 days|1
+17|17|HOME|STABLE|Metformin, Atorvastatin|Return if symptoms worsen|Infectious Disease clinic in 2 weeks|1
+18|18|HOME WITH HOME CARE|IMPROVED|N/A|Keep wound dry for 7 days|Gastroenterology clinic in 2 weeks|3
+19|19|HOME|STABLE|Warfarin|Daily weights, low-salt diet|Surgical clinic in 10 days|12
+20|20|OTHER HOSPITAL|STABLE|Aspirin|Daily weights, low-salt diet|Pulmonology clinic in 2 weeks|4
+21|21|HOME|IMPROVED|Levothyroxine|Complete antibiotic course|Infectious Disease clinic in 2 weeks|1
+22|22|HOME|STABLE|Atorvastatin|Daily weights, low-salt diet||19
+23|23|HOME|IMPROVED|Aspirin|Return if symptoms worsen|Surgical clinic in 10 days|5
+24|24|HOME|IMPROVED|Metformin, Atorvastatin|Return if symptoms worsen|Surgical clinic in 10 days|4
+25|25||EXPIRED|N/A|N/A|N/A|4
+26|26|HOME|STABLE|Metformin, Atorvastatin|N/A|Family doctor in 1 week|3
+27|27|REHABILITATION FACILITY|IMPROVED|Aspirin|Complete antibiotic course|Oncology clinic in 2 weeks|18
+28|28|N/A|EXPIRED|N/A|N/A|N/A|1
+29|29|HOME|IMPROVED|Warfarin|Daily weights, low-salt diet|Surgical clinic in 10 days|2
+30|30| REHABILITATION FACILITY|IMPROVED|Metformin|Keep wound dry for 7 days|N/A|20
+31|31|HOME| STABLE|Metformin|Complete antibiotic course|Family doctor in 1 week|4
+32|32|HOME|STABLE|Warfarin|Keep wound dry for 7 days|N/A|1
+33|33|REHABILITATION FACILITY|IMPROVED|Metformin, Atorvastatin|Daily weights, low-salt diet|Neurology clinic in 2 weeks|4
+34|34|HOME|improved|N/A|Complete antibiotic course|Surgical clinic in 10 days|8
+35|35|HOME WITH HOME CARE|IMPROVED|Atorvastatin|Return if symptoms worsen|N/A|4
+36|36|HOME|IMPROVED|Metformin|Daily weights, low-salt diet|Neurology clinic in 2 weeks|1
+37|37|HOME|IMPROVED|Furosemide|N/A|Family doctor in 1 week|19
+38|38|HOME WITH HOME CARE|STABLE|Warfarin|Complete antibiotic course|Surgical clinic in 10 days|2
+39|39|HOME|IMPROVED|Salbutamol inhaler|Return if symptoms worsen|Infectious Disease clinic in 2 weeks|3
+40|40|Home|STABLE|Amlodipine|Keep wound dry for 7 days|Surgical clinic in 10 days|18
+41|41|N/A|EXPIRED||N/A|N/A|2
+42|42|HOME WITH HOME CARE|IMPROVED|Lisinopril|Keep wound dry for 7 days|Surgical clinic in 10 days|7
+43|43|HOME|UNCHANGED|Salbutamol inhaler|Daily weights, low-salt diet|Neurology clinic in 2 weeks|1
+44|44|OTHER HOSPITAL|STABLE|Atorvastatin|Keep wound dry for 7 days|Cardiology clinic in 2 weeks|8
+45|45|REHABILITATION FACILITY|STABLE|Amlodipine|Complete antibiotic course|Family doctor in 1 week|4
+46|46|HOME|IMPROVED|Levothyroxine|Return if symptoms worsen|Pulmonology clinic in 2 weeks|11
+47|47|HOME|STABLE|Warfarin|Complete antibiotic course|N/A|4
+48|48|LONG-TERM CARE|IMPROVED|Aspirin|Daily weights, low-salt diet|Family doctor in 1 week|18
+49|49|HOME|IMPROVED|Furosemide|Complete antibiotic course|Surgical clinic in 10 days|3
+50|50|HOME|IMPROVED|Warfarin|Daily weights, low-salt diet|Surgical clinic in 10 days|2
+51|51|HOME WITH HOME CARE|IMPROVED|Metformin|Keep wound dry for 7 days|Cardiology clinic in 2 weeks|4
+52|52|HOME WITH HOME CARE|IMPROVED|Furosemide|Daily weights, low-salt diet|Family doctor in 1 week|4
+53|53|HOME|STABLE|Metformin|Keep wound dry for 7 days|Family doctor in 1 week|4
+54|54|home with home care|STABLE|Furosemide|Keep wound dry for 7 days|Nephrology clinic in 2 weeks|3
+55|55|HOME|STABLE|N/A|Return if symptoms worsen|Family doctor in 1 week|4
+56|56|HOME|STABLE|Aspirin|Daily weights, low-salt diet|N/A|1
+57|57|HOME|IMPROVED|Amlodipine|Complete antibiotic course|Nephrology clinic in 2 weeks|4
+58|58|HOME|STABLE|Salbutamol inhaler||Surgical clinic in 10 days|2
+59|59|REHABILITATION FACILITY|STABLE|Lisinopril|Complete antibiotic course|Family doctor in 1 week|3
+60|60|REHABILITATION FACILITY|STABLE|Metformin|Keep wound dry for 7 days|Surgical clinic in 10 days|1
+61|62|REHABILITATION FACILITY|IMPROVED|Salbutamol inhaler|Daily weights, low-salt diet|Pulmonology clinic in 2 weeks|4
+62|63|REHABILITATION FACILITY|STABLE|Lisinopril|Keep wound dry for 7 days|Surgical clinic in 10 days|2
+63|64|HOME|improved|N/A|Daily weights, low-salt diet|Family doctor in 1 week|5
+64|65|HOME|IMPROVED|Salbutamol inhaler|Complete antibiotic course||3
+65|66|HOME|IMPROVED|Atorvastatin|Daily weights, low-salt diet|Family doctor in 1 week|19
+66|67|HOME WITH HOME CARE|IMPROVED|Levothyroxine|N/A|Surgical clinic in 10 days|2
+67|68|REHABILITATION FACILITY|IMPROVED|Lisinopril|Daily weights, low-salt diet|Surgical clinic in 10 days|2
+68|69|LONG-TERM CARE|IMPROVED|Metformin|Daily weights, low-salt diet|Surgical clinic in 10 days|8
+69|70|REHABILITATION FACILITY|IMPROVED|Lisinopril|Keep wound dry for 7 days|Surgical clinic in 10 days|6
+70|71|HOME|IMPROVED|Furosemide|Daily weights, low-salt diet|Cardiology clinic in 2 weeks|9
+71|72|HOME|IMPROVED|Levothyroxine|Daily weights, low-salt diet||11
+72|73|HOME|IMPROVED|Levothyroxine|Daily weights, low-salt diet|Surgical clinic in 10 days|18
+73|74|HOME|STABLE|Furosemide|Daily weights, low-salt diet|N/A|1
+74|75|HOME|IMPROVED||Return if symptoms worsen|Surgical clinic in 10 days|20
+75|76|REHABILITATION FACILITY|STABLE|Metformin, Atorvastatin|Daily weights, low-salt diet|Gastroenterology clinic in 2 weeks|2
+76|77|HOME|STABLE|Salbutamol inhaler|Daily weights, low-salt diet|Internal Medicine clinic in 2 weeks|5
+77|78|LONG-TERM CARE|IMPROVED|Lisinopril|Keep wound dry for 7 days|Internal Medicine clinic in 2 weeks|2
+78|79|HOME WITH HOME CARE|IMPROVED|Metformin|N/A|N/A|7
+79|80|OTHER HOSPITAL|STABLE|Levothyroxine|Complete antibiotic course|N/A|1
+80|81|LONG-TERM CARE|IMPROVED|Furosemide|Daily weights, low-salt diet|Surgical clinic in 10 days|20
+81|82|HOME|IMPROVED|Salbutamol inhaler|Complete antibiotic course|Internal Medicine clinic in 2 weeks|5
+82|83|HOME|IMPROVED|Salbutamol inhaler|Complete antibiotic course|Internal Medicine clinic in 2 weeks|4
+83|84|LONG-TERM CARE|IMPROVED|Lisinopril|Daily weights, low-salt diet|Family doctor in 1 week|1
+84|85|HOME|STABLE|Lisinopril|N/A|Family doctor in 1 week|2
+85|86|REHABILITATION FACILITY|IMPROVED|Metformin||N/A|2
+86|87|HOME|UNCHANGED  ||Complete antibiotic course|Family doctor in 1 week|3
+87|88|OTHER HOSPITAL|STABLE|Lisinopril|Return if symptoms worsen|Neurology clinic in 2 weeks|1
+88|89|HOME|improved|Atorvastatin|N/A|Oncology clinic in 2 weeks|19
+89|90|HOME|STABLE|Warfarin|N/A|Internal Medicine clinic in 2 weeks|1
+90|91|REHABILITATION FACILITY|IMPROVED|N/A|Keep wound dry for 7 days||9
+91|92|HOME|IMPROVED|Salbutamol inhaler|Keep wound dry for 7 days|N/A|1
+92|93|LONG-TERM CARE|STABLE|Metformin|||8
+93|94|LONG-TERM CARE|IMPROVED|Lisinopril|Daily weights, low-salt diet|Family doctor in 1 week|1
+94|95|HOME|IMPROVED|Warfarin|Complete antibiotic course|N/A|18
+95|96|HOME|STABLE|Salbutamol inhaler|Return if symptoms worsen|Surgical clinic in 10 days|4
+96|97|HOME|IMPROVED|Metformin|N/A|Family doctor in 1 week|3
+97|98|HOME|IMPROVED|Warfarin|Complete antibiotic course|Family doctor in 1 week|1
+98|99|REHABILITATION FACILITY|STABLE|Warfarin|Complete antibiotic course|Surgical clinic in 10 days|1
+99|100|HOME|IMPROVED|Warfarin|Keep wound dry for 7 days|Family doctor in 1 week|6
+100|101|REHABILITATION FACILITY|STABLE|Aspirin||Surgical clinic in 10 days|4
+101|102|HOME|IMPROVED|N/A|Complete antibiotic course|Surgical clinic in 10 days|17
+102|103|HOME WITH HOME CARE|IMPROVED|Lisinopril|N/A|Family doctor in 1 week|1
+103|104|HOME WITH HOME CARE|STABLE|Lisinopril|Complete antibiotic course|N/A|17
+104|105|HOME|IMPROVED|Lisinopril|Daily weights, low-salt diet|Internal Medicine clinic in 2 weeks|3
+105|106|N/A|EXPIRED|N/A|N/A||1
+106|107|HOME|IMPROVED|Metformin, Atorvastatin|Daily weights, low-salt diet|Gastroenterology clinic in 2 weeks|3
+107|108|HOME|IMPROVED|Atorvastatin|Daily weights, low-salt diet|Surgical clinic in 10 days|2
+108|109|REHABILITATION FACILITY|STABLE|Atorvastatin||Surgical clinic in 10 days|2
+109|110|HOME|IMPROVED|Metformin, Atorvastatin|Daily weights, low-salt diet|Infectious Disease clinic in 2 weeks|3
+110|111|HOME|IMPROVED|Atorvastatin|Keep wound dry for 7 days|Surgical clinic in 10 days|3
+111|112|HOME|STABLE|Atorvastatin|Return if symptoms worsen|N/A|4
+112|113|HOME WITH HOME CARE|IMPROVED|Warfarin|Complete antibiotic course|Family doctor in 1 week|2
+113|114|N/A|EXPIRED|N/A||N/A|2
+114|115|HOME|IMPROVED|N/A|Return if symptoms worsen|Pulmonology clinic in 2 weeks|4
+115|116|HOME|STABLE|Metformin, Atorvastatin|Daily weights, low-salt diet|Nephrology clinic in 2 weeks|3
+116|117|HOME|IMPROVED|Lisinopril|N/A|Surgical clinic in 10 days|7
+117|118|HOME|IMPROVED|Furosemide|Return if symptoms worsen|Family doctor in 1 week|2
+118|120|HOME|IMPROVED|Amlodipine|Complete antibiotic course|Infectious Disease clinic in 2 weeks|1
+119|121|REHABILITATION FACILITY|STABLE|Warfarin|Complete antibiotic course|Surgical clinic in 10 days|4
+120|122|OTHER HOSPITAL|STABLE|Aspirin|Keep wound dry for 7 days|Cardiology clinic in 2 weeks|4
+121|123|HOME WITH HOME CARE|IMPROVED|Aspirin|Return if symptoms worsen|Surgical clinic in 10 days|19
+122|124|HOME WITH HOME CARE|IMPROVED|Levothyroxine|Daily weights, low-salt diet|Surgical clinic in 10 days|5
+123|125|HOME|IMPROVED|Warfarin|Complete antibiotic course|N/A|2
+124|126||EXPIRED|N/A|||17
+125|127|HOME|IMPROVED|Furosemide|N/A|Surgical clinic in 10 days|2
+126|128|HOME WITH HOME CARE|STABLE|Warfarin|Daily weights, low-salt diet|N/A|4
+127|129|HOME|STABLE|Salbutamol inhaler|Return if symptoms worsen|Surgical clinic in 10 days|3
+128|130|HOME|STABLE|Atorvastatin||Surgical clinic in 10 days|2
+129|131|REHABILITATION FACILITY|STABLE|Levothyroxine||N/A|5
+130|132|HOME WITH HOME CARE|STABLE|Metformin|Daily weights, low-salt diet||2
+131|133|REHABILITATION FACILITY|IMPROVED|Metformin|Complete antibiotic course|Surgical clinic in 10 days|1
+132|134|HOME|STABLE|Salbutamol inhaler|N/A|N/A|4
+133|135|HOME|IMPROVED|Atorvastatin|Daily weights, low-salt diet|Cardiology clinic in 2 weeks|2
+134|136|HOME|IMPROVED||Return if symptoms worsen|Surgical clinic in 10 days|11
+135|137|HOME|IMPROVED|Levothyroxine|Complete antibiotic course|Family doctor in 1 week|2
+136|138|HOME|IMPROVED|Amlodipine||Oncology clinic in 2 weeks|19
+137|139|OTHER HOSPITAL|STABLE|Levothyroxine|Return if symptoms worsen|Cardiology clinic in 2 weeks|4
+138|140|HOME|STABLE|N/A|Keep wound dry for 7 days|Surgical clinic in 10 days|1
+139|141|HOME|STABLE|Aspirin|Keep wound dry for 7 days|Surgical clinic in 10 days|3
+140|142|HOME|UNCHANGED|Warfarin|Keep wound dry for 7 days|Internal Medicine clinic in 2 weeks|6
+141|143|HOME WITH HOME CARE|IMPROVED|Metformin, Atorvastatin|Return if symptoms worsen|Surgical clinic in 10 days|3
+142|144|HOME|IMPROVED|Aspirin|Keep wound dry for 7 days|N/A|2
+143|145|HOME|STABLE|Aspirin|Daily weights, low-salt diet|Family doctor in 1 week|1
+144|146|LONG-TERM CARE|IMPROVED|Amlodipine|Daily weights, low-salt diet|Oncology clinic in 2 weeks|19
+145|147|HOME|IMPROVED|Salbutamol inhaler|Keep wound dry for 7 days|N/A|4
+146|148|HOME|IMPROVED|Metformin|Complete antibiotic course|Family doctor in 1 week|6
+147|149|N/A|EXPIRED|N/A|N/A||2
+148|150|REHABILITATION FACILITY|STABLE|Warfarin|Daily weights, low-salt diet|Surgical clinic in 10 days|2
+149|151|REHABILITATION FACILITY|UNCHANGED|Salbutamol inhaler|N/A|Family doctor in 1 week|2
+150|152|REHABILITATION FACILITY|IMPROVED|Amlodipine|Complete antibiotic course|Surgical clinic in 10 days|22
+151|153|home|UNCHANGED|N/A|Return if symptoms worsen|Family doctor in 1 week|4
+152|154|LONG-TERM CARE|IMPROVED|Salbutamol inhaler|Keep wound dry for 7 days|Family doctor in 1 week|17
+153|155|HOME|STABLE|Furosemide|Complete antibiotic course|Internal Medicine clinic in 2 weeks|1
+154|156|HOME WITH HOME CARE|IMPROVED|Salbutamol inhaler|N/A|N/A|1
+155|157|HOME|IMPROVED|Levothyroxine|Complete antibiotic course|Surgical clinic in 10 days|4
+156|158|REHABILITATION FACILITY|IMPROVED|Atorvastatin|Keep wound dry for 7 days||18
+157|159|LONG-TERM CARE|STABLE|Aspirin|Daily weights, low-salt diet||9
+158|160|REHABILITATION FACILITY|IMPROVED|Metformin, Atorvastatin|Complete antibiotic course|Family doctor in 1 week|1
+159|161|HOME|IMPROVED|Salbutamol inhaler|Complete antibiotic course|Internal Medicine clinic in 2 weeks|5
+160|162|LONG-TERM CARE|STABLE|Furosemide|Return if symptoms worsen|Surgical clinic in 10 days|1
+161|163|HOME WITH HOME CARE|UNCHANGED|N/A|N/A|Surgical clinic in 10 days|2
+162|164|HOME|STABLE|Atorvastatin|Daily weights, low-salt diet||20
+163|165|REHABILITATION FACILITY|IMPROVED|Furosemide|Keep wound dry for 7 days|Surgical clinic in 10 days|10
+164|166|HOME|STABLE|N/A|Daily weights, low-salt diet|Internal Medicine clinic in 2 weeks|5
+165|167|HOME|UNCHANGED|Furosemide|Daily weights, low-salt diet|Family doctor in 1 week|18
+166|168|HOME|STABLE|N/A|Daily weights, low-salt diet|Oncology clinic in 2 weeks|2
+167|169|LONG-TERM CARE|IMPROVED|Atorvastatin|Daily weights, low-salt diet|N/A|11
+168|170|HOME|IMPROVED|Furosemide|Daily weights, low-salt diet|Family doctor in 1 week|2
+169|171|HOME WITH HOME CARE|STABLE|Metformin|Keep wound dry for 7 days||13
+170|172|HOME|STABLE|Lisinopril|Complete antibiotic course|Family doctor in 1 week|4
+171|173|HOME|UNCHANGED|Aspirin|Keep wound dry for 7 days|N/A|9
+172|174|HOME|STABLE|Lisinopril|Daily weights, low-salt diet|Surgical clinic in 10 days|2
+173|175|HOME|STABLE|Lisinopril|Complete antibiotic course|Family doctor in 1 week|4
+174|176|N/A|EXPIRED|N/A|N/A|N/A|1
+175|177|OTHER HOSPITAL|STABLE|Salbutamol inhaler|Complete antibiotic course|Surgical clinic in 10 days|8
+176|178|OTHER HOSPITAL|STABLE|Warfarin|Return if symptoms worsen|Surgical clinic in 10 days|19
+177|179|REHABILITATION FACILITY|IMPROVED|Aspirin|||18
+178|180|HOME|IMPROVED|Levothyroxine|Return if symptoms worsen||8
+179|181|HOME WITH HOME CARE|STABLE|Metformin|Return if symptoms worsen|Surgical clinic in 10 days|3
+180|182|HOME|STABLE|Aspirin|Complete antibiotic course|Cardiology clinic in 2 weeks|2
+181|183|HOME|IMPROVED|Levothyroxine|Daily weights, low-salt diet|Pulmonology clinic in 2 weeks|3
+182|184|HOME|IMPROVED|Salbutamol inhaler|Complete antibiotic course||4
+183|185|REHABILITATION FACILITY|IMPROVED|N/A|Daily weights, low-salt diet|Gastroenterology clinic in 2 weeks|3
+184|186|LONG-TERM CARE|IMPROVED|Furosemide|Complete antibiotic course|Family doctor in 1 week|1
+185|187|HOME|IMPROVED|Salbutamol inhaler|Return if symptoms worsen|Family doctor in 1 week|8
+186|188|OTHER HOSPITAL|UNCHANGED|Warfarin|N/A||4
+187|189|HOME|IMPROVED|Salbutamol inhaler||Family doctor in 1 week|2
+188|190|HOME|IMPROVED|Salbutamol inhaler|Keep wound dry for 7 days|Family doctor in 1 week|17
+189|191|HOME|IMPROVED|Atorvastatin|Complete antibiotic course|Neurology clinic in 2 weeks|4
+190|192|HOME|IMPROVED|Metformin, Atorvastatin|Complete antibiotic course|Surgical clinic in 10 days|5
+191|193|OTHER HOSPITAL|UNCHANGED|Furosemide|Daily weights, low-salt diet|Cardiology clinic in 2 weeks|8
+192|194|HOME|IMPROVED|Furosemide|Complete antibiotic course|Family doctor in 1 week|17
+193|195|HOME WITH HOME CARE|IMPROVED|Warfarin|Return if symptoms worsen|Gastroenterology clinic in 2 weeks|17
+194|196|HOME|IMPROVED|Salbutamol inhaler||Family doctor in 1 week|1
+195|197|HOME|STABLE|Metformin|Return if symptoms worsen|Family doctor in 1 week|7
+196|198|HOME|IMPROVED|Amlodipine|Return if symptoms worsen|Neurology clinic in 2 weeks|1
+197|199|HOME|IMPROVED|Levothyroxine|Keep wound dry for 7 days|Surgical clinic in 10 days|19
+198|200|REHABILITATION FACILITY|UNCHANGED|Amlodipine|Daily weights, low-salt diet||4
+199|201|REHABILITATION FACILITY|IMPROVED|Metformin|Return if symptoms worsen|Family doctor in 1 week|2
+200|202|N/A|EXPIRED|||N/A|1
+201|203|OTHER HOSPITAL|STABLE|Amlodipine|Complete antibiotic course|Gastroenterology clinic in 2 weeks|17
+202|204|HOME|UNCHANGED|Aspirin|Return if symptoms worsen|Family doctor in 1 week|3
+203|205||EXPIRED|N/A|N/A||4
+204|206|HOME WITH HOME CARE|STABLE|Aspirin|N/A||9
+205|207|HOME WITH HOME CARE|IMPROVED|Warfarin|Return if symptoms worsen|N/A|2
+206|208|HOME|IMPROVED|Aspirin|Complete antibiotic course|Surgical clinic in 10 days|1
+207|209|HOME|IMPROVED|Salbutamol inhaler|Keep wound dry for 7 days|Surgical clinic in 10 days|11
+208|210|OTHER HOSPITAL|STABLE|Aspirin|N/A|Surgical clinic in 10 days|19
+209|211|HOME|STABLE|Metformin, Atorvastatin|N/A|Nephrology clinic in 2 weeks|4
+210|212|HOME WITH HOME CARE|STABLE|Furosemide|Daily weights, low-salt diet|Family doctor in 1 week|1
+211|213|LONG-TERM CARE|IMPROVED||Keep wound dry for 7 days|N/A|1
+212|214|REHABILITATION  FACILITY|IMPROVED|Atorvastatin|Complete antibiotic course||19
+213|215|OTHER HOSPITAL|STABLE|Metformin, Atorvastatin|N/A|Family doctor in 1 week|3
+214|216|HOME|UNCHANGED|Atorvastatin|Return if symptoms worsen|Surgical clinic in 10 days|1
+215|217|HOME|STABLE|Salbutamol inhaler|Return if symptoms worsen|Surgical clinic in 10 days|4
+216|218|HOME|STABLE|Metformin, Atorvastatin|Complete antibiotic course|Family doctor in 1 week|7
+217|219|REHABILITATION FACILITY|IMPROVED|Metformin, Atorvastatin|N/A|Family doctor in 1 week|3
+218|220|HOME|IMPROVED|Warfarin|Complete antibiotic course||17
+219|221|OTHER HOSPITAL|STABLE|Metformin, Atorvastatin|Complete antibiotic course|Pulmonology clinic in 2 weeks|4
+220|222|HOME|IMPROVED|Amlodipine|Keep wound dry for 7 days||17
+221|223|OTHER HOSPITAL|STABLE|Amlodipine|Daily weights, low-salt diet|Surgical clinic in 10 days|3
+222|224|HOME|IMPROVED|Amlodipine|N/A|N/A|19
+223|225|HOME|STABLE|Metformin|Return if symptoms worsen|N/A|4
+224|226|OTHER HOSPITAL|STABLE|Atorvastatin|Return if symptoms worsen|N/A|17
+225|227|REHABILITATION FACILITY|IMPROVED|Lisinopril|Daily weights, low-salt diet|Family doctor in 1 week|11
+226|228|HOME|STABLE|Furosemide|N/A||3
+227|229|HOME|STABLE|Furosemide|Daily weights, low-salt diet||1
+228|230|home|IMPROVED|N/A|Complete antibiotic course|Surgical clinic in 10 days|4
+229|231|HOME|IMPROVED|Amlodipine|Daily weights, low-salt diet||1
+230|232|HOME|IMPROVED|Metformin, Atorvastatin|Keep wound dry for 7 days|Family doctor in 1 week|5
+231|233|HOME|UNCHANGED|Metformin|Return if symptoms worsen|Internal Medicine clinic in 2 weeks|1
+232|234|HOME|STABLE|Metformin, Atorvastatin|Complete antibiotic course|Nephrology clinic in 2 weeks|20
+233|235|LONG-TERM CARE|IMPROVED|Furosemide|N/A|Family doctor in 1 week|4
+234|236|HOME|STABLE|Metformin|Complete antibiotic course|N/A|2
+235|237|LONG-TERM CARE|STABLE|Lisinopril|Keep wound dry for 7 days|Family doctor in 1 week|2
+236|238|LONG-TERM CARE|STABLE|Amlodipine|N/A|N/A|9
+237|239|HOME|IMPROVED|Salbutamol inhaler|Daily weights, low-salt diet|Surgical clinic in 10 days|3
+238|241|HOME|IMPROVED|Aspirin|Complete antibiotic course|Family doctor in 1 week|4
+239|242|HOME|IMPROVED|N/A|Complete antibiotic course|Family doctor in 1 week|2
+240|243|REHABILITATION FACILITY|IMPROVED|Atorvastatin|Complete antibiotic course|Gastroenterology clinic in 2 weeks|17
+241|244|HOME|IMPROVED|Lisinopril|Return if symptoms worsen|Cardiology clinic in 2 weeks|3
+242|245|HOME|UNCHANGED|Furosemide|Daily weights, low-salt diet||3
+243|246|HOME WITH HOME CARE|IMPROVED|Lisinopril|Keep wound dry for 7 days|Family doctor in 1 week|7
+244|247|HOME|IMPROVED|Lisinopril|Keep wound dry for 7 days|Surgical clinic in 10 days|1
+245|248|REHABILITATION FACILITY|UNCHANGED|Salbutamol inhaler|Daily weights, low-salt diet|Oncology clinic in 2 weeks|18
+246|249|REHABILITATION FACILITY|IMPROVED|Salbutamol inhaler|Daily weights, low-salt diet|Surgical clinic in 10 days|4
+247|250|HOME|IMPROVED|Metformin, Atorvastatin|N/A|Surgical clinic in 10 days|3
+248|251|HOME|IMPROVED|Furosemide|Keep wound dry for 7 days|Surgical clinic in 10 days|1
+249|252|HOME|IMPROVED|Furosemide|Complete antibiotic course|Internal Medicine clinic in 2 weeks|4
+250|253|REHABILITATION FACILITY|STABLE|Warfarin|Complete antibiotic course|Surgical clinic in 10 days|2
+251|254|HOME|STABLE|Amlodipine|Keep wound dry for 7 days|Surgical clinic in 10 days|2
+252|255|HOME|IMPROVED|Furosemide|Complete antibiotic course|Cardiology clinic in 2 weeks|1
+253|256|HOME WITH HOME CARE|STABLE|Levothyroxine|Return if symptoms worsen|Family doctor in 1 week|1
+254|257|HOME|IMPROVED|Aspirin|N/A|Surgical clinic in 10 days|9
+255|258|HOME WITH HOME CARE|STABLE|Aspirin|N/A|Pulmonology clinic in 2 weeks|1
+256|259|OTHER HOSPITAL|STABLE|Aspirin|Return if symptoms worsen|Pulmonology clinic in 2 weeks|4
+257|260|HOME|UNCHANGED|Levothyroxine|Return if symptoms worsen||2
+258|261|HOME|IMPROVED|Salbutamol inhaler|Daily weights, low-salt diet|Surgical clinic in 10 days|2
+259|262|REHABILITATION FACILITY|STABLE|Levothyroxine|N/A|Surgical clinic in 10 days|17
+260|263| HOME WITH HOME CARE|IMPROVED|Furosemide|Return if symptoms worsen|Surgical clinic in 10 days|4
+261|264|HOME|IMPROVED|Furosemide|Complete antibiotic course|Surgical clinic in 10 days|4
+262|265|REHABILITATION FACILITY|IMPROVED|Metformin, Atorvastatin|Keep wound dry for 7 days|Neurology clinic in 2 weeks|1
+263|266|HOME|IMPROVED|Atorvastatin|Complete antibiotic course||4
+264|267|HOME WITH HOME CARE|IMPROVED|Aspirin|Keep wound dry for 7 days|Neurology clinic in 2 weeks|13
+265|268|N/A|EXPIRED||N/A|N/A|2
+266|269|HOME WITH HOME CARE|IMPROVED|Levothyroxine|Complete antibiotic course||1
+267|270|LONG-TERM CARE|IMPROVED|Furosemide|Return if symptoms worsen|Oncology clinic in 2 weeks|18
+268|271|HOME WITH HOME CARE|STABLE|Salbutamol inhaler||N/A|7
+269|272|HOME|IMPROVED||Return if symptoms worsen|Surgical clinic in 10 days|3
+270|273|HOME|IMPROVED|Furosemide|Return if symptoms worsen|Family doctor in 1 week|3
+271|274|HOME|IMPROVED|Salbutamol inhaler|Keep wound dry for 7 days||9
+272|275|HOME WITH HOME CARE|STABLE|Amlodipine|N/A|Family doctor in 1 week|22
+273|276|REHABILITATION FACILITY|IMPROVED|Lisinopril|Complete antibiotic course|Surgical clinic in 10 days|18
+274|277|HOME|IMPROVED|Amlodipine||Neurology clinic in 2 weeks|3
+275|278|HOME|IMPROVED|Aspirin||N/A|1
+276|279|HOME|IMPROVED|Metformin, Atorvastatin|Return if symptoms worsen||2
+277|280|N/A|EXPIRED|N/A||N/A|4
+278|281|HOME|IMPROVED|Furosemide|Daily weights, low-salt diet|Family doctor in 1 week|1
+279|282|HOME|STABLE|N/A||Surgical clinic in 10 days|10
+280|283|REHABILITATION FACILITY|IMPROVED|Levothyroxine|Return if symptoms worsen|Cardiology clinic in 2 weeks|3
+281|284|HOME|IMPROVED|Atorvastatin|Complete antibiotic course|Neurology clinic in 2 weeks|13
+282|285|HOME|IMPROVED|Levothyroxine|Keep wound dry for 7 days|Oncology clinic in 2 weeks|4
+283|286|HOME|IMPROVED|Metformin, Atorvastatin|Daily weights, low-salt diet|Family doctor in 1 week|4
+284|287|HOME|IMPROVED|Metformin|Keep wound dry for 7 days|Internal Medicine clinic in 2 weeks|4
+285|288|REHABILITATION FACILITY|IMPROVED|Metformin|Complete antibiotic course|Gastroenterology clinic in 2 weeks|17
+286|289|REHABILITATION FACILITY|IMPROVED|Lisinopril|Keep wound dry for 7 days|N/A|9
+287|290|HOME WITH HOME CARE|IMPROVED|Furosemide|Keep wound dry for 7 days|Surgical clinic in 10 days|18
+288|291|HOME|IMPROVED|Metformin|Return if symptoms worsen|N/A|4
+289|292|REHABILITATION FACILITY|STABLE|Salbutamol inhaler|Daily weights, low-salt diet|Surgical clinic in 10 days|2
+290|293|  HOME WITH HOME CARE |IMPROVED|Furosemide|Return if symptoms worsen|Family doctor in 1 week|2
+291|294|HOME|STABLE|Amlodipine|Complete antibiotic course|N/A|20
+292|295|HOME|IMPROVED|Metformin|Return if symptoms worsen|Neurology clinic in 2 weeks|12
+293|296|N/A|EXPIRED|N/A|N/A|N/A|4
+294|297|LONG-TERM CARE|IMPROVED|Aspirin|N/A|Infectious Disease clinic in 2 weeks|22
+295|298|HOME|IMPROVED|Metformin, Atorvastatin|Complete antibiotic course|Gastroenterology clinic in 2 weeks|17
+296|299|N/A|EXPIRED||N/A|N/A|1
+297|300|OTHER HOSPITAL|UNCHANGED|Amlodipine||Family doctor in 1 week|5
+298|301|HOME|IMPROVED|Furosemide|Keep wound dry for 7 days|Family doctor in 1 week|9
+299|302|LONG-TERM CARE|IMPROVED|Amlodipine|Complete antibiotic course|Surgical clinic in 10 days|3
+300|303|REHABILITATION FACILITY|IMPROVED|Warfarin|Keep wound dry for 7 days|Family doctor in 1 week|17
+301|304|LONG-TERM CARE|IMPROVED|Aspirin|Complete antibiotic course|Surgical clinic in 10 days|4
+302|305|LONG-TERM CARE|IMPROVED|Atorvastatin|Complete antibiotic course|Surgical clinic in 10 days|2
+303|306|HOME|UNCHANGED|Levothyroxine|Keep wound dry for 7 days|Pulmonology clinic in 2 weeks|4
+304|307|HOME|IMPROVED|Lisinopril|Return if symptoms worsen|Internal Medicine clinic in 2 weeks|3
+305|308|HOME WITH HOME CARE|IMPROVED|Metformin|Daily weights, low-salt diet|Family doctor in 1 week|17
+306|309|HOME|STABLE||Daily weights, low-salt diet|Neurology clinic in 2 weeks|1
+307|310|HOME WITH HOME CARE|IMPROVED|Lisinopril|Daily weights, low-salt diet|Cardiology clinic in 2 weeks|4
+308|311|LONG-TERM CARE|IMPROVED|Amlodipine|Complete antibiotic course|Surgical clinic in 10 days|17
+309|312|HOME|IMPROVED|Metformin|Daily weights, low-salt diet|Family doctor in 1 week|2
+310|313|HOME|IMPROVED|Atorvastatin|N/A|Surgical clinic in 10 days|18
+311|314|OTHER HOSPITAL| UNCHANGED|Salbutamol inhaler|Return if symptoms worsen|Family doctor in 1 week|4
+312|315|REHABILITATION FACILITY|STABLE|Atorvastatin|Return if symptoms worsen|Internal Medicine clinic in 2 weeks|7
+313|316|REHABILITATION FACILITY|IMPROVED|Atorvastatin|N/A|N/A|2
+314|317|REHABILITATION FACILITY|Improved|Metformin|Keep wound dry for 7 days|Surgical clinic in 10 days|9
+315|318|HOME|STABLE|Furosemide|N/A|Gastroenterology clinic in 2 weeks|1
+316|319|HOME|IMPROVED|Warfarin|Daily weights, low-salt diet|Cardiology clinic in 2 weeks|4
+317|320|HOME|IMPROVED|Aspirin|Return if symptoms worsen|Family doctor in 1 week|3
+318|321|HOME|STABLE|Warfarin|Return if symptoms worsen|Family doctor in 1 week|20
+319|322|HOME|IMPROVED|Levothyroxine|N/A|Internal Medicine clinic in 2 weeks|1
+320|323|HOME WITH HOME CARE|IMPROVED|Metformin, Atorvastatin|Return if symptoms worsen|Family doctor in 1 week|19
+321|325|N/A|EXPIRED|N/A|N/A|N/A|2
+322|326|HOME|Stable|Atorvastatin|N/A|Family doctor in 1 week|20
+323|327|OTHER HOSPITAL|UNCHANGED|Amlodipine|Daily weights, low-salt diet|Surgical clinic in 10 days|3
+324|328|Home With Home Care|IMPROVED|Metformin, Atorvastatin|Keep wound dry for 7 days|Surgical clinic in 10 days|4
+325|329|OTHER HOSPITAL|UNCHANGED|Lisinopril|Daily weights, low-salt diet|N/A|3
+326|330|HOME|STABLE|Amlodipine|Daily weights, low-salt diet|N/A|2
+327|331|REHABILITATION FACILITY|STABLE|Lisinopril|Complete antibiotic course|Neurology clinic in 2 weeks|4
+328|332|HOME|IMPROVED|Warfarin|Return if symptoms worsen|Family doctor in 1 week|20
+329|333|HOME|IMPROVED|Salbutamol inhaler|Complete antibiotic course|Pulmonology clinic in 2 weeks|2
+330|334|HOME|IMPROVED|Levothyroxine|Daily weights, low-salt diet|Infectious Disease clinic in 2 weeks|4
+331|335|REHABILITATION FACILITY|STABLE|Atorvastatin|Complete antibiotic course|Pulmonology clinic in 2 weeks|1
+332|336|HOME|STABLE|Levothyroxine|Daily weights, low-salt diet|Family doctor in 1 week|2
+333|337|HOME|IMPROVED|Metformin, Atorvastatin|Return if symptoms worsen|Family doctor in 1 week|17
+334|338|HOME|STABLE|Metformin||Surgical clinic in 10 days|3
+335|339|OTHER HOSPITAL|STABLE|Metformin, Atorvastatin|N/A|Surgical clinic in 10 days|4
+336|341|HOME|STABLE|Amlodipine|N/A|N/A|7
+337|342|N/A|EXPIRED||N/A|N/A|1
+338|343|HOME|IMPROVED|Levothyroxine|N/A|N/A|1
+339|344|HOME WITH HOME CARE|IMPROVED|Atorvastatin|Keep wound dry for 7 days|N/A|17
+340|345||EXPIRED|N/A||N/A|9
+341|346|LONG-TERM CARE|IMPROVED|Aspirin|Complete antibiotic course|N/A|3
+342|347|HOME|STABLE|Furosemide|Return if symptoms worsen|Gastroenterology clinic in 2 weeks|17
+343|348|HOME|IMPROVED|Levothyroxine|Daily weights, low-salt diet|Nephrology clinic in 2 weeks|3
+344|349|HOME|STABLE|Metformin, Atorvastatin|Keep wound dry for 7 days|Surgical clinic in 10 days|4
+345|350|REHABILITATION FACILITY|STABLE|Amlodipine|Keep wound dry for 7 days|Family doctor in 1 week|3
+346|351|HOME|STABLE|Amlodipine|Keep wound dry for 7 days|Cardiology clinic in 2 weeks|3
+347|352|LONG-TERM CARE|IMPROVED|Atorvastatin|Return if symptoms worsen|N/A|17
+348|353|HOME|IMPROVED|Metformin, Atorvastatin|Return if symptoms worsen|N/A|10
+349|354|HOME|IMPROVED|Levothyroxine|Complete antibiotic course|Oncology clinic in 2 weeks|19
+350|355|HOME|IMPROVED|Levothyroxine|Complete antibiotic course|Family doctor in 1 week|2
+351|356|REHABILITATION FACILITY|STABLE|Salbutamol inhaler|Daily weights, low-salt diet|Surgical clinic in 10 days|1
+352|357|REHABILITATION FACILITY|IMPROVED|Amlodipine|Return if symptoms worsen|Family doctor in 1 week|5
+353|358|HOME|STABLE|Atorvastatin|Return if symptoms worsen|N/A|11
+354|359|HOME WITH HOME CARE|improved|Levothyroxine|Complete antibiotic course|Family doctor in 1 week|4
+355|360|HOME WITH HOME CARE|IMPROVED|Atorvastatin|Keep wound dry for 7 days|Family doctor in 1 week|2
+356|362|HOME|UNCHANGED|Levothyroxine|Complete antibiotic course|N/A|18
+357|363||EXPIRED||N/A||2
+358|364|HOME|STABLE|N/A|Daily weights, low-salt diet|N/A|4
+359|365|OTHER HOSPITAL|STABLE|Atorvastatin|Daily weights, low-salt diet|Surgical clinic in 10 days|8
+360|366|HOME|IMPROVED|Amlodipine|Complete antibiotic course|N/A|2
+361|367|OTHER HOSPITAL|STABLE|Metformin|Daily weights, low-salt diet|Family doctor in 1 week|2
+362|368|HOME|IMPROVED|Lisinopril||Infectious Disease clinic in 2 weeks|2
+363|369|HOME|IMPROVED|N/A||Surgical clinic in 10 days|5
+364|370|HOME|IMPROVED|Metformin, Atorvastatin|Daily weights, low-salt diet|Surgical clinic in 10 days|2
+365|371|HOME|STABLE|Warfarin|Daily weights, low-salt diet|Surgical clinic in 10 days|12
+366|372|HOME|IMPROVED|N/A|Complete antibiotic course|Internal Medicine clinic in 2 weeks|1
+367|373|HOME|IMPROVED|Levothyroxine|Return if symptoms worsen|Oncology clinic in 2 weeks|18
+368|374|LONG-TERM CARE|STABLE|N/A|Return if symptoms worsen|Surgical clinic in 10 days|8
+369|375|HOME WITH HOME CARE|IMPROVED|Warfarin|Keep wound dry for 7 days|Family doctor in 1 week|2
+370|376|REHABILITATION FACILITY|IMPROVED|Metformin, Atorvastatin|Complete antibiotic course|Nephrology clinic in 2 weeks|1
+371|377|HOME|STABLE|Atorvastatin|Return if symptoms worsen|Surgical clinic in 10 days|18
+372|378|OTHER HOSPITAL|STABLE|Metformin, Atorvastatin|Keep wound dry for 7 days|Family doctor in 1 week|3
+373|379|OTHER HOSPITAL|STABLE|Lisinopril|Return if symptoms worsen|Cardiology clinic in 2 weeks|9
+374|380|OTHER HOSPITAL|STABLE|Levothyroxine|Daily weights, low-salt diet|N/A|1
+375|381|N/A|EXPIRED|N/A|N/A||2
+376|382|REHABILITATION FACILITY|IMPROVED|Amlodipine|Daily weights, low-salt diet|N/A|17
+377|383|LONG-TERM CARE|STABLE|Lisinopril|Return if symptoms worsen|Surgical clinic in 10 days|17
+378|384|REHABILITATION FACILITY|IMPROVED|Lisinopril|Return if symptoms worsen|Family doctor in 1 week|17
+379|386|HOME WITH HOME CARE|IMPROVED  |N/A||Surgical clinic in 10 days|4
+380|387|HOME WITH HOME CARE|STABLE|Lisinopril|Daily weights, low-salt diet|N/A|2
+381|388|HOME WITH HOME CARE|STABLE|Metformin, Atorvastatin|Complete antibiotic course|Surgical clinic in 10 days|7
+382|389|HOME|STABLE|Metformin|N/A|Nephrology clinic in 2 weeks|20
+383|390|REHABILITATION FACILITY|STABLE|Furosemide|Keep wound dry for 7 days|Surgical clinic in 10 days|2
+384|391|HOME|IMPROVED|Atorvastatin|Keep wound dry for 7 days|Cardiology clinic in 2 weeks|2
+385|392|N/A|EXPIRED||N/A|N/A|1
+386|393|HOME|IMPROVED|Aspirin|Daily weights, low-salt diet|Surgical clinic in 10 days|1
+387|394|LONG-TERM CARE|STABLE|Metformin, Atorvastatin|Return if symptoms worsen|Family doctor in 1 week|3
+388|395|LONG-TERM CARE|UNCHANGED|Lisinopril|Daily weights, low-salt diet|Surgical clinic in 10 days|13
+389|396|REHABILITATION FACILITY|IMPROVED|Aspirin|N/A|Oncology clinic in 2 weeks|18
+390|397|HOME|STABLE|Warfarin|Complete antibiotic course|Family doctor in 1 week|4
+391|398|REHABILITATION FACILITY|IMPROVED|Metformin, Atorvastatin|Return if symptoms worsen|Family doctor in 1 week|3
+392|399|HOME|IMPROVED|Levothyroxine|Complete antibiotic course|Surgical clinic in 10 days|3
+393|400|HOME|IMPROVED|Lisinopril|Daily weights, low-salt diet|N/A|1
+394|401|HOME|IMPROVED|Furosemide|N/A|Gastroenterology clinic in 2 weeks|17
+395|402|HOME|IMPROVED|Aspirin|Complete antibiotic course|Family doctor in 1 week|3
+396|403|REHABILITATION FACILITY|IMPROVED|Furosemide|Return if symptoms worsen|Family doctor in 1 week|8
+397|404|HOME|STABLE|Warfarin|Keep wound dry for 7 days|Surgical clinic in 10 days|4
+398|405|LONG-TERM CARE|STABLE|N/A|Keep wound dry for 7 days|N/A|4
+399|406|HOME|STABLE|Levothyroxine|Keep wound dry for 7 days|Pulmonology clinic in 2 weeks|3
+400|407|REHABILITATION FACILITY|STABLE|Atorvastatin|Complete antibiotic course|N/A|1
+401|408|HOME|IMPROVED|Levothyroxine|Return if symptoms worsen|Family doctor in 1 week|6
+402|409|HOME WITH HOME CARE|STABLE|Levothyroxine|N/A|Family doctor in 1 week|4
+403|410|LONG-TERM CARE|IMPROVED|Metformin, Atorvastatin|Keep wound dry for 7 days|Surgical clinic in 10 days|1
+404|411|HOME|IMPROVED|Furosemide|Complete antibiotic course|Surgical clinic in 10 days|1
+405|412|HOME|UNCHANGED|Amlodipine|Keep wound dry for 7 days|Family doctor in 1 week|22
+406|413|HOME|IMPROVED|Atorvastatin|Return if symptoms worsen||18
+407|414|OTHER HOSPITAL| STABLE|Levothyroxine|Keep wound dry for 7 days|N/A|20
+408|415|HOME|stable|Furosemide|Keep wound dry for 7 days|Nephrology clinic in 2 weeks|3
+409|416|HOME WITH HOME CARE|IMPROVED|Amlodipine|Complete antibiotic course|Surgical clinic in 10 days|3
+410|417|HOME|UNCHANGED|Metformin|Daily weights, low-salt diet|Surgical clinic in 10 days|4
+411|418|HOME WITH HOME CARE|STABLE|Metformin||N/A|10
+412|419|LONG-TERM CARE|IMPROVED|Warfarin|Complete antibiotic course|Pulmonology clinic in 2 weeks|3
+413|420|LONG-TERM CARE|STABLE|Metformin, Atorvastatin||Surgical clinic in 10 days|3
+414|421|REHABILITATION FACILITY|STABLE|Atorvastatin|N/A|Internal Medicine clinic in 2 weeks|2
+415|422|REHABILITATION FACILITY|IMPROVED|Amlodipine|Complete antibiotic course|N/A|2
+416|423|HOME|IMPROVED|Atorvastatin|Daily weights, low-salt diet|Internal Medicine clinic in 2 weeks|4
+417|424|LONG-TERM CARE|IMPROVED|Aspirin|Keep wound dry for 7 days|Family doctor in 1 week|7
+418|425|HOME|UNCHANGED|Salbutamol inhaler|N/A|N/A|3
+419|426|REHABILITATION FACILITY|STABLE|Lisinopril|Daily weights, low-salt diet|Internal Medicine clinic in 2 weeks|1
+420|427|HOME|unchanged|Aspirin|Daily weights, low-salt diet|Surgical clinic in 10 days|3
+421|428|HOME|STABLE|Aspirin|Daily weights, low-salt diet|Family doctor in 1 week|10
+422|429|HOME|IMPROVED|Metformin|Return if symptoms worsen|Surgical clinic in 10 days|4
+423|430|HOME|STABLE|Warfarin|Complete antibiotic course|N/A|1
+424|431|HOME WITH HOME CARE|STABLE|Salbutamol inhaler|Complete antibiotic course|Surgical clinic in 10 days|1
+425|432|REHABILITATION FACILITY|IMPROVED|Salbutamol inhaler|Return if symptoms worsen|Oncology clinic in 2 weeks|18
+426|433|HOME|STABLE|Metformin|N/A|Family doctor in 1 week|6
+427|434|HOME|STABLE|Lisinopril|Complete antibiotic course|Family doctor in 1 week|2
+428|435|REHABILITATION FACILITY|IMPROVED|Metformin|Complete antibiotic course|Surgical clinic in 10 days|9
+429|436|HOME|IMPROVED|Atorvastatin|Daily weights, low-salt diet|Internal Medicine clinic in 2 weeks|3
+430|437|N/A|EXPIRED|N/A||N/A|9
+431|438|rehabilitation facility|STABLE|Salbutamol inhaler|Complete antibiotic course|Family doctor in 1 week|9
+432|439|HOME|IMPROVED|Salbutamol inhaler|N/A|Family doctor in 1 week|2
+433|440|HOME|STABLE|Salbutamol inhaler|Complete antibiotic course|Gastroenterology clinic in 2 weeks|3
+434|441|HOME WITH HOME CARE|STABLE|Salbutamol inhaler|Complete antibiotic course|Family doctor in 1 week|3
+435|442|HOME|IMPROVED|Lisinopril|Complete antibiotic course|Family doctor in 1 week|6
+436|443||EXPIRED|N/A|N/A|N/A|3
+437|444|HOME|IMPROVED|N/A|Daily weights, low-salt diet|Neurology clinic in 2 weeks|3
+438|445|N/A|EXPIRED||N/A|N/A|3
+439|446|HOME|STABLE|Amlodipine|Daily weights, low-salt diet|Family doctor in 1 week|8
+440|447|LONG-TERM CARE|IMPROVED|Warfarin|Daily weights, low-salt diet|N/A|2
+441|448|OTHER HOSPITAL|STABLE|Warfarin|Complete antibiotic course|Pulmonology clinic in 2 weeks|11
+442|449|LONG-TERM CARE|STABLE|Metformin, Atorvastatin|Complete antibiotic course|Infectious Disease clinic in 2 weeks|3
+443|451|HOME|IMPROVED|Amlodipine|Return if symptoms worsen||3
+444|453|HOME WITH HOME CARE|IMPROVED|Warfarin|Daily weights, low-salt diet|Family doctor in 1 week|3
+445|454|HOME|IMPROVED|Metformin, Atorvastatin|Keep wound dry for 7 days|Family doctor in 1 week|1
+446|455|HOME|STABLE|Salbutamol inhaler|Return if symptoms worsen|Surgical clinic in 10 days|2
+447|456|HOME WITH HOME CARE|STABLE|Aspirin|Complete antibiotic course|Family doctor in 1 week|10
+448|457|OTHER HOSPITAL|STABLE|Warfarin|Return if symptoms worsen|Surgical clinic in 10 days|3
+449|458|HOME|STABLE|Salbutamol inhaler|Keep wound dry for 7 days|Cardiology clinic in 2 weeks|1
+450|459|REHABILITATION FACILITY|IMPROVED|Salbutamol inhaler|N/A|Family doctor in 1 week|1
+451|460|REHABILITATION FACILITY|IMPROVED|Atorvastatin|N/A|N/A|3
+452|461|HOME|UNCHANGED|Metformin, Atorvastatin|Daily weights, low-salt diet|Family doctor in 1 week|4
+453|462|N/A|EXPIRED|N/A|N/A|N/A|1

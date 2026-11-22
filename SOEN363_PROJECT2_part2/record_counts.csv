@@ -1,0 +1,19 @@
+entity,"A (North America, TXT)","B (Europe, CSV)","C (Asia, XML)","D (Africa, JSON)"
+Healthcare_Professional,72,72,72,72
+Unit,12,12,12,12
+ICD9_Code,62,62,62,62
+Patient,254,259,251,267
+Admission,469,476,455,492
+TriageAssessment,363,365,358,376
+Diagnosis,1000,1018,974,1057
+ClinicalNote,1951,1977,1842,2024
+SurgicalProcedure,127,110,120,128
+DischargeRecord,453,459,434,463
+DiagnosticOrder,806,802,818,854
+DiagnosticExamination,433,432,445,451
+RadiologyExamination,332,332,327,358
+RadiologyReport,332,332,327,358
+UnitStay,981,996,923,971
+CriticalCareRecord,449,471,383,388
+GeneralWardRecord,890,899,853,951
+TOTAL,8986,9074,8656,9284

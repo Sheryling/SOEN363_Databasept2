@@ -1,0 +1,477 @@
+episode_no;patient_no;admitting_clinician;episode_start;episode_type;referral_source;reason;insurance_info;condition_on_arrival;episode_end;episode_status
+1;1;6;25/01/2024 21:12;Urgent;Inter-hospital Transfer;Abdominal swelling;Alpina Assist (private);Serious;31/01/2024 00:12;Discharged
+2;1;1;25/03/2024 21:00;Emergency;A&E;Seizure;EuroCare Mutual;Serious;03/04/2024 12:08;Discharged
+3;2;18;13/05/2025 15:12;Urgent;GP Referral;Chemotherapy;Self-pay;Stable;21/05/2025 03:13;Discharged
+4;2;20;11/07/2025 04:17;Urgent;Inter-hospital Transfer;Reduced urine output;Statutory Health Insurance;Fair;20/07/2025 00:22;Discharged
+5;2;4;NULL;Emergency;A&E;Weakness and confusion;Statutory Health Insurance;Fair;19/08/2025 00:41;Discharged
+6;3;2;22/01/2024 20:25;Emergency;A&E;Wheezing;Alpina Assist (private);Serious;03/02/2024 11:00;Transferred Out
+7;3;3;09/06/2024 21:43;Emergency;A&E;Productive cough and fever;Alpina Assist (private);Critical;14/06/2024 22:40;Discharged
+8;3;3;25/09/2024 02:19;Emergency;A&E;Shortness of breath;Self-pay;Serious;03/10/2024 02:00;Discharged
+9;3;2;28/10/2024 21:14;Emergency;A&E;Knee pain;NULL;Fair;03/11/2024 22:28;Transferred Out
+10;3;19;27/12/2024 06:16;Planned;GP Referral;Cough with blood;Self-pay;Stable;28/12/2024 12:02;Discharged
+11;4;10;12/02/2024 03:25;Urgent;GP Referral;Shortness of breath;Alpina Assist (private);Stable;20/02/2024 19:59;Discharged
+12;4;1;15/10/2026 21:20;Emergency;A&E;Groin swelling;Alpina Assist (private);Fair;;In Hospital
+13;5;3;27/01/2024 21:48;Emergency;A&E;Low oxygen saturation;Alpina Assist (private);Serious;20/02/2024 05:36;Discharged
+14;5;2;21/05/2024 15:16;Emergency;A&E;Low oxygen saturation;EuroCare Mutual;Fair;03/06/2024 04:55;DISCHARGED
+15;6;9;14/09/2025 01:12;Emergency;Inter-hospital Transfer;Shortness of breath;Statutory Health Insurance;Fair;25/09/2025 09:46;Transferred Out
+16;7;5;21/06/2024 16:07;Planned;GP Referral;Wrist injury;Alpina Assist (private);Fair;24/06/2024 06:45;Discharged
+17;7;19;27/09/2024 21:30;Planned;GP Referral;Planned surgery;Self-pay;Stable;01/10/2024 17:35;Discharged
+18;7;2;13/01/2025 00:40; Emergency;A&E;Back pain after fall;Alpina Assist (private);Fair;14/01/2025 17:14;Discharged
+19;8;1;26/02/2025 17:56;Emergency;A&E;Wheezing;Alpina Assist (private);Critical;15/03/2025 12:37;Discharged
+20;8;22;27/07/2025 02:37;Emergency;Inter-hospital Transfer;Fever and low blood pressure;NULL;Stable;28/07/2025 10:11;Discharged
+21;8;1;06/10/2025 14:35;Emergency;A&E;Burning urination with fever;Statutory Health Insurance;Critical;15/10/2025 18:04;Discharged
+22;9;17;22/05/2024 10:12;Planned;GP Referral;Black stools;Alpina Assist (private);Fair;23/05/2024 09:03;Transferred Out
+394;209;1;02/05/2025 10:15;Emergency;A&E;Low oxygen saturation;Self-pay;Critical;07/05/2025 19:19 ; see attached;Discharged
+23;10;4;25/01/2025 13:07;Urgent;A&E;Fever and low blood pressure;Alpina Assist (private);Serious;04/02/2025 19:36;Discharged
+24;11;5;05/02/2025 06:07;Emergency;Inter-hospital Transfer;Fall with hip pain;Statutory Health Insurance;Critical;12/02/2025 15:59;Discharged
+25;11;4;26/06/2025 04:19;Urgent;A&E;Fall with hip pain;Statutory Health Insurance;Stable;01/07/2025 19:32;Transferred Out
+26;11;4;08/11/2025 15:58;Emergency;A&E;Wrist injury;Statutory Health Insurance;Serious;10/11/2025 08:53;Discharged
+27;11;20;26/12/2025 03:40;Urgent;Inter-hospital Transfer;Reduced urine output;Alpina Assist (private);Fair;28/12/2025 05:34;Discharged
+28;12;11;02/04/2025 03:25;Planned;Outpatient Clinic;Wheezing;Alpina Assist (private);Serious;04/04/2025 21:14;Discharged
+29;12;1;24/06/2025 19:11;Emergency;A&E;Fatigue;EuroCare Mutual;Stable;28/06/2025 04:10;Died
+30;13;4;04/12/2025 07:00;Emergency;A&E;Leg swelling;Statutory Health Insurance;STABLE;05/12/2025 17:53;Transferred Out
+31;14;18;20/04/2025 20:48;Planned;Outpatient Clinic;Cough with blood;Alpina Assist (private);Stable;24/04/2025 08:39;Discharged
+32;14;4;10/08/2025 12:46;Emergency;A&E;Black stools;Self-pay;Serious;13/08/2025 09:21;Discharged
+33;14;17;16/09/2025 07:05;Emergency;Inter-hospital Transfer;Groin swelling;Self-pay;Fair;24/09/2025 04:04;Discharged
+34;15;18;07/01/2025 05:25;Planned;Outpatient Clinic;Weight loss;Statutory Health Insurance;Stable;08/01/2025 10:25;Discharged
+35;16;17;25/10/2024 12:12;Planned;GP Referral;Black stools;;Serious;27/10/2024 09:01;Discharged
+36;17;5;09/10/2024 02:56;Planned;GP Referral;Knee pain;Statutory Health Insurance;Stable;11/10/2024 01:58;Discharged
+37;17;3;09/03/2025 00:56;Emergency;A&E;Abdominal swelling;Self-pay;Fair;15/03/2025 06:18;Discharged
+38;17;4;16/06/2025 19:28;Emergency;A&E;Fainting episode;EuroCare Mutual;Fair;25/06/2025 14:50;Discharged
+39;18;5;15/09/2024 23:07;Urgent;GP Referral;Leg swelling;Self-pay;Fair;17/09/2024 00:49;Discharged
+40;18;3;21/12/2024 06:53;Urgent;A&E;Wheezing;Self-pay;Serious;26/12/2024 21:39;Discharged
+41;19;4;11/01/2024 10:25;Emergency;A&E;Productive cough and fever;Self-pay;Fair;01/02/2024 01:51;Discharged
+42;19;3;04/05/2024 14:32;Emergency;A&E;Low oxygen saturation;Alpina Assist (private);Critical;14/05/2024 15:04;Died
+43;20;1;11/03/2024 03:48;Emergency;A&E;Productive cough and fever;Self-pay;Serious;14/03/2024 13:38;Discharged
+44;21;2;04/08/2024 12:07;Emergency;A&E;Head injury;Self-pay;Serious;18/08/2024 09:28;Discharged
+45;21;11;30/10/2024 11:47;Emergency;Inter-hospital Transfer;Wheezing;Alpina Assist (private);Serious;13/11/2024 02:16;Discharged
+46;22;8;16/05/2024 08:56;Planned;Outpatient Clinic;Syncope with chest pain;Statutory Health Insurance;Serious;18/05/2024 03:25;Discharged
+47;22;1;02/07/2024 04:09;Emergency;A&E;Chest pain;NULL;Serious;07/07/2024 13:59;Discharged
+48;23;3;19/04/2025 12:12;Emergency;A&E;Shortness of breath;EuroCare Mutual;Serious  ;22/04/2025 23:16;Discharged
+49;23;3;24/08/2025 04:04;Emergency;A&E;Severe headache;;Stable;30/08/2025 14:51;Died
+50;24;1;12/10/2025 22:48;Emergency;A&E;Wound redness;Statutory Health Insurance;Serious;24/10/2025 09:47;Discharged
+51;25;18;04/09/2024 12:56;Urgent;Inter-hospital Transfer;Planned surgery;Self-pay;Critical;12/09/2024 07:00;Discharged
+52;26;6;06 Dec 2024 22:33;Urgent;GP Referral;Wound redness;Alpina Assist (private);Critical;09/12/2024 21:30;Discharged
+53;26;19;27/03/2025 00:33;Planned;GP Referral;Weight loss;EuroCare Mutual;Serious;01/04/2025 01:01;Discharged
+54;26;1;06/05/2025 05:17;Emergency;A&E;Groin swelling;;Serious;07/05/2025 16:08;Discharged
+55;27;4;16/01/2024 02:00;Emergency;A&E;Abdominal pain;Alpina Assist (private);Fair;06/02/2024 15:40;Discharged
+56;28;5;29/01/2024 03:12;Planned;Outpatient Clinic;Back pain after fall;Self-pay;Stable;01/02/2024 16:02;Discharged
+57;30;4;22/09/2025 05:12;Emergency;A&E;Head injury;EuroCare Mutual;Serious;07/10/2025 01:10;Discharged
+58;30;2;04/03/2026 00:19;Emergency;A&E;Shortness of breath;EuroCare Mutual;Serious;15/03/2026 00:06;Discharged
+59;31;2;13/05/2025 07:48;Emergency;A&E;Abdominal swelling;Alpina Assist (private);Critical;22/05/2025 03:34;Discharged
+60;31;4;06/10/2025 01:17;Emergency;A&E;Shortness of breath;Self-pay;Fair;11/10/2025 13:48;Discharged
+61;32;2;28/06/2025 16:33;Emergency;A&E;High blood sugar;EuroCare Mutual;Critical;10/07/2025 01:44;Discharged
+62;32;1;03/09/2025 23:23;Urgent;A&E;Severe headache;Self-pay;Serious;15/09/2025 18:47;Discharged
+63;33;10;06/03/2026 16:00;Urgent;GP Referral;Low oxygen saturation;Alpina Assist (private);Critical;07/03/2026 17:21;Died
+64;34;22;15/10/2024 07:12;Emergency;Inter-hospital Transfer;Painful red swollen leg;Alpina Assist (private);Critical;24/10/2024 08:18;Discharged
+65;35;4;28/09/2024 16:48;Emergency;A&E;Weakness and confusion;Statutory Health Insurance;Serious;05/10/2024 22:04;Discharged
+66;35;6;17/01/2025 21:40;Planned;GP Referral;Back pain after fall;Self-pay;Stable;19/01/2025 05:53;Discharged
+67;35;11;18/04/2025 06:03;Urgent;GP Referral;Wheezing;Statutory Health Insurance;Stable;21/04/2025 18:35;Discharged
+68;36;20;05/08/2024 23:41;Planned;GP Referral;Weakness and confusion;Alpina Assist (private);Serious;07/08/2024 07:27;Discharged
+69;36;17;16/12/2024 03:11;Urgent;GP Referral;Vomiting;Alpina Assist (private);Stable;19/12/2024 04:52;Discharged
+70;37;10;18/02/2024 08:48;Emergency;Inter-hospital Transfer;Productive cough and fever;EuroCare Mutual;Fair;21/02/2024 05:37;Discharged
+71;37;3;18/06/2024 08:26;Emergency;A&E;Weight loss;EuroCare Mutual;Fair;23/06/2024 18:54;Discharged
+72;37;2;27/10/2024 06:00;Emergency;A&E;Planned surgery;EuroCare Mutual;Fair;28/10/2024 22:05;Discharged
+73;37;3;28/12/2024 18:33;Emergency;A&E;Fall with hip pain;Self-pay;Fair;04/01/2025 04:10;Discharged
+74;37;3;23/01/2025 14:03;Emergency;A&E;Chest pain;EuroCare Mutual;Fair;26/01/2025 08:34;Transferred Out
+75;38;7;12/09/2025 02:12;Planned;GP Referral;Wrist injury;EuroCare Mutual;Serious;13/09/2025 09:02;Discharged
+76;39;3;02/10/2024 05:00;Emergency;A&E;Fever and low blood pressure;EuroCare Mutual;Serious;11/10/2024 08:39;Discharged
+77;40;4;11/11/2024 10:00;Emergency;A&E;Black stools;Statutory Health Insurance;Stable;15/11/2024 00:39;Discharged
+78;40;1;09/03/2025 07:15;Emergency;A&E;Groin swelling;Self-pay;Fair;17/03/2025 00:05;Transferred Out
+79;40;3;15/07/2025 11:02;  Emergency ;A&E;Seizure;Alpina Assist (private);Critical;25/07/2025 10:38;Discharged
+80;41;10;19/01/2026 11:41;Planned;GP Referral;Low oxygen saturation;Statutory Health Insurance;Stable;22/01/2026 23:40;Discharged
+81;5843;17;24/12/2024 23:33;Emergency;Inter-hospital Transfer;Black stools;EuroCare Mutual;Stable;01/01/2025 04:06;Discharged
+82;42;4;06/03/2025 02:35;Urgent;A&E;Vomiting;Statutory Health Insurance;Stable;11/03/2025 14:09;Discharged
+83;42;3;01/08/2025 04:38;Emergency;A&E;Wound redness;Self-pay;Stable;08/08/2025 08:12;Discharged
+84;43;4;03/10/2025 14:56;Urgent;A&E;Burning urination with fever;Alpina Assist (private);Stable;06/10/2025 19:19;Discharged
+85;44;3;15/01/2024 03:41;Emergency;A&E;Painful red swollen leg;Alpina Assist (private);Serious;23/01/2024 09:43;Discharged
+86;45;1;26/01/2026 07:56;Emergency;A&E;Productive cough and fever;Self-pay;Stable;30/01/2026 05:07;Discharged
+87;46;1;21/07/2024 15:41;Emergency;A&E;Weakness and confusion;Statutory Health Insurance;Stable;25/07/2024 08:02;Transferred Out
+88;46;5;11/10/2024 23:50;Planned;Outpatient Clinic;Knee pain;Alpina Assist (private);Serious;15/10/2024 22:40; Discharged
+89;47;13;16/03/2026 22:00;Urgent;GP Referral;Head injury;Self-pay;Stable;24/03/2026 18:42;Died
+90;48;17;14/11/2024 13:25;Emergency;Inter-hospital Transfer;Vomiting;Alpina Assist (private);Stable;17/11/2024 21:25;Discharged
+91;49;17;12/01/2024 00:56;Urgent;GP Referral;Abdominal pain;Self-pay;Fair;18/01/2024 23:18;Discharged
+92;49;2;13/06/2024 06:07;Emergency;A&E;Intoxication;Self-pay;Fair;21/06/2024 14:32;Discharged
+93;50;4;26/07/2025 22:25;Emergency;A&E;Intoxication;Self-pay;Stable;29/07/2025 01:06;Discharged
+94;50;3;22/10/2025 22:56;Emergency;A&E;Syncope with chest pain;Statutory Health Insurance;Serious;02/11/2025 14:15;Discharged
+95;51;4;16/01/2025 17:07;Emergency;A&E;Shortness of breath;Statutory Health Insurance;Serious;27/01/2025 13:23;Discharged
+96;52;3;20/05/2025 02:25;Urgent;A&E;Wheezing;;Critical;29/05/2025 02:01;Discharged
+97;52;1;;Emergency;A&E;Shortness of breath;Alpina Assist (private);Fair;15/09/2025 18:57;Transferred Out
+98;52;1;12/11/2025 11:59;Emergency;A&E;Fever and low blood pressure;Alpina Assist (private);Fair;24/11/2025 08:56;Discharged
+99;53;1;08/03/2026 23:41;Emergency;A&E;Shortness of breath;Self-pay;Fair;13/03/2026 18:54;Discharged
+100;53;2;19/07/2026 15:01;Emergency;A&E;Black stools;Self-pay;Serious;06/08/2026 09:31;Discharged
+101;54;20;15/02/2024 15:33;Planned;Outpatient Clinic;Fatigue;EuroCare Mutual;Fair;19/02/2024 12:52;Discharged
+102;54;18;19/05/2024 08:34;Planned;GP Referral;Planned surgery;EuroCare Mutual;Stable;22/05/2024 20:29;Discharged
+103;55;8;23/09/2024 12:07;Urgent;GP Referral;Syncope with chest pain;Self-pay;Fair;01/10/2024 16:55;Discharged
+104;55;7;12/12/2024 05:43;Urgent;Inter-hospital Transfer;Knee pain;Self-pay;Fair;18/12/2024 22:42;Discharged
+105;55;19;04/01/2025 02:39;Planned;Outpatient Clinic;Cough with blood;Statutory Health Insurance;Stable;06/01/2025 03:08;Discharged
+106;56;4;12/08/2024 06:12;Emergency;A&E;Abdominal swelling;Self-pay;Stable;19/08/2024 04:39;Discharged
+107;57;2;05/02/2025 21:56;Emergency;A&E;Sudden weakness;Self-pay;Critical;15/02/2025 16:38;Discharged
+108;58;1;31/08/2024 06:56;Emergency;A&E;Painful red swollen leg;Alpina Assist (private);Stable;09/09/2024 04:42;Discharged
+109;58;5;11/10/2024 04:48;Emergency;Inter-hospital Transfer;Intoxication;Statutory Health Insurance;Critical;16/10/2024 08:01;Discharged
+110;59;1;28/03/2026 20:07;Emergency;A&E;Fever and low blood pressure;Alpina Assist (private);Critical;11/04/2026 07:12;Died
+111;60;1;26/10/2026 15:15;Emergency;A&E;Chest pain;Statutory Health Insurance;Critical;;In Hospital
+112;61;22;11/01/2026 20:00;Urgent;GP Referral;Painful red swollen leg;Self-pay;Stable;12/01/2026 21:00;Discharged
+113;62;9;31/02/2024 08:00;Emergency;Inter-hospital Transfer;Palpitations;NULL;Fair;18/08/2024 01:54;Discharged
+114;63;4;06/12/2025 02:56;Emergency;A&E;Sudden weakness;Statutory Health Insurance;Stable;11/12/2025 20:19;Discharged
+115;64;1;10/08/2025 18:00;Emergency;A&E;Chest pain;EuroCare Mutual;Serious  ;19/08/2025 23:39;Discharged
+116;65;1;12/03/2024 05:12;Emergency;A&E;Shortness of breath;Alpina Assist (private);Stable;14/03/2024 19:13;Discharged
+117;65;7;05/08/2024 12:57;Planned;Outpatient Clinic;Fall with hip pain;Alpina Assist (private);Stable;08/08/2024 04:46;Discharged
+118;65;3;09/12/2024 21:45;Urgent;A&E;Chest pain;Alpina Assist (private);Critical;20/12/2024 13:59;Died
+119;66;2;24/08/2024 15:07;emergency;A&E;Knee pain;Statutory Health Insurance;Fair;29/08/2024 10:05;Discharged
+120;67;2;10/10/2025 22:41;Emergency;A&E;Wheezing;Self-pay;Fair;15/10/2025 10:00;Discharged
+121;68;2;02/08/2025 04:25;Urgent;A&E;Weight loss;Statutory Health Insurance;Stable;08/08/2025 02:41;Discharged
+122;68;1;26/09/2025 06:15;Urgent;A&E;Chest pain;EuroCare Mutual;Serious;04/10/2025 20:05;Discharged
+123;68;1;07/02/2026 04:13;Emergency;A&E;Black stools;Self-pay;Stable;10/02/2026 13:35;Transferred Out
+124;69;8;22/07/2024 17:00;Urgent;GP Referral;Chest pain;Self-pay;Stable;28/07/2024 14:50;Discharged
+125;69;11;13/11/2024 07:58;URGENT;GP Referral;Wheezing;EuroCare Mutual;Stable;21/11/2024 00:10;Discharged
+126;69;2;27/03/2025 13:44;Emergency;A&E;Fever and confusion;Statutory Health Insurance;Fair;03/04/2025 00:04;Discharged
+127;69;12;13/08/2025 12:27;Emergency;Inter-hospital Transfer;Head injury;;Serious;19/08/2025 03:25;Discharged
+128;69;4;04/12/2025 20:40;Emergency;A&E;Black stools;Self-pay;Fair;11/12/2025 10:58;Discharged
+129;70;1;07/11/2024 10:48;Emergency;A&E;Severe headache;Self-pay;Serious;09/11/2024 22:33;Discharged
+130;70;4;11/03/2025 02:07;Emergency;A&E;Fever and confusion;Statutory Health Insurance;Fair;27/03/2025 02:22;Transferred Out
+131;71;1;23/09/2024 18:07;Urgent;A&E;Abdominal pain;Alpina Assist (private);Fair;28/09/2024 02:08;Discharged
+132;71;6;20/01/2025 03:00;Planned;Outpatient Clinic;Wound redness;Self-pay;Stable;21/01/2025 09:21;Discharged
+133;71;5;19/02/2025 17:25;Planned;GP Referral;Wrist injury;Self-pay;Stable;21/02/2025 23:40;Discharged
+134;71;2;18/06/2025 16:18;Emergency;A&E;Fever and low blood pressure;Statutory Health Insurance;Serious;26/06/2025 15:28;Discharged
+135;71;3;15/11/2025 15:27;Emergency;A&E;Vomiting;EuroCare Mutual;Stable;23/11/2025 10:05;Discharged
+136;72;4;16/06/2025 08:12;Emergency;A&E;Chest pain;EuroCare Mutual;Fair;24/06/2025 00:32;Discharged
+137;72;5;17/07/2025 10:07;Urgent;Inter-hospital Transfer;Knee pain;Self-pay;Fair;28/07/2025 22:44;Discharged
+138;73;4;20/05/2024 13:56;Emergency;A&E;Severe headache;Self-pay;Serious;29/05/2024 03:27;Discharged
+139;73;20;2024-06-29T03:27;Planned  ;Outpatient Clinic;High blood sugar;Statutory Health Insurance;Serious;15/07/2024 15:31;Discharged
+140;73;3;03/10/2024 16:38;Emergency;A&E;Chest pain;EuroCare Mutual;Stable;09/10/2024 04:37;Discharged
+141;5395;3;08/11/2024 13:51;Emergency;A&E;Fever and confusion;Alpina Assist (private);Fair;13/11/2024 01:28;Discharged
+142;74;9;23/03/2024 10:33;Emergency;Inter-hospital Transfer;Shortness of breath;Statutory Health Insurance;Stable;29/03/2024 21:42;Discharged
+143;74;1;13/07/2024 08:27;Emergency;A&E;Shortness of breath;EuroCare Mutual;Critical;31/07/2024 10:18;Died
+144;75;17;17/09/2024 17:00;Urgent;Inter-hospital Transfer;Abdominal pain;Statutory Health Insurance;Fair;25/09/2024 13:57;Discharged
+145;76;4;03/09/2024 21:07;Emergency;A&E;Sudden weakness;;Critical;06/09/2024 13:50;Died
+146;77;9;26/02/2024 04:00;Planned;GP Referral;Shortness of breath;Alpina Assist (private); Fair;31/02/2024 08:00;Discharged
+147;78;1;03/08/2024 23:25;Emergency;A&E;Intoxication;Alpina Assist (private);Stable;11/08/2024 12:30;Discharged
+148;79;18;09/10/2024 00:07;Planned;GP Referral;Chemotherapy;;Stable;11/10/2024 08:15;Discharged
+149;79;5;23/12/2024 09:02;Planned;GP Referral;Knee pain;Alpina Assist (private);Stable;23/12/2024 01:40;Discharged
+150;80;1;02/10/2024 22:33;Emergency;A&E;Chest pain;Statutory Health Insurance;Critical;14/10/2024 19:25;Discharged
+151;80;3;24/12/2024 14:11;Emergency;A&E;Painful red swollen leg;;  Critical ;06/01/2025 13:49;Discharged
+152;81;2;01/08/2024 10:33;Emergency;A&E;Low oxygen saturation;Statutory Health Insurance;Serious;10/08/2024 09:44;Discharged
+153;82;18;13/06/2025 14:41;Planned;  GP Referral ;Chemotherapy;Statutory Health Insurance;Serious;16/06/2025 20:34;Transferred Out
+154;83;1;21/10/2025 09:12;Emergency;A&E;Chest pain;Statutory Health Insurance;Fair;27/10/2025 17:28;Discharged
+155;83;2;23/01/2026 00:34;Emergency;  A&E ;Palpitations;EuroCare Mutual;Serious;27/01/2026 17:07;Discharged  
+156;84;18;05/08/2025 17:33;Planned;GP Referral;Chemotherapy;EuroCare Mutual;Stable;07/08/2025 06:54;Discharged
+157;84;2;01/01/2026 04:47;Emergency;A&E;Fever and low blood pressure;EuroCare Mutual;Fair;02/01/2026 16:31;Discharged
+158;84;4;20/02/2026 14:22;Emergency;A&E;Fatigue;Statutory Health Insurance;Fair;28/02/2026 00:24;Discharged
+159;85;18;04/05/2025 00:56;Planned;GP Referral;Planned surgery;NULL;Stable;06/05/2025 04:12;Discharged
+160;86;1;03/12/2024 06:41;Emergency;A&E;Head injury;Statutory Health Insurance;Fair;06/12/2024 04:37;Discharged
+161;87;4;24/12/2024 05:25;Emergency;A&E;Head injury;Self-pay;Stable;29/12/2024 03:32;  Discharged 
+162;87;9;02/05/2025 10:39;planned;Outpatient Clinic;Syncope with chest pain;EuroCare Mutual;Serious;05/05/2025 07:37;Discharged
+163;88;17;05/03/2026 21:12;Planned;GP Referral;Vomiting;Self-pay;Stable;07/03/2026 14:44;Discharged
+164;89;4;11/05/2025 04:33;Urgent;A&E;Sudden weakness;EuroCare Mutual;Fair;19/05/2025 13:38;Discharged
+165;90;2;03/10/2025 04:07;Emergency;A&E;Fever and low blood pressure;Self-pay;Stable;04/10/2025 19:25;Discharged
+166;91;2;29/04/2024 02:56;Emergency;A&E;Burning urination with fever;NULL;Serious;15/05/2024 17:59;Discharged
+167;91;1;10/09/2024 02:28;Urgent;A&E;Chemotherapy;EuroCare Mutual;Fair;11/09/2024 10:36;Transferred Out
+168;92;1;22/02/2024 21:56;Emergency;A&E;Fainting episode;Alpina Assist (private);Serious;08/03/2024 05:49;Discharged
+169;93;5;13/04/2025 00:25;Emergency;Inter-hospital Transfer;Leg swelling;Self-pay;Stable;15/04/2025 03:56;Discharged
+170;94;20;14/08/2024 09:33;Emergency  ;Inter-hospital Transfer;High blood sugar;Alpina Assist (private);Serious;20/08/2024 15:15;Discharged
+171;94;2;17/10/2024 11:42;Emergency;A&E;Knee pain;Statutory Health Insurance;Stable;18/10/2024 22:03;Transferred Out
+172;94;6;23/01/2025 17:49;Urgent;GP Referral;Abdominal swelling;Alpina Assist (private);Stable;29/01/2025 23:43;Discharged
+173;94;4;24/10/2026 23:44;Urgent;A&E;Low mood;Alpina Assist (private);Stable;;In Hospital
+174;95;2;01/05/2025 08:00;Urgent;A&E;Weight loss;Alpina Assist (private);Fair;03/05/2025 02:42;Transferred Out
+175;95;4;22/09/2025 12:02;Emergency;A&E;Severe headache;Self-pay;Stable;26/09/2025 22:08;Discharged
+176;95;18;24/11/2025 13:00;Planned;GP Referral;Chemotherapy;Self-pay;Serious;26/11/2025 06:35;Discharged
+177;96;18;05/09/2024 05:12;planned;GP Referral  ;Planned surgery;Statutory Health Insurance;Stable;06/09/2024 12:56;Discharged
+178;96;5;30/11/2024 22:45;Planned;Outpatient Clinic;Wrist injury;Statutory Health Insurance;Serious;03/12/2024 06:24;Discharged
+179;96;2;10/02/2025 03:41;Emergency;A&E;Abdominal swelling;Statutory Health Insurance;Fair;13/02/2025 00:16;Discharged
+180;97;12;01/12/2024 21:33;Emergency;Inter-hospital Transfer;Severe headache;Self-pay;Stable;09/12/2024 15:43;Discharged
+181;98;3;27/04/2025 06:12;Emergency;A&E;Intoxication;EuroCare Mutual;Stable;06/05/2025 09:41;Discharged
+182;99;20;06/02/2024 05:48;Urgent;GP Referral;Weakness and confusion;Statutory Health Insurance;Stable;08/02/2024 18:18;Discharged
+183;100;3;30/01/2024 21:00;Emergency;A&E;Black stools;EuroCare Mutual;Fair;07/02/2024 17:32;Discharged  
+184;100;3;01/05/2024 17:06;Emergency;A&E;Low mood;;Fair;05/05/2024 16:38;Discharged
+185;100;5;09/08/2024 13:34;Urgent;GP Referral;Intoxication;EuroCare Mutual;Stable;11/08/2024 04:10;Discharged
+186;100;2;16/12/2024 11:58;Emergency;A&E;Fatigue;Statutory Health Insurance;Fair;20/12/2024 00:30;Discharged
+187;100;4;10/05/2025 08:52;Emergency;A&E;Shortness of breath;Statutory Health Insurance;Critical;14/05/2025 14:00;Died
+188;101;12;03/12/2025 09:12;Planned;Outpatient Clinic;Head injury;Alpina Assist (private);Stable;04/12/2025 20:30;Discharged
+189;102;2;12/07/2024 12:25;Emergency;A&E;Fever and low blood pressure;Alpina Assist (private);Fair;24/07/2024 01:13;Discharged
+190;103;3;26/01/2024 18:07;Urgent;A&E;Low mood;Statutory Health Insurance;Stable;30/01/2024 04:26;Transferred Out
+191;104;3;21/02/2025 09:41;Emergency;A&E;Abdominal pain;Statutory Health Insurance;Critical;03/03/2025 08:10;Discharged
+192;105;1;17/11/2024 13:48;Emergency;A&E;Low mood;Alpina Assist (private);Fair;24/11/2024 11:36;Discharged
+193;105;17;13/04/2025 05:38;Planned;Outpatient Clinic;Abdominal pain;Alpina Assist (private);Stable;14/04/2025 03:39;Discharged
+194;105;3;09/07/2025 04:52;Emergency;A&E;Wound redness;EuroCare Mutual;Fair;15/07/2025 05:16;Discharged
+195;105;17;26/07/2025 06:30;Planned;GP Referral;Groin swelling;Alpina Assist (private);Fair;28/07/2025 06:51;Discharged
+196;106;4;27/01/2025 05:56;Emergency;A&E;High blood sugar;Self-pay;Stable;29/01/2025 04:57;Discharged
+197;106;2;18/03/2025 07:57;Urgent;A&E;Painful red swollen leg;Statutory Health Insurance;Serious;31/03/2025 02:59;Discharged
+198;106;4;24/08/2025 22:46;Emergency;A&E;Wheezing;Self-pay; Critical;14/09/2025 23:03;Discharged
+199;107;9;02/06/2024 01:00;Emergency;Inter-hospital Transfer;Shortness of breath;Self-pay;Fair;14/06/2024 20:20;Discharged
+200;108;4;06/12/2024 05:48;Urgent;A&E;Cough with blood;Alpina Assist (private);Stable;12/12/2024 04:11;Discharged
+201;109;2;24/07/2025 23:48;Urgent;A&E;Fainting episode;EuroCare Mutual;FAIR;01/08/2025 08:48;Discharged
+202;109;6;28/09/2025 21:43;Emergency;Inter-hospital Transfer;Fall with hip pain;Statutory Health Insurance;Stable;30/09/2025 16:14;Discharged
+203;109;22;31/10/2025 04:06;Urgent;Inter-hospital Transfer;Painful red swollen leg;NULL;Stable;06/11/2025 22:31;Discharged
+204;110;3;26/04/2024 03:48;Emergency;A&E;Head injury;NULL;Stable;01/05/2024 15:37;Discharged
+205;111;3;22/08/2025 18:56;Emergency;A&E;Shortness of breath;Self-pay;Fair;30/08/2025 16:29;Discharged
+206;111;2;22/01/2026 00:27;Emergency;A&E;Vomiting;Statutory Health Insurance;Serious;14/02/2026 01:34;Discharged
+207;112;22;20/06/2024 18:12;Emergency;Inter-hospital Transfer;Fever and low blood pressure;Alpina Assist (private);Serious;05/07/2024 23:29; Discharged
+208;112;1;18/07/2024 18:13;Urgent;A&E;Reduced urine output;Alpina Assist (private);Stable;21/07/2024 06:30;Discharged
+209;112;4;02/08/2024 13:46;Emergency;A&E;Reduced urine output;Statutory Health Insurance;Stable;08/08/2024 20:16;Discharged
+210;113;4;11/04/2024 20:25;Emergency;A&E;Fall with hip pain;Statutory Health Insurance;Fair;15/04/2024 06:24;Discharged
+211;114;3;21/09/2025 13:41;Emergency;A&E;Fever and confusion;Statutory Health Insurance;Critical;24/09/2025 08:31;Died
+212;115;3;20/10/2026 02:19;Emergency;A&E;Severe headache;Self-pay;Fair;;In Hospital
+213;116;19;24/01/2026 18:00;Planned;Outpatient Clinic;Planned surgery;;Stable;26/01/2026 11:51;Discharged
+214;118;3;27/10/2024 22:25;Emergency;A&E;Wheezing;Self-pay;Serious;08 Nov 2024 06:36;Discharged
+215;118;1;29/12/2024 03:47;Emergency;A&E;Fall with hip pain;Alpina Assist (private);Fair;05/01/2025 09:39;Discharged
+216;118;1;22/01/2025 07:15;Urgent;A&E;Chest pain;Statutory Health Insurance;Serious;30/01/2025 04:55;Transferred Out
+217;118;2;28/06/2025 08:12;Emergency;A&E;Palpitations;Alpina Assist (private);Critical;08/07/2025 11:37;Discharged
+218;119;3;08/09/2024 15:12;Emergency;A&E;Chest pain;EuroCare Mutual;Critical;16/09/2024 06:04; Discharged
+219;120;1;31/12/2024 00:12;Emergency;A&E;Palpitations;EuroCare Mutual;Critical;05/01/2025 05:49;Discharged
+220;120;8;24/01/2025 21:37;Emergency;Inter-hospital Transfer;Chest pain;Statutory Health Insurance;Serious;04/02/2025 08:04;Discharged
+221;121;8;19/07/2024 13:00;Emergency;Inter-hospital Transfer;Syncope with chest pain;EuroCare Mutual;Fair;07/08/2024 06:31;Discharged
+222;121;4;15/09/2024 10:45;Emergency;A&E;Seizure;Statutory Health Insurance;Serious;21/09/2024 12:26;Discharged
+223;122;4;16/05/2024 22:25;Emergency;A&E;Reduced urine output;EuroCare Mutual;Stable;20/05/2024 17:07;Discharged
+224;122;1;07/10/2024 13:47;Urgent;A&E;Severe headache;EuroCare Mutual;Fair;12/10/2024 15:53;Discharged
+225;123;1;14/11/2025 09:48;Emergency;A&E;Fainting episode;Statutory Health Insurance;Fair;21/11/2025 20:42;Discharged
+226;124;3;16/01/2024 20:48;Emergency;A&E;Shortness of breath;EuroCare Mutual;Fair;23/01/2024 01:52;Discharged
+227;125;3;10/12/2025 13:25;Emergency;A&E;Severe headache;Alpina Assist (private);Fair;13/12/2025 22:38;Discharged
+228;126;4;17/02/2026 15:41;Emergency;A&E;Abdominal pain;Alpina Assist (private);Fair;22/02/2026 23:50;Discharged
+229;127;20;08/12/2025 17:48;Emergency;Inter-hospital Transfer;High blood sugar;EuroCare Mutual;Critical  ;17/12/2025 08:02;Discharged
+230;128;11;10/03/2025 18:33;Urgent;GP Referral;Shortness of breath;Alpina Assist (private);Serious;20/03/2025 18:59;Discharged
+231;129;11;31/10/2024 17:12;Urgent;Inter-hospital Transfer;Productive cough and fever;Statutory Health Insurance;Stable;04/11/2024 13:58;Discharged
+232;129;4;22/12/2024 02:18;Emergency;A&E;Shortness of breath;EuroCare Mutual;Critical;10/01/2025 03:10;Discharged
+233;129;11;19/02/2025 23:42;Urgent;Inter-hospital Transfer;Low oxygen saturation;;Stable;26/02/2025 22:30;Discharged
+234;130;4;04/08/2024 20:25;Urgent;A&E;Shortness of breath;EuroCare Mutual;Stable;13/08/2024 15:08;Discharged
+235;131;2;27/02/2024 03:12;Emergency;A&E;Syncope with chest pain;Alpina Assist (private);Critical;21/03/2024 14:04;Discharged
+236;131;22;06/05/2024 06:19;Urgent;Inter-hospital Transfer;Painful red swollen leg;EuroCare Mutual;Stable;07/05/2024 14:05;Discharged
+237;132;18;20/01/2024 22:07;Planned;Outpatient Clinic;Cough with blood;Self-pay;Stable;24/01/2024 01:31;Discharged
+238;133;2;11/10/2025 09:48;Emergency;A&E;Wound redness;EuroCare Mutual;Stable;15/10/2025 05:30;Discharged
+239;134;3;30/07/2024 06:12;Emergency;A&E;Seizure;NULL;Serious;04/08/2024 01:12;Discharged
+240;134;1;03/10/2024 11:16;Emergency;A&E;Sudden weakness;Alpina Assist (private);Fair;12/10/2024 05:12;Discharged
+241;134;3;21/02/2025 17:43;Emergency;A&E;Fever and low blood pressure;Alpina Assist (private);Serious;06/03/2025 15:06;Discharged
+242;134;1;24/04/2025 09:49;Emergency;A&E;Chest pain;Self-pay;Fair;30/04/2025 21:20;Discharged
+243;135;4;18/10/2026 22:06;Emergency;A&E;Burning urination with fever;Self-pay;Fair;21/10/2026 19:43;In Hospital
+244;136;1;10/07/2025 09:33;Emergency;A&E;Fever and low blood pressure;Self-pay;Stable;15/07/2025 21:20;Died
+245;137;1;23/11/2025 08:41;Emergency;A&E;Vomiting;Statutory Health Insurance;Stable;01/12/2025 06:03;Transferred Out
+246;138;1;14/01/2024 20:07;Urgent; A&E;Fatigue;Alpina Assist (private);Critical;14/01/2024 04:37;Discharged
+247;138;18;01/05/2024 01:30;Planned;Outpatient Clinic;Chemotherapy;Alpina Assist (private);Fair;01/05/2024 22:48;Discharged
+248;139;2;15/04/2024 06:25;Emergency;A&E;Syncope with chest pain;Alpina Assist (private);Critical;07/05/2024 17:53;Discharged
+249;139;3;07/07/2024 22:49;Emergency;A&E;Seizure;Alpina Assist (private);Fair;11/07/2024 21:25;Discharged
+250;140;8;13/07/2024 11:12;Urgent;GP Referral;Shortness of breath;NULL;Serious;17/07/2024 16:24;Transferred Out
+251;140;4;08/11/2024 14:15;Emergency;A&E;Wound redness;Self-pay;Stable;17/11/2024 17:58;Discharged
+252;141;4;05/06/2024 03:56;Emergency;A&E;Abdominal pain;Alpina Assist (private);Stable;12/06/2024 14:38;Discharged
+253;141;3;26/09/2024 22:56;Emergency;A&E;Fall with hip pain;Self-pay;Fair;03/10/2024 06:58;Discharged
+254;142;1;27/08/2025 00:00;urgent;A&E;Wheezing;NULL;Fair;04/09/2025 13:42;Discharged
+255;143;3;25/12/2024 02:00;Urgent;A&E;Back pain after fall;Statutory Health Insurance;Stable;03/01/2025 02:03;Discharged
+188;101;12;03/12/2025 09:12;Planned;Outpatient Clinic;Head injury;Alpina Assist (private);Stable;04/12/2025 20:30;Discharged
+256;144;8;23/09/2024 13:56;Urgent;Inter-hospital Transfer;Chest pain;Statutory Health Insurance;Serious;02/10/2024 08:30;Discharged
+257;145;17;10/01/2025 03:56;Planned;Outpatient Clinic;Black stools;Statutory Health Insurance;Fair;13/01/2025 08:58;Transferred Out
+258;145;4;19/05/2025 04:34;Emergency; A&E;Vomiting;Alpina Assist (private);Serious;25/05/2025 21:37;Discharged
+178;96;5;30/11/2024 22:45;Planned;Outpatient Clinic;Wrist injury;Statutory Health Insurance;Serious;03/12/2024 06:24;Discharged
+259;145;22;07/06/2025 21:10;Emergency;Inter-hospital Transfer;Fever and low blood pressure;Statutory Health Insurance;Critical;09/06/2025 00:00;Died
+260;146;1;11/10/2024 23:48;Emergency;A&E;Black stools;Self-pay;Stable;20/10/2024 19:29;Discharged
+261;147;18;20/07/2024 02:25;Planned;Outpatient Clinic;Chemotherapy;Alpina Assist (private);Fair;22/07/2024 23:00;Discharged
+262;147;11;18/08/2024 03:30;Urgent;GP Referral;Shortness of breath;EuroCare Mutual;Stable;19/08/2024 14:34;Discharged
+263;148;8;01/10/2024 03:25;Planned;Outpatient Clinic;Shortness of breath;Statutory Health Insurance;Serious;04/10/2024 02:38;Discharged
+264;148;2;11/12/2024 06:02;Urgent;A&E;Low mood;EuroCare Mutual;Stable;15/12/2024 14:29;Discharged
+265;148;4;19/04/2025 13:58;Emergency;A&E;Knee pain;Alpina Assist (private);Stable;25/04/2025 02:27;Discharged
+266;148;3;15/06/2025 16:36;Emergency;A&E;Fever and confusion;EuroCare Mutual;Stable;19/06/2025 09:09;Died
+267;149;4;13/09/2024 02:12;emergency;A&E;Chemotherapy;Self-pay;Serious;21/09/2024 13:08;Discharged
+268;149;1;30/11/2024 06:29;Emergency;A&E;Painful red swollen leg;Alpina Assist (private);Serious;07/12/2024 01:20;Died
+269;150;2;28/06/2024 11:00;Emergency;A&E;Wheezing;EuroCare Mutual;Fair;03/07/2024 13:04;Discharged
+270;151;4;10/09/2024 20:25;Emergency;A&E;Shortness of breath;Self-pay;Serious;06/10/2024 06:27;Discharged
+271;152;1;25/03/2025 22:33;Emergency;A&E;Back pain after fall;Alpina Assist (private);Serious;30/03/2025 06:55;Discharged
+272;153;13;01/04/2025 21:48;Planned;GP Referral;Fainting episode;Statutory Health Insurance;Serious;17/04/2025 20:43;Died
+273;154;2;13/10/2025 19:00;Emergency;A&E;Seizure;EuroCare Mutual;Critical;20/10/2025 09:09;Died
+274;155;4;07/03/2025 03:48;Emergency;A&E;Wheezing;EuroCare Mutual;Serious;21/03/2025 15:58;Discharged
+275;155;8;13/06/2025 12:42;Emergency;Inter-hospital Transfer;Palpitations;Statutory Health Insurance;Serious;24/06/2025 13:41;Discharged
+276;155;4;20/09/2025 09:19;Emergency;A&E;Planned surgery;Self-pay;Stable;23/09/2025 00:47;Discharged
+277;156;2;30/08/2025 14:56;Emergency;A&E;Shortness of breath;Self-pay;Fair;03/09/2025 20:04;Discharged
+278;157;3;15/10/2025 02:41;Emergency;A&E;Sudden weakness;Self-pay;Stable;17/10/2025 02:10;Discharged
+279;158;1;16/03/2025 21:48;Urgent;A&E;Syncope with chest pain;;Critical;30/03/2025 16:09;DISCHARGED
+280;158;873;08/07/2025 02:57;Emergency;A&E;Painful red swollen leg;Self-pay;Serious;14/07/2025 06:12;Transferred Out
+281;158;3;03/12/2025 06:36;Emergency;A&E;Fever and confusion;EuroCare Mutual;Serious;14/12/2025 09:20;Discharged
+282;159;6;12/11/2024 10:12;Planned;Outpatient Clinic;Back pain after fall;Alpina Assist (private);Stable;13/11/2024 21:19;Discharged
+283;159;4;07/12/2024 13:20;Emergency;A&E;Seizure;;Critical;09/12/2024 16:15;Died
+284;160;9;23/05/2025 00:33;Urgent;Inter-hospital Transfer;Palpitations;Statutory Health Insurance;Stable;31/05/2025 11:51;Discharged
+285;161;1;31/07/2024 03:00;Emergency;A&E;Cough with blood;Alpina Assist (private);Fair;04/08/2024 12:45;Discharged
+286;162;3;21/08/2024 06:25;Emergency;A&E;Low oxygen saturation;Statutory Health Insurance;Serious;22/08/2024 09:14;Died
+287;163;2;24/08/2024 18:33;Emergency;A&E;Painful red swollen leg;EuroCare Mutual;Stable;27/08/2024 15:38;Discharged
+288;164;2;09/11/2025 04:41;Emergency;A&E;Fever and confusion;;Stable;16/11/2025 18:50;Discharged
+289;165;17;30/05/2024 14:41;Planned;Outpatient Clinic;Groin swelling;Self-pay;Fair;02/06/2024 06:02;Discharged
+290;165;4;27/07/2024 12:08;  Urgent ;A&E  ;Reduced urine output;Statutory Health Insurance;Serious;31/07/2024 01:14;Discharged
+291;166;8;22/04/2024 05:12;Planned;Outpatient Clinic;Shortness of breath;Self-pay;Stable;24/04/2024 09:00;Discharged
+292;166;2;17/08/2024 19:03;Emergency;A&E;Weakness and confusion;EuroCare Mutual;Critical;06/09/2024 10:57;Discharged
+293;166;2;28/01/2025 09:41;Urgent;A&E;Low oxygen saturation;Statutory Health Insurance;Serious;06/02/2025 01:12;Discharged
+294;167;2;08/03/2025 02:12;Emergency;A&E;Black stools;Alpina Assist (private);Fair;18/03/2025 22:41;Discharged
+295;167;3;13/08/2025 01:09;Emergency;A&E;Wound redness;Alpina Assist (private);Serious;15/08/2025 04:26;Discharged
+296;167;6;31/10/2025 00:22;Planned;GP Referral;Fall with hip pain;Alpina Assist (private);Critical;16/11/2025 10:40;Discharged
+297;168;10;07/05/2025 13:07;Urgent;GP Referral;Wheezing;Self-pay;Serious;09/05/2025 15:43;Discharged
+298;168;1;07/07/2025 21:21;Emergency;A&E;Palpitations;Statutory Health Insurance;Serious;16/07/2025 19:48;Discharged
+299;169;22;17/04/2025 18:25;Urgent;Inter-hospital Transfer;Painful red swollen leg;;Fair;22/04/2025 06:46;Discharged
+281;158;3;03/12/2025 06:36;Emergency;A&E;Fever and confusion;EuroCare Mutual;Serious;14/12/2025 09:20;Discharged
+300;169;3;01/07/2025 19:48;Emergency;A&E;Wheezing;Statutory Health Insurance;Critical;14/07/2025 19:18;Discharged
+301;169;3;12/11/2025 06:25;Urgent;A&E;Painful red swollen leg;Self-pay;Critical;19/11/2025 10:07;Discharged
+302;170;3;25/10/2026 22:27;Emergency;A&E;Groin swelling;Alpina Assist (private);Critical;NULL;In Hospital
+303;171;5;11/08/2024 17:33;Urgent;GP  Referral;Knee pain;Self-pay;Fair;16/08/2024 00:05;Discharged
+304;172;4;20/10/2026 21:55;NULL;A&E;Leg swelling;Self-pay;Stable;;In Hospital
+305;173;7;18/08/2024 03:12;Emergency;inter-hospital transfer;Fall with hip pain;Statutory Health Insurance;Fair;21/08/2024 19:41;Discharged
+306;173;4;13/09/2024 21:13;Emergency;A&E;Fatigue;;Stable;18/09/2024 23:14;Discharged
+307;173;7;01/02/2025 22:04;Planned;GP Referral;Low mood;EuroCare Mutual;STABLE;03/02/2025 23:59;Discharged
+308;174;1;06/04/2024 11:12;emergency;A&E;Palpitations;EuroCare Mutual;Critical;20/04/2024 18:03;Discharged
+309;174;5;03/05/2024 05:29;Emergency;Inter-hospital Transfer;Fall with hip pain;Statutory Health Insurance;Stable;07/05/2024 03:00;Discharged
+310;175;1;08/07/2025 10:00;Urgent;A&E;Reduced urine output;Alpina Assist (private);Stable;15/07/2025 01:58;Discharged
+311;176;17;21/04/2025 06:33;Planned;Outpatient Clinic;Abdominal pain;EuroCare Mutual;Stable;23/04/2025 17:51;Discharged
+312;177;4;08/09/2024 01:56;Emergency;A&E;Severe headache;Self-pay;Fair;13/09/2024 22:53;Discharged
+313;178;4;17/10/2024 00:00;Emergency;A&E;Reduced urine output;EuroCare Mutual;Stable;20/10/2024 02:35;Discharged
+314;179;18;18/12/2025 10:12;Planned;Outpatient Clinic;Chemotherapy;Alpina Assist (private);Fair;21/12/2025 12:26;Discharged
+315;180;2;07/18/2024 03:07;Emergency;A&E;Wheezing;Alpina Assist (private);Critical;27/07/2024 14:23;Discharged
+316;180;1;15/10/2026 12:06;Emergency;A&E;Black stools;Alpina Assist (private);Stable;NULL;In Hospital
+317;181;1;28/08/2025 10:25;Emergency;A&E;Syncope with chest pain;Self-pay;Fair;02/09/2025 19:05;Discharged
+318;182;1;23/12/2025 23:00;Emergency;A&E;Fainting episode;Statutory Health Insurance;Fair;26/12/2025 00:00;Discharged
+319;183;1;03/01/2026 23:48;Emergency;A&E;Groin swelling;Self-pay;Stable;09/01/2026 03:49;Discharged
+320;184;4;22/11/2024 23:12;Emergency;A&E;Abdominal swelling;Statutory Health Insurance;Stable;24/11/2024 09:08;Discharged
+321;184;1;03/02/2025 00:25;Urgent;A&E;Low mood;Self-pay;Serious;10/02/2025 04:25;Discharged
+322;184;5;27/03/2025 04:57;Planned;GP Referral;Wrist injury;Alpina Assist (private);Stable;30/03/2025 06:15;Discharged
+323;185;1;03/03/2025 12:33;Emergency;A&E;High blood sugar;Self-pay;Stable;10/03/2025 04:26;Discharged
+324;186;19;22/10/2026 08:31;Planned;Outpatient Clinic;Planned surgery;Alpina Assist (private);Fair;NULL;In Hospital
+325;187;4;20/10/2024 06:07;Emergency;A&E;Painful red swollen leg;Alpina Assist (private);Serious;05/11/2024 17:09;Discharged
+326;188;1;05/02/2024 22:12;Emergency;A&E;Wound redness;Alpina Assist (private);Stable;15/02/2024 03:50;Discharged
+327;188;1;02/06/2024 01:03;Urgent  ;A&E;Severe headache;Alpina Assist (private);Fair;10/06/2024 01:43;Discharged
+9;3;2;28/10/2024 21:14;Emergency;A&E;Knee pain;NULL;Fair;03/11/2024 22:28;Transferred Out
+328;189;2;21/02/2025 14:41;Emergency;A&E;Fever and low blood pressure;Self-pay;Critical;06/03/2025 02:27;Discharged
+329;189;20;31/05/2025 21:16;Urgent;Inter-hospital Transfer;Reduced urine output;Self-pay;  Stable ;09/06/2025 08:31;Discharged
+330;189;3;04/10/2025 13:22;Emergency;A&E;Fatigue;Self-pay;Critical;15/10/2025 23:09;Discharged
+331;189;10;06/02/2026 12:32;Planned;GP Referral;Low oxygen saturation;Alpina Assist (private);Stable;07/02/2026 22:29;Discharged
+332;190;17;25/03/2025 01:33;Emergency;Inter-hospital Transfer;Vomiting;Alpina Assist (private);STABLE;31/03/2025 23:35;Discharged
+333;190;6;24/07/2025 11:05;Planned;GP Referral;Knee pain;Alpina Assist (private);Stable;25/07/2025 17:02;Discharged
+334;190;1;02/12/2025 10:19;Emergency;A&E;Burning urination with fever;NULL;Critical;11/12/2025 20:50;Discharged
+335;190;17;18/01/2026 02:21;Planned;Outpatient Clinic;Black stools;;Fair;20/01/2026 11:11;Transferred Out
+336;191;1;22/01/2025 23:12;Emergency;A&E;Palpitations;Self-pay;Serious;29/01/2025 17:37;Discharged
+337;191;4;23/06/2025 23:51;Urgent;A&E;Seizure;;Critical;07/07/2025 06:22;Discharged
+338;191;1;02/08/2025 19:18;Emergency;A&E;Black stools;Alpina Assist (private);Critical;17/08/2025 06:48;Discharged
+339;192;1;01/11/2024 12:07;Urgent;A&E;Abdominal swelling;Self-pay;Stable;06/11/2024 19:59;Discharged
+340;192;4;27/02/2025 01:09;Emergency;A&E;Groin swelling;EuroCare Mutual;Stable;03/03/2025 14:50;Discharged
+341;192;4;23/06/2025 00:25;Emergency;A&E;Chest pain;Statutory Health Insurance;Stable;24/06/2025 18:13;Discharged
+342;192;6;05/08/2025 14:58;Emergency;Inter-hospital Transfer;Back pain after fall;Self-pay;Stable;09/08/2025 00:21;Discharged
+343;192;5;09/09/2025 10:50;Urgent;GP Referral;Wrist injury;Statutory Health Insurance;Stable;15/09/2025 23:40;Discharged
+344;193;4;27/04/2024 21:41;Emergency;A&E;Low mood;Alpina Assist (private);Stable;07/05/2024 01:14;Discharged
+345;193;4;02/07/2024 10:22;Emergency;A&E;Knee pain;Alpina Assist (private);Stable;04/07/2024 21:28;Discharged
+346;193;2;24/08/2024 07:06;Emergency;A&E;Fever and low blood pressure;EuroCare Mutual;Serious;09/09/2024 03:07;Discharged
+347;193;3;21/01/2025 18:21;Emergency;A&E;Abdominal swelling;Self-pay;Stable;28/01/2025 12:54;Discharged
+348;193;3;26/06/2025 23:19;Emergency;A&E;Chemotherapy;Alpina Assist (private);Stable;29/06/2025 20:36;Discharged
+349;193;4;25/11/2025 21:28;Emergency;A&E;Fever and confusion;Alpina Assist (private);Serious;04/12/2025 13:12;Discharged
+350;194;3;26/08/2024 12:48;Emergency;A&E;Painful red swollen leg;;Critical;30/08/2024 23:20;Discharged
+351;194;1;07/11/2024 05:03;Emergency;A&E;Palpitations;Self-pay;Fair;08/11/2024 22:14;Discharged
+352;195;2;27/01/2026 16:25;Urgent;A&E;Palpitations;Self-pay;Fair;04/02/2026 09:29;Discharged
+353;196;4;17/11/2024 17:48;Emergency;A&E;Black stools;Alpina Assist (private);Stable;22/11/2024 22:54;Discharged
+354;196;4;17/01/2025 09:53;Emergency;A&E;Head injury;Statutory Health Insurance;Serious;20/01/2025 07:44;Died
+355;197;17;13/08/2024 15:41;Emergency;Inter-hospital Transfer;Black stools;Alpina Assist (private);Fair;29/08/2024 23:15;Discharged
+356;197;20;16/01/2025 02:08;Planned;GP Referral;Weakness and confusion;Statutory Health Insurance;Stable;17/01/2025 09:21;Discharged
+357;198;4;20/11/2024 05:25;Emergency;A&E;Low mood;EuroCare Mutual;Stable;27/11/2024 19:21;Discharged
+358;198;2;18/12/2024 02:42;Emergency;A&E;Syncope with chest pain;Alpina Assist (private);Stable;27/12/2024 09:33;Discharged
+359;198;2;27/04/2025 22:23;Urgent;A&E;Vomiting;Self-pay;Stable;05/05/2025 00:55;Discharged
+360;198;3;29/09/2025 03:23;Emergency; A&E;Burning urination with fever;Alpina Assist (private);Critical;08/10/2025 17:56;Discharged
+361;199;18;28/12/2024 01:56;NULL;Outpatient Clinic;Weight loss;Self-pay;Fair;30/12/2024 20:19;Discharged
+362;199;6;16/05/2025 20:28;Planned;Outpatient Clinic;Back pain after fall;Alpina Assist (private);Stable;20/05/2025 05:58;Transferred Out
+363;199;4;14/07/2025 02:02;Emergency;A&E;Low oxygen saturation;Alpina Assist (private);Serious;25/07/2025 07:50;Discharged
+364;199;1;18/11/2025 21:11;Urgent;A&E;Seizure;Alpina Assist (private);Serious;23/11/2025 16:25;Discharged
+365;200;1;20/11/2024 01:25;Emergency;A&E;Syncope with chest pain;Alpina Assist (private);Stable;23/11/2024 07:55;Discharged
+366;200;17;04/12/2024 18:09;Planned;Outpatient Clinic;Abdominal pain;Self-pay;Serious;05/12/2024 17:41;Discharged
+367;201;10;19/01/2025 09:25;Urgent;Inter-hospital Transfer;Productive cough and fever;;Serious;08/02/2025 20:33; Discharged
+368;201;4;07/07/2025 10:37;Emergency;A&E;Low oxygen saturation;Alpina Assist (private);Stable;14/07/2025 13:22;Discharged
+369;201;20;15/08/2025 02:44;Urgent;Inter-hospital Transfer;Weakness and confusion;Self-pay;Serious;17/08/2025 20:35;Transferred Out
+370;202;19;25/08/2025 09:00;Planned;Outpatient Clinic;Weight loss;Self-pay;Fair;28/08/2025 03:25;Discharged
+371;202;3;06/11/2025 12:05;Emergency;A&E;Black stools;Self-pay;Serious;13/11/2025 07:36;Discharged
+372;203;12;04/05/2024 22:07;Planned;GP Referral;Head injury;Alpina Assist (private);Critical;13/05/2024 12:56;Discharged
+337;191;4;23/06/2025 23:51;Urgent
+373;203;3;13/08/2024 08:17;EMERGENCY;A&E;Fainting episode;EuroCare Mutual;Critical;01/09/2024 07:16;Discharged
+374;203;1;10/11/2024 03:43;Emergency;A&E;Palpitations;Self-pay;Critical;21/11/2024 14:18;Discharged
+375;204;2;05/02/2025 17:12;Emergency;A&E;Shortness of breath;NULL;Serious;17/02/2025 23:09;Discharged
+376;204;18;06/07/2025 14:10;Planned;Outpatient  Clinic;Planned surgery;Alpina Assist (private);Stable;07/07/2025 11:02;Discharged
+377;205;7;14/03/2025 04:33;Planned;Outpatient Clinic;Low mood;Alpina Assist (private);Fair;15/03/2025 19:55;Discharged
+378;205;22;11/08/2025 20:33;Emergency;Inter-hospital Transfer;Burning urination with fever;EuroCare Mutual;Stable;18/08/2025 13:29;Discharged
+379;205;3;14/11/2025 22:42;Emergency;A&E;Fatigue;EuroCare Mutual;Fair;17/11/2025 17:04;Discharged
+380;206;11;03/01/2025 02:41;Urgent;GP Referral;Shortness of breath;Self-pay;Fair;08/01/2025 11:52;Discharged
+381;206;5;19/05/2025 01:36;Urgent;Inter-hospital  Transfer;Knee pain;Self-pay;Stable;26/05/2025 03:26;Discharged
+382;206;9;2025-09-06T03:14;Emergency;Inter-hospital Transfer;Chest pain;Self-pay;Stable;07/09/2025 18:38;Discharged
+383;207;1;20/10/2024 21:48;Emergency;A&E;Fever and confusion;Statutory Health Insurance;Serious;24/10/2024 22:15;Discharged
+384;207;3;22/11/2024 12:49;Urgent;A&E;Groin swelling;Statutory Health Insurance;Fair;27/11/2024 03:06;Discharged
+385;207;1;06/03/2025 15:48;Emergency;A&E;Vomiting;Self-pay;Stable;09/03/2025 06:57;Discharged
+386;207;2;18/07/2025 16:06;Emergency;A&E;Abdominal pain;Statutory Health Insurance;Serious;27/07/2025 06:17;Discharged
+387;208;17;19/05/2024 03:48;Planned;Outpatient Clinic;Groin swelling;EuroCare Mutual;Stable;22/05/2024 03:06;Discharged
+388;208;3;04/10/2024 10:34; Emergency;a&e;Severe headache;;Fair;06/10/2024 05:32;Transferred Out
+389;208;7;17/10/2024 07:52;Planned;GP Referral;Leg swelling;Alpina Assist (private);Stable;18/10/2024 10:41;Discharged
+390;208;2;02/12/2024 08:10;Emergency;A&E;Vomiting;Self-pay;Serious;06/12/2024 20:04;Discharged
+391;208;18;01/04/2025 11:17;Planned;Outpatient Clinic;Weight loss;Alpina Assist (private);Stable;03/04/2025 23:07;Discharged
+392;208;3;16/05/2025 03:46;Urgent;A&E;Fever and low blood pressure;EuroCare Mutual;Serious;28/05/2025 21:01;Discharged
+393;209;2;15/12/2024 03:25;Emergency  ;A&E;Painful red swollen leg;Alpina Assist (private);Critical;28/12/2024 01:32;Discharged
+394;209;1;02/05/2025 10:15;Emergency;A&E;Low oxygen saturation;Self-pay;Critical;07/05/2025 19:19;Discharged
+395;209;4;16/08/2025 20:26;Emergency;A&E;Planned surgery;Self-pay;Fair;22/08/2025 06:58;Discharged
+396;209;4;17/01/2026 02:04;Emergency;A&E;Shortness of breath;EuroCare Mutual;Critical;24/01/2026 14:15;Discharged
+397;210;17;28/11/2025 08:56;Emergency;Inter-hospital Transfer;Black stools;Self-pay;Stable;06/12/2025 22:16;Discharged
+398;210;20;27/04/2026 19:54;Emergency;Inter-hospital Transfer;Weakness and confusion;Self-pay;Stable;28/04/2026 22:29;Discharged
+399;211;3;07/04/2024 00:33;Emergency;A&E;Syncope with chest pain;Alpina Assist (private);Critical;13/04/2024 04:45;Discharged
+400;211;2;24/04/2024 19:19;Urgent;A&E;Shortness of breath;;Critical;03/05/2024 14:00;Discharged
+401;211;17;14/09/2024 21:26;Urgent;GP Referral;Black stools;EuroCare Mutual;Serious;29/09/2024 03:44;Discharged
+402;212;4;08/02/2024 21:12;Emergency;A&E;Wheezing;Alpina Assist (private);Stable;17/02/2024 16:53;Discharged
+403;213;6;17/04/2025 18:00;Urgent;GP Referral;Abdominal swelling;Statutory Health Insurance;Critical;22/04/2025 02:05;Discharged
+404;214;2;24/02/2025 10:12;Emergency;A&E;Burning urination with fever;Statutory Health Insurance;Fair;03/03/2025 23:59;Discharged
+405;215;9;30/01/2025 20:00;Planned;Outpatient Clinic;Shortness of breath;Statutory Health Insurance;Fair;03/02/2025 18:20;Discharged
+406;216;3;29/08/2024 02:41;Emergency;A&E;Shortness of breath;EuroCare Mutual;Fair;09/09/2024 06:53;Discharged
+407;216;8;15/01/2025 04:17;Planned;Outpatient Clinic;Syncope with chest pain;Alpina Assist (private);Fair;18/01/2025 03:16;Discharged
+408;217;1;03/10/2024 21:56; Urgent;A&E;Fever and low blood pressure;Statutory Health Insurance;Serious;21/10/2024 13:03;Discharged
+409;217;5;10/03/2025 12:04;Planned;GP Referral;Back pain after fall;Alpina Assist (private);Stable;13/03/2025 18:51;Discharged
+410;218;2;14/11/2024 02:25;Emergency;A&E;Severe headache;Alpina Assist (private);Stable;20/11/2024 01:34;Discharged
+411;219;7;23/07/2024 17:12;Planned;Outpatient Clinic;Knee pain;Statutory Health Insurance;Serious;27/07/2024 03:16;Discharged
+412;219;10;09/11/2024 19:47;Planned;Outpatient Clinic;Low oxygen saturation;Alpina Assist (private);Stable;10/11/2024 21:51;Discharged
+413;220;2;13/06/2024 19:07;Emergency;A&E;Fatigue;;Stable;16/06/2024 19:12;Discharged
+414;220;3;26/10/2024 19:27;Emergency;A&E;Knee pain;EuroCare Mutual;Serious;05/11/2024 00:05;Discharged
+415;220;3;15/01/2025 12:57;Urgent;A&E;Cough with blood;Statutory Health Insurance;Serious;23/01/2025 04:19;Discharged
+416;221;3;09/01/2024 01:00;Emergency;A&E;Seizure;EuroCare Mutual;Stable;16/01/2024 13:34;Discharged
+417;221;3;02/02/2024 21:13;emergency;A&E;Low oxygen saturation;EuroCare Mutual;Fair;18/02/2024 07:20;Transferred Out
+418;221;1;09/07/2024 20:52;Emergency;A&E;Fainting episode;Alpina Assist (private);Stable;11/07/2024 05:18;Discharged
+419;222;20;26/04/2024 11:33;Urgent;Inter-hospital Transfer;Reduced urine output;Alpina Assist (private);Stable;29/04/2024 13:31;Discharged
+420;222;3;29/08/2024 06:56;Emergency;A&E;High blood sugar;EuroCare Mutual;Critical;17/09/2024 22:58;Discharged
+421;222;1;30/11/2024 18:24; Emergency;A&E;Black stools;EuroCare Mutual;Stable;07/12/2024 05:32;Transferred Out
+422;222;22;03/05/2025 12:06;Urgent;GP Referral;Fever and confusion;Alpina Assist (private);Stable;07/05/2025 12:13;Discharged
+423;223;1;06/03/2024 21:41;Emergency;A&E;Painful red swollen leg;NULL;Serious;20/03/2024 05:02;Discharged
+424;223;2;12/08/2024 06:26;Emergency;A&E;Severe headache;Alpina Assist (private);Fair;22/08/2024 00:49;Died
+425;224;1;25/04/2025 01:12;Emergency;A&E;Syncope with chest pain;NULL;Serious;02/05/2025 20:32;Died
+426;225;2;22/05/2024 04:00;Emergency;A&E;Palpitations;Self-pay;Stable;27/05/2024 09:13;Discharged
+427;226;2;22/03/2024 20:48;Emergency;A&E;Productive cough and fever;Statutory Health Insurance;Fair;25/03/2024 01:48;Discharged
+428;227;4;20/05/2024 20:07;Emergency;A&E;Burning urination with fever;EuroCare Mutual;Fair;24/05/2024 12:16;Discharged
+429;228;4;16/11/2025 22:25;Emergency;A&E;Painful red swollen leg;Self-pay;Critical;28/11/2025 07:46;Discharged
+430;229;4;06/11/2024 21:48;Emergency;A&E;Fatigue;EuroCare Mutual;Critical;17/11/2024 13:34;Discharged
+431;231;13;23/01/2026 23:41;Emergency;Inter-hospital Transfer;Head injury;Self-pay;Critical;01/02/2026 18:31;Discharged
+432;232;1;28/07/2024 06:41;Emergency;A&E;Groin swelling;Alpina Assist (private);Fair;09/08/2024 21:55;Discharged
+433;233;3;06/07/2025 14:48;Emergency;A&E;Burning urination with fever;NULL;Stable;13/07/2025 04:15;Discharged
+434;233;4;03/08/2025 18:57;Emergency;A&E;Vomiting;EuroCare Mutual;Stable;12/08/2025 09:52;Discharged
+435;233;4;21/10/2026 13:35;Emergency;A&E;Palpitations;EuroCare Mutual;Stable;23/10/2026 04:51;In Hospital
+436;234;2;06/07/2024 19:12;Urgent;A&E;Chest pain;Alpina Assist (private);Serious;13/07/2024 13:07;Discharged
+437;234;4;20/10/2024 19:25;Emergency;A&E;Productive cough and fever;Alpina Assist (private);Serious;29/10/2024 18:48;Discharged
+438;234;5;03/03/2025 06:59;Planned;GP Referral;Abdominal swelling;Statutory Health Insurance;Stable;31/02/2025 08:00;Discharged
+439;235;2;09/04/2025 17:56;Emergency;A&E;Back pain after fall;EuroCare Mutual;Fair;18/04/2025 12:57;Discharged
+440;235;5;07/05/2025 14:26;Urgent;GP Referral;Fall with hip pain;Alpina Assist (private);Serious;12/05/2025 23:58;Discharged
+441;235;4;12/09/2025 05:21;Urgent;A&E;Intoxication;Statutory Health Insurance;Fair;16/09/2025 07:23;Discharged
+442;236;2;22/04/2025 10:48;Emergency;A&E;Fatigue;Statutory Health Insurance;Stable;25/04/2025 17:48;Discharged
+443;237;3;30/09/2024 20:07;Emergency;A&E;Shortness of breath;Alpina Assist (private);Fair;04/10/2024 11:24;Discharged
+444;238;1;18/02/2025 14:00;Emergency;A&E;Weakness and confusion;Self-pay;Stable;27/02/2025 00:42;Discharged
+445;238;17;28/05/2025 10:36;Urgent;GP Referral;Abdominal pain;Self-pay;Stable;29/05/2025 16:22;Discharged
+446;239;22;13/10/2024 12:12;Emergency;Inter-hospital Transfer;Burning urination with fever;EuroCare Mutual;Serious;17/10/2024 12:14;Died
+447;240;18;08/04/2024 08:25;Planned;GP Referral;Weight loss;Statutory Health Insurance;Fair;11/04/2024 12:39;Discharged
+448;241;4;31/03/2025 04:00;Emergency;A&E;Shortness of breath;Self-pay;Fair;03/04/2025 05:41;Discharged
+260;146;1;11/10/2024 23:48;Emergency;A&E;Black stools;Self-pay;Stable;20/10/2024 19:29;Discharged
+449;241;3;02/07/2025 20:43;Emergency;A&E;Burning urination with fever;Alpina Assist (private);Critical;15/07/2025 07:29;Discharged
+450;241;1;04/09/2025 05:53;Emergency;A&E;High blood sugar;EuroCare Mutual;Fair;12/09/2025 15:37;Discharged
+451;242;17;28/02/2024 19:48;Planned;GP Referral;Vomiting;NULL;Stable;29/02/2024 22:18;Died
+452;243;4;19/03/2025 22:48;Emergency;A&E;Back pain after fall;EuroCare Mutual;Stable;NULL;Discharged
+453;243;7;05/08/2025 21:36;Planned;GP Referral;Wound redness;Alpina Assist (private);Serious;08/08/2025 11:34;Discharged
+454;243;4;11/09/2025 10:54;Urgent  ;A&E;Fainting episode;EuroCare Mutual;Fair;22/09/2025 05:38;Discharged
+455;243;1;08/11/2025 22:20;Emergency;A&E;Palpitations;Alpina Assist (private);Stable;14/11/2025 03:06;Discharged
+456;244;2;09/08/2024 18:07;Urgent;A&E;Productive cough and fever;Statutory Health Insurance;Serious;13/08/2024 18:18;Transferred Out
+457;244;3;24/08/2024 09:00;Emergency;A&E;Severe headache;Statutory Health Insurance;Stable;28/08/2024 13:55;Discharged
+458;244;2;26/12/2024 00:36;Emergency;A&E;Abdominal swelling;Statutory Health Insurance;Fair;03/01/2025 03:16;Transferred Out
+459;244;3;29/01/2025 11:34;Emergency;A&E;Knee pain;Alpina Assist (private);Serious;01/02/2025 03:58;TRANSFERRED OUT
+460;244;3;07/03/2025 06:49;Emergency;A&E;Fever and low blood pressure;Statutory Health Insurance;Fair;10/03/2025 09:39;Transferred Out
+461;245;2;26/01/2025 00:41;Emergency;A&E;Shortness of breath;Statutory Health Insurance;Serious;01/02/2025 19:23;Discharged
+462;246;3;26/09/2024 16:07;Urgent;A&E;Weakness and confusion;EuroCare Mutual;Fair;03/10/2024 04:38;Discharged
+463;247;4;10/05/2025 06:25;Emergency;A&E;Weakness and confusion;EuroCare Mutual;Fair;16/05/2025 23:26;Discharged
+464;247;3;21/06/2025 11:26;Urgent;A&E;Wheezing;EuroCare Mutual;Stable;23/06/2025 03:25;Transferred Out
+465;247;4;23/08/2025 20:05;Emergency;A&E;Painful red swollen leg;Self-pay;Stable;28/08/2025 22:16;Discharged
+466;248;2;12/02/2025 05:12;Urgent;A&E;Wheezing;;Stable;15/02/2025 15:14;Discharged
+467;248;3;15/05/2025 03:10;Urgent;A&E;Low oxygen saturation;Alpina Assist (private);Stable;19/05/2025 22:43;Discharged
+468;249;6;24/08/2025 21:56;Planned;Outpatient Clinic;Abdominal swelling;EuroCare Mutual;Fair;25/08/2025 17:17;Discharged
+469;250;10;03/08/2024 13:33;;Inter-hospital Transfer;Shortness of breath;Statutory Health Insurance; Stable;11/08/2024 00:13;Discharged

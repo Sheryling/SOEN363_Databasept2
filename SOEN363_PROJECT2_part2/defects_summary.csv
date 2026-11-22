@@ -1,0 +1,17 @@
+defect_type,A,B,C,D,total
+ambiguous_date,31,4,0,24,59
+broken_reference,24,24,14,14,76
+chronology,19,19,19,19,76
+date_format_inconsistency,18,44,20,49,131
+duplicate_entity,6,6,6,6,24
+duplicate_exact,57,58,54,60,229
+icd9_format,11,0,0,11,22
+invalid_date,19,28,51,19,117
+invalid_numeric,7,6,7,5,25
+malformed_record,6,6,4,4,20
+missing_primary_diagnosis,2,2,2,2,8
+missing_required,33,33,32,33,131
+patient_admission_mismatch,8,8,8,8,32
+status_inconsistency,5,5,5,5,20
+text_format,244,268,268,276,1056
+unit_inconsistency,2,3,2,4,11

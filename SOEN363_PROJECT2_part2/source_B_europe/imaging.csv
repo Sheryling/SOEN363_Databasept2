@@ -1,0 +1,333 @@
+exam_id;episode_no;exam_type;order_id;exam_datetime;body_area;referring_physician_id;rad_tech_id;exam_status;image_link
+1;1;Ultrasound;1;27/01/2024 12:37;Abdomen;6;59;Completed;pacs://b-imaging/studies/000001
+2;2;CT;3;27/03/2024 19:18;Head;12;61;Completed;pacs://b-imaging/studies/000002
+3;3;CT;5;14/05/2025 14:49;Chest;18;61;Completed;pacs://b-imaging/studies/000003
+4;6;X-Ray;11;23/01/2024 01:55;Chest;10;60;Completed;pacs://b-imaging/studies/000004
+5;6;CT;12;24/01/2024 16:03;Chest;10;63;Completed;pacs://b-imaging/studies/000005
+6;7;X-Ray;14;10/06/2024 18:46;Chest;11;59;Completed;pacs://b-imaging/studies/000006
+7;8;Ultrasound;16;27/09/2024 02:55;Heart;8;60;Completed;pacs://b-imaging/studies/000007
+8;10;CT;18;27/12/2024 18:12;Abdomen;19;58;Completed;pacs://b-imaging/studies/000008
+9;11;X-Ray;20;13/02/2024 03:58;Chest;11;59;Completed;pacs://b-imaging/studies/000009
+10;13;X-Ray;22;27/01/2024 23:33;Chest;10;63;Completed;pacs://b-imaging/studies/000010
+11;14;X-Ray;25;22/05/2024 07:27;Chest;11;58;Completed;NULL
+12;15;X-Ray;27;14/09/2025 05:37;Chest;8;62;Completed;pacs://b-imaging/studies/000012
+13;16;X-Ray;28;22/06/2024 19:00;Wrist;5;59;Completed;pacs://b-imaging/studies/000013
+14;17;MRI;29;28/09/2024 21:18;Pelvis;18;59;Completed;pacs://b-imaging/studies/000014
+15;18;X-Ray;31;13/01/2025 05:36;Wrist;6;58;Completed;pacs://b-imaging/studies/000015
+16;18;X-Ray;32;13/01/2025 20:18;Knee;5;59;completed;pacs://b-imaging/studies/000016
+17;19;X-Ray;35;27/02/2025 16:16;Chest;10;62;Completed;pacs://b-imaging/studies/000017
+18;20;Ultrasound;36;27/07/2025 13:45;Abdomen;22;60;Completed;pacs://b-imaging/studies/000018
+19;22;CT;38;22/05/2024 16:49;Abdomen;17;58;Completed;
+20;24;X-Ray;41;05/02/2025 22:28;Hip;7;60;Completed;pacs://b-imaging/studies/000020
+21;25;X-Ray;44;26/06/2025 20:41;Wrist;7;58;Completed;pacs://b-imaging/studies/000021
+22;26;X-Ray;45;09/11/2025 14:27;Hip;5;63;Completed;pacs://b-imaging/studies/000022
+23;29;X-Ray;48;25/06/2025 02:06;Chest;20;62;Completed;pacs://b-imaging/studies/000023
+24;30;Ultrasound;50;04/12/2025 13:12;Abdomen;6;63;Completed;pacs://b-imaging/studies/000024
+25;31;CT;51;22/04/2025 21:40;Chest;19;58;Completed;pacs://b-imaging/studies/000025
+26;32;X-Ray;53;12/08/2025 17:59;ABDOMEN;17;62;Completed;pacs://b-imaging/studies/000026
+27;34;MRI;57;07/01/2025 14:32;Pelvis;19;61;Completed;pacs://b-imaging/studies/000027
+28;41;X-Ray;62;31/02/2024 08:00;Chest;11;58;Completed;pacs://b-imaging/studies/000028
+29;42;X-Ray;64;04/05/2024 21:49;Chest;11;59;Completed;pacs://b-imaging/studies/000029
+30;43;X-Ray;67;12/03/2024 10:10;Chest;10;58;Completed;pacs://b-imaging/studies/000030
+31;43;X-Ray;68;11/03/2024 13:22;Chest;10;61;Completed;pacs://b-imaging/studies/000031
+32;45;CT;71;31/10/2024 17:08;Chest;11;61;Completed;pacs://b-imaging/studies/000032
+33;48;CT;74;21/04/2025 12:51;Chest;8;61;Completed;pacs://b-imaging/studies/000033
+34;50;Ultrasound;76;14/10/2025 18:52;Abdomen;5;61;Completed;pacs://b-imaging/studies/000034
+35;54;CT;83;07/05/2025 02:49;Abdomen;17;61;Completed;pacs://b-imaging/studies/000035
+36;59;Ultrasound;88;15/05/2025 00:24;Leg Veins;7;59;Completed;pacs://b-imaging/studies/000036
+37;60;X-Ray;89;07/10/2025 06:38;Chest;10;63;Completed;pacs://b-imaging/studies/000037
+38;61;Ultrasound;92;28/06/2025 21:41;Kidney;20;60;Completed;pacs://b-imaging/studies/000038
+39;64;Ultrasound;95;16/10/2024 09:46;Abdomen;22;62;Completed;pacs://b-imaging/studies/000039
+40;65;X-Ray;97;30/09/2024 03:39;Chest;20;58;Completed;NULL
+41;67;CT;100;19/04/2025 14:18;Chest;10;63;Completed;pacs://b-imaging/studies/000041
+42;68;X-Ray;102;07/08/2024 01:31;Chest;20;63;Completed;pacs://b-imaging/studies/000042
+43;68;X-Ray;103;06/08/2024 05:26;NULL;20;61;Completed;pacs://b-imaging/studies/000043
+44;69;X-Ray;7450;17/12/2024 22:14;Abdomen;17;58;Completed;pacs://b-imaging/studies/000044
+45;69; Ultrasound;105;17/12/2024 19:21;Abdomen;17;60;Completed;pacs://b-imaging/studies/000045
+46;71;Ct;108;20/06/2024 16:18;Abdomen;18;60;Completed;pacs://b-imaging/studies/000046
+47;71;CT;109;19/06/2024 17:35;Abdomen;18;63;  Completed ;pacs://b-imaging/studies/000047
+48;73;X-Ray;114;29/12/2024 18:45;Wrist;6;58;Completed;pacs://b-imaging/studies/000048
+49;73;X-Ray;115;29/12/2024 22:40;HIP;7;62;Completed;pacs://b-imaging/studies/000049
+50;74;CT;116;25/01/2025 04:21;Chest;8;58;Completed;pacs://b-imaging/studies/000050
+51;75;X-Ray;119;13/09/2025 02:21;Hip;6;60;Completed;pacs://b-imaging/studies/000051
+52;76;CT;121;03/10/2024 19:48;Abdomen;22;60;Completed;pacs://b-imaging/studies/000052
+53;76;CT;122;03/10/2024 02:45;Abdomen;22;58;Completed;pacs://b-imaging/studies/000053
+54;86;X-Ray;133;27/01/2026 06:46;Chest;11;58;Completed;pacs://b-imaging/studies/000054
+55;87;X-Ray;134;22/07/2024 23:33;Chest;20;62;Completed;pacs://b-imaging/studies/000055
+56;88;CT;136;14/10/2024 04:59;Spine;6;59;Completed;pacs://b-imaging/studies/000056
+57;90;Ultrasound;140;16/11/2024 10:09;Abdomen;17;59;Completed;pacs://b-imaging/studies/000057
+58;90;CT;141;15/11/2024 08:22;Abdomen;17;59;Completed;NULL
+59;91;X-Ray;143;12/01/2024 06:33;Abdomen;17;61;Completed;pacs://b-imaging/studies/000059
+60;91;X-Ray;144;13/01/2024 11:58;Abdomen;17;58;Completed;pacs://b-imaging/studies/000060
+61;93;Ultrasound;148;27/07/2025 08:32;Leg Veins;5;61;Completed;pacs://b-imaging/studies/000061
+62;95;X-Ray;151;18/01/2025 00:11;Chest;9;63;Completed;pacs://b-imaging/studies/000062
+63;97;Ultrasound;154;12/09/2025 10:09;Heart;9;63;Completed;pacs://b-imaging/studies/000063
+64;99;X-Ray;156;10/03/2026 20:41;Chest;11;63;Completed;NULL
+65;100;CT;158;21/07/2026 13:04;Abdomen;17;63;Completed;pacs://b-imaging/studies/000065
+66;101;Ultrasound;159;16/02/2024 12:11;Kidney;20;62;Completed;pacs://b-imaging/studies/000066
+67;106;Ultrasound;164;13/08/2024 14:16;Abdomen;6;61;Completed;
+68;106;Ultrasound;165;13/08/2024 23:56;Abdomen;7;58;Completed;pacs://b-imaging/studies/000068
+69;110;Ultrasound;172;30/03/2026 15:48;Abdomen;22;62;Completed;
+70;110;Ultrasound;173;29/03/2026 06:42;Abdomen;22;60;Completed;pacs://b-imaging/studies/000070
+71;111;X-Ray;175;28/10/2026 04:11;Chest;9;58;Completed;pacs://b-imaging/studies/000071
+72;112;X-Ray;177;12/01/2026 12:14;Chest;22;58;Completed;pacs://b-imaging/studies/000072
+73;113;CT;178;12/08/2024 03:23;Chest;8;59;Completed;pacs://b-imaging/studies/000073
+74;114;CT;179;06/12/2025 17:19;Head;13;59;Completed;pacs://b-imaging/studies/000074
+75;115;X-Ray;181;11/08/2025 05:41;Chest;9;58;Completed;pacs://b-imaging/studies/000075
+76;118;Ultrasound;185;10/12/2024 06:37;Heart;8;61;Completed;
+77;119;X-Ray;187;25 Aug 2024 10:59;Knee;6;59;Completed;pacs://b-imaging/studies/000077
+78;122;X-Ray;191;26/09/2025 23:18;Chest;8;59;Completed;pacs://b-imaging/studies/000078
+79;126;CT;196;28/03/2025 05:54;Abdomen;22;60;Completed;NULL
+80;128;CT;198;05/12/2025 07:31;Abdomen;17;62;Completed;pacs://b-imaging/studies/000080
+81;128;Ultrasound;199;05/12/2025 03:01;Abdomen;17;60;Completed;pacs://b-imaging/studies/000081
+82;129;CT;201;07/11/2024 20:07;Neck Vessels;12;59;Completed;pacs://b-imaging/studies/000082
+83;130;X-Ray;202;12/03/2025 03:01;Chest;22;59;Completed;pacs://b-imaging/studies/000083
+84;132;Ultrasound;206;21/01/2025 05:36;Leg Veins;7;63;Completed;pacs://b-imaging/studies/000084
+85;133;X-Ray;208;20/02/2025 11:27;Wrist;5;60;Completed;pacs://b-imaging/studies/000085
+86;133;X-Ray;209;21/02/2025 08:04;Hip;6;58;Completed;pacs://b-imaging/studies/000086
+87;135;CT;213;15/11/2025 21:58;Abdomen;17;63;Completed;pacs://b-imaging/studies/000087
+88;136;X-Ray;215;18/06/2025 07:47;Chest;8;63;Completed;pacs://b-imaging/studies/000088
+89;137;X-Ray;216;18/07/2025 04:39;Hip;7;62;Completed;NULL
+90;138;CT;218;21/05/2024 23:36;Neck Vessels;12;59;Completed;pacs://b-imaging/studies/000090
+91;138;CT;219;21/05/2024 05:55;Head;13;61;Completed;pacs://b-imaging/studies/000091
+92;140;Ultrasound;222;04/10/2024 21:35;Heart;8;61;Completed;pacs://b-imaging/studies/000092
+93;141;X-Ray;223;09/11/2024 10:32;Chest;22;58;Completed;pacs://b-imaging/studies/000093
+94;143;X-Ray;228;13/07/2024 10:59;Chest;10;63;Completed;pacs://b-imaging/studies/000094
+95;144;X-Ray;229;19/09/2024 20:57;Abdomen;17;61;Completed;NULL
+96;144;X-Ray;230;18/09/2024 00:02;Abdomen;17;60;Completed;pacs://b-imaging/studies/000096
+97;145;CT;232;05/09/2024 14:10;Neck Vessels;12;60;Completed;pacs://b-imaging/studies/000097
+98;146;CT;235;26/02/2024 19:07;Chest;9;58;Completed;pacs://b-imaging/studies/000098
+99;147;X-Ray;239;04/08/2024 20:05;Chest;5;61;Completed;pacs://b-imaging/studies/000099
+100;148;CT;242;10/10/2024 15:34;Abdomen;18;58;Completed;pacs://b-imaging/studies/000100
+101;148;MRI;243;09/10/2024 23:09;Pelvis;19;61;Completed;pacs://b-imaging/studies/000101
+102;150;CT;246;03/10/2024 08:46;Chest;8;61;Completed;pacs://b-imaging/studies/000102
+103;153;CT;253;14/06/2025 15:30;Abdomen;18;61;Completed;NULL
+104;155;CT;257;24/01/2026 03:25;Chest;9;63;Completed;pacs://b-imaging/studies/000104
+105;155;X-Ray;258;25/01/2026 02:48;Chest;9;62;Completed;pacs://b-imaging/studies/000105
+106;156;CT;259;06/08/2025 14:23;Abdomen;18;63;Completed;pacs://b-imaging/studies/000106
+107;158;Ultrasound;263;20/02/2026 23:49;Kidney;20;63;Completed;pacs://b-imaging/studies/000107
+108;159;MRI;264;04/05/2025 18:55;Pelvis;18;62;Completed;pacs://b-imaging/studies/000108
+109;160;CT;266;03/12/2024 21:34;Neck Vessels;12;61;completed;pacs://b-imaging/studies/000109
+110;160;CT;267;04/12/2024 03:21;Neck Vessels;13;63;Completed;NULL
+111;161;CT;270;24/12/2024 21:05;Head;12;63;Completed;pacs://b-imaging/studies/000111
+112;163;X-Ray;272;06/03/2026 11:00;Abdomen;17;60;Completed;pacs://b-imaging/studies/000112
+113;163;Ultrasound;273;07/03/2026 04:20;Abdomen;17;58;Completed;pacs://b-imaging/studies/000113
+114;164;CT;274;16/05/2025 15:27;Head  ;13;60;Completed;pacs://b-imaging/studies/000114
+115;164;MRI;275;12/05/2025 16:25;Brain;13;58;Completed;NULL
+116;165;X-Ray;277;04/10/2025 00:28;Chest;22;61;Completed;pacs://b-imaging/studies/000116
+117;166;CT;279;29/04/2024 12:46;Abdomen;22;59;Completed;pacs://b-imaging/studies/000117
+118;167;MRI;281;11/09/2024 02:19;Pelvis;19;58;Completed;pacs://b-imaging/studies/000118
+119;167;MRI;282;11/09/2024 07:46;Pelvis;19;61;Completed;pacs://b-imaging/studies/000119
+120;168;CT;283;24/02/2024 17:16;Head;13;63;Completed;pacs://b-imaging/studies/000120
+121;168;CT;284;23/02/2024 17:00;Neck Vessels;12;61;Completed;pacs://b-imaging/studies/000121
+122;170;X-Ray;287;14/08/2024 18:37;Chest;20;60;Completed;
+123;171;X-Ray;288;18/10/2024 04:49;Wrist;6;63;Completed;pacs://b-imaging/studies/000123
+124;173;Ultrasound;291;25/10/2026 17:48;Abdomen;7;60;Completed;pacs://b-imaging/studies/000124
+125;174;MRI;293;01/05/2025 22:40;Pelvis;18;60;Completed;pacs://b-imaging/studies/000125
+126;176;CT;294;25/11/2025 08:01;Chest;19;59;Completed;pacs://b-imaging/studies/000126
+127;177;MRI;297;06/09/2024 08:14;Pelvis;19;63;Completed;pacs://b-imaging/studies/000127
+128;178;CT;300;01/12/2024 15:04;Spine;6;62;Completed;pacs://b-imaging/studies/000128
+129;179;Ultrasound;302;10/02/2025 20:45;Leg Veins;7;61;Completed;pacs://b-imaging/studies/000129
+130;182;X-Ray;308;08/02/2024 08:31;Chest;20;60;Completed;pacs://b-imaging/studies/000130
+131;183;Ultrasound;311;01/02/2024 16:41;Abdomen;17;62;Completed;
+132;184;Ultrasound;313;01/05/2024 23:13;Leg Veins;5;61;Completed;pacs://b-imaging/studies/000132
+133;185;X-Ray;315;10/08/2024 11:06;Chest;7;61;Completed;pacs://b-imaging/studies/000133
+134;186;Ultrasound;316;16/12/2024 20:35;Kidney;20;62;Completed;pacs://b-imaging/studies/000134
+135;188;CT;320;04/12/2025 13:16;Neck Vessels;12;62;Completed;
+136;188;MRI;321;03/12/2025 13:43;Brain;12;61;Completed;pacs://b-imaging/studies/000136
+137;190;X-Ray;324;28/01/2024 16:05;Chest;6;62;Completed;pacs://b-imaging/studies/000137
+138;191;X-Ray;325;23/02/2025 02:12;Abdomen;17;61;Completed;pacs://b-imaging/studies/000138
+139;191;Ultrasound;326;22/02/2025 02:06;Abdomen;17;58;Completed;pacs://b-imaging/studies/000139
+140;194;Ultrasound;329;11/07/2025 05:10;Leg Veins;5;63;Completed;pacs://b-imaging/studies/000140
+141;198;CT;334;27/08/2025 00:47;Chest;10;60;Completed;pacs://b-imaging/studies/000141
+142;199;X-Ray;336;03/06/2024 19:04;Chest;9;61;Completed;pacs://b-imaging/studies/000142
+143;200;CT;338;06/12/2024 20:08;Abdomen;18;62;Completed;
+144;201;CT;341;25/07/2025 15:41;Head;12;58;Completed;pacs://b-imaging/studies/000144
+145;202; X-Ray;344;29/09/2025 22:43;Wrist;7;60;Completed;pacs://b-imaging/studies/000145
+146;202;X-Ray;345;30/09/2025 01:54;Knee;5;59;Completed;pacs://b-imaging/studies/000146
+147;203;X-Ray;347;01/11/2025 16:32;Chest;22;60;Completed;pacs://b-imaging/studies/000147
+148;204;CT;349;26/04/2024 11:23;Head;12;59;Completed;pacs://b-imaging/studies/000148
+149;205;Ultrasound;351;24/08/2025 06:22;Heart;8;59;Completed;pacs://b-imaging/studies/000149
+150;206;X-Ray;353;22/01/2026 09:24;Abdomen;17;58;Completed;pacs://b-imaging/studies/000150
+151;207;Ultrasound;355;22/06/2024 07:33;Abdomen;22;63;Completed;pacs://b-imaging/studies/000151
+152;207;CT;356;21/06/2024 19:51;;22;59;Completed;
+153;208;Ultrasound;358;20/07/2024 01:52;Kidney;20;62;Completed;pacs://b-imaging/studies/000153
+154;209;Ultrasound;360;03/08/2024 06:58;Kidney;20;63;Completed;pacs://b-imaging/studies/000154
+155;211;X-Ray;361;21/09/2025 21:26;Chest;22;59;Completed;pacs://b-imaging/studies/000155
+156;214;X-Ray  ;364;29/10/2024 02:13;Chest;10;61;Completed;pacs://b-imaging/studies/000156
+157;216;Ultrasound;367;22/01/2025 21:42;Heart;8;58;Completed;pacs://b-imaging/studies/000157
+158;217;Ultrasound;370;30/06/2025 01:56;Heart;9;61;Completed;pacs://b-imaging/studies/000158
+159;219;Ultrasound;376;01/01/2025 23:34;Heart;9;61;Completed;pacs://b-imaging/studies/000159
+160;220;X-Ray;379;26/01/2025 08:31;Chest;9;61;Completed;pacs://b-imaging/studies/000160
+161;221;X-Ray;380;20/07/2024 12:59;Chest;9;63;Completed;pacs://b-imaging/studies/000161
+162;225;MRI;384;15/11/2025 08:20;Brain;12;61;Completed;pacs://b-imaging/studies/000162
+163;226;CT;387;17/01/2024 18:47; Chest;8;62;Completed;pacs://b-imaging/studies/000163
+164;226;Ultrasound;388;18/01/2024 00:46;Heart;9;62;Completed;pacs://b-imaging/studies/000164
+165;227;CT;390;11/12/2025 07:49;Neck Vessels;12;58;Completed;pacs://b-imaging/studies/000165
+166;229;X-Ray;393;09/12/2025 10:48;Chest;20;59;Completed;
+167;229;X-Ray;394;09/12/2025 03:11;Chest;20;60;Completed;pacs://b-imaging/studies/000167
+168;230;X-Ray;396;12/03/2025 15:09;Chest;10;63;Completed;NULL
+169;231;CT;398;01/11/2024 21:46;Chest;11;58;Completed;pacs://b-imaging/studies/000169
+170;231;CT;399;02/11/2024 10:06;Chest;11;63;Completed;pacs://b-imaging/studies/000170
+171;233;X-Ray;402;20/02/2025 03:58;Chest;11;60;Completed;pacs://b-imaging/studies/000171
+172;234;CT;404;05/08/2024 13:10;Chest;8;61;Completed;pacs://b-imaging/studies/000172
+173;235;X-Ray;405;27/02/2024 16:13;Chest;9;60;Completed;pacs://b-imaging/studies/000173
+174;236;Ultrasound;407;06/05/2024 11:22;Abdomen;22;63;Completed;pacs://b-imaging/studies/000174
+175;239;MRI;409;31/07/2024 12:15;Brain;13;63;Completed;pacs://b-imaging/studies/000175
+176;241;CT;413;22/02/2025 11:21; Abdomen;22;63;Completed;pacs://b-imaging/studies/000176
+177;241;CT;414;22/02/2025 08:24;Abdomen;22;61;Completed;pacs://b-imaging/studies/000177
+178;244;X-Ray;419;11/07/2025 21:47;Chest;22;58;Completed;pacs://b-imaging/studies/000178
+179;245;X-Ray  ;422;24/11/2025 20:33;Abdomen;17;61;Completed;pacs://b-imaging/studies/000179
+180;249;MRI;429;08/07/2024 20:35;Brain;13;63;Completed;pacs://b-imaging/studies/000180
+181;251;X-Ray;432;08/11/2024 15:50;Chest;7;62;Completed;pacs://b-imaging/studies/000181
+182;252;Ultrasound;434;05/06/2024 18:58;Abdomen;17;61;Completed;pacs://b-imaging/studies/000182
+183;253;CT;437;29/09/2024 12:15;Spine;7;58;Completed;pacs://b-imaging/studies/000183
+184;254;CT;439;28/08/2025 04:07;Chest;11;63;Completed;pacs://b-imaging/studies/000184
+185;255;X-Ray;440;25/12/2024 08:53;Hip;7;61;Completed;pacs://b-imaging/studies/000185
+186;256;CT;443;23/09/2024 22:56;Chest;9;62;Completed;pacs://b-imaging/studies/000186
+187;257;Ultrasound;445;11/01/2025 19:51;Abdomen;17;61;Completed;pacs://b-imaging/studies/000187
+188;257;X-Ray;446;11/01/2025 07:12;Abdomen;17;58;Completed;NULL
+189;260;Ultrasound;450;13/10/2024 18:09;Abdomen;17;60;Completed;pacs://b-imaging/studies/000189
+190;260;Ultrasound;451;14/10/2024 00:02;Abdomen;17;61;Completed;pacs://b-imaging/studies/000190
+191;261;MRI;453;20/07/2024 12:47;Pelvis;18;58;Completed;pacs://b-imaging/studies/000191
+192;262;CT;454;18/08/2024 12:24;Chest;10;59;Completed;pacs://b-imaging/studies/000192
+193;264;Ultrasound;457;11/12/2024 21:41;Abdomen;5;60;Completed;pacs://b-imaging/studies/000193
+194;265;X-Ray;458;22/04/2025 16:39;Hip;7;60;Completed;pacs://b-imaging/studies/000194
+195;267;CT;460;14/09/2024 20:09;Abdomen;18;60;Completed;pacs://b-imaging/studies/000195
+196;268;X-Ray;461;01/12/2024 04:41;Chest;22;60;Completed;pacs://b-imaging/studies/000196
+197;271;X-Ray;464;27/03/2025 18:47;Wrist;5;62;Completed;pacs://b-imaging/studies/000197
+198;272;CT;466;02/04/2025 03:28;Neck Vessels;13;58;Completed;pacs://b-imaging/studies/000198
+199;273;MRI;468;15/10/2025 16:42;Brain;12;61;Completed;pacs://b-imaging/studies/000199
+200;276;CT;472;20/09/2025 23:45;Abdomen;19;62;Completed;pacs://b-imaging/studies/000200
+201;276;MRI;473;21/09/2025 11:10;Pelvis;18;63;Completed;pacs://b-imaging/studies/000201
+202;277;CT;474;31/08/2025 09:55;Chest;8;63;Completed;pacs://b-imaging/studies/000202
+203;277;X-Ray;475;01/09/2025 13:15;Chest;9;59;Completed;pacs://b-imaging/studies/000203
+204;280;X-Ray;478;08/07/2025 12:23;Chest;22;62;Completed;pacs://b-imaging/studies/000204
+205;282;CT;481;12/11/2024 18:25;Spine;5;62;Completed;
+206;282;X-Ray;482;12/11/2024 20:17;Knee;7;61;Completed;pacs://b-imaging/studies/000206
+207;283;CT;485;09/12/2024 02:43;Head;12;61;Completed;pacs://b-imaging/studies/000207
+208;283;MRI;486;08/12/2024 12:52;Brain;13;63;Completed;pacs://b-imaging/studies/000208
+209;285;MRI;488;01/08/2024 10:11;Pelvis;18;61;Completed;pacs://b-imaging/studies/000209
+210;286;CT;490;22/08/2024 02:15;Chest;11;59;Completed;pacs://b-imaging/studies/000210
+211;289;X-Ray;494;01/06/2024 09:58;Abdomen;17;61;Completed;pacs://b-imaging/studies/000211
+212;289;X-Ray;495;31/05/2024 05:36;Abdomen;17;59;Completed;pacs://b-imaging/studies/000212
+213;291;X-Ray;498;24/04/2024 02:31;Chest;9;59;Completed;pacs://b-imaging/studies/000213
+214;293;X-Ray;502;29/01/2025 16:40;Chest;11;60;Completed;pacs://b-imaging/studies/000214
+215;294;Ultrasound;503;08/03/2025 14:28;Abdomen;17;58;Completed;pacs://b-imaging/studies/000215
+216;295;X-Ray;504;14/08/2025 08:44;Chest;7;59;Completed;pacs://b-imaging/studies/000216
+217;298;Ultrasound;507;08/07/2025 14:55;Heart;9;63;Completed;pacs://b-imaging/studies/000217
+218;298;CT;508;09/07/2025 04:57;Chest;8;62;Completed;pacs://b-imaging/studies/000218
+219;299;X-Ray;509;18/04/2025 07:03;Chest;22;62;Completed;pacs://b-imaging/studies/000219
+220;302;CT;515;26/10/2026 09:19;Abdomen;17;61;Completed;pacs://b-imaging/studies/000220
+221;303;X-Ray;516;13/08/2024 17:30;Hip;7;59;Completed;pacs://b-imaging/studies/000221
+222;304;Ultrasound;518;21/10/2026 05:52;Abdomen;6;63;Completed;pacs://b-imaging/studies/000222
+223;304;Ultrasound;519;22/10/2026 13:46;Leg Veins;5;59;Completed;pacs://b-imaging/studies/000223
+224;305;X-Ray;521;18/08/2024 08:50;Hip;7;58;Completed;pacs://b-imaging/studies/000224
+225;306;Ultrasound;523;14/09/2024 18:33;Kidney;20;63;Completed;pacs://b-imaging/studies/000225
+226;306;Ultrasound;524;15/09/2024 16:26;Kidney;20;61;Completed;pacs://b-imaging/studies/000226
+227;307;X-Ray;7188;03/02/2025 03:43;Chest;7;59;Completed;pacs://b-imaging/studies/000227
+228;309;X-Ray;529;03/05/2024 18:02;Hip;6;62;Completed;pacs://b-imaging/studies/000228
+229;310;X-Ray;530;09/07/2025 04:27;Chest;20;60;Completed;pacs://b-imaging/studies/000229
+230;311;CT;532;23/04/2025 03:16;Abdomen;17;59;Completed;pacs://b-imaging/studies/000230
+231;314;CT;534;18/12/2025 20:37;Abdomen;19;59;Completed;pacs://b-imaging/studies/000231
+232;318;CT;539;25/12/2025 22:54;Head;12;58;Completed;pacs://b-imaging/studies/000232
+233;321;Ultrasound;542;05/02/2025 03:44;Leg Veins;7;62;Completed;
+234;321;Ultrasound;543;03/02/2025 05:00;Leg Veins;7;59;Completed;
+235;322;X-Ray;545;29/03/2025 04:22;Wrist;7;61;Completed;pacs://b-imaging/studies/000235
+236;323;X-Ray;548;04/03/2025 12:09;Chest;20;62;Completed;pacs://b-imaging/studies/000236
+237;325;CT;551;21/10/2024 18:59;Abdomen;22;62;Completed;pacs://b-imaging/studies/000237
+238;326;Ultrasound;553;07/02/2024 11:10;Abdomen;6;59;Completed;pacs://b-imaging/studies/000238
+239;329;X-Ray;557;02/06/2025 10:57;Chest;20;59;Completed;pacs://b-imaging/studies/000239
+240;330;X-Ray;559;05/10/2025 00:58;Chest;20;58;Completed;pacs://b-imaging/studies/000240
+241;331;CT;560;07/02/2026 19:10;Chest;10;62;Completed;
+242;333;X-Ray;562;25/07/2025 02:07;Wrist;5;62;Completed;pacs://b-imaging/studies/000242
+243;334;Ultrasound;563;03/12/2025 00:38;Abdomen;22;61;Completed;pacs://b-imaging/studies/000243
+244;334;CT;564;02/12/2025 11:42;Abdomen;22;58;Completed;pacs://b-imaging/studies/000244
+245;335;X-Ray;565;19/01/2026 04:08;Abdomen;17;63;Completed;pacs://b-imaging/studies/000245
+246;338;CT;570;03/08/2025 15:03;Abdomen;17;58;Completed;pacs://b-imaging/studies/000246
+247;343;X-Ray;575;11/09/2025 05:00;Knee;7;60;Completed;pacs://b-imaging/studies/000247
+248;344;Ultrasound;577;29/04/2024 12:11;Abdomen;7;62;Completed;pacs://b-imaging/studies/000248
+249;345;X-Ray;579;03/07/2024 08:33;Wrist;6;63;COMPLETED;pacs://b-imaging/studies/000249
+250;345;X-Ray;580;03/07/2024 11:34;Wrist;7;58;Completed;pacs://b-imaging/studies/000250
+251;349;Ultrasound;586;27/11/2025 16:08;Abdomen;22;63;Completed;pacs://b-imaging/studies/000251
+252;349;CT;587;26/11/2025 10:49;Abdomen;22;63;Completed;pacs://b-imaging/studies/000252
+253;350;X-Ray;589;28/08/2024 09:17;Chest;22;62;Completed;pacs://b-imaging/studies/000253
+254;351;CT;590;07/11/2024 15:04;Chest;8;60;Completed;pacs://b-imaging/studies/000254
+255;353;Ultrasound;593;19/11/2024 18:00;Abdomen;17;59;Completed;pacs://b-imaging/studies/000255
+256;354;CT;595;18/01/2025 03:08;Head;12;60;Completed;pacs://b-imaging/studies/000256
+257;354;CT;596;18/01/2025 03:43;Head;13;60;Completed;pacs://b-imaging/studies/000257
+258;357;x-ray;601;21/11/2024 22:43;Chest;7;60;Completed;
+259;358;Ultrasound;604;19/12/2024 10:44;Heart;9;59;Completed;pacs://b-imaging/studies/000259
+260;360;X-Ray;607;29/09/2025 22:45;Chest;22;60;Completed;pacs://b-imaging/studies/000260
+261;361;CT;608;29/12/2024 18:48;Chest;19;58;Completed;pacs://b-imaging/studies/000261
+262;363;X-Ray;611;15/07/2025 00:12;Chest;10;58;Completed;pacs://b-imaging/studies/000262
+263;363;X-Ray;612;14/07/2025 23:07;Chest;11;60;Completed;NULL
+264;365;X-Ray;616;22/11/2024 02:47;Chest;9;58;Completed;pacs://b-imaging/studies/000264
+265;366;CT;618;05/12/2024 08:58;Abdomen;17;62;Completed;pacs://b-imaging/studies/000265
+266;369;X-Ray;624;15/08/2025 18:45;Chest;20;61;Completed;pacs://b-imaging/studies/000266
+267;369;Ultrasound;625;16/08/2025 04:57;Kidney;20;60;Completed;pacs://b-imaging/studies/000267
+268;370;CT;627;26/08/2025 17:03;Abdomen;18;61;Completed;pacs://b-imaging/studies/000268
+269;371;Ultrasound;629;08/11/2025 10:53;Abdomen;17;63;Completed;pacs://b-imaging/studies/000269
+270;373;CT;632;14/08/2024 22:36;Head;12;59;Completed;pacs://b-imaging/studies/000270
+271;374;Ultrasound;634;11/11/2024 04:20;Heart;9;63;Completed;pacs://b-imaging/studies/000271
+272;374;X-Ray;635;12/11/2024 05:52;Chest;8;63;Completed;pacs://b-imaging/studies/000272
+273;375;Ultrasound;638;07/02/2025 14:01;Heart;8;62;Completed;pacs://b-imaging/studies/000273
+274;376;CT;640;07/07/2025 01:06;Abdomen;18;58;Completed;pacs://b-imaging/studies/000274
+275;378;CT;643;13/08/2025 13:58;Abdomen;22;63;Completed;pacs://b-imaging/studies/000275
+276;379;Ultrasound;645;15/11/2025 08:02;Kidney;20;63;Completed;pacs://b-imaging/studies/000276
+277;380;CT;647;04/01/2025 22:06;Chest;10;62;Completed;pacs://b-imaging/studies/000277
+278;384;X-Ray;652;24/11/2024 05:33;Abdomen;17;61;Completed;pacs://b-imaging/studies/000278
+279;384;Ultrasound;653;23/11/2024 17:43;Abdomen;17;60;Completed;pacs://b-imaging/studies/000279
+280;386;CT;656;19/07/2025 11:44;Abdomen;17;59;COMPLETED;pacs://b-imaging/studies/000280
+281;387;X-Ray;659;20/05/2024 05:14;Abdomen;17;59;Completed;pacs://b-imaging/studies/000281
+282;388;CT;661;04/10/2024 13:56;Neck Vessels;12;58;Completed;
+283;392;CT;665;17/05/2025 05:09;Abdomen;22;61;Completed;pacs://b-imaging/studies/000283
+284;394;X-Ray;668;02/05/2025 21:45;Chest;10;63;Completed;pacs://b-imaging/studies/000284
+285;395;MRI;669;18/08/2025 16:04;Pelvis;19;63;Completed;pacs://b-imaging/studies/000285
+286;397;X-Ray;672;29/11/2025 10:59;Abdomen;17;59;Completed;pacs://b-imaging/studies/000286
+287;399;CT;674;09/04/2024 02:47;Chest;9;62;Completed;pacs://b-imaging/studies/000287
+288;403;X-Ray;681;19/04/2025 20:12;Chest;5;63;Completed;pacs://b-imaging/studies/000288
+289;405;X-Ray;687;03/02/2025 02:45;Chest;8;62;Completed;pacs://b-imaging/studies/000289
+290;405;CT;688;01/02/2025 03:33;Chest;9;61;Completed;pacs://b-imaging/studies/000290
+291;406;CT;690;29/08/2024 20:24;Chest;10;63;Completed;pacs://b-imaging/studies/000291
+292;408;X-Ray;694;05/10/2024 20:04;Chest;22;61;Completed;pacs://b-imaging/studies/000292
+293;410;CT;698;14/11/2024 22:57;Neck Vessels;13;62;Completed;pacs://b-imaging/studies/000293
+294;411;X-Ray;699;24/07/2024 09:14;Knee;6;59;Completed;pacs://b-imaging/studies/000294
+295;413;Ultrasound;702;14/06/2024 08:08;Kidney;20;62;Completed;pacs://b-imaging/studies/000295
+296;414;X-Ray;704;27/10/2024 06:20;Knee;6;60;Completed;pacs://b-imaging/studies/000296
+297;414;X-Ray;705;28/10/2024 22:09;Hip;7;58;Completed;pacs://b-imaging/studies/000297
+298;416;CT;707;10/01/2024 08:45;Head;13;60;Completed;pacs://b-imaging/studies/000298
+299;418;MRI;711;11/07/2024 03:07;NULL;13;58;Completed;pacs://b-imaging/studies/000299
+300;422;X-Ray;717;05/05/2025 07:33;Chest;22;59;Completed;pacs://b-imaging/studies/000300
+301;423;CT;719;07/03/2024 18:16;Abdomen;22;59;Completed;pacs://b-imaging/studies/000301
+302;423;Ultrasound;720;07/03/2024 07:58;Abdomen;22;59;Completed;pacs://b-imaging/studies/000302
+303;424;CT;724;14/08/2024 02:45;Head;13;62;Completed;pacs://b-imaging/studies/000303
+304;425;Ultrasound;727;25/04/2025 05:11;Heart;9;63;Completed;pacs://b-imaging/studies/000304
+305;427;X-Ray;730;24/03/2024 10:52;Chest;10;59;Completed;pacs://b-imaging/studies/000305
+306;428;Ultrasound;732;22/05/2024 20:40;Abdomen;22;60;Completed;pacs://b-imaging/studies/000306
+307;429;CT;735;17/11/2025 18:03;Abdomen;22;62;Completed;pacs://b-imaging/studies/000307
+308;431;CT;739;25/01/2026 10:33;Head;12;59;Completed;pacs://b-imaging/studies/000308
+309;433;X-Ray;740;07/07/2025 07:08;Chest;22;62;Completed;pacs://b-imaging/studies/000309
+310;434;CT;742;05/08/2025 18:50;Abdomen;17;61;Completed;pacs://b-imaging/studies/000310
+311;436;CT;744;08/07/2024 03:22;Chest;9;60;Completed;pacs://b-imaging/studies/000311
+312;437;CT;746;21/10/2024 05:30;Chest;11;59;Completed;pacs://b-imaging/studies/000312
+313;438;Ultrasound;748;03/03/2025 11:05;Leg Veins;5;60;Completed;pacs://b-imaging/studies/000313
+314;442;ULTRASOUND;754;24/04/2025 02:58;Kidney;20;61;Completed;pacs://b-imaging/studies/000314
+315;446;Ultrasound;759;14/10/2024 14:16;Abdomen;22;63;Completed;pacs://b-imaging/studies/000315
+316;446;Ultrasound;760;14/10/2024 18:17;Abdomen;22;60;Completed;pacs://b-imaging/studies/000316
+317;447;MRI;761;09/04/2024 21:56;Pelvis;19;58;Completed;pacs://b-imaging/studies/000317
+318;447;MRI;762;08/04/2024 20:31;Pelvis;19;58;Completed;pacs://b-imaging/studies/000318
+319;449;X-Ray;766;07/03/2025 08:05;Chest;22;59;Completed;pacs://b-imaging/studies/000319
+320;450;X-Ray;769;06/09/2025 00:20;Chest;20;60;Completed;pacs://b-imaging/studies/000320
+321;450;Ultrasound;770;04/09/2025 10:52;Kidney;20;58;Completed;pacs://b-imaging/studies/000321
+322;454;CT;776;11/09/2025 23:27;  Neck Vessels ;13;62;Completed;pacs://b-imaging/studies/000322
+323;457;CT;779;25/08/2024 21:17;Head;12;62;Completed;pacs://b-imaging/studies/000323
+324;458;X-Ray;782;27/12/2024 00:09;Chest;5;59;Completed;pacs://b-imaging/studies/000324
+325;458;Ultrasound;783;27/12/2024 11:29;Leg Veins;6;61;Completed;pacs://b-imaging/studies/000325
+326;462;X-Ray;789;27/09/2024 19:30;Chest;20;61;Completed;pacs://b-imaging/studies/000326
+327;462;X-Ray;790;27/09/2024 07:20;Chest;20;59;Completed;pacs://b-imaging/studies/000327
+328;464;X-Ray;793;22/06/2025 17:10;Chest;11;63;Completed;pacs://b-imaging/studies/000328
+329;465;X-Ray;796;24/08/2025 07:42;Chest;22;59;Completed  ;NULL
+330;466;CT;797;13/02/2025 19:49;Chest;10;61;Completed;pacs://b-imaging/studies/000330
+331;469;CT;800;05/08/2024 00:16;Chest;10;60;Completed;pacs://b-imaging/studies/000331
+332;469;CT;801;05/08/2024 05:12;Chest;10;63;Completed;NULL

@@ -1,0 +1,472 @@
+record_id;ward_stay_no;record_datetime;vital_signs;medications;observations;response_to_treatment;physician_progress_notes;additional_diagnostic_exams;transferred
+1;9;24/01/2024 17:15;HR 125, BP 137/61, SpO2 97%, T 38.7C;IV piperacillin-tazobactam;Ventilated, FiO2 weaned to 40%;Slow improvement;Discussed goals of care with family;Blood cultures x2;No
+2;9;26/01/2024 01:10;HR 91, BP 109/77, SpO2 91%, T 37.0C;Amiodarone infusion;Afebrile for 24 hours;Slow improvement;Repeat labs at 18:00;;Yes
+3;10;26/01/2024 21:37;HR 83, BP 119/58, SpO2 98%, T 37.6C;Furosemide IV;Urine output adequate;Good response;Consider step-down tomorrow;Blood cultures x2;No
+4;10;29/01/2024 16:09;HR 102, BP 104/68, SpO2 91%, T 39.1C;Insulin infusion;Agitation overnight, sedation adjusted;Stable;Wean sedation, trial of spontaneous breathing;Echocardiogram;No
+5;10;29/01/2024 20:36;HR 114, BP 140/90, SpO2 97%, T 37.7C;Heparin infusion;Hemodynamically stable on low-dose vasopressors;Good response;Continue current plan, reassess in AM;Repeat chest X-ray;Yes
+6;13;11/06/2024 02:55;HR 76, BP 114/70, SpO2 94%, T 37.5C;Propofol sedation;Hemodynamically stable on low-dose vasopressors;Not responding, escalated;Consider step-down tomorrow;Echocardiogram;Yes
+7;17;25/09/2024 22:44;HR 84, BP 125/89, SpO2 88%, T 37.7C;Furosemide IV;Afebrile for 24 hours;Improving;Continue current plan, reassess in AM;Blood cultures x2;Yes
+8;25;17/10/2026 20:26;HR 108, BP 159/90, SpO2 90%, T 38.8C;Furosemide IV;Agitation overnight, sedation adjusted;Good response;Consider step-down tomorrow;Arterial blood gas;No
+9;25;20/10/2026 06:37;HR 79, BP 101/93, SpO2 93%, T 36.8C;Insulin infusion;Afebrile for 24 hours;Good response;Wean sedation, trial of spontaneous breathing;Blood cultures x2;No
+10;25;23/10/2026 19:15;HR 92, BP 134/77, SpO2 92%, T 38.0C;IV piperacillin-tazobactam;Urine output adequate;Stable;Wean sedation, trial of spontaneous breathing;;No
+11;25;24/10/2026 08:45;HR 102, BP 95/75, SpO2 94%, T 37.1C;Amiodarone infusion;Urine output adequate;Improving;Wean sedation, trial of spontaneous breathing;NULL;Yes
+12;28;28/01/2024 06:41;HR 97, BP 139/89, SpO2 93%, T 37.3C;Propofol sedation;Agitation overnight, sedation adjusted;Stable;Repeat labs at 18:00;NULL;No
+13;28;29/01/2024 01:13;HR 73, BP 133/59, SpO2 89%, T 38.7C;Norepinephrine infusion;Agitation overnight, sedation adjusted;Not responding, escalated;Continue current plan, reassess in AM;Repeat chest X-ray;No
+14;28;09/02/2024 15:13;HR 130, BP 110/67, SpO2 96%, T 38.2C;Propofol sedation;Hemodynamically stable on low-dose vasopressors;Not responding, escalated;Continue current plan, reassess in AM;Repeat chest X-ray;No
+15;28;12/02/2024 10:11;HR 76, BP 94/95, SpO2 94%, T 37.1C;IV piperacillin-tazobactam;Agitation overnight, sedation adjusted;Slow improvement;Discussed goals of care with family;;Yes
+16;31;22/05/2024 18:24;HR 106, BP 159/61, SpO2 95%, T 37.1C;Heparin infusion;Hemodynamically stable on low-dose vasopressors;Good response;Continue current plan, reassess in AM;;No
+17;31;23/05/2024 01:23;HR 120, BP 116/87, SpO2 97%, T 36.3C;Furosemide IV;Afebrile for 24 hours;Not responding, escalated;Discussed goals of care with family;;No
+18;31;25/05/2024 13:10;HR 129, BP 147/65, SpO2 92%, T 38.8C;IV piperacillin-tazobactam;Agitation overnight, sedation adjusted;Not responding, escalated;Repeat labs at 18:00;Echocardiogram;Yes
+19;33;14/09/2025 09:26;HR 82, BP 140/65, SpO2 88%, T 37.5C;Propofol sedation;Agitation overnight, sedation adjusted;Improving;Continue current plan, reassess in AM;Blood cultures x2;No
+20;33;17/09/2025 20:19;HR 85, BP 122/74, SpO2 100%, T 37.4C;Norepinephrine infusion;Agitation overnight, sedation adjusted;Improving;Wean sedation, trial of spontaneous breathing;;No
+21;33;19/09/2025 07:31;HR 120, BP 97/66, SpO2 94%, T 39.1C;Insulin infusion;Hemodynamically stable on low-dose vasopressors;Good response;Continue current plan, reassess in AM;Repeat chest X-ray;Yes
+22;40;28/02/2025 01:10;HR 128, BP 155/78, SpO2 94%, T 36.4C;Insulin infusion;Afebrile for 24 hours;Stable;Continue current plan, reassess in AM;Arterial blood gas;No
+23;40;28/02/2025 01:58;HR 123, BP 116/66, SpO2 88%, T 37.4C;Propofol sedation;Urine output adequate;Improving;Repeat labs at 18:00;Blood cultures x2;No
+24;40;02/03/2025 20:25;HR 94, BP 99/64, SpO2 97%, T 38.7C;Amiodarone infusion;Urine output adequate;Slow improvement;Continue current plan, reassess in AM;Echocardiogram;Yes
+25;41;04/03/2025 23:20;HR 82, BP 96/90, SpO2 96%, T 39.0C;Insulin infusion;Afebrile for 24 hours;Not responding, escalated;Wean sedation, trial of spontaneous breathing;NULL;No
+26;41;06/03/2025 22:39;HR 83, BP 108/64, SpO2 92%, T 37.4C;Amiodarone infusion;Hemodynamically stable on low-dose vasopressors;Improving;Continue current plan, reassess in AM;Blood cultures x2;Yes
+27;45;07/10/2025 00:03;HR 105, BP 104/68, SpO2 94%, T 39.0C;Amiodarone infusion;Ventilated, FiO2 weaned to 40%;Good response;Repeat labs at 18:00;;No
+28;45;07/10/2025 04:14;HR 117, BP 95/87, SpO2 88%, T 36.6C;Insulin infusion;Agitation overnight, sedation adjusted;Not responding, escalated;Wean sedation, trial of spontaneous breathing;NULL;No
+29;45;10/10/2025 23:24;HR 128, BP 115/64, SpO2 96%, T 38.9C;Amiodarone infusion;Urine output adequate;Slow improvement;Wean sedation, trial of spontaneous breathing;;Yes
+30;49;27/01/2025 11:17;HR 128, BP 122/86, SpO2 97%, T 38.9C;Heparin infusion;Hemodynamically stable on low-dose vasopressors;Slow improvement;Discussed goals of care with family;Echocardiogram;No
+31;49;27/01/2025 23:59;HR 74, BP 146/51, SpO2 95%, T 37.9C;Norepinephrine infusion;Urine output adequate;Not responding, escalated;Consider step-down tomorrow;Echocardiogram;Yes
+32;52;05/02/2025 23:08;HR 98, BP 125/82, SpO2 93%, T 38.8C;Propofol sedation;Afebrile for 24 hours;Improving;Continue current plan, reassess in AM;Arterial blood gas;No
+33;52;07/02/2025 11:02;HR 121, BP 107/83, SpO2 97%, T 37.9C;IV piperacillin-tazobactam;Urine output adequate;Improving;Consider step-down tomorrow;NULL;No
+34;52;10/02/2025 06:10;HR 120, BP 98/61, SpO2 95%, T 38.0C;Heparin infusion;Hemodynamically stable on low-dose vasopressors;Not responding, escalated;Consider step-down tomorrow;Echocardiogram;Yes
+35;79;13/01/2024 00:20;HR 115, BP 127/67, SpO2 98%, T 36.4C;Insulin infusion;Ventilated, FiO2 weaned to 40%;Stable;Consider step-down tomorrow;;No
+36;79;13/01/2024 12:44;HR 80, BP 118/50, SpO2 100%, T 38.8C;Norepinephrine infusion;Ventilated, FiO2 weaned to 40%;Improving;Discussed goals of care with family;Blood cultures x2;No
+37;79;20/01/2024 23:24;HR 125, BP 120/52, SpO2 89%, T 37.9C;Heparin infusion;Agitation overnight, sedation adjusted;Improving;Consider step-down tomorrow;Echocardiogram;No
+38;79;26/01/2024 01:31;HR 84, BP 159/82, SpO2 97%, T 36.3C;Propofol sedation;Urine output adequate;Good response;Wean sedation, trial of spontaneous breathing;Arterial blood gas;Yes
+39;83;07/05/2024 23:23;HR 80, BP 122/79, SpO2 90%, T 39.1C;Heparin infusion;Urine output adequate;Not responding, escalated;Repeat labs at 18:00;Arterial blood gas;No
+40;83;08/05/2024 08:21;HR 101, BP 96/93, SpO2 98%, T 38.1C;Insulin infusion;Hemodynamically stable on low-dose vasopressors;Slow improvement;Repeat labs at 18:00;Arterial blood gas;No
+41;83;13/05/2024 11:24;HR 123, BP 134/80, SpO2 88%, T 37.0C;Heparin infusion;Urine output adequate;Improving;Consider step-down tomorrow;Echocardiogram;No
+42;83;14/05/2024 03:28;HR 109, BP 107/50, SpO2 97%, T 36.8C;Propofol sedation;Agitation overnight, sedation adjusted;Not responding, escalated;Consider step-down tomorrow;;No
+43;87;06/08/2024 04:57;HR 90, BP 158/56, SpO2 92%, T 38.4C;Amiodarone infusion;Afebrile for 24 hours;Slow improvement;Wean sedation, trial of spontaneous breathing;Arterial blood gas;No
+44;87;06/08/2024 20:22;HR 118, BP 138/63, SpO2 89%, T 36.7C;Heparin infusion;Agitation overnight, sedation adjusted;Good response;Consider step-down tomorrow;NULL;No
+45;87;09/08/2024 15:30;HR 88, BP 122/52, SpO2 97%, T 37.9C;Propofol sedation;Ventilated, FiO2 weaned to 40%;Not responding, escalated;Consider step-down tomorrow;Blood cultures x2;Yes
+46;88;10/08/2024 19:45;HR 77, BP 142/89, SpO2 93%, T 37.5C;Heparin infusion;Ventilated, FiO2 weaned to 40%;Not responding, escalated;Repeat labs at 18:00;Echocardiogram;No
+47;88;11/08/2024 22:45;HR 93, BP 115/57, SpO2 99%, T 37.3C;Propofol sedation;Urine output adequate;Not responding, escalated;Discussed goals of care with family;;No
+48;88;13/08/2024 00:30;HR 97, BP 146/52, SpO2 89%, T 36.5C;Amiodarone infusion;Ventilated, FiO2 weaned to 40%;Not responding, escalated;Repeat labs at 18:00;Repeat chest X-ray;Yes
+49;91;31/10/2024 19:24;HR 89, BP 133/93, SpO2 93%, T 36.2C;Amiodarone infusion;Hemodynamically stable on low-dose vasopressors;Stable;Consider step-down tomorrow;Blood cultures x2;No
+50;91;31/10/2024 23:34;HR 101, BP 145/86, SpO2 93%, T 37.5C;IV piperacillin-tazobactam;Ventilated, FiO2 weaned to 40%;Not responding, escalated;Consider step-down tomorrow;Blood cultures x2;No
+51;91;02/11/2024 16:26;HR 101, BP 114/72, SpO2 88%, T 37.5C;Furosemide IV;Ventilated, FiO2 weaned to 40%;Slow improvement;Discussed goals of care with family;Arterial blood gas;Yes
+52;96;02/07/2024 22:57;HR 102, BP 150/91, SpO2 92%, T 38.6C;Insulin infusion;Agitation overnight, sedation adjusted;Not responding, escalated;Discussed goals of care with family;NULL;Yes
+53;104;13/10/2025 18:11;HR 93, BP 126/95, SpO2 93%, T 37.5C;Heparin infusion;Urine output adequate;Not responding, escalated;Continue current plan, reassess in AM;Echocardiogram;No
+54;104;14/10/2025 12:36;HR 80, BP 94/64, SpO2 97%, T 38.6C;Insulin infusion;Afebrile for 24 hours;Slow improvement;Consider step-down tomorrow;;Yes
+55;106;05/09/2024 06:24;HR 75, BP 93/94, SpO2 99%, T 36.6C;Propofol sedation;Agitation overnight, sedation adjusted;Good response;Consider step-down tomorrow;Blood cultures x2;No
+56;106;07/09/2024 21:49;HR 110, BP 138/52, SpO2 99%, T 36.5C;IV piperacillin-tazobactam;Hemodynamically stable on low-dose vasopressors;Stable;Continue current plan, reassess in AM;NULL;No
+57;106;08/09/2024 15:54;HR 93, BP 122/79, SpO2 94%, T 37.0C;Heparin infusion;Hemodynamically stable on low-dose vasopressors;Stable;Wean sedation, trial of spontaneous breathing;Blood cultures x2;Yes
+58;108;07/12/2024 13:29;HR 123, BP 101/63, SpO2 100%, T 38.8C;Amiodarone infusion;Ventilated, FiO2 weaned to 40%;Not responding, escalated;Continue current plan, reassess in AM;Echocardiogram;Yes
+59;111;29/03/2025 02:47;HR 126, BP 103/74, SpO2 99%, T 37.9C;Propofol sedation;Afebrile for 24 hours;Stable;Discussed goals of care with family;Repeat chest X-ray;No
+60;111;30/03/2025 11:10;HR 97, BP 104/67, SpO2 93%, T 38.9C;Norepinephrine infusion;Hemodynamically stable on low-dose vasopressors;Slow improvement;Discussed goals of care with family;;Yes
+61;116;18/01/2024 06:02;HR 110, BP 113/69, SpO2 91%, T 38.8C;Norepinephrine infusion;Agitation overnight, sedation adjusted;Slow improvement;Discussed goals of care with family;Arterial blood gas;No
+62;116;18/01/2024 06:50;HR 130, BP 108/89, SpO2 98%, T 38.2C;IV piperacillin-tazobactam;Ventilated, FiO2 weaned to 40%;Stable;Wean sedation, trial of spontaneous breathing;Arterial blood gas;No
+63;116;26/01/2024 08:53;HR 83, BP 112/81, SpO2 98%, T 39.2C;Heparin infusion;Ventilated, FiO2 weaned to 40%;Good response;Consider step-down tomorrow;;No
+64;116;28/01/2024 15:38;HR 80, BP 151/51, SpO2 97%, T 38.6C;Propofol sedation;Afebrile for 24 hours;Not responding, escalated;Repeat labs at 18:00;Blood cultures x2;Yes
+65;120;22/09/2025 13:58;HR 106, BP 102/77, SpO2 89%, T 37.5C;Insulin infusion;Urine output adequate;Good response;Discussed goals of care with family;Arterial blood gas;No
+66;120;23/09/2025 13:42;HR 85, BP 137/91, SpO2 94%, T 37.9C;Norepinephrine infusion;Ventilated, FiO2 weaned to 40%;Good response;Discussed goals of care with family;;No
+67;120;26/09/2025 14:00;HR 95, BP 119/86, SpO2 94%, T 37.9C;Norepinephrine infusion;Agitation overnight, sedation adjusted;Improving;Repeat labs at 18:00;Arterial blood gas;No
+68;120;26/09/2025 21:46;HR 118, BP 125/55, SpO2 97%, T 36.8C;IV piperacillin-tazobactam;Ventilated, FiO2 weaned to 40%;Improving;Wean sedation, trial of spontaneous breathing;Arterial blood gas;Yes
+69;123;04/03/2026 09:52;HR 94, BP 121/76, SpO2 92%, T 37.3C;Propofol sedation;Afebrile for 24 hours;Improving;Wean sedation, trial of spontaneous breathing;Arterial blood gas;No
+70;123;08/03/2026 23:57;HR 73, BP 127/86, SpO2 96%, T 38.1C;Norepinephrine infusion;Agitation overnight, sedation adjusted;Slow improvement;Consider step-down tomorrow;Echocardiogram;No
+71;123;09/03/2026 12:10;HR 82, BP 140/56, SpO2 100%, T 37.5C;Furosemide IV;Agitation overnight, sedation adjusted;Not responding, escalated;Continue current plan, reassess in AM;NULL;Yes
+72;126;13/05/2025 17:21;HR 123, BP 106/93, SpO2 90%, T 38.2C;Propofol sedation;Ventilated, FiO2 weaned to 40%;Slow improvement;Discussed goals of care with family;NULL;No
+73;126;14/05/2025 21:45;HR 81, BP 127/60, SpO2 94%, T 36.5C;Amiodarone infusion;Urine output adequate;Stable;Wean sedation, trial of spontaneous breathing;;Yes
+74;131;30/06/2025 03:06;HR 127, BP 142/69, SpO2 96%, T 36.4C;Amiodarone infusion;Ventilated, FiO2 weaned to 40%;Good response;Wean sedation, trial of spontaneous breathing;Blood cultures x2;No
+75;131;02/07/2025 01:45;HR 94, BP 123/65, SpO2 97%, T 38.0C;Propofol sedation;Hemodynamically stable on low-dose vasopressors;Good response;Discussed goals of care with family;Blood cultures x2;No
+76;131;02/07/2025 02:45;HR 88, BP 92/87, SpO2 89%, T 37.6C;Furosemide IV;Agitation overnight, sedation adjusted;Improving;Continue current plan, reassess in AM;Blood cultures x2;Yes
+77;134;04/09/2025 18:38;HR 105, BP 97/95, SpO2 93%, T 36.7C;Furosemide IV;Ventilated, FiO2 weaned to 40%;Not responding, escalated;Discussed goals of care with family;NULL;No
+78;134;05/09/2025 02:45;HR 125, BP 157/56, SpO2 94%, T 36.2C;Propofol sedation;Urine output adequate;Not responding, escalated;Wean sedation, trial of spontaneous breathing;;No
+79;134;08/09/2025 22:48;HR 109, BP 102/93, SpO2 90%, T 38.4C;Norepinephrine infusion;Ventilated, FiO2 weaned to 40%;Not responding, escalated;Continue current plan, reassess in AM;Arterial blood gas;No
+80;134;09/09/2025 12:18;HR 90, BP 156/88, SpO2 88%, T 37.6C;Insulin infusion;Ventilated, FiO2 weaned to 40%;Stable;Repeat labs at 18:00;Repeat chest X-ray;Yes
+81;137;07/03/2026 15:27;HR 93, BP 114/72, SpO2 89%, T 37.3C;IV piperacillin-tazobactam;Afebrile for 24 hours;Improving;Repeat labs at 18:00;Repeat chest X-ray;No
+82;138;16/10/2024 14:54;HR 109, BP 104/58, SpO2 100%, T 37.5C;Norepinephrine infusion;Agitation overnight, sedation adjusted;Stable;Consider step-down tomorrow;NULL;No
+83;138;17/10/2024 09:34;HR 112, BP 91/59, SpO2 88%, T 39.1C;Propofol sedation;Agitation overnight, sedation adjusted;Not responding, escalated;Wean sedation, trial of spontaneous breathing;Arterial blood gas;No
+84;138;18/10/2024 02:35;HR 85, BP 119/92, SpO2 98%, T 38.0C;IV piperacillin-tazobactam;Urine output adequate;Not responding, escalated;Discussed goals of care with family;;No
+85;138;19/10/2024 03:01;HR 93, BP 159/55, SpO2 90%, T 38.9C;IV piperacillin-tazobactam;Ventilated, FiO2 weaned to 40%;Stable;Continue current plan, reassess in AM;Arterial blood gas;Yes
+86;141;09/29/2024 06:46;HR 73, BP 95/51, SpO2 93%, T 37.4C;Heparin infusion;Agitation overnight, sedation adjusted;Good response;Discussed goals of care with family;NULL;Yes
+87;156;24/01/2025 09:19;HR 116, BP 156/56, SpO2 91%, T 36.6C;Norepinephrine infusion;Ventilated, FiO2 weaned to 40%;Stable;Wean sedation, trial of spontaneous breathing;Arterial blood gas;Yes
+88;166;16/07/2025 08:19;HR 110, BP 114/68, SpO2 97%, T 38.4C;Insulin infusion;Urine output adequate;Stable;Wean sedation, trial of spontaneous breathing;;No
+89;166;16/07/2025 23:19;HR 120, BP 97/73, SpO2 100%, T 38.9C;Insulin infusion;Afebrile for 24 hours;Slow improvement;Consider step-down tomorrow;Blood cultures x2;Yes
+90;177;16/01/2024 07:42;HR 114, BP 129/73, SpO2 97%, T 37.7C;Heparin infusion;Ventilated, FiO2 weaned to 40%;Stable;Consider step-down tomorrow;;No
+91;177;17/01/2024 22:22;HR 87, BP 125/94, SpO2 90%, T 37.0C;Heparin infusion;Afebrile for 24 hours;Not responding, escalated;Consider step-down tomorrow;Echocardiogram;No
+92;177;19/01/2024 21:53;HR 120, BP 112/66, SpO2 93%, T 36.7C;Insulin infusion;Afebrile for 24 hours;Stable;Repeat labs at 18:00;Repeat chest X-ray;Yes
+93;193;24/10/2025 10:11;HR 88, BP 132/85, SpO2 95%, T 37.9C;Norepinephrine infusion;Afebrile for 24 hours;Good response;Discussed goals of care with family;Repeat chest X-ray;No
+94;193;25/10/2025 19:53;HR 77, BP 128/89, SpO2 98%, T 36.7C;Insulin infusion;Ventilated, FiO2 weaned to 40%;Stable;Continue current plan, reassess in AM;Echocardiogram;No
+95;193;28/10/2025 08:04;HR 85, BP 117/51, SpO2 98%, T 38.7C;Norepinephrine infusion;Hemodynamically stable on low-dose vasopressors;Improving;Continue current plan, reassess in AM;Repeat chest X-ray;Yes
+96;197;16/01/2025 22:25;HR 120, BP 135/94, SpO2 89%, T 37.9C;Heparin infusion;Ventilated, FiO2 weaned to 40%;Improving;Repeat labs at 18:00;;No
+97;197;17/01/2025 01:37;HR 72, BP 138/59, SpO2 89%, T 38.5C;Amiodarone infusion;Urine output adequate;Slow improvement;Wean sedation, trial of spontaneous breathing;;No
+98;197;20/01/2025 18:16;HR 91, BP 156/93, SpO2 98%, T 38.2C;Norepinephrine infusion;Ventilated, FiO2 weaned to 40%;Slow improvement;Discussed goals of care with family;Echocardiogram;No
+99;197;22/01/2025 02:27;HR 84, BP 101/58, SpO2 90%, T 38.7C;Furosemide IV;Hemodynamically stable on low-dose vasopressors;Not responding, escalated;Wean sedation, trial of spontaneous breathing;Blood cultures x2;Yes
+100;198;24/01/2025 07:44;HR 85, BP 91/89, SpO2 95%, T 39.0C;Propofol sedation;Ventilated, FiO2 weaned to 40%;Improving;Repeat labs at 18:00;;Yes
+101;201;21/05/2025 08:26;HR 95, BP 127/58, SpO2 95%, T 37.3C;IV piperacillin-tazobactam;Ventilated, FiO2 weaned to 40%;Improving;Wean sedation, trial of spontaneous breathing;;No
+102;201;23/05/2025 02:07;HR 104, BP 120/77, SpO2 90%, T 37.7C;Furosemide IV;Hemodynamically stable on low-dose vasopressors;Not responding, escalated;Continue current plan, reassess in AM;Blood cultures x2;Yes
+103;207;17/11/2025 06:25;HR 99, BP 155/90, SpO2 96%, T 38.6C;Amiodarone infusion;Ventilated, FiO2 weaned to 40%;Improving;Continue current plan, reassess in AM;Arterial blood gas;No
+104;207;17/11/2025 13:38;HR 127, BP 107/80, SpO2 93%, T 37.8C;Amiodarone infusion;Hemodynamically stable on low-dose vasopressors;Good response;Repeat labs at 18:00;Arterial blood gas;No
+105;207;18/11/2025 05:11;HR 119, BP 149/53, SpO2 100%, T 36.5C;Norepinephrine infusion;Hemodynamically stable on low-dose vasopressors;Slow improvement;Wean sedation, trial of spontaneous breathing;;No
+106;207;21/11/2025 20:02;HR 88, BP 112/73, SpO2 88%, T 38.1C;Amiodarone infusion;Hemodynamically stable on low-dose vasopressors;Stable;Consider step-down tomorrow;;Yes
+107;212;20/07/2026 13:14;HR 70, BP 98/72, SpO2 95%, T 36.3C;Norepinephrine infusion;Ventilated, FiO2 weaned to 40%;Not responding, escalated;Continue current plan, reassess in AM;;No
+108;212;30/07/2026 09:11;HR 83, BP 139/94, SpO2 96%, T 36.7C;Insulin infusion;Ventilated, FiO2 weaned to 40%;Stable;Repeat labs at 18:00;Blood cultures x2;No
+109;212;30/07/2026 09:45;HR 82, BP 97/89, SpO2 100%, T 36.6C;Norepinephrine infusion;Ventilated, FiO2 weaned to 40%;Stable;Discussed goals of care with family;;No
+110;212;30/07/2026 14:28;HR 130, BP 137/69, SpO2 97%, T 38.6C;Insulin infusion;Hemodynamically stable on low-dose vasopressors;Not responding, escalated;Discussed goals of care with family;;Yes
+111;222;06/02/2025 05:25;HR 84, BP 107/79, SpO2 98%, T 36.8C;Heparin infusion;Ventilated, FiO2 weaned to 40%;Stable;Repeat labs at 18:00;Echocardiogram;No
+112;222;06/02/2025 17:34;HR 77, BP 109/64, SpO2 90%, T 38.4C;Propofol sedation;Urine output adequate;Slow improvement;Continue current plan, reassess in AM;Blood cultures x2;No
+113;222;08/02/2025 09:29;HR 86, BP 93/72, SpO2 90%, T 37.0C;Norepinephrine infusion;Hemodynamically stable on low-dose vasopressors;Good response;Continue current plan, reassess in AM;NULL;Yes
+114;227;11/10/2024 11:52;HR 97, BP 142/79, SpO2 92%, T 36.3C;Furosemide IV;Urine output adequate;Stable;Repeat labs at 18:00;;Yes
+115;231;29/03/2026 04:35;HR 100, BP 107/95, SpO2 88%, T 38.9C;Propofol sedation;Agitation overnight, sedation adjusted;Improving;Discussed goals of care with family;Echocardiogram;No
+116;231;03/04/2026 08:23;HR 97, BP 127/50, SpO2 90%, T 37.8C;Furosemide IV;Agitation overnight, sedation adjusted;Not responding, escalated;Consider step-down tomorrow;Repeat chest X-ray;No
+117;231;03/04/2026 12:09;HR 125, BP 126/86, SpO2 92%, T 36.4C;Propofol sedation;Ventilated, FiO2 weaned to 40%;Slow improvement;Consider step-down tomorrow;Blood cultures x2;No
+118;231;09/04/2026 19:17;HR 99, BP 135/65, SpO2 98%, T 38.2C;IV piperacillin-tazobactam;Hemodynamically stable on low-dose vasopressors;Improving;Continue current plan, reassess in AM;NULL;No
+119;233;26/10/2026 23:29;HR 94, BP 154/76, SpO2 88%, T 36.6C;IV piperacillin-tazobactam;Ventilated, FiO2 weaned to 40%;Improving;Wean sedation, trial of spontaneous breathing;;No
+120;233;27/10/2026 10:00;HR 121, BP 138/66, SpO2 88%, T 36.9C;Insulin infusion;Hemodynamically stable on low-dose vasopressors;Improving;Repeat labs at 18:00;Echocardiogram;Yes
+121;241;11/08/2025 05:49;HR 104, BP 121/79, SpO2 89%, T 36.6C;Norepinephrine infusion;Hemodynamically stable on low-dose vasopressors;Stable;Repeat labs at 18:00;Repeat chest X-ray;No
+122;241;12/08/2025 07:28;HR 107, BP 152/83, SpO2 99%, T 36.5C;Furosemide IV;Ventilated, FiO2 weaned to 40%;Good response;Repeat labs at 18:00;Blood cultures x2;No
+123;241;15/08/2025 14:23;HR 85, BP 93/87, SpO2 91%, T 37.3C;Furosemide IV;Hemodynamically stable on low-dose vasopressors;Good response;Discussed goals of care with family;NULL;Yes
+124;247;13/12/2024 00:54;HR 127, BP 126/76, SpO2 88%, T 37.3C;Propofol sedation;Hemodynamically stable on low-dose vasopressors;Not responding, escalated;Discussed goals of care with family;Echocardiogram;No
+125;247;15/12/2024 01:06;HR 73, BP 98/90, SpO2 88%, T 38.6C;Insulin infusion;Urine output adequate;Good response;Continue current plan, reassess in AM;NULL;No
+126;247;18/12/2024 10:58;HR 79, BP 98/50, SpO2 100%, T 38.0C;IV piperacillin-tazobactam;Ventilated, FiO2 weaned to 40%;Good response;Discussed goals of care with family;;No
+127;247;20/12/2024 08:01;HR 117, BP 90/63, SpO2 99%, T 36.7C;Insulin infusion;Hemodynamically stable on low-dose vasopressors;Stable;Consider step-down tomorrow;NULL;No
+128;262;14/08/2025 18:15;HR 92, BP 99/73, SpO2 95%, T 37.6C;Norepinephrine infusion;Afebrile for 24 hours;Not responding, escalated;Consider step-down tomorrow;Blood cultures x2;No
+129;262;15/08/2025 18:32;HR 105, BP 100/86, SpO2 99%, T 36.7C;Amiodarone infusion;Hemodynamically stable on low-dose vasopressors;Not responding, escalated;Continue current plan, reassess in AM;Arterial blood gas;Yes
+130;269;12/03/2025 05:16;HR 130, BP 109/51, SpO2 89%, T 37.7C;IV piperacillin-tazobactam;Afebrile for 24 hours;Improving;Continue current plan, reassess in AM;Echocardiogram;No
+131;269;16/03/2025 09:58;HR 82, BP 115/70, SpO2 88%, T 36.7C;Propofol sedation;Afebrile for 24 hours;Improving;Consider step-down tomorrow;NULL;No
+132;269;19/03/2025 08:15;HR 85, BP 97/84, SpO2 93%, T 37.2C;Propofol sedation;Urine output adequate;Good response;Continue current plan, reassess in AM;Echocardiogram;No
+133;269;19/03/2025 22:23;HR 109, BP 105/60, SpO2 98%, T 37.8C;Propofol sedation;Hemodynamically stable on low-dose vasopressors;Slow improvement;Consider step-down tomorrow;Arterial blood gas;Yes
+134;281;17/07/2025 20:38;HR 117, BP 111/73, SpO2 100%, T 36.5C;Furosemide IV;Ventilated, FiO2 weaned to 40%;Good response;Continue current plan, reassess in AM;;No
+135;281;19/07/2025 03:53;HR 78, BP 96/76, SpO2 96%, T 36.3C;Furosemide IV;Hemodynamically stable on low-dose vasopressors;Stable;Continue current plan, reassess in AM;Blood cultures x2;No
+136;281;20/07/2025 18:10;HR 99, BP 113/56, SpO2 99%, T 37.8C;Norepinephrine infusion;Afebrile for 24 hours;Stable;Wean sedation, trial of spontaneous breathing;Blood cultures x2;Yes
+137;282;24/07/2025 03:00;HR 90, BP 103/76, SpO2 92%, T 37.5C;Propofol sedation;Hemodynamically stable on low-dose vasopressors;Slow improvement;Continue current plan, reassess in AM;;Yes
+138;286;29/06/2024 15:19;HR 95, BP 127/91, SpO2 93%, T 37.4C;Insulin infusion;Afebrile for 24 hours;Stable;Wean sedation, trial of spontaneous breathing;;No
+139;286;01/07/2024 02:27;HR 129, BP 137/70, SpO2 97%, T 37.2C;Furosemide IV;Urine output adequate;Not responding, escalated;Consider step-down tomorrow;Arterial blood gas;No
+140;286;08/07/2024 17:27;HR 82, BP 140/65, SpO2 89%, T 38.5C;Insulin infusion;Agitation overnight, sedation adjusted;Improving;Wean sedation, trial of spontaneous breathing;Echocardiogram;No
+141;286;08/07/2024 21:40;HR 80, BP 133/63, SpO2 97%, T 37.0C;Insulin infusion;Urine output adequate;Good response;Discussed goals of care with family;;Yes
+142;295;14/07/2024 00:49;HR 117, BP 119/91, SpO2 92%, T 38.9C;Insulin infusion;Urine output adequate;Slow improvement;Continue current plan, reassess in AM;Arterial blood gas;No
+143;295;14/07/2024 13:26;HR 125, BP 112/88, SpO2 91%, T 38.1C;Amiodarone infusion;Urine output adequate;Improving;Consider step-down tomorrow;NULL;No
+144;295;22/07/2024 03:02;HR 113, BP 158/71, SpO2 98%, T 39.2C;Heparin infusion;Urine output adequate;Slow improvement;Consider step-down tomorrow;Echocardiogram;No
+145;295;26/07/2024 18:39;HR 121, BP 138/87, SpO2 96%, T 36.9C;Heparin infusion;Agitation overnight, sedation adjusted;Stable;Discussed goals of care with family;Blood cultures x2;Yes
+146;296;27/07/2024 20:34;HR 115, BP 140/87, SpO2 98%, T 36.4C;Heparin infusion;Agitation overnight, sedation adjusted;Good response;Continue current plan, reassess in AM;Arterial blood gas;No
+147;296;29/07/2024 06:24;HR 85, BP 112/62, SpO2 94%, T 39.1C;Insulin infusion;Agitation overnight, sedation adjusted;Not responding, escalated;Continue current plan, reassess in AM;;No
+148;296;30/07/2024 01:12;HR 81, BP 108/83, SpO2 92%, T 38.0C;IV piperacillin-tazobactam;Afebrile for 24 hours;Slow improvement;Continue current plan, reassess in AM;Echocardiogram;No
+149;299;04/09/2024 12:54;HR 73, BP 142/69, SpO2 94%, T 36.4C;Propofol sedation;Ventilated, FiO2 weaned to 40%;Improving;Discussed goals of care with family;;No
+150;299;06/09/2024 01:41;HR 83, BP 151/95, SpO2 89%, T 39.0C;Insulin infusion;Ventilated, FiO2 weaned to 40%;Good response;Repeat labs at 18:00;Echocardiogram;No
+151;300;26/02/2024 18:47;HR 73, BP 145/67, SpO2 91%, T 37.4C;Propofol sedation;Ventilated, FiO2 weaned to 40%;Improving;Wean sedation, trial of spontaneous breathing;;No
+152;300;28/02/2024 12:57;HR 100, BP 91/77, SpO2 88%, T 36.7C;Insulin infusion;Afebrile for 24 hours;Good response;Consider step-down tomorrow;Blood cultures x2;No
+153;300;02/03/2024 06:19;HR 73, BP 157/94, SpO2 90%, T 38.7C;Insulin infusion;Urine output adequate;Good response;Wean sedation, trial of spontaneous breathing;Arterial blood gas;No
+154;300;04/03/2024 08:23;HR 129, BP 116/79, SpO2 99%, T 36.2C;IV piperacillin-tazobactam;Urine output adequate;Improving;Consider step-down tomorrow;;Yes
+155;308;03/10/2024 06:40;HR 102, BP 131/70, SpO2 98%, T 37.9C;Insulin infusion;Afebrile for 24 hours;Stable;Discussed goals of care with family;Echocardiogram;No
+156;308;06/10/2024 18:42;HR 90, BP 92/82, SpO2 94%, T 37.4C;Propofol sedation;Urine output adequate;Improving;Wean sedation, trial of spontaneous breathing;Blood cultures x2;No
+157;308;07/10/2024 02:27;HR 126, BP 119/54, SpO2 88%, T 37.7C;Amiodarone infusion;Ventilated, FiO2 weaned to 40%;Slow improvement;Continue current plan, reassess in AM;;Yes
+158;312;27/12/2024 08:24;HR 74, BP 104/71, SpO2 94%, T 38.1C;Norepinephrine infusion;Afebrile for 24 hours;Good response;Discussed goals of care with family;;No
+159;312;28/12/2024 06:14;HR 73, BP 157/51, SpO2 100%, T 37.4C;Insulin infusion;Agitation overnight, sedation adjusted;Not responding, escalated;Continue current plan, reassess in AM;;No
+160;312;29/12/2024 16:34;HR 88, BP 107/63, SpO2 100%, T 38.5C;Furosemide IV;Urine output adequate;Improving;Continue current plan, reassess in AM;Arterial blood gas;No
+161;312;29/12/2024 16:52;HR 100, BP 109/66, SpO2 91%, T 39.0C;Insulin infusion;Ventilated, FiO2 weaned to 40%;Improving;Discussed goals of care with family;;Yes
+162;315;02/08/2024 17:55;HR 92, BP 156/87, SpO2 91%, T 36.8C;Propofol sedation;Agitation overnight, sedation adjusted;Slow improvement;Wean sedation, trial of spontaneous breathing;Repeat chest X-ray;No
+163;315;03/08/2024 18:06;HR 123, BP 129/79, SpO2 99%, T 37.1C;Propofol sedation;Afebrile for 24 hours;Not responding, escalated;Wean sedation, trial of spontaneous breathing;;Yes
+164;319;21/10/2025 15:19;HR 122, BP 118/77, SpO2 92%, T 38.6C;Norepinephrine infusion;Hemodynamically stable on low-dose vasopressors;Not responding, escalated;Consider step-down tomorrow;;No
+165;319;21/10/2025 21:59;HR 105, BP 101/95, SpO2 91%, T 36.3C;Norepinephrine infusion;Afebrile for 24 hours;Good response;Continue current plan, reassess in AM;Repeat chest X-ray;No
+166;319;23/10/2025 23:41;HR 115, BP 137/53, SpO2 93%, T 38.8C;Propofol sedation;Agitation overnight, sedation adjusted;Stable;Repeat labs at 18:00;NULL;Yes
+167;323;24/01/2026 00:10;HR 104, BP 95/50, SpO2 94%, T 36.4C;Heparin infusion;Hemodynamically stable on low-dose vasopressors;Not responding, escalated;Continue current plan, reassess in AM;Echocardiogram;Yes
+168;342;02/05/2024 03:29;HR 111, BP 91/69, SpO2 98%, T 38.9C;IV piperacillin-tazobactam;Urine output adequate;Slow improvement;Wean sedation, trial of spontaneous breathing;Echocardiogram;No
+169;342;09/05/2024 04:00;HR 107, BP 103/69, SpO2 93%, T 36.9C;IV piperacillin-tazobactam;Urine output adequate;Stable;Consider step-down tomorrow;Blood cultures x2;No
+170;342;09/05/2024 13:38;HR 126, BP 158/75, SpO2 93%, T 38.3C;Norepinephrine infusion;Afebrile for 24 hours;Not responding, escalated;Consider step-down tomorrow;Repeat chest X-ray;No
+171;342;11/05/2024 03:45;HR 94, BP 130/81, SpO2 92%, T 36.5C;Insulin infusion;Afebrile for 24 hours;Slow improvement;Consider step-down tomorrow;;Yes
+172;348;25/02/2024 01:21;HR 93, BP 104/58, SpO2 94%, T 38.4C;Insulin infusion;Urine output adequate;Not responding, escalated;Discussed goals of care with family;;No
+173;348;27/02/2024 11:01;HR 100, BP 129/92, SpO2 98%, T 38.8C;Furosemide IV;Hemodynamically stable on low-dose vasopressors;Improving;Consider step-down tomorrow;Arterial blood gas;No
+174;348;04/03/2024 05:32;HR 109, BP 125/77, SpO2 99%, T 36.4C;Heparin infusion;Urine output adequate;Stable;Wean sedation, trial of spontaneous breathing;NULL;No
+175;348;05/03/2024 00:11;HR 99, BP 94/83, SpO2 97%, T 38.4C;Insulin infusion;Afebrile for 24 hours;Stable;Discussed goals of care with family;Arterial blood gas;Yes
+176;378;14/05/2025 03:33;HR 102, BP 98/72, SpO2 91%, T 36.2C;Propofol sedation;Agitation overnight, sedation adjusted;Slow improvement;Continue current plan, reassess in AM;Arterial blood gas;No
+177;378;14/05/2025 12:22;HR 75, BP 109/83, SpO2 96%, T 36.8C;Furosemide IV;Hemodynamically stable on low-dose vasopressors;Good response;Discussed goals of care with family;Echocardiogram;No
+178;381;14/07/2024 01:59;HR 93, BP 90/81, SpO2 100%, T 36.7C;Furosemide IV;Agitation overnight, sedation adjusted;Stable;Wean sedation, trial of spontaneous breathing;;No
+179;381;14/07/2024 15:11;HR 79, BP 104/82, SpO2 91%, T 36.7C;Norepinephrine infusion;Ventilated, FiO2 weaned to 40%;Stable;Consider step-down tomorrow;Arterial blood gas;Yes
+180;386;22/02/2025 00:52;HR 81, BP 150/74, SpO2 90%, T 36.6C;Insulin infusion;Ventilated, FiO2 weaned to 40%;Good response;Consider step-down tomorrow;;Yes
+181;389;19/11/2024 20:25;HR 103, BP 158/69, SpO2 88%, T 39.1C;Insulin infusion;Hemodynamically stable on low-dose vasopressors;Not responding, escalated;Wean sedation, trial of spontaneous breathing;Arterial blood gas;No
+182;389;20/11/2024 03:11;HR 120, BP 112/80, SpO2 99%, T 36.7C;Insulin infusion;Hemodynamically stable on low-dose vasopressors;Stable;Consider step-down tomorrow;Arterial blood gas;Yes
+183;399;20/03/2025 05:16;HR 121, BP 157/71, SpO2 89%, T 38.2C;Heparin infusion;Urine output adequate;Stable;Consider step-down tomorrow;NULL;No
+184;399;21/03/2025 23:09;HR 80, BP 130/51, SpO2 95%, T 37.9C;Furosemide IV;Agitation overnight, sedation adjusted;Improving;Continue current plan, reassess in AM;NULL;No
+185;399;22/03/2025 10:22;HR 104, BP 95/75, SpO2 98%, T 36.9C;Heparin infusion;Urine output adequate;Improving;Repeat labs at 18:00;Arterial blood gas;Yes
+186;402;29/08/2025 12:41;HR 124, BP 143/83, SpO2 95%, T 39.0C;Amiodarone infusion;Ventilated, FiO2 weaned to 40%;Slow improvement;Continue current plan, reassess in AM;Arterial blood gas;No
+187;402;01/09/2025 02:51;HR 93, BP 113/57, SpO2 95%, T 36.7C;Norepinephrine infusion;Urine output adequate;Not responding, escalated;Discussed goals of care with family;;No
+188;402;04/09/2025 02:38;HR 104, BP 108/54, SpO2 92%, T 37.2C;Furosemide IV;Urine output adequate;Slow improvement;Continue current plan, reassess in AM;;No
+189;402;05/09/2025 14:07;HR 101, BP 160/72, SpO2 95%, T 37.1C;Propofol sedation;Ventilated, FiO2 weaned to 40%;Not responding, escalated;Repeat labs at 18:00;NULL;Yes
+190;404;05/06/2024 01:05;HR 83, BP 134/92, SpO2 91%, T 37.5C;Propofol sedation;Hemodynamically stable on low-dose vasopressors;Not responding, escalated;Continue current plan, reassess in AM;Echocardiogram;No
+191;404;05/06/2024 10:49;HR 71, BP 125/57, SpO2 90%, T 37.4C;Norepinephrine infusion;Urine output adequate;Not responding, escalated;Consider step-down tomorrow;Repeat chest X-ray;No
+192;404;09/06/2024 00:51;HR 122, BP 140/56, SpO2 93%, T 36.7C;Amiodarone infusion;Hemodynamically stable on low-dose vasopressors;Stable;Continue current plan, reassess in AM;Blood cultures x2;No
+193;404;09/06/2024 05:42;HR 84, BP 142/73, SpO2 96%, T 38.1C;Norepinephrine infusion;Agitation overnight, sedation adjusted;Not responding, escalated;Continue current plan, reassess in AM;NULL;Yes
+194;415;23/08/2025 10:35;HR 81, BP 143/51, SpO2 98%, T 37.3C;Insulin infusion;Agitation overnight, sedation adjusted;Improving;Repeat labs at 18:00;Blood cultures x2;Yes
+195;416;25/08/2025 21:03;HR 97, BP 129/77, SpO2 96%, T 37.9C;Propofol sedation;Agitation overnight, sedation adjusted;Stable;Wean sedation, trial of spontaneous breathing;NULL;Yes
+196;419;26/01/2026 17:15;HR 130, BP 145/82, SpO2 99%, T 36.3C;IV piperacillin-tazobactam;Agitation overnight, sedation adjusted;Stable;Wean sedation, trial of spontaneous breathing;Echocardiogram;No
+197;419;03/02/2026 11:47;HR 85, BP 109/65, SpO2 96%, T 37.0C;Insulin infusion;Ventilated, FiO2 weaned to 40%;Not responding, escalated;Wean sedation, trial of spontaneous breathing;Blood cultures x2;No
+198;419;04/02/2026 11:31;HR 97, BP 138/69, SpO2 93%, T 39.1C;Norepinephrine infusion;Ventilated, FiO2 weaned to 40%;Improving;Wean sedation, trial of spontaneous breathing;Echocardiogram;No
+199;419;05/02/2026 17:24;HR 71, BP 110/91, SpO2 95%, T 36.3C;Furosemide IV;Ventilated, FiO2 weaned to 40%;Good response;Continue current plan, reassess in AM;Blood cultures x2;Yes
+200;421;24/06/2024 10:21;HR 105, BP 112/54, SpO2 94%, T 37.7C;Furosemide IV;Agitation overnight, sedation adjusted;Stable;Repeat labs at 18:00;Arterial blood gas;No
+201;421;24/06/2024 10:29;HR 127, BP 108/58, SpO2 100%, T 38.1C;IV piperacillin-tazobactam;Hemodynamically stable on low-dose vasopressors;Not responding, escalated;Repeat labs at 18:00;NULL;No
+202;421;25/06/2024 08:18;HR 104, BP 126/91, SpO2 99%, T 38.6C;Norepinephrine infusion;Urine output adequate;Slow improvement;Repeat labs at 18:00;NULL;Yes
+203;431;23/09/2025 21:39;HR 130, BP 126/83, SpO2 90%, T 38.7C;IV piperacillin-tazobactam;Afebrile for 24 hours;Slow improvement;Wean sedation, trial of spontaneous breathing;;No
+204;431;24/09/2025 02:24;HR 93, BP 90/95, SpO2 88%, T 36.3C;Heparin infusion;Urine output adequate;Improving;Wean sedation, trial of spontaneous breathing;Repeat chest X-ray;No
+205;436;30/10/2024 00:03;HR 127, BP 98/51, SpO2 99%, T 36.6C;Amiodarone infusion;Urine output adequate;Good response;Repeat labs at 18:00;Echocardiogram;No
+206;436;31/10/2024 10:57;HR 119, BP 153/69, SpO2 91%, T 39.0C;Furosemide IV;Agitation overnight, sedation adjusted;Improving;Continue current plan, reassess in AM;;No
+207;436;02/11/2024 07:12;HR 122, BP 140/95, SpO2 88%, T 36.9C;Heparin infusion;Urine output adequate;Improving;Wean sedation, trial of spontaneous breathing;Blood cultures x2;No
+208;436;02/11/2024 22:23;HR 81, BP 104/60, SpO2 95%, T 36.5C;IV piperacillin-tazobactam;Hemodynamically stable on low-dose vasopressors;Improving;Continue current plan, reassess in AM;Repeat chest X-ray;Yes
+209;444;29/06/2025 20:48;HR 115, BP 107/51, SpO2 93%, T 39.0C;Insulin infusion;Ventilated, FiO2 weaned to 40%;Good response;Wean sedation, trial of spontaneous breathing;Echocardiogram;Yes
+210;447;08/09/2024 22:21;HR 121, BP 101/69, SpO2 96%, T 38.7C;Insulin infusion;Urine output adequate;Improving;Continue current plan, reassess in AM;NULL;Yes
+211;450;01/01/2025 21:24;HR 74, BP 131/90, SpO2 98%, T 37.6C;IV piperacillin-tazobactam;Hemodynamically stable on low-dose vasopressors;Improving;Wean sedation, trial of spontaneous breathing;;No
+212;450;02/01/2025 10:27;HR 92, BP 147/83, SpO2 90%, T 39.1C;Furosemide IV;Hemodynamically stable on low-dose vasopressors;Not responding, escalated;Discussed goals of care with family;Arterial blood gas;Yes
+213;452;25/01/2025 06:56;HR 107, BP 128/61, SpO2 92%, T 38.5C;Propofol sedation;Hemodynamically stable on low-dose vasopressors;Not responding, escalated;Discussed goals of care with family;Repeat chest X-ray;Yes
+214;453;27/01/2025 22:24;HR 109, BP 105/54, SpO2 93%, T 37.7C;Insulin infusion;Hemodynamically stable on low-dose vasopressors;Improving;Repeat labs at 18:00;NULL;No
+215;453;28/01/2025 06:59;HR 112, BP 143/71, SpO2 98%, T 39.2C;Furosemide IV;Agitation overnight, sedation adjusted;Slow improvement;Continue current plan, reassess in AM;Repeat chest X-ray;No
+216;453;28/01/2025 21:48;HR 74, BP 148/68, SpO2 90%, T 37.3C;Insulin infusion;Urine output adequate;Not responding, escalated;Wean sedation, trial of spontaneous breathing;;Yes
+217;456;21/07/2024 17:28;HR 97, BP 124/55, SpO2 94%, T 37.1C;Amiodarone infusion;Afebrile for 24 hours;Not responding, escalated;Repeat labs at 18:00;Echocardiogram;No
+218;456;21/07/2024 21:00;HR 112, BP 141/87, SpO2 89%, T 37.4C;Norepinephrine infusion;Ventilated, FiO2 weaned to 40%;Good response;Repeat labs at 18:00;Repeat chest X-ray;No
+219;456;22/07/2024 12:47;HR 112, BP 109/56, SpO2 95%, T 37.4C;Amiodarone infusion;Hemodynamically stable on low-dose vasopressors;Good response;Repeat labs at 18:00;;No
+220;456;22/07/2024 15:36;HR 103, BP 103/79, SpO2 88%, T 39.1C;Insulin infusion;Ventilated, FiO2 weaned to 40%;Improving;Consider step-down tomorrow;Arterial blood gas;Yes
+221;457;26/07/2024 18:57;HR 105, BP 150/78, SpO2 99%, T 37.3C;Furosemide IV;Afebrile for 24 hours;Improving;Discussed goals of care with family;Echocardiogram;No
+222;457;27/07/2024 14:00;HR 114, BP 104/68, SpO2 98%, T 37.3C;Norepinephrine infusion;Agitation overnight, sedation adjusted;Good response;Discussed goals of care with family;;No
+223;457;28/07/2024 19:10;HR 120, BP 104/62, SpO2 91%, T 36.6C;Amiodarone infusion;Hemodynamically stable on low-dose vasopressors;Not responding, escalated;Repeat labs at 18:00;Blood cultures x2;Yes
+224;468;18/01/2024 05:38;HR 113, BP 156/56, SpO2 98%, T 36.8C;Insulin infusion;Urine output adequate;Not responding, escalated;Discussed goals of care with family;;No
+225;468;18/01/2024 12:22;HR 98, BP 127/90, SpO2 98%, T 37.8C;Propofol sedation;Urine output adequate;Good response;Consider step-down tomorrow;Arterial blood gas;Yes
+226;474;09/12/2025 19:01;HR 82, BP 99/59, SpO2 99%, T 39.0C;Insulin infusion;Agitation overnight, sedation adjusted;Good response;Wean sedation, trial of spontaneous breathing;;No
+227;474;10/12/2025 06:37;HR 103, BP 130/93, SpO2 98%, T 36.4C;Amiodarone infusion;Agitation overnight, sedation adjusted;Improving;Discussed goals of care with family;Echocardiogram;No
+228;474;12/12/2025 02:38;HR 87, BP 115/74, SpO2 92%, T 37.9C;Heparin infusion;Afebrile for 24 hours;Not responding, escalated;Consider step-down tomorrow;Echocardiogram;Yes
+229;477;11/03/2025 08:01;HR 127, BP 103/83, SpO2 92%, T 37.5C;Amiodarone infusion;Afebrile for 24 hours;Slow improvement;Consider step-down tomorrow;;Yes
+230;481;25/12/2024 12:05;HR 105, BP 116/57, SpO2 91%, T 36.3C;Propofol sedation;Agitation overnight, sedation adjusted;Not responding, escalated;Wean sedation, trial of spontaneous breathing;NULL;No
+231;481;25/12/2024 20:08;HR 72, BP 113/88, SpO2 91%, T 38.0C;Amiodarone infusion;Agitation overnight, sedation adjusted;Improving;Consider step-down tomorrow;;No
+232;481;27/12/2024 07:55;HR 93, BP 158/89, SpO2 96%, T 38.6C;Furosemide IV;Urine output adequate;Improving;Continue current plan, reassess in AM;Arterial blood gas;No
+233;481;01/01/2025 15:04;HR 111, BP 99/84, SpO2 91%, T 36.3C;Amiodarone infusion;Agitation overnight, sedation adjusted;Improving;Wean sedation, trial of spontaneous breathing;;Yes
+234;488;27/02/2024 19:29;HR 122, BP 146/54, SpO2 99%, T 36.6C;Heparin infusion;Ventilated, FiO2 weaned to 40%;Improving;Wean sedation, trial of spontaneous breathing;;No
+235;488;29/02/2024 14:39;HR 95, BP 154/83, SpO2 93%, T 37.6C;Norepinephrine infusion;Urine output adequate;Improving;Consider step-down tomorrow;Blood cultures x2;No
+236;488;01/03/2024 22:21;HR 88, BP 106/95, SpO2 100%, T 37.1C;Propofol sedation;Agitation overnight, sedation adjusted;Good response;Wean sedation, trial of spontaneous breathing;Echocardiogram;No
+237;488;11/03/2024 02:39;HR 98, BP 133/58, SpO2 89%, T 37.8C;Insulin infusion;Ventilated, FiO2 weaned to 40%;Slow improvement;Wean sedation, trial of spontaneous breathing;;Yes
+238;496;31/07/2024 06:12;HR 120, BP 144/94, SpO2 88%, T 38.5C;Insulin infusion;Afebrile for 24 hours;Stable;Repeat labs at 18:00;Repeat chest X-ray;Yes
+239;499;04/10/2024 21:35;HR 86, BP 103/89, SpO2 100%, T 38.8C;Furosemide IV;Urine output adequate;Not responding, escalated;Continue current plan, reassess in AM;;No
+240;499;05/10/2024 19:34;HR 129, BP 142/69, SpO2 89%, T 39.2C;Insulin infusion;Afebrile for 24 hours;Improving;Continue current plan, reassess in AM;Arterial blood gas;Yes
+241;502;23/02/2025 13:11;HR 126, BP 160/61, SpO2 98%, T 37.0C;Amiodarone infusion;Agitation overnight, sedation adjusted;Stable;Discussed goals of care with family;Blood cultures x2;No
+242;502;25/02/2025 05:38;HR 97, BP 93/69, SpO2 90%, T 38.7C;Furosemide IV;Agitation overnight, sedation adjusted;Good response;Discussed goals of care with family;NULL;No
+243;502;26/02/2025 08:42;HR 93, BP 148/81, SpO2 90%, T 36.6C;Heparin infusion;Agitation overnight, sedation adjusted;Stable;Wean sedation, trial of spontaneous breathing;;Yes
+244;508;22/10/2026 09:35;HR 73, BP 125/63, SpO2 99%, T 36.7C;Propofol sedation;Hemodynamically stable on low-dose vasopressors;Stable;Continue current plan, reassess in AM;Arterial blood gas;No
+245;508;29/10/2026 08:04;HR 114, BP 156/92, SpO2 91%, T 37.9C;Norepinephrine infusion;Urine output adequate;Good response;Discussed goals of care with family;;No
+246;508;30/10/2026 00:30;HR 70, BP 106/64, SpO2 100%, T 36.2C;Norepinephrine infusion;Ventilated, FiO2 weaned to 40%;Slow improvement;Consider step-down tomorrow;Repeat chest X-ray;No
+247;508;30/10/2026 09:52;HR 112, BP 159/70, SpO2 99%, T 36.4C;Amiodarone infusion;Ventilated, FiO2 weaned to 40%;Slow improvement;Wean sedation, trial of spontaneous breathing;Repeat chest X-ray;No
+248;514;15/01/2024 07:44;HR 126, BP 109/61, SpO2 88%, T 36.5C;Furosemide IV;Ventilated, FiO2 weaned to 40%;Good response;Discussed goals of care with family;Repeat chest X-ray;No
+249;514;15/01/2024 08:35;HR 128, BP 94/86, SpO2 88%, T 36.3C;Propofol sedation;Ventilated, FiO2 weaned to 40%;Slow improvement;Continue current plan, reassess in AM;;No
+250;514;16/01/2024 03:13;HR 71, BP 135/94, SpO2 92%, T 37.7C;Norepinephrine infusion;Urine output adequate;Slow improvement;Consider step-down tomorrow;;No
+251;514;18/01/2024 07:03;HR 125, BP 156/93, SpO2 99%, T 38.8C;Furosemide IV;Hemodynamically stable on low-dose vasopressors;Improving;Consider step-down tomorrow;NULL;Yes
+252;515;23/01/2024 17:48;HR 129, BP 155/57, SpO2 91%, T 38.3C;Furosemide IV;Agitation overnight, sedation adjusted;Not responding, escalated;Continue current plan, reassess in AM;Repeat chest X-ray;No
+253;515;24/01/2024 16:52;HR 122, BP 104/85, SpO2 88%, T 39.2C;Amiodarone infusion;Hemodynamically stable on low-dose vasopressors;Slow improvement;Discussed goals of care with family;NULL;No
+254;515;25/01/2024 04:43;HR 87, BP 146/93, SpO2 98%, T 37.6C;Amiodarone infusion;Afebrile for 24 hours;Slow improvement;Discussed goals of care with family;Blood cultures x2;Yes
+255;519;18/04/2024 13:10;HR 100, BP 147/56, SpO2 95%, T 39.2C;Amiodarone infusion;Urine output adequate;Good response;Continue current plan, reassess in AM;Repeat chest X-ray;No
+256;519;19/04/2024 06:48;HR 97, BP 146/78, SpO2 94%, T 36.4C;Furosemide IV;Agitation overnight, sedation adjusted;Not responding, escalated;Continue current plan, reassess in AM;;No
+257;519;21/04/2024 03:17;HR 120, BP 111/71, SpO2 90%, T 37.4C;Amiodarone infusion;Ventilated, FiO2 weaned to 40%;Not responding, escalated;Wean sedation, trial of spontaneous breathing;Blood cultures x2;No
+258;519;22/04/2024 00:50;HR 78, BP 136/56, SpO2 93%, T 39.1C;Heparin infusion;Agitation overnight, sedation adjusted;Slow improvement;Repeat labs at 18:00;Echocardiogram;Yes
+259;534;23/09/2024 19:57;HR 121, BP 129/79, SpO2 89%, T 37.6C;Propofol sedation;Urine output adequate;Stable;Repeat labs at 18:00;Blood cultures x2;No
+260;534;25/09/2024 09:18;HR 99, BP 152/87, SpO2 93%, T 37.1C;Heparin infusion;Afebrile for 24 hours;Good response;Continue current plan, reassess in AM;Echocardiogram;No
+261;534;25/09/2024 17:46;HR 105, BP 130/83, SpO2 90%, T 38.2C;Furosemide IV;Hemodynamically stable on low-dose vasopressors;Good response;Repeat labs at 18:00;Echocardiogram;Yes
+262;539;08/06/2025 05:40;HR 80, BP 124/58, SpO2 98%, T 37.2C;IV piperacillin-tazobactam;Urine output adequate;Not responding, escalated;Repeat labs at 18:00;Blood cultures x2;No
+263;552;13/09/2024 05:58;HR 80, BP 96/64, SpO2 93%, T 38.1C;Insulin infusion;Agitation overnight, sedation adjusted;Good response;Discussed goals of care with family;Arterial blood gas;No
+264;552;14/09/2024 19:05;HR 125, BP 94/81, SpO2 94%, T 38.0C;Norepinephrine infusion;Afebrile for 24 hours;Improving;Wean sedation, trial of spontaneous breathing;NULL;No
+265;552;17/09/2024 17:45;HR 77, BP 160/73, SpO2 98%, T 36.5C;Amiodarone infusion;Afebrile for 24 hours;Slow improvement;Repeat labs at 18:00;Arterial blood gas;No
+266;552;18/09/2024 15:54;HR 79, BP 131/88, SpO2 99%, T 36.3C;Heparin infusion;Urine output adequate;Slow improvement;Discussed goals of care with family;Echocardiogram;Yes
+267;556;01/12/2024 21:20;HR 73, BP 117/53, SpO2 97%, T 38.3C;IV piperacillin-tazobactam;Urine output adequate;Improving;Consider step-down tomorrow;NULL;No
+268;556;03/12/2024 22:31;HR 105, BP 96/89, SpO2 88%, T 38.6C;Insulin infusion;Urine output adequate;Stable;Discussed goals of care with family;;Yes
+269;557;06/12/2024 04:16;HR 94, BP 112/66, SpO2 90%, T 36.3C;Heparin infusion;Afebrile for 24 hours;Stable;Repeat labs at 18:00;NULL;No
+270;557;06/12/2024 10:39;HR 92, BP 145/71, SpO2 93%, T 36.3C;Insulin infusion;Ventilated, FiO2 weaned to 40%;Good response;Repeat labs at 18:00;;No
+271;561;11/09/2024 11:38;HR 129, BP 97/86, SpO2 91%, T 38.8C;Furosemide IV;Ventilated, FiO2 weaned to 40%;Good response;Consider step-down tomorrow;Echocardiogram;No
+272;561;15/09/2024 03:31;HR 99, BP 155/56, SpO2 99%, T 37.1C;Norepinephrine infusion;Urine output adequate;Slow improvement;Wean sedation, trial of spontaneous breathing;Echocardiogram;No
+273;561;17/09/2024 08:21;HR 120, BP 121/83, SpO2 92%, T 37.0C;Insulin infusion;Urine output adequate;Good response;Continue current plan, reassess in AM;NULL;No
+274;561;20/09/2024 22:59;HR 88, BP 120/50, SpO2 99%, T 37.0C;Insulin infusion;Ventilated, FiO2 weaned to 40%;Improving;Consider step-down tomorrow;NULL;Yes
+275;562;27/09/2024 18:39;HR 74, BP 101/64, SpO2 96%, T 37.8C;Propofol sedation;Agitation overnight, sedation adjusted;Slow improvement;Wean sedation, trial of spontaneous breathing;NULL;No
+276;562;28/09/2024 01:46;HR 109, BP 125/51, SpO2 100%, T 38.2C;IV piperacillin-tazobactam;Afebrile for 24 hours;Not responding, escalated;Continue current plan, reassess in AM;NULL;No
+277;562;28/09/2024 05:05;HR 84, BP 151/90, SpO2 95%, T 36.2C;Propofol sedation;Ventilated, FiO2 weaned to 40%;Good response;Discussed goals of care with family;Echocardiogram;Yes
+278;566;04/04/2025 08:48;HR 70, BP 107/88, SpO2 98%, T 37.1C;Furosemide IV;Urine output adequate;Good response;Wean sedation, trial of spontaneous breathing;Arterial blood gas;No
+279;566;05/04/2025 00:20;HR 91, BP 98/74, SpO2 92%, T 38.7C;Insulin infusion;Hemodynamically stable on low-dose vasopressors;Improving;Consider step-down tomorrow;Echocardiogram;No
+280;566;08/04/2025 04:39;HR 109, BP 95/85, SpO2 90%, T 36.3C;Propofol sedation;Agitation overnight, sedation adjusted;Slow improvement;Discussed goals of care with family;;No
+281;566;15/04/2025 07:37;HR 97, BP 100/90, SpO2 97%, T 37.2C;Insulin infusion;Ventilated, FiO2 weaned to 40%;Stable;Discussed goals of care with family;;No
+282;568;14/10/2025 19:06;HR 107, BP 140/78, SpO2 93%, T 37.6C;IV piperacillin-tazobactam;Hemodynamically stable on low-dose vasopressors;Not responding, escalated;Discussed goals of care with family;Arterial blood gas;No
+283;568;17/10/2025 06:23;HR 79, BP 123/85, SpO2 91%, T 36.2C;Propofol sedation;Hemodynamically stable on low-dose vasopressors;Good response;Continue current plan, reassess in AM;;No
+284;568;17/10/2025 21:16;HR 111, BP 158/58, SpO2 94%, T 36.7C;Insulin infusion;Afebrile for 24 hours;Stable;Continue current plan, reassess in AM;Blood cultures x2;No
+285;568;18/10/2025 16:12;HR 107, BP 108/70, SpO2 99%, T 37.3C;Amiodarone infusion;Ventilated, FiO2 weaned to 40%;Improving;Consider step-down tomorrow;;No
+286;570;09/03/2025 12:58;HR 101, BP 100/85, SpO2 89%, T 38.6C;Propofol sedation;Afebrile for 24 hours;Not responding, escalated;Repeat labs at 18:00;;No
+287;570;10/03/2025 16:56;HR 98, BP 97/79, SpO2 88%, T 38.6C;IV piperacillin-tazobactam;Ventilated, FiO2 weaned to 40%;Good response;Continue current plan, reassess in AM;NULL;No
+288;570;12/03/2025 19:49;HR 77, BP 91/65, SpO2 90%, T 36.4C;Insulin infusion;Agitation overnight, sedation adjusted;Not responding, escalated;Wean sedation, trial of spontaneous breathing;NULL;No
+289;570;15/03/2025 18:14;HR 104, BP 133/94, SpO2 88%, T 37.4C;Amiodarone infusion;Hemodynamically stable on low-dose vasopressors;Not responding, escalated;Continue current plan, reassess in AM;;Yes
+290;571;17/03/2025 16:28;HR 76, BP 143/93, SpO2 88%, T 38.6C;IV piperacillin-tazobactam;Urine output adequate;Good response;Consider step-down tomorrow;NULL;No
+291;571;17/03/2025 23:27;HR 100, BP 143/81, SpO2 96%, T 37.6C;Heparin infusion;Urine output adequate;Slow improvement;Wean sedation, trial of spontaneous breathing;Repeat chest X-ray;Yes
+292;574;14/06/2025 02:03;HR 119, BP 145/57, SpO2 94%, T 37.4C;Heparin infusion;Urine output adequate;Improving;Wean sedation, trial of spontaneous breathing;Echocardiogram;No
+293;574;16/06/2025 04:28;HR 97, BP 140/57, SpO2 97%, T 36.3C;Insulin infusion;Urine output adequate;Stable;Repeat labs at 18:00;NULL;Yes
+294;575;17/06/2025 19:53;HR 123, BP 144/61, SpO2 98%, T 37.0C;IV piperacillin-tazobactam;Agitation overnight, sedation adjusted;Improving;Consider step-down tomorrow;Arterial blood gas;Yes
+295;585;18/03/2025 12:28;HR 77, BP 114/79, SpO2 96%, T 37.4C;IV piperacillin-tazobactam;Afebrile for 24 hours;Stable;Wean sedation, trial of spontaneous breathing;Echocardiogram;No
+296;585;20/03/2025 01:28;HR 106, BP 128/78, SpO2 92%, T 37.5C;Norepinephrine infusion;Hemodynamically stable on low-dose vasopressors;Stable;Consider step-down tomorrow;NULL;Yes
+297;586;2025-03-23T15:38;HR 106, BP 102/59, SpO2 93%, T 37.9C;Amiodarone infusion;Afebrile for 24 hours;Slow improvement;Consider step-down tomorrow;NULL;No
+298;586;24/03/2025 13:15;HR 76, BP 151/84, SpO2 100%, T 37.6C;Furosemide IV;Ventilated, FiO2 weaned to 40%;Good response;Repeat labs at 18:00;;Yes
+299;592;03/12/2025 12:10;HR 127, BP 131/55, SpO2 91%, T 38.7C;Furosemide IV;Ventilated, FiO2 weaned to 40%;Stable;Continue current plan, reassess in AM;Repeat chest X-ray;No
+300;592;04/12/2025 00:42;HR 88, BP 94/59, SpO2 99%, T 37.9C;Furosemide IV;Ventilated, FiO2 weaned to 40%;Not responding, escalated;Discussed goals of care with family;Repeat chest X-ray;Yes
+301;597;08/12/2024 10:33;HR 74, BP 126/50, SpO2 100%, T 37.4C;Propofol sedation;Ventilated, FiO2 weaned to 40%;Slow improvement;Repeat labs at 18:00;NULL;No
+302;602;21/08/2024 23:45;HR 115, BP 116/88, SpO2 91%, T 38.8C;Norepinephrine infusion;Afebrile for 24 hours;Improving;Discussed goals of care with family;Repeat chest X-ray;No
+303;612;21/08/2024 12:01;HR 77, BP 119/66, SpO2 91%, T 36.6C;Propofol sedation;Afebrile for 24 hours;Slow improvement;Wean sedation, trial of spontaneous breathing;Repeat chest X-ray;No
+304;612;27/08/2024 23:52;HR 95, BP 148/71, SpO2 89%, T 38.5C;Propofol sedation;Agitation overnight, sedation adjusted;Not responding, escalated;Continue current plan, reassess in AM;Echocardiogram;No
+305;612;30/08/2024 02:25;HR 125, BP 106/88, SpO2 96%, T 36.6C;IV piperacillin-tazobactam;Agitation overnight, sedation adjusted;Good response;Wean sedation, trial of spontaneous breathing;Echocardiogram;No
+306;612;02/09/2024 02:23;HR 120, BP 141/67, SpO2 96%, T 38.7C;Insulin infusion;Afebrile for 24 hours;Not responding, escalated;Wean sedation, trial of spontaneous breathing;Blood cultures x2;Yes
+307;617;09/03/2025 03:21;HR 89, BP 133/57, SpO2 96%, T 36.6C;Insulin infusion;Agitation overnight, sedation adjusted;Stable;Consider step-down tomorrow;Arterial blood gas;No
+308;617;09/03/2025 05:13;HR 128, BP 134/93, SpO2 91%, T 36.9C;Furosemide IV;Ventilated, FiO2 weaned to 40%;Slow improvement;Repeat labs at 18:00;Blood cultures x2;Yes
+309;621;02/11/2025 17:21;HR 109, BP 94/83, SpO2 100%, T 36.8C;Norepinephrine infusion;Hemodynamically stable on low-dose vasopressors;Not responding, escalated;Discussed goals of care with family;Echocardiogram;No
+310;621;03/11/2025 00:25;HR 122, BP 90/80, SpO2 90%, T 37.9C;Furosemide IV;Hemodynamically stable on low-dose vasopressors;Improving;Consider step-down tomorrow;;No
+311;621;04/11/2025 00:19;HR 78, BP 148/59, SpO2 93%, T 36.4C;Heparin infusion;Ventilated, FiO2 weaned to 40%;Slow improvement;Discussed goals of care with family;Repeat chest X-ray;No
+312;621;12/11/2025 17:31;HR 110, BP 91/94, SpO2 90%, T 37.1C;Furosemide IV;Agitation overnight, sedation adjusted;Not responding, escalated;Wean sedation, trial of spontaneous breathing;;Yes
+313;623;07/05/2025 17:40;HR 99, BP 131/77, SpO2 88%, T 36.2C;Propofol sedation;Ventilated, FiO2 weaned to 40%;Stable;Wean sedation, trial of spontaneous breathing;Repeat chest X-ray;Yes
+314;626;08/07/2025 15:52;HR 93, BP 142/55, SpO2 88%, T 36.5C;Amiodarone infusion;Urine output adequate;Stable;Discussed goals of care with family;;No
+315;626;09/07/2025 20:50;HR 122, BP 121/78, SpO2 89%, T 37.2C;Norepinephrine infusion;Afebrile for 24 hours;Stable;Consider step-down tomorrow;Repeat chest X-ray;No
+316;626;10/07/2025 00:15;HR 121, BP 98/57, SpO2 90%, T 36.7C;Insulin infusion;Agitation overnight, sedation adjusted;Slow improvement;Wean sedation, trial of spontaneous breathing;Repeat chest X-ray;Yes
+317;631;02/07/2025 12:06;HR 123, BP 127/59, SpO2 91%, T 37.3C;Insulin infusion;Afebrile for 24 hours;Stable;Continue current plan, reassess in AM;Blood cultures x2;No
+318;631;03/07/2025 08:16;HR 97, BP 104/76, SpO2 96%, T 38.3C;Furosemide IV;Ventilated, FiO2 weaned to 40%;Good response;Continue current plan, reassess in AM;Echocardiogram;Yes
+319;632;07/07/2025 01:20;HR 129, BP 93/79, SpO2 88%, T 39.2C;Insulin infusion;Ventilated, FiO2 weaned to 40%;Not responding, escalated;Consider step-down tomorrow;;Yes
+320;635;12/11/2025 15:01;HR 73, BP 159/79, SpO2 95%, T 37.5C;Propofol sedation;Agitation overnight, sedation adjusted;Stable;Wean sedation, trial of spontaneous breathing;Blood cultures x2;No
+321;635;13/11/2025 08:15;HR 99, BP 105/92, SpO2 95%, T 38.9C;IV piperacillin-tazobactam;Agitation overnight, sedation adjusted;Slow improvement;Consider step-down tomorrow;Echocardiogram;Yes
+322;638;27/10/2026 10:31;HR 113, BP 96/94, SpO2 88%, T 38.9C;Amiodarone infusion;Urine output adequate;Improving;Repeat labs at 18:00;Arterial blood gas;No
+323;638;28/10/2026 01:59;HR 89, BP 144/67, SpO2 89%, T 38.4C;Norepinephrine infusion;Afebrile for 24 hours;Slow improvement;Wean sedation, trial of spontaneous breathing;Repeat chest X-ray;No
+324;638;30/10/2026 21:28;HR 93, BP 98/95, SpO2 95%, T 36.4C;Insulin infusion;Afebrile for 24 hours;Improving;Consider step-down tomorrow;Arterial blood gas;No
+325;647;07/04/2024 09:42;HR 126, BP 104/86, SpO2 92%, T 37.1C;IV piperacillin-tazobactam;Agitation overnight, sedation adjusted;Stable;Continue current plan, reassess in AM;;No
+326;647;07/04/2024 20:33;HR 73, BP 104/90, SpO2 100%, T 38.4C;Heparin infusion;Ventilated, FiO2 weaned to 40%;Slow improvement;Repeat labs at 18:00;Blood cultures x2;No
+327;647;11/04/2024 21:22;HR 90, BP 101/52, SpO2 98%, T 38.7C;IV piperacillin-tazobactam;Agitation overnight, sedation adjusted;Stable;Continue current plan, reassess in AM;;Yes
+328;659;20/07/2024 22:35;HR 89, BP 113/71, SpO2 90%, T 36.8C;Furosemide IV;Urine output adequate;Good response;Consider step-down tomorrow;Blood cultures x2;No
+329;659;21/07/2024 09:15;HR 70, BP 142/64, SpO2 100%, T 36.9C;Insulin infusion;Urine output adequate;Improving;Discussed goals of care with family;;No
+330;659;23/07/2024 00:05;HR 103, BP 133/81, SpO2 99%, T 36.4C;Insulin infusion;Hemodynamically stable on low-dose vasopressors;Slow improvement;Discussed goals of care with family;;No
+331;659;23/07/2024 11:58;HR 101, BP 104/51, SpO2 97%, T 37.9C;Insulin infusion;Agitation overnight, sedation adjusted;Improving;Repeat labs at 18:00;Blood cultures x2;Yes
+332;678;21/10/2024 14:52;HR 106, BP 153/93, SpO2 96%, T 36.4C;Amiodarone infusion;Afebrile for 24 hours;Stable;Wean sedation, trial of spontaneous breathing;Repeat chest X-ray;No
+333;678;23/10/2024 20:20;HR 84, BP 110/74, SpO2 99%, T 38.6C;Heparin infusion;Ventilated, FiO2 weaned to 40%;Good response;Continue current plan, reassess in AM;NULL;No
+334;678;24/10/2024 04:19;HR 75, BP 108/55, SpO2 91%, T 39.1C;Norepinephrine infusion;Urine output adequate;Slow improvement;Repeat labs at 18:00;Blood cultures x2;No
+335;678;25/10/2024 01:57;HR 116, BP 149/79, SpO2 95%, T 38.9C;Furosemide IV;Ventilated, FiO2 weaned to 40%;Not responding, escalated;Discussed goals of care with family;Arterial blood gas;Yes
+336;685;23/02/2025 17:33;HR 73, BP 148/81, SpO2 98%, T 37.3C;Propofol sedation;Agitation overnight, sedation adjusted;Not responding, escalated;Repeat labs at 18:00;Blood cultures x2;No
+337;685;24/02/2025 07:22;HR 80, BP 101/53, SpO2 98%, T 36.6C;Norepinephrine infusion;Agitation overnight, sedation adjusted;Good response;Wean sedation, trial of spontaneous breathing;Echocardiogram;No
+338;685;24/02/2025 14:39;HR 103, BP 145/76, SpO2 98%, T 38.5C;Furosemide IV;Ventilated, FiO2 weaned to 40%;Not responding, escalated;Continue current plan, reassess in AM;;Yes
+339;690;07/10/2025 10:39;HR 89, BP 144/88, SpO2 96%, T 38.0C;Norepinephrine infusion;Ventilated, FiO2 weaned to 40%;Slow improvement;Discussed goals of care with family;Arterial blood gas;No
+340;690;08/10/2025 10:28;HR 111, BP 147/50, SpO2 89%, T 39.1C;Furosemide IV;Urine output adequate;Not responding, escalated;Repeat labs at 18:00;;No
+341;690;08/10/2025 12:09;HR 120, BP 91/63, SpO2 93%, T 37.4C;Insulin infusion;Urine output adequate;Good response;Wean sedation, trial of spontaneous breathing;Blood cultures x2;Yes
+342;696;02/12/2025 23:08;HR 101, BP 126/94, SpO2 93%, T 37.1C;IV piperacillin-tazobactam;Hemodynamically stable on low-dose vasopressors;Good response;Wean sedation, trial of spontaneous breathing;;No
+343;696;04/12/2025 18:56;HR 114, BP 118/85, SpO2 99%, T 36.5C;Amiodarone infusion;Urine output adequate;Slow improvement;Consider step-down tomorrow;Arterial blood gas;No
+344;696;07/12/2025 08:05;HR 74, BP 105/60, SpO2 99%, T 38.2C;Heparin infusion;Afebrile for 24 hours;Slow improvement;Discussed goals of care with family;;No
+345;696;07/12/2025 22:49;HR 88, BP 109/58, SpO2 91%, T 37.5C;Heparin infusion;Hemodynamically stable on low-dose vasopressors;Improving;Discussed goals of care with family;;Yes
+346;700;24/01/2025 07:02;HR 103, BP 146/89, SpO2 96%, T 38.6C;Heparin infusion;Afebrile for 24 hours;Slow improvement;Discussed goals of care with family;Arterial blood gas;No
+347;700;25/01/2025 07:08;HR 77, BP 144/80, SpO2 90%, T 37.7C;Norepinephrine infusion;Urine output adequate;Improving;Repeat labs at 18:00;Arterial blood gas;Yes
+348;704;25/06/2025 12:13;HR 113, BP 104/90, SpO2 90%, T 39.0C;Amiodarone infusion;Urine output adequate;Not responding, escalated;Wean sedation, trial of spontaneous breathing;Arterial blood gas;No
+349;704;27/06/2025 20:46;HR 85, BP 99/71, SpO2 96%, T 36.2C;Insulin infusion;Afebrile for 24 hours;Slow improvement;Wean sedation, trial of spontaneous breathing;Blood cultures x2;No
+350;704;28/06/2025 05:10;HR 119, BP 147/79, SpO2 94%, T 37.8C;Norepinephrine infusion;Hemodynamically stable on low-dose vasopressors;Stable;Consider step-down tomorrow;Echocardiogram;Yes
+351;708;04/08/2025 06:38;HR 102, BP 133/79, SpO2 100%, T 38.1C;Propofol sedation;Afebrile for 24 hours;Slow improvement;Continue current plan, reassess in AM;Arterial blood gas;No
+352;708;05/08/2025 08:45;HR 77, BP 138/58, SpO2 100%, T 36.8C;Propofol sedation;Ventilated, FiO2 weaned to 40%;Not responding, escalated;Continue current plan, reassess in AM;;No
+353;708;07/08/2025 11:32;HR 103, BP 152/85, SpO2 97%, T 38.9C;Amiodarone infusion;Afebrile for 24 hours;Not responding, escalated;Continue current plan, reassess in AM;;No
+354;708;07/08/2025 23:28;HR 94, BP 105/92, SpO2 88%, T 39.1C;Norepinephrine infusion;Ventilated, FiO2 weaned to 40%;Not responding, escalated;Wean sedation, trial of spontaneous breathing;Blood cultures x2;Yes
+355;724;25/08/2024 05:30;HR 111, BP 111/51, SpO2 100%, T 39.1C;Insulin infusion;Afebrile for 24 hours;Stable;Consider step-down tomorrow;Echocardiogram;No
+356;724;28/08/2024 18:40;HR 95, BP 117/66, SpO2 96%, T 39.1C;Propofol sedation;Agitation overnight, sedation adjusted;Not responding, escalated;Repeat labs at 18:00;Repeat chest X-ray;No
+357;724;29/08/2024 12:12;HR 130, BP 132/56, SpO2 98%, T 38.2C;Propofol sedation;Agitation overnight, sedation adjusted;Good response;Consider step-down tomorrow;Repeat chest X-ray;No
+358;724;29/08/2024 19:58;HR 76, BP 112/81, SpO2 90%, T 37.2C;Amiodarone infusion;Afebrile for 24 hours;Improving;Consider step-down tomorrow;Repeat chest X-ray;Yes
+359;725;31/08/2024 11:36;HR 107, BP 142/58, SpO2 91%, T 36.3C;Furosemide IV;Hemodynamically stable on low-dose vasopressors;Not responding, escalated;Consider step-down tomorrow;Blood cultures x2;No
+360;725;31/08/2024 14:13;HR 81, BP 122/80, SpO2 93%, T 39.2C;Heparin infusion;Urine output adequate;Not responding, escalated;Wean sedation, trial of spontaneous breathing;Blood cultures x2;Yes
+361;732;29/11/2025 10:28;HR 90, BP 138/74, SpO2 98%, T 37.5C;Amiodarone infusion;Urine output adequate;Not responding, escalated;Wean sedation, trial of spontaneous breathing;;No
+362;732;29/11/2025 15:33;HR 118, BP 112/65, SpO2 98%, T 37.0C;Heparin infusion;Hemodynamically stable on low-dose vasopressors;Slow improvement;Continue current plan, reassess in AM;Blood cultures x2;No
+363;732;29/11/2025 21:06;HR 70, BP 137/91, SpO2 94%, T 38.0C;Norepinephrine infusion;Hemodynamically stable on low-dose vasopressors;Slow improvement;Repeat labs at 18:00;Repeat chest X-ray;Yes
+364;735;27/08/2024 03:07;HR 108, BP 127/87, SpO2 89%, T 37.8C;Insulin infusion;Ventilated, FiO2 weaned to 40%;Slow improvement;Discussed goals of care with family;;Yes
+365;744;17/01/2025 23:38;HR 98, BP 107/64, SpO2 94%, T 37.2C;Heparin infusion;Ventilated, FiO2 weaned to 40%;Not responding, escalated;Consider step-down tomorrow;Blood cultures x2;No
+366;744;18/01/2025 08:15;HR 128, BP 109/66, SpO2 93%, T 38.6C;Propofol sedation;Afebrile for 24 hours;Stable;Discussed goals of care with family;Repeat chest X-ray;No
+367;745;14/08/2024 21:02;HR 114, BP 110/80, SpO2 100%, T 36.5C;Furosemide IV;Hemodynamically stable on low-dose vasopressors;Stable;Consider step-down tomorrow;Echocardiogram;No
+368;745;17/08/2024 02:10;HR 102, BP 140/78, SpO2 92%, T 37.5C;IV piperacillin-tazobactam;Ventilated, FiO2 weaned to 40%;Improving;Wean sedation, trial of spontaneous breathing;NULL;No
+369;745;17/08/2024 09:29;HR 81, BP 110/94, SpO2 92%, T 36.2C;Norepinephrine infusion;Afebrile for 24 hours;Slow improvement;Continue current plan, reassess in AM;;No
+370;745;19/08/2024 12:39;HR 100, BP 148/89, SpO2 88%, T 38.4C;IV piperacillin-tazobactam;Ventilated, FiO2 weaned to 40%;Good response;Discussed goals of care with family;Repeat chest X-ray;Yes
+371;755;29/09/2025 16:22;HR 81, BP 159/77, SpO2 96%, T 36.8C;Furosemide IV;Urine output adequate;Good response;Wean sedation, trial of spontaneous breathing;Blood cultures x2;No
+372;755;01/10/2025 06:09;HR 127, BP 132/91, SpO2 94%, T 38.3C;Norepinephrine infusion;Ventilated, FiO2 weaned to 40%;Stable;Repeat labs at 18:00;NULL;No
+373;755;01/10/2025 14:47;HR 81, BP 145/73, SpO2 97%, T 37.9C;Insulin infusion;Agitation overnight, sedation adjusted;Improving;Consider step-down tomorrow;;No
+374;755;03/10/2025 13:05;HR 82, BP 106/57, SpO2 98%, T 38.0C;Insulin infusion;Afebrile for 24 hours;Improving;Discussed goals of care with family;Blood cultures x2;Yes
+375;760;15/07/2025 10:11;HR 95, BP 94/93, SpO2 88%, T 36.3C;Insulin infusion;Hemodynamically stable on low-dose vasopressors;Stable;Consider step-down tomorrow;;No
+376;760;17/07/2025 01:39;HR 124, BP 160/89, SpO2 100%, T 37.8C;IV piperacillin-tazobactam;Afebrile for 24 hours;Not responding, escalated;Consider step-down tomorrow;;Yes
+377;767;20/01/2025 18:37;HR 92, BP 94/82, SpO2 90%, T 38.5C;Insulin infusion;Ventilated, FiO2 weaned to 40%;Not responding, escalated;Discussed goals of care with family;;No
+378;767;22/01/2025 08:24;HR 91, BP 120/77, SpO2 97%, T 37.4C;Heparin infusion;Ventilated, FiO2 weaned to 40%;Improving;Consider step-down tomorrow;Arterial blood gas;No
+379;767;23/01/2025 18:46;HR 81, BP 134/82, SpO2 100%, T 37.9C;Heparin infusion;Agitation overnight, sedation adjusted;Stable;Consider step-down tomorrow;;No
+380;767;28/01/2025 17:56;HR 98, BP 97/78, SpO2 99%, T 36.6C;Insulin infusion;Afebrile for 24 hours;Stable;Continue current plan, reassess in AM;Repeat chest X-ray;Yes
+381;774;09/11/2025 19:24;HR 96, BP 152/88, SpO2 95%, T 38.5C;Insulin infusion;Hemodynamically stable on low-dose vasopressors;Stable;Repeat labs at 18:00;Repeat chest X-ray;No
+382;774;10/11/2025 02:09;HR 80, BP 114/66, SpO2 93%, T 36.9C;Insulin infusion;Ventilated, FiO2 weaned to 40%;Not responding, escalated;Consider step-down tomorrow;Echocardiogram;No
+383;774;10/11/2025 22:45;HR 71, BP 105/84, SpO2 90%, T 37.1C;Amiodarone infusion;Urine output adequate;Stable;Repeat labs at 18:00;Arterial blood gas;Yes
+384;776;05/05/2024 10:25;HR 78, BP 152/78, SpO2 99%, T 38.0C;Heparin infusion;Agitation overnight, sedation adjusted;Not responding, escalated;Wean sedation, trial of spontaneous breathing;Blood cultures x2;No
+385;776;05/05/2024 21:11;HR 104, BP 136/73, SpO2 90%, T 37.3C;IV piperacillin-tazobactam;Hemodynamically stable on low-dose vasopressors;Improving;Wean sedation, trial of spontaneous breathing;;Yes
+386;780;13/08/2024 21:58;HR 121, BP 141/56, SpO2 98%, T 37.1C;IV piperacillin-tazobactam;Hemodynamically stable on low-dose vasopressors;Improving;Consider step-down tomorrow;;No
+387;780;14/08/2024 08:59;HR 75, BP 102/51, SpO2 89%, T 36.9C;Heparin infusion;Urine output adequate;Improving;Repeat labs at 18:00;NULL;No
+388;780;16/08/2024 06:23;HR 84, BP 106/89, SpO2 95%, T 36.5C;Amiodarone infusion;Hemodynamically stable on low-dose vasopressors;Not responding, escalated;Continue current plan, reassess in AM;Blood cultures x2;No
+389;780;20/08/2024 01:04;HR 104, BP 108/91, SpO2 94%, T 37.6C;Amiodarone infusion;Hemodynamically stable on low-dose vasopressors;Improving;Discussed goals of care with family;NULL;Yes
+390;784;11/11/2024 17:52;HR 79, BP 102/81, SpO2 96%, T 38.8C;Heparin infusion;Urine output adequate;Not responding, escalated;Continue current plan, reassess in AM;Repeat chest X-ray;No
+391;784;13/11/2024 18:38;HR 124, BP 133/81, SpO2 94%, T 37.5C;Heparin infusion;Ventilated, FiO2 weaned to 40%;Slow improvement;Discussed goals of care with family;NULL;No
+392;784;15/11/2024 08:53;HR 124, BP 157/70, SpO2 99%, T 37.6C;Heparin infusion;Hemodynamically stable on low-dose vasopressors;Stable;Continue current plan, reassess in AM;Repeat chest X-ray;Yes
+393;788;06/02/2025 15:58;HR 130, BP 148/73, SpO2 99%, T 38.0C;IV piperacillin-tazobactam;Ventilated, FiO2 weaned to 40%;Slow improvement;Repeat labs at 18:00;Arterial blood gas;No
+394;788;06/02/2025 20:54;HR 103, BP 154/84, SpO2 90%, T 38.2C;IV piperacillin-tazobactam;Urine output adequate;Not responding, escalated;Continue current plan, reassess in AM;Arterial blood gas;No
+395;788;08/02/2025 10:40;HR 94, BP 155/60, SpO2 88%, T 36.3C;Insulin infusion;Urine output adequate;Stable;Continue current plan, reassess in AM;Echocardiogram;No
+396;788;09/02/2025 10:01;HR 86, BP 143/61, SpO2 99%, T 38.4C;Insulin infusion;Afebrile for 24 hours;Not responding, escalated;Repeat labs at 18:00;;Yes
+397;815;05/18/2025 00:02;HR 107, BP 126/92, SpO2 92%, T 39.0C;Insulin infusion;Agitation overnight, sedation adjusted;Slow improvement;Consider step-down tomorrow;Repeat chest X-ray;No
+398;815;19/05/2025 01:11;HR 105, BP 145/84, SpO2 91%, T 39.1C;Heparin infusion;Agitation overnight, sedation adjusted;Good response;Discussed goals of care with family;Arterial blood gas;Yes
+399;816;21/05/2025 06:41;HR 93, BP 100/76, SpO2 100%, T 36.6C;IV piperacillin-tazobactam;Urine output adequate;Not responding, escalated;Consider step-down tomorrow;;No
+400;816;22/05/2025 02:15;HR 106, BP 111/84, SpO2 94%, T 38.8C;IV piperacillin-tazobactam;Urine output adequate;Improving;Consider step-down tomorrow;Blood cultures x2;Yes
+401;820;15/12/2024 15:40;HR 104, BP 127/62, SpO2 89%, T 36.2C;Furosemide IV;Ventilated, FiO2 weaned to 40%;Stable;Discussed goals of care with family;Repeat chest X-ray;No
+402;820;15/12/2024 23:56;HR 111, BP 145/95, SpO2 97%, T 37.8C;Heparin infusion;Ventilated, FiO2 weaned to 40%;Good response;Consider step-down tomorrow;Echocardiogram;No
+403;820;16/12/2024 02:05;HR 125, BP 158/51, SpO2 90%, T 36.4C;Insulin infusion;Hemodynamically stable on low-dose vasopressors;Good response;Consider step-down tomorrow;Repeat chest X-ray;No
+404;820;16/12/2024 13:43;HR 95, BP 134/77, SpO2 95%, T 38.6C;IV piperacillin-tazobactam;Agitation overnight, sedation adjusted;Not responding, escalated;Consider step-down tomorrow;NULL;Yes
+405;823;03/05/2025 22:32;HR 117, BP 122/93, SpO2 97%, T 38.1C;Propofol sedation;Ventilated, FiO2 weaned to 40%;Good response;Consider step-down tomorrow;NULL;Yes
+406;828;18/01/2026 05:48;HR 128, BP 134/82, SpO2 91%, T 38.1C;Norepinephrine infusion;Hemodynamically stable on low-dose vasopressors;Not responding, escalated;Consider step-down tomorrow;Arterial blood gas;No
+407;828;18/01/2026 15:53;HR 116, BP 148/85, SpO2 98%, T 38.9C;IV piperacillin-tazobactam;Urine output adequate;Stable;Repeat labs at 18:00;Echocardiogram;No
+408;828;21/01/2026 17:40;HR 81, BP 156/51, SpO2 92%, T 37.5C;Insulin infusion;Afebrile for 24 hours;Slow improvement;Consider step-down tomorrow;;Yes
+409;833;08/04/2024 10:17;HR 101, BP 154/50, SpO2 93%, T 36.3C;Norepinephrine infusion;Urine output adequate;Good response;Discussed goals of care with family;NULL;Yes
+410;837;25/04/2024 10:33;HR 77, BP 98/84, SpO2 95%, T 38.2C;Insulin infusion;Urine output adequate;Stable;Discussed goals of care with family;NULL;No
+411;837;25/04/2024 20:10;HR 110, BP 143/62, SpO2 89%, T 39.0C;Furosemide IV;Ventilated, FiO2 weaned to 40%;Not responding, escalated;Continue current plan, reassess in AM;Repeat chest X-ray;Yes
+412;840;18/09/2024 08:52;HR 90, BP 102/57, SpO2 92%, T 38.9C;Insulin infusion;Urine output adequate;Not responding, escalated;Wean sedation, trial of spontaneous breathing;;No
+413;840;18/09/2024 15:54;HR 109, BP 130/78, SpO2 94%, T 39.1C;Insulin infusion;Urine output adequate;Slow improvement;Repeat labs at 18:00;Blood cultures x2;No
+414;840;19/09/2024 22:56;HR 81, BP 148/89, SpO2 96%, T 36.8C;IV piperacillin-tazobactam;Hemodynamically stable on low-dose vasopressors;Slow improvement;Wean sedation, trial of spontaneous breathing;NULL;Yes
+415;844;17/04/2025 22:05;HR 129, BP 116/78, SpO2 89%, T 39.0C;IV piperacillin-tazobactam;Afebrile for 24 hours;Stable;Continue current plan, reassess in AM;Blood cultures x2;Yes
+416;851;29/08/2024 20:34;HR 106, BP 145/52, SpO2 96%, T 38.5C;Furosemide IV;Urine output adequate;Stable;Consider step-down tomorrow;Echocardiogram;No
+417;851;31/08/2024 19:53;HR 79, BP 130/62, SpO2 89%, T 39.2C;Furosemide IV;Afebrile for 24 hours;Slow improvement;Repeat labs at 18:00;Blood cultures x2;No
+418;851;03/09/2024 12:45;HR 112, BP 119/78, SpO2 98%, T 39.0C;Propofol sedation;Urine output adequate;Good response;Discussed goals of care with family;Arterial blood gas;Yes
+419;855;05/10/2024 20:51;HR 114, BP 160/92, SpO2 96%, T 38.0C;IV piperacillin-tazobactam;Ventilated, FiO2 weaned to 40%;Not responding, escalated;Consider step-down tomorrow;NULL;No
+420;855;07/10/2024 20:05;HR 72, BP 145/63, SpO2 88%, T 38.5C;Heparin infusion;Agitation overnight, sedation adjusted;Good response;Consider step-down tomorrow;NULL;No
+421;855;10/10/2024 09:15;HR 130, BP 123/75, SpO2 90%, T 38.5C;Amiodarone infusion;Hemodynamically stable on low-dose vasopressors;Stable;Wean sedation, trial of spontaneous breathing;;No
+422;855;12/10/2024 12:28;HR 97, BP 104/79, SpO2 88%, T 37.4C;Furosemide IV;Agitation overnight, sedation adjusted;Improving;Repeat labs at 18:00;Repeat chest X-ray;Yes
+423;868;18/01/2025 05:32;HR 117, BP 155/51, SpO2 90%, T 37.0C;Norepinephrine infusion;Ventilated, FiO2 weaned to 40%;Improving;Continue current plan, reassess in AM;Arterial blood gas;No
+424;868;20/01/2025 10:08;HR 79, BP 98/72, SpO2 94%, T 38.1C;Heparin infusion;Agitation overnight, sedation adjusted;Good response;Continue current plan, reassess in AM;Echocardiogram;No
+425;868;20/01/2025 21:05;HR 115, BP 137/83, SpO2 94%, T 38.2C;Propofol sedation;Urine output adequate;Stable;Wean sedation, trial of spontaneous breathing;Arterial blood gas;Yes
+426;873;05/02/2024 12:16;HR 124, BP 113/57, SpO2 100%, T 36.3C;Amiodarone infusion;Ventilated, FiO2 weaned to 40%;Good response;Wean sedation, trial of spontaneous breathing;Repeat chest X-ray;No
+427;873;08/02/2024 13:36;HR 117, BP 127/58, SpO2 92%, T 38.6C;Propofol sedation;Urine output adequate;Stable;Wean sedation, trial of spontaneous breathing;Arterial blood gas;No
+428;873;08/02/2024 18:48;HR 106, BP 99/79, SpO2 93%, T 38.0C;Propofol sedation;Urine output adequate;Slow improvement;Discussed goals of care with family;NULL;No
+429;873;10/02/2024 02:15;HR 72, BP 129/55, SpO2 92%, T 36.9C;Norepinephrine infusion;Urine output adequate;Not responding, escalated;Repeat labs at 18:00;Repeat chest X-ray;Yes
+430;879;01/09/2024 04:14;HR 123, BP 122/72, SpO2 98%, T 37.4C;Norepinephrine infusion;Urine output adequate;Slow improvement;Discussed goals of care with family;Echocardiogram;No
+431;879;04/09/2024 14:42;HR 71, BP 153/77, SpO2 96%, T 38.4C;Heparin infusion;Ventilated, FiO2 weaned to 40%;Good response;Repeat labs at 18:00;NULL;No
+432;879;05/09/2024 06:01;HR 124, BP 90/55, SpO2 96%, T 36.4C;Insulin infusion;Agitation overnight, sedation adjusted;Good response;Continue current plan, reassess in AM;Repeat chest X-ray;No
+433;879;12/09/2024 15:34;HR 100, BP 102/59, SpO2 99%, T 37.4C;Insulin infusion;Hemodynamically stable on low-dose vasopressors;Stable;Repeat labs at 18:00;Echocardiogram;Yes
+434;885;07/03/2024 10:38;HR 109, BP 159/53, SpO2 93%, T 39.2C;Amiodarone infusion;Agitation overnight, sedation adjusted;Not responding, escalated;Continue current plan, reassess in AM;Echocardiogram;No
+435;885;08/03/2024 20:14;HR 129, BP 107/51, SpO2 95%, T 36.8C;Furosemide IV;Agitation overnight, sedation adjusted;Improving;Wean sedation, trial of spontaneous breathing;Arterial blood gas;No
+436;885;10/03/2024 03:15;HR 91, BP 156/95, SpO2 95%, T 38.0C;Propofol sedation;Agitation overnight, sedation adjusted;Improving;Discussed goals of care with family;;No
+437;885;12/03/2024 13:21;HR 84, BP 99/50, SpO2 98%, T 37.1C;Insulin infusion;Ventilated, FiO2 weaned to 40%;Not responding, escalated;Continue current plan, reassess in AM;Blood cultures x2;Yes
+438;888;13/08/2024 17:04;HR 96, BP 129/84, SpO2 98%, T 37.2C;Amiodarone infusion;Agitation overnight, sedation adjusted;Improving;Wean sedation, trial of spontaneous breathing;Echocardiogram;No
+439;888;15/08/2024 02:32;HR 122, BP 101/71, SpO2 98%, T 37.4C;Heparin infusion;Agitation overnight, sedation adjusted;Slow improvement;Continue current plan, reassess in AM;;No
+440;888;16/08/2024 00:58;HR 118, BP 99/65, SpO2 89%, T 36.9C;Amiodarone infusion;Hemodynamically stable on low-dose vasopressors;Good response;Consider step-down tomorrow;Blood cultures x2;Yes
+441;889;18/08/2024 04:24;HR 126, BP 106/66, SpO2 93%, T 37.1C;IV piperacillin-tazobactam;Ventilated, FiO2 weaned to 40%;Improving;Repeat labs at 18:00;Echocardiogram;No
+442;889;20/08/2024 10:05;HR 109, BP 99/68, SpO2 90%, T 38.5C;IV piperacillin-tazobactam;Hemodynamically stable on low-dose vasopressors;Not responding, escalated;Wean sedation, trial of spontaneous breathing;;No
+443;889;20/08/2024 17:02;HR 115, BP 145/69, SpO2 90%, T 38.8C;Furosemide IV;Hemodynamically stable on low-dose vasopressors;Good response;Repeat labs at 18:00;Arterial blood gas;No
+444;891;29/04/2025 11:13;HR 79, BP 106/70, SpO2 98%, T 39.2C;Norepinephrine infusion;Agitation overnight, sedation adjusted;Not responding, escalated;Wean sedation, trial of spontaneous breathing;;No
+445;891;30/04/2025 09:50;HR 82, BP 107/59, SpO2 89%, T 38.8C;Norepinephrine infusion;Agitation overnight, sedation adjusted;Slow improvement;Discussed goals of care with family;;No
+446;891;30/04/2025 13:04;HR 112, BP 133/51, SpO2 94%, T 38.1C;Propofol sedation;Afebrile for 24 hours;Slow improvement;Discussed goals of care with family;NULL;No
+447;891;01/05/2025 16:46;HR 108, BP 132/64, SpO2 93%, T 39.0C;Propofol sedation;Agitation overnight, sedation adjusted;Improving;Consider step-down tomorrow;NULL;No
+448;899;19/11/2025 08:41;HR 117, BP 107/55, SpO2 97%, T 38.2C;Heparin infusion;Hemodynamically stable on low-dose vasopressors;Not responding, escalated;Consider step-down tomorrow;Repeat chest X-ray;No
+449;899;19/11/2025 08:41;HR 102, BP 118/76, SpO2 94%, T 37.6C;Norepinephrine infusion;Agitation overnight, sedation adjusted;Good response;Repeat labs at 18:00;NULL;Yes
+450;900;19/11/2025 15:06;HR 98, BP 102/95, SpO2 93%, T 37.2C;Heparin infusion;Urine output adequate;Good response;Repeat labs at 18:00;Repeat chest X-ray;No
+451;900;21/11/2025 04:04;HR 77, BP 126/82, SpO2 91%, T 36.3C;Furosemide IV;Ventilated, FiO2 weaned to 40%;Slow improvement;Continue current plan, reassess in AM;NULL;Yes
+452;903;07/11/2024 11:41;HR 101, BP 139/74, SpO2 97%, T 39.1C;Furosemide IV;Hemodynamically stable on low-dose vasopressors;Improving;Discussed goals of care with family;Echocardiogram;No
+453;903;09/11/2024 00:13;HR 89, BP 118/63, SpO2 93%, T 38.0C;Heparin infusion;Agitation overnight, sedation adjusted;Not responding, escalated;Wean sedation, trial of spontaneous breathing;Blood cultures x2;Yes
+454;906;24/01/2026 11:03;HR 125, BP 119/85, SpO2 100%, T 36.4C;IV piperacillin-tazobactam;Ventilated, FiO2 weaned to 40%;Good response;Wean sedation, trial of spontaneous breathing;;No
+455;906;25/01/2026 10:02;HR 77, BP 91/83, SpO2 99%, T 36.3C;Propofol sedation;Afebrile for 24 hours;Not responding, escalated;Consider step-down tomorrow;;Yes
+456;910;29/07/2024 01:42;HR 109, BP 141/90, SpO2 91%, T 38.7C;Amiodarone infusion;Hemodynamically stable on low-dose vasopressors;Not responding, escalated;Consider step-down tomorrow;;Yes
+457;920;07/07/2024 14:21;HR 86, BP 159/77, SpO2 96%, T 38.2C;Furosemide IV;Agitation overnight, sedation adjusted;Not responding, escalated;Repeat labs at 18:00;Arterial blood gas;Yes
+458;923;21/10/2024 12:48;HR 101, BP 153/86, SpO2 88%, T 37.2C;IV piperacillin-tazobactam;Afebrile for 24 hours;Slow improvement;Continue current plan, reassess in AM;NULL;No
+459;923;25/10/2024 07:43;HR 71, BP 124/75, SpO2 94%, T 37.0C;Furosemide IV;Agitation overnight, sedation adjusted;Stable;Consider step-down tomorrow;Blood cultures x2;No
+460;923;25/10/2024 22:02;HR 130, BP 160/92, SpO2 93%, T 36.7C;Heparin infusion;Urine output adequate;Slow improvement;Wean sedation, trial of spontaneous breathing;Arterial blood gas;Yes
+461;939;13/10/2024 16:50;HR 121, BP 91/77, SpO2 93%, T 38.7C;Amiodarone infusion;Ventilated, FiO2 weaned to 40%;Good response;Consider step-down tomorrow;Arterial blood gas;No
+462;939;15/10/2024 00:51;HR 120, BP 118/52, SpO2 98%, T 36.9C;Amiodarone infusion;Ventilated, FiO2 weaned to 40%;Stable;Continue current plan, reassess in AM;Blood cultures x2;No
+463;939;16/10/2024 09:52;HR 111, BP 140/71, SpO2 93%, T 39.1C;Amiodarone infusion;Agitation overnight, sedation adjusted;Not responding, escalated;Repeat labs at 18:00;Blood cultures x2;No
+464;944;06/07/2025 16:21;HR 102, BP 109/66, SpO2 96%, T 39.0C;Propofol sedation;Urine output adequate;Not responding, escalated;Repeat labs at 18:00;;No
+465;944;06/07/2025 16:25;HR 83, BP 147/81, SpO2 93%, T 38.7C;Heparin infusion;Urine output adequate;Improving;Repeat labs at 18:00;Arterial blood gas;No
+466;944;07/07/2025 19:00;HR 115, BP 104/87, SpO2 92%, T 37.1C;Furosemide IV;Urine output adequate;Not responding, escalated;Discussed goals of care with family;Arterial blood gas;Yes
+467;954;13/09/2025 06:59;HR 87, BP 108/56, SpO2 93%, T 37.7C;IV piperacillin-tazobactam;Urine output adequate;Good response;Wean sedation, trial of spontaneous breathing;Repeat chest X-ray;Yes
+468;964;26/12/2024 12:10;HR 78, BP 145/92, SpO2 98%, T 38.5C;Norepinephrine infusion;Afebrile for 24 hours;Slow improvement;Discussed goals of care with family;;No
+469;964;28/12/2024 12:19;HR 87, BP 124/64, SpO2 97%, T 38.5C;Norepinephrine infusion;Agitation overnight, sedation adjusted;Stable;Wean sedation, trial of spontaneous breathing;Echocardiogram;No
+470;964;29/12/2024 03:16;HR 109, BP 151/64, SpO2 92%, T 37.3C;Furosemide IV;Urine output adequate;Stable;Discussed goals of care with family;;Yes
+471;972;26/01/2025 10:57;HR 106, BP 99/57, SpO2 90%, T 36.4C;Propofol sedation;Agitation overnight, sedation adjusted;Stable;Discussed goals of care with family;NULL;Yes

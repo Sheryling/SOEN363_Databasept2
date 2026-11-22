@@ -1,0 +1,255 @@
+PatID|HealthCardNo|PatientName|DOB|Sex|Address|Phone|EmergencyContactName|EmergencyContactNumber|VitalStatus|DeathDT
+1|1431021814-KC|Brown, Sophia|10/25/1961|F|4034 King Dr, Northport|N/A|N/A||ALIVE|N/A
+2|4902029894-CB|Wright, Isabella|09/26/1992|F|2176 Oak St, Fairhaven|(613) 555-0155|Evelyn Wright|(613) 555-0169|ALIVE|N/A
+3|5762889761-GC|Anderson, Ethan|12/28/1954|M|N/A|(613) 555-0183|Samuel Anderson|(613) 555-0113|DECEASED|06/07/2024 12:46 AM
+4|2697198464-FH|Campbell, Ryan|02/21/1936|M|3005 Cedar Dr, Fairhaven|(613) 555-0190|||ALIVE|N/A
+5|8919268619-FC|King, Mason|09/12/1947|M|7663 Queen Ave, Fairhaven|(613) 555-0170||N/A|ALIVE|N/A
+6|INTL-32566580|Thomas, Evelyn|07/12/1959|F|9737 Oak Rd, Northport|(613) 555-0137|Nathan Thomas|(613) 555-0175|ALIVE|
+7|INTL-47916894|Wilson, Emma|08/15/1980|F|5159 Queen St, Fairhaven|(613) 555-0102|Abigail Wilson|(613) 555-0133|ALIVE|N/A
+8|INTL-68924156|Walker, Lucas|04/28/1944|M|649 Lakeshore Ave, Northport|(613) 555-0136|Emily Walker|(613) 555-0170|ALIVE|N/A
+9|9548488462-CH|Campbell, Mia|10/06/1974|F|N/A|(613) 555-0184|N/A|N/A|Alive|N/A
+10|5694594845-AC|White, Emily|12/10/1960||2447 Birch Rd, Clearwater|N/A||N/A|ALIVE|N/A
+11|7898582051-HB|Campbell, Harper|06/06/1932|F|8877 Birch Dr, Fairhaven|(613) 555-0164|Dylan Campbell|(613) 555-0172|ALIVE|N/A
+12|INTL-32952938|Smith, Harper|05/11/1967|F|1222 Willow Dr, Fairhaven|N/A|N/A||ALIVE|
+13|INTL-55429617|Roy, Dylan|04/08/1958|M|3371 Maple Rd, Brookfield||Dylan Roy|(613) 555-0176|ALIVE|N/A
+14|INTL-62027153|Jackson, Olivia|09/15/1987|F|6924 Birch St, Northport|(613) 555-0155|Charlotte Jackson|(613) 555-0122|ALIVE|
+15|4581636113-FB|Morgan, Ava|01/17/1972|F|9183 Willow Ave, Northport|(613) 555-0193|Zoe Morgan|(613) 555-0154|DECEASED|02/27/2024 11:17 AM
+16|5749108597-KA|Wright, Samuel|10/20/1973|M|4159 Willow St, Brookfield|(613) 555-0138|N/A||deceased|04/18/2025 05:05 AM
+17|9743347860-BE|White, Abigail|11/01/1993|F|670 Pine St, Lakeview|(613) 555-0121|Lucas White|(613) 555-0179|ALIVE|N/A
+18|INTL-31761109|Taylor, Isabella|02/20/1939|F|68 Cedar Dr, Clearwater|(613) 555-0185|Abigail Taylor|(613) 555-0114|ALIVE|N/A
+19|INTL-31460959|smith, Samuel|09/22/1955|M|1883 Willow Ave, Lakeview|(613) 555-0110|Jacob Smith|(613) 555-0132|ALIVE|N/A
+20|INTL-42064421|Morgan, Lucas|09/21/1939|M|9515 Willow Rd, Northport||James Morgan|(613) 555-0183|ALIVE|
+21|9445161961-FJ|Moore, Nathan|12/16/1947|M|9582 Maple Dr, Fairhaven|(613) 555-0171|Mia Moore|(613) 555-0122|ALIVE|N/A
+22|5937652424-AJ|Campbell, Emily|12/23/1986|F|4813 Lakeshore St, Lakeview|(613) 555-0158|Harper Campbell|(613) 555-0162|ALIVE|N/A
+23|7319543972-KF|Anderson, Evelyn|08/27/2004|F|8437 Maple Ave, Northport|(613) 555-0148|Daniel Anderson|(613) 555-0168|ALIVE|N/A
+24|INTL-66945133|Anderson, Ava|01/18/1970|F|3712 King Rd, Northport|(613) 555-0130|Owen Anderson|(613) 555-0178|DECEASED|09/27/2024 01:11 AM
+25|INTL-90183229|Taylor, Dylan|04/04/1994|M|952 King Ave, Clearwater|(613) 555-0138|Mason Taylor|(613) 555-0134|ALIVE|N/A
+26|INTL-96992180|Anderson, Mia|12/27/1983|F|6771 Cedar Rd, Fairhaven|(613) 555-0163|Chloe Anderson|(613) 555-0157|ALIVE|N/A
+27|4602190923-KB|Young, Dylan|12/16/1999|N/A|5887 Oak Ave, Clearwater|(613) 555-0189|Amelia Young|(613) 555-0116|ALIVE|N/A
+28|4690663533-JA|Smith, Harper|11/23/1947|F|N/A|(613) 555-0165|Harper Smith|(613) 555-0119|ALIVE|N/A
+29|4104980796-KH|Thomas, Samuel|10/23/1936|M|6653 Birch St, Fairhaven|(613) 555-0188|||ALIVE|N/A
+30|N/A|Carter, Olivia|05/20/1959|F|3267 Willow Ave, Fairhaven|(613) 555-0133|N/A||ALIVE|N/A
+31|3795788842-BG|Clark, Lucas|07/10/1984|M|5345 Oak Rd, Clearwater|(613) 555-0158|Liam Clark|(613) 555-0163|ALIVE|N/A
+32|7960229445-AE|Brown,  James|05/07/1989|M|2642 Lakeshore St, Northport|(613) 555-0185|Zoe Brown|(613) 555-0198|ALIVE|
+33|8735224561-JA|Lewis, Amelia|08/16/1984|F|5065 Willow St, Clearwater|(613) 555-0188|Owen Lewis|(613) 555-0123|ALIVE|N/A
+34|8280566995-DG|Anderson, Zoe|05/07/1951|F|6646 Elm Dr, Northport|(613) 555-0179|Amelia Anderson|(613) 555-0180|ALIVE|N/A
+35|9128701235-GJ|Wright, Liam|06/09/1977|M|3522 Lakeshore St, Clearwater|N/A|James Wright|(613) 555-0155|ALIVE|N/A
+36|6022416535-JG|Martin, Grace|12/28/1992|F|3350 King Dr, Brookfield|(613) 555-0108|Ryan Martin|(613) 555-0122|ALIVE|N/A
+37|7803854195-AG|Moore, Emma|02/09/1978|F|7391 Cedar St, Lakeview|(613) 555-0133|Amelia Moore|(613) 555-0114|ALIVE|N/A
+38|7094204787-AE|Morgan, Mia|08/18/1990|F|1242 Pine Rd, Brookfield||N/A|N/A|ALIVE|N/A
+39|6518531421-FC|Moore, Ryan|03/23/2003|M|8449 Queen Rd, Brookfield|(613) 555-0121|Noah Moore|(613) 555-0114|ALIVE|
+40|8620512904-CD|Martin, Amelia|04/04/1947|F|6751 Pine St, Northport|(613) 555-0189|Olivia Martin|(613) 555-0191|ALIVE|N/A
+41|2117530661-BG|Anderson, Sophia|03/21/2000|F|7859 Elm Ave, Clearwater|(613) 555-0104|Ava Anderson|(613) 555-0175|ALIVE|N/A
+42|7140491392-CE|Clark, Isabella|06/25/1999|F|2691 Oak Dr, Brookfield|(613) 555-0167|Mia Clark|(613) 555-0160|ALIVE|
+43|3080580304-KB|Clark, Ethan|02/03/1973|M|8159 Willow Rd, Clearwater|(613) 555-0194|Logan Clark|(613) 555-0135|alive|N/A
+44|9543871752-HA|White, Liam|08/06/1998|M|2307 Elm Rd, Clearwater|(613) 555-0131|Emma White|(613) 555-0101|ALIVE|N/A
+45|4232509538-DE|Martin, Mason|06/21/1980|M|9728 Oak Dr, Fairhaven|(613) 555-0103|Owen Martin|(613) 555-0155|ALIVE|N/A
+46|8617853790-FF|White, Mason|10/14/1988|M|3065 Elm St, Brookfield|(613) 555-0116|Sophia White|(613) 555-0122|ALIVE|N/A
+47|3145475679-BE|Harris, Nathan|11/14/65|M|5258 Oak Rd, Lakeview|N/A|Daniel Harris|(613) 555-0187|ALIVE|
+48|3699524001-CJ|Anderson, Ava|10/15/1994|N/A|8452 Queen St, Lakeview|(613) 555-0161|Mason Anderson|(613) 555-0161|ALIVE|N/A
+49|7255274661-EC|Thomas, Logan|05/25/1980|M|713 Elm Rd, Fairhaven|(613) 555-0136|Nathan Thomas|(613) 555-0151|ALIVE|
+50|7459844703-AG|Anderson, Amelia|01/20/1946|F|3357 Queen Ave, Lakeview|(613) 555-0146|Dylan Anderson|(613) 555-0182|ALIVE|N/A
+51|7086512277-JE|Wright, Dylan|05/11/1992|M|3775 Elm Ave, Lakeview|(613) 555-0107|N/A|N/A|ALIVE|
+52|2479730474-KB|Morgan, James|03/01/1990|M|5252 Willow Ave, Northport|(613) 555-0172|Benjamin Morgan|(613) 555-0118|ALIVE|N/A
+53|9720448567-JJ|Gagnon, Harper|05/01/1976|F|5433 Elm Ave, Clearwater|(613) 555-0187|N/A|N/A|ALIVE|N/A
+54|2988403123-CH|Jackson, Sophia|01/20/1961|F|8758 Willow St, Lakeview|(613) 555-0117|Nathan Jackson|(613) 555-0131|DECEASED|04/18/2024 05:54 AM
+55|4826404134-HE|Young, Samuel|03/22/1934|M|5128 King St, Northport|N/A|Emma Young|(613) 555-0135|ALIVE|N/A
+56|8631919833-KH|Moore, Amelia|06/07/1976|F|36 Lakeshore Ave, Northport||Charlotte Moore|(613) 555-0174|ALIVE|N/A
+57|4900523603-CC|Mitchell, Sophia|07/03/1958|F|1143 King St, Lakeview|(613) 555-0168|Emily Mitchell|(613) 555-0120|ALIVE|N/A
+58|8501374997-FA|Martin, Nathan|12/24/1960|M|3105 Queen Dr, Brookfield|(613) 555-0122|Nathan Martin|(613) 555-0156|ALIVE|
+59|9394280459-GK|Clark, Nathan|06/10/1961|M|976 Oak Ave, Northport|(613) 555-0198|Olivia Clark|(613) 555-0146|ALIVE|N/A
+60|5158272849-FC|King, Olivia|07/17/1960|F|7886 Oak Ave, Northport|(613) 555-0135|Emily King|(613) 555-0165|ALIVE|N/A
+61|8498867097-EB|White, Emma|03/02/1955|F|9478 Birch St, Fairhaven|(613) 555-0114|Samuel White|(613) 555-0136|ALIVE|N/A
+62|5568748244-FB|Wright, Nathan|12/12/2001|M|5086 King St, Fairhaven|(613) 555-0180|Isabella Wright|(613) 555-0176|ALIVE|N/A
+63|8004527197-EK|Wilson, Lucas|11/02/1939|M  |2657 Queen Rd, Lakeview|(613) 555-0108|Mason Wilson|(613) 555-0194|ALIVE|N/A
+64|4574094635-DJ|Lewis, Daniel|07/07/1985|M|7856 Oak Dr, Clearwater|(613) 555-0194|Ryan Lewis|(613) 555-0106|deceased|07/06/2025 01:12 PM
+65|7379909936-CE|Mitchell, Mia|05/13/1991|F|7835 Birch Rd, Fairhaven|(613) 555-0161|N/A|N/A|ALIVE|
+66|3222191875-EF|Smith, Benjamin|01/16/1938|M|8912 Queen Rd, Fairhaven|(613) 555-0163|Isabella Smith|(613) 555-0128|ALIVE|N/A
+67|8809745069-GK|Thomas, Samuel|04/02/2002|M|N/A|(613) 555-0104|Noah Thomas|(613) 555-0126|ALIVE|N/A
+68|4982959214-CD|Roy, Daniel|09/01/1968|M|8412 Elm Rd, Clearwater||Benjamin Roy|(613) 555-0191|ALIVE|N/A
+69|1254034690-CH|Gagnon, Charlotte|12/07/1978|F|866 Birch Dr, Northport|(613) 555-0179|N/A||ALIVE|N/A
+70|7576225332-GD|King, Nathan|08/01/1973|M|9156 Willow Rd, Lakeview|(613) 555-0103|Daniel King|(613) 555-0138|ALIVE|N/A
+71|3485398072-AA|Roy, Nathan|06/26/1992|M|7118 Oak Rd, Northport|(613) 555-0123|Samuel Roy|(613) 555-0118|ALIVE|N/A
+72|3129418984-FJ|Harris, Emily|09/26/1987|F|149 Lakeshore Rd, Northport|(613) 555-0171|Jacob Harris|(613) 555-0192|ALIVE|
+73|6700096104-AG|Walker, Samuel|10/16/1987|M|8839 King Rd, Clearwater|(613) 555-0114|Emma Walker|(613) 555-0138|ALIVE|N/A
+74|4437796823-KA|Young, Mia|10/06/2025|F|7683 Elm Dr, Northport|(613) 555-0192|N/A|N/A|ALIVE|N/A
+75|3994124739-GG|Carter, Ethan|07/04/1939|M|2142 Lakeshore St, Lakeview|(613) 555-0154|Dylan Carter|(613) 555-0122|ALIVE|N/A
+76|8169010060-HB|Harris, Sophia|03/06/1997|F|5875 Elm Rd, Brookfield|(613) 555-0100|Owen Harris|(613) 555-0187|ALIVE|N/A
+77|5151046931-EG|Roy, Ethan|03/21/1990|M|9182 Willow Ave, Fairhaven|(613) 555-0196|Emily Roy|(613) 555-0166|DECEASED|08/11/2024 12:20 PM
+78|9747045680-CC|Tremblay, Zoe|08/15/1974|F|438 Willow Rd, Brookfield|(613) 555-0174|Samuel Tremblay|(613) 555-0141|ALIVE|N/A
+79|9322169566-DC|Lewis, Owen|09/04/1946|M|7300 King Ave, Brookfield|(613) 555-0194|Evelyn Lewis|(613) 555-0158|ALIVE|N/A
+80|5722030604-GJ|Mitchell, Sophia|03/10/1939|F|1596 Birch Dr, Fairhaven|(613) 555-0167|Logan Mitchell|(613) 555-0191|ALIVE|
+81|2980513505-JJ|Martin, Amelia|03/08/1990|F|5453 Pine Rd, Clearwater|(613) 555-0185||N/A|ALIVE|
+82|4492362214-HK|King, Liam|02/18/1966|M|9311 Lakeshore Dr, Brookfield|(613) 555-0117|Sophia King|(613) 555-0182|ALIVE|N/A
+83|9306427858-HD|Tremblay, Zoe|12/13/1995|F|1035 Lakeshore Dr, Lakeview||Liam Tremblay|(613) 555-0122|ALIVE|N/A
+84|5404159923-AK| Carter, Ava|05/23/1937|F|5085 Birch Dr, Clearwater|N/A|N/A|N/A|ALIVE|
+85|7419546820-BK|Brown, Abigail|04/07/1945| F|4062 Maple Dr, Clearwater|(613) 555-0148|Sophia Brown|(613) 555-0196|ALIVE|N/A
+86|7474509171-BG|Thomas, Owen|06/11/1941|M|9393 Lakeshore Ave, Brookfield|(613) 555-0129|Noah Thomas|(613) 555-0184|ALIVE|N/A
+87|6403214680-CB|Jackson, Zoe|03/18/1969|F|8990 Elm Rd, Brookfield|(613) 555-0193||N/A|ALIVE|
+88|2242058023-KK|Wilson, Emily|08/02/1938|F|1250 Elm St, Brookfield|(613) 555-0131|Samuel Wilson|(613) 555-0131|ALIVE|N/A
+89|8170462279-BE|Walker, Evelyn|09/25/1993|F|9238 Pine Rd, Brookfield|(613) 555-0147|Ethan Walker|(613) 555-0105|ALIVE|N/A
+90|6871491699-KK|Brown, Liam|09/11/1963|M|5323 King Rd, Northport|(613) 555-0192|Charlotte Brown|(613) 555-0170|ALIVE|
+91|6924104415-JB|Carter, Chloe|02/20/1961|F|8792 Willow Dr, Lakeview||Mason Carter|(613) 555-0193|ALIVE|
+92|2210753235-EB|Carter, Samuel|10/27/1963|M|3595 Queen St, Northport|(613) 555-0138|Emily Carter|(613) 555-0166|ALIVE|
+93|3398895053-EA|Morgan, mason|01/05/1953|M|2825 Cedar Rd, Lakeview|(613) 555-0173|Noah Morgan|(613) 555-0163|ALIVE|
+94|9467202529-BF|Morgan, Zoe|01/11/1965|F|1009 Elm Rd, Clearwater|(613) 555-0149|Isabella Morgan|(613) 555-0182|DECEASED|06/10/2023 02:21 PM
+95|1775694570-KA|Smith, Mason|08/05/1969|M|8725 Cedar Rd, Fairhaven|N/A||N/A|ALIVE|N/A
+96|1600479822-BB|Mitchell, Ava|04/06/1956|F|3441 Queen Rd, Lakeview|(613) 555-0161|Zoe Mitchell|(613) 555-0101|ALIVE|N/A
+97|6767570917-CA|Morgan, Ethan|10/15/1961|M|3240 Elm Dr, Clearwater|(613) 555-0186|Emma Morgan|(613) 555-0195|ALIVE|
+98|7961078438-BA|Young, Emily|10/08/1988|F|N/A|(613) 555-0124|Abigail Young|(613) 555-0133|ALIVE|
+99|5730989456-DF|Roy, Ethan|06/14/1944|M|426 Lakeshore Rd, Fairhaven|(613) 555-0121|Ava Roy|(613) 555-0189|ALIVE|
+100|2000255258-CB|Martin, Emma|06/19/1975|F|5754 Cedar St, Brookfield|(613) 555-0159|Zoe Martin|(613) 555-0128|ALIVE|N/A
+101|4032363863-DE|Campbell, Liam|01/09/1992|M|N/A|(613) 555-0191|Charlotte Campbell|(613) 555-0140|ALIVE|
+102|9131612321-EB|King, Jacob|12/19/1991|X|2676 Oak Dr, Fairhaven|N/A|Olivia King|(613) 555-0117|ALIVE|N/A
+103|5801238216-GC|Wilson, Zoe|07/23/1965|F|8402 Willow St, Clearwater|(613) 555-0167|Mason Wilson|(613) 555-0179| ALIVE|
+104|2888888524-CB|Carter, Olivia|05/15/1951|F|4182 Lakeshore Dr, Clearwater|(613) 555-0118|Charlotte Carter|(613) 555-0103|ALIVE|N/A
+105|8837751240-DF|Harris, Mia|04/03/1997|F|8804 Elm Dr, Fairhaven|(613) 555-0131|Olivia Harris|(613) 555-0118|ALIVE|
+106|8565632101-FB|Gagnon, Ava|09/12/1961|F|1621 Pine Rd, Fairhaven|(613) 555-0131|Zoe Gagnon|(613) 555-0106|ALIVE|N/A
+107||King, Daniel|03/15/1975|M|7338 Lakeshore Ave, Lakeview|(613) 555-0172|Lucas King|(613) 555-0146|ALIVE|N/A
+108|5224914368-GD|Wilson, Ava|02/26/1965|F|9564 Elm Dr, Clearwater|(613) 555-0128|Sophia Wilson|(613) 555-0108|ALIVE|N/A
+109|3501709167-AK|Walker, Dylan|10/04/2000|M|1023 Willow Ave, Northport|N/A|Mia Walker|(613) 555-0146|ALIVE|N/A
+110|5280014626-EB|Moore, Daniel|02/01/1985|M|8926 Lakeshore Rd, Lakeview||Harper Moore|(613) 555-0180|DECEASED|01/10/2025 12:02 PM
+111|9177657978-DH|Roy, Isabella||F|6079 Elm Rd, Lakeview|(613) 555-0132|Emily Roy|(613) 555-0160|ALIVE|N/A
+112|9031139697-FJ|Wright, Olivia|07/26/1935|F|6207 Pine Dr, Brookfield|(613) 555-0162|Lucas Wright|(613) 555-0179|DECEASED|06/08/2025 11:23 PM
+113|4794418959-EE|Clark, Mason|07/11/1993|M|4938 Lakeshore Ave, Brookfield|(613) 555-0130|Dylan Clark|(613) 555-0122|ALIVE|N/A
+114|2632658691-FF|Morgan, Evelyn|03/18/1954|F|755 Pine Rd, Northport|(613) 555-0152|Abigail Morgan|(613) 555-0124|ALIVE|N/A
+115|4086343282-AF|White, Lucas|03/24/1941|M|490 King Ave, Northport|(613) 555-0198|Chloe White|(613) 555-0110|ALIVE|N/A
+116|9028418590-FD|Tremblay, Liam|02/03/1976|M|3480 Oak Dr, Fairhaven|(613) 555-0106|Ethan Tremblay|(613) 555-0150|ALIVE|N/A
+117|7870330976-DD|Gagnon, Lucas|02/16/1950|N/A|700 Birch Rd, Northport|(613) 555-0106|N/A||ALIVE|N/A
+118|7217401179-CA|Martin, Noah|04/06/1963|M|4227 Lakeshore Rd, Fairhaven|(613) 555-0120|||ALIVE|N/A
+119|6350303712-DC|Tremblay, Logan|07/22/1956|M|5331 Oak Ave, Brookfield|(613) 555-0165|Mia Tremblay|(613) 555-0167|ALIVE|N/A
+120|4132909876-BF|Moore, Samuel|01/01/1956|M|7413 Willow Ave, Lakeview|N/A|Harper Moore|(613) 555-0186|ALIVE|
+121|6899251502-BB|Lewis, Charlotte|11/04/1979|F|7339 Queen Dr, Brookfield|(613) 555-0109|Grace Lewis|(613) 555-0112|ALIVE|N/A
+122|3711717892-BA|Martin, Amelia|01/07/1954|F|9744 Cedar Dr, Northport|(613) 555-0180|Abigail Martin|(613) 555-0175|ALIVE|N/A
+123|9934303985-HJ|Walker, Jacob|06/01/1981|M|2478 Willow St, Fairhaven|(613) 555-0131|N/A|N/A|ALIVE|N/A
+124|8677867246-CK| Lewis, Ava|02/27/1937|  F |181 Cedar Dr, Clearwater|(613) 555-0185|Emily Lewis|(613) 555-0106|ALIVE|N/A
+125|5954085924-FG|Campbell, Benjamin|04/28/1949|M|1229 Lakeshore Ave, Fairhaven|(613) 555-0181|Chloe Campbell|(613) 555-0195|ALIVE|N/A
+126|6678659025-FK|Carter, Logan|01/05/1976|M|6057 Queen Rd, Northport|(613) 555-0164|Zoe Carter|(613) 555-0113|ALIVE|N/A
+127|5650007230-DD|Morgan, Ethan|05/08/1978|M|7151 Cedar Dr, Lakeview|(613) 555-0176|Noah Morgan|(613) 555-0195|ALIVE|N/A
+128|4152754786-GA|Wilson, Owen|08/01/2002|M|8464 Lakeshore Rd, Brookfield|(613) 555-0121|Noah Wilson|(613) 555-0172|ALIVE|N/A
+129|7538181962-AB|Brown, Olivia|08/18/1962|F|6512 Cedar Dr, Brookfield|N/A|Abigail Brown|(613) 555-0151|ALIVE|N/A
+130|4146616966-CK|Mitchell, Liam|12/09/1991|M|5240 Elm Ave, Lakeview|(613) 555-0146|LUCAS MITCHELL|(613) 555-0175|ALIVE|N/A
+131|1057338971-KJ|Campbell, Emma|12/17/1996|F|1596 Birch St, Clearwater|(613) 555-0114|Emma Campbell|(613) 555-0121|ALIVE|
+132|8807885284-FD|Mitchell, Harper|10/22/1992|F|3213 Elm Rd, Northport|(613) 555-0183|Ava Mitchell  |(613) 555-0157|ALIVE|
+133|6825492624-CF|Taylor, Dylan|05/09/1966|M|2206 Lakeshore Ave, Clearwater|(613) 555-0127|Jacob Taylor|(613) 555-0122|ALIVE|N/A
+134|8140896031-GK|Taylor, Evelyn|04/01/1961|F|9672 Queen St, Brookfield|(613) 555-0158|Dylan Taylor|(613) 555-0102|ALIVE|
+135|5304022952-DK|Brown, Abigail|06/25/1945|N/A|5574 Queen Rd, Clearwater|(613) 555-0138|Nathan Brown|(613) 555-0133|ALIVE|N/A
+136|9687705647-DA|Wilson, Dylan|05/02/2003|M|4218 Oak Rd, Fairhaven|(613) 555-0186|Charlotte Wilson|(613) 555-0196|ALIVE|
+137|2900103816-DA|White, Ethan|02/21/1933|M|4390 King Rd, Lakeview|(613) 555-0173|Ryan White|(613) 555-0122|ALIVE|N/A
+138|7230069991-GK|Brown, Amelia|05/18/1996|F|4444 Oak St, Brookfield|(613) 555-0199|Olivia Brown|(613) 555-0155|ALIVE|
+139|9236567301-BC|Jackson, Benjamin|01/14/1949||9805 Maple Dr, Lakeview|(613) 555-0179|Grace Jackson|(613) 555-0118|ALIVE|
+140|2786597831-BK|Anderson, James|02/22/1967|M|3218 Elm Rd, Brookfield|(613) 555-0115|N/A|N/A|ALIVE|
+141|8190615604-HD|Martin, Evelyn|09/19/1958|F|4107 King Ave, Fairhaven|(613) 555-0182|Benjamin Martin|(613) 555-0177|ALIVE|N/A
+142|3745835012-AG|Martin, Charlotte|12/18/1939|F|9790 Oak Ave, Fairhaven|(613) 555-0188|Isabella Martin|(613) 555-0131|ALIVE|N/A
+143|9211851715-BH|Harris, James|04/03/1997|M|8704 Maple Ave, Lakeview|(613) 555-0167|Olivia Harris|(613) 555-0132|ALIVE|N/A
+144|2877002492-KF|Young, Zoe|03/05/1945|F|5932 Queen St, Brookfield|(613) 555-0131|N/A||ALIVE|
+145|7522949529-DC|Smith, Abigail|10/06/1957|F|4426 Birch Rd, Fairhaven|(613) 555-0179|Logan Smith|(613) 555-0115|ALIVE|
+146|7102504287-JF|Martin, Evelyn|11/13/1977|F|1889 Lakeshore Rd, Clearwater|(613) 555-0193|Mia Martin|(613) 555-0112|ALIVE|N/A
+147|8126729428-BC|Walker, Isabella|05/03/1935| F|6389 Elm Rd, Clearwater|N/A|Logan Walker|(613) 555-0152|DECEASED|05/02/2025 01:17 PM
+148|7993249699-KJ|Tremblay, Olivia|01/20/1941|F|5394 Lakeshore Dr, Clearwater|(613) 555-0100|Benjamin Tremblay|(613) 555-0135|ALIVE|
+149|4323203206-KB|Young, Harper|08/09/1949|F|6665 Elm Ave, Clearwater|(613) 555-0104|N/A||ALIVE|N/A
+150|3473072936-BK|Tremblay, Mia|10/20/1977|F|111 Willow St, Fairhaven|(613) 555-0121|Harper Tremblay|(613) 555-0126|ALIVE|
+151|2672961943-HE|Young, Owen|04/11/1949|M|5384 Birch Dr, Clearwater|N/A|Lucas Young|(613) 555-0188|ALIVE|N/A
+152|3813629954-FE|Anderson, Liam|03/25/1988|M|7922 Pine Dr, Fairhaven|N/A|Sophia Anderson|(613) 555-0111|ALIVE|N/A
+153|9296240018-JG|Walker, Samuel|05/25/1987|M|4312 Elm St, Brookfield|(613) 555-0103|Daniel Walker|(613) 555-0103|ALIVE|N/A
+154|8587514588-ED|Wilson, Harper|04/05/1938|F|5635 Cedar St, Brookfield|(613) 555-0108|Owen Wilson|(613) 555-0182|DECEASED|10/07/2025 04:40 AM
+155|9068348371-JH|Thomas, Ethan|04/22/1992|M|6088 Pine Rd, Northport|(613) 555-0118|Owen Thomas|(613) 555-0174|ALIVE|N/A
+156|5452034529-EF|Harris, Abigail|12/02/1963|F|1068 Cedar St, Northport|(613) 555-0187|Abigail Harris|(613) 555-0141|ALIVE|N/A
+157|4736815279-CE|Taylor, Emma|09/18/1999|F|6759 Cedar Rd, Northport|(613) 555-0186|Sophia Taylor|(613) 555-0116|ALIVE|N/A
+158|9651109309-FH|Young, Mia|01/24/2004|F|1223 King Dr, Brookfield|(613) 555-0169|Daniel Young|(613) 555-0111|ALIVE|N/A
+159|8270557392-JK|White, Ethan|02/09/1939|M|9052 Oak Rd, Lakeview|N/A|Jacob White|(613) 555-0111|ALIVE|N/A
+160|4900984186-DK|Wilson, Emma|06/02/1951|F|1825 Queen Rd, Brookfield|(613) 555-0102|N/A|N/A|ALIVE|N/A
+161|1900881845-HB|Thomas, Samuel|08/12/1940|M|8753 Pine Ave, Clearwater|(613) 555-0121|Owen Thomas|(613) 555-0183|ALIVE|N/A
+162|8754531221-BE|Walker, Evelyn|03/15/1998|F|2877 Oak St, Lakeview|(613) 555-0143|Daniel Walker|(613) 555-0160|ALIVE|N/A
+163|7851025697-JG|Martin, Ava|05/27/1972|F|6988 King Rd, Northport|(613) 555-0189|N/A|N/A|DECEASED|09/06/2025 03:34 PM
+164|6687295367-CD|Wilson, Lucas|03/26/2001|M|2724 Maple Rd, Northport|(613) 555-0136|Dylan Wilson|(613) 555-0197|DECEASED|01/21/2026 09:06 AM
+165|8533485180-BH|Taylor, Jacob|08/09/1952|M|343 Birch Ave, Northport|(613) 555-0198|Ethan Taylor|(613) 555-0119|ALIVE|N/A
+166|4015720139-JE|Gagnon, Liam|04/10/2002|M|7006 Lakeshore St, Fairhaven|(613) 555-0160|Evelyn Gagnon|(613) 555-0199|ALIVE|
+167|3626998551-JG|King, Ethan|03/21/1933|M|6304 Queen Rd, Lakeview|(613) 555-0144|Emily King|(613) 555-0180|ALIVE|
+168|3112879854-GC|Walker, Charlotte|07/16/1968|F|8434 Lakeshore Rd, Lakeview|(613) 555-0110|Olivia Walker|(613) 555-0108|ALIVE|
+169|1432689854-KG|King, Amelia|06/24/1940|F|5058 Elm Rd, Lakeview|(613) 555-0150|Nathan King|(613) 555-0144|ALIVE|
+170|3506665504-KH|Harris, Lucas|05/09/1996|M|9314 Pine Ave, Lakeview|(613) 555-0187|Abigail Harris|(613) 555-0192|ALIVE|
+171|8991074473-CF|Wilson, James|11/08/1955|M|N/A|(613) 555-0185|Abigail Wilson|(613) 555-0129|ALIVE|N/A
+172|4071738656-DC|Johnson, Olivia|12/15/1971|F|7032 Elm Ave, Fairhaven|(613) 555-0125|Ethan Johnson|(613) 555-0186|ALIVE|
+173|4399422178-EC|Tremblay, Jacob|11/07/2003|M|1066 Maple Dr, Fairhaven|N/A|Dylan Tremblay|(613) 555-0127|ALIVE|N/A
+174|8349513607-DA|Johnson, Emily|06/10/1983|F|2311 Elm Ave, Clearwater|(613) 555-0110|N/A|N/A|ALIVE|N/A
+175|4869013510-DG|Wilson, Mia|06/22/1988|F|8295 Lakeshore Rd, Northport|(613) 555-0171|Grace Wilson|(613) 555-0159|DECEASED|01/08/2025 03:52 AM
+176|2207555997-CB|Thomas, Ava|09/15/1947|F|570 Pine Rd, Clearwater|(613) 555-0143|Samuel Thomas|(613) 555-0110|ALIVE|
+177|1459172711-AD|Wright, Liam|04/14/1985|M|1434 Lakeshore St, Clearwater|(613) 555-0104|Liam Wright|(613) 555-0138|ALIVE|
+178|9930128933-HD|Martin, Lucas|01/13/1993|M|9718 Birch Dr, Brookfield|(613) 555-0141|Harper Martin|(613) 555-0110|ALIVE|
+179|3005459888-AC|Wilson, Grace|10/05/1982|F|2504 Birch Ave, Clearwater|(613) 555-0116|N/A|N/A|ALIVE|
+180|2377664918-CK|King, Abigail|10/23/1936|F|3383 Queen Dr, Brookfield|N/A|Ryan King|(613) 555-0130|ALIVE|N/A
+181|7769588596-JB|Brown, Amelia|09/27/1950|F|9721 Lakeshore Rd, Lakeview|(613) 555-0103|Ethan Brown|(613) 555-0177|ALIVE|N/A
+182|6057499996-AG|Clark, Owen|09/20/1944|M|2162 Willow St, Northport|(613) 555-0188|Chloe Clark|(613) 555-0141|ALIVE|N/A
+183|4067388653-FA|Anderson, Noah|04/13/1991|X|3297 Willow Dr, Lakeview||Amelia Anderson|(613) 555-0117|DECEASED|09/13/2025 01:04 AM
+184|1711868547-FA|Johnson, Liam|09/01/1952|M|4242 Oak Ave, Northport|(613) 555-0190|Ryan Johnson|(613) 555-0154|DECEASED|07/18/2025 11:39 PM
+185|7240335641-BG|King, Abigail|05/11/1997|X|1821 Cedar Rd, Lakeview|(613) 555-0150|N/A|N/A|ALIVE|N/A
+186|2350139859-AA|Smith, Daniel|01/23/1976|M|4802 Pine Rd, Clearwater|(613) 555-0189|Logan Smith|(613) 555-0192|ALIVE|N/A
+187|8393613909-GC|Moore, Zoe|10/11/2000|F|2979 Willow St, Lakeview|(613) 555-0109|Isabella Moore|(613) 555-0152|ALIVE|N/A
+188|7210180685-EG|Taylor, Ava|11/09/1939|F|4082 Queen Ave, Brookfield|(613) 555-0171|Olivia Taylor|(613) 555-0160|ALIVE|N/A
+189|4415776138-KJ|Thomas, Olivia|02/21/1970|F|6707 Birch Dr, Brookfield|(613) 555-0183|Jacob Thomas|(613) 555-0156|ALIVE|
+190|4789970575-CB|Brown, Daniel|04/19/1955|M|2038 Oak Dr, Northport|(613) 555-0178|Amelia Brown|(613) 555-0125|ALIVE  |N/A
+191|8245318193-CD|Gagnon, Evelyn|06/23/1961|F|3151 Pine St, Fairhaven|(613) 555-0134|Amelia Gagnon|(613) 555-0135|ALIVE|N/A
+192|4297324165-CA|Mitchell, Noah|01/22/1976|M|5734 Cedar Rd, Northport|(613) 555-0153|Liam Mitchell|(613) 555-0187|ALIVE|N/A
+193|3474928349-GH|Harris, Grace|06/17/1957|F|8944 Lakeshore St, Clearwater|(613) 555-0189|N/A||DECEASED|09/21/2024 03:07 AM
+194|2063090289-GA|King, Benjamin|04/10/1956|M|9083 Pine Dr, Brookfield|(613) 555-0182|Daniel King|(613) 555-0121|ALIVE|N/A
+195|6163449176-FF|Taylor, isabella|04/06/1998|F|9267 Maple Rd, Northport|(613) 555-0170|Ryan Taylor|(613) 555-0101|ALIVE|N/A
+196|2420820109-KH|Young, Ava|10/07/1941|F|8689 Pine St, Clearwater|(613) 555-0194|Lucas Young|(613) 555-0187|ALIVE|N/A
+197|1297809986-AB|Morgan, Abigail|04/15/1995|F|3723 Queen Dr, Fairhaven|(613) 555-0136|Amelia Morgan|(613) 555-0141|ALIVE|N/A
+198|3490833199-GF|White, Sophia|09/14/1942|F|2558 Maple Rd, Brookfield|(613) 555-0177|Ava White|(613) 555-0119|ALIVE|N/A
+199|2402359288-GA|Thomas, Daniel|06/21/2004|M|3377 Queen St, Northport|(613) 555-0127|Harper Thomas|(613) 555-0155|ALIVE|N/A
+200|3208578042-BB|Clark, Isabella|09/14/1971|F|N/A|(613) 555-0109|Logan Clark|(613) 555-0128|ALIVE|N/A
+201|6037514997-AC|Roy, Daniel|12/16/1937|M|4913 Pine Ave, Brookfield|(613) 555-0128|Emily Roy|(613) 555-0144|ALIVE|N/A
+202|3329571597-KJ|Carter, Logan|10/02/1955|M|6786 Lakeshore Ave, Brookfield|(613) 555-0147|Logan Carter|(613) 555-0108|ALIVE|N/A
+203|2185358198-EB|Morgan, Zoe|12/03/1952|F|3708 Queen Dr, Brookfield|(613) 555-0163|Jacob Morgan|(613) 555-0192|DECEASED|07/10/2024 02:20 AM
+204|5313302671-GK|Roy, Zoe|N/A|F||(613) 555-0121|N/A|N/A|ALIVE|N/A
+205|4018050862-HD|Roy, Benjamin|02/14/1941|M|7260 Lakeshore Dr, Lakeview|(613) 555-0176|Emma Roy|(613) 555-0193|ALIVE|N/A
+206|3563460413-AC|Wright, Ethan|10/20/1962|M|1162 Willow Ave, Brookfield|(613) 555-0122|Logan Wright|(613) 555-0129|ALIVE|N/A
+207|9017547304-GA|Wilson, Zoe|09/08/1995|F|9698 Cedar Dr, Clearwater|(613) 555-0158|James Wilson|(613) 555-0108|ALIVE|N/A
+208|8352907692-CK|Carter, Charlotte|10/01/1941|F|4370 Maple Ave, Lakeview|(613) 555-0134|Noah Carter|(613) 555-0138|ALIVE|N/A
+209|4923441367-AF|Morgan, Mia|07/27/1942|F|1846 Pine Dr, Brookfield|(613) 555-0100|Benjamin Morgan|(613) 555-0175|ALIVE|N/A
+210|5005858223-FE|Jackson, Mason|10/16/1968|M|3711 Willow St, Clearwater||Logan Jackson|(613) 555-0143|DECEASED|04/26/2024 08:08 AM
+211|6702257441-HF|Gagnon, Samuel|07/01/1958|M|285 Elm Ave, Brookfield|(613) 555-0179|Chloe Gagnon|(613) 555-0103|ALIVE|
+212|4783909994-JG|White, Noah|08/21/2000|M|5456 Queen Rd, Northport|(613) 555-0191|benjamin white|(613) 555-0170|ALIVE|N/A
+213|8994653300-KJ|Mitchell, Grace|11/13/1956|F|5935 King Ave, Brookfield|(613) 555-0163|Daniel Mitchell|(613) 555-0137|ALIVE|N/A
+214|6984032583-AJ|Gagnon, Ethan|12/24/1945|M|4613 Elm Rd, Northport|(613) 555-0195|Sophia Gagnon|(613) 555-0126|ALIVE|N/A
+215|4587057059-JC|Thomas, Zoe|12/16/1980|F|7445 Elm Ave, Clearwater|(613) 555-0110|Evelyn Thomas|(613) 555-0145|ALIVE|N/A
+216|4466081627-FA|Walker, Ava|08/22/1940|F|4847 Pine Dr, Brookfield|(613) 555-0108|Mia Walker|(613) 555-0199|ALIVE|N/A
+217|6517129582-KB|Lewis, Owen|04/12/1944|M|4120 Maple St, Lakeview|(613) 555-0175|Nathan Lewis|(613) 555-0145|ALIVE|N/A
+218|5194469050-DD|White, Ethan|07/12/1974|M|641 Willow St, Northport|(613) 555-0111||N/A|ALIVE|N/A
+219|5325604738-AB|Roy, Dylan|11/19/1950|M|4520 Queen Ave, Fairhaven|(613) 555-0158|Emma Roy|(613) 555-0178|ALIVE|N/A
+220|5222104174-JD|Moore, Owen|03/13/1984|M|7275 Birch Ave, Fairhaven|(613) 555-0110|N/A|N/A|ALIVE|N/A
+221|8143723349-KF|Campbell, Ryan|10/22/1986|M||(613) 555-0162|Abigail Campbell|(613) 555-0178|ALIVE|
+222|3151669451-BB|Young, Noah|03/21/1987|M|1026 Oak Ave, Brookfield|(613) 555-0155|Charlotte Young|(613) 555-0181|ALIVE|N/A
+223|5058649516-DD|Johnson, Grace|02/22/1954|F|7908 Queen Ave, Clearwater|(613) 555-0185|N/A||ALIVE|N/A
+224|2721704422-AJ|Walker, Liam|12/08/1966|M|8766 Maple St, Lakeview|(613) 555-0186|Owen Walker|(613) 555-0132|ALIVE|N/A
+225|2422461591-HF|Smith, Amelia|06/27/2003|F|62 Oak Rd, Fairhaven|(613) 555-0128|Owen Smith|(613) 555-0145|ALIVE|N/A
+226|2341335471-AG|Jackson, Chloe|02/20/1953|X|1777 Oak Rd, Brookfield|(613) 555-0163|Emily Jackson|(613) 555-0197|ALIVE|N/A
+227|2671907503-EC|Tremblay, Daniel|02/10/1936|M|1876 Cedar Rd, Fairhaven|(613) 555-0144|Evelyn Tremblay|(613) 555-0178|alive|N/A
+228|8360383679-AK|Mitchell, Grace|10/22/1969|F|9819 Birch St, Lakeview|(613) 555-0121|Evelyn Mitchell|(613) 555-0171|ALIVE|N/A
+229|3468168591-ED|Lewis, Zoe|01/20/1992|X|8210 Oak St, Lakeview|(613) 555-0126||N/A|ALIVE|N/A
+154|8587514588-ED|Wilson, Harper|04/05/1938|F|5635 Cedar St, Brookfield|(613) 555-0108|Owen Wilson|(613) 555-0182|DECEASED|10/07/2025 04:40 AM
+230|8768859046-JG|Mitchell, Jacob|01/02/1941|M|5691 Maple Ave, Clearwater|(613) 555-0139|Lucas Mitchell|(613) 555-0174|ALIVE|
+231|5310409446-GK|Johnson, Lucas|03/21/1973|M|1086 King Rd, Brookfield||N/A|N/A| ALIVE|
+202|3329571597-KJ|Carter, Logan|10/02/1955|M|6786 Lakeshore Ave, Brookfield|(613) 555-0147|Logan Carter|(613) 555-0108|ALIVE|N/A
+232|9322635439-DJ|Wright, Logan|01/07/1956|M|7038 Queen Ave, Fairhaven|(613) 555-0102|Mia Wright|(613) 555-0191|ALIVE|
+233|9256878066-JK|Smith, Harper|01/04/1978|F|7220 Oak Dr, Lakeview|(613) 555-0109|Chloe Smith|(613) 555-0195|ALIVE|
+229|3468168591-ED|Lewis, Zoe|01/20/1992|X|8210 Oak St, Lakeview|(613) 555-0126|N/A|N/A|ALIVE|N/A
+234|3549188550-AF|Roy, Zoe|08/25/1949|F|9725 Pine Dr, Clearwater|(613) 555-0117|Evelyn Roy|(613) 555-0101|ALIVE|N/A
+235|2767556223-JC|Morgan, Daniel|11/03/1948|M|239 Queen Rd, Brookfield|(613) 555-0163|Evelyn Morgan|(613) 555-0137|DECEASED|08/01/2025 06:57 PM
+236|9828973503-GH|Mitchell, Harper|09/10/1998|F|224 Willow Dr, Clearwater|(613) 555-0175|Chloe Mitchell|(613) 555-0134|ALIVE|N/A
+237|4484537368-GK|Taylor, Grace||F|292 Pine Rd, Fairhaven|(613) 555-0145|Emily Taylor|(613) 555-0161|DECEASED|03/04/2025 02:51 AM
+238|7917119726-GJ|King, Samuel|02/25/1956|M|8689 Lakeshore Ave, Clearwater|(613) 555-0188|Charlotte King|(613) 555-0143|DECEASED|06/18/2024 07:29 PM
+239|1569327160-BA|Morgan, Emily|04/24/1939|F|6802 Lakeshore Ave, Clearwater|(613) 555-0184|Mason Morgan|(613) 555-0185|ALIVE|N/A
+240|7218903605-CG|King, Dylan|04/12/1947|M|3428 Cedar St, Fairhaven|(613) 555-0113|Emma King|(613) 555-0183|ALIVE|N/A
+241|3711326109-DE|Carter, Logan|05/28/1939|M|8073 Cedar Ave, Lakeview|(613) 555-0168|Ryan Carter|(613) 555-0118|ALIVE|N/A
+242|3422935251-FA|Brown, Samuel|01/27/1955|M|1377 Pine Rd, Clearwater|(613) 555-0152|Daniel Brown|(613) 555-0118|ALIVE|N/A
+243|9963599785-KG|Clark, Ryan|02/20/1936|M|2223 Queen Rd, Fairhaven|(613) 555-0110|Emma Clark|(613) 555-0166|ALIVE|
+244|6889701184-CB|Thomas, Charlotte|04/10/1978|F|4732 Cedar St, Clearwater|(613) 555-0167|Evelyn Thomas|(613) 555-0159|ALIVE|N/A
+245|7551291136-EF|White, Chloe|09/07/1964|F|8008 Oak Dr, Brookfield|N/A|Grace White|(613) 555-0156|DECEASED|10/06/2024 01:03 PM
+246|1600479822-BB|mitchell, ava|04/06/1956|F|3441 Queen Rd, Lakeview|N/A|Zoe Mitchell|(613) 555-0101|ALIVE|N/A
+247|2980513505-JJ|martin, amelia|03/08/1990|F|5453 Pine Rd, Clearwater|N/A||N/A|ALIVE|N/A
+248|3080580304-KB|clark, ethan|02/03/1973|M|8159 Willow Rd, Clearwater|(613) 555-0194|Logan Clark|(613) 555-0135|ALIVE|
+249|4587057059-JC|THOMAS, ZOE|12/16/1980|F|7445 Elm Ave, Clearwater||Evelyn Thomas|(613) 555-0145| ALIVE|
+250|8004527197-EK|WILSON, LUCAS|11/02/1939|M|2657 Queen Rd, Lakeview|N/A|Mason Wilson|(613) 555-0194|ALIVE|N/A
+251|2697198464-FH|CAMPBELL, RYAN|02/21/1936|M|3005 Cedar Dr, Fairhaven|N/A|N/A|N/A|ALIVE|

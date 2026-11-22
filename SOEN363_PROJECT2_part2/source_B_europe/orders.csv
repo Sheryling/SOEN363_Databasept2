@@ -1,0 +1,803 @@
+order_id;episode_no;patient_no;requesting_physician_id;requested_exam;request_datetime;clinical_reason;priority;order_status
+1;1;1;6;Ultrasound Abdomen;27/01/2024 12:13;Wound redness;Urgent;Completed
+2;1;1;6;Toxicology Screen;26/01/2024 00:57;Wound redness;Routine;Cancelled
+3;2;1;12;CT Head;27/03/2024 15:34;;Routine;Completed
+4;2;1;12;CT Neck Vessels;26/03/2024 00:03;NULL;Urgent;Cancelled
+5;3;2;18;CT Chest;14/05/2025 10:29;Cough with blood;Routine;Completed
+6;3;2;18;Tumor Markers;13/05/2025 17:05;Planned surgery;Immediate;Cancelled
+7;4;2;20;Urinalysis;12/07/2025 08:53;;Urgent;Completed
+8;4;2;20;Basic Metabolic Panel;13/07/2025 02:36;Weakness and confusion;Urgent;Completed
+9;5;2;20;Urinalysis;11/08/2025 02:14;Weakness and confusion;Routine;Completed
+10;5;2;20;Complete Blood Count;12/08/2025 05:42;Reduced urine output;Urgent;Completed
+11;6;3;10;X-Ray Chest;23/01/2024 00:47;Shortness of breath;Immediate;Completed
+12;6;3;10;CT Chest;24/01/2024 12:01;Wheezing;Immediate;Completed
+13;6;3;11;Arterial Blood Gas;24/01/2024 04:48;Wheezing;Urgent;Completed
+14;7;3;11;X-Ray Chest;10/06/2024 16:36;;Immediate;Completed
+15;7;3;10;Sputum Culture;10/06/2024 11:39;Productive cough and fever;Immediate;Completed
+16;8;3;8;Ultrasound Heart;27/09/2024 01:59;Palpitations;Immediate;Completed
+17;9;3;6;Coagulation Panel;31/10/2024 01:35;Back pain after fall;Immediate;Completed
+18;10;3;19;CT Abdomen;27/12/2024 16:51;Chemotherapy;Urgent;Completed
+19;10;3;18;Complete Blood Count;27/12/2024 21:41;Chemotherapy;Urgent;Cancelled
+20;11;4;11;X-Ray Chest;13/02/2024 00:29;Productive cough and fever;Urgent;Completed
+21;12;4;17;Liver Function Panel;16/10/2026 23:44;Black stools;Immediate;Completed
+22;13;5;10;X-Ray Chest;27/01/2024 22:57;Low oxygen saturation;Immediate;Completed
+23;13;5;11;Complete Blood Count;28/01/2024 04:30;Low oxygen saturation;Urgent;Cancelled
+24;13;5;11;Sputum Culture;29/01/2024 03:46;NULL;Routine;Completed
+25;14;5;11;X-Ray Chest;22/05/2024 02:45;Shortness of breath;Immediate;Completed
+26;14;5;10;Sputum Culture;21/05/2024 20:42;Low oxygen saturation;Routine;Completed
+27;15;6;8;X-Ray Chest;14/09/2025 02:59;Palpitations;Immediate;Completed
+28;16;7;5;X-Ray Wrist;22/06/2024 18:14;Fall with hip pain;Urgent;Completed
+29;17;7;18;MRI Pelvis;28/09/2024 20:55;;Urgent;Completed
+30;17;7;18;Tumor Markers;28/09/2024 00:13;Weight loss;Immediate;Completed
+31;18;7;6;X-Ray Wrist;13/01/2025 05:03;Knee pain;Urgent;Completed
+32;18;7;5;X-Ray Knee;13/01/2025 16:21;Wrist injury;Urgent;Completed
+33;18;7;7;Coagulation Panel;13/01/2025 11:02;Back pain after fall;Routine;Completed
+34;18;7;7;Complete Blood Count;13/01/2025 12:12;Wrist injury;Immediate;Completed
+35;19;8;10;X-Ray Chest;27/02/2025 12:02;Wheezing;Immediate;Completed
+36;20;8;22;Ultrasound Abdomen;27/07/2025 09:08;Painful red swollen leg;Urgent;Completed
+37;21;8;22;Blood Culture;08/10/2025 03:50;Fever and confusion;Routine;Completed
+38;22;9;17;CT Abdomen;22/05/2024 16:10;Groin swelling;Urgent;Completed
+39;22;9;17;Lipase;22/05/2024 18:07;Black stools;Urgent;completed
+40;23;10;22;Ultrasound Abdomen;27/01/2025 01:35;NULL;Immediate;Cancelled
+41;24;11;7;X-Ray Hip;05/02/2025 21:42;Back pain after fall;Immediate;Completed
+42;24;11;5;Complete Blood Count;06/02/2025 07:25;Back pain after fall;Urgent;COMPLETED
+43;24;11;6;Coagulation Panel;05/02/2025 16:53;Knee pain;Immediate;Completed
+44;25;11;7;X-Ray Wrist;26/06/2025 17:14;Fall with hip pain;Routine;Completed
+45;26;11;5;X-Ray Hip;09/11/2025 13:54;Fall with hip pain;Routine;Completed
+46;28;12;10;Arterial Blood Gas;03/04/2025 03:56;Low oxygen saturation;Immediate;Completed
+47;28;12;11;Complete Blood Count;03/04/2025 09:36;Low oxygen saturation;Immediate;Completed
+48;29;12;20;X-Ray Chest;24/06/2025 21:25;Reduced urine output;Routine;Completed
+49;29;12;20;Blood Glucose;25/06/2025 18:05;Reduced urine output;Routine;Completed
+50;30;13;6;Ultrasound Abdomen;04/12/2025 12:40;Intoxication;Urgent;Completed
+51;31;14;19;CT Chest;22/04/2025 17:49;Planned surgery;Routine;Completed
+52;31;14;19;Tumor Markers;21/04/2025 10:23;Planned surgery;Immediate;Completed
+53;32;14;17;X-Ray Abdomen;12/08/2025 17:01;Black stools;Routine;Completed
+54;32;14;17;Complete Blood Count;11/08/2025 08:56;;Urgent;Completed
+55;33;14;17;Liver Function Panel;16/09/2025 10:42;Black stools;Urgent;Completed
+56;33;14;17;Complete Blood Count;16/09/2025 15:45;Groin swelling;Routine;Completed
+57;34;15;19;MRI Pelvis;07/01/2025 13:36;Planned surgery;Routine;Completed
+58;36;17;5;Complete Blood Count;10/10/2024 07:45;Back pain after fall;Immediate;Cancelled
+59;37;17;5;Toxicology Screen;11/03/2025 22:31;Leg swelling;Urgent;Completed
+60;39;18;5;Complete Blood Count;16/09/2024 00:38;Wound redness;Urgent;Completed
+61;40;18;10;Arterial Blood Gas;22/12/2024 23:49;Shortness of breath;Immediate;Completed
+62;41;19;11;X-Ray Chest;12/01/2024 05:06;Shortness of breath;Immediate;Completed
+63;41;19;10;Sputum Culture;14/01/2024 02:06;Wheezing;Immediate;Completed
+64;42;19;11;X-Ray Chest;04/05/2024 21:22;Shortness of breath;Immediate;Completed
+65;42;19;10;Arterial Blood Gas;05/05/2024 05:04;Low oxygen saturation;Immediate;COMPLETED
+66;42;19;11;Sputum Culture;04/05/2024 16:34;Productive cough and fever;Immediate;Completed
+67;43;20;10;X-Ray Chest;12/03/2024 09:48;Productive cough and fever;Urgent;Completed
+68;43;20;10;X-Ray Chest;11/03/2024 09:08;;Routine;Completed
+69;43;20;10;Sputum Culture;13/03/2024 14:43;Productive cough and fever;Urgent;Completed
+70;44;21;12;Complete Blood Count;07/08/2024 10:13;Sudden weakness;Immediate;Completed
+71;45;21;11;CT Chest;31/10/2024 13:43;Wheezing;Immediate;Completed
+72;46;22;8;Electrocardiogram;17/05/2024 05:55;Shortness of breath;Immediate;Completed
+73;47;22;8;Electrocardiogram;04/07/2024 07:23;Syncope with chest pain;Routine;Completed
+74;48;23;8;CT Chest;21/04/2025 12:05;Chest pain;Routine;Completed
+75;49;23;12;Electroencephalogram;24/08/2025 15:52;Sudden weakness;Routine;Completed
+76;50;24;5;Ultrasound Abdomen;14/10/2025 16:13;Abdominal swelling;Immediate;Completed
+77;50;24;5;Toxicology Screen;15/10/2025 00:24;Leg swelling;Immediate;Completed
+78;50;24;5;Liver Function Panel;13/10/2025 00:46;Low mood;Immediate;Completed
+79;51;25;19;Complete Blood Count;05/09/2024 18:14;Cough with blood;Immediate;Completed  
+80;52;26;7;Toxicology Screen;08/12/2024 12:49;Intoxication;Immediate;Completed
+81;52;26;6;Complete Blood Count;08/12/2024 07:33;Leg swelling;Urgent;Completed
+82;53;26;18;Complete Blood Count;27/03/2025 01:27;Cough with blood;Routine;Completed
+83;54;26;17;CT Abdomen;06/05/2025 21:59;Abdominal pain;Routine;Completed
+84;54;26;17;Liver Function Panel;07/05/2025 14:01;;Urgent;Completed
+85;55;27;17;Complete Blood Count;16/01/2024 20:56;Abdominal pain; Routine;Completed
+86;56;28;5;Complete Blood Count;29/01/2024 14:42;Wrist injury;Immediate;Completed
+87;58;30;9;Electrocardiogram;06/03/2026 07:07;Shortness of breath;Immediate;Completed
+88;59;31;7;Ultrasound Leg Veins;14/05/2025 19:49;Leg swelling;Immediate;Completed
+89;60;31;10;X-Ray Chest;07/10/2025 05:08;Shortness of breath;Urgent;Completed
+90;60;31;11;Sputum Culture;08/10/2025 16:57;Productive cough and fever;Urgent;Completed
+91;60;31;10;Complete Blood Count;07/10/2025 18:03;Shortness of breath;Immediate;Completed
+92;61;32;20;Ultrasound Kidney;28/06/2025 20:54;Fatigue;Immediate;Completed
+93;63;33;11;Complete Blood Count;07/03/2026 00:00;Shortness of breath;Routine;Completed
+94;63;33;10;Arterial Blood Gas;07/03/2026 12:59;Wheezing;Urgent;Completed
+95;64;34;22;Ultrasound Abdomen;16/10/2024 05:14;Fever and low blood pressure;Immediate;Completed
+96;64;34;22;Complete Blood Count;18/10/2024 02:03;Burning urination with fever;Routine;Completed
+97;65;35;20;X-Ray Chest;30/09/2024 01:53;Reduced urine output;Immediate;Completed
+98;65;35;20;Blood Glucose;30/09/2024 22:01;High blood sugar;Immediate;Completed
+99;66;35;7;Complete Blood Count;19/01/2025 01:15;Back pain after fall;Urgent;Completed
+100;67;35;10;CT Chest;19/04/2025 11:59;Productive cough and fever;Routine;Completed
+101;67;35;10;Sputum Culture;20/04/2025 02:00;Wheezing;Routine;Completed
+102;68;36;20;X-Ray Chest;06/08/2024 21:15;Weakness and confusion;Routine;Completed
+103;68;36;20;X-Ray Chest;06/08/2024 00:34;Fatigue;Routine;Completed
+104;69;36;17;X-Ray Abdomen;17/12/2024 20:33;Groin swelling;Routine;Completed
+105;69;36;17;Ultrasound Abdomen;17/12/2024 17:14;Black stools;Routine;Completed
+106;70;37;10;Arterial Blood Gas;20/02/2024 03:15;Shortness of breath;Urgent;Completed
+107;70;37;10;Sputum Culture;18/02/2024 11:06;;Urgent;Completed
+108;71;37;18;CT Abdomen;20/06/2024 15:47;Chemotherapy;Routine;Completed
+109;71;37;18;CT Abdomen;19/06/2024 13:09;Planned surgery;Routine;Completed
+110;71;37;19;Liver Function Panel;19/06/2024 06:22;Cough with blood;Routine;Completed
+111;71;37;19;Complete Blood Count;20/06/2024 01:04;Chemotherapy;Routine;Completed
+112;72;37;19;Complete Blood Count;27/10/2024 16:29;Chemotherapy;Urgent;Completed
+113;72;37;18;Liver Function Panel;27/10/2024 10:12;Planned surgery;Routine;Completed
+114;73;37;6;X-Ray Wrist;29/12/2024 18:06;NULL;Routine;Completed
+115;73;37;7;X-Ray Hip;29/12/2024 19:09;Fall with hip pain;Routine;Completed
+116;74;37;8;CT Chest;25/01/2025 01:40;Chest pain;Immediate;Completed
+117;74;37;9;Troponin Panel;24/01/2025 15:02;Palpitations;Immediate;Completed
+118;74;37;9;Electrocardiogram;24/01/2025 22:36;Shortness of breath;Immediate;Completed
+119;75;38;6;X-Ray Hip;12/09/2025 21:59;;Routine;Completed
+120;75;38;6;Coagulation Panel;12/09/2025 21:42;Back pain after fall;Urgent;Completed
+121;76;39;22;CT Abdomen;03/10/2024 15:31;Fever and low blood pressure;Routine;Completed
+122;76;39;22;CT Abdomen;03/10/2024 00:43;Painful red swollen leg;Routine;Completed
+123;77;40;17;Lipase;13/11/2024 12:25;NULL;Urgent;completed
+124;79;40;13;Electroencephalogram;16/07/2025 02:18;Head injury;Immediate;Completed
+125;79;40;13;Complete Blood Count;15/07/2025 21:01;Seizure;Routine;Completed
+126;80;41;10;Arterial Blood Gas;21/01/2026 23:51;Wheezing;Urgent;Completed
+127;81;42;17;Lipase;27/12/2024 10:11;Vomiting;Immediate;Completed
+128;82;42;17;Liver Function Panel;07/03/2025 13:58;Black stools;Immediate;Completed
+129;83;42;6;Toxicology Screen;02/08/2025 13:27;Low mood;Urgent;Completed
+130;84;43;22;Urinalysis;04/10/2025 11:33;Burning urination with fever;Urgent;Completed
+131;84;43;22;Complete Blood Count;05/10/2025 02:35;Burning urination with fever;Urgent;completed
+132;85;44;22;Blood Culture;15/01/2024 20:06;Fever and confusion;Immediate;Completed
+133;86;45;11;X-Ray Chest;27/01/2026 02:07;Wheezing;Routine;Completed
+134;87;46;20;X-Ray Chest;22/07/2024 19:51;Fatigue;Urgent;Completed
+135;87;46;20;Basic Metabolic Panel;21/07/2024 22:50;Reduced urine output;Routine;Completed
+136;88;46;6;CT Spine;14/10/2024 04:13;Back pain after fall;Routine;Completed
+137;88;46;5;Complete Blood Count;14/10/2024 17:42;Fall with hip pain;Immediate;Completed
+138;88;46;5;Coagulation Panel;13/10/2024 21:29;Knee pain;Immediate;Completed
+139;89;47;13;Coagulation Panel;17/03/2026 16:30;Severe headache;Urgent;Completed
+140;90;48;17;Ultrasound Abdomen;16/11/2024 09:48;Vomiting;Urgent;Completed
+141;90;48;17;CT Abdomen;15/11/2024 05:16;Groin swelling;Urgent;Completed
+142;90;48;17;Liver Function Panel;15/11/2024 13:44;Black stools;Urgent;Completed
+143;91;49;17;X-Ray Abdomen;12/01/2024 01:45;Black stools;Urgent;Completed
+144;91;49;17;X-Ray Abdomen;13/01/2024 10:50;Vomiting;Routine;Completed
+145;91;49;17;Complete Blood Count;13/01/2024 00:05;Vomiting;Urgent;Completed  
+146;92;49;7;Liver Function Panel;13/06/2024 07:07;Abdominal swelling;Immediate;Completed
+147;92;49;6;Complete Blood Count;13/06/2024 23:01;Intoxication;Urgent;Completed
+148;93;50;5;Ultrasound Leg Veins;27/07/2025 04:49;Low mood;Routine;Completed
+149;93;50;5;Liver Function Panel;28/07/2025 10:14;Leg swelling;Routine;Completed
+150;94;50;9;Ultrasound Heart;23/10/2025 07:57;;Immediate;Cancelled
+151;95;51;9;X-Ray Chest;17/01/2025 23:47;Syncope with chest pain;Immediate;Completed
+152;96;52;11;Sputum Culture;20/05/2025 05:24;Shortness of breath;Urgent;Completed
+153;96;52;11;Complete Blood Count;20/05/2025 07:15;Wheezing;Immediate;Completed
+154;97;52;9;Ultrasound Heart;12/09/2025 09:13;Shortness of breath;Routine;Completed
+155;98;52;22;Blood Culture;15/11/2025 09:27;Painful red swollen leg;Routine;Completed
+156;99;53;11;X-Ray Chest;10/03/2026 18:55;Wheezing;Urgent;Completed
+157;99;53;10;Sputum Culture;11/03/2026 15:11;Shortness of breath;Routine;Completed
+158;100;53;17;CT Abdomen;21/07/2026 08:38;Groin swelling;Immediate;Completed
+159;101;54;20;Ultrasound Kidney;16/02/2024 09:33;Weakness and confusion;Routine;Completed
+160;101;54;20;Blood Glucose;16/02/2024 03:03;High blood sugar;Routine;Completed
+161;101;54;20;Complete Blood Count;18/02/2024 10:17;Fatigue;Routine;Completed
+162;103;55;8;Lipid Panel;25/09/2024 09:44;Shortness of breath;Routine;Completed
+163;105;55;18;Liver Function Panel;04/01/2025 12:31;Chemotherapy;Immediate;Completed
+164;106;56;6;Ultrasound Abdomen;13/08/2024 10:03;Low mood;Urgent;Completed
+165;106;56;7;Ultrasound Abdomen;13/08/2024 21:21;Intoxication;Urgent;Completed
+166;106;56;6;Toxicology Screen;14/08/2024 03:23;NULL;Routine;Completed
+167;107;57;12;Complete Blood Count;06/02/2025 04:53;;Routine;Completed
+168;108;58;22;X-Ray Chest;31/08/2024 10:15;Fever and low blood pressure;Routine;Cancelled
+169;108;58;22;Lactate Level;02/09/2024 03:46;Painful red swollen leg;Immediate;Completed
+170;108;58;22;Complete Blood Count;03/09/2024 05:37;Fever and confusion;Immediate;Completed
+171;109;58;6;Toxicology Screen;13/10/2024 03:27;Intoxication;Urgent;Completed
+172;110;59;22;Ultrasound Abdomen;30/03/2026 10:51;Painful red swollen leg;Immediate;Completed
+173;110;59;22;Ultrasound Abdomen;29/03/2026 02:52;NULL;Immediate;Completed
+174;110;59;22;Urinalysis;30/03/2026 11:34;Painful red swollen leg;Routine;Completed
+175;111;60;9;X-Ray Chest;28/10/2026 02:25;Syncope with chest pain;Immediate;Completed
+176;111;60;9;Electrocardiogram;28/10/2026 16:30;Shortness of breath;Urgent;Pending
+177;112;61;22;X-Ray Chest;12/01/2026 08:41;Burning urination with fever;Urgent;Completed
+178;113;62;8;CT Chest;12/08/2024 01:21;Chest pain;Routine;Completed
+179;114;63;13;CT Head;06/12/2025 16:56;Seizure;Urgent;Completed
+180;114;63;13;Electroencephalogram;06/12/2025 17:13;Fainting episode;Routine;Cancelled
+181;115;64;9;X-Ray Chest;11/08/2025 04:38;Shortness of breath;Immediate;Completed
+182;115;64;9;Lipid Panel;13/08/2025 15:12;Shortness of breath;Routine;Completed
+183;116;65;11;Sputum Culture;13/03/2024 07:09;Low oxygen saturation;Routine;Completed
+184;117;65;5;Coagulation Panel;07/08/2024 00:11;Back pain after fall;Immediate;Cancelled
+185;118;65;8;Ultrasound Heart;10/12/2024 05:53;Chest pain;Immediate;Completed
+186;118;65;9;Troponin Panel;11/12/2024 00:40;Syncope with chest pain;Immediate;Completed
+187;119;66;6;X-Ray Knee;25/08/2024 08:39;Back pain after fall;Routine;Completed
+188;119;66;5;Coagulation Panel;25/08/2024 16:42;Wrist injury;Immediate;Completed
+189;120;67;11;Sputum Culture;12/10/2025 18:08;Shortness of breath;Routine;Completed
+190;121;68;19;Liver Function Panel;04/08/2025 01:55;;Immediate;Completed
+191;122;68;8;X-Ray Chest;26/09/2025 20:19;Shortness of breath;Urgent;Completed
+192;122;68;8;Lipid Panel;29/09/2025 05:13;Shortness of breath;Routine;Completed
+193;123;68;17;Lipase;09/02/2026 05:28;Groin swelling;Routine;Completed
+194;123;68;17;Liver Function Panel;08/02/2026 20:07;Abdominal pain;Routine;Completed
+195;125;69;11;Arterial Blood Gas;13/11/2024 11:54;Low oxygen saturation;Immediate;Completed
+196;126;69;22;CT Abdomen;28/03/2025 02:28;Burning urination with fever;Urgent;Completed
+197;127;69;13;Coagulation Panel;15/08/2025 01:18;Fainting episode;Urgent;Completed
+198;128;69;17;CT Abdomen;05/12/2025 07:06;Abdominal pain;Urgent;Completed
+199;128;69;17;Ultrasound Abdomen;05/12/2025 00:55;Black stools;Urgent;Completed
+200;128;69;17;Lipase;07/12/2025 18:43;Groin swelling;Routine;Completed
+201;129;70;12;CT Neck Vessels;07/11/2024 19:47;Head injury;Routine;Completed
+202;130;70;22;X-Ray Chest;12/03/2025 02:19;Fever and low blood pressure;Immediate;Completed
+203;130;70;22;Lactate Level;12/03/2025 05:53;Burning urination with fever;Immediate;Completed
+204;131;71;17;Liver Function Panel;26/09/2024 11:39;Abdominal pain;Immediate;Completed
+205;131;71;17;Lipase;25/09/2024 23:36;Black stools;Urgent;Completed
+206;132;71;7;Ultrasound Leg Veins;21/01/2025 00:41;Intoxication;Routine;Completed
+207;132;71;5;Toxicology Screen;20/01/2025 23:44;Wound redness;Routine;Completed
+208;133;71;5;X-Ray Wrist;20/02/2025 08:18;;  Urgent ;Completed
+209;133;71;6;X-Ray Hip;21/02/2025 03:32;Back pain after fall;Urgent;Completed
+210;133;71;6;Coagulation Panel;21/02/2025 20:47;Fall with hip pain;Urgent;Completed
+211;134;71;22;Urinalysis;19/06/2025 21:38;Fever and confusion;Urgent;Completed
+212;134;71;22;Blood Culture;18/06/2025 19:36;Burning urination with fever;Urgent;Completed
+213;135;71;17;CT Abdomen;15/11/2025 19:00;NULL;Urgent;Completed
+214;135;71;17;Liver Function Panel;16/11/2025 11:21;Black stools;Immediate;Completed
+215;136;72;8;X-Ray Chest;18/06/2025 07:26;Shortness of breath;Routine;Completed
+216;137;72;7;X-Ray Hip;18/07/2025 00:50;Knee pain;Immediate;Completed
+217;137;72;7;Complete Blood Count;19/07/2025 19:37;Wrist injury;Immediate;Completed
+218;138;73;12;CT Neck Vessels;21/05/2024 19:11;Head injury;Routine;Completed
+219;138;73;13;CT Head;21/05/2024 02:05;Sudden weakness;Routine;Completed
+220;139;73;20;Urinalysis;30/06/2024 18:17;NULL;Routine;Completed
+221;139;73;20;Blood Glucose;30/06/2024 17:06;Reduced urine output;Immediate;Completed
+222;140;73;8;Ultrasound Heart;04/10/2024 20:39;Syncope with chest pain;Routine;Completed
+223;141;73;22;X-Ray Chest;09/11/2024 07:44;Fever and confusion;  Urgent ;Completed
+224;141;73;22;Blood Culture;09/11/2024 05:24;Fever and low blood pressure;Immediate;Completed
+225;141;73;22;Urinalysis;09/11/2024 22:51;Painful red swollen leg;Urgent;Completed
+226;142;74;8;Electrocardiogram;24/03/2024 02:53;Palpitations;Urgent;Completed
+227;142;74;8;Lipid Panel;25/03/2024 06:06;Palpitations;Urgent;Completed
+228;143;74;10;X-Ray Chest;13/07/2024 09:52;Low oxygen saturation;Immediate;Completed
+229;144;75;17;X-Ray Abdomen;19/09/2024 20:18;Vomiting;Urgent;Completed
+230;144;75;17;X-Ray Abdomen;17/09/2024 21:45;Black stools;Urgent;Completed
+231;144;75;17;Complete Blood Count;18/09/2024 06:35;Groin swelling;Routine;Completed
+232;145;76;12;CT Neck Vessels;05/09/2024 12:07;Head injury;Immediate;Completed
+233;145;76;12;Coagulation Panel;06/09/2024 04:00;Seizure;Urgent;Completed
+234;145;76;13;Complete Blood Count;04/09/2024 09:44;Fainting episode;Routine;Completed
+235;146;77;9;CT Chest;26/02/2024 14:17;Shortness of breath;Immediate;Completed
+236;146;77;8;Ultrasound Heart;27/02/2024 04:04;Shortness of breath;Immediate;Cancelled
+237;146;77;8;Electrocardiogram;27/02/2024 14:39;Shortness of breath;Immediate;Completed
+238;146;77;9;Troponin Panel;27/02/2024 18:37;Chest pain;Routine;Completed
+239;147;78;5;X-Ray Chest;04/08/2024 19:19;Abdominal swelling;Urgent;Completed
+240;147;78;7;Liver Function Panel;05/08/2024 16:41;Low mood;Urgent;Completed
+241;147;78;7;Complete Blood Count;04/08/2024 03:41;;Routine;Completed
+242;148;79;18;CT Abdomen;10/10/2024 14:54;Weight loss;Routine;Completed
+243;148;79;19;MRI Pelvis;09/10/2024 22:14;Planned surgery;Routine;Completed
+244;149;79;5;Coagulation Panel;24/12/2024 23:26;Knee pain;Immediate;Completed
+245;149;79;5;Complete Blood Count;24/12/2024 09:58;Back pain after fall;Immediate;Completed
+246;150;80;8;CT Chest;03/10/2024 07:23;Chest pain;Immediate;Completed
+247;150;80;9;Electrocardiogram;05/10/2024 14:05;Palpitations;Immediate;Completed
+248;150;80;9;Lipid Panel;05/10/2024 00:24;Syncope with chest pain;Routine;Completed
+249;151;80;22;CT Abdomen;26/12/2024 08:28;Painful red swollen leg;Immediate;Cancelled
+250;151;80;22;Blood Culture;25/12/2024 19:49;Burning urination with fever;Immediate;Completed
+251;151;80;22;Lactate Level;25/12/2024 07:03;Burning urination with fever;Routine;Completed
+252;152;81;10;Complete Blood Count;02/08/2024 19:25;Low oxygen saturation;Urgent;Completed
+253;153;82;18;CT Abdomen;14/06/2025 10:51;Planned surgery;Urgent;Completed
+254;153;82;19;Liver Function Panel;14/06/2025 07:03;Planned surgery;Urgent;Completed
+255;154;83;9;Electrocardiogram;22/10/2025 15:23;Syncope with chest pain;Immediate;Completed
+256;154;83;9;Troponin Panel;21/10/2025 10:45;Shortness of breath;Immediate;Completed
+257;155;83;9;CT Chest;24/01/2026 02:21;Palpitations;Immediate;Completed
+258;155;83;9;X-Ray Chest;24/01/2026 23:47;Palpitations;Immediate;Completed
+259;156;84;18;CT Abdomen;06/08/2025 09:35;Weight loss;Urgent;Completed
+260;156;84;18;Complete Blood Count;05/08/2025 19:05;Planned surgery;Immediate;Completed
+261;156;84;18;Tumor Markers;06/08/2025 07:43;Weight loss;Urgent;Completed
+262;157;84;22;Complete Blood Count;01/01/2026 05:34;Fever and confusion;Routine;Completed
+263;158;84;20;Ultrasound Kidney;20/02/2026 22:09;Fatigue;Routine;Completed
+264;159;33;18;MRI Pelvis;04/05/2025 18:15;Chemotherapy;Routine;Completed
+265;159;85;19;Complete Blood Count;06/05/2025 01:50;Planned surgery;Routine;Completed
+266;160;86;12;CT Neck Vessels;03/12/2024 18:17;Seizure;Urgent;Completed
+267;160;86;13;CT Neck Vessels;04/12/2024 01:24;Severe headache;Urgent;Completed
+268;160;86;13;Electroencephalogram;03/12/2024 14:51;Sudden weakness;Routine;Completed
+269;160;86;12;Coagulation Panel;06/12/2024 01:01;Sudden weakness;Urgent;Completed
+270;161;87;12;CT Head;24/12/2024 19:04;Fainting episode;Urgent;Completed
+271;162;87;9;Electrocardiogram;05/05/2025 03:50;Syncope with chest pain;Routine;Completed
+272;163;88;17;X-Ray Abdomen;06/03/2026 07:28;Groin swelling;Routine;Completed
+273;163;88;17;Ultrasound Abdomen;07/03/2026 00:49;Vomiting;Routine;Completed
+274;164;89;13;CT Head;16/05/2025 14:53;Head injury;Urgent;Completed
+275;164;89;13;MRI Brain;12/05/2025 12:13;;Urgent;Completed
+276;164;89;12;Electroencephalogram;12/05/2025 19:34;Head injury;Routine;Completed
+277;165;90;22;X-Ray Chest;03/10/2025 19:45;Painful red swollen leg;Routine;Completed
+278;165;90;22;Blood Culture;03/10/2025 11:20;NULL;Urgent;Completed
+279;166;91;22;CT Abdomen;29/04/2024 08:34;Burning urination with fever;Immediate;Completed
+280;166;91;22;Lactate Level;01/05/2024 23:00;NULL;Urgent;Completed
+281;167;91;19;MRI Pelvis;11/09/2024 00:25;Chemotherapy;Urgent;Completed
+282;167;91;19;MRI Pelvis;11/09/2024 06:22;Weight loss;Routine;Completed
+283;168;92;13;CT Head;24/02/2024 15:11;Seizure;Immediate;Completed
+284;168;92;12;CT Neck Vessels;23/02/2024 15:52;Severe headache;Immediate;Completed
+285;168;92;13;Electroencephalogram;31/02/2024 08:00;;Routine;Completed
+286;168;92;13;Complete Blood Count;23/02/2024 14:04;Severe headache;Routine;Completed
+287;170;94;20;X-Ray Chest;14/08/2024 14:00;Fatigue;Urgent;Completed
+288;171;94;6;X-Ray Wrist;18/10/2024 04:17;Fall with hip pain;Urgent;Completed
+289;171;94;6;Coagulation Panel;17/10/2024 17:21;NULL;Routine;Completed
+290;172;94;5;Toxicology Screen;24/01/2025 17:55;Abdominal swelling;Urgent;Completed
+291;173;94;7;Ultrasound Abdomen;25/10/2026 13:04;Wound redness;Routine;Completed
+292;173;94;5;Complete Blood Count;25/10/2026 17:13;NULL;Urgent;Completed
+293;174;95;18;MRI Pelvis;01/05/2025 18:07;Weight loss;Routine;Completed
+294;176;95;19;CT Chest;25/11/2025 04:43;Chemotherapy;Routine;Completed
+295;176;95;18;Liver Function Panel;25/11/2025 16:52;Planned surgery;Routine;Completed
+296;176;95;19;Complete Blood Count;24/11/2025 16:32;Weight loss;Routine;Completed
+297;177;96;19;MRI Pelvis;06/09/2024 07:51;Chemotherapy;Routine;Completed
+298;177;96;18;Complete Blood Count;05/09/2024 05:41;Chemotherapy;Routine;Completed
+299;177;96;19;Liver Function Panel;05/09/2024 18:10;Planned surgery;Routine;Completed
+300;178;96;6;CT Spine;01/12/2024 13:22;Knee pain;Routine;Completed
+301;178;96;6;Complete Blood Count;02/12/2024 13:50;Wrist injury;Immediate;Completed
+302;179;96;7;Ultrasound Leg Veins;10/02/2025 20:23;Abdominal swelling;Urgent;Completed
+303;179;96;5;Complete Blood Count;12/02/2025 05:17;Abdominal swelling;Routine;Completed
+304;179;96;7;Liver Function Panel;10/02/2025 08:47;Wound redness;Routine;Completed
+305;180;97;13;Electroencephalogram;03/12/2024 16:22;Severe headache;Urgent;Completed
+306;181;98;5;Complete Blood Count;29/04/2025 04:37;Wound redness;Routine;Completed
+307;181;98;7;Liver Function Panel;27/04/2025 10:20;Abdominal swelling;Immediate;Completed
+308;182;99;20;X-Ray Chest;08/02/2024 04:04;;Urgent;Completed
+309;182;99;20;Basic Metabolic Panel;07/02/2024 08:07;High blood sugar;Routine;Completed
+310;182;99;20;Urinalysis;08/02/2024 04:53;Fatigue;Routine;Completed
+311;183;100;17;Ultrasound Abdomen;01/02/2024 13:26;Vomiting;Routine  ;Completed
+312;183;100;17;Lipase;01/02/2024 21:16;Abdominal pain;IMMEDIATE;Completed
+313;184;100;5;Ultrasound Leg Veins;01/05/2024 20:19;Leg swelling;Urgent;Completed
+314;184;100;7;Complete Blood Count;04/05/2024 06:25;NULL;Urgent;Completed
+315;185;100;7;X-Ray Chest;10/08/2024 08:49;Wound redness;Urgent;Completed
+316;186;100;20;Ultrasound Kidney;16/12/2024 17:02;Reduced urine output;Urgent;Completed
+317;186;100;20;Complete Blood Count;18/12/2024 03:39;Weakness and confusion;Urgent;Completed
+318;187;100;9;Lipid Panel;13/05/2025 05:10;NULL;Routine;Completed
+319;187;100;8;Troponin Panel;11/05/2025 01:03;Syncope with chest pain;Routine;Completed
+320;188;101;12;CT Neck Vessels;04/12/2025 09:41;Fainting episode;Routine;Completed
+321;188;101;12;MRI Brain;03/12/2025 11:53;Severe headache;Routine;Completed
+322;188;101;13;Electroencephalogram;04/12/2025 01:28;Sudden weakness;Immediate;Completed
+323;189;102;22;Lactate Level;14/07/2024 18:27;Burning urination with fever;Immediate;Completed
+324;190;103;6;X-Ray Chest;28/01/2024 11:46;NULL;Routine;Completed
+325;191;104;17;X-Ray Abdomen;23/02/2025 00:10;Groin swelling;Immediate;Completed
+326;191;104;17;Ultrasound Abdomen;21/02/2025 23:00;Abdominal pain;Immediate;Completed
+327;191;104;17;Liver Function Panel;21/02/2025 13:09;Black stools;Immediate;Completed
+328;193;105;17;Liver Function Panel;13/04/2025 14:40;Groin swelling;Routine;Completed
+329;194;105;5;Ultrasound Leg Veins;2025-07-11T04:23;Intoxication;Urgent;Completed
+330;194;105;5;Toxicology Screen;10/07/2025 04:19;Wound redness;Routine;Completed
+331;195;105;17;Complete Blood Count;27/07/2025 01:10;Abdominal pain;Immediate;Completed
+332;196;106;20;Blood Glucose;28/01/2025 13:22;Fatigue;Immediate;Completed
+333;196;106;20;Basic Metabolic Panel;27/01/2025 12:42;Weakness and confusion;Immediate;Completed
+334;198;106;10;CT Chest;26/08/2025 22:18;Low oxygen saturation;Immediate;Completed
+335;198;106;10;Complete Blood Count;27/08/2025 07:42;Productive cough and fever;Urgent;Completed
+336;199;107;9;X-Ray Chest;03/06/2024 14:15;Shortness of breath;Immediate;Completed
+337;199;107;9;Troponin Panel;03/06/2024 23:21;Syncope with chest pain;Urgent;COMPLETED
+338;200;108;18;CT Abdomen;06/12/2024 15:23;;Routine;Completed
+339;200;108;19;Liver Function Panel;07/12/2024 21:58;Planned surgery;Routine;Completed
+340;200;108;19;Complete Blood Count;08/12/2024 15:36;Weight loss;Routine;Completed
+341;201;109;12;CT Head;25/07/2025 13:14;Sudden weakness;Routine;Completed
+342;201;109;12;Electroencephalogram;27/07/2025 14:53;Fainting episode;Routine;Completed
+343;201;109;13;Complete Blood Count;25/07/2025 02:23;Sudden weakness;Routine;Completed
+344;202;109;7;X-Ray Wrist;29/09/2025 21:59;Fall with hip pain;Urgent;Completed
+345;202;109;5;X-Ray Knee;29/09/2025 22:36;Fall with hip pain;Urgent;Completed
+346;202;109;7;Complete Blood Count;30/09/2025 12:49;Fall with hip pain;Urgent;Completed
+347;203;109;22;X-Ray Chest;01/11/2025 15:13;Fever and low blood pressure;Routine;Completed
+348;203;109;22;Complete Blood Count;01/11/2025 01:15;Fever and low blood pressure;Urgent;Completed
+349;204;110;12;CT Head;26/04/2024 07:30;Head injury;Routine;Completed
+350;204;110;13;Complete Blood Count;27/04/2024 01:18;Fainting episode;Urgent;Completed
+351;205;111;8;Ultrasound Heart;24/08/2025 05:53;Chest pain;Immediate;Completed
+352;205;111;8;Lipid Panel;25/08/2025 13:19;Palpitations;Routine;Completed
+353;206;111;17;X-Ray Abdomen;22/01/2026 08:40;Groin swelling;Immediate;Completed
+354;206;111;17;Complete Blood Count;22/01/2026 06:11;Black stools;Urgent;Cancelled
+355;207;112;22;Ultrasound Abdomen;22/06/2024 04:20;Burning urination with fever;Immediate;Completed
+356;207;112;22;CT Abdomen;21/06/2024 18:55;Painful red swollen leg;Immediate;COMPLETED
+357;207;112;22;Lactate Level;22/06/2024 09:23;Painful red swollen leg;Immediate;Completed
+358;208;112;20;Ultrasound Kidney;20/07/2024 01:24;Fatigue;Routine;Completed
+359;208;112;20;Basic Metabolic Panel;20/07/2024 20:15;Fatigue;Immediate;Completed
+360;209;112;20;Ultrasound Kidney;03/08/2024 05:15;High blood sugar;Routine;Completed
+361;211;114;22;X-Ray Chest;21/09/2025 17:53;Fever and low blood pressure;Immediate;Completed
+362;211;114;22;Lactate Level;23/09/2025 09:38;Painful red swollen leg;Urgent;Completed
+363;212;115;12;Coagulation Panel;21/10/2026 06:07;Head injury;Immediate;Completed
+364;214;118;10;X-Ray Chest;29/10/2024 00:56;Shortness of breath;Immediate;Completed
+365;215;118;7;Complete Blood Count;30/12/2024 01:29;Wrist injury;Routine;Completed
+366;215;118;7;Coagulation Panel;29/12/2024 08:44;Wrist injury;Routine;Completed
+367;216;118;8;Ultrasound Heart;22/01/2025 17:46;Syncope with chest pain;Urgent;Completed
+368;216;118;9;Electrocardiogram;24/01/2025 16:09;Shortness of breath;Urgent;Completed
+369;216;118;8;Troponin Panel;24/01/2025 14:11;Palpitations;Urgent;Completed
+370;217;118;9;Ultrasound Heart;29/06/2025 21:48;Syncope with chest pain;Immediate;Completed
+371;217;118;8;Lipid Panel;28/06/2025 15:19;Syncope with chest pain;Urgent;Completed
+372;217;118;8;Electrocardiogram;29/06/2025 23:32;Chest pain;Routine;Completed
+373;218;119;9;CT Chest;09/09/2024 20:45;Syncope with chest pain;Immediate;Cancelled
+374;218;119;9;Troponin Panel;09/09/2024 03:08;;Routine;Completed
+375;218;119;9;Lipid Panel;10/09/2024 20:20;Chest pain;Urgent;Completed
+376;219;120;9;Ultrasound Heart;01/01/2025 19:54;Syncope with chest pain;Immediate;Completed
+377;219;120;8;Lipid Panel;01/01/2025 09:53;Shortness of breath;Routine;Completed
+378;219;120;8;Electrocardiogram;31/12/2024 09:52;Syncope with chest pain;Immediate;Completed
+379;220;120;9;X-Ray Chest;26/01/2025 07:59;Syncope with chest pain;Immediate;Completed
+380;221;121;9;X-Ray Chest;20/07/2024 11:43;Palpitations;Immediate;Completed
+381;221;121;8;Troponin Panel;21/07/2024 09:02;NULL;Immediate;Completed
+382;221;121;8;Electrocardiogram;22/07/2024 07:31;Shortness of breath;Urgent;Completed
+383;224;122;12;Electroencephalogram;07/10/2024 20:40;Sudden weakness;Urgent;Completed
+384;225;123;12;MRI Brain;15/11/2025 07:56;Fainting episode;Urgent;Completed
+385;225;123;12;Coagulation Panel;15/11/2025 00:31;NULL;Routine;COMPLETED
+386;225;123;12;Electroencephalogram;15/11/2025 08:22;Severe headache;Immediate;Completed
+387;226;124;8;CT Chest;17/01/2024 15:20;Syncope with chest pain;Immediate;Completed
+388;226;124;9;Ultrasound Heart;18/01/2024 00:07;Syncope with chest pain;Immediate;Completed
+389;226;124;9;Electrocardiogram;18/01/2024 06:17;Syncope with chest pain;Urgent;Completed
+390;227;125;12;CT Neck Vessels;11/12/2025 07:29;;Routine;Completed
+391;227;125;12;Electroencephalogram;11/12/2025 10:36;Severe headache;Routine;Cancelled
+392;228;126;17;Liver Function Panel;17/02/2026 21:32;Groin swelling;Immediate;Completed
+393;229;127;20;X-Ray Chest;09/12/2025 10:24;Fatigue;Immediate;  Completed 
+394;229;127;20;X-Ray Chest;09/12/2025 00:10;;Immediate;Completed
+395;229;127;20;Basic Metabolic Panel;09/12/2025 12:36;Fatigue;URGENT;Cancelled
+396;230;128;10;X-Ray Chest;12/03/2025 12:54;Low oxygen saturation;Immediate;Completed
+397;230;128;11;Sputum Culture;13/03/2025 00:51;Shortness of breath;Immediate;Completed
+398;231;129;11;CT Chest;01/11/2024 21:10;Productive cough and fever;Routine;Completed
+399;231;129;11;CT Chest;02/11/2024 09:19;Wheezing;Routine;Completed
+400;231;129;10;Complete Blood Count;03/11/2024 09:22;Shortness of breath;Routine;Completed
+401;232;129;10;Sputum Culture;12/23/2024 21:28;Wheezing; Routine;Completed
+402;233;129;11;X-Ray Chest;20/02/2025 03:25;Productive cough and fever;Routine;Completed
+403;233;129;10;Complete Blood Count;21/02/2025 20:18;Wheezing;Urgent;Completed
+404;234;130;8;CT Chest;05/08/2024 08:31;Chest pain;Urgent;Completed
+405;235;131;9;X-Ray Chest;27/02/2024 15:11;Shortness of breath;Immediate;Completed
+406;235;131;8;Electrocardiogram;27/02/2024 19:46;Palpitations;Routine;Completed
+407;236;131;22;Ultrasound Abdomen;06/05/2024 08:25;Fever and confusion;Routine;Completed
+408;236;131;22;Complete Blood Count;06/05/2024 22:25;Fever and confusion;Immediate;Completed
+409;239;134;13;MRI Brain;31/07/2024 11:33;Seizure;Immediate;Completed
+410;239;134;13;Complete Blood Count;01/08/2024 12:57;Severe headache;Immediate;Completed
+411;240;134;13;Complete Blood Count;04/10/2024 21:12;Seizure;Immediate;Completed
+412;240;134;13;Electroencephalogram;05/10/2024 00:27;Seizure;Urgent;Completed
+413;241;134;22;CT Abdomen;22/02/2025 06:59;Burning urination with fever;Immediate;Completed
+414;241;134;22;CT Abdomen;22/02/2025 04:29;Fever and low blood pressure;Immediate;Completed
+415;241;134;22;Lactate Level;23/02/2025 18:33;Fever and low blood pressure;Routine;Completed
+416;242;134;9;X-Ray Chest;25/04/2025 09:53;Syncope with chest pain;Urgent;Cancelled
+417;242;134;8;Troponin Panel;24/04/2025 11:32;Shortness of breath;Immediate;Completed
+418;242;134;8;Lipid Panel;26/04/2025 07:42;Chest pain;ROUTINE;Completed
+419;244;136;22;X-Ray Chest;11/07/2025 20:43;Fever and confusion;Routine;Completed
+420;244;136;22;Lactate Level;12/07/2025 19:21;;Urgent;Cancelled
+421;244;136;22;Complete Blood Count;12/07/2025 14:56;Burning urination with fever;Urgent;Completed
+422;245;137;17;X-Ray Abdomen;24/11/2025 19:10;Groin swelling;Routine;Completed
+423;245;137;17;Complete Blood Count;25/11/2025 12:38;Vomiting;Urgent;Completed  
+424;245;137;17;Liver Function Panel;24/11/2025 17:12;Abdominal pain;Routine;Completed
+425;246;138;20;Complete Blood Count;16/01/2024 00:28;Fatigue;Immediate;Completed
+426;246;138;20;Urinalysis;17/01/2024 19:57;Reduced urine output;Routine;Completed
+427;247;138;19;Liver Function Panel;01/05/2024 05:55;;Immediate;Completed
+428;248;139;9;Lipid Panel;16/04/2024 21:02;Palpitations;Immediate;Completed
+429;249;139;13;MRI Brain;08/07/2024 19:57;Head injury;Urgent;Completed
+430;249;139;13;Complete Blood Count;09/07/2024 01:52;Sudden weakness;Routine;Completed
+431;249;139;13;Electroencephalogram;10/07/2024 06:03;Severe headache;Urgent;Completed
+432;251;140;7;X-Ray Chest;08/11/2024 14:49;Intoxication;Urgent;Completed
+433;251;140;7;Complete Blood Count;09/11/2024 20:49;Wound redness;Immediate;Completed
+434;252;141;17;Ultrasound Abdomen;05/06/2024 14:18;Abdominal pain;Routine;Completed
+435;252;141;17;Liver Function Panel;05/06/2024 15:09;Black stools;Routine;Completed
+436;252;141;17;Lipase;07/06/2024 22:00;Abdominal pain;Routine;Completed
+437;253;141;7;CT Spine;29/09/2024 11:29;Back pain after fall;Urgent;Completed
+438;253;141;5;Coagulation Panel;28/09/2024 04:53;NULL;Immediate;Completed
+439;254;142;11;CT Chest;28/08/2025 03:32;Shortness of breath;Routine;Completed
+440;255;143;7;X-Ray Hip;25/12/2024 07:20;Wrist injury;Urgent;Completed
+441;255;143;7;Coagulation Panel;27/12/2024 07:37;;Urgent;Completed
+442;255;143;5;Complete Blood Count;26/12/2024 23:16;Fall with hip pain;Immediate;Completed
+443;256;144;9;CT Chest;23/09/2024 19:04;Palpitations;Immediate;Completed
+444;256;144;9;Electrocardiogram;24/09/2024 07:07;Syncope with chest pain;Urgent;Completed
+445;257;145;17;Ultrasound Abdomen;11/01/2025 17:04;Vomiting;Urgent;Completed
+446;257;145;17;X-Ray Abdomen;11/01/2025 06:13;Groin swelling;Routine;Completed
+447;257;145;17;Lipase;11/01/2025 21:44;Abdominal pain;Urgent;Completed
+448;257;145;17;Liver Function Panel;11/01/2025 05:05;Abdominal pain;Urgent;Completed
+449;258;145;17;Lipase;20/05/2025 03:14;Vomiting;Routine;Completed
+450;260;146;17;Ultrasound Abdomen;13/10/2024 14:15;Groin swelling;Urgent;Completed
+451;260;146;17;Ultrasound Abdomen;13/10/2024 22:24;NULL;Routine; Completed
+452;260;146;17;Lipase;13/10/2024 06:17;Vomiting;Immediate;Completed
+453;261;147;18;MRI Pelvis;20/07/2024 11:29;Chemotherapy;Routine;Completed
+454;262;147;10;CT Chest;18/08/2024 09:35;Wheezing;Routine;Completed
+455;262;147;10;Complete Blood Count;18/08/2024 22:20;;Routine;Completed
+456;263;148;9;Troponin Panel;03/10/2024 04:28;Syncope with chest pain;Routine;Completed
+457;264;148;5;Ultrasound Abdomen;11/12/2024 17:24;Low mood;Routine;Completed
+458;265;148;7;X-Ray Hip;22/04/2025 15:52;Fall with hip pain;Routine;Completed
+459;266;148;22;Lactate Level;17/06/2025 21:42;Fever and low blood pressure;Routine;Completed
+460;267;149;18;CT Abdomen;14/09/2024 15:25;Planned surgery;Immediate;Completed
+461;268;149;22;X-Ray Chest;01/12/2024 02:01;Burning urination with fever;Immediate;Completed
+462;270;151;8;Electrocardiogram;13/09/2024 13:33;NULL;Immediate;Cancelled
+463;270;151;9;Troponin Panel;13/09/2024 17:01;NULL;Immediate;Completed
+464;271;152;5;X-Ray Wrist;27/03/2025 16:49;Knee pain;Urgent;Completed
+465;271;152;6;Coagulation Panel;27/03/2025 11:53;Wrist injury;Urgent;Completed
+466;272;153;13;CT Neck Vessels;01/04/2025 23:11;Sudden weakness;Immediate;Completed
+467;272;153;12;MRI Brain;02/04/2025 15:23;NULL;Immediate;Cancelled
+468;273;154;12;MRI Brain;15/10/2025 12:31;Fainting episode;Immediate;Completed
+469;273;154;12;Electroencephalogram;16/10/2025 02:11;Fainting episode;Immediate;Cancelled
+470;274;155;10;Sputum Culture;09/03/2025 11:25;Low oxygen saturation;Routine;Completed
+471;275;155;8;Lipid Panel;14/06/2025 14:05;Palpitations;Immediate;Completed
+472;276;155;19;CT Abdomen;20/09/2025 19:24;Chemotherapy;Routine  ;Completed
+473;276;155;18;MRI Pelvis;21/09/2025 07:57;Planned surgery;Urgent;Completed
+474;277;156;8;CT Chest;31/08/2025 05:44;Palpitations;Routine;Completed
+475;277;156;9;X-Ray Chest;01/09/2025 10:54;Syncope with chest pain;Urgent;Completed
+476;277;156;9;Lipid Panel;31/08/2025 12:02;Chest pain;Routine;Completed
+477;279;158;9;Lipid Panel;17/03/2025 18:08;Shortness of breath;Immediate;Completed
+478;280;158;22;X-Ray Chest;08/07/2025 11:40;Painful red swollen leg;Routine;Completed
+479;280;158;22;Complete Blood Count;10/07/2025 08:33;Burning urination with fever;Routine;Completed
+480;281;158;22;Urinalysis;05/12/2025 16:36;Burning urination with fever;Urgent;Completed
+481;282;159;5;CT Spine;12/11/2024 17:29;Fall with hip pain;Routine;Completed
+482;282;159;7;X-Ray Knee;12/11/2024 17:22;Fall with hip pain;Routine;Completed
+483;282;159;7;Coagulation Panel;12/11/2024 10:31;Back pain after fall;Immediate;Completed
+484;282;159;7;Complete Blood Count;13/11/2024 08:58;Fall with hip pain;Immediate;Completed
+485;283;159;12;CT Head;09/12/2024 02:20;NULL;Immediate;Completed
+486;283;159;13;MRI Brain;08/12/2024 08:09;Fainting episode;Immediate;Completed
+487;283;159;12;Coagulation Panel;09/12/2024 11:08;Sudden weakness;Immediate;Completed
+488;285;161;18;MRI Pelvis;01/08/2024 07:12;Chemotherapy;Routine;Completed
+489;285;161;19;Liver Function Panel;31/07/2024 22:22;Weight loss;Urgent;Completed
+490;286;162;11;CT Chest;21/08/2024 23:46;Productive cough and fever;Immediate;Completed
+491;286;162;11;Sputum Culture;21/08/2024 09:01;Low oxygen saturation;Urgent; Completed
+492;287;163;22;Complete Blood Count;25/08/2024 00:34;;Urgent;Completed
+493;288;164;22;Urinalysis;11/11/2025 16:08;Fever and confusion;Urgent;Completed
+494;289;165;17;X-Ray Abdomen;01/06/2024 08:16;Groin swelling;Routine;Completed
+495;289;165;17;X-Ray Abdomen;31/05/2024 02:34;Groin swelling;Routine;Completed
+496;290;165;20;Complete Blood Count;29/07/2024 09:14;Weakness and confusion;Immediate;Completed
+497;290;165;20;Blood Glucose;28/07/2024 05:42;Fatigue;Routine;Completed
+498;291;166;9;X-Ray Chest;23/04/2024 21:41;Palpitations;Urgent;Completed
+499;291;166;8;Troponin Panel;23/04/2024 09:37;Palpitations;Routine;  Completed 
+500;291;166;8;Electrocardiogram;22/04/2024 16:02;Chest pain;Urgent;Completed
+501;292;166;20;Complete Blood Count;19/08/2024 03:23;High blood sugar;Urgent;Completed
+502;293;166;11;X-Ray Chest;29/01/2025 15:40;Shortness of breath;Routine;Completed
+503;294;167;17;Ultrasound Abdomen;08/03/2025 11:42;NULL;Immediate;Completed
+504;295;167;7;X-Ray Chest;14/08/2025 04:02;Intoxication;Routine;Completed
+505;296;167;7;Coagulation Panel;02/11/2025 23:53;Knee pain;Immediate;Completed
+506;296;167;5;Complete Blood Count;01/11/2025 12:35;;Urgent;Completed
+507;298;168;9;Ultrasound Heart;08/07/2025 11:47;Syncope with chest pain;Immediate;Completed
+508;298;168;8;CT Chest;09/07/2025 03:55;Shortness of breath;Immediate;Completed
+509;299;169;22;X-Ray Chest;18/04/2025 05:42;Burning urination with fever;Routine;Completed
+510;299;169;22;Complete Blood Count;19/04/2025 06:57;Painful red swollen leg;Immediate;Completed
+511;299;169;22;Blood Culture;20/04/2025 01:10;Fever and confusion;Routine;Completed
+512;300;169;11;Complete Blood Count;04/07/2025 08:18;Low oxygen saturation;Routine;Completed
+513;301;169;22;Urinalysis;14/11/2025 19:56;Fever and low blood pressure;Immediate;Cancelled
+514;301;169;22;Lactate Level;14/11/2025 20:19;Fever and low blood pressure;Routine;Completed
+515;302;170;17;CT Abdomen;26/10/2026 08:35;Black stools;Immediate;  Completed 
+516;303;171;7;X-Ray Hip;13/08/2024 14:02;Fall with hip pain;Routine;Completed
+517;303;171;7;Complete Blood Count;12/08/2024 17:47;;Routine;Cancelled
+518;304;172;6;Ultrasound Abdomen;21/10/2026 04:54;Wound redness;Urgent;Completed
+519;304;172;5;Ultrasound Leg Veins;22/10/2026 13:00;Low mood;Routine;completed
+520;304;172;7;Liver Function Panel;22/10/2026 16:38;;Immediate;Pending
+521;305;173;7;X-Ray Hip;18/08/2024 06:57;Back pain after fall;Routine;Completed
+522;305;173;7;Complete Blood Count;19/08/2024 07:13;Wrist injury;Urgent;Completed
+523;306;173;20;Ultrasound Kidney;14/09/2024 17:49;Fatigue;Urgent;Completed
+524;306;173;20;Ultrasound Kidney;15/09/2024 15:21;Weakness and confusion;Routine;Completed
+525;307;173;7;X-Ray Chest;02/02/2025 23:07;Low mood;Urgent;Completed
+526;307;173;6;Toxicology Screen;03/02/2025 01:57;Abdominal swelling;Immediate;Completed
+527;307;173;5;Liver Function Panel;03/02/2025 20:18;Low mood;Routine;Completed  
+528;308;174;8;Troponin Panel;07/04/2024 12:49;Syncope with chest pain;Immediate;Completed
+529;309;174;6;X-Ray Hip;03/05/2024 16:00;Fall with hip pain;Urgent;Completed
+530;310;175;20;X-Ray Chest;08/07/2025 23:45;Reduced urine output;Urgent;Completed
+531;310;175;20;Complete Blood Count;10/07/2025 16:46;;Urgent;Completed
+532;311;176;17;CT Abdomen;23/04/2025 01:33;Abdominal pain;Routine;Completed
+533;312;177;12;Electroencephalogram;08/09/2024 07:12;Head injury;Routine;Completed
+534;314;179;19;CT Abdomen;18/12/2025 20:06;Cough with blood;Urgent;Completed
+535;316;10;17;X-Ray Abdomen;17/10/2026 05:54;Groin swelling;Routine;Cancelled
+536;316;180;17;Liver Function Panel;18/10/2026 09:45;Abdominal pain;Urgent;Completed
+537;317;181;8;Electrocardiogram;31/08/2025 02:53;Palpitations;Immediate;Completed
+538;317;181;8;Lipid Panel;29/08/2025 11:27;Palpitations;Routine;Completed
+539;318;182;12;CT Head;25/12/2025 18:04;;Urgent;Completed
+540;319;183;17;Complete Blood Count;06/01/2026 16:47;Black stools;Immediate;Completed
+541;320;184;6;Toxicology Screen;24/11/2024 00:13;Leg swelling;Immediate;Completed
+542;321;184;7;Ultrasound Leg Veins;04/02/2025 23:30;Wound redness;Routine;Completed
+543;321;184;7;Ultrasound Leg Veins;03/02/2025 03:25;Wound redness;Routine;Completed
+544;321;184;6;Toxicology Screen;05/02/2025 01:32;Wound redness;Urgent;Completed
+545;322;184;7;X-Ray Wrist;29/03/2025 01:01;Wrist injury;Routine;Completed
+546;322;184;7;Complete Blood Count;28/03/2025 02:09;Wrist injury;Urgent;Completed
+547;322;184;6;Coagulation Panel;30/03/2025 02:55;Wrist injury;Routine;Completed
+548;323;185;20;X-Ray Chest;04/03/2025 10:00;Reduced urine output;Routine;Completed
+549;323;185;20;Urinalysis;03/03/2025 12:52;High blood sugar;Immediate;Completed
+550;324;186;19;Tumor Markers;23/10/2026 20:14;Weight loss;Routine;Completed
+551;325;187;22;CT Abdomen;21/10/2024 17:58;Burning urination with fever;Immediate;Completed
+552;325;187;22;Lactate Level;22/10/2024 09:13;Burning urination with fever;Routine;Completed
+553;326;188;6;Ultrasound Abdomen;07/02/2024 09:53;Intoxication;Urgent;Completed
+554;326;188;7;Liver Function Panel;05/02/2024 22:59;Low mood;Routine;Completed
+555;327;188;13;Complete Blood Count;03/06/2024 23:09;Fainting episode;Urgent;Completed
+556;328;189;22;Urinalysis;22/02/2025 06:41;Fever and low blood pressure;Routine;Completed
+557;329;58;20;X-Ray Chest;06/02/2025 06:26;Weakness and confusion;Routine;Completed
+558;329;189;20;Complete Blood Count;02/06/2025 12:42;NULL;Immediate;Completed
+559;330;189;20;X-Ray Chest;04/10/2025 21:14;Fatigue;Immediate;Completed
+560;331;189;10;CT Chest;07/02/2026 17:26;Shortness of breath;Routine;Completed
+561;331;189;10;Complete Blood Count;07/02/2026 16:29;Wheezing;Immediate;Completed
+562;333;190;5;X-Ray Wrist;24/07/2025 21:39;Fall with hip pain;Urgent;Completed
+563;334;190;22;Ultrasound Abdomen;02/12/2025 23:39;Painful red swollen leg;Immediate;Completed
+564;334;190;22;CT Abdomen;02/12/2025 10:58;NULL;Immediate;Completed
+565;335;190;17;X-Ray Abdomen;19/01/2026 03:38;NULL;Routine;Completed
+566;335;190;17;Complete Blood Count;19/01/2026 18:45;Vomiting;Immediate;Completed
+567;335;190;17;Liver Function Panel;19/01/2026 01:33;Groin swelling;Urgent;Completed
+568;336;191;8;Troponin Panel;23/01/2025 01:18;Syncope with chest pain;Immediate;Completed
+569;337;191;13;Complete Blood Count;25/06/2025 22:15;Sudden weakness;Urgent;Completed
+570;338;191;17;CT Abdomen;03/08/2025 12:13;;Immediate;Completed
+571;339;192;6;Toxicology Screen;04/11/2024 06:48;Low mood;Urgent;Completed
+572;340;192;17;Lipase;01/03/2025 10:47;Abdominal pain;Immediate;Completed
+573;341;192;8;Troponin Panel;24/06/2025 09:06;Syncope with chest pain;Urgent;Completed
+574;341;192;9;Electrocardiogram;24/06/2025 02:16;Syncope with chest pain;Immediate;Cancelled
+575;343;192;7;X-Ray Knee;11/09/2025 00:06;Back pain after fall;Urgent;Completed
+576;343;192;7;Complete Blood Count;11/09/2025 15:49;Back pain after fall;Urgent;Completed
+577;344;193;7;Ultrasound Abdomen;29/04/2024 11:40;Intoxication;Urgent;Completed
+578;344;193;6;Complete Blood Count;28/04/2024 15:44;Low mood;Urgent;Completed
+579;345;193;6;X-Ray Wrist;03/07/2024 04:23;;Routine;Completed
+580;345;193;7;X-Ray Wrist;03/07/2024 10:47;Knee pain; Urgent;Completed
+581;345;193;6;Coagulation Panel;04/07/2024 16:50;Back pain after fall;Immediate;Cancelled
+582;346;193;22;Complete Blood Count;24/08/2024 12:14;Fever and low blood pressure;Immediate;Completed
+583;347;193;5;X-Ray Chest;23/01/2025 09:26;Leg swelling;Urgent;Cancelled
+584;347;193;6;Toxicology Screen;21/01/2025 21:39;Low mood;Routine;Completed
+585;347;193;6;Liver Function Panel;22/01/2025 02:52;NULL;Routine;Completed
+586;349;193;22;Ultrasound Abdomen;27/11/2025 12:59;Burning urination with fever;Immediate;Completed
+587;349;193;22;CT Abdomen;26/11/2025 06:58;NULL;Immediate;Completed
+588;349;193;22;Complete Blood Count;26/11/2025 17:55;Burning urination with fever;Routine;Completed
+589;350;194;22;X-Ray Chest;28/08/2024 08:11;Burning urination with fever;Immediate;Completed
+590;351;194;8;CT Chest;07/11/2024 14:06;Chest pain;Urgent;Completed
+591;351;194;9;Electrocardiogram;08/11/2024 10:33;Chest pain;Routine;Completed
+592;352;195;8;Electrocardiogram;28/01/2026 05:22;Shortness of breath;Immediate;Completed
+593;353;196;17;Ultrasound Abdomen;19/11/2024 13:38;Abdominal pain;Urgent;Completed
+594;353;196;17;Lipase;19/11/2024 03:06;Black stools;Urgent;Completed
+595;354;196;12;CT Head;18/01/2025 01:32;Head injury;Immediate;Completed
+596;354;196;13;CT Head;17/01/2025 22:53;Severe headache;Immediate;Completed
+597;354;196;12;Complete Blood Count;17/01/2025 19:39;Head injury;Urgent;Completed
+598;354;196;12;Electroencephalogram;18/01/2025 09:18;Head injury;Routine;Completed
+599;355;197;17;Liver Function Panel;15/08/2024 22:42;Abdominal pain;Routine;Completed
+600;356;197;20;Blood Glucose;16/01/2025 12:16;Weakness and confusion;Immediate;Completed
+601;357;198;7;X-Ray Chest;21/11/2024 21:32;Intoxication;Routine;Completed
+602;357;198;5;Complete Blood Count;21/11/2024 16:21;Intoxication;Urgent;Completed
+603;357;198;5;Liver Function Panel;21/11/2024 20:51;Leg swelling;Immediate;Completed
+604;358;198;9;Ultrasound Heart;19/12/2024 09:29;Shortness of breath;Urgent;Completed
+605;358;198;8;Troponin Panel;19/12/2024 09:10;Syncope with chest pain;Routine;Completed
+606;358;198;8;Lipid Panel;19/12/2024 16:53;Chest pain;Urgent;Completed
+607;360;198;22;X-Ray Chest;29/09/2025 21:17;Painful red swollen leg;Immediate;Completed
+608;361;199;19;CT Chest;29/12/2024 16:19;Chemotherapy;Urgent;Completed
+609;361;199;19;Tumor Markers;28/12/2024 23:30;Chemotherapy;Immediate;Completed
+610;362;199;7;Coagulation Panel;18/05/2025 23:04;Back pain after fall;Immediate;Completed
+611;363;199;10;X-Ray Chest;14/07/2025 23:45;Productive cough and fever;Immediate;Completed
+612;363;199;11;X-Ray Chest;14/07/2025 18:20;Productive cough and fever;Immediate;Completed
+613;363;199;11;Complete Blood Count;16/07/2025 15:43;Shortness of breath;Routine;Completed
+614;364;199;13;Coagulation Panel;21/11/2025 14:57;Sudden weakness;Routine;Completed
+615;364;199;12;Electroencephalogram;20/11/2025 02:20;Head injury;Routine;Completed
+616;365;200;9;X-Ray Chest;21/11/2024 22:23;Palpitations;Routine;Completed
+617;365;200;8;Lipid Panel;20/11/2024 05:25;Palpitations;Immediate;Completed
+618;366;200;17;CT Abdomen;05/12/2024 07:42;Black stools;Urgent;Completed
+619;366;200;17;Complete Blood Count;05/12/2024 01:56;Abdominal pain;Routine;Completed
+620;366;200;17;Lipase;05/12/2024 07:44;Groin swelling;Urgent;Completed
+621;367;201;10;Arterial Blood Gas;21/01/2025 03:39;Shortness of breath;Urgent;Completed
+622;368;201;10;Arterial Blood Gas;09/07/2025 20:25;Shortness of breath;Routine;Completed
+623;368;201;10;Sputum Culture;10/07/2025 01:27;Shortness of breath;Immediate;Completed
+624;369;201;20;X-Ray Chest;15/08/2025 15:54;Fatigue;Urgent;Completed
+625;369;201;20;Ultrasound Kidney;16/08/2025 02:00;High blood sugar;  Routine ;Completed
+626;369;201;20;Urinalysis;15/08/2025 03:39;Weakness and confusion;Urgent;Completed
+627;370;202;18;CT Abdomen;26/08/2025 13:33;Planned surgery;Routine;Completed
+628;370;202;19;Tumor Markers;26/08/2025 20:03;Weight loss;Urgent;Completed
+629;371;202;17;Ultrasound Abdomen;08/11/2025 09:42;NULL;Immediate;Completed
+630;371;202;17;Complete Blood Count;08/11/2025 16:32;Black stools;Routine;Completed
+631;372;203;12;Complete Blood Count;05/05/2024 06:07;Fainting episode;Urgent;Completed
+632;373;203;12;CT Head;14/08/2024 22:14;Head injury;Immediate;Completed
+633;373;203;12;Electroencephalogram;15/08/2024 03:06;Severe headache;Urgent;Completed
+634;374;203;9;Ultrasound Heart;11/11/2024 02:51;Syncope with chest pain;Immediate;Completed
+635;374;203;8;X-Ray Chest;12/11/2024 01:26;NULL;Immediate;Completed
+636;374;203;8;Electrocardiogram;11/11/2024 20:03;Syncope with chest pain;Routine;Completed
+637;374;203;9;Troponin Panel;11/11/2024 09:02;Syncope with chest pain;Routine;Completed
+638;375;204;8;Ultrasound Heart;07/02/2025 12:22;Syncope with chest pain;Immediate;Completed
+639;375;204;8;Troponin Panel;05/02/2025 23:02;Chest pain;Routine;Completed
+640;376;204;18;CT Abdomen;06/07/2025 21:09;Weight loss;Routine;Completed
+641;376;204;18;Complete Blood Count;07/07/2025 08:21;Weight loss;  Immediate ;Completed
+642;377;205;5;Complete Blood Count;15/03/2025 17:12;Wound redness;Urgent;Completed
+643;378;205;22;CT Abdomen;13/08/2025 13:02;Painful red swollen leg;Routine;Completed
+644;378;205;22;Urinalysis;13/08/2025 01:05;Painful red swollen leg;Urgent;Completed
+645;379;205;20;Ultrasound Kidney;15/11/2025 05:10;Weakness and confusion;Routine;Completed
+646;379;205;20;Blood Glucose;16/11/2025 12:49;Reduced urine output;Routine;Completed
+647;380;206;10;CT Chest;04/01/2025 21:06;NULL;Routine;Completed
+648;380;206;10;Sputum Culture;04/01/2025 07:56;;Urgent;Completed
+649;381;206;7;Coagulation Panel;21/05/2025 03:04;Wrist injury;Immediate;Completed
+650;382;206;9;Troponin Panel;07/09/2025 04:57;Syncope with chest pain;Routine;Completed
+651;382;206;9;Electrocardiogram;06/09/2025 16:19;Chest pain;Urgent;Completed
+652;384;207;17;X-Ray Abdomen;24/11/2024 01:05;Abdominal pain;Routine;Completed
+653;384;207;17;Ultrasound Abdomen;23/11/2024 15:30;Groin swelling;Routine;Completed
+654;384;207;17;Complete Blood Count;11/23/2024 17:39;Groin swelling;Routine;Completed
+655;385;207;17;Liver Function Panel;07/03/2025 01:11;Black stools;Urgent;Completed
+656;386;207;17;CT Abdomen;19/07/2025 06:54;Vomiting;Routine;Completed
+657;386;207;17;Liver Function Panel;20/07/2025 12:33;Groin swelling;Immediate;Completed
+658;386;207;17;Complete Blood Count;20/07/2025 05:58;Abdominal pain;Urgent;Completed
+659;387;208;17;X-Ray Abdomen;20/05/2024 04:24;Abdominal pain;Routine;Completed
+660;387;208;17;Liver Function Panel;19/05/2024 13:00;Black stools;Immediate;Completed
+661;388;208;12;CT Neck Vessels;04/10/2024 11:30;NULL;urgent;Completed
+662;388;208;12;Complete Blood Count;04/10/2024 15:04;Sudden weakness;Urgent;Completed
+663;389;208;7;Toxicology Screen;17/10/2024 09:55;Abdominal swelling;Routine;Completed
+664;390;208;17;Lipase;03/12/2024 19:59;;Routine;Completed
+665;392;208;22;CT Abdomen;17/05/2025 00:51;Painful red swollen leg;Immediate;Completed
+666;393;209;22;Urinalysis;16/12/2024 02:23;Fever and confusion;Urgent;Completed
+667;393;209;22;Lactate Level;15/12/2024 16:02;Fever and confusion;Immediate;Completed
+668;394;209;10;X-Ray Chest;02/05/2025 18:46;Productive cough and fever;Immediate;Completed
+669;395;209;19;MRI Pelvis;18/08/2025 11:58;Weight loss;Urgent;Completed
+670;395;209;18;Liver Function Panel;19/08/2025 01:19;;Routine;Completed
+671;396;209;9;Electrocardiogram;19/01/2026 03:36;Syncope with chest pain;Immediate;Completed
+672;397;210;17;X-Ray Abdomen;29/11/2025 06:08;Abdominal pain;Urgent;Completed
+673;397;210;17;Complete Blood Count;28/11/2025 12:06;Black stools;Immediate;Completed
+674;399;211;9;CT Chest;08/04/2024 23:13;Shortness of breath;Immediate;Completed
+675;399;211;8;Troponin Panel;07/04/2024 18:20;Syncope with chest pain;Urgent;Completed
+676;399;211;8;Lipid Panel;08/04/2024 10:58;Palpitations;Routine;Completed
+677;400;211;9;Troponin Panel;26/04/2024 09:38;Syncope with chest pain;Urgent;Completed
+678;400;211;8;Electrocardiogram;27/04/2024 08:38;Palpitations;Routine;Completed
+679;401;211;17;Liver Function Panel;17/09/2024 11:29;Black stools;Routine;COMPLETED
+680;402;212;10;Sputum Culture;09/02/2024 21:13;Productive cough and fever;Immediate;Completed
+681;403;213;5;X-Ray Chest;19/04/2025 17:20;Abdominal swelling;Immediate;Completed
+682;403;213;6;Complete Blood Count;18/04/2025 15:01;Low mood;Urgent;Completed
+683;403;213;7;Liver Function Panel;17/04/2025 23:05;Intoxication;Urgent;Completed
+684;404;214;22;CT Abdomen;24/02/2025 13:17;Burning urination with fever;Routine;Cancelled
+685;404;214;22;Urinalysis;26/02/2025 04:01;NULL;Immediate;Completed
+686;404;214;22;Lactate Level;24/02/2025 16:09;Fever and low blood pressure;Urgent;Completed
+687;405;215;8;X-Ray Chest;03/02/2025 01:58;Shortness of breath;Routine;Completed
+688;405;215;9;CT Chest;01/02/2025 02:33;Shortness of breath;Routine;Completed
+689;405;215;8;Lipid Panel;01/02/2025 12:33;Chest pain;Immediate;Completed
+690;406;216;10;CT Chest;29/08/2024 19:53;Wheezing;Immediate;Completed
+691;406;216;11;Arterial Blood Gas;01/09/2024 00:14;Productive cough and fever;Urgent;Completed
+692;406;216;11;Sputum Culture;01/09/2024 01:30;Wheezing;Urgent;Completed
+693;407;216;9;Lipid Panel;17/01/2025 13:59;Chest pain;Routine;Completed
+694;408;217;22;X-Ray Chest;05/10/2024 15:33;Painful red swollen leg;Immediate;Completed
+695;408;217;22;Blood Culture;05/10/2024 12:26;Fever and confusion;Urgent;Completed
+696;409;217;7;Complete Blood Count;12/03/2025 06:00;Wrist injury;Routine;Completed
+697;409;217;6;Coagulation Panel;12/03/2025 20:56;Back pain after fall;Urgent;Completed
+698;410;218;13;CT Neck Vessels;14/11/2024 21:34;Severe headache;Urgent;Completed
+699;411;219;6;X-Ray Knee;24/07/2024 07:34;Fall with hip pain;Urgent;Completed
+700;412;219;10;Arterial Blood Gas;10/11/2024 11:55;Productive cough and fever;Immediate;Completed
+701;413;220;20;X-Ray Chest;14/06/2024 04:57;High blood sugar;Urgent;Cancelled
+702;413;220;20;Ultrasound Kidney;14/06/2024 06:05;Fatigue;Routine;Completed
+703;413;220;20;Blood Glucose;14/06/2024 14:33;Weakness and confusion;Urgent;Completed
+704;414;220;6;X-Ray Knee;27/10/2024 04:08;Knee pain;Urgent;Completed
+705;414;220;7;X-Ray Hip;28/10/2024 18:12;Back pain after fall;Routine;Completed
+706;415;220;18;Liver Function Panel;17/01/2025 13:27;Chemotherapy;Immediate;Completed
+707;416;221;13;CT Head;10/01/2024 08:21;Seizure;Urgent;Completed
+708;416;221;12;Complete Blood Count;11/01/2024 02:57;Fainting episode;Urgent;Completed
+709;417;221;11;X-Ray Chest;04/02/2024 01:19;Wheezing;Immediate;Cancelled
+710;417;221;11;Sputum Culture;04/02/2024 03:42;Low oxygen saturation;Routine;Completed
+711;418;221;13;MRI Brain;11/07/2024 00:32;Sudden weakness;Urgent;Completed
+712;418;221;12;Complete Blood Count;10/07/2024 04:14;;Routine;Completed
+713;419;222;20;Basic Metabolic Panel;29/04/2024 03:01;Weakness and confusion;Routine;Completed
+714;420;222;20;Complete Blood Count;31/08/2024 06:59;Reduced urine output;Routine;Completed
+715;421;222;17;Liver Function Panel;02/12/2024 22:51;Black stools;Routine;Completed
+716;421;222;17;Lipase;03/12/2024 00:55;Abdominal pain;Urgent;Completed
+717;422;222;22;X-Ray Chest;05/05/2025 03:49;Burning urination with fever;Routine;Completed
+718;422;222;22;Urinalysis;05/05/2025 16:49;Fever and confusion;Immediate;Completed
+719;423;223;22;CT Abdomen;07/03/2024 13:59;Burning urination with fever;Immediate;Completed
+720;423;223;22;Ultrasound Abdomen;07/03/2024 03:44;Fever and low blood pressure;Immediate  ;Completed
+721;423;223;22;Blood Culture;08/03/2024 11:48;Burning urination with fever;Urgent;Completed
+722;423;223;22;Lactate Level;09/03/2024 21:29;Painful red swollen leg;Immediate;Completed
+723;424;223;12;CT Head;12/08/2024 16:30;Head injury;Immediate;Cancelled
+724;424;223;13;CT Head;14/08/2024 01:41;;Immediate;Completed
+725;424;223;13;Electroencephalogram;14/08/2024 10:09;Sudden weakness;Urgent;Completed
+726;424;223;13;Coagulation Panel;12/08/2024 12:32;Fainting episode;Routine;Completed
+727;425;224;9;Ultrasound Heart;25/04/2025 01:43;Chest pain;Immediate;Completed
+728;425;224;8;Lipid Panel;26/04/2025 19:23;Chest pain;Immediate;Completed
+729;426;225;9;Lipid Panel;23/05/2024 10:24;NULL;Routine;Completed
+730;427;226;10;X-Ray Chest;24/03/2024 06:22;Low oxygen saturation;Urgent;Completed
+731;427;226;11;Complete Blood Count;24/03/2024 02:12;Wheezing;Immediate;Completed
+732;428;227;22;Ultrasound Abdomen;22/05/2024 18:47;Burning urination with fever;Routine;Completed
+733;428;227;22;Blood Culture;22/05/2024 18:40;Painful red swollen leg;Routine;Completed
+734;428;227;22;Urinalysis;21/05/2024 07:09;Painful red swollen leg;Urgent;Completed
+735;429;228;22;CT Abdomen;17/11/2025 16:30;Burning urination with fever;Immediate;Completed
+736;429;228;22;Complete Blood Count;19/11/2025 12:18;Fever and confusion;Immediate;Completed
+737;430;229;20;Complete Blood Count;07/11/2024 19:03;High blood sugar;Routine;Completed
+738;430;229;20;Blood Glucose;07/11/2024 17:40;;routine;Completed
+739;431;231;12;CT Head;25/01/2026 08:49;Seizure;Immediate;Completed
+740;433;233;22;X-Ray Chest;07/07/2025 03:42;Burning urination with fever;Urgent;Completed
+741;433;233;22;Blood Culture;07/07/2025 17:25;Painful red swollen leg;Routine;Completed
+742;434;233;17;CT Abdomen;05/08/2025 16:48;Abdominal pain;Urgent;Completed
+743;434;233;17;Liver Function Panel;05/08/2025 07:31;Vomiting;Urgent;Completed
+744;436;234;9;CT Chest;08/07/2024 02:29;;Immediate;Completed
+745;436;234;9;Electrocardiogram;07/07/2024 22:42;Palpitations;Urgent;Completed
+746;437;234;11;CT Chest;21/10/2024 01:12;Shortness of breath;Immediate;Completed
+747;437;234;11;Arterial Blood Gas;21/10/2024 23:30;Wheezing;Immediate;Completed
+748;438;234;5;Ultrasound Leg Veins;03/03/2025 09:19;Leg swelling;Routine;Completed
+749;438;234;5;Complete Blood Count;03/03/2025 22:42;Low mood;Immediate;Completed
+750;439;235;7;Coagulation Panel;09/04/2025 21:08;Knee pain;Immediate;Completed
+751;440;235;5;X-Ray Knee;08/05/2025 15:47;Wrist injury;Routine;Cancelled
+752;440;235;5;Complete Blood Count;09/05/2025 14:06;Knee pain;Urgent;Completed
+753;441;235;6;Liver Function Panel;14/09/2025 16:30;;Routine  ;Completed
+754;442;236;20;Ultrasound Kidney;24/04/2025 00:10;Weakness and confusion;Urgent;Completed
+755;442;236;20;Blood Glucose;24/04/2025 11:36;Fatigue;Routine;Completed
+756;444;238;20;Complete Blood Count;21/02/2025 13:54;Weakness and confusion;Urgent;Completed
+757;445;238;17;Liver Function Panel;29/05/2025 03:01;Abdominal pain;Urgent;Completed
+758;445;238;17;Lipase;28/05/2025 20:37;Vomiting;Routine;Completed
+759;446;239;22;Ultrasound Abdomen;14/10/2024 10:57;Fever and low blood pressure;Immediate;Completed
+760;446;239;22;Ultrasound Abdomen;14/10/2024 14:34;Fever and confusion;Immediate;Completed
+761;447;240;19;MRI Pelvis;09/04/2024 19:53;Weight loss;Routine;Completed
+762;447;240;19;MRI Pelvis;08/04/2024 16:10;Planned surgery;Routine;Completed
+763;447;240;18;Liver Function Panel;08/04/2024 19:53;Chemotherapy;Routine;Completed
+764;448;241;11;Sputum Culture;03/04/2025 02:58;Shortness of breath;Routine;Completed
+765;448;241;11;Complete Blood Count;31/03/2025 05:27;Productive cough and fever;Routine;Cancelled
+766;449;241;22;X-Ray Chest;03/07/2025 04:13;Fever and confusion;Immediate;Completed
+767;449;241;22;Complete Blood Count;2025-07-04T12:36;Burning urination with fever;Routine;Completed
+768;449;241;22;Blood Culture;04/07/2025 13:06;Fever and low blood pressure;Immediate;Completed
+769;450;241;20;X-Ray Chest;05/09/2025 19:33;Fatigue;Urgent;Completed
+770;450;241;20;Ultrasound Kidney;04/09/2025 07:46;High blood sugar;Urgent;Completed
+771;450;241;20;Blood Glucose;05/09/2025 14:43;Weakness and confusion;Routine;Completed
+772;450;241;20;Basic Metabolic Panel;05/09/2025 10:27;Weakness and confusion;Routine;Completed
+773;452;243;5;X-Ray Hip;20/03/2025 07:31;Back pain after fall;Urgent;Cancelled
+774;452;243;5;Complete Blood Count;21/03/2025 09:40;Back pain after fall;Urgent;Completed
+775;452;243;7;Coagulation Panel;22/03/2025 11:32;Knee pain;Routine;Completed
+776;454;243;13;CT Neck Vessels;11/09/2025 22:40;NULL;Immediate;Completed
+777;454;243;12;Complete Blood Count;12/09/2025 16:39;Head injury;Routine;Completed
+778;454;243;12;Electroencephalogram;11/09/2025 16:29;Sudden weakness;  Routine ;Completed
+779;457;244;12;CT Head;25/08/2024 16:38;Fainting episode;Urgent;Completed
+780;457;244;13;Coagulation Panel;26/08/2024 15:26;Seizure;Urgent;Completed
+781;457;244;13;Complete Blood Count;24/08/2024 12:01;Sudden weakness;Urgent;Completed
+782;458;244;5;X-Ray Chest;26/12/2024 21:17;Intoxication;Immediate;Completed
+783;458;244;6;Ultrasound Leg Veins;27/12/2024 09:04;Intoxication;Immediate;Completed
+784;458;244;5;Complete Blood Count;27/12/2024 16:30;Wound redness;Urgent;Completed
+785;459;244;7;Coagulation Panel;31/01/2025 14:38;Back pain after fall;Urgent;Completed
+786;459;244;5;Complete Blood Count;30/01/2025 16:01;Knee pain;Urgent;Completed
+787;460;244;22;Blood Culture;09/03/2025 16:38;Painful red swollen leg;Immediate;Completed
+788;461;245;8;Lipid Panel;27/01/2025 09:47;Shortness of breath;Routine;Completed
+789;462;246;20;X-Ray Chest;27/09/2024 17:58;Reduced urine output;Urgent;Completed
+790;462;246;20;X-Ray Chest;27/09/2024 06:59;Weakness and confusion;Urgent;Completed
+791;462;246;20;Basic Metabolic Panel;28/09/2024 03:26;High blood sugar;Routine;Completed
+792;462;246;20;Complete Blood Count;29/09/2024 04:09;Weakness and confusion;Immediate;Cancelled
+793;464;247;11;X-Ray Chest;22/06/2025 12:15;Wheezing;Urgent;Completed
+794;464;247;10;Sputum Culture;22/06/2025 07:43;Low oxygen saturation;Immediate;Completed
+795;464;247;10;Complete Blood Count;22/06/2025 23:58;Wheezing;Urgent;Completed
+796;465;247;22;X-Ray Chest;24/08/2025 05:38;Painful red swollen leg;Routine;Completed
+797;466;248;10;CT Chest;13/02/2025 17:57;Low oxygen saturation;Urgent;Completed
+798;467;248;10;Sputum Culture;17/05/2025 11:19;Productive cough and fever;Urgent;Completed
+799;468;249;7;Liver Function Panel;25/08/2025 05:13;Wound redness;Urgent;Completed
+800;469;250;10;CT Chest;04/08/2024 19:38;Low oxygen saturation;Urgent;Completed
+801;469;250;10;CT Chest;05/08/2024 00:37;Shortness of breath;Urgent;Completed
+802;469;250;10;Arterial Blood Gas;06/08/2024 04:22;;Urgent;Completed

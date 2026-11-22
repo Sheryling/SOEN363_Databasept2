@@ -1,0 +1,982 @@
+StayID|AdmitID|UnitID|WardRoom|BedNumber|InDT|OutDT|ResponsiblePhysicianId|TransferReason
+1|1|1|ED-13|C|06/28/2025 08:00 PM|06/28/2025 11:28 PM|2|Arrival via emergency department
+2|1|6|3A-17|D|06/28/2025 11:28 PM|07/05/2025 11:03 AM|13|Bed management
+3|2|1|ED-21|C|11/21/2025 05:09 PM|11/21/2025 07:50 PM|4|Arrival via emergency department
+4|2|7|3B-11|A|11/21/2025 07:50 PM|11/25/2025 04:10 PM|6|Transfer to ward for recovery
+5|3|1|ED-30|B|01/01/2026 08:33 AM|01/01/2026 03:13 PM|2|Arrival via emergency department
+6|3|5|CC-19|D|01/01/2026 03:13 PM|01/07/2026 02:56 AM|15|Hemodynamic instability
+7|3|9|5C-27|C|01/07/2026 02:56 AM|01/08/2026 10:54 PM|8|Transfer to ward for recovery
+8|4|1|ED-28|B|04/30/2025 08:07 AM|04/30/2025 12:17 PM|2|Arrival via emergency department
+9|4|10|6R-24|C|04/30/2025 12:17 PM|05/04/2025 02:31 PM|6|Bed management
+10|5|4|GI-23|B|06/18/2025 08:51 PM|06/19/2025 11:58 PM|16|Direct admission
+11|5|6|3A-13|C|06/19/2025 11:58 PM|06/26/2025 11:47 AM|13|Clinically improved
+12|6|1|ED-23|N/A|08/16/2024 05:12 PM|08/17/2024 12:13 AM|4|Arrival via emergency department
+13|6|7|3B-18|C|08/17/2024 12:13 AM|08/20/2024 10:05 AM|7|Bed management
+14|7|1|ED-21|B|09/01/2024 11:45 AM|09/01/2024 01:33 PM|4|Arrival via emergency department
+15|7|7|3B-22|C|09/01/2024 01:33 PM|09/04/2024 05:37 PM|22|Bed management
+16|8|7|3B-07|A|07/29/2025 12:48 AM|08/01/2025 01:52 PM|20|Direct admission
+17|9|1|ED-10||08/18/2025 03:16 AM|08/18/2025 04:51 AM|4|Arrival via emergency department
+18|9|7|3B-07|N/A|08/18/2025 04:51 AM|08/26/2025 04:16 AM|6|Clinically improved
+19|10|1|ED-10|D|01/12/2026 10:45 AM|01/12/2026 03:34 PM|2|Arrival via emergency department
+20|10|7|3B-02|B|01/12/2026 03:34 PM|01/14/2026 02:35 AM|5|Clinically improved
+21|11|8|4A-16|B|02/18/2024 02:33 PM|02/20/2024 05:51 PM|17|Direct admission
+22|12|1|ED-21|B|05/16/2024 07:05 PM|05/17/2024 12:49 AM|3|Arrival via emergency department
+23|12|5|CC-04|B|05/17/2024 12:49 AM|05/21/2024 08:30 AM|14|Hemodynamic instability
+24|12|9|5C-05|B|05/21/2024 08:30 AM|05/22/2024 10:59 AM|8|Clinically improved
+25|13|1|ED-12|B|07/30/2024 06:44 PM|07/31/2024 02:32 AM|3|Arrival via emergency department
+26|13|5|CC-12|C|07/31/2024 02:32 AM|08/04/2024 03:31 PM|15|Respiratory deterioration
+27|13|9|5C-28|B|08/04/2024 03:31 PM|08/05/2024 07:38 PM|9|Clinically improved
+28|14|1|ED-24|D|10/19/2024 02:26 AM|10/19/2024 04:50 AM|4|Arrival via emergency department
+29|14|9|5C-02|A|10/19/2024 04:50 AM|10/27/2024 09:56 AM|8|Transfer to ward for recovery
+30|15|1|ED-22|B|01/26/2025 07:32 PM|01/27/2025 01:17 AM|3|Arrival via emergency department
+31|15|5|CC-30|N/A|01/27/2025 01:17 AM|01/30/2025 11:39 PM|14|Respiratory deterioration
+32|15|9|5C-11||01/30/2025 11:39 PM|02/03/2025 07:07 AM|9|Bed management
+33|16|1|ED-09|B|12/07/2024 07:00 AM|12/07/2024 03:56 PM|3|Arrival via emergency department
+34|16|4|GI-30|C|12/07/2024 03:56 PM|12/16/2024 02:16 PM|14|Respiratory deterioration
+35|16|2|MI-27|B|12/16/2024 02:16 PM|12/18/2024 01:49 AM|16|Escalation of care
+36|16|12|SD-29|C|12/18/2024 01:49 AM|12/18/2024 10:38 PM|11|Step-down after stabilization
+37|16|6|3A-19|A|12/18/2024 10:38 PM|12/20/2024 02:30 PM|10|Transfer to ward for recovery
+38|17|1|ED-13|A|05/29/2024 05:00 AM|05/29/2024 10:16 AM|2|Arrival via emergency department
+39|17|7|3B-10|N/A|05/29/2024 10:16 AM|06/04/2024 01:21 AM|22|Clinically improved
+40|18|1|ED-08|C|04/25/2024 03:07 PM|04/25/2024 05:57 PM|4|Arrival via emergency department
+41|18|8|4A-10|D|04/25/2024 05:57 PM|05/02/2024 08:56 AM|17|Transfer to ward for recovery
+42|19|6|3A-24||05/16/2025 03:56 PM|05/24/2025 10:34 PM|12|Direct admission
+43|20|1|ED-01|A|05/24/2024 07:12 PM|05/25/2024 03:18 AM|3|Arrival via emergency department
+44|20|6|3A-19|A|05/25/2024 03:18 AM|05/30/2024 06:03 PM|11|Bed management
+45|21|1|ED-02|C|01/13/2025 05:00 PM|01/14/2025 01:59 AM|4|Arrival via emergency department
+46|21|2|MI-12|B|01/14/2025 01:59 AM|01/17/2025 04:38 PM|15|Escalation of care
+47|21|12|SD-09|B|01/17/2025 04:38 PM|01/19/2025 06:12 AM|22|Step-down after stabilization
+48|21|7|3B-01|C|01/19/2025 06:12 AM|01/26/2025 12:48 AM|22|Bed management
+49|22|11|7N-04|D|04/22/2024 02:56 PM|04/24/2024 10:30 AM|19|Direct admission
+50|23|7|3B-15|D|01/09/2024 09:33 PM|01/12/2024 04:59 AM|6|Direct admission
+51|24|1|ED-18|B|11/14/2024 10:33 PM|11/15/2024 12:03 AM|2|Arrival via emergency department
+52|24|7|3B-12|A|11/15/2024 12:03 AM|11/20/2024 08:44 AM|22|Transfer to ward for recovery
+53|25|1|ED-25|C|02/26/2024 08:56 AM|02/26/2024 01:28 PM|3|Arrival via emergency department
+54|25|5|CC-21|C|02/26/2024 01:28 PM|02/27/2024 11:17 AM|15|Escalation of care
+55|26|1|ED-12|B|08/14/2024 01:07 AM|08/14/2024 03:24 AM|1|Arrival via emergency department
+56|26|5|CC-24|C|08/14/2024 03:24 AM|08/17/2024 09:08 PM|14|Hemodynamic instability
+57|26|9|5C-28|A|08/17/2024 09:08 PM|08/22/2024 06:34 AM|9|Clinically improved
+58|27|11|7N-03|A|12/17/2024 06:49 PM|12/20/2024 06:25 PM|19|Direct admission
+59|28|1|ED-12|B|04/16/2025 12:21 PM|04/16/2025 03:03 PM|2|Arrival via emergency department
+60|28|11|7N-05||04/16/2025 03:03 PM|04/18/2025 05:05 AM|19|Clinically improved
+61|29|1|ED-07|B|03/05/2024 01:41 AM|03/05/2024 09:21 AM|1|Arrival via emergency department
+62|29|6|3A-29|C|03/05/2024 09:21 AM|03/13/2024 05:01 PM|11|Bed management
+63|30|7|3B-22|B|02/09/2024 10:56 AM|02/11/2024 12:08 PM|20|Direct admission
+64|31|1|ED-29|N/A|04/25/2024 02:47 AM|04/25/2024 07:43 AM|2|Arrival via emergency department
+65|31|5|CC-04|D|04/25/2024 07:43 AM|04/30/2024 10:40 AM|16|Hemodynamic instability
+66|31|9|5C-22|N/A|04/30/2024 10:40 AM|05/01/2024 06:14 PM|8|Transfer to ward for recovery
+67|32|1|ED-09|A|01/18/2024 05:56 AM|01/18/2024 08:01 AM|4|Arrival via emergency department
+68|32|7|3B-29|A|01/18/2024 08:01 AM|01/23/2024 10:34 PM|20|Clinically improved
+69|33|1|ED-24||01/03/2024 07:25 AM|01/03/2024 05:23 PM|1|Arrival via emergency department
+70|33|4|GI-01|B|01/03/2024 05:23 PM|01/06/2024 05:28 AM|15|Post-operative monitoring
+71|33|6|3A-22|A|01/06/2024 05:28 AM|01/11/2024 03:23 PM|13|Bed management
+72|34|5|CC-14|B|01/26/2024 01:07 PM|02/01/2024 12:09 AM|16|Direct admission
+73|34|3|SI-04|A|02/01/2024 12:09 AM|02/03/2024 12:05 PM|15|Hemodynamic instability
+74|34|12|SD-22|A|02/03/2024 12:05 PM|02/05/2024 08:53 AM|9|Step-down after stabilization
+75|34|9|5C-13|D|02/05/2024 08:53 AM|02/06/2024 10:05 PM|9|Bed management
+76|35|1|ED-05|D|11/02/2025 05:56 AM|11/02/2025 09:52 AM|1|Arrival via emergency department
+77|35|8|4A-18|A|11/02/2025 09:52 AM|11/10/2025 04:34 PM|17|Bed management
+78|36|1|ED-14|D|01/23/2026 11:28 AM|01/23/2026 06:43 PM|3|Arrival via emergency department
+79|36|4|GI-04|A|01/23/2026 06:43 PM|01/25/2026 08:17 PM|16|Respiratory deterioration
+80|36|6|3A-22|C|01/25/2026 08:17 PM|01/29/2026 11:33 AM|12|Bed management
+81|37|11|7N-18|N/A|12/03/2024 11:00 AM|12/06/2024 10:30 AM|18|Direct admission
+82|38|1|ED-29|N/A|03/27/2025 06:55 PM|03/27/2025 09:50 PM|1|Arrival via emergency department
+83|38|2|MI-08|B|03/27/2025 09:50 PM|04/12/2025 10:39 AM|16|Respiratory deterioration
+84|38|12|SD-09|B|04/12/2025 10:39 AM|04/14/2025 03:57 PM|12|Step-down after stabilization
+85|38|6|3A-20|N/A|04/14/2025 03:57 PM|04/16/2025 12:49 AM|13|Bed management
+86|39|1|ED-19||08/07/2025 05:47 PM|08/07/2025 09:19 PM|3|Arrival via emergency department
+87|39|2|MI-19|C|08/07/2025 09:19 PM|08/12/2025 02:27 PM|16|Respiratory deterioration
+88|39|7|3B-27|B|08/12/2025 02:27 PM|08/16/2025 12:25 PM|22|Bed management
+89|40|11|7N-04|D|08/15/2024 11:25 AM|08/16/2024 08:10 AM|18|Direct admission
+90|41|1|ED-27|C|09/20/2024 09:21 PM|09/21/2024 10:46 AM|1|Arrival via emergency department
+91|41|4|GI-11|B|09/21/2024 10:46 AM|09/27/2024 01:11 AM|15|Post-operative monitoring
+92|42|10|6R-05|B|09/10/2024 02:48 AM|09/11/2024 11:39 PM|5|Direct admission
+93|43|1|ED-13|A|12/13/2024 10:45 PM|12/14/2024 05:24 AM|2|Arrival via emergency department
+94|43|6|3A-29|B|12/14/2024 05:24 AM|12/17/2024 08:52 PM|12|Transfer to ward for recovery
+95|44|9|5C-27|C|10/29/2024 09:00 PM|11/04/2024 07:24 AM|9|Direct admission
+96|45|1|ED-11|A|11/21/2024 11:48 PM|11/22/2024 03:33 AM|4|Arrival via emergency department
+97|45|9|5C-15|B|11/22/2024 03:33 AM|11/24/2024 02:23 PM|8|Clinically improved
+98|46|6|3A-15|N/A|09/22/2024 06:25 AM|09/27/2024 03:34 AM|10|Direct admission
+99|47|1|ED-22|D|01/27/2025 12:41 AM|01/27/2025 07:57 AM|4|Arrival via emergency department
+100|47|2|MI-03|B|01/27/2025 07:57 AM|01/28/2025 09:15 AM|16|Respiratory deterioration
+101|47|12|SD-05|C|01/28/2025 09:15 AM|01/29/2025 01:54 AM|13|Step-down after stabilization
+102|47|6|3A-07|D|01/29/2025 01:54 AM|01/31/2025 02:01 AM|13|Clinically improved
+103|48|11|7N-24|A|05/21/2025 04:41 AM|05/23/2025 07:08 PM|19|Direct admission
+104|49|1|ED-25|N/A|07/05/2025 08:54 PM|07/06/2025 04:49 AM|2|Arrival via emergency department
+105|49|6|3A-06|B|07/06/2025 04:49 AM|07/13/2025 04:02 AM|12|Bed management
+106|50|1|ED-01|N/A|03/04/2024 05:48 PM|03/05/2024 01:46 AM|3|Arrival via emergency department
+107|50|4|GI-06|N/A|03/05/2024 01:46 AM|03/06/2024 04:57 AM|14|Respiratory deterioration
+108|50|6|3A-13|N/A|03/06/2024 04:57 AM|03/13/2024 04:18 PM|10|Transfer to ward for recovery
+109|51|1|ED-14|D|05/20/2024 06:18 PM|05/21/2024 12:54 AM|1|Arrival via emergency department
+110|51|9|5C-07|A|05/21/2024 12:54 AM|05/22/2024 11:42 AM|8|Transfer to ward for recovery
+111|52|1|ED-05|C|10/11/2024 05:23 AM|10/11/2024 02:06 PM|1|Arrival via emergency department
+112|52|7|3B-10|D|10/11/2024 02:06 PM|10/17/2024 11:38 AM|22|Clinically improved
+113|53|1|ED-27|C|02/09/2025 11:59 PM|02/10/2025 03:07 AM|3|Arrival via emergency department
+114|53|2|MI-17|C|02/10/2025 03:07 AM|02/14/2025 06:44 AM|15|Escalation of care
+115|53|6|3A-17|C|02/14/2025 06:44 AM|02/23/2025 05:40 AM|10|Transfer to ward for recovery
+116|54|1|ED-30|A|04/09/2025 01:36 AM|04/09/2025 03:22 AM|1|Arrival via emergency department
+117|54|2|MI-28|A|04/09/2025 03:22 AM|04/13/2025 06:59 PM|14|Escalation of care
+118|54|7|3B-12|B|04/13/2025 06:59 PM|16/04/2025 07:05 AM|20|Bed management
+119|55|1|ED-21||06/05/2025 10:52 AM|06/05/2025 01:07 PM|2|Arrival via emergency department
+120|55|2|MI-25|B|06/05/2025 01:07 PM|06/17/2025 11:20 AM|15|Escalation of care
+121|55|12|SD-24|D|06/17/2025 11:20 AM|06/18/2025 07:39 PM|12|Step-down after stabilization
+122|55|6|3A-04|C|06/18/2025 07:39 PM|06/17/2025 03:40 AM|13|Bed management
+123|56|1|ED-19|A|06/11/2025 04:25 AM|06/11/2025 08:37 AM|1|Arrival via emergency department
+124|56|6|3A-02|B|06/11/2025 08:37 AM|06/13/2025 08:51 PM|11|Transfer to ward for recovery
+125|57|1|ED-07|B|09/08/2025 11:55 AM|09/08/2025 03:45 PM|1|Arrival via emergency department
+126|57|7|3B-23|B|09/08/2025 03:45 PM|09/10/2025 10:36 PM|20|Transfer to ward for recovery
+127|58|1|ED-30|A|04/24/2025 10:12 PM|04/25/2025 03:13 AM|3|Arrival via emergency department
+128|58|6|3A-07|B|04/25/2025 03:13 AM|05/01/2025 04:21 PM|10|Clinically improved
+129|59|1|ED-24|C|09/11/2025 09:22 AM|09/11/2025 02:02 PM|4|Arrival via emergency department
+130|59|8|4A-26|D|09/11/2025 02:02 PM|09/14/2025 06:46 AM|17|Bed management
+131|60|1|ED-10|A|09/16/2025 10:00 AM|09/16/2025 02:20 PM|2|Arrival via emergency department
+132|60|11|7N-10|B|09/16/2025 02:20 PM|09/18/2025 09:55 AM|18|Bed management
+133|61|1|ED-27|C|10/25/2026 12:57 PM|10/25/2026 02:40 PM|1|Arrival via emergency department
+134|61|7|3B-08|B|10/25/2026 02:40 PM||7|Bed management
+135|62|1|ED-22|D|04/17/2024 09:33 AM|04/17/2024 06:00 PM|2|Arrival via emergency department
+136|62|4|GI-19||04/17/2024 06:00 PM|04/20/2024 07:46 PM|14|Hemodynamic instability
+137|62|6|3A-11|C|04/20/2024 07:46 PM|04/21/2024 10:05 PM|10|Bed management
+138|63|1|ED-12|D|05/06/2024 03:36 PM|05/07/2024 12:23 AM|1|Arrival via emergency department
+139|63|7|3B-01|D|05/07/2024 12:23 AM|05/14/2024 01:38 PM|20|Transfer to ward for recovery
+140|64|10|6R-11|A|11/27/2025 09:25 PM|11/28/2025 10:09 PM|7|Direct admission
+141|65|1|ED-17|B|06/01/2025 12:33 AM|06/01/2025 06:22 AM|3|Arrival via emergency department
+142|65|8|4A-14|D|06/01/2025 06:22 AM|06/04/2025 08:59 AM|17|Transfer to ward for recovery
+143|66|11|7N-21|A|06/30/2025 01:50 PM|07/08/2025 11:09 PM|18|Direct admission
+144|67|1|ED-21|A|09/13/2025 08:20 AM|09/13/2025 01:21 PM|3|Arrival via emergency department
+145|67|6|3A-29|A|09/13/2025 01:21 PM|09/20/2025 07:18 PM|13|Bed management
+146|68|1|ED-18|D|04/13/2024 07:12 PM|04/13/2024 10:31 PM|4|Arrival via emergency department
+147|68|6|3A-22|C|04/13/2024 10:31 PM|04/19/2024 06:04 PM|11|Bed management
+148|69|5|CC-23|B|02/14/2024 08:56 AM|02/24/2024 10:43 PM|14|Direct admission
+149|69|9|5C-21|A|02/24/2024 10:43 PM|02/26/2024 05:44 PM|9|Bed management
+150|70|10|6R-18|B|07/02/2024 02:42 AM|07/02/2024 11:19 PM|7|Direct admission
+151|71|4|GI-28|N/A|09/16/2024 09:11 AM|09/28/2024 01:15 PM|16|Direct admission
+152|71|12|SD-04|C|09/28/2024 01:15 PM|09/30/2024 05:52 PM|9|Step-down after stabilization
+153|71|9|5C-23|C|09/30/2024 05:52 PM|10/03/2024 02:52 PM|8|Bed management
+154|72|4|GI-01|A|08/29/2024 10:33 AM|09/08/2024 08:48 AM|15|Direct admission
+155|72|6|3A-03|A|09/08/2024 08:48 AM|09/16/2024 05:12 AM|11|Bed management
+156|73|11|7N-06|N/A|04/07/2025 06:41 PM|04/10/2025 01:11 PM|18|Direct admission
+157|74|1|ED-13|B|01/04/2024 09:07 PM|01/05/2024 05:13 AM|2|Arrival via emergency department
+158|74|4|GI-17|D|01/05/2024 05:13 AM|01/13/2024 01:59 AM|16|Escalation of care
+159|74|12|SD-27|C|01/13/2024 01:59 AM|01/13/2024 03:38 PM|12|Step-down after stabilization
+160|74|6|3A-28|B|01/13/2024 03:38 PM|01/22/2024 10:39 AM|12|Clinically improved
+161|75|7|3B-15|A|12/11/2025 05:07 PM|12/12/2025 09:16 PM|20|Direct admission
+162|76|1|ED-27|B|04/23/2024 04:07 PM|04/24/2024 12:54 AM|1|Arrival via emergency department
+163|76|8|4A-22|D|04/24/2024 12:54 AM|04/30/2024 10:37 AM|17|Clinically improved
+164|77|10|6R-16|C|07/21/2024 03:52 AM|07/23/2024 01:21 AM|5|Direct admission
+165|78|1|ED-03|C|10/06/2024 12:00 AM|10/06/2024 02:40 AM|1|Arrival via emergency department
+166|78|10|6R-02|C|10/06/2024 02:40 AM|10/13/2024 07:28 AM|6|Transfer to ward for recovery
+167|79|7|3B-13|A|10/28/2024 03:51 PM|10/31/2024 05:49 AM|6|Direct admission
+168|80|1|ED-19|A|03/23/2025 07:48 PM|03/23/2025 09:57 PM|4|Arrival via emergency department
+169|80|5|CC-28|D|03/23/2025 09:57 PM|03/26/2025 05:18 AM|14|Hemodynamic instability
+170|80|12|SD-23|A|03/26/2025 05:18 AM|03/27/2025 05:22 AM|8|Step-down after stabilization
+171|80|9|5C-13|D|03/27/2025 05:22 AM|04/03/2025 11:38 AM|8|Bed management
+172|81|7|3B-04|B|04/28/2025 02:43 PM|05/05/2025 01:43 AM|20|Direct admission
+173|82|10|6R-14|B|05/26/2025 02:48 PM|05/29/2025 04:35 AM|6|Direct admission
+174|83|1|ED-29|C|01/08/2024 08:07 PM|01/09/2024 04:21 AM|3|Arrival via emergency department
+175|83|10|6R-04|D|01/09/2024 04:21 AM|01/10/2024 03:50 PM|5|Clinically improved
+176|84|1|ED-07|A|02/19/2024 02:29 PM|02/19/2024 10:49 PM|3|Arrival via emergency department
+177|84|11|7N-01|D|02/19/2024 10:49 PM|02/21/2024 09:44 AM|19|Clinically improved
+178|85|1|ED-30|D|05/13/2024 01:49 AM|05/13/2024 06:21 AM|1|Arrival via emergency department
+179|85|8|4A-02|A|05/13/2024 06:21 AM|05/22/2024 03:00 AM|17|Clinically improved
+180|86|1|ED-05|N/A|10/02/2024 07:07 AM|10/02/2024 09:28 AM|4|Arrival via emergency department
+181|86|4|GI-06|C|10/02/2024 09:28 AM|10/13/2024 10:12 PM|15|Hemodynamic instability
+182|86|10|6R-28|B|10/13/2024 10:12 PM|10/22/2024 08:35 AM|7|Transfer to ward for recovery
+183|87|1|ED-25|D|12/07/2024 04:50 AM|12/07/2024 08:22 AM|2|Arrival via emergency department
+184|87|4|GI-13|D|12/07/2024 08:22 AM|12/09/2024 04:43 PM|14|Hemodynamic instability
+185|87|12|SD-01|B|12/09/2024 04:43 PM|12/10/2024 08:43 PM|10|Step-down after stabilization
+186|87|6|3A-27|A|12/10/2024 08:43 PM|12/11/2024 10:32 PM|10|Bed management
+187|88|1|ED-02|B|07/18/2025 11:56 AM|07/18/2025 04:25 PM|1|Arrival via emergency department
+188|88|6|3A-04|B|07/18/2025 04:25 PM|07/22/2025 12:09 AM|12|Bed management
+189|89|11|7N-13||12/14/2024 01:41 PM|12/18/2024 01:32 AM|18|Direct admission
+190|90|1|ED-15|D|06/08/2024 05:25 AM|06/08/2024 10:57 AM|2|Arrival via emergency department
+191|90|10|6R-27||06/08/2024 10:57 AM|06/13/2024 09:20 AM|6|Transfer to ward for recovery
+192|91|5|CC-04|B|09/22/2024 09:11 PM|10/05/2024 12:41 AM|15|Direct admission
+193|91|9|5C-10|C|10/05/2024 12:41 AM|10/09/2024 06:22 AM|8|Transfer to ward for recovery
+194|92|1|ED-04|D|08/26/2024 05:48 PM|08/26/2024 08:05 PM|1|Arrival via emergency department
+195|92|6|3A-07|A|08/26/2024 08:05 PM|08/28/2024 11:40 PM|11|Clinically improved
+196|93|9|5C-27|D|09/30/2024 11:05 PM|10/02/2024 04:48 AM|9|Direct admission
+197|94|1|ED-04|B|11/04/2024 11:09 PM|11/05/2024 06:54 AM|4|Arrival via emergency department
+198|94|6|3A-24|C|11/05/2024 06:54 AM|11/12/2024 05:10 AM|10|Clinically improved
+199|95|11|7N-18|B|01/10/2025 02:37 PM|01/14/2025 04:26 AM|19|Direct admission
+200|96|1|ED-16|B|08/02/2024 04:00 PM|08/02/2024 10:54 PM|1|Arrival via emergency department
+201|96|98|3B-28|B|08/02/2024 10:54 PM|08/06/2024 07:04 AM|20|Transfer to ward for recovery
+202|97|1|ED-14|B|09/19/2024 06:54 AM|09/19/2024 01:05 PM|4|Arrival via emergency department
+203|97|4|GI-20|C|09/19/2024 01:05 PM|09/25/2024 04:14 AM|14|Escalation of care
+204|97|3|SI-07|A|09/25/2024 04:14 AM|09/29/2024 02:44 AM|15|Respiratory deterioration
+205|97|12|SD-03|D|09/29/2024 02:44 AM|10/01/2024 10:05 AM|20|Step-down after stabilization
+206|97|7|3B-27|D|10/01/2024 10:05 AM|10/07/2024 11:56 PM|20|Transfer to ward for recovery
+207|98|1|ED-12|A|12/05/2024 05:00 AM|12/05/2024 07:42 AM|3|Arrival via emergency department
+208|98|7|3B-21|B|12/05/2024 07:42 AM|12/09/2024 03:36 AM|6|Bed management
+209|99|1|ED-25|D|09/06/2024 04:56 PM|09/06/2024 07:58 PM|1|Arrival via emergency department
+210|99|6|3A-11|D|09/06/2024 07:58 PM|09/13/2024 10:56 PM|12|Bed management
+211|100|7|3B-16|N/A|04/28/2024 06:48 PM|04/30/2024 05:55 PM|5|Direct admission
+212|101|1|ED-15|B|06/24/2024 10:38 AM|06/24/2024 02:54 PM|4|Arrival via emergency department
+213|101|2|MI-06|A|06/24/2024 02:54 PM|06/27/2024 06:46 AM|14|Respiratory deterioration
+214|101|12|SD-18|N/A|06/27/2024 06:46 AM|06/28/2024 01:32 AM|13|Step-down after stabilization
+215|101|6|3A-24|A|06/28/2024 01:32 AM|07/07/2024 12:53 AM|13|Bed management
+216|102|8|4A-06|D|08/29/2024 11:58 AM|08/31/2024 08:24 PM|17|Direct admission
+217|103|1|ED-29|C|11/09/2024 05:57 AM|11/09/2024 12:24 PM|3|Arrival via emergency department
+218|103|3|SI-09|A|11/09/2024 12:24 PM|11/12/2024 03:27 PM|15|Post-operative monitoring
+219|103|2|MI-01|A|11/12/2024 03:27 PM|11/15/2024 06:47 AM|14|Hemodynamic instability
+220|103|8|4A-16|B|11/15/2024 06:47 AM|11/19/2024 09:37 AM|17|Bed management
+221|104|8|4A-08|A|01/08/2025 05:12 AM|01/11/2025 01:09 PM|17|Direct admission
+222|105|1|ED-20|A|03/09/2024 07:56 PM|03/10/2024 12:03 AM|3|Arrival via emergency department
+223|105|10|6R-07|B|03/10/2024 12:03 AM|03/12/2024 09:27 AM|6|Clinically improved
+224|106|1|ED-19|A|04/14/2024 12:06 AM|04/14/2024 06:56 AM|4|Arrival via emergency department
+225|106|4|GI-07|D|04/14/2024 06:56 AM|04/16/2024 12:36 PM|14|Hemodynamic instability
+226|106|2|MI-06|C|04/16/2024 12:36 PM|04/18/2024 05:54 AM|14|Escalation of care
+227|107|1|ED-22|A|04/04/2026 02:07 AM|04/04/2026 03:48 AM|4|Arrival via emergency department
+228|107|8|4A-18|D|04/04/2026 03:48 AM|04/06/2026 02:07 PM|17|Bed management
+229|108|1|ED-09|C|04/28/2025 02:00 AM|04/28/2025 07:07 AM|1|Arrival via emergency department
+230|108|7|3B-30|D|04/28/2025 07:07 AM|05/01/2025 01:52 PM|22|Transfer to ward for recovery
+231|109|1|ED-29|C|08/27/2025 10:53 PM|08/28/2025 03:41 AM|1|Arrival via emergency department
+232|109|2|MI-14|C|08/28/2025 03:41 AM|08/31/2025 05:41 PM|16|Escalation of care
+233|109|7|3B-01|B|08/31/2025 05:41 PM|09/05/2025 10:47 PM|22|Bed management
+234|110|1|ED-08|D|05/12/2024 09:07 AM|12/05/2024 12:40 PM|2|Arrival via emergency department
+235|110|2|MI-12|A|12/05/2024 12:40 PM|12/15/2024 06:53 AM|15|Respiratory deterioration
+236|110|12|SD-04|N/A|12/15/2024 06:53 AM|12/16/2024 01:46 AM|22|Step-down after stabilization
+237|110|7|3B-04|B|12/16/2024 01:46 AM|12/19/2024 06:49 AM|22|Transfer to ward for recovery
+238|111|1|ED-26|A|01/02/2025 05:38 AM|01/02/2025 12:58 PM|2|Arrival via emergency department
+239|111|6|3A-19|D|01/02/2025 12:58 PM|01/08/2025 09:37 AM|12|Clinically improved
+240|112|1|ED-03|A|02/12/2025 09:01 PM|02/13/2025 02:18 AM|4|Arrival via emergency department
+241|112|2|MI-25|B|02/13/2025 02:18 AM|02/16/2025 12:22 PM|15|Escalation of care
+242|112|7|3B-18|D|02/16/2025 12:22 PM|02/19/2025 02:39 AM|22|Clinically improved
+243|113|1|ED-24|B|04/12/2025 05:55 AM|04/12/2025 08:03 AM|1|Arrival via emergency department
+244|113|5|CC-11|A|04/12/2025 08:03 AM|04/16/2025 05:00 AM|16|Hemodynamic instability
+245|113|12|SD-20|N/A|04/16/2025 05:00 AM|04/18/2025 06:31 AM|8|Step-down after stabilization
+246|113|9|5C-25|D|04/18/2025 06:31 AM|04/22/2025 04:48 AM|9|Clinically improved
+247|114|1|ED-06|D|03/12/2024 02:07 PM|03/12/2024 09:09 PM|1|Arrival via emergency department
+248|114|4|GI-27|A|03/12/2024 09:09 PM|03/23/2024 08:17 AM|14|Respiratory deterioration
+249|115|1|ED-26|B|01/12/2026 09:25 PM|01/13/2026 03:32 AM|1|Arrival via emergency department
+250|115|2|MI-13|A|01/13/2026 03:32 AM|01/16/2026 11:50 AM|16|Respiratory deterioration
+251|115|12|SD-22|A|01/16/2026 11:50 AM|01/17/2026 02:03 AM|11|Step-down after stabilization
+252|115|6|3A-29|B|01/17/2026 02:03 AM|01/22/2026 08:18 PM|10|Clinically improved
+253|116|1|ED-18|B|02/26/2024 03:25 PM|02/26/2024 09:56 PM|1|Arrival via emergency department
+254|116|7|3B-14|C|02/26/2024 09:56 PM|03/03/2024 05:25 PM|20|Clinically improved
+255|117|10|6R-10|B|05/16/2024 05:48 AM|05/19/2024 08:38 PM|7|Direct admission
+256|118|1|ED-18|B|09/06/2024 05:21 AM|09/06/2024 11:12 AM|1|Arrival via emergency department
+257|118|10|6R-03||09/06/2024 11:12 AM|09/07/2024 04:00 PM|6|Bed management
+258|119|1|ED-22|B|10/25/2026 05:29 AM|10/25/2026 11:50 AM|1|Arrival via emergency department
+259|119|2|MI-05|N/A|10/25/2026 11:50 AM|10/30/2026 07:27 PM|15|Respiratory deterioration
+260|119|7|3B-01|D|10/30/2026 07:27 PM|N/A|22|Clinically improved
+261|120|1|ED-12|C|09/10/2024 06:41 AM|09/10/2024 12:09 PM|4|Arrival via emergency department
+262|120|2|MI-14|C|09/10/2024 12:09 PM|09/13/2024 10:19 PM|16|Hemodynamic instability
+263|120|7|3B-29|D|09/13/2024 10:19 PM|09/16/2024 08:08 AM|22|Bed management
+264|121|1|ED-02|D|01/27/2025 07:16 AM|01/27/2025 02:45 PM|3|Arrival via emergency department
+265|121|7|3B-12|D|01/27/2025 02:45 PM|01/31/2025 03:08 PM|5|Transfer to ward for recovery
+266|122|1|ED-22||06/10/2025 04:31 AM|06/10/2025 11:10 AM|3|Arrival via emergency department
+267|122|9|5C-22||06/10/2025 11:10 AM|06/17/2025 07:24 AM|8|Transfer to ward for recovery
+268|123|11|7N-06|C|08/28/2025 09:44 PM|08/30/2025 08:02 PM|18|Direct admission
+269|124|10|6R-04|B|02/08/2026 05:25 PM|02/08/2026 11:22 PM|5|Direct admission
+270|124|4|GI-27|A|02/08/2026 11:22 PM|02/10/2026 01:16 PM|14|Post-operative monitoring
+271|124|12|SD-16|D|02/10/2026 01:16 PM|02/11/2026 07:01 AM|7|Step-down after stabilization
+272|124|10|6R-19|C|02/11/2026 07:01 AM|02/13/2026 05:46 AM|7|Clinically improved
+273|125|1|ED-18|D|05/13/2025 02:25 AM|05/13/2025 10:41 AM|1|Arrival via emergency department
+274|125|10|6R-11|D|05/13/2025 10:41 AM|05/17/2025 06:28 AM|5|Transfer to ward for recovery
+275|126|8|4A-26|C|06/28/2025 08:32 PM|06/29/2025 04:29 AM|17|Direct admission
+276|126|3|SI-15|A|06/29/2025 04:29 AM|07/06/2025 01:12 PM|14|Post-operative monitoring
+277|127|1|ED-13|C|10/11/2024 10:00 AM|10/11/2024 06:02 PM|1|Arrival via emergency department
+278|127|10|6R-24|C|10/11/2024 06:02 PM|10/16/2024 03:45 AM|6|Transfer to ward for recovery
+279|128|1|ED-06|D|04/16/2025 09:48 PM|04/17/2025 05:16 AM|4|Arrival via emergency department
+280|128|7|3B-28|D|04/17/2025 05:16 AM|04/26/2025 12:22 AM|7|Transfer to ward for recovery
+281|129|1|ED-03|D|05/26/2024 10:41 AM|05/26/2024 01:00 PM|1|Arrival via emergency department
+282|129|9|5C-01|D|05/26/2024 01:00 PM|05/31/2024 11:46 PM|8|Transfer to ward for recovery
+283|130|1|ED-18|B|09/10/2024 03:08 AM|09/10/2024 10:26 AM|1|Arrival via emergency department
+284|130|6|3A-26|A|09/10/2024 10:26 AM|09/11/2024 10:56 PM|10|Transfer to ward for recovery
+285|131|10|6R-08|A|12/30/2024 03:00 AM|12/31/2024 07:09 AM|7|Direct admission
+286|132|1|ED-09|C|10/20/2025 04:07 AM|10/20/2025 10:58 AM|2|Arrival via emergency department
+287|132|4|GI-22|C|10/20/2025 10:58 AM|10/26/2025 07:59 PM|16|Escalation of care
+288|132|7|3B-28|A|10/26/2025 07:59 PM|10/31/2025 06:55 AM|20|Bed management
+289|133|1|ED-30|B|02/05/2024 09:12 AM|02/05/2024 01:58 PM|4|Arrival via emergency department
+290|133|7|3B-28|C|02/05/2024 01:58 PM|02/14/2024 12:07 PM|20|Bed management
+291|134|1|ED-04|C|05/14/2024 10:54 PM|05/15/2024 07:20 AM|2|Arrival via emergency department
+292|134|6|3A-27|B|05/15/2024 07:20 AM|05/17/2024 07:11 PM|11|Clinically improved
+293|135|1|ED-17|D|10/06/2024 11:31 AM|10/06/2024 07:32 PM|4|Arrival via emergency department
+294|135|9|5C-14|N/A|10/06/2024 07:32 PM|10/15/2024 05:13 PM|8|Bed management
+295|136|6|3A-17|C|02/03/2025 03:00 PM|02/05/2025 09:12 PM|10|Direct admission
+296|137|1|ED-30|C|04/27/2024 04:33 PM|04/27/2024 11:28 PM|2|Arrival via emergency department
+297|137|4|GI-27|D|04/27/2024 11:28 PM|04/29/2024 02:45 AM|15|Hemodynamic instability
+298|137|5|CC-25|D|04/29/2024 02:45 AM|05/03/2024 05:31 AM|16|Hemodynamic instability
+299|137|12|SD-02|B|05/03/2024 05:31 AM|05/04/2024 02:52 AM|9|Step-down after stabilization
+300|137|9|5C-18|D|05/04/2024 02:52 AM|05/10/2024 06:57 PM|8|Bed management
+301|138|11|7N-08|C|06/05/2024 12:36 PM|06/07/2024 06:47 AM|18|Direct admission
+302|139|1|ED-15|D|10/22/2024 04:08 PM|10/23/2024 07:06 AM|1|Arrival via emergency department
+303|139|5|CC-14|A|10/23/2024 07:06 AM|11/02/2024 08:54 AM|14|Post-operative monitoring
+216|102|8|4A-06|D|08/29/2024 11:58 AM|08/31/2024 08:24 PM|17|Direct admission
+304|139|9|5C-05|C|11/02/2024 08:54 AM|11/08/2024 05:07 AM|9|Clinically improved
+305|140|1|ED-05|C|07/12/2025 01:48 AM|07/12/2025 07:24 AM|2|Arrival via emergency department
+306|140|7|3B-26|C|07/12/2025 07:24 AM|07/13/2025 08:49 AM|22|Bed management
+307|141|1|ED-09|A|12/25/2024 08:33 PM|12/26/2024 04:57 AM|4|Arrival via emergency department
+308|141|7|3B-15|D|12/26/2024 04:57 AM|12/31/2024 06:37 AM|6|Clinically improved
+309|142|10|6R-08|B|06/18/2024 11:25 PM|06/22/2024 09:14 PM|6|Direct admission
+310|143|1|ED-18|B|03/23/2025 08:56 PM|03/24/2025 02:54 AM|3|Arrival via emergency department
+311|143|10|6R-16|C|03/24/2025 02:54 AM|03/30/2025 02:21 AM|5|Bed management
+312|144|1|ED-15|C|06/14/2025 02:22 PM|06/14/2025 08:18 PM|2|Arrival via emergency department
+313|144|7|3B-22|C|06/14/2025 08:18 PM|06/17/2025 04:20 PM|22|Bed management
+314|145|1|ED-13|B|02/20/2025 04:25 AM|02/20/2025 07:24 AM|3|Arrival via emergency department
+315|145|4|GI-03|C|02/20/2025 07:24 AM|02/22/2025 03:03 AM|16|Respiratory deterioration
+316|145|6|3A-11|A|02/22/2025 03:03 AM|02/23/2025 07:31 PM|10|Bed management
+317|146|11|7N-18|C|04/17/2025 05:06 AM|04/19/2025 02:28 AM|18|Direct admission
+318|147|1|ED-05||10/02/2024 01:48 PM|10/02/2024 07:21 PM|3|Arrival via emergency department
+319|147|7|3B-28|D|10/02/2024 07:21 PM|10/05/2024 10:39 AM|6|Bed management
+320|148|10|6R-22|C|12/22/2024 07:43 AM|12/24/2024 05:25 AM|7|Direct admission
+321|149|1|ED-21|C|08/06/2024 06:25 AM|08/06/2024 09:25 AM|4|Arrival via emergency department
+322|149|5|CC-27|A|08/06/2024 09:25 AM|08/11/2024 12:20 PM|16|Respiratory deterioration
+323|150|1|ED-12|C|07/25/2025 02:33 AM|07/25/2025 10:36 AM|1|Arrival via emergency department
+324|150|6|3A-26|A|07/25/2025 10:36 AM|07/29/2025 10:26 AM|11|Transfer to ward for recovery
+325|151|1|ED-16|B|01/29/2026 03:56 AM|01/29/2026 10:15 AM|4|Arrival via emergency department
+326|151|8|4A-07|A|01/29/2026 10:15 AM|02/06/2026 12:24 AM|17|Clinically improved
+327|152|7|3B-27|D|02/05/2025 04:12 PM|02/07/2025 06:10 PM|22|Direct admission
+328|153|1|ED-17|C|03/22/2025 11:26 AM|03/23/2025 01:17 AM|1|Arrival via emergency department
+329|153|5|CC-20|A|03/23/2025 01:17 AM|03/26/2025 07:12 PM|15|Post-operative monitoring
+330|153|9|5C-05|D|03/26/2025 07:12 PM|03/29/2025 05:54 PM|8|Bed management
+331|154|8|4A-20|C|04/24/2025 08:29 AM|04/26/2025 01:19 PM|17|Direct admission
+332|155|1|ED-16|D|08/23/2025 01:06 PM|08/23/2025 09:30 PM|2|Arrival via emergency department
+333|155|7|3B-12|B|08/23/2025 09:30 PM|08/30/2025 05:35 AM|6|Clinically improved
+334|156|1|ED-03|B|08/21/2024 08:07 AM|08/21/2024 12:52 PM|3|Arrival via emergency department
+335|156|7|3B-23|C|08/21/2024 12:52 PM|08/21/2024 05:07 AM|20|Bed management
+336|157|1|ED-03|A|12/21/2024 02:01 AM|12/21/2024 10:52 AM|3|Arrival via emergency department
+337|157|4|GI-04|D|12/21/2024 10:52 AM|12/26/2024 11:53 AM|16|Hemodynamic instability
+338|157|6|3A-07|B|12/26/2024 11:53 AM|12/30/2024 12:38 PM|11|Bed management
+339|158|11|7N-22|B|05/20/2025 11:49 AM|05/28/2025 08:49 PM|19|Direct admission
+340|159|9|5C-01|C|10/16/2025 05:56 PM|10/18/2025 05:17 AM|8|Direct admission
+341|160|1|ED-11|D|06/18/2024 10:33 PM|06/19/2024 03:19 AM|1|Arrival via emergency department
+342|160|7|3B-20|D|06/19/2024 03:19 AM|06/27/2024 01:28 AM|5|Bed management
+343|161|10|6R-28|C|10/03/2024 11:08 AM|10/08/2024 11:24 AM|7|Direct admission
+344|162|1|ED-10|D|10/22/2024 05:57 PM|10/22/2024 09:25 PM|4|Arrival via emergency department
+345|162|10|6R-13|C|10/22/2024 09:25 PM|10/28/2024 05:55 PM|7|Clinically improved
+346|163|1|ED-11|A|02/28/2025 12:41 PM|02/28/2025 02:45 PM|4|Arrival via emergency department
+347|163|4|GI-23|A|02/28/2025 02:45 PM|03/16/2025 04:35 AM|16|Hemodynamic instability
+348|163|9|5C-25|N/A|03/16/2025 04:35 AM|03/23/2025 06:28 PM|8|Transfer to ward for recovery
+349|164|7|3B-27|A|03/13/2024 12:12 AM|03/15/2024 05:26 AM|20|Direct admission
+350|165|6|3A-27|B|08/26/2024 06:25 AM|09/03/2024 07:41 AM|10|Direct admission
+351|166|10|6R-12|N/A|03/16/2024 02:41 PM|03/20/2024 04:44 AM|7|Direct admission
+352|167|11|7N-11|C|04/05/2024 09:02 PM|04/12/2024 10:08 AM|18|Direct admission
+353|168|1|ED-07|A|08/04/2024 06:06 PM|08/05/2024 12:59 AM|1|Arrival via emergency department
+354|168|11|7N-26|B|08/05/2024 12:59 AM|08/11/2024 04:45 PM|19|Clinically improved
+355|169|4|GI-25|B|09/22/2024 08:04 AM|09/28/2024 07:48 AM|16|Direct admission
+356|169|6|3A-28|C|09/28/2024 07:48 AM|10/04/2024 05:41 PM|11|Bed management
+357|170|1|ED-29|C|09/27/2024 09:07 PM|09/28/2024 03:40 AM|3|Arrival via emergency department
+358|170|10|6R-15|A|09/28/2024 03:40 AM|09/29/2024 06:46 AM|7|Clinically improved
+359|171|6|3A-18|D|08/06/2025 02:25 PM|08/09/2025 12:32 PM|12|Direct admission
+360|172|1|ED-10|D|12/22/2025 02:35 PM|12/22/2025 06:47 PM|1|Arrival via emergency department
+361|172|11|7N-19|N/A|12/22/2025 06:47 PM|12/30/2025 04:30 AM|19|Transfer to ward for recovery
+362|173|9|5C-15|A|05/05/2025 12:00 AM|05/12/2025 05:12 AM|8|Direct admission
+363|174|1|ED-10|D|07/03/2025 11:04 PM|07/04/2025 03:00 AM|3|Arrival via emergency department
+364|174|4|GI-09|B|07/04/2025 03:00 AM|07/06/2025 02:48 AM|16|Escalation of care
+365|174|6|3A-01|A|07/06/2025 02:48 AM|07/14/2025 07:13 PM|10|Transfer to ward for recovery
+366|175|1|ED-27|C|01/28/2025 06:41 AM|01/28/2025 09:27 AM|4|Arrival via emergency department
+367|175|2|MI-26|B|01/28/2025 09:27 AM|02/10/2025 02:01 PM|15|Escalation of care
+368|175|4|GI-29|B|02/10/2025 02:01 PM|02/14/2025 09:59 PM|14|Hemodynamic instability
+369|175|6|3A-29|A|02/14/2025 09:59 PM|02/16/2025 08:23 PM|12|Transfer to ward for recovery
+370|176|1|ED-08|D|01/13/2024 11:56 AM|01/13/2024 01:48 PM|4|Arrival via emergency department
+371|176|4|GI-03|B|01/13/2024 01:48 PM|01/19/2024 04:23 AM|16|Hemodynamic instability
+372|177|5|CC-09|B|02/26/2024 08:41 AM|02/27/2024 09:09 AM|15|Direct admission
+373|177|12|SD-20|B|02/27/2024 09:09 AM|02/28/2024 02:58 AM|8|Step-down after stabilization
+374|177|9|5C-16|A|02/28/2024 02:58 AM|03/01/2024 03:38 PM|8|Transfer to ward for recovery
+375|178|11|7N-10|B|07/02/2024 08:11 PM|07/07/2024 10:17 AM|19|Direct admission
+376|179|11|7N-27|B|04/30/2024 03:07 AM|05/01/2024 05:17 AM|18|Direct admission
+377|180|9|5C-13|A|05/11/2024 10:42 PM|05/15/2024 04:29 PM|8|Direct admission
+378|181|1|ED-14||04/13/2025 05:07 PM|04/14/2025 01:27 AM|2|Arrival via emergency department
+379|181|10|6R-23|C|04/14/2025 01:27 AM|04/17/2025 11:14 PM|5|Clinically improved
+380|182|1|ED-22|B|N/A|07/22/2025 01:24 PM|2|Arrival via emergency department
+381|182|9|5C-13|D|07/22/2025 01:24 PM|07/30/2025 02:53 PM|8|Transfer to ward for recovery
+382|183|1|ED-13|D|11/03/2025 01:03 PM|11/03/2025 06:35 PM|3|Arrival via emergency department
+383|183|6|3A-05|N/A|11/03/2025 06:35 PM|11/09/2025 03:05 AM|10|Bed management
+384|184|1|ED-24|B|03/21/2026 04:40 AM|03/21/2026 10:00 AM|2|Arrival via emergency department
+385|184|4|GI-21|B|03/21/2026 10:00 AM|03/27/2026 12:19 PM|15|Respiratory deterioration
+386|184|12|SD-06|D|03/27/2026 12:19 PM|03/29/2026 05:26 AM|10|Step-down after stabilization
+387|184|6|3A-20|C|03/29/2026 05:26 AM|04/03/2026 08:33 AM|11|Clinically improved
+388|185|1|ED-11|D|08/01/2024 08:25 PM|08/02/2024 02:50 AM|1|Arrival via emergency department
+389|185|8|4A-16||08/02/2024 02:50 AM|08/06/2024 11:08 AM|17|Bed management
+390|186|1|ED-17|N/A|12/10/2024 06:42 PM|12/11/2024 09:22 AM|2|Arrival via emergency department
+391|186|4|GI-05|B|12/11/2024 09:22 AM|12/15/2024 08:50 AM|14|Post-operative monitoring
+392|186|12|SD-18|D|12/15/2024 08:50 AM|12/16/2024 03:24 AM|10|Step-down after stabilization
+393|186|6|3A-05|A|12/16/2024 03:24 AM|12/19/2024 04:35 AM|10|Bed management
+394|187|9|5C-21|D|03/01/2024 04:07 AM|03/06/2024 05:37 AM|8|Direct admission
+395|188|1|ED-04|D|07/25/2024 06:34 PM|07/26/2024 12:10 AM|4|Arrival via emergency department
+396|188|4|GI-25|D|07/26/2024 12:10 AM|07/30/2024 09:20 AM|16|Respiratory deterioration
+397|188|7|3B-03|D|07/30/2024 09:20 AM|08/07/2024 09:00 PM|22|Transfer to ward for recovery
+398|189|1|ED-24|C|03/07/2025 05:41 AM|03/07/2025 02:18 PM|2|Arrival via emergency department
+399|189|4|GI-18|N/A|03/07/2025 02:18 PM|03/07/2025 12:23 AM|14|Respiratory deterioration
+400|189|7|3B-03|B|03/15/2025 02:04 PM|03/17/2025 10:23 PM|20|Transfer to ward for recovery
+401|190|8|4A-28|D|05/09/2025 04:34 AM|05/12/2025 10:08 AM|17|Direct admission
+402|191|1|ED-23|D|08/16/2025 07:09 AM|08/16/2025 03:54 PM|4|Arrival via emergency department
+403|191|6|3A-29|C|08/16/2025 03:54 PM|08/25/2025 08:30 AM|13|Clinically improved
+404|192|10|6R-25|D|11/06/2025 08:28 PM|11/07/2025 03:42 AM|7|Direct admission
+405|192|4|GI-05|N/A|11/07/2025 03:42 AM|11/21/2025 07:05 AM|15|Post-operative monitoring
+406|192|10|6R-06|C|11/21/2025 07:05 AM|11/28/2025 10:10 PM|5|Transfer to ward for recovery
+407|193|5|CC-10|D|06/05/2025 09:33 PM|06/06/2025 11:39 PM|14|Direct admission
+408|193|9|5C-02|C|06/06/2025 11:39 PM|06/13/2025 04:27 PM|9|Transfer to ward for recovery
+409|194|8|4A-11|A|05/19/2025 09:41 PM|05/22/2025 11:30 PM|17|Direct admission
+410|195|8|4A-05|A|08/24/2025 06:55 PM|08/25/2025 06:58 PM|17|Direct admission
+411|196|1|ED-11||11/29/2024 10:56 PM|11/30/2024 07:47 AM|2|Arrival via emergency department
+412|196|7|3B-07|N/A|11/30/2024 07:47 AM|12/05/2024 03:06 PM|20|Bed management
+413|197|10|6R-11|C|09/12/2024 02:48 PM|09/13/2024 11:35 AM|6|Direct admission
+414|198|1|ED-28|A|02/17/2026 09:48 AM|02/17/2026 01:22 PM|2|Arrival via emergency department
+415|198|6|3A-13|B|02/17/2026 01:22 PM|02/22/2026 09:14 PM|13|Transfer to ward for recovery
+416|199|11|7N-28|C|06/14/2025 04:33 PM|06/17/2025 01:19 AM|18|Direct admission
+417|200|1|ED-22|A|09/25/2024 07:41 PM|09/25/2024 09:34 PM|2|Arrival via emergency department
+418|200|6|3A-21|N/A|09/25/2024 09:34 PM|10/04/2024 10:36 AM|13|Transfer to ward for recovery
+419|201|1|ED-08|C|07/07/2024 07:56 AM|07/07/2024 10:32 AM|3|Arrival via emergency department
+420|201|6|3A-03|D|07/07/2024 10:32 AM|07/14/2024 03:54 PM|12|Bed management
+421|202|1|ED-21|C|01/07/2025 05:12 PM|01/08/2025 01:00 AM|1|Arrival via emergency department
+422|202|4|GI-28|C|01/08/2025 01:00 AM|01/10/2025 12:02 PM|15|Respiratory deterioration
+423|203|8|4A-01|N/A|08/01/2025 08:33 PM|08/10/2025 09:02 AM|17|Direct admission
+424|204|1|ED-21|N/A|09/21/2025 09:03 AM|09/21/2025 01:25 PM|4|Arrival via emergency department
+425|204|6|3A-10||09/21/2025 01:25 PM|09/26/2025 04:55 AM|12|Clinically improved
+426|205|1|ED-08|N/A|06/03/2025 02:12 PM|06/03/2025 07:16 PM|1|Arrival via emergency department
+427|205|4|GI-14|B|06/03/2025 07:16 PM|06/08/2025 11:23 PM|15|Respiratory deterioration
+428|206|5|CC-14|B|07/30/2024 02:33 AM|08/07/2024 12:46 AM|16|Direct admission
+429|206|9|5C-25|A|08/07/2024 12:46 AM|08/10/2024 07:04 AM|8|Transfer to ward for recovery
+430|207|1|ED-01|B|03/01/2026 09:33 PM|03/02/2026 04:17 AM|2|Arrival via emergency department
+431|207|2|MI-13|C|03/02/2026 04:17 AM|03/03/2026 07:48 PM|14|Hemodynamic instability
+432|207|12|SD-01|A|03/03/2026 07:48 PM|03/05/2026 11:08 PM|20|Step-down after stabilization
+433|207|7|3B-09||03/05/2026 11:08 PM|03/10/2026 09:17 PM|20|Bed management
+434|208|1|ED-29|A|02/26/2024 08:25 AM|02/26/2024 10:18 AM|4|Arrival via emergency department
+435|208|9|5C-04|A|02/26/2024 10:18 AM|03/03/2024 12:29 PM|8|Transfer to ward for recovery
+436|209|4|GI-08|D|04/22/2024 04:30 AM|04/25/2024 04:51 PM|16|Direct admission
+437|209|5|CC-19|A|04/25/2024 04:51 PM|04/27/2024 04:00 AM|16|Hemodynamic instability
+438|209|6|3A-03|B|04/27/2024 04:00 AM|05/06/2024 03:22 AM|11|Bed management
+439|210|11|7N-18|C|08/12/2024 01:43 PM|08/16/2024 09:11 AM|18|Direct admission
+440|211|1|ED-05|B|09/17/2024 01:41 PM|09/17/2024 06:03 PM|1|Arrival via emergency department
+441|211|7|3B-09|B|09/17/2024 06:03 PM|09/22/2024 09:47 PM|20|Bed management
+442|212|1|ED-23|B|12/13/2024 03:56 AM|12/13/2024 12:56 PM|1|Arrival via emergency department
+443|212|9|5C-06||12/13/2024 12:56 PM|12/20/2024 11:57 PM|8|Bed management
+444|213|1|ED-19||02/26/2025 07:48 AM|02/26/2025 02:16 PM|2|Arrival via emergency department
+445|213|6|3A-20|A|02/26/2025 02:16 PM|03/04/2025 11:48 AM|12|Clinically improved
+446|214|11|7N-15|C|06/01/2025 12:13 AM|06/03/2025 03:24 AM|18|Direct admission
+447|215|1|ED-13|A|10/11/2025 05:57 AM|10/11/2025 06:05 PM|1|Arrival via emergency department
+448|215|5|CC-21|A|10/11/2025 06:05 PM|10/25/2025 08:11 AM|15|Post-operative monitoring
+449|215|9|5C-05|C|10/25/2025 08:11 AM|10/29/2025 11:24 AM|9|Clinically improved
+450|216|99|ED-21|D|01/07/2025 10:07 PM|01/08/2025 12:27 AM|4|Arrival via emergency department
+451|216|9|5C-05|A|01/08/2025 12:27 AM|01/13/2025 08:13 PM|8|Bed management
+452|217|1|ED-09|D|06/03/2024 02:07 AM|06/03/2024 06:19 AM|4|Arrival via emergency department
+453|217|2|MI-01|D|06/03/2024 06:19 AM|06/08/2024 10:05 PM|14|Respiratory deterioration
+454|217|12|SD-13|B|06/08/2024 10:05 PM|06/09/2024 08:49 PM|12|Step-down after stabilization
+455|217|6|3A-01|C|06/09/2024 08:49 PM|06/16/2024 09:47 PM|13|Clinically improved
+456|218|10|6R-05|C|11/13/2024 12:50 AM|11/16/2024 12:56 PM|7|Direct admission
+457|219|1|ED-14|N/A|05/27/2025 03:41 PM|05/27/2025 05:36 PM|1|Arrival via emergency department
+458|219|4|GI-26|D|05/27/2025 05:36 PM|05/29/2025 12:47 AM|15|Respiratory deterioration
+459|219|6|3A-25|D|05/29/2025 12:47 AM|06/02/2025 02:47 AM|12|Clinically improved
+460|220|8|4A-18|D|10/01/2024 10:12 AM|10/03/2024 11:39 AM|17|Direct admission
+461|221|1|ED-16|D|06/29/2024 10:56 PM|06/30/2024 06:45 AM|3|Arrival via emergency department
+462|221|4|GI-22|C|06/30/2024 06:45 AM|07/11/2024 11:46 PM|16|Hemodynamic instability
+463|221|6|3A-26|A|07/11/2024 11:46 PM|07/18/2024 04:39 AM|10|Clinically improved
+464|222|8|4A-26|C|11/23/2024 04:33 AM|11/27/2024 10:00 AM|17|Direct admission
+465|223|1|ED-03|B|05/05/2025 09:48 AM|05/05/2025 06:36 PM|3|Arrival via emergency department
+466|223|7|3B-26|C|05/05/2025 06:36 PM|05/10/2025 11:08 PM|20|Bed management
+467|224|11|7N-10|D|09/20/2024 11:07 AM|09/24/2024 04:26 AM|19|Direct admission
+468|225|1|ED-08|N/A|04/10/2025 08:56 AM|04/10/2025 03:40 PM|3|Arrival via emergency department
+469|225|7|3B-28|D|04/10/2025 03:40 PM|04/13/2025 02:08 AM|20|Bed management
+470|226|8|4A-23|A|05/02/2024 12:25 PM|05/04/2024 04:03 AM|17|Direct admission
+471|227|6|3A-03|C|09/21/2024 05:42 AM|09/26/2024 01:44 PM|11|Direct admission
+472|228|1|ED-17|A|12/13/2024 08:39 PM|12/14/2024 03:28 AM|1|Arrival via emergency department
+473|228|6|3A-22|D|12/14/2024 03:28 AM|12/22/2024 04:35 PM|10|Bed management
+474|229|1|ED-03|B|02/06/2026 11:25 AM|02/06/2026 07:59 PM|3|Arrival via emergency department
+475|229|4|GI-12|A|02/06/2026 07:59 PM|02/19/2026 05:45 AM|15|Hemodynamic instability
+476|229|12|SD-12|B|02/19/2026 05:45 AM|02/20/2026 11:19 AM|12|Step-down after stabilization
+477|229|6|3A-30|D|02/20/2026 11:19 AM|02/23/2026 04:52 AM|13|Clinically improved
+478|230|1|ED-24|C|01/19/2026 05:25 PM|01/19/2026 08:43 PM|3|Arrival via emergency department
+479|230|5|CC-26|N/A|01/19/2026 08:43 PM|01/25/2026 11:14 PM|16|Hemodynamic instability
+480|230|12|SD-17|B|01/25/2026 11:14 PM|01/28/2026 06:44 AM|8|Step-down after stabilization
+481|230|9|5C-10|D|01/28/2026 06:44 AM|02/04/2026 07:41 AM|8|Transfer to ward for recovery
+482|231|1|ED-27|C|11/28/2024 11:33 PM|11/29/2024 03:51 AM|3|Arrival via emergency department
+483|231|2|MI-21|C|11/29/2024 03:51 AM|12/04/2024 05:06 AM|15|Hemodynamic instability
+484|231|7|3B-08|N/A|12/04/2024 05:06 AM|12/10/2024 10:05 PM|22|Clinically improved
+485|232|10|6R-22|C|04/25/2025 04:30 PM|04/28/2025 06:06 PM|5|Direct admission
+486|233|1|ED-24|D|06/07/2025 04:22 AM|06/07/2025 07:51 PM|3|Arrival via emergency department
+487|233|3|SI-30|C|06/07/2025 07:51 PM|06/13/2025 06:19 AM|14|Post-operative monitoring
+488|233|10|6R-11|B|06/13/2025 06:19 AM|06/15/2025 01:17 AM|7|Bed management
+489|234|4|GI-30|B|12/26/2025 02:41 AM|12/31/2025 12:14 PM|15|Direct admission
+490|234|7|3B-19|A|12/31/2025 12:14 PM|01/01/2026 09:07 AM|20|Transfer to ward for recovery
+491|235|1|ED-14|A|04/17/2025 10:48 AM|04/17/2025 12:19 PM|2|Arrival via emergency department
+492|235|10|6R-21|B|04/17/2025 12:19 PM|04/23/2025 01:31 PM|7|Transfer to ward for recovery
+493|236|1|ED-04|B|07/19/2025 03:14 PM|07/19/2025 05:57 PM|3|Arrival via emergency department
+494|236|3|SI-18|D|07/19/2025 05:57 PM|07/20/2025 04:31 PM|16|Hemodynamic instability
+495|236|4|GI-04|A|07/20/2025 04:31 PM|07/24/2025 12:18 PM|16|Respiratory deterioration
+496|236|8|4A-03|C|07/24/2025 12:18 PM|08/02/2025 10:38 AM|17|Bed management
+497|237|1|ED-05|C|08/01/2024 08:33 AM|08/01/2024 05:11 PM|1|Arrival via emergency department
+498|237|4|GI-22|B|08/01/2024 05:11 PM|08/05/2024 02:48 AM|14|Respiratory deterioration
+499|237|12|SD-05|A|08/05/24 02:48 AM|08/06/2024 06:27 AM|11|Step-down after stabilization
+500|237|6|3A-08|B|08/06/2024 06:27 AM|08/10/2024 05:24 PM|10|Bed management
+501|238|5|CC-22|A|10/31/2024 03:40 PM|11/12/2024 01:35 AM|15|Direct admission
+502|238|12|SD-20|D|11/12/2024 01:35 AM|11/13/2024 12:38 AM|8|Step-down after stabilization
+503|238|9|5C-23|D|11/13/2024 12:38 AM|11/15/2024 09:08 PM|9|Clinically improved
+504|239|1|ED-14|C|04/09/2025 11:58 PM|04/10/2025 05:12 AM|4|Arrival via emergency department
+505|239|10|6R-10|B|04/10/2025 05:12 AM|04/16/2025 01:29 PM|7|Transfer to ward for recovery
+506|240|1|ED-28|N/A|10/19/2026 08:31 PM|10/20/2026 03:06 AM|2|Arrival via emergency department
+220|103|8|4A-16|B|11/15/2024 06:47 AM|11/19/2024 09:37 AM|17|Bed management
+507|240|6|3A-08||10/20/2026 03:06 AM||13|Transfer to ward for recovery
+508|241|1|ED-25|D|08/23/2024 03:12 PM|08/23/2024 09:16 PM|4|Arrival via emergency department
+509|241|6|3A-07|D|2024-08-23 21:16|09/01/2024 06:58 PM|10|Clinically improved
+510|242|1|ED-13|C|02/29/2024 03:25 AM|02/29/2024 06:55 AM|1|Arrival via emergency department
+511|242|7|3B-22|C|02/29/2024 06:55 AM|03/05/2024 05:17 AM|22|Clinically improved
+512|243|8|4A-07|A|03/05/2024 07:41 PM|03/13/2024 11:34 AM|17|Direct admission
+513|244|1|ED-15|A|04/04/2024 01:14 AM|04/04/2024 06:01 AM|1|Arrival via emergency department
+514|244|5|CC-23||04/04/2024 06:01 AM|04/07/2024 03:28 AM|16|Hemodynamic instability
+515|244|3|SI-18|B|04/07/2024 03:28 AM|04/09/2024 05:39 AM|15|Respiratory deterioration
+516|244|9|5C-30|A|04/09/2024 05:39 AM|04/17/2024 01:40 AM|9|Bed management
+517|245|1|ED-23|B|11/06/2024 08:25 PM|11/07/2024 02:24 AM|1|Arrival via emergency department
+518|245|7|3B-03|C|11/07/2024 02:24 AM|11/11/2024 01:15 AM|6|Bed management
+519|246|10|6R-30|C|06/28/2024 12:48 AM|06/29/2024 09:34 AM|7|Direct admission
+520|247|1|ED-04|A|11/18/2024 10:36 AM|11/18/2024 01:17 PM|4|Arrival via emergency department
+521|247|6|3A-24|D|11/18/2024 01:17 PM|11/21/2024 05:45 PM|10|Bed management
+522|248|11|7N-01|N/A|01/01/2025 04:09 PM|01/04/2025 10:17 AM|19|Direct admission
+523|249|1|ED-27|D|04/17/2025 01:18 PM|04/17/2025 06:22 PM|3|Arrival via emergency department
+524|249|4|GI-22||04/17/2025 06:22 PM|04/22/2025 07:14 PM|16|Escalation of care
+525|249|12|SD-14|B|04/22/2025 07:14 PM|04/23/2025 11:12 PM|9|Step-down after stabilization
+526|249|9|5C-04|B|04/23/2025 11:12 PM|04/29/2025 09:48 PM|8|Bed management
+527|250|1|ED-01|A|08/29/2025 05:19 PM|08/29/2025 07:36 PM|3|Arrival via emergency department
+528|250|4|GI-28|D|08/29/2025 07:36 PM|08/31/2025 07:05 AM|14|Escalation of care
+529|250|7|3B-30|C|08/31/2025 07:05 AM|09/09/2025 05:20 AM|22|Transfer to ward for recovery
+530|251|1|ED-20|C|10/15/2025 02:00 AM|10/15/2025 03:38 AM|1|Arrival via emergency department
+531|251|7|3B-11|A|10/15/2025 03:38 AM|10/20/2025 07:04 AM|7|Clinically improved
+532|252|1|ED-24|A|01/22/2024 03:12 PM|01/22/2024 10:24 PM|3|Arrival via emergency department
+533|252|10|6R-28|C|01/22/2024 10:24 PM|01/29/2024 12:43 PM|5|Bed management
+534|253|1|ED-21|A|09/04/2025 09:56 AM|09/04/2025 01:45 PM|4|Arrival via emergency department
+535|253|5|CC-03|B|09/04/2025 01:45 PM|09/09/2025 09:03 AM|14|Escalation of care
+536|253|9|5C-16||09/09/2025 09:03 AM|09/13/2025 05:47 AM|8|Transfer to ward for recovery
+537|254|1|ED-14|D|03/13/2026 12:00 AM|03/13/2026 07:17 AM|4|Arrival via emergency department
+538|254|5|CC-03|B|03/13/2026 07:17 AM|03/18/2026 09:26 PM|16|Hemodynamic instability
+539|254|9|5C-07|A|03/18/2026 09:26 PM|03/24/2026 07:48 PM|9|Transfer to ward for recovery
+540|255|98|ED-29|A|07/31/2025 01:07 PM|07/31/2025 10:04 PM|2|Arrival via emergency department
+541|255|9|5C-04|D|07/31/2025 10:04 PM|08/02/2025 08:14 AM|9|Bed management
+542|256|1|ED-01|N/A|09/09/2025 06:49 PM|09/10/2025 12:17 AM|1|Arrival via emergency department
+543|256|6|3A-10|B|09/10/2025 12:17 AM|09/15/2025 03:25 AM|11|Clinically improved
+544|257|9|5C-27|D|12/22/2025 07:49 PM|12/24/2025 01:54 PM|8|Direct admission
+545|258|1|ED-15|B|03/18/2025 04:48 AM|03/18/2025 11:06 AM|2|Arrival via emergency department
+546|258|6|3A-08|A|03/18/2025 11:06 AM|03/22/2025 07:34 PM|11|Transfer to ward for recovery
+547|259|1|ED-14|B|08/27/2025 09:25 PM|08/28/2025 12:48 AM|1|Arrival via emergency department
+548|259|6|3A-25|B|08/28/2025 12:48 AM|09/02/2025 11:11 AM|10|Bed management
+549|260|1|ED-27|A|12/01/2024 04:12 AM|12/01/2024 11:21 AM|3|Arrival via emergency department
+550|260|8|4A-15|C|12/01/2024 11:21 AM|12/10/2024 09:47 AM|17|Clinically improved
+551|261|1|ED-14||04/11/2025 08:52 PM|04/12/2025 04:43 AM|4|Arrival via emergency department
+552|261|5|CC-27|D|04/12/2025 04:43 AM|04/13/2025 06:56 AM|16|Respiratory deterioration
+553|261|12|SD-13|D|04/13/2025 06:56 AM|04/15/2025 02:18 AM|9|Step-down after stabilization
+554|261|9|5C-25|N/A|04/15/2025 02:18 AM|04/16/2025 02:28 AM|8|Transfer to ward for recovery
+555|262|8|4A-11|B|06/21/2025 03:56 AM|06/23/2025 06:57 PM|17|Direct admission
+556|263|1|ED-20|N/A|10/10/2025 12:27 AM|10/10/2025 03:15 AM|2|Arrival via emergency department
+557|263|5|CC-20|A|10/10/2025 03:15 AM|10/18/2025 06:13 AM|15|Hemodynamic instability
+558|263|4|GI-23|N/A|10/18/2025 06:13 AM|10/20/2025 02:00 PM|14|Hemodynamic instability
+559|263|12|SD-17|D|10/20/2025 02:00 PM|10/22/2025 06:18 AM|9|Step-down after stabilization
+560|263|9|5C-19|B|10/22/2025 06:18 AM|10/30/2025 06:43 PM|9|Bed management
+561|264|1|ED-12|A|01/03/2026 09:03 PM|01/04/2026 12:43 AM|4|Arrival via emergency department
+562|264|7|3B-05|N/A|01/04/2026 12:43 AM|01/09/2026 03:10 PM|22|Bed management
+563|265|1|ED-13|D|07/21/2024 01:00 AM|07/21/2024 06:55 AM|2|Arrival via emergency department
+564|265|2|MI-08|D|07/21/2024 06:55 AM|07/25/2024 12:32 AM|16|Respiratory deterioration
+565|265|6|3A-07|C|07/25/2024 12:32 AM|07/31/2024 01:16 PM|12|Transfer to ward for recovery
+566|266|1|ED-12|C|11/01/2024 12:31 AM|11/01/2024 02:57 AM|3|Arrival via emergency department
+567|266|10|6R-23|C|11/01/2024 02:57 AM|11/08/2024 10:45 AM|6|Clinically improved
+568|267|4|GI-25|B|12/11/2024 05:12 PM|12/14/2024 08:38 PM|14|Direct admission
+569|267|6|3A-11|A|12/14/2024 08:38 PM|12/21/2024 10:57 PM|12|Transfer to ward for recovery
+570|268|1|ED-23|C|05/01/2025 07:28 AM|05/01/2025 01:22 PM|4|Arrival via emergency department
+571|268|4|GI-13|C|05/01/2025 01:22 PM|05/02/2025 01:17 PM|14|Hemodynamic instability
+572|269|1|ED-27|A|03/28/2025 09:25 PM|03/28/2025 11:11 PM|3|Arrival via emergency department
+573|269|6|3A-07|N/A|03/28/2025 11:11 PM|04/04/2025 11:44 AM|13|Clinically improved
+574|270|11|7N-17|A|09/23/2024 04:00 AM|09/23/2024 08:58 AM|18|Direct admission
+575|270|4|GI-24|B|09/23/2024 08:58 AM|09/24/2024 01:00 PM|15|Post-operative monitoring
+576|270|3|SI-10|D|09/24/2024 01:00 PM|09/29/2024 09:24 AM|15|Escalation of care
+577|270|12|SD-21|B|09/29/2024 09:24 AM|10/01/2024 02:05 PM|19|Step-down after stabilization
+578|270|11|7N-12|A|10/01/2024 02:05 PM|10/03/2024 03:21 PM|18|Clinically improved
+579|271|10|6R-07|A|07/19/2024 02:07 AM|07/20/24 03:57 PM|6|Direct admission
+580|272|1|ED-22|D|11/20/2024 05:48 PM|11/20/2024 08:46 PM|1|Arrival via emergency department
+581|272|7|3B-01|B|11/20/2024 08:46 PM|11/28/2024 10:02 AM|20|Bed management
+582|273|1|ED-11|B|01/15/2025 07:55 AM|01/15/2025 10:54 AM|1|Arrival via emergency department
+583|273|6|3A-05||01/15/2025 10:54 AM|01/22/2025 08:58 PM|13|Transfer to ward for recovery
+584|274|9|5C-29|N/A|06/19/2025 07:56 AM|06/22/2025 11:17 AM|9|Direct admission
+585|275|7|3B-29|N/A|07/05/2025 05:25 AM|07/13/2025 01:50 AM|22|Direct admission
+586|276|11|7N-02|C|04/07/2025 08:12 PM|04/12/2025 02:16 AM|19|Direct admission
+587|277|1|ED-13|A|03/05/2025 11:48 PM|03/06/2025 04:53 AM|3|Arrival via emergency department
+588|277|6|3A-15|N/A|03/06/2025 04:53 AM|03/09/2025 05:27 AM|12|Bed management
+589|278|1|ED-03|D|01/13/2024 07:33 AM|01/13/2024 09:16 AM|1|Arrival via emergency department
+590|278|2|MI-09|C|01/13/2024 09:16 AM|01/26/2024 01:15 AM|14|Hemodynamic instability
+591|278|6|3A-06|N/A|01/26/2024 01:15 AM|02/02/2024 04:46 AM|10|Bed management
+592|279|1|ED-01|D|07/16/2025 04:48 PM|07/17/2025 01:40 AM|2|Arrival via emergency department
+593|279|11|7N-14|A|07/17/2025 01:40 AM|07/18/2025 04:51 PM|19|Clinically improved
+594|280|1|ED-04|A|10/05/2025 10:46 AM|10/05/2025 02:24 PM|3|Arrival via emergency department
+595|280|5|CC-24|B|10/05/2025 02:24 PM|10/07/2025 04:40 AM|14|Escalation of care
+596|281|1|ED-12|C|11/19/2025 06:41 PM|11/20/2025 01:04 AM|2|Arrival via emergency department
+597|281|6|3A-13|C|11/20/2025 01:04 AM|11/25/2025 09:28 AM|11|Transfer to ward for recovery
+598|282|6|3A-19|C|03/17/2026 11:21 PM|03/19/2026 12:23 AM|11|Direct admission
+599|283|1|ED-21|C|06/07/2025 04:33 AM|06/07/2025 09:20 AM|1|Arrival via emergency department
+600|283|9|5C-22|B|06/07/2025 09:20 AM|06/11/2025 09:03 AM|8|Transfer to ward for recovery
+601|284|2|MI-06|D|08/03/2025 11:33 AM|08/07/2025 03:35 AM|14|Direct admission
+602|284|3|SI-14||08/07/2025 03:35 AM|08/11/25 09:25 PM|15|Respiratory deterioration
+603|284|6|3A-11|D|08/11/2025 09:25 PM|08/20/2025 04:01 AM|12|Clinically improved
+604|285|1|ED-14|D|01/02/2026 10:55 AM|01/02/2026 12:30 PM|1|Arrival via emergency department
+605|285|11|7N-20|D|01/02/2026 12:30 PM|01/06/2026 04:22 PM|19|Clinically improved
+606|286|1|ED-24|D|12/27/2025 11:25 AM|12/27/2025 12:57 PM|1|Arrival via emergency department
+607|286|7|3B-22|B|12/27/2025 12:57 PM|01/04/2026 08:35 PM|7|Transfer to ward for recovery
+608|287|1|ED-25|A|11/28/2024 11:25 AM|11/28/2024 07:26 PM|2|Arrival via emergency department
+609|287|10|6R-08|A|11/28/2024 07:26 PM|12/02/2024 10:20 PM|5|Clinically improved
+610|288|8|4A-09|N/A|06/15/2024 06:41 AM|06/18/2024 05:33 AM|17|Direct admission
+611|289|9|5C-11|B|11/07/2024 06:42 PM|11/10/2024 04:59 AM|8|Direct admission
+612|290|11|7N-02|A|03/25/2025 04:53 PM|03/29/2025 02:55 AM|19|Direct admission
+613|291|1|ED-09|N/A|06/19/2025 01:11 PM|06/19/2025 09:31 PM|1|Arrival via emergency department
+614|291|7|3B-07|D|06/19/2025 09:31 PM|06/28/2025 07:59 PM|22|Clinically improved
+615|292|1|ED-03|N/A|10/02/2025 11:41 AM|10/02/2025 08:44 PM|2|Arrival via emergency department
+616|292|5|CC-28|D|10/02/2025 08:44 PM|10/06/2025 05:54 PM|16|Post-operative monitoring
+617|292|12|SD-20|B|10/06/2025 05:54 PM|10/07/2025 10:47 PM|9|Step-down after stabilization
+618|292|9|5C-09|C|10/07/2025 10:47 PM|10/16/2025 12:44 AM|9|Clinically improved
+619|293|1|ED-26|B|03/01/2026 06:14 PM|03/01/2026 08:56 PM|1|Arrival via emergency department
+620|293|4|GI-27|C|03/01/2026 08:56 PM|03/03/2026 01:16 AM|16|Respiratory deterioration
+621|293|6|3A-10|D|03/03/2026 01:16 AM|03/05/2026 03:28 AM|11|Bed management
+622|294|7|3B-28|N/A|02/19/2026 03:56 AM|02/23/2026 05:08 AM|20|Direct admission
+623|295|6|3A-02||04/02/2025 04:12 AM|04/05/2025 01:19 PM|13|Direct admission
+624|296|1|ED-09|A|08/31/2025 11:48 AM|08/31/2025 07:41 PM|2|Arrival via emergency department
+625|296|2|MI-01|B|08/31/2025 07:41 PM|09/01/2025 10:11 PM|14|Hemodynamic instability
+626|296|4|GI-09|B|09/01/2025 10:11 PM|09/06/2025 03:34 PM|14|Respiratory deterioration
+627|297|4|GI-15|B|07/09/2025 04:33 PM|07/11/2025 08:48 PM|16|Direct admission
+628|297|12|SD-10|A|07/11/2025 08:48 PM|07/14/2025 12:31 AM|22|Step-down after stabilization
+629|297|7|3B-16|N/A|07/14/2025 12:31 AM|07/21/2025 07:40 AM|22|Transfer to ward for recovery
+630|298|8|4A-19|C|09/01/2025 11:13 PM|09/05/2025 04:55 AM|17|Direct admission
+631|299|1|ED-09||01/16/2026 03:20 AM|01/16/2026 09:29 AM|3|Arrival via emergency department
+632|299|2|MI-23|N/A|16/01/2026 09:29 AM|01/21/2026 09:06 AM|15|Hemodynamic instability
+633|300|7|3B-21|A|05/28/2025 01:33 PM|05/29/2025 11:40 PM|7|Direct admission
+634|301|9|5C-07|B|08/13/2025 03:55 AM|08/16/2025 06:59 AM|9|Direct admission
+635|302|1|ED-28|D|07/31/2024 11:25 PM|08/01/2024 12:58 AM|1|Arrival via emergency department
+636|302|10|6R-13|D|08/01/2024 12:58 AM|08/09/2024 03:34 AM|7|Transfer to ward for recovery
+637|303|8|4A-20|A|10/08/2024 06:22 PM|10/11/2024 07:31 AM|17|Direct admission
+638|304|1|ED-13|D|12/11/2024 01:11 AM|12/11/2024 02:06 PM|1|Arrival via emergency department
+639|304|4|GI-07|B|12/11/2024 02:06 PM|12/24/2024 07:40 AM|15|Post-operative monitoring
+640|304|12|SD-15|A|12/24/2024 07:40 AM|12/25/2024 04:33 PM|8|Step-down after stabilization
+641|304|9|5C-20|A|12/25/2024 04:33 PM|12/31/2024 10:51 AM|8|Bed management
+642|305|1|ED-02|B|08/03/2025 08:00 AM|08/03/2025 02:40 PM|1|Arrival via emergency department
+643|305|9|5C-18|N/A|08/03/2025 02:40 PM|08/10/2025 05:21 PM|8|Transfer to ward for recovery
+644|306|1|ED-28|B|10/25/2024 05:48 AM|10/25/2024 09:39 AM|2|Arrival via emergency department
+645|306|6|3A-23|D|10/25/2024 09:39 AM|10/30/2024 01:55 PM|10|Clinically improved
+646|307|1|ED-25|C|02/14/2024 12:48 PM|02/14/2024 09:19 PM|1|Arrival via emergency department
+474|229|1|ED-03|B|02/06/2026 11:25 AM|02/06/2026 07:59 PM|3|Arrival via emergency department
+647|307|10|6R-18|C|02/14/2024 09:19 PM|02/17/2024 04:46 AM|6|Transfer to ward for recovery
+648|308|8|4A-29|C|03/18/2024 07:18 AM|03/21/2024 05:32 PM|17|Direct admission
+649|309|1|ED-19|B|05/27/2024 11:36 AM|05/27/2024 01:21 PM|1|Arrival via emergency department
+650|309|6|3A-26|A|05/27/2024 01:21 PM|06/01/2024 10:23 PM|13|Bed management
+651|310|1|ED-15|C|06/25/2024 06:45 PM|06/26/2024 03:21 AM|4|Arrival via emergency department
+652|310|5|CC-13|A|06/26/2024 03:21 AM|06/29/2024 01:44 AM|15|Post-operative monitoring
+653|310|9|5C-28|A|06/29/2024 01:44 AM|07/05/2024 12:34 PM|8|Clinically improved
+654|311|8|4A-05|A|07/22/2024 02:59 PM|07/24/2024 10:52 AM|17|Direct admission
+655|312|1|ED-22|A|08/15/2024 03:09 AM|08/15/2024 10:37 AM|2|Arrival via emergency department
+656|312|7|3B-28|C|08/15/2024 10:37 AM|08/16/2024 10:56 PM|22|Clinically improved
+657|313|11|7N-06|C|01/12/2025 06:07 PM|01/21/2025 04:54 PM|18|Direct admission
+658|314|1|ED-21|N/A|08/26/2024 01:07 PM|08/26/2024 03:38 PM|2|Arrival via emergency department
+659|314|9|5C-28|B|08/26/2024 03:38 PM|09/02/2024 10:12 PM|8|Bed management
+660|315|10|6R-25|C|04/23/2024 12:25 AM|04/25/2024 09:05 AM|7|Direct admission
+661|316|1|ED-17|A|07/27/2024 11:15 PM|07/28/2024 02:38 AM|3|Arrival via emergency department
+662|316|9|5C-03|A|07/28/2024 02:38 AM|08/06/2024 01:42 AM|9|Bed management
+663|317|9|5C-03|C|11/07/2024 09:51 AM|11/14/2024 03:18 PM|9|Direct admission
+664|318|1|ED-01|B|03/21/2025 09:00 PM|03/22/2025 02:47 AM|2|Arrival via emergency department
+665|318|8|4A-18|C|03/22/2025 02:47 AM|03/26/2025 05:31 AM|17|Bed management
+666|319|1|ED-12|B|06/02/2025 12:24 AM|06/02/2025 03:14 AM|3|Arrival via emergency department
+667|319|9|5C-18|C|06/02/2025 03:14 AM|06/06/2025 02:04 PM|9|Bed management
+668|320|1|ED-02|A|12/23/2025 12:12 PM|12/23/2025 06:07 PM|1|Arrival via emergency department
+669|320|2|MI-11|B|12/23/2025 06:07 PM|12/29/2025 03:30 PM|15|Escalation of care
+670|320|12|SD-23|N/A|12/29/2025 03:30 PM|12/31/2025 06:50 AM|22|Step-down after stabilization
+671|320|7|3B-11|A|12/31/2025 06:50 AM|01/07/2026 08:14 AM|22|Transfer to ward for recovery
+672|321|7|3B-08|C|03/13/2024 05:33 PM|03/18/2024 10:58 AM|20|Direct admission
+673|322|1|ED-12|D|05/15/2024 12:52 PM|05/15/2024 07:04 PM|1|Arrival via emergency department
+674|322|7|3B-15|D|05/15/2024 07:04 PM|05/19/2024 04:26 AM|5|Clinically improved
+675|323|11|7N-08|C|06/18/2024 05:56 PM|06/20/2024 04:17 PM|18|Direct admission
+676|324|1|ED-22|B|10/28/2026 10:49 PM|10/29/2026 05:09 AM|1|Arrival via emergency department
+677|324|7|3B-19|D|10/29/2026 05:09 AM|N/A|20|Bed management
+678|325|1|ED-28|B|01/02/2025 11:33 PM|01/03/2025 06:03 AM|2|Arrival via emergency department
+679|325|5|CC-02|C|01/03/2025 06:03 AM|01/08/2025 03:52 AM|16|Hemodynamic instability
+680|326|7|3B-06|A|02/10/2024 02:00 AM|02/18/2024 05:57 AM|20|Direct admission
+681|327|1|ED-11|B|05/15/2024 03:25 AM|05/15/2024 07:42 AM|1|Arrival via emergency department
+682|327|6|3A-25|B|05/15/2024 07:42 AM|05/23/2024 06:47 AM|13|Transfer to ward for recovery
+683|328|1|ED-17|C|07/27/2024 10:55 PM|07/28/2024 02:19 AM|4|Arrival via emergency department
+684|328|7|3B-02|B|07/28/2024 02:19 AM|08/03/2024 11:38 AM|20|Clinically improved
+685|329|1|ED-15|C|10/13/2024 08:47 PM|10/14/2024 02:31 AM|3|Arrival via emergency department
+686|329|7|3B-17|D|10/14/2024 02:31 AM|10/20/2024 05:24 PM|22|Clinically improved
+687|330|1|ED-14|N/A|02/11/2025 08:52 PM|02/12/2025 07:03 AM|4|Arrival via emergency department
+688|330|2|MI-29|A|02/12/2025 07:03 AM|02/13/2025 07:56 AM|16|Post-operative monitoring
+689|330|6|3A-01|A|02/13/2025 07:56 AM|02/15/2025 10:57 AM|11|Transfer to ward for recovery
+690|331|1|ED-10|B|04/20/2025 05:53 PM|04/20/2025 08:38 PM|4|Arrival via emergency department
+691|331|4|GI-08|A|04/20/2025 08:38 PM|05/04/2025 08:38 PM|16|Respiratory deterioration
+692|331|6|3A-28|B|05/04/2025 08:38 PM|05/12/2025 07:54 AM|12|Clinically improved
+693|332|7|3B-24|A|04/11/2025 11:07 AM|04/13/2025 09:42 PM|20|Direct admission
+694|333|1|ED-24||10/23/2024 11:48 PM|10/24/2024 02:16 AM|3|Arrival via emergency department
+695|333|6|3A-26|C|10/24/2024 02:16 AM|11/01/2024 02:17 PM|10|Transfer to ward for recovery
+696|334|1|ED-18|B|04/22/2024 05:25 PM|04/22/2024 11:05 PM|3|Arrival via emergency department
+697|334|4|GI-14|C|04/22/2024 11:05 PM|05/08/2024 04:06 AM|15|Hemodynamic instability
+698|334|7|3B-01|A|05/08/2024 04:06 AM|05/09/2024 07:38 PM|22|Clinically improved
+699|335|1|ED-20||07/04/2024 08:51 AM|07/04/2024 11:37 AM|4|Arrival via emergency department
+688|330|2|MI-29|A|02/12/2025 07:03 AM|02/13/2025 07:56 AM|16|Post-operative monitoring
+700|335|4|GI-07|C|07/04/2024 11:37 AM|07/10/2024 08:29 PM|16|Escalation of care
+701|335|6|3A-24|A|07/10/2024 08:29 PM|07/12/2024 04:59 PM|11|Clinically improved
+702|336|1|ED-03|D|10/02/2024 06:33 AM|10/02/2024 08:32 AM|2|Arrival via emergency department
+703|336|6|3A-28|A|10/02/2024 08:32 AM|10/08/2024 04:41 PM|12|Bed management
+704|337|8|4A-02|D|03/01/2025 05:30 PM|03/03/2025 05:36 AM|17|Direct admission
+705|338|1|ED-04|C|07/09/2025 03:25 AM|07/09/2025 11:32 AM|4|Arrival via emergency department
+706|338|2|MI-08|C|07/09/2025 11:32 AM|07/11/2025 07:24 AM|14|Escalation of care
+707|338|4|GI-25|D|07/11/2025 07:24 AM|07/13/2025 11:57 PM|15|Hemodynamic instability
+708|338|7|3B-15||07/13/2025 11:57 PM|07/15/2025 04:53 AM|20|Bed management
+709|339|1|ED-16|N/A|08/22/2025 07:42 PM|08/23/2025 02:19 AM|4|Arrival via emergency department
+710|339|7|3B-04|C|08/23/2025 02:19 AM|08/28/2025 02:19 AM|7|Bed management
+711|340|1|ED-27|B|10/22/2026 02:23 AM|10/22/2026 04:01 AM|1|Arrival via emergency department
+712|340|9|5C-21|A|10/22/2026 04:01 AM|N/A|9|Transfer to ward for recovery
+713|341|10|6R-29||07/22/2024 02:48 AM|07/27/2024 12:27 AM|7|Direct admission
+714|342|1|ED-13|C|09/10/2025 03:41 AM|09/10/2025 08:59 AM|2|Arrival via emergency department
+715|342|4|GI-15|D|09/10/2025 08:59 AM|09/13/2025 01:04 AM|15|Escalation of care
+716|343|1|ED-26|D|04/11/2025 09:25 AM|04/11/2025 11:56 AM|3|Arrival via emergency department
+717|343|7|3B-01|N/A|04/11/2025 11:56 AM|04/17/2025 08:08 PM|6|Transfer to ward for recovery
+718|344|8|4A-22|B|06/18/2025 05:08 AM|06/19/2025 10:19 AM|17|Direct admission
+719|345|5|CC-05|D|07/06/2025 09:43 AM|07/18/2025 11:39 PM|15|Direct admission
+720|346|1|ED-01|D|02/29/2024 12:48 PM|02/29/2024 07:33 PM|3|Arrival via emergency department
+721|346|8|4A-12|B|02/29/2024 07:33 PM|03/05/2024 07:54 PM|17|Bed management
+722|347|8|4A-04|B|05/05/2024 03:30 PM|05/07/2024 11:29 PM|17|Direct admission
+723|348|1|ED-02|A|06/16/2024 04:57 PM|06/16/2024 07:01 PM|2|Arrival via emergency department
+724|348|7|3B-09|N/A|06/16/2024 07:01 PM|06/18/2024 06:57 PM|20|Clinically improved
+725|349|1|ED-07|N/A|01/21/2025 07:07 PM|01/21/2025 10:41 PM|2|Arrival via emergency department
+726|349|7|3B-11|N/A|01/21/2025 10:41 PM|01/26/2025 04:42 PM|22|Bed management
+727|350|1|ED-27||03/11/2025 01:50 AM|03/11/2025 07:06 AM|4|Arrival via emergency department
+728|350|9|5C-23|B|03/11/2025 07:06 AM|03/20/2025 03:30 AM|9|Clinically improved
+729|351|1|ED-18|C|07/08/2025 01:36 PM|07/08/2025 06:21 PM|1|Arrival via emergency department
+730|351|5|CC-16|B|07/08/2025 06:21 PM|07/14/2025 08:26 AM|14|Respiratory deterioration
+731|351|3|SI-20|A|07/14/2025 08:26 AM|07/16/2025 10:53 PM|15|Respiratory deterioration
+732|351|9|5C-06|B|07/16/2025 10:53 PM|07/24/2025 02:24 AM|8|Transfer to ward for recovery
+733|352|8|4A-04|A|10/03/2025 11:32 PM|10/06/2025 04:21 AM|17|Direct admission
+734|353|4|GI-04||07/19/2025 02:25 AM|07/21/2025 08:42 PM|15|Direct admission
+735|353|2|MI-25|A|07/21/2025 08:42 PM|07/26/2025 07:40 PM|15|Hemodynamic instability
+736|353|6|3A-12|A|07/26/2025 07:40 PM|08/03/2025 10:49 PM|10|Clinically improved
+737|354|4|GI-04|C|10/19/2025 08:47 AM|10/21/2025 08:07 AM|14|Direct admission
+738|354|12|SD-28|C|10/21/2025 08:07 AM|10/22/2025 08:48 AM|19|Step-down after stabilization
+739|354|11|7N-15|A|10/22/2025 08:48 AM|10/24/2025 07:02 PM|19|Transfer to ward for recovery
+740|355|1|ED-06|D|01/15/2025 12:07 PM|01/15/2025 04:54 PM|3|Arrival via emergency department
+741|355|4|GI-28|A|01/15/2025 04:54 PM|01/19/2025 09:56 PM|15|Respiratory deterioration
+742|355|12|SD-20|C|01/19/2025 09:56 PM|01/22/2025 07:04 AM|11|Step-down after stabilization
+743|355|6|3A-12||01/22/2025 07:04 AM|01/23/2025 10:54 AM|10|Transfer to ward for recovery
+744|356|1|ED-16|A|08/06/2024 07:00 AM|08/06/2024 10:18 AM|1|Arrival via emergency department
+745|356|4|GI-04|C|08/06/2024 10:18 AM|08/07/2024 08:03 AM|16|Hemodynamic instability
+746|356|6|3A-28|B|08/07/2024 08:03 AM|08/08/2024 08:58 PM|13|Clinically improved
+747|357|7|3B-19|A|12/09/2024 11:11 PM|12/12/2024 12:30 AM|5|Direct admission
+748|358|4|GI-18|B|03/16/2025 01:43 PM|03/20/2025 10:19 AM|15|Direct admission
+749|358|12|SD-10|C|03/20/2025 10:19 AM|03/21/2025 11:37 AM|10|Step-down after stabilization
+750|358|6|3A-05|B|03/21/2025 11:37 AM|03/26/2025 08:19 PM|10|Clinically improved
+751|359|1|ED-08|D|02/04/2025 05:00 AM|02/04/2025 11:37 AM|3|Arrival via emergency department
+752|359|4|GI-27|C|02/04/2025 11:37 AM|02/12/2025 05:50 PM|16|Hemodynamic instability
+753|359|6|3A-23|D|02/12/2025 05:50 PM|02/16/2025 01:17 PM|13|Transfer to ward for recovery
+754|360|1|ED-26|A|04/02/2025 08:48 PM|04/03/2025 02:42 AM|3|Arrival via emergency department
+755|360|7|3B-16|N/A|04/03/2025 02:42 AM|04/07/2025 07:50 AM|22|Clinically improved
+756|361|1|ED-02|D|10/27/2026 01:38 AM|10/27/2026 06:57 AM|4|Arrival via emergency department
+757|361|10|6R-19|C|10/27/2026 06:57 AM||7|Transfer to ward for recovery
+758|362|11|7N-12|C|04/08/2024 02:12 PM|04/11/2024 04:20 PM|19|Direct admission
+759|363|1|ED-15|D|09/07/2024 11:01 AM|09/07/2024 02:03 PM|1|Arrival via emergency department
+760|363|4|GI-26|A|09/07/2024 02:03 PM|09/21/2024 03:07 AM|15|Escalation of care
+761|364|1|ED-07|D|03/03/2024 09:25 PM|03/04/2024 06:07 AM|1|Arrival via emergency department
+762|364|5|CC-24|C|03/04/2024 06:07 AM|03/06/2024 08:57 AM|16|Escalation of care
+763|364|12|SD-14|B|03/06/2024 08:57 AM|03/07/2024 09:54 AM|9|Step-down after stabilization
+764|364|9|5C-04|B|03/07/2024 09:54 AM|03/13/2024 07:03 PM|8|Transfer to ward for recovery
+765|365|4|GI-20|D|04/06/2024 07:20 PM|04/21/2024 01:37 PM|15|Direct admission
+766|365|2|MI-17|D|04/21/2024 01:37 PM|04/24/24 12:37 AM|14|Escalation of care
+767|365|9|5C-17|A|04/24/2024 12:37 AM|04/25/2024 09:33 PM|9|Bed management
+768|366|1|ED-16|C|11/26/2025 11:33 AM|11/26/2025 01:32 PM|1|Arrival via emergency department
+769|366|9|5C-19|D|11/26/2025 01:32 PM|12/02/2025 02:57 PM|8|Transfer to ward for recovery
+770|367|1|ED-12|A|02/24/2024 03:56 PM|02/24/2024 09:10 PM|4|Arrival via emergency department
+771|367|11|7N-14|D|02/24/2024 09:10 PM|03/02/2024 05:58 AM|19|Transfer to ward for recovery
+772|368|1|ED-29|B|N/A|04/17/2024 08:30 PM|4|Arrival via emergency department
+773|368|2|MI-23||04/17/2024 08:30 PM|2024-04-21 07:59|16|Respiratory deterioration
+774|368|7|3B-18|C|04/21/2024 07:59 AM|04/27/2024 01:33 AM|22|Transfer to ward for recovery
+775|369|7|3B-30|C|06/20/2024 08:08 AM|06/24/2024 12:36 AM|6|Direct admission
+94|43|6|3A-29|B|12/14/2024 05:24 AM|12/17/2024 08:52 PM|12|Transfer to ward for recovery
+776|370|1|ED-18|A|08/21/2024 04:16 AM|08/21/2024 11:04 AM|4|Arrival via emergency department
+777|370|6|3A-27|D|08/21/2024 11:04 AM|08/23/2024 05:09 PM|12|Transfer to ward for recovery
+778|371|6|3A-22|C|11/05/2025 07:56 AM|11/07/2025 01:11 AM|12|Direct admission
+779|372|1|ED-12|B|06/25/2025 08:56 AM|06/25/2025 11:20 AM|3|Arrival via emergency department
+780|372|7|3B-18|N/A|06/25/2025 11:20 AM|06/27/2025 07:23 AM|6|Transfer to ward for recovery
+781|373|11|7N-11|B|09/17/2025 05:09 AM|09/20/2025 10:16 AM|18|Direct admission
+782|374|4|GI-15|D|03/15/2024 04:41 PM|03/18/2024 06:08 PM|15|Direct admission
+783|374|9|5C-26|B|03/18/2024 06:08 PM|03/26/2024 07:10 PM|9|Transfer to ward for recovery
+784|375|1|ED-13||06/21/2024 11:35 AM|06/21/2024 06:27 PM|4|Arrival via emergency department
+785|375|4|GI-19|C|06/21/2024 06:27 PM|06/24/2024 07:52 PM|16|Escalation of care
+786|375|6|3A-12|D|06/24/2024 07:52 PM|07/03/2024 01:39 PM|13|Clinically improved
+787|376|1|ED-13|D|04/09/2024 10:48 PM|04/10/2024 02:36 AM|1|Arrival via emergency department
+788|376|7|3B-24||04/10/2024 02:36 AM|04/14/2024 08:37 PM|20|Bed management
+789|377|11|7N-08|D|05/28/2025 03:12 AM|05/31/2025 03:36 AM|19|Direct admission
+790|378|1|ED-03||01/14/2025 02:56 PM|01/12/2025 09:32 PM|1|Arrival via emergency department
+791|378|5|CC-05|A|01/14/2025 08:06 PM|01/18/2025 01:57 PM|16|Respiratory deterioration
+792|378|9|5C-28|C|01/18/2025 01:57 PM|01/24/2025 03:02 PM|9|Clinically improved
+793|379|9|5C-12|A|03/01/2025 04:52 PM|03/06/2025 11:24 AM|9|Direct admission
+794|380|1|ED-05|A|05/19/2024 05:00 PM|05/20/2024 01:22 AM|3|Arrival via emergency department
+795|380|2|MI-22|B|05/20/2024 01:22 AM|05/24/2024 07:52 PM|16|Escalation of care
+796|380|12|SD-27|N/A|05/24/2024 07:52 PM|05/26/2024 08:10 PM|10|Step-down after stabilization
+797|380|6|3A-17|D|05/26/2024 08:10 PM|05/27/2024 11:48 PM|11|Bed management
+798|381|1|ED-09|C|07/04/2024 12:19 PM|07/04/2024 03:09 PM|3|Arrival via emergency department
+799|381|5|CC-23|C|07/04/2024 03:09 PM|07/10/2024 02:20 AM|16|Hemodynamic instability
+800|382|8|4A-26||01/18/2025 09:48 PM|01/27/2025 06:56 PM|17|Direct admission
+801|383|3|SI-13|C|05/20/2025 09:57 PM|05/24/2025 12:19 AM|14|Direct admission
+802|383|12|SD-29|B|05/24/2025 12:19 AM|05/24/2025 12:48 PM|17|Step-down after stabilization
+803|383|8|4A-07|C|05/24/2025 12:48 PM|05/26/2025 07:51 PM|17|Transfer to ward for recovery
+804|384|8|4A-11|C|03/11/2025 04:56 PM|03/17/2025 08:23 PM|17|Direct admission
+805|385|1|ED-05|B|10/23/2026 06:22 PM|10/23/2026 09:51 PM|4|Arrival via emergency department
+806|385|7|3B-14|C|10/23/2026 09:51 PM||22|Transfer to ward for recovery
+807|386|1|ED-06|B|10/12/2025 10:33 PM|10/13/2025 12:14 AM|4|Arrival via emergency department
+808|386|6|3A-01|D|10/13/2025 12:14 AM|10/17/2025 01:52 PM|13|Bed management
+809|387|1|ED-26|A|12/09/2025 01:41 PM|12/09/2025 09:55 PM|2|Arrival via emergency department
+810|387|7|3B-28|B|12/09/2025 09:55 PM|12/18/2025 03:46 PM|20|Bed management
+811|388|7|3B-01|B|02/09/2026 10:53 PM|02/16/2026 07:07 PM|5|Direct admission
+812|389|7|3B-09|C|03/01/2025 11:00 AM|03/06/2025 08:19 PM|20|Direct admission
+813|390|1|ED-05|B|01/09/2025 03:00 AM|01/09/2025 10:28 AM|3|Arrival via emergency department
+814|390|9|5C-23|C|01/09/2025 10:28 AM|01/11/2025 06:39 PM|9|Transfer to ward for recovery
+229|108|1|ED-09|C|04/28/2025 02:00 AM|04/28/2025 07:07 AM|1|Arrival via emergency department
+815|391|1|ED-03|C|04/02/2024 03:00 AM|04/02/2024 06:46 AM|1|Arrival via emergency department
+816|391|9|5C-18|A|04/02/2024 06:46 AM|04/09/2024 11:46 AM|8|Transfer to ward for recovery
+817|392|1|ED-11|A|04/19/2024 10:31 PM|04/20/2024 01:01 AM|4|Arrival via emergency department
+818|392|2|MI-02|D|04/20/2024 01:01 AM|04/26/2024 08:08 AM|15|Hemodynamic instability
+819|393|1|ED-18|D|11/21/2024 07:25 AM|11/21/2024 01:10 PM|2|Arrival via emergency department
+820|393|6|3A-08|A|11/21/2024 01:10 PM|11/28/2024 09:41 PM|10|Clinically improved
+821|394|1|ED-23|D|01/14/2025 03:04 PM|01/14/2025 06:44 PM|4|Arrival via emergency department
+822|394|8|4A-18|B|01/14/2025 06:44 PM|01/20/2025 10:57 PM|17|Transfer to ward for recovery
+823|395|4|GI-02|C|03/19/2025 10:25 AM|03/20/2025 08:55 PM|14|Direct admission
+824|395|5|CC-18|B|03/20/2025 08:55 PM|03/22/2025 06:03 AM|16|Hemodynamic instability
+825|395|12|SD-29|A|03/22/2025 06:03 AM|03/23/2025 04:25 PM|13|Step-down after stabilization
+826|395|6|3A-19|B|03/23/2025 04:25 PM|03/27/2025 12:35 PM|12|Transfer to ward for recovery
+827|396|11|7N-20|C|06/10/2025 04:34 AM|06/13/2025 08:39 AM|18|Direct admission
+828|397|1|ED-16|N/A|04/29/2025 11:33 PM|04/30/2025 06:25 AM|3|Arrival via emergency department
+829|397|10|6R-21|C|04/30/2025 06:25 AM|05/08/2025 06:10 AM|7|Transfer to ward for recovery
+830|398|1|ED-25|A|09/09/2025 11:52 PM|09/10/2025 05:23 AM|3|Arrival via emergency department
+831|398|6|3A-16|B|09/10/2025 05:23 AM|09/12/2025 11:14 AM|10|Transfer to ward for recovery
+832|399|1|ED-20|N/A|01/30/2026 11:44 AM|01/30/2026 04:20 PM|4|Arrival via emergency department
+833|399|7|3B-05||01/30/2026 04:20 PM|02/03/2026 04:53 AM|22|Transfer to ward for recovery
+834|400|1|ED-23|B|10/26/2025 09:48 PM|10/27/2025 01:42 AM|3|Arrival via emergency department
+835|400|7|3B-29|B|10/27/2025 01:42 AM|11/03/2025 05:53 PM|22|Bed management
+836|401|8|4A-27|D|02/02/2025 08:33 PM|02/06/2025 02:04 AM|17|Direct admission
+837|402|1|ED-25|D|04/28/2025 08:49 PM|04/29/2025 02:51 AM|1|Arrival via emergency department
+838|402|10|6R-19|C|04/29/2025 02:51 AM|05/02/2025 04:09 PM|5|Clinically improved
+839|403|9|5C-20|D|07/07/2025 03:18 AM|07/10/2025 05:04 AM|9|Direct admission
+840|404|1|ED-12|C|10/04/2025 09:00 PM|10/04/2025 11:29 PM|2|Arrival via emergency department
+841|404|4|GI-04|A|10/04/2025 11:29 PM|10/10/2025 04:43 AM|14|Escalation of care
+842|404|3|SI-19|B|10/10/2025 04:43 AM|10/11/2025 09:56 AM|14|Escalation of care
+843|404|6|3A-11|A|10/11/2025 09:56 AM|10/19/2025 05:24 PM|11|Bed management
+844|405|1|ED-11|B|05/16/2025 03:07 AM|05/16/2025 06:33 AM|1|Arrival via emergency department
+845|405|7|3B-22|N/A|05/16/2025 06:33 AM|05/18/2025 07:07 PM|5|Transfer to ward for recovery
+846|406|1|ED-06|C|03/30/2025 01:00 PM|03/30/2025 05:48 PM|2|Arrival via emergency department
+847|406|6|3A-25|A|03/30/2025 05:48 PM|04/02/2025 09:22 PM|10|Bed management
+848|407|1|ED-14|D|07/30/2025 03:53 PM|07/30/2025 09:46 PM|2|Arrival via emergency department
+849|407|7|3B-27|C|07/30/2025 09:46 PM|08/01/2025 09:23 AM|5|Transfer to ward for recovery
+850|408|10|6R-10|N/A|05/23/2024 07:25 PM|05/26/2024 08:29 PM|5|Direct admission
+851|409|1|ED-24|D|06/08/2024 12:10 AM|06/08/2024 11:44 AM|4|Arrival via emergency department
+852|409|4|GI-24|D|06/08/2024 11:44 AM|06/12/2024 07:36 PM|16|Post-operative monitoring
+853|409|8|4A-17|D|06/12/2024 07:36 PM|06/17/2024 02:44 PM|17|Clinically improved
+854|410|1|ED-06|A|10/26/2024 06:18 AM|10/26/2024 01:32 PM|4|Arrival via emergency department
+855|410|7|3B-29|D|10/26/2024 01:32 PM|11/03/2024 06:37 AM|20|Clinically improved
+856|411|1|ED-18|D|12/15/2024 12:14 AM|12/15/2024 04:25 AM|4|Arrival via emergency department
+857|411|7|3B-25|C|12/15/2024 04:25 AM|12/19/2024 08:18 PM|5|Bed management
+858|412|4|GI-03|N/A|08/11/2024 10:33 AM|08/14/2024 12:58 PM|15|Direct admission
+859|412|2|MI-05|A|08/14/2024 12:58 PM|08/18/2024 06:37 AM|16|Respiratory deterioration
+817|392|1|ED-11|A|04/19/2024 10:31 PM|04/20/2024 01:01 AM|4|Arrival via emergency department
+860|412|7|3B-19|A|08/18/2024 06:37 AM|08/25/2024 04:25 PM|22|Transfer to ward for recovery
+861|413|11|7N-09|C|12/10/2024 03:48 PM|12/12/2024 03:29 PM|18|Direct admission
+862|414|7|3B-11|A|04/20/2025 09:09 PM|04/23/2025 02:17 PM|20|Direct admission
+863|415|1|ED-15|C|05/30/2025 01:00 PM|05/30/2025 05:56 PM|2|Arrival via emergency department
+864|415|2|MI-01||05/30/2025 05:56 PM|06/01/2025 01:30 PM|16|Hemodynamic instability
+865|415|3|SI-21|A|06/01/2025 01:30 PM|06/04/2025 05:35 PM|15|Respiratory deterioration
+866|415|7|3B-04|C|06/04/2025 05:35 PM|06/11/2025 01:00 PM|20|Transfer to ward for recovery
+867|416|1|ED-08|A|02/27/2024 02:07 PM|02/27/2024 03:47 PM|2|Arrival via emergency department
+868|416|7|3B-02|B|02/27/2024 03:47 PM|03/06/2024 12:18 PM|7|Transfer to ward for recovery
+869|417|1|ED-22|C|07/18/2024 12:53 PM|07/18/2024 07:05 PM|4|Arrival via emergency department
+870|417|11|7N-10|A|07/18/2024 07:05 PM|07/23/2024 09:14 PM|19|Transfer to ward for recovery
+871|418|6|3A-23|C|03/18/2025 02:25 PM|03/22/2025 04:02 AM|11|Direct admission
+872|419|1|ED-15|N/A|04/14/2025 08:04 AM|04/14/2025 04:01 PM|2|Arrival via emergency department
+873|419|4|GI-26|C|04/14/2025 04:01 PM|04/20/2025 11:27 PM|14|Post-operative monitoring
+874|419|12|SD-11|D|04/20/2025 11:27 PM|04/23/2025 01:51 AM|11|Step-down after stabilization
+875|419|6|3A-23|A|04/23/2025 01:51 AM|04/30/2025 06:31 PM|10|Transfer to ward for recovery
+876|420|1|ED-12|C|09/08/2025 06:54 AM|09/08/2025 02:21 PM|2|Arrival via emergency department
+877|420|6|3A-05|C|09/08/2025 02:21 PM|09/12/2025 11:28 PM|11|Bed management
+878|421|1|ED-19|C|09/30/2025 06:48 AM|2025-09-30 15:23|3|Arrival via emergency department
+879|421|7|3B-21|D|09/30/2025 03:23 PM|10/06/2025 05:38 AM|5|Bed management
+880|422|1|ED-13|B|10/02/2025 07:41 AM|10/02/2025 12:23 PM|3|Arrival via emergency department
+881|422|7|3B-22|D|10/02/2025 12:23 PM|10/11/2025 12:05 AM|22|Clinically improved
+882|423|1|ED-20|D|02/20/2026 02:41 PM|02/20/2026 09:34 PM|2|Arrival via emergency department
+883|423|10|6R-23|B|02/20/2026 09:34 PM|02/25/2026 09:50 PM|5|Bed management
+884|424|10|6R-24|C|11/29/2025 10:33 PM|12/01/2025 06:26 PM|6|Direct admission
+885|425|1|ED-18|D|04/20/2026 12:18 PM|04/20/2026 04:50 PM|1|Arrival via emergency department
+886|425|5|CC-18|C|04/20/2026 04:50 PM|05/05/2026 11:24 PM|15|Hemodynamic instability
+887|425|9|5C-21|B|05/05/2026 11:24 PM|05/13/2026 04:42 PM|9|Clinically improved
+888|426|1|ED-15|C|07/28/2024 10:56 PM|07/29/2024 04:39 AM|4|Arrival via emergency department
+889|426|3|SI-26|A|07/29/2024 04:39 AM|07/30/2024 10:28 PM|14|Escalation of care
+890|426|12|SD-24|D|07/30/2024 10:28 PM|08/01/2024 02:36 AM|7|Step-down after stabilization
+891|426|10|6R-23|D|08/01/2024 02:36 AM|08/05/2024 09:27 AM|7|Bed management
+892|427|1|ED-21|N/A|09/12/2024 09:43 PM|09/13/2024 01:02 AM|1|Arrival via emergency department
+893|427|7|3B-18|A|09/13/2024 01:02 AM|09/15/2024 07:45 PM|20|Bed management
+894|428|4|GI-07|D|11/06/2025 11:07 PM|11/12/2025 08:40 PM|16|Direct admission
+895|428|12|SD-23|D|11/12/2025 08:40 PM|11/14/2025 08:43 PM|10|Step-down after stabilization
+896|428|6|3A-20||11/14/2025 08:43 PM|11/18/2025 03:14 PM|10|Transfer to ward for recovery
+897|429|1|ED-07|A|01/18/2024 09:12 PM|01/19/2024 02:09 AM|3|Arrival via emergency department
+898|429|8|4A-27|B|01/19/2024 02:09 AM|01/24/2024 04:40 PM|17|Bed management
+899|430|1|ED-27|A|04/24/2024 04:41 AM|04/24/2024 02:58 PM|4|Arrival via emergency department
+900|430|5|CC-29|C|04/24/2024 02:58 PM|04/28/2024 10:10 AM|15|Post-operative monitoring
+901|430|12|SD-13|B|04/28/2024 10:10 AM|04/29/2024 09:40 AM|8|Step-down after stabilization
+902|430|9|5C-26|A|04/29/2024 09:40 AM|05/01/2024 08:52 AM|9|Clinically improved
+903|431|1|ED-18|B|05/25/2024 01:57 PM|05/25/2024 06:10 PM|4|Arrival via emergency department
+904|431|6|3A-21|A|05/25/2024 06:10 PM|05/31/2024 09:58 AM|11|Transfer to ward for recovery
+905|432|11|7N-18|D|02/15/2025 02:07 AM|02/18/2025 01:53 PM|19|Direct admission
+906|433|10|6R-25|A|12/12/2024 11:48 PM|12/16/2024 07:50 PM|6|Direct admission
+907|434|1|ED-30|C|06/19/2024 08:56 PM|06/20/2024 01:30 AM|2|Arrival via emergency department
+908|434|2|MI-10|B|06/20/2024 01:30 AM|06/20/2024 09:57 PM|14|Escalation of care
+909|434|12|SD-11|C|06/20/2024 09:57 PM|06/23/2024 02:26 AM|12|Step-down after stabilization
+910|434|6|3A-28|D|06/23/2024 02:26 AM|06/30/2024 12:49 PM|12|Transfer to ward for recovery
+911|435|9|5C-03|A|04/19/2025 03:56 AM|04/27/2025 04:14 AM|8|Direct admission
+912|436|1|ED-14|D|03/15/2025 09:56 AM|03/15/2025 02:57 PM|3|Arrival via emergency department
+913|436|7|3B-03|C|03/15/2025 02:57 PM|03/21/2025 10:28 AM|6|Transfer to ward for recovery
+914|437|5|CC-21|N/A|07/28/2025 01:02 AM|08/01/2025 06:57 PM|14|Direct admission
+915|438|4|GI-09||07/08/2024 05:12 AM|07/19/2024 07:37 PM|16|Direct admission
+916|438|12|SD-12|A|07/19/2024 07:37 PM|07/21/2024 04:51 PM|9|Step-down after stabilization
+917|438|9|5C-29|A|07/21/2024 04:51 PM|07/26/2024 12:36 PM|8|Bed management
+918|439|1|ED-18||10/06/2024 09:02 AM|10/06/2024 12:41 PM|3|Arrival via emergency department
+919|439|7|3B-08|B|10/06/2024 12:41 PM|10/11/2024 01:31 PM|7|Transfer to ward for recovery
+920|440|1|ED-03|B|06/10/2024 12:07 AM|06/10/2024 08:26 AM|3|Arrival via emergency department
+921|440|4|GI-15|B|06/10/2024 08:26 AM|06/21/2024 10:31 PM|15|Hemodynamic instability
+922|440|8|4A-18|C|06/21/2024 10:31 PM|06/24/2024 09:31 AM|17|Transfer to ward for recovery
+923|441|1|ED-09|B|08/16/2024 10:42 PM|08/17/2024 02:27 AM|1|Arrival via emergency department
+924|441|2|MI-28|B|08/17/2024 02:27 AM|08/18/2024 05:13 PM|14|Hemodynamic instability
+925|441|12|SD-14|A|08/18/2024 05:13 PM|08/20/2024 01:13 AM|6|Step-down after stabilization
+926|441|7|3B-14|A|N/A|08/23/2024 03:41 PM|7|Bed management
+927|442|7|3B-01|B|12/16/2024 04:46 AM|12/18/2024 08:29 PM|5|Direct admission
+928|443|1|ED-24|B|02/25/2025 10:36 AM|02/25/2025 04:36 PM|1|Arrival via emergency department
+929|443|5|CC-19|B|02/25/2025 04:36 PM|03/04/2025 02:51 AM|15|Respiratory deterioration
+930|444|1|ED-25|C|2024-03-08 16:07|03/09/2024 12:01 AM|1|Arrival via emergency department
+931|444|4|GI-16|A|03/09/2024 12:01 AM|03/14/2024 03:30 PM|15|Escalation of care
+932|444|2|MI-12|A|03/14/2024 03:30 PM|03/18/2024 03:57 PM|14|Hemodynamic instability
+933|444|6|3A-07|B|03/18/2024 03:57 PM|03/26/2024 08:58 AM|13|Bed management
+934|445|1|ED-01|D|06/14/2024 11:58 AM|06/14/2024 04:28 PM|2|Arrival via emergency department
+935|445|2|MI-12|B|06/14/2024 04:28 PM|06/18/2024 07:29 PM|14|Respiratory deterioration
+936|446|9|5C-23|B|02/28/2024 06:56 AM|03/01/2024 04:56 PM|9|Direct admission
+937|447|1|ED-21|N/A|03/24/2024 04:30 AM|03/24/2024 12:56 PM|3|Arrival via emergency department
+938|447|6|3A-28|B|03/24/2024 12:56 PM|03/26/2024 10:54 AM|13|Bed management
+939|448|4|GI-03|B|07/28/2024 04:26 PM|07/31/2024 12:59 PM|14|Direct admission
+940|448|12|SD-17|A|07/31/2024 12:59 PM|08/02/2024 09:28 AM|10|Step-down after stabilization
+941|448|6|3A-06|D|08/02/2024 09:28 AM|08/09/2024 09:47 AM|10|Transfer to ward for recovery
+942|449|1|ED-06|B|11/03/2024 06:55 AM|11/03/2024 10:53 AM|4|Arrival via emergency department
+943|449|2|MI-16|N/A|11/03/2024 10:53 AM|11/04/2024 02:32 PM|14|Respiratory deterioration
+944|449|12|SD-11|C|11/04/2024 02:32 PM|11/06/2024 07:08 AM|22|Step-down after stabilization
+945|449|7|3B-25|A|11/06/2024 07:08 AM|11/14/2024 11:11 PM|22|Bed management
+946|450|7|3B-12|D|10/25/2026 12:37 PM|N/A|20|Direct admission
+947|451|1|ED-29|D|06/19/2025 07:25 AM|06/19/2025 12:07 PM|4|Arrival via emergency department
+948|451|7|3B-18|B|06/19/2025 12:07 PM|06/21/2025 09:50 PM|20|Bed management
+949|452|5|CC-07|D|10/19/2026 09:31 AM|10/23/2026 12:38 PM|15|Direct admission
+950|452|9|5C-03|D|10/23/2026 12:38 PM|N/A|8|Bed management
+951|453|1|ED-18|N/A|07/12/2025 05:07 AM|07/12/2025 09:05 AM|4|Arrival via emergency department
+952|453|2|MI-08|C|07/12/2025 09:05 AM|07/16/2025 03:25 PM|14|Escalation of care
+953|453|7|3B-09|C|02/30/2025 10:15 AM|07/22/2025 11:02 AM|22|Clinically improved
+954|454|1|ED-24|B|12/12/2025 02:09 AM|12/12/2025 05:24 AM|1|Arrival via emergency department
+955|454|7|3B-04|A|12/12/2025 05:24 AM|12/11/2025 01:32 PM|6|Clinically improved
+956|455|1|ED-16|B|04/29/2026 05:17 AM|04/29/2026 12:19 PM|2|Arrival via emergency department
+957|455|6|3A-30|C|04/29/2026 12:19 PM|05/03/2026 07:17 AM|10|Clinically improved
+958|456|6|3A-10|D|07/02/2024 04:41 PM|07/10/2024 07:47 PM|11|Direct admission
+959|457|1|ED-06|B|01/14/2024 07:00 PM|01/14/2024 09:27 PM|3|Arrival via emergency department
+888|426|1|ED-15|C|07/28/2024 10:56 PM|07/29/2024 04:39 AM|4|Arrival via emergency department
+960|457|6|3A-06||01/14/2024 09:27 PM|01/16/2024 02:17 AM|11|Bed management
+961|458|1|ED-09|C|04/25/2024 09:58 PM|04/26/2024 01:53 AM|1|Arrival via emergency department
+962|458|5|CC-23|C|04/26/2024 01:53 AM|05/09/2024 12:39 AM|16|Escalation of care
+963|458|9|5C-17|D|05/09/2024 12:39 AM|05/16/2024 12:21 PM|8|Transfer to ward for recovery
+964|459|1|ED-18|D|10/11/2024 05:25 PM|10/11/2024 10:11 PM|1|Arrival via emergency department
+965|459|2|MI-27|B|10/11/2024 10:11 PM|10/23/2024 06:12 PM|14|Hemodynamic instability
+966|459|12|SD-07|D|10/23/2024 06:12 PM|10/24/2024 08:52 AM|12|Step-down after stabilization
+967|459|6|3A-09|A|10/24/2024 08:52 AM|10/31/2024 03:30 PM|12|Transfer to ward for recovery
+968|460|1|ED-05|N/A|01/19/2025 07:53 PM|01/20/2025 04:49 AM|1|Arrival via emergency department
+969|460|11|7N-01|A|01/20/2025 04:49 AM|01/23/2025 02:33 PM|19|Bed management
+970|461|1|ED-27|B|05/24/2025 02:25 AM|05/24/2025 04:19 AM|1|Arrival via emergency department
+971|461|9|5C-16|D|05/24/2025 04:19 AM|05/28/2025 12:31 AM|9|Bed management
+972|462|1|ED-10|D|10/04/2024 03:25 AM|10/04/2024 11:58 AM|1|Arrival via emergency department
+973|462|5|CC-11|C|10/04/2024 11:58 AM|10/06/2024 01:03 PM|16|Post-operative monitoring

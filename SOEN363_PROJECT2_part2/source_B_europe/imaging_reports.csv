@@ -1,0 +1,333 @@
+report_id;rad_exam_id;radiologist_id;report_datetime;findings;interpretation;conclusion
+1;1;53;27/01/2024 17:14;Acute hypodensity in left MCA territory;Findings likely represent infection;Urgent surgical review advised
+2;2;53;28/03/2024 01:58;Displaced subcapital femoral neck fracture;Findings consistent with clinical suspicion;Follow-up imaging recommended
+3;3;57;14/05/2025 15:34;Gallstones with wall thickening;Interval improvement compared with prior;Urgent surgical review advised
+4;4;57;23/01/2024 08:38;Gallstones with wall thickening;Non-specific findings, clinical correlation advised;Urgent surgical review advised
+5;5;54;24/01/2024 17:51;Small left pleural effusion;Interval improvement compared with prior;Follow-up imaging recommended
+6;6;55;10/06/2024 19:51;3 cm spiculated mass in right upper lobe;Interval improvement compared with prior;Urgent surgical review advised
+7;7;56;27/09/2024 12:35;Acute hypodensity in left MCA territory;Interval improvement compared with prior;Acute process identified
+8;8;56;27/12/2024 22:15;Inflamed appendix, 11 mm;Findings consistent with clinical suspicion;Follow-up imaging recommended
+9;9;53;13/02/2024 12:50;No acute abnormality;Non-specific findings, clinical correlation advised;No acute findings
+10;10;55;28/01/2024 07:13;Right lower lobe consolidation;Non-specific findings, clinical correlation advised;Acute process identified
+11;11;57;22/05/2024 10:20;3 cm spiculated mass in right upper lobe;Findings consistent with clinical suspicion;Follow-up imaging recommended
+12;12;55;14/09/2025 14:19;Gallstones with wall thickening;Findings likely represent infection;Urgent surgical review advised
+13;13;54;22/06/2024 20:42;Inflamed appendix, 11 mm;Interval improvement compared with prior;Acute process identified
+14;14;56;28/09/2024 23:43;Acute hypodensity in left MCA territory;Findings likely represent infection;Urgent surgical review advised
+15;15;57;13/01/2025 10:46;Inflamed appendix, 11 mm;Interval improvement compared with prior;Acute process identified
+16;16;57;14/01/2025 01:18;Inflamed appendix, 11 mm;Findings likely represent infection;Acute process identified
+17;17;57;28/02/2025 01:10;Right lower lobe consolidation;Non-specific findings, clinical correlation advised;Urgent surgical review advised
+18;18;54;27/07/2025 23:37;Inflamed appendix, 11 mm;Findings consistent with clinical suspicion;Urgent surgical review advised
+19;19;54;22/05/2024 19:48;No acute abnormality;Interval improvement compared with prior;Acute process identified
+20;20;56;06/02/2025 01:54;Displaced subcapital femoral neck fracture;Non-specific findings, clinical correlation advised;Follow-up imaging recommended
+21;21;57;27/06/2025 06:30;Gallstones with wall thickening;Non-specific findings, clinical correlation advised;Acute process identified
+22;22;54;09/11/2025 22:13;Cardiomegaly with mild pulmonary edema;Interval improvement compared with prior;No acute findings
+23;23;55;25/06/2025 06:07;Small left pleural effusion;Findings consistent with clinical suspicion;Urgent surgical review advised
+24;24;57;04/12/2025 19:21;Acute hypodensity in left MCA territory;Findings consistent with clinical suspicion;Urgent surgical review advised
+25;25;57;22/04/2025 22:12;Right lower lobe consolidation;Interval improvement compared with prior;No acute findings
+26;26;53;13/08/2025 00:08;No acute abnormality;Interval improvement compared with prior;Acute process identified
+27;27;53;07/01/2025 19:06;No acute abnormality;Interval improvement compared with prior;Follow-up imaging recommended
+28;28;57;12/01/2024 13:30;Small left pleural effusion;Interval improvement compared with prior;Follow-up imaging recommended
+29;29;56;05/05/2024 06:12;Right lower lobe consolidation;Findings likely represent infection;Acute process identified
+30;30;56;12/03/2024 14:39;No acute abnormality;Non-specific findings, clinical correlation advised;Follow-up imaging recommended
+31;31;54;11/03/2024 15:39;3 cm spiculated mass in right upper lobe;Interval improvement compared with prior;Acute process identified
+32;32;56;31/10/2024 18:39;Cardiomegaly with mild pulmonary edema;Non-specific findings, clinical correlation advised;Follow-up imaging recommended
+33;33;56;21/04/2025 21:33;No acute abnormality;Interval improvement compared with prior;Follow-up imaging recommended
+34;34;57;15/10/2025 02:46;Displaced subcapital femoral neck fracture;Interval improvement compared with prior;No acute findings
+35;35;54;07/05/2025 11:47;Gallstones with wall thickening;Non-specific findings, clinical correlation advised;Follow-up imaging recommended
+36;36;56;15/05/2025 09:34;Gallstones with wall thickening;Interval improvement compared with prior;Follow-up imaging recommended
+37;37;57;07/10/2025 11:41;Gallstones with wall thickening;Findings likely represent infection;Follow-up imaging recommended
+38;38;55;29/06/2025 04:24;No acute abnormality;Findings consistent with clinical suspicion;Urgent surgical review advised
+39;39;54;16/10/2024 15:55;3 cm spiculated mass in right upper lobe;Non-specific findings, clinical correlation advised;Follow-up imaging recommended
+40;40;55;30/09/2024 10:23;Gallstones with wall thickening;Findings consistent with clinical suspicion;Acute process identified
+41;41;55;19/04/2025 21:47;Inflamed appendix, 11 mm;Findings likely represent infection;Follow-up imaging recommended
+42;42;56;07/08/2024 04:29;Small left pleural effusion;Findings likely represent infection;
+43;43;54;06/08/2024 13:25;Cardiomegaly with mild pulmonary edema;Findings consistent with clinical suspicion;Acute process identified
+44;44;56;17/12/2024 23:25;Cardiomegaly with mild pulmonary edema;Findings consistent with clinical suspicion;
+45;45;53;17/12/2024 21:16;Small left pleural effusion;Non-specific findings, clinical correlation advised;Follow-up imaging recommended
+46;46;54;20/06/2024 18:43;3 cm spiculated mass in right upper lobe;Interval improvement compared with prior;No acute findings
+47;47;54;19/06/2024 18:41;3 cm spiculated mass in right upper lobe;Findings consistent with clinical suspicion;Acute process identified
+48;48;56;30/12/2024 04:19;Right lower lobe consolidation;Findings likely represent infection;NULL
+49;49;53;30/12/2024 02:59;Inflamed appendix, 11 mm;Findings likely represent infection;Urgent surgical review advised
+50;50;53;25/01/2025 05:48;No acute abnormality;Findings likely represent infection;Urgent surgical review advised
+51;51;57;13/09/2025 05:41;Right lower lobe consolidation;Interval improvement compared with prior;Follow-up imaging recommended
+52;52;55;03/10/2024 22:30;No acute abnormality;Interval improvement compared with prior;NULL
+53;53;57;03/10/2024 08:42;Small left pleural effusion;Non-specific findings, clinical correlation advised;Urgent surgical review advised
+54;54;53;27/01/2026 13:28;No acute abnormality;Findings consistent with clinical suspicion;No acute findings
+55;55;54;23/07/2024 02:42;Cardiomegaly with mild pulmonary edema;Findings consistent with clinical suspicion;Follow-up imaging recommended
+56;56;53;14/10/2024 11:08;Gallstones with wall thickening;Findings likely represent infection;Urgent surgical review advised
+57;57;54;16/11/2024 19:59;3 cm spiculated mass in right upper lobe;Non-specific findings, clinical correlation advised;NULL
+58;58;53;15/11/2024 14:46;Small left pleural effusion;Findings likely represent infection;No acute findings
+59;59;57;12/01/2024 12:31;Acute hypodensity in left MCA territory;Findings likely represent infection;Follow-up imaging recommended
+60;60;56;13/01/2024 15:45;Right lower lobe consolidation;Non-specific findings, clinical correlation advised;Follow-up imaging recommended
+61;61;54;27/07/2025 11:10;Inflamed appendix, 11 mm;Findings likely represent infection;
+62;62;56;18/01/2025 05:05;3 cm spiculated mass in right upper lobe;Interval improvement compared with prior;Acute process identified
+63;63;55;12/09/2025 16:30;3 cm spiculated mass in right upper lobe;Non-specific findings, clinical correlation advised;No acute findings
+64;64;54;11/03/2026 02:03;Cardiomegaly with mild pulmonary edema;Findings likely represent infection;Follow-up imaging recommended
+65;65;57;21/07/2026 17:23;No acute abnormality;Findings consistent with clinical suspicion;No acute findings
+66;66;54;16/02/2024 14:19;3 cm spiculated mass in right upper lobe;Findings consistent with clinical suspicion;Urgent surgical review advised
+67;67;54;13/08/2024 16:33;3 cm spiculated mass in right upper lobe;Findings consistent with clinical suspicion;No acute findings
+68;68;56;14/08/2024 02:33;Acute hypodensity in left MCA territory;Findings likely represent infection;Acute process identified
+69;69;57;30/03/2026 17:39;Displaced subcapital femoral neck fracture;Interval improvement compared with prior;Acute process identified
+70;70;54;28/03/2026 04:54;Acute hypodensity in left MCA territory;Findings consistent with clinical suspicion;No acute findings
+71;71;53;28/10/2026 11:48;Inflamed appendix, 11 mm;Findings likely represent infection;Acute process identified
+72;72;56;12/01/2026 16:37;Gallstones with wall thickening;Findings likely represent infection;Follow-up imaging recommended
+73;73;56;12/08/2024 07:44;Displaced subcapital femoral neck fracture;Findings likely represent infection;Acute process identified
+74;74;54;06/12/2025 19:58;Acute hypodensity in left MCA territory;Non-specific findings, clinical correlation advised;Follow-up imaging recommended
+75;75;55;11/08/2025 15:16;Displaced subcapital femoral neck fracture;Interval improvement compared with prior;NULL
+76;76;55;10/12/2024 12:46;No acute abnormality;Non-specific findings, clinical correlation advised;No acute findings
+77;77;54;25/08/2024 19:04;3 cm spiculated mass in right upper lobe;Interval improvement compared with prior;Follow-up imaging recommended
+78;78;55;27/09/2025 04:38;No acute abnormality;Interval improvement compared with prior;Acute process identified
+79;79;57;28/03/2025 09:40;Gallstones with wall thickening;Findings consistent with clinical suspicion;Acute process identified
+80;80;57;05/12/2025 11:08;Gallstones with wall thickening;Findings consistent with clinical suspicion;Follow-up imaging recommended
+81;81;56;05/12/2025 11:14;No acute abnormality;Findings consistent with clinical suspicion;Acute process identified
+82;82;55;08/11/2024 05:31;Small left pleural effusion;Findings consistent with clinical suspicion;Follow-up imaging recommended
+83;83;56;12/03/2025 04:02;Inflamed appendix, 11 mm;Interval improvement compared with prior;Acute process identified
+84;84;54;21/01/2025 08:08;3 cm spiculated mass in right upper lobe;Interval improvement compared with prior;Acute process identified
+85;85;53;20/02/2025 18:19;No acute abnormality;Findings likely represent infection;No acute findings
+86;86;54;21/02/2025 14:03;Right lower lobe consolidation;Interval improvement compared with prior;Urgent surgical review advised
+87;87;53;15/11/2025 22:36;Acute hypodensity in left MCA territory;Non-specific findings, clinical correlation advised;Urgent surgical review advised
+88;88;57;18/06/2025 11:52;No acute abnormality;Findings likely represent infection;
+89;89;55;18/07/2025 13:25;Small left pleural effusion;Findings consistent with clinical suspicion;Acute process identified
+90;90;56;22/05/2024 05:23;Acute hypodensity in left MCA territory;Non-specific findings, clinical correlation advised;Urgent surgical review advised
+91;91;55;21/05/2024 07:33;Gallstones with wall thickening;Non-specific findings, clinical correlation advised;No acute findings
+92;92;56;05/10/2024 03:01;Right lower lobe consolidation;Findings consistent with clinical suspicion;Follow-up imaging recommended
+93;93;56;09/11/2024 19:18;Gallstones with wall thickening;Non-specific findings, clinical correlation advised;NULL
+94;94;53;13/07/2024 13:23;Right lower lobe consolidation;Interval improvement compared with prior;Follow-up imaging recommended
+95;95;56;19/09/2024 21:50;Inflamed appendix, 11 mm;Findings likely represent infection;Urgent surgical review advised
+96;96;55;18/09/2024 04:49;Gallstones with wall thickening;Interval improvement compared with prior;No acute findings
+97;97;56;05/09/2024 19:32;No acute abnormality;Findings consistent with clinical suspicion;Urgent surgical review advised
+98;98;54;26/02/2024 23:00;Inflamed appendix, 11 mm;Findings likely represent infection;Urgent surgical review advised
+99;99;53;04/08/2024 21:34;No acute abnormality;Findings likely represent infection;Acute process identified
+100;100;54;11/10/2024 00:38;Cardiomegaly with mild pulmonary edema;Non-specific findings, clinical correlation advised;Urgent surgical review advised
+101;101;57;10/10/2024 05:45;Gallstones with wall thickening;Interval improvement compared with prior;Acute process identified
+102;102;56;03/10/2024 12:14;Right lower lobe consolidation;Findings consistent with clinical suspicion;Acute process identified
+103;103;53;14/06/2025 16:49;Displaced subcapital femoral neck fracture;Findings consistent with clinical suspicion;Urgent surgical review advised
+104;104;56;24/01/2026 09:37;Displaced subcapital femoral neck fracture;Interval improvement compared with prior;Acute process identified
+105;105;57;25/01/2026 06:08;3 cm spiculated mass in right upper lobe;Interval improvement compared with prior;Acute process identified
+106;106;54;06/08/2025 23:38;Cardiomegaly with mild pulmonary edema;Interval improvement compared with prior;Follow-up imaging recommended
+107;107;56;21/02/2026 01:12;Gallstones with wall thickening;Findings consistent with clinical suspicion;No acute findings
+108;108;57;04/05/2025 21:12;Displaced subcapital femoral neck fracture;Findings consistent with clinical suspicion;Acute process identified
+109;109;56;04/12/2024 00:00;No acute abnormality;Non-specific findings, clinical correlation advised;No acute findings
+110;110;56;04/12/2024 11:01;Inflamed appendix, 11 mm;Findings likely represent infection;No acute findings
+111;111;54;25/12/2024 01:22;Right lower lobe consolidation;Interval improvement compared with prior;Follow-up imaging recommended
+112;112;54;06/03/2026 20:03;Displaced subcapital femoral neck fracture;Interval improvement compared with prior;Follow-up imaging recommended
+113;113;53;07/03/2026 08:22;Small left pleural effusion;Non-specific findings, clinical correlation advised;No acute findings
+114;114;56;16/05/2025 22:24;Inflamed appendix, 11 mm;Interval improvement compared with prior;Follow-up imaging recommended
+115;115;55;13/05/2025 00:12;Inflamed appendix, 11 mm;Interval improvement compared with prior;No acute findings
+116;116;56;04/10/2025 09:32;Small left pleural effusion;Findings consistent with clinical suspicion;Urgent surgical review advised
+117;117;57;29/04/2024 16:53;Small left pleural effusion;Findings consistent with clinical suspicion;Follow-up imaging recommended
+118;118;55;11/09/2024 06:09;Inflamed appendix, 11 mm;Findings likely represent infection;Urgent surgical review advised
+119;119;55;11/09/2024 09:11;Acute hypodensity in left MCA territory;Non-specific findings, clinical correlation advised;Follow-up imaging recommended
+120;120;54;24/02/2024 23:27;Acute hypodensity in left MCA territory;Findings likely represent infection;Urgent surgical review advised
+121;121;53;24/02/2024 02:07;Acute hypodensity in left MCA territory;Interval improvement compared with prior;Urgent surgical review advised
+122;122;53;15/08/2024 03:57;Cardiomegaly with mild pulmonary edema;Findings consistent with clinical suspicion;Urgent surgical review advised
+123;123;56;18/10/2024 08:55;Displaced subcapital femoral neck fracture;Non-specific findings, clinical correlation advised;No acute findings
+124;124;54;25/10/2026 21:57;Acute hypodensity in left MCA territory;Findings likely represent infection;No acute findings
+125;125;54;02/05/2025 04:45;3 cm spiculated mass in right upper lobe;Findings consistent with clinical suspicion;Urgent surgical review advised
+126;126;54;25/11/2025 12:08;Cardiomegaly with mild pulmonary edema;Findings likely represent infection;No acute findings
+127;127;57;06/09/2024 11:02;Small left pleural effusion;Findings likely represent infection;Acute process identified
+128;128;57;01/12/2024 23:04;3 cm spiculated mass in right upper lobe;Findings likely represent infection;Urgent surgical review advised
+129;129;57;11/02/2025 04:36;No acute abnormality;Interval improvement compared with prior;Follow-up imaging recommended
+130;130;57;08/02/2024 15:02;3 cm spiculated mass in right upper lobe;Non-specific findings, clinical correlation advised;
+131;131;55;01/02/2024 20:08;Cardiomegaly with mild pulmonary edema;Non-specific findings, clinical correlation advised;Follow-up imaging recommended
+132;132;53;02/05/2024 02:17;3 cm spiculated mass in right upper lobe;Findings likely represent infection;Urgent surgical review advised
+133;133;55;10/08/2024 14:53;Small left pleural effusion;Interval improvement compared with prior;Urgent surgical review advised
+134;134;54;17/12/2024 02:43;Small left pleural effusion;Non-specific findings, clinical correlation advised;Urgent surgical review advised
+135;135;56;04/12/2025 14:28;Displaced subcapital femoral neck fracture;Findings consistent with clinical suspicion;Follow-up imaging recommended
+136;136;57;03/12/2025 23:09;3 cm spiculated mass in right upper lobe;Non-specific findings, clinical correlation advised;Urgent surgical review advised
+137;137;57;28/01/2024 21:06;3 cm spiculated mass in right upper lobe;Non-specific findings, clinical correlation advised;NULL
+138;138;54;23/02/2025 07:00;Cardiomegaly with mild pulmonary edema;Interval improvement compared with prior;Urgent surgical review advised
+139;139;54;22/02/2025 11:25;3 cm spiculated mass in right upper lobe;Findings likely represent infection;Acute process identified
+140;140;57;11/07/2025 06:54;Gallstones with wall thickening;Findings consistent with clinical suspicion;No acute findings
+141;141;55;27/08/2025 07:29;Acute hypodensity in left MCA territory;Interval improvement compared with prior;No acute findings
+142;142;54;04/06/2024 05:03;Cardiomegaly with mild pulmonary edema;Findings likely represent infection;Urgent surgical review advised
+143;143;56;07/12/2024 03:39;No acute abnormality;Findings likely represent infection;No acute findings
+144;144;57;25/07/2025 20:12;Gallstones with wall thickening;Non-specific findings, clinical correlation advised;Urgent surgical review advised
+145;145;57;30/09/2025 06:50;Displaced subcapital femoral neck fracture;Non-specific findings, clinical correlation advised;NULL
+146;146;56;30/09/2025 02:37;Right lower lobe consolidation;Non-specific findings, clinical correlation advised;No acute findings
+147;147;55;02/11/2025 00:54;Inflamed appendix, 11 mm;Non-specific findings, clinical correlation advised;Urgent surgical review advised
+148;148;54;26/04/2024 13:11;Acute hypodensity in left MCA territory;Non-specific findings, clinical correlation advised;Acute process identified
+149;149;57;24/08/2025 10:27;Cardiomegaly with mild pulmonary edema;Interval improvement compared with prior;No acute findings
+150;150;57;22/01/2026 16:52;No acute abnormality;Findings consistent with clinical suspicion;No acute findings
+151;151;54;22/06/2024 12:13;Inflamed appendix, 11 mm;Interval improvement compared with prior;
+152;152;54;22/06/2024 04:32;Cardiomegaly with mild pulmonary edema;Findings likely represent infection;No acute findings
+153;153;53;20/07/2024 07:59;Displaced subcapital femoral neck fracture;Interval improvement compared with prior;Follow-up imaging recommended
+154;154;57;03/08/2024 08:20;Right lower lobe consolidation;Interval improvement compared with prior;Acute process identified
+155;155;57;21/09/2025 23:42;Displaced subcapital femoral neck fracture;Findings consistent with clinical suspicion;Urgent surgical review advised
+156;156;53;29/10/2024 06:19;Inflamed appendix, 11 mm;Non-specific findings, clinical correlation advised;
+157;157;56;23/01/2025 04:52;Acute hypodensity in left MCA territory;Non-specific findings, clinical correlation advised;Urgent surgical review advised
+158;158;53;30/06/2025 02:27;Displaced subcapital femoral neck fracture;Interval improvement compared with prior;No acute findings
+159;159;55;02/01/2025 03:30;Displaced subcapital femoral neck fracture;Findings likely represent infection;Urgent surgical review advised
+160;160;54;26/01/2025 14:07;Acute hypodensity in left MCA territory;Interval improvement compared with prior;Follow-up imaging recommended
+161;161;57;20/07/2024 18:56;Inflamed appendix, 11 mm;Interval improvement compared with prior;Acute process identified
+162;162;56;15/11/2025 10:59;Cardiomegaly with mild pulmonary edema;Non-specific findings, clinical correlation advised;Urgent surgical review advised
+163;163;54;17/01/2024 22:47;Small left pleural effusion;Findings consistent with clinical suspicion;
+164;164;56;18/01/2024 08:16;Acute hypodensity in left MCA territory;Non-specific findings, clinical correlation advised;No acute findings
+165;165;57;11/12/2025 13:00;Acute hypodensity in left MCA territory;Findings likely represent infection;Follow-up imaging recommended
+166;166;54;09/12/2025 14:47;Cardiomegaly with mild pulmonary edema;Findings likely represent infection;Urgent surgical review advised
+167;167;57;09/12/2025 04:57;Acute hypodensity in left MCA territory;Findings likely represent infection;Follow-up imaging recommended
+168;168;56;12/03/2025 15:39;Small left pleural effusion;Non-specific findings, clinical correlation advised;No acute findings
+169;169;56;02/11/2024 00:45;No acute abnormality;Findings likely represent infection;Follow-up imaging recommended
+170;170;54;02/11/2024 10:55;Acute hypodensity in left MCA territory;Non-specific findings, clinical correlation advised;Acute process identified
+171;171;57;20/02/2025 08:39;Cardiomegaly with mild pulmonary edema;Findings consistent with clinical suspicion;Acute process identified
+172;172;53;05/08/2024 17:13;No acute abnormality;Non-specific findings, clinical correlation advised;Urgent surgical review advised
+173;173;53;28/02/2024 02:12;Cardiomegaly with mild pulmonary edema;Non-specific findings, clinical correlation advised;Urgent surgical review advised
+174;174;56;06/05/2024 14:54;No acute abnormality;Findings likely represent infection;No acute findings
+175;175;57;31/07/2024 20:52;Acute hypodensity in left MCA territory;Findings consistent with clinical suspicion;No acute findings
+176;176;57;22/02/2025 15:15;3 cm spiculated mass in right upper lobe;Findings likely represent infection;Follow-up imaging recommended
+177;177;54;22/02/2025 14:54;No acute abnormality;Findings likely represent infection;Follow-up imaging recommended
+178;178;57;12/07/2025 07:16;Inflamed appendix, 11 mm;Findings likely represent infection;Acute process identified
+179;179;55;25/11/2025 02:31;Inflamed appendix, 11 mm;Non-specific findings, clinical correlation advised;Follow-up imaging recommended
+180;180;55;09/07/2024 06:31;3 cm spiculated mass in right upper lobe;Findings likely represent infection;Follow-up imaging recommended
+181;181;54;08/11/2024 20:11;No acute abnormality;Findings consistent with clinical suspicion;
+182;182;54;05/06/2024 23:49;Inflamed appendix, 11 mm;Findings likely represent infection;Acute process identified
+183;183;55;29/09/2024 12:53;Right lower lobe consolidation;Non-specific findings, clinical correlation advised;Follow-up imaging recommended
+184;184;56;28/08/2025 07:38;Inflamed appendix, 11 mm;Interval improvement compared with prior;Urgent surgical review advised
+185;185;54;25/12/2024 11:36;3 cm spiculated mass in right upper lobe;Non-specific findings, clinical correlation advised;Follow-up imaging recommended
+186;186;57;24/09/2024 00:27;Gallstones with wall thickening;Findings likely represent infection;Urgent surgical review advised
+187;187;55;12/01/2025 04:54;Inflamed appendix, 11 mm;Interval improvement compared with prior;Acute process identified
+188;188;56;11/01/2025 14:22;Small left pleural effusion;Non-specific findings, clinical correlation advised;Acute process identified
+189;189;56;13/10/2024 19:09;Inflamed appendix, 11 mm;Findings likely represent infection;No acute findings
+190;190;54;14/10/2024 06:41;Small left pleural effusion;Interval improvement compared with prior;No acute findings
+191;191;53;20/07/2024 03:21;No acute abnormality;Findings consistent with clinical suspicion;Follow-up imaging recommended
+192;192;54;18/08/2024 20:13;Acute hypodensity in left MCA territory;Findings likely represent infection;No acute findings
+193;193;57;12/12/2024 06:44;Inflamed appendix, 11 mm;Interval improvement compared with prior;
+194;194;54;23/04/2025 00:48;Acute hypodensity in left MCA territory;Non-specific findings, clinical correlation advised;Urgent surgical review advised
+195;195;53;15/09/2024 03:27;No acute abnormality;Interval improvement compared with prior;Urgent surgical review advised
+196;196;57;01/12/2024 09:39;Displaced subcapital femoral neck fracture;Findings likely represent infection;No acute findings
+197;197;54;28/03/2025 02:36;3 cm spiculated mass in right upper lobe;Findings likely represent infection;Follow-up imaging recommended
+198;198;56;02/04/2025 11:50;Gallstones with wall thickening;Findings likely represent infection;Urgent surgical review advised
+199;199;56;15/10/2025 18:17;Acute hypodensity in left MCA territory;Interval improvement compared with prior;Follow-up imaging recommended
+200;200;56;21/09/2025 04:28;Acute hypodensity in left MCA territory;Non-specific findings, clinical correlation advised;No acute findings
+201;201;56;21/09/2025 13:53;3 cm spiculated mass in right upper lobe;Findings consistent with clinical suspicion;No acute findings
+202;202;54;31/08/2025 13:40;Right lower lobe consolidation;Findings likely represent infection;Urgent surgical review advised
+203;203;57;01/09/2025 00:52;Inflamed appendix, 11 mm;Non-specific findings, clinical correlation advised;Urgent surgical review advised
+204;204;53;08/07/2025 13:56;Gallstones with wall thickening;Interval improvement compared with prior;Acute process identified
+205;205;54;13/11/2024 03:41;Small left pleural effusion;Non-specific findings, clinical correlation advised;Follow-up imaging recommended
+206;206;57;13/11/2024 02:35;Cardiomegaly with mild pulmonary edema;Findings likely represent infection;NULL
+207;207;54;09/12/2024 08:14;No acute abnormality;Non-specific findings, clinical correlation advised;Follow-up imaging recommended
+208;208;53;08/12/2024 19:15;Acute hypodensity in left MCA territory;Interval improvement compared with prior;Follow-up imaging recommended
+209;209;54;01/08/2024 17:23;Right lower lobe consolidation;Interval improvement compared with prior;Acute process identified
+210;210;56;22/08/2024 06:45;No acute abnormality;Interval improvement compared with prior;Follow-up imaging recommended
+211;211;56;01/06/2024 11:56;Acute hypodensity in left MCA territory;Non-specific findings, clinical correlation advised;NULL
+212;212;55;31/05/2024 14:01;3 cm spiculated mass in right upper lobe;Interval improvement compared with prior;Urgent surgical review advised
+213;213;54;24/04/2024 05:45;3 cm spiculated mass in right upper lobe;Non-specific findings, clinical correlation advised;
+214;214;53;29/01/2025 23:46;3 cm spiculated mass in right upper lobe;Findings consistent with clinical suspicion;No acute findings
+215;215;57;08/03/2025 20:05;Gallstones with wall thickening;Findings likely represent infection;Urgent surgical review advised
+216;216;56;14/08/2025 13:34;No acute abnormality;Findings consistent with clinical suspicion;
+217;217;56;08/07/2025 20:26;Displaced subcapital femoral neck fracture;Findings consistent with clinical suspicion;Acute process identified
+218;218;57;09/07/2025 05:44;Right lower lobe consolidation;Non-specific findings, clinical correlation advised;
+219;219;54;18/04/2025 08:16;Gallstones with wall thickening;Findings consistent with clinical suspicion;Follow-up imaging recommended
+220;220;54;26/10/2026 18:50;No acute abnormality;Findings likely represent infection;Acute process identified
+221;221;57;13/08/2024 19:28;Displaced subcapital femoral neck fracture;Interval improvement compared with prior;
+222;222;57;21/10/2026 13:08;No acute abnormality;Findings likely represent infection;Acute process identified
+223;223;54;22/10/2026 19:57;Acute hypodensity in left MCA territory;Interval improvement compared with prior;Follow-up imaging recommended
+224;224;55;18/08/2024 17:59;Small left pleural effusion;Interval improvement compared with prior;Follow-up imaging recommended
+225;225;53;15/09/2024 03:10;Small left pleural effusion;Non-specific findings, clinical correlation advised;No acute findings
+226;226;56;16/09/2024 02:18;Acute hypodensity in left MCA territory;Interval improvement compared with prior;Urgent surgical review advised
+227;227;55;03/02/2025 07:53;No acute abnormality;Findings consistent with clinical suspicion;No acute findings
+228;228;54;03/05/2024 20:26;Small left pleural effusion;Interval improvement compared with prior;No acute findings
+229;229;56;09/07/2025 10:36;No acute abnormality;Findings consistent with clinical suspicion;No acute findings
+230;230;55;23/04/2025 12:09;Small left pleural effusion;Non-specific findings, clinical correlation advised;Follow-up imaging recommended
+231;231;53;19/12/2025 02:26;Gallstones with wall thickening;Findings likely represent infection;
+232;232;56;25/12/2025 23:27;Gallstones with wall thickening;Findings likely represent infection;Follow-up imaging recommended
+233;233;55;05/02/2025 13:04;Cardiomegaly with mild pulmonary edema;Findings likely represent infection;Follow-up imaging recommended
+234;234;53;03/02/2025 06:16;Right lower lobe consolidation;Interval improvement compared with prior;No acute findings
+235;235;55;29/03/2025 12:24;No acute abnormality;Findings consistent with clinical suspicion;NULL
+236;236;55;04/03/2025 17:50;No acute abnormality;Findings consistent with clinical suspicion;Urgent surgical review advised
+237;237;53;22/10/2024 02:37;Right lower lobe consolidation;Findings consistent with clinical suspicion;Urgent surgical review advised
+238;238;53;07/02/2024 15:18;Gallstones with wall thickening;Non-specific findings, clinical correlation advised;No acute findings
+239;239;57;02/06/2025 12:15;Cardiomegaly with mild pulmonary edema;Non-specific findings, clinical correlation advised;Follow-up imaging recommended
+240;240;57;05/10/2025 08:51;Right lower lobe consolidation;Findings consistent with clinical suspicion;Follow-up imaging recommended
+241;241;55;07/02/2026 20:29;Acute hypodensity in left MCA territory;Non-specific findings, clinical correlation advised;Follow-up imaging recommended
+242;242;56;25/07/2025 03:39;3 cm spiculated mass in right upper lobe;Findings likely represent infection;Urgent surgical review advised
+243;243;57;03/12/2025 07:54;Small left pleural effusion;Non-specific findings, clinical correlation advised;No acute findings
+244;244;55;02/12/2025 20:54;Gallstones with wall thickening;Findings likely represent infection;
+245;245;54;19/01/2026 10:39;3 cm spiculated mass in right upper lobe;Findings consistent with clinical suspicion;Follow-up imaging recommended
+246;246;56;03/08/2025 15:50;Gallstones with wall thickening;Findings consistent with clinical suspicion;Urgent surgical review advised
+247;247;54;11/09/2025 06:26;Displaced subcapital femoral neck fracture;Interval improvement compared with prior;Acute process identified
+248;248;55;29/04/2024 20:12;Inflamed appendix, 11 mm;Findings likely represent infection;Acute process identified
+249;249;53;03/07/2024 09:18;3 cm spiculated mass in right upper lobe;Findings consistent with clinical suspicion;No acute findings
+250;250;57;03/07/2024 12:09;Right lower lobe consolidation;Findings consistent with clinical suspicion;Acute process identified
+251;251;56;27/11/2025 18:19;Inflamed appendix, 11 mm;Findings consistent with clinical suspicion;Follow-up imaging recommended
+252;252;55;26/11/2025 17:22;No acute abnormality;Findings consistent with clinical suspicion;Acute process identified
+253;253;57;28/08/2024 17:22;Acute hypodensity in left MCA territory;Interval improvement compared with prior;Follow-up imaging recommended
+254;254;55;07/11/2024 19:14;Gallstones with wall thickening;Findings likely represent infection;Urgent surgical review advised
+255;255;57;20/11/2024 02:33;Inflamed appendix, 11 mm;Findings likely represent infection;Follow-up imaging recommended
+256;256;53;18/01/2025 10:06;Small left pleural effusion;Findings likely represent infection;No acute findings
+257;257;55;18/01/2025 06:54;Gallstones with wall thickening;Findings likely represent infection;Urgent surgical review advised
+258;258;57;22/11/2024 03:12;Inflamed appendix, 11 mm;Interval improvement compared with prior;Acute process identified
+259;259;55;19/12/2024 19:59;No acute abnormality;Non-specific findings, clinical correlation advised;Acute process identified
+260;260;54;30/09/2025 07:38;Right lower lobe consolidation;Findings consistent with clinical suspicion;Urgent surgical review advised
+261;261;54;30/12/2024 04:40;No acute abnormality;Findings likely represent infection;
+262;262;53;15/07/2025 09:15;Inflamed appendix, 11 mm;Findings likely represent infection;Follow-up imaging recommended
+263;263;57;15/07/2025 08:32;Right lower lobe consolidation;Interval improvement compared with prior;Acute process identified
+264;264;53;22/11/2024 10:06;3 cm spiculated mass in right upper lobe;Findings likely represent infection;NULL
+265;265;56;05/12/2024 13:19;3 cm spiculated mass in right upper lobe;Findings consistent with clinical suspicion;Urgent surgical review advised
+266;266;54;15/08/2025 20:53;Cardiomegaly with mild pulmonary edema;Findings likely represent infection;No acute findings
+267;267;54;16/08/2025 08:48;Inflamed appendix, 11 mm;Non-specific findings, clinical correlation advised;Urgent surgical review advised
+268;268;56;26/08/2025 20:00;Displaced subcapital femoral neck fracture;Non-specific findings, clinical correlation advised;
+269;269;53;08/11/2025 17:07;Acute hypodensity in left MCA territory;Findings likely represent infection;No acute findings
+270;270;55;15/08/2024 08:11;Small left pleural effusion;Findings consistent with clinical suspicion;No acute findings
+271;271;57;11/11/2024 14:17;No acute abnormality;Non-specific findings, clinical correlation advised;Urgent surgical review advised
+272;272;56;12/11/2024 13:57;Gallstones with wall thickening;Findings likely represent infection;Follow-up imaging recommended
+273;273;55;07/02/2025 19:09;3 cm spiculated mass in right upper lobe;Non-specific findings, clinical correlation advised;No acute findings
+274;274;56;07/07/2025 03:10;Small left pleural effusion;Findings likely represent infection;Urgent surgical review advised
+275;275;55;13/08/2025 22:14;3 cm spiculated mass in right upper lobe;Findings likely represent infection;Acute process identified
+276;276;56;15/11/2025 09:51;3 cm spiculated mass in right upper lobe;Non-specific findings, clinical correlation advised;
+277;277;56;05/01/2025 04:25;No acute abnormality;Findings consistent with clinical suspicion;No acute findings
+278;278;54;24/11/2024 10:09;Inflamed appendix, 11 mm;Findings consistent with clinical suspicion;Acute process identified
+279;279;54;24/11/2024 00:04;Acute hypodensity in left MCA territory;Non-specific findings, clinical correlation advised;No acute findings
+280;280;53;19/07/2025 17:09;3 cm spiculated mass in right upper lobe;Findings consistent with clinical suspicion;Follow-up imaging recommended
+281;281;57;20/05/2024 06:21;Acute hypodensity in left MCA territory;Interval improvement compared with prior;Acute process identified
+282;282;56;04 Oct 2024 23:29;Gallstones with wall thickening;Findings consistent with clinical suspicion;Acute process identified
+283;283;57;17/05/2025 06:55;3 cm spiculated mass in right upper lobe;Interval improvement compared with prior;Urgent surgical review advised
+284;284;53;03/05/2025 03:23;Cardiomegaly with mild pulmonary edema;Interval improvement compared with prior;Urgent surgical review advised
+285;285;54;18/08/2025 18:39;Right lower lobe consolidation;Findings consistent with clinical suspicion;No acute findings
+286;286;57;29/11/2025 14:46;Cardiomegaly with mild pulmonary edema;Findings consistent with clinical suspicion;No acute findings
+287;287;54;09/04/2024 10:18;Gallstones with wall thickening;Non-specific findings, clinical correlation advised;Follow-up imaging recommended
+288;288;54;20/04/2025 04:27;Gallstones with wall thickening;Findings likely represent infection;No acute findings
+289;289;53;03/02/2025 05:25;Cardiomegaly with mild pulmonary edema;Non-specific findings, clinical correlation advised;Urgent surgical review advised
+290;290;53;01/02/2025 11:41;No acute abnormality;Findings consistent with clinical suspicion;Follow-up imaging recommended
+291;291;57;30/08/2024 04:00;Cardiomegaly with mild pulmonary edema;Findings consistent with clinical suspicion;Urgent surgical review advised
+292;292;55;06/10/2024 05:09;Gallstones with wall thickening;Interval improvement compared with prior;NULL
+293;293;53;15/11/2024 08:36;Cardiomegaly with mild pulmonary edema;Findings likely represent infection;Acute process identified
+294;294;56;24/07/2024 10:53;Small left pleural effusion;Interval improvement compared with prior;
+295;295;57;14/06/2024 17:24;Gallstones with wall thickening;Findings likely represent infection;Urgent surgical review advised
+296;296;55;27/10/2024 14:43;Cardiomegaly with mild pulmonary edema;Findings likely represent infection;No acute findings
+297;297;53;29/10/2024 07:15;Gallstones with wall thickening;Findings consistent with clinical suspicion;Follow-up imaging recommended
+298;298;54;10/01/2024 15:48;Small left pleural effusion;Findings consistent with clinical suspicion;No acute findings
+299;299;57;11/07/2024 04:12;Gallstones with wall thickening;Non-specific findings, clinical correlation advised;Acute process identified
+300;300;54;05/05/2025 13:20;Inflamed appendix, 11 mm;Interval improvement compared with prior;No acute findings
+301;301;57;07/03/2024 23:33;Cardiomegaly with mild pulmonary edema;Interval improvement compared with prior;No acute findings
+302;302;53;07/03/2024 17:25;Right lower lobe consolidation;Findings consistent with clinical suspicion;Follow-up imaging recommended
+303;303;57;14/08/2024 06:23;Cardiomegaly with mild pulmonary edema;Findings likely represent infection;No acute findings
+304;304;53;25/04/2025 09:40;Cardiomegaly with mild pulmonary edema;Non-specific findings, clinical correlation advised;Urgent surgical review advised
+305;305;54;24/03/2024 14:12;Gallstones with wall thickening;Non-specific findings, clinical correlation advised;Acute process identified
+306;306;56;23/05/2024 02:36;Acute hypodensity in left MCA territory;Interval improvement compared with prior;Urgent surgical review advised
+307;307;54;17/11/2025 19:41;Displaced subcapital femoral neck fracture;Non-specific findings, clinical correlation advised;
+308;308;55;31/02/2026 08:00;Gallstones with wall thickening;Findings likely represent infection;Follow-up imaging recommended
+309;309;56;07/07/2025 13:15;Small left pleural effusion;Findings consistent with clinical suspicion;Follow-up imaging recommended
+310;310;53;06/08/2025 00:29;Cardiomegaly with mild pulmonary edema;Findings consistent with clinical suspicion;
+311;311;54;08/07/2024 07:14;Inflamed appendix, 11 mm;Findings consistent with clinical suspicion;Acute process identified
+312;312;57;21/10/2024 14:43;No acute abnormality;Findings consistent with clinical suspicion;No acute findings
+313;313;53;03/03/2025 17:27;3 cm spiculated mass in right upper lobe;Non-specific findings, clinical correlation advised;Follow-up imaging recommended
+314;314;53;24/04/2025 12:51;Small left pleural effusion;Non-specific findings, clinical correlation advised;No acute findings
+315;315;57;14/10/2024 16:38;3 cm spiculated mass in right upper lobe;Interval improvement compared with prior;Urgent surgical review advised
+316;316;56;15/10/2024 04:02;3 cm spiculated mass in right upper lobe;Findings consistent with clinical suspicion;Acute process identified
+317;317;54;10/04/2024 04:07;Small left pleural effusion;Findings consistent with clinical suspicion;Follow-up imaging recommended
+318;318;56;09/04/2024 00:24;Gallstones with wall thickening;Findings consistent with clinical suspicion;NULL
+319;319;53;03/07/2025 08:52;Right lower lobe consolidation;Findings consistent with clinical suspicion;
+320;320;57;06/09/2025 04:02;3 cm spiculated mass in right upper lobe;Findings consistent with clinical suspicion;Follow-up imaging recommended
+321;321;55;04/09/2025 16:30;Right lower lobe consolidation;Findings likely represent infection;Urgent surgical review advised
+322;322;53;12/09/2025 01:50;Cardiomegaly with mild pulmonary edema;Findings consistent with clinical suspicion;No acute findings
+323;323;54;26/08/2024 02:28;No acute abnormality;Findings consistent with clinical suspicion;Acute process identified
+324;324;54;27/12/2024 04:57;No acute abnormality;Findings likely represent infection;Urgent surgical review advised
+325;325;54;27/12/2024 16:58;Acute hypodensity in left MCA territory;Non-specific findings, clinical correlation advised;Follow-up imaging recommended
+326;326;56;28/09/2024 02:03;Gallstones with wall thickening;Non-specific findings, clinical correlation advised;Acute process identified
+327;327;56;27/09/2024 15:43;No acute abnormality;Non-specific findings, clinical correlation advised;Urgent surgical review advised
+328;328;57;22/06/2025 21:50;3 cm spiculated mass in right upper lobe;Findings likely represent infection;Follow-up imaging recommended
+329;329;55;24/08/2025 16:09;Cardiomegaly with mild pulmonary edema;Findings likely represent infection;Follow-up imaging recommended
+330;330;55;13/02/2025 20:21;Gallstones with wall thickening;Interval improvement compared with prior;Urgent surgical review advised
+331;331;56;05/08/2024 05:51;Cardiomegaly with mild pulmonary edema;Interval improvement compared with prior;Follow-up imaging recommended
+332;332;54;05/08/2024 08:02;Inflamed appendix, 11 mm;Interval improvement compared with prior;Urgent surgical review advised

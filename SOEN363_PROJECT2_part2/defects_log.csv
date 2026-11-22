@@ -1,0 +1,2038 @@
+source,entity,record_id,field,defect_type,planted_value,note
+A,Patient,246,patient_id,duplicate_entity,246,"same person as patient 96 (same insurance no. and DOB, name written differently); admission 180 is filed under this duplicate"
+A,Patient,247,patient_id,duplicate_entity,247,"same person as patient 81 (same insurance no. and DOB, name written differently); admission 153 is filed under this duplicate"
+A,Patient,248,patient_id,duplicate_entity,248,"same person as patient 43 (same insurance no. and DOB, name written differently); admission 79 is filed under this duplicate"
+A,Patient,249,patient_id,duplicate_entity,249,"same person as patient 215 (same insurance no. and DOB, name written differently); admission 404 is filed under this duplicate"
+A,Patient,250,patient_id,duplicate_entity,250,"same person as patient 63 (same insurance no. and DOB, name written differently)"
+A,Patient,251,patient_id,duplicate_entity,251,"same person as patient 4 (same insurance no. and DOB, name written differently); admission 9 is filed under this duplicate"
+A,Patient,237,date_of_birth,missing_required,,required (NOT NULL) value missing
+A,Patient,111,date_of_birth,missing_required,,required (NOT NULL) value missing
+A,Patient,204,date_of_birth,missing_required,,required (NOT NULL) value missing
+A,Patient,107,health_insurance_num,missing_required,,required (NOT NULL) value missing
+A,Patient,30,health_insurance_num,missing_required,,required (NOT NULL) value missing
+A,Admission,177,admission_type,missing_required,,required (NOT NULL) value missing
+A,Admission,61,admission_type,missing_required,,required (NOT NULL) value missing
+A,Admission,275,admission_type,missing_required,,required (NOT NULL) value missing
+A,Admission,265,admission_datetime,missing_required,,required (NOT NULL) value missing
+A,Admission,137,admission_datetime,missing_required,,required (NOT NULL) value missing
+A,TriageAssessment,333,heart_rate,missing_required,,required (NOT NULL) value missing
+A,TriageAssessment,106,heart_rate,missing_required,,required (NOT NULL) value missing
+A,TriageAssessment,205,priority_level,missing_required,,required (NOT NULL) value missing
+A,TriageAssessment,115,priority_level,missing_required,,required (NOT NULL) value missing
+A,Diagnosis,888,icd9_code,missing_required,,required (NOT NULL) value missing
+A,Diagnosis,320,icd9_code,missing_required,,required (NOT NULL) value missing
+A,Diagnosis,786,icd9_code,missing_required,,required (NOT NULL) value missing
+A,Diagnosis,412,icd9_code,missing_required,,required (NOT NULL) value missing
+A,UnitStay,926,entry_datetime,missing_required,,required (NOT NULL) value missing
+A,UnitStay,380,entry_datetime,missing_required,,required (NOT NULL) value missing
+A,UnitStay,772,entry_datetime,missing_required,,required (NOT NULL) value missing
+A,ClinicalNote,775,suspected_condition,missing_required,,required (NOT NULL) value missing
+A,ClinicalNote,936,suspected_condition,missing_required,,required (NOT NULL) value missing
+A,ClinicalNote,601,suspected_condition,missing_required,,required (NOT NULL) value missing
+A,ClinicalNote,510,suspected_condition,missing_required,,required (NOT NULL) value missing
+A,ClinicalNote,1461,suspected_condition,missing_required,,required (NOT NULL) value missing
+A,ClinicalNote,1270,suspected_condition,missing_required,,required (NOT NULL) value missing
+A,ClinicalNote,1800,suspected_condition,missing_required,,required (NOT NULL) value missing
+A,ClinicalNote,1454,suspected_condition,missing_required,,required (NOT NULL) value missing
+A,RadiologyExamination,266,body_area,missing_required,,required (NOT NULL) value missing
+A,RadiologyExamination,267,body_area,missing_required,,required (NOT NULL) value missing
+A,RadiologyExamination,230,body_area,missing_required,,required (NOT NULL) value missing
+A,Healthcare_Professional,55,last_name,missing_required,,required (NOT NULL) value missing
+A,TriageAssessment,285,body_temp,unit_inconsistency,37.2,Celsius value in Fahrenheit field
+A,TriageAssessment,142,body_temp,unit_inconsistency,37.2,Celsius value in Fahrenheit field
+A,TriageAssessment,295,heart_rate,invalid_numeric,-12,value outside valid range or not a number
+A,TriageAssessment,274,oxygen_sat,invalid_numeric,0,value outside valid range or not a number
+A,TriageAssessment,324,oxygen_sat,invalid_numeric,101,value outside valid range or not a number
+A,TriageAssessment,198,pain_level,invalid_numeric,15,value outside valid range or not a number
+A,TriageAssessment,167,heart_rate,invalid_numeric,eighty,value outside valid range or not a number
+A,TriageAssessment,172,body_temp,invalid_numeric,-98.6,value outside valid range or not a number
+A,TriageAssessment,292,oxygen_sat,invalid_numeric,0,value outside valid range or not a number
+A,Admission,54,patient_id,broken_reference,5946,patient does not exist
+A,Admission,400,patient_id,broken_reference,5912,patient does not exist
+A,Diagnosis,133,admission_id,broken_reference,7552,admission does not exist
+A,Diagnosis,135,admission_id,broken_reference,8203,admission does not exist
+A,Diagnosis,915,admission_id,broken_reference,8187,admission does not exist
+A,RadiologyExamination,235,order_id,broken_reference,7688,diagnostic order does not exist
+A,RadiologyExamination,284,order_id,broken_reference,7178,diagnostic order does not exist
+A,GeneralWardRecord,583,admission_id,broken_reference,8256,admission does not exist
+A,GeneralWardRecord,535,admission_id,broken_reference,8298,admission does not exist
+A,GeneralWardRecord,818,admission_id,broken_reference,7831,admission does not exist
+A,Diagnosis,117,icd9_code,broken_reference,V99.9,code not in ICD-9 dictionary
+A,Diagnosis,656,icd9_code,broken_reference,250.5,code not in ICD-9 dictionary
+A,Diagnosis,716,icd9_code,broken_reference,999.99,code not in ICD-9 dictionary
+A,Diagnosis,237,icd9_code,broken_reference,250.5,code not in ICD-9 dictionary
+A,Diagnosis,621,icd9_code,broken_reference,250.5,code not in ICD-9 dictionary
+A,Diagnosis,619,icd9_code,broken_reference,410.7,code not in ICD-9 dictionary
+A,UnitStay,450,unit_id,broken_reference,99,unit does not exist
+A,UnitStay,201,unit_id,broken_reference,98,unit does not exist
+A,UnitStay,540,unit_id,broken_reference,98,unit does not exist
+A,Admission,317,admitting_healthcare_professional,broken_reference,751,healthcare professional does not exist
+A,SurgicalProcedure,68,surgeon_id,broken_reference,586,healthcare professional does not exist
+A,Diagnosis,136,diagnosing_physician_id,broken_reference,753,healthcare professional does not exist
+A,Diagnosis,879,diagnosing_physician_id,broken_reference,732,healthcare professional does not exist
+A,Diagnosis,443,diagnosing_physician_id,broken_reference,694,healthcare professional does not exist
+A,Diagnosis,912,patient_id,patient_admission_mismatch,240,admission 429 belongs to patient 229
+A,Diagnosis,914,patient_id,patient_admission_mismatch,101,admission 430 belongs to patient 229
+A,Diagnosis,364,patient_id,patient_admission_mismatch,229,admission 183 belongs to patient 98
+A,Diagnosis,948,patient_id,patient_admission_mismatch,157,admission 445 belongs to patient 238
+A,Diagnosis,378,patient_id,patient_admission_mismatch,105,admission 189 belongs to patient 101
+A,DiagnosticOrder,308,patient_id,patient_admission_mismatch,32,admission 162 belongs to patient 84
+A,DiagnosticOrder,230,patient_id,patient_admission_mismatch,51,admission 125 belongs to patient 64
+A,DiagnosticOrder,467,patient_id,patient_admission_mismatch,89,admission 263 belongs to patient 146
+A,Admission,198,discharge_datetime,chronology,2026-02-14 18:14:00,discharge before admission
+A,Admission,384,discharge_datetime,chronology,2025-03-09 08:58:00,discharge before admission
+A,UnitStay,955,exit_datetime,chronology,2025-12-11 13:32:00,unit exit before unit entry
+A,UnitStay,790,exit_datetime,chronology,2025-01-12 21:32:00,unit exit before unit entry
+A,UnitStay,122,exit_datetime,chronology,2025-06-17 03:40:00,unit exit before unit entry
+A,UnitStay,399,exit_datetime,chronology,2025-03-07 00:23:00,unit exit before unit entry
+A,UnitStay,335,exit_datetime,chronology,2024-08-21 05:07:00,unit exit before unit entry
+A,SurgicalProcedure,61,procedure_datetime,chronology,2024-03-05 04:11:00,procedure after discharge
+A,RadiologyReport,286,report_datetime,chronology,2026-02-10 00:54:00,report before the examination
+A,RadiologyReport,126,report_datetime,chronology,2025-04-24 18:03:00,report before the examination
+A,RadiologyReport,291,report_datetime,chronology,2024-04-02 04:03:00,report before the examination
+A,Diagnosis,942,diagnosis_datetime,chronology,2024-12-14 01:15:00,diagnosis before admission
+A,Diagnosis,448,diagnosis_datetime,chronology,2024-06-27 13:12:00,diagnosis before admission
+A,Diagnosis,714,diagnosis_datetime,chronology,2026-10-17 18:52:00,diagnosis before admission
+A,DiagnosticExamination,109,exam_datetime,chronology,2024-02-27 01:09:00,exam performed before it was ordered
+A,DiagnosticExamination,418,exam_datetime,chronology,2024-02-28 20:22:00,exam performed before it was ordered
+A,Patient,3,date_of_death,chronology,2024-06-07 00:46:00,death recorded before the patient's admissions
+A,Patient,94,date_of_death,chronology,2023-06-10 14:21:00,death recorded before the patient's admissions
+A,Patient,74,date_of_birth,chronology,2025-10-06,born after first admission
+A,Admission,286,discharge_datetime,status_inconsistency,,status Discharged but no discharge time
+A,Admission,450,discharge_datetime,status_inconsistency,2026-10-27 07:05:00,status Admitted (still in hospital) but a discharge time is filled in
+A,Admission,240,discharge_datetime,status_inconsistency,2026-10-22 16:13:00,status Admitted (still in hospital) but a discharge time is filled in
+A,Patient,58,life_status,status_inconsistency,Alive,admission 114 ended with status Deceased
+A,DischargeRecord,7,condition_at_discharge,status_inconsistency,Improved,admission status is Deceased
+A,Diagnosis,79,diagnosis_type,missing_primary_diagnosis,Secondary,admission 40 is completed but now has no primary diagnosis
+A,Diagnosis,660,diagnosis_type,missing_primary_diagnosis,Secondary,admission 315 is completed but now has no primary diagnosis
+A,Healthcare_Professional,2,specialty,text_format,  EMERGENCY MEDICINE ,capitalization/whitespace changed
+A,Healthcare_Professional,13,first_name,text_format, Jacob,capitalization/whitespace changed
+A,Healthcare_Professional,14,specialty,text_format,CRITICAL  CARE,capitalization/whitespace changed
+A,Healthcare_Professional,29,first_name,text_format,OWEN,capitalization/whitespace changed
+A,Healthcare_Professional,31,specialty,text_format, EMERGENCY,capitalization/whitespace changed
+A,Healthcare_Professional,41,last_name,text_format,smith,capitalization/whitespace changed
+A,Healthcare_Professional,51,last_name,text_format,johnson,capitalization/whitespace changed
+A,Patient,9,life_status,text_format,Alive,capitalization/whitespace changed
+A,Patient,16,life_status,text_format,deceased,capitalization/whitespace changed
+A,Patient,19,full_name,text_format,Samuel|smith,capitalization/whitespace changed
+A,Patient,32,full_name,text_format, James|Brown,capitalization/whitespace changed
+A,Patient,43,life_status,text_format,alive,capitalization/whitespace changed
+A,Patient,47,date_of_birth,ambiguous_date,11/14/65,two-digit year
+A,Patient,63,gender,text_format,M  ,capitalization/whitespace changed
+A,Patient,64,life_status,text_format,deceased,capitalization/whitespace changed
+A,Patient,84,full_name,text_format,Ava| Carter,capitalization/whitespace changed
+A,Patient,85,gender,text_format, F,capitalization/whitespace changed
+A,Patient,93,full_name,text_format,mason|Morgan,capitalization/whitespace changed
+A,Patient,103,life_status,text_format, ALIVE,capitalization/whitespace changed
+A,Patient,124,full_name,text_format,Ava| Lewis,capitalization/whitespace changed
+A,Patient,124,gender,text_format,  F ,capitalization/whitespace changed
+A,Patient,130,emergency_contact_name,text_format,LUCAS MITCHELL,capitalization/whitespace changed
+A,Patient,132,emergency_contact_name,text_format,Ava Mitchell  ,capitalization/whitespace changed
+A,Patient,147,gender,text_format, F,capitalization/whitespace changed
+A,Patient,190,life_status,text_format,ALIVE  ,capitalization/whitespace changed
+A,Patient,195,full_name,text_format,isabella|Taylor,capitalization/whitespace changed
+A,Patient,212,emergency_contact_name,text_format,benjamin white,capitalization/whitespace changed
+A,Patient,227,life_status,text_format,alive,capitalization/whitespace changed
+A,Patient,231,life_status,text_format, ALIVE,capitalization/whitespace changed
+A,Patient,249,life_status,text_format, ALIVE,capitalization/whitespace changed
+A,Admission,28,admission_status,text_format,expired,capitalization/whitespace changed
+A,Admission,39,admission_status,text_format, DISCHARGED,capitalization/whitespace changed
+A,Admission,40,admission_status,text_format,discharged,capitalization/whitespace changed
+A,Admission,45,admission_status,text_format,discharged,capitalization/whitespace changed
+A,Admission,46,admission_datetime,ambiguous_date,09/22/24 06:25 AM,two-digit year
+A,Admission,55,admission_datetime,ambiguous_date,05/06/2025 10:52 AM,"written DD/MM instead of MM/DD (day <= 12, cannot be detected)"
+A,Admission,60,admission_source,text_format, ER,capitalization/whitespace changed
+A,Admission,60,admission_status,text_format,DISCHARGED  ,capitalization/whitespace changed
+A,Admission,64,discharge_datetime,invalid_date,28/11/2025 10:09 PM,written DD/MM instead of MM/DD (month > 12)
+A,Admission,71,admission_status,text_format, DISCHARGED,capitalization/whitespace changed
+A,Admission,77,condition_on_arrival,text_format,  STABLE ,capitalization/whitespace changed
+A,Admission,117,admission_type,text_format,Elective,capitalization/whitespace changed
+A,Admission,136,admission_type,text_format,ELECTIVE  ,capitalization/whitespace changed
+A,Admission,143,condition_on_arrival,text_format,STABLE  ,capitalization/whitespace changed
+A,Admission,147,condition_on_arrival,text_format,fair,capitalization/whitespace changed
+A,Admission,159,admission_source,text_format,referral,capitalization/whitespace changed
+A,Admission,172,admission_datetime,ambiguous_date,12/22/25 02:35 PM,two-digit year
+A,Admission,173,condition_on_arrival,text_format,  STABLE ,capitalization/whitespace changed
+A,Admission,183,condition_on_arrival,text_format, FAIR,capitalization/whitespace changed
+A,Admission,186,admission_source,text_format,er,capitalization/whitespace changed
+A,Admission,224,admission_status,text_format, DISCHARGED,capitalization/whitespace changed
+A,Admission,228,condition_on_arrival,text_format,Fair,capitalization/whitespace changed
+A,Admission,238,admission_source,text_format,TRANSFER  IN,capitalization/whitespace changed
+A,Admission,240,admission_type,text_format,Emergency,capitalization/whitespace changed
+A,Admission,243,admission_datetime,date_format_inconsistency,2024-03-05 19:41,ISO format in MM/DD/YYYY source
+A,Admission,247,admission_source,text_format,Er,capitalization/whitespace changed
+A,Admission,262,admission_source,text_format,referral,capitalization/whitespace changed
+A,Admission,270,condition_on_arrival,text_format, SERIOUS,capitalization/whitespace changed
+A,Admission,289,admission_source,text_format,  REFERRAL ,capitalization/whitespace changed
+A,Admission,299,admission_type,text_format, EMERGENCY,capitalization/whitespace changed
+A,Admission,303,admission_status,text_format, DISCHARGED,capitalization/whitespace changed
+A,Admission,307,condition_on_arrival,text_format,STABLE  ,capitalization/whitespace changed
+A,Admission,321,admission_status,text_format,  DISCHARGED ,capitalization/whitespace changed
+A,Admission,339,condition_on_arrival,text_format,STABLE  ,capitalization/whitespace changed
+A,Admission,349,condition_on_arrival,text_format,stable,capitalization/whitespace changed
+A,Admission,378,admission_source,text_format,Er,capitalization/whitespace changed
+A,Admission,382,condition_on_arrival,text_format,fair,capitalization/whitespace changed
+A,Admission,384,admission_source,text_format,  REFERRAL ,capitalization/whitespace changed
+A,Admission,391,admission_source,text_format,  ER ,capitalization/whitespace changed
+A,Admission,406,admission_status,text_format, DISCHARGED,capitalization/whitespace changed
+A,Admission,434,admission_status,text_format,Discharged,capitalization/whitespace changed
+A,Admission,442,admission_datetime,ambiguous_date,12/16/24 04:46 AM,two-digit year
+A,Admission,451,admission_status,text_format,DISCHARGED  ,capitalization/whitespace changed
+A,Admission,457,condition_on_arrival,text_format,  STABLE ,capitalization/whitespace changed
+A,Admission,457,admission_status,text_format,transferred out,capitalization/whitespace changed
+A,TriageAssessment,20,priority_level,text_format,LOW  ,capitalization/whitespace changed
+A,TriageAssessment,29,triage_datetime,date_format_inconsistency,2025-11-02 06:07,ISO format in MM/DD/YYYY source
+A,TriageAssessment,58,triage_datetime,date_format_inconsistency,2024-02-14 09:28,ISO format in MM/DD/YYYY source
+A,TriageAssessment,86,priority_level,text_format,HIGH  ,capitalization/whitespace changed
+A,TriageAssessment,197,priority_level,text_format,  LOW ,capitalization/whitespace changed
+A,TriageAssessment,207,priority_level,text_format,MEDIUM  ,capitalization/whitespace changed
+A,TriageAssessment,217,priority_level,text_format, MEDIUM,capitalization/whitespace changed
+A,TriageAssessment,245,priority_level,text_format,  HIGH ,capitalization/whitespace changed
+A,TriageAssessment,346,priority_level,text_format,High,capitalization/whitespace changed
+A,Diagnosis,5,diagnosis_type,text_format,primary,capitalization/whitespace changed
+A,Diagnosis,13,diagnosis_type,text_format,  SECONDARY ,capitalization/whitespace changed
+A,Diagnosis,17,icd9_code,icd9_format,303.00,dotted code in a source whose dictionary uses undotted codes
+A,Diagnosis,29,diagnosis_type,text_format, SECONDARY,capitalization/whitespace changed
+A,Diagnosis,79,diagnosis_type,text_format,secondary,capitalization/whitespace changed
+A,Diagnosis,138,diagnosis_type,text_format,secondary,capitalization/whitespace changed
+A,Diagnosis,144,icd9_code,icd9_format,185,dotted code in a source whose dictionary uses undotted codes
+A,Diagnosis,153,diagnosis_type,text_format,  SECONDARY ,capitalization/whitespace changed
+A,Diagnosis,160,diagnosis_type,text_format,SECONDARY  ,capitalization/whitespace changed
+A,Diagnosis,198,diagnosis_datetime,ambiguous_date,09/10/24 09:40 AM,two-digit year
+A,Diagnosis,232,icd9_code,icd9_format,585.9,dotted code in a source whose dictionary uses undotted codes
+A,Diagnosis,258,icd9_code,icd9_format,724.2,dotted code in a source whose dictionary uses undotted codes
+A,Diagnosis,264,diagnosis_datetime,ambiguous_date,06/10/2024 08:00 PM,"written DD/MM instead of MM/DD (day <= 12, cannot be detected)"
+A,Diagnosis,266,icd9_code,icd9_format,496,dotted code in a source whose dictionary uses undotted codes
+A,Diagnosis,299,diagnosis_type,text_format,secondary,capitalization/whitespace changed
+A,Diagnosis,322,diagnosis_type,text_format,SECONDARY  ,capitalization/whitespace changed
+A,Diagnosis,323,diagnosis_type,text_format,  PRIMARY ,capitalization/whitespace changed
+A,Diagnosis,356,icd9_code,icd9_format,V58.11,dotted code in a source whose dictionary uses undotted codes
+A,Diagnosis,402,diagnosis_type,text_format,Secondary,capitalization/whitespace changed
+A,Diagnosis,409,diagnosis_type,text_format,Primary,capitalization/whitespace changed
+A,Diagnosis,420,diagnosis_type,text_format, PRIMARY,capitalization/whitespace changed
+A,Diagnosis,435,diagnosis_type,text_format,secondary,capitalization/whitespace changed
+A,Diagnosis,452,diagnosis_type,text_format,Secondary,capitalization/whitespace changed
+A,Diagnosis,487,icd9_code,icd9_format,303.00,dotted code in a source whose dictionary uses undotted codes
+A,Diagnosis,491,icd9_code,icd9_format,296.20,dotted code in a source whose dictionary uses undotted codes
+A,Diagnosis,560,diagnosis_type,text_format,Primary,capitalization/whitespace changed
+A,Diagnosis,576,diagnosis_type,text_format, PRIMARY,capitalization/whitespace changed
+A,Diagnosis,639,diagnosis_type,text_format,PRIMARY  ,capitalization/whitespace changed
+A,Diagnosis,649,diagnosis_datetime,invalid_date,02/30/2024 10:15 AM,day does not exist
+A,Diagnosis,657,diagnosis_type,text_format,PRIMARY  ,capitalization/whitespace changed
+A,Diagnosis,659,diagnosis_type,text_format, SECONDARY,capitalization/whitespace changed
+A,Diagnosis,686,diagnosis_type,text_format,Primary,capitalization/whitespace changed
+A,Diagnosis,736,icd9_code,icd9_format,428.0,dotted code in a source whose dictionary uses undotted codes
+A,Diagnosis,771,diagnosis_type,text_format,Secondary,capitalization/whitespace changed
+A,Diagnosis,782,diagnosis_type,text_format, PRIMARY,capitalization/whitespace changed
+A,Diagnosis,802,diagnosis_type,text_format,SECONDARY  ,capitalization/whitespace changed
+A,Diagnosis,831,icd9_code,icd9_format,276.1,dotted code in a source whose dictionary uses undotted codes
+A,Diagnosis,851,icd9_code,icd9_format,491.21,dotted code in a source whose dictionary uses undotted codes
+A,Diagnosis,851,diagnosis_datetime,invalid_date,30/03/2025 04:03 PM,written DD/MM instead of MM/DD (month > 12)
+A,Diagnosis,958,diagnosis_datetime,ambiguous_date,12/11/2024 10:37 AM,"written DD/MM instead of MM/DD (day <= 12, cannot be detected)"
+A,Diagnosis,961,diagnosis_type,text_format,SECONDARY  ,capitalization/whitespace changed
+A,ClinicalNote,6,note_type,text_format,ADMIT NOTE  ,capitalization/whitespace changed
+A,ClinicalNote,15,note_datetime,invalid_date,02/30/2025 10:15 AM,day does not exist
+A,ClinicalNote,19,note_datetime,ambiguous_date,06/18/25 10:26 PM,two-digit year
+A,ClinicalNote,161,note_type,text_format,Progress,capitalization/whitespace changed
+A,ClinicalNote,212,note_type,text_format,  PROGRESS ,capitalization/whitespace changed
+A,ClinicalNote,252,note_type,text_format,  ADMIT NOTE ,capitalization/whitespace changed
+A,ClinicalNote,283,note_type,text_format,dc summary,capitalization/whitespace changed
+A,ClinicalNote,344,note_type,text_format,PROGRESS  ,capitalization/whitespace changed
+A,ClinicalNote,348,note_datetime,ambiguous_date,10/13/24 03:01 PM,two-digit year
+A,ClinicalNote,369,note_datetime,ambiguous_date,09/10/2024 03:38 AM,"written DD/MM instead of MM/DD (day <= 12, cannot be detected)"
+A,ClinicalNote,407,note_type,text_format,ADMIT  NOTE,capitalization/whitespace changed
+A,ClinicalNote,466,note_type,text_format,Dc Summary,capitalization/whitespace changed
+A,ClinicalNote,483,note_type,text_format,progress,capitalization/whitespace changed
+A,ClinicalNote,509,note_type,text_format,  PROGRESS ,capitalization/whitespace changed
+A,ClinicalNote,533,note_type,text_format, PROGRESS,capitalization/whitespace changed
+A,ClinicalNote,538,note_type,text_format,PROGRESS  ,capitalization/whitespace changed
+A,ClinicalNote,543,note_type,text_format,  ADMIT NOTE ,capitalization/whitespace changed
+A,ClinicalNote,551,note_datetime,ambiguous_date,04/27/24 06:54 PM,two-digit year
+A,ClinicalNote,582,note_type,text_format,DC  SUMMARY,capitalization/whitespace changed
+A,ClinicalNote,601,note_datetime,invalid_date,02/30/2026 10:15 AM,day does not exist
+A,ClinicalNote,669,note_type,text_format, PROGRESS,capitalization/whitespace changed
+A,ClinicalNote,688,note_datetime,ambiguous_date,06/08/2025 05:56 PM,"written DD/MM instead of MM/DD (day <= 12, cannot be detected)"
+A,ClinicalNote,722,note_type,text_format,progress,capitalization/whitespace changed
+A,ClinicalNote,761,note_datetime,invalid_date,02/30/2024 10:15 AM,day does not exist
+A,ClinicalNote,779,note_type,text_format,PROGRESS  ,capitalization/whitespace changed
+A,ClinicalNote,919,note_type,text_format,Progress,capitalization/whitespace changed
+A,ClinicalNote,925,note_datetime,ambiguous_date,05/04/24 03:24 AM,two-digit year
+A,ClinicalNote,971,note_type,text_format,Progress,capitalization/whitespace changed
+A,ClinicalNote,985,note_datetime,date_format_inconsistency,2024-11-05 04:16,ISO format in MM/DD/YYYY source
+A,ClinicalNote,1033,note_type,text_format,DC  SUMMARY,capitalization/whitespace changed
+A,ClinicalNote,1052,note_datetime,ambiguous_date,11/09/2025 10:15 PM,"written DD/MM instead of MM/DD (day <= 12, cannot be detected)"
+A,ClinicalNote,1071,note_type,text_format, ADMIT NOTE,capitalization/whitespace changed
+A,ClinicalNote,1079,note_type,text_format,Dc Summary,capitalization/whitespace changed
+A,ClinicalNote,1089,note_datetime,ambiguous_date,10/20/25 05:07 AM,two-digit year
+A,ClinicalNote,1158,note_type,text_format,dc summary,capitalization/whitespace changed
+A,ClinicalNote,1160,note_datetime,invalid_date,17/07/2025 07:11 PM,written DD/MM instead of MM/DD (month > 12)
+A,ClinicalNote,1202,note_type,text_format,ADMIT  NOTE,capitalization/whitespace changed
+A,ClinicalNote,1249,note_type,text_format,Progress,capitalization/whitespace changed
+A,ClinicalNote,1275,note_type,text_format,PROGRESS  ,capitalization/whitespace changed
+A,ClinicalNote,1286,note_datetime,date_format_inconsistency,2024-07-05 11:29,ISO format in MM/DD/YYYY source
+A,ClinicalNote,1327,note_type,text_format,DC  SUMMARY,capitalization/whitespace changed
+A,ClinicalNote,1331,note_type,text_format,DC SUMMARY  ,capitalization/whitespace changed
+A,ClinicalNote,1346,note_type,text_format,  PROGRESS ,capitalization/whitespace changed
+A,ClinicalNote,1356,note_type,text_format,progress,capitalization/whitespace changed
+A,ClinicalNote,1356,note_datetime,invalid_date,02/30/2024 10:15 AM,day does not exist
+A,ClinicalNote,1386,note_datetime,ambiguous_date,07/07/24 12:47 PM,two-digit year
+A,ClinicalNote,1397,note_type,text_format,Dc Summary,capitalization/whitespace changed
+A,ClinicalNote,1407,note_type,text_format,  ADMIT NOTE ,capitalization/whitespace changed
+A,ClinicalNote,1459,note_datetime,invalid_date,19/07/2025 05:13 AM,written DD/MM instead of MM/DD (month > 12)
+A,ClinicalNote,1469,note_type,text_format,Progress,capitalization/whitespace changed
+A,ClinicalNote,1478,note_type,text_format,Consult,capitalization/whitespace changed
+A,ClinicalNote,1493,note_type,text_format,Consult,capitalization/whitespace changed
+A,ClinicalNote,1493,note_datetime,date_format_inconsistency,2025-04-05 14:38,ISO format in MM/DD/YYYY source
+A,ClinicalNote,1541,note_type,text_format,  DC SUMMARY ,capitalization/whitespace changed
+A,ClinicalNote,1543,note_type,text_format,  CONSULT ,capitalization/whitespace changed
+A,ClinicalNote,1557,note_type,text_format, DC SUMMARY,capitalization/whitespace changed
+A,ClinicalNote,1593,note_type,text_format,Dc Summary,capitalization/whitespace changed
+A,ClinicalNote,1616,note_type,text_format, DC SUMMARY,capitalization/whitespace changed
+A,ClinicalNote,1640,note_type,text_format,ADMIT NOTE  ,capitalization/whitespace changed
+A,ClinicalNote,1681,note_type,text_format,progress,capitalization/whitespace changed
+A,ClinicalNote,1728,note_type,text_format, ADMIT NOTE,capitalization/whitespace changed
+A,ClinicalNote,1879,note_type,text_format, ADMIT NOTE,capitalization/whitespace changed
+A,SurgicalProcedure,106,procedure_datetime,date_format_inconsistency,2025-06-10 17:28,ISO format in MM/DD/YYYY source
+A,SurgicalProcedure,111,procedure_datetime,ambiguous_date,08/06/2024 07:51 AM,"written DD/MM instead of MM/DD (day <= 12, cannot be detected)"
+A,DischargeRecord,30,discharge_destination,text_format, REHABILITATION FACILITY,capitalization/whitespace changed
+A,DischargeRecord,31,condition_at_discharge,text_format, STABLE,capitalization/whitespace changed
+A,DischargeRecord,34,condition_at_discharge,text_format,improved,capitalization/whitespace changed
+A,DischargeRecord,40,discharge_destination,text_format,Home,capitalization/whitespace changed
+A,DischargeRecord,54,discharge_destination,text_format,home with home care,capitalization/whitespace changed
+A,DischargeRecord,63,condition_at_discharge,text_format,improved,capitalization/whitespace changed
+A,DischargeRecord,86,condition_at_discharge,text_format,UNCHANGED  ,capitalization/whitespace changed
+A,DischargeRecord,88,condition_at_discharge,text_format,improved,capitalization/whitespace changed
+A,DischargeRecord,151,discharge_destination,text_format,home,capitalization/whitespace changed
+A,DischargeRecord,212,discharge_destination,text_format,REHABILITATION  FACILITY,capitalization/whitespace changed
+A,DischargeRecord,228,discharge_destination,text_format,home,capitalization/whitespace changed
+A,DischargeRecord,260,discharge_destination,text_format, HOME WITH HOME CARE,capitalization/whitespace changed
+A,DischargeRecord,290,discharge_destination,text_format,  HOME WITH HOME CARE ,capitalization/whitespace changed
+A,DischargeRecord,311,condition_at_discharge,text_format, UNCHANGED,capitalization/whitespace changed
+A,DischargeRecord,314,condition_at_discharge,text_format,Improved,capitalization/whitespace changed
+A,DischargeRecord,322,condition_at_discharge,text_format,Stable,capitalization/whitespace changed
+A,DischargeRecord,324,discharge_destination,text_format,Home With Home Care,capitalization/whitespace changed
+A,DischargeRecord,354,condition_at_discharge,text_format,improved,capitalization/whitespace changed
+A,DischargeRecord,379,condition_at_discharge,text_format,IMPROVED  ,capitalization/whitespace changed
+A,DischargeRecord,407,condition_at_discharge,text_format, STABLE,capitalization/whitespace changed
+A,DischargeRecord,408,condition_at_discharge,text_format,stable,capitalization/whitespace changed
+A,DischargeRecord,420,condition_at_discharge,text_format,unchanged,capitalization/whitespace changed
+A,DischargeRecord,431,discharge_destination,text_format,rehabilitation facility,capitalization/whitespace changed
+A,DiagnosticOrder,5,priority,text_format,urgent,capitalization/whitespace changed
+A,DiagnosticOrder,23,order_status,text_format,completed,capitalization/whitespace changed
+A,DiagnosticOrder,39,priority,text_format,Urgent,capitalization/whitespace changed
+A,DiagnosticOrder,62,order_status,text_format, COMPLETED,capitalization/whitespace changed
+A,DiagnosticOrder,69,order_status,text_format,Cancelled,capitalization/whitespace changed
+A,DiagnosticOrder,96,order_status,text_format,Cancelled,capitalization/whitespace changed
+A,DiagnosticOrder,109,priority,text_format,URGENT  ,capitalization/whitespace changed
+A,DiagnosticOrder,132,priority,text_format, ROUTINE,capitalization/whitespace changed
+A,DiagnosticOrder,144,priority,text_format,  URGENT ,capitalization/whitespace changed
+A,DiagnosticOrder,164,priority,text_format,urgent,capitalization/whitespace changed
+A,DiagnosticOrder,168,order_status,text_format,completed,capitalization/whitespace changed
+A,DiagnosticOrder,176,order_status,text_format, COMPLETED,capitalization/whitespace changed
+A,DiagnosticOrder,213,order_status,text_format,completed,capitalization/whitespace changed
+A,DiagnosticOrder,239,request_datetime,ambiguous_date,04/17/25 09:58 AM,two-digit year
+A,DiagnosticOrder,239,priority,text_format,  ROUTINE ,capitalization/whitespace changed
+A,DiagnosticOrder,240,order_status,text_format,  COMPLETED ,capitalization/whitespace changed
+A,DiagnosticOrder,310,request_datetime,invalid_date,02/30/2025 10:15 AM,day does not exist
+A,DiagnosticOrder,315,priority,text_format,STAT  ,capitalization/whitespace changed
+A,DiagnosticOrder,339,request_datetime,date_format_inconsistency,2024-07-05 10:44,ISO format in MM/DD/YYYY source
+A,DiagnosticOrder,343,priority,text_format,URGENT  ,capitalization/whitespace changed
+A,DiagnosticOrder,363,order_status,text_format,completed,capitalization/whitespace changed
+A,DiagnosticOrder,366,order_status,text_format,completed,capitalization/whitespace changed
+A,DiagnosticOrder,367,priority,text_format,Stat,capitalization/whitespace changed
+A,DiagnosticOrder,375,priority,text_format,urgent,capitalization/whitespace changed
+A,DiagnosticOrder,410,priority,text_format,  STAT ,capitalization/whitespace changed
+A,DiagnosticOrder,419,request_datetime,ambiguous_date,04/27/25 09:19 AM,two-digit year
+A,DiagnosticOrder,419,order_status,text_format,  COMPLETED ,capitalization/whitespace changed
+A,DiagnosticOrder,458,priority,text_format, ROUTINE,capitalization/whitespace changed
+A,DiagnosticOrder,473,order_status,text_format, COMPLETED,capitalization/whitespace changed
+A,DiagnosticOrder,479,order_status,text_format,Completed,capitalization/whitespace changed
+A,DiagnosticOrder,490,priority,text_format,URGENT  ,capitalization/whitespace changed
+A,DiagnosticOrder,496,order_status,text_format,completed,capitalization/whitespace changed
+A,DiagnosticOrder,516,priority,text_format,Stat,capitalization/whitespace changed
+A,DiagnosticOrder,517,order_status,text_format,COMPLETED  ,capitalization/whitespace changed
+A,DiagnosticOrder,525,order_status,text_format,Completed,capitalization/whitespace changed
+A,DiagnosticOrder,544,order_status,text_format,Completed,capitalization/whitespace changed
+A,DiagnosticOrder,547,order_status,text_format,COMPLETED  ,capitalization/whitespace changed
+A,DiagnosticOrder,552,order_status,text_format,COMPLETED  ,capitalization/whitespace changed
+A,DiagnosticOrder,557,priority,text_format, STAT,capitalization/whitespace changed
+A,DiagnosticOrder,577,request_datetime,invalid_date,16/10/2024 09:16 AM,written DD/MM instead of MM/DD (month > 12)
+A,DiagnosticOrder,607,order_status,text_format, COMPLETED,capitalization/whitespace changed
+A,DiagnosticOrder,646,priority,text_format,Routine,capitalization/whitespace changed
+A,DiagnosticOrder,673,order_status,text_format,Completed,capitalization/whitespace changed
+A,DiagnosticOrder,678,order_status,text_format, COMPLETED,capitalization/whitespace changed
+A,DiagnosticOrder,698,order_status,text_format,Completed,capitalization/whitespace changed
+A,DiagnosticOrder,703,priority,text_format,Stat,capitalization/whitespace changed
+A,DiagnosticOrder,733,request_datetime,ambiguous_date,08/09/2025 04:21 PM,"written DD/MM instead of MM/DD (day <= 12, cannot be detected)"
+A,DiagnosticOrder,743,priority,text_format,stat,capitalization/whitespace changed
+A,DiagnosticOrder,750,priority,text_format,urgent,capitalization/whitespace changed
+A,DiagnosticOrder,770,priority,text_format,Stat,capitalization/whitespace changed
+A,DiagnosticExamination,29,exam_type,text_format, ELECTROCARDIOGRAM,capitalization/whitespace changed
+A,DiagnosticExamination,48,exam_type,text_format,Coagulation Panel,capitalization/whitespace changed
+A,DiagnosticExamination,53,exam_status,text_format, COMPLETED,capitalization/whitespace changed
+A,DiagnosticExamination,92,exam_status,text_format, COMPLETED,capitalization/whitespace changed
+A,DiagnosticExamination,94,exam_status,text_format,  COMPLETED ,capitalization/whitespace changed
+A,DiagnosticExamination,132,exam_datetime,invalid_date,02/30/2024 10:15 AM,day does not exist
+A,DiagnosticExamination,163,exam_status,text_format,Completed,capitalization/whitespace changed
+A,DiagnosticExamination,185,exam_type,text_format,  LIPASE ,capitalization/whitespace changed
+A,DiagnosticExamination,217,exam_status,text_format, COMPLETED,capitalization/whitespace changed
+A,DiagnosticExamination,231,exam_status,text_format,Completed,capitalization/whitespace changed
+A,DiagnosticExamination,308,exam_datetime,ambiguous_date,10/16/24 11:08 AM,two-digit year
+A,DiagnosticExamination,333,exam_type,text_format,ELECTROENCEPHALOGRAM  ,capitalization/whitespace changed
+A,DiagnosticExamination,337,exam_type,text_format,lactate level,capitalization/whitespace changed
+A,DiagnosticExamination,356,exam_status,text_format,COMPLETED  ,capitalization/whitespace changed
+A,DiagnosticExamination,386,exam_status,text_format,Completed,capitalization/whitespace changed
+A,DiagnosticExamination,403,exam_status,text_format, COMPLETED,capitalization/whitespace changed
+A,DiagnosticExamination,404,exam_status,text_format,completed,capitalization/whitespace changed
+A,RadiologyExamination,18,exam_type,text_format,  CT ,capitalization/whitespace changed
+A,RadiologyExamination,30,exam_status,text_format,  COMPLETED ,capitalization/whitespace changed
+A,RadiologyExamination,32,exam_status,text_format,  COMPLETED ,capitalization/whitespace changed
+A,RadiologyExamination,45,exam_type,text_format,Ct,capitalization/whitespace changed
+A,RadiologyExamination,82,exam_type,text_format,X-Ray,capitalization/whitespace changed
+A,RadiologyExamination,102,exam_type,text_format,Ct,capitalization/whitespace changed
+A,RadiologyExamination,126,body_area,text_format,abdomen,capitalization/whitespace changed
+A,RadiologyExamination,128,body_area,text_format, CHEST,capitalization/whitespace changed
+A,RadiologyExamination,159,exam_type,text_format,ct,capitalization/whitespace changed
+A,RadiologyExamination,165,exam_status,text_format,Completed,capitalization/whitespace changed
+A,RadiologyExamination,171,exam_status,text_format,  COMPLETED ,capitalization/whitespace changed
+A,RadiologyExamination,189,body_area,text_format,CHEST  ,capitalization/whitespace changed
+A,RadiologyExamination,196,exam_datetime,date_format_inconsistency,2025-06-22 13:26,ISO format in MM/DD/YYYY source
+A,RadiologyExamination,203,exam_type,text_format,Ct,capitalization/whitespace changed
+A,RadiologyExamination,236,exam_status,text_format,completed,capitalization/whitespace changed
+A,RadiologyExamination,253,body_area,text_format,ABDOMEN  ,capitalization/whitespace changed
+A,RadiologyExamination,261,exam_datetime,date_format_inconsistency,2025-01-17 07:04,ISO format in MM/DD/YYYY source
+A,RadiologyExamination,263,exam_datetime,ambiguous_date,04/02/2025 07:04 PM,"written DD/MM instead of MM/DD (day <= 12, cannot be detected)"
+A,RadiologyExamination,278,exam_datetime,ambiguous_date,05/21/24 11:11 AM,two-digit year
+A,RadiologyExamination,288,body_area,text_format,Chest,capitalization/whitespace changed
+A,RadiologyExamination,304,exam_type,text_format,  ULTRASOUND ,capitalization/whitespace changed
+A,RadiologyExamination,320,exam_datetime,date_format_inconsistency,2024-06-10 07:40,ISO format in MM/DD/YYYY source
+A,RadiologyExamination,331,exam_status,text_format,COMPLETED  ,capitalization/whitespace changed
+A,RadiologyReport,321,report_datetime,date_format_inconsistency,2024-08-18 21:13,ISO format in MM/DD/YYYY source
+A,RadiologyReport,326,report_datetime,invalid_date,02/30/2025 10:15 AM,day does not exist
+A,UnitStay,118,exit_datetime,invalid_date,16/04/2025 07:05 AM,written DD/MM instead of MM/DD (month > 12)
+A,UnitStay,234,entry_datetime,ambiguous_date,05/12/2024 09:07 AM,"written DD/MM instead of MM/DD (day <= 12, cannot be detected)"
+A,UnitStay,499,entry_datetime,ambiguous_date,08/05/24 02:48 AM,two-digit year
+A,UnitStay,509,entry_datetime,date_format_inconsistency,2024-08-23 21:16,ISO format in MM/DD/YYYY source
+A,UnitStay,579,exit_datetime,ambiguous_date,07/20/24 03:57 PM,two-digit year
+A,UnitStay,602,exit_datetime,ambiguous_date,08/11/25 09:25 PM,two-digit year
+A,UnitStay,632,entry_datetime,invalid_date,16/01/2026 09:29 AM,written DD/MM instead of MM/DD (month > 12)
+A,UnitStay,766,exit_datetime,ambiguous_date,04/24/24 12:37 AM,two-digit year
+A,UnitStay,773,exit_datetime,date_format_inconsistency,2024-04-21 07:59,ISO format in MM/DD/YYYY source
+A,UnitStay,878,exit_datetime,date_format_inconsistency,2025-09-30 15:23,ISO format in MM/DD/YYYY source
+A,UnitStay,930,entry_datetime,date_format_inconsistency,2024-03-08 16:07,ISO format in MM/DD/YYYY source
+A,UnitStay,953,entry_datetime,invalid_date,02/30/2025 10:15 AM,day does not exist
+A,CriticalCareRecord,284,record_datetime,ambiguous_date,10/07/2025 04:19 AM,"written DD/MM instead of MM/DD (day <= 12, cannot be detected)"
+A,GeneralWardRecord,196,record_datetime,ambiguous_date,09/01/25 05:07 PM,two-digit year
+A,GeneralWardRecord,418,record_datetime,invalid_date,02/30/2024 10:15 AM,day does not exist
+A,GeneralWardRecord,513,record_datetime,date_format_inconsistency,2024-11-24 04:28,ISO format in MM/DD/YYYY source
+A,GeneralWardRecord,545,record_datetime,invalid_date,30/11/2024 12:44 AM,written DD/MM instead of MM/DD (month > 12)
+A,GeneralWardRecord,718,record_datetime,date_format_inconsistency,2025-03-05 23:40,ISO format in MM/DD/YYYY source
+A,GeneralWardRecord,779,record_datetime,invalid_date,14/06/2024 07:54 PM,written DD/MM instead of MM/DD (month > 12)
+A,Patient,229,(record),duplicate_exact,,identical record appears twice
+A,Patient,202,(record),duplicate_exact,,identical record appears twice
+A,Patient,154,(record),duplicate_exact,,identical record appears twice
+A,Admission,442,(record),duplicate_exact,,identical record appears twice
+A,Admission,414,(record),duplicate_exact,,identical record appears twice
+A,Admission,230,(record),duplicate_exact,,identical record appears twice
+A,Admission,96,(record),duplicate_exact,,identical record appears twice
+A,Admission,59,(record),duplicate_exact,,identical record appears twice
+A,TriageAssessment,228,(record),duplicate_exact,,identical record appears twice
+A,TriageAssessment,183,(record),duplicate_exact,,identical record appears twice
+A,TriageAssessment,153,(record),duplicate_exact,,identical record appears twice
+A,TriageAssessment,108,(record),duplicate_exact,,identical record appears twice
+A,Diagnosis,954,(record),duplicate_exact,,identical record appears twice
+A,Diagnosis,925,(record),duplicate_exact,,identical record appears twice
+A,Diagnosis,817,(record),duplicate_exact,,identical record appears twice
+A,Diagnosis,780,(record),duplicate_exact,,identical record appears twice
+A,Diagnosis,615,(record),duplicate_exact,,identical record appears twice
+A,Diagnosis,604,(record),duplicate_exact,,identical record appears twice
+A,Diagnosis,432,(record),duplicate_exact,,identical record appears twice
+A,Diagnosis,408,(record),duplicate_exact,,identical record appears twice
+A,Diagnosis,375,(record),duplicate_exact,,identical record appears twice
+A,Diagnosis,224,(record),duplicate_exact,,identical record appears twice
+A,Diagnosis,139,(record),duplicate_exact,,identical record appears twice
+A,Diagnosis,115,(record),duplicate_exact,,identical record appears twice
+A,ClinicalNote,1913,(record),duplicate_exact,,identical record appears twice
+A,ClinicalNote,1899,(record),duplicate_exact,,identical record appears twice
+A,ClinicalNote,1883,(record),duplicate_exact,,identical record appears twice
+A,ClinicalNote,1507,(record),duplicate_exact,,identical record appears twice
+A,ClinicalNote,1382,(record),duplicate_exact,,identical record appears twice
+A,ClinicalNote,1299,(record),duplicate_exact,,identical record appears twice
+A,ClinicalNote,1281,(record),duplicate_exact,,identical record appears twice
+A,ClinicalNote,1185,(record),duplicate_exact,,identical record appears twice
+A,ClinicalNote,847,(record),duplicate_exact,,identical record appears twice
+A,ClinicalNote,708,(record),duplicate_exact,,identical record appears twice
+A,ClinicalNote,628,(record),duplicate_exact,,identical record appears twice
+A,ClinicalNote,617,(record),duplicate_exact,,identical record appears twice
+A,ClinicalNote,489,(record),duplicate_exact,,identical record appears twice
+A,ClinicalNote,226,(record),duplicate_exact,,identical record appears twice
+A,ClinicalNote,214,(record),duplicate_exact,,identical record appears twice
+A,UnitStay,888,(record),duplicate_exact,,identical record appears twice
+A,UnitStay,817,(record),duplicate_exact,,identical record appears twice
+A,UnitStay,688,(record),duplicate_exact,,identical record appears twice
+A,UnitStay,474,(record),duplicate_exact,,identical record appears twice
+A,UnitStay,229,(record),duplicate_exact,,identical record appears twice
+A,UnitStay,220,(record),duplicate_exact,,identical record appears twice
+A,UnitStay,216,(record),duplicate_exact,,identical record appears twice
+A,UnitStay,94,(record),duplicate_exact,,identical record appears twice
+A,GeneralWardRecord,755,(record),duplicate_exact,,identical record appears twice
+A,GeneralWardRecord,670,(record),duplicate_exact,,identical record appears twice
+A,GeneralWardRecord,552,(record),duplicate_exact,,identical record appears twice
+A,GeneralWardRecord,544,(record),duplicate_exact,,identical record appears twice
+A,GeneralWardRecord,421,(record),duplicate_exact,,identical record appears twice
+A,GeneralWardRecord,324,(record),duplicate_exact,,identical record appears twice
+A,GeneralWardRecord,96,(record),duplicate_exact,,identical record appears twice
+A,Healthcare_Professional,42,(record),duplicate_exact,,identical record appears twice
+A,Healthcare_Professional,30,(record),duplicate_exact,,identical record appears twice
+A,ICD9_Code,724.2,(record),duplicate_exact,,identical record appears twice
+A,Admission,71,(row),malformed_record,truncated,row cut off after 5 of 11 fields (export interrupted); file ADMISSIONS.txt
+A,Admission,68,(row),malformed_record,extra_field,stray '|' inside a text value gives 12 fields; file ADMISSIONS.txt
+A,TriageAssessment,36,(row),malformed_record,truncated,row cut off after 6 of 13 fields (export interrupted); file TRIAGE.txt
+A,TriageAssessment,126,(row),malformed_record,extra_field,stray '|' inside a text value gives 14 fields; file TRIAGE.txt
+A,Diagnosis,811,(row),malformed_record,truncated,row cut off after 3 of 7 fields (export interrupted); file DIAGNOSES.txt
+A,Diagnosis,975,(row),malformed_record,extra_field,stray '|' inside a text value gives 8 fields; file DIAGNOSES.txt
+B,Patient,251,patient_id,duplicate_entity,251,"same person as patient 107 (same insurance no. and DOB, name written differently)"
+B,Patient,252,patient_id,duplicate_entity,252,"same person as patient 170 (same insurance no. and DOB, name written differently)"
+B,Patient,253,patient_id,duplicate_entity,253,"same person as patient 64 (same insurance no. and DOB, name written differently)"
+B,Patient,254,patient_id,duplicate_entity,254,"same person as patient 151 (same insurance no. and DOB, name written differently)"
+B,Patient,255,patient_id,duplicate_entity,255,"same person as patient 34 (same insurance no. and DOB, name written differently)"
+B,Patient,256,patient_id,duplicate_entity,256,"same person as patient 175 (same insurance no. and DOB, name written differently)"
+B,Patient,45,date_of_birth,missing_required,,required (NOT NULL) value missing
+B,Patient,144,date_of_birth,missing_required,,required (NOT NULL) value missing
+B,Patient,195,date_of_birth,missing_required,,required (NOT NULL) value missing
+B,Patient,56,health_insurance_num,missing_required,,required (NOT NULL) value missing
+B,Patient,174,health_insurance_num,missing_required,,required (NOT NULL) value missing
+B,Admission,469,admission_type,missing_required,,required (NOT NULL) value missing
+B,Admission,361,admission_type,missing_required,,required (NOT NULL) value missing
+B,Admission,304,admission_type,missing_required,,required (NOT NULL) value missing
+B,Admission,5,admission_datetime,missing_required,,required (NOT NULL) value missing
+B,Admission,97,admission_datetime,missing_required,,required (NOT NULL) value missing
+B,TriageAssessment,165,heart_rate,missing_required,,required (NOT NULL) value missing
+B,TriageAssessment,266,heart_rate,missing_required,,required (NOT NULL) value missing
+B,TriageAssessment,314,priority_level,missing_required,,required (NOT NULL) value missing
+B,TriageAssessment,263,priority_level,missing_required,,required (NOT NULL) value missing
+B,Diagnosis,921,icd9_code,missing_required,,required (NOT NULL) value missing
+B,Diagnosis,323,icd9_code,missing_required,,required (NOT NULL) value missing
+B,Diagnosis,536,icd9_code,missing_required,,required (NOT NULL) value missing
+B,Diagnosis,718,icd9_code,missing_required,,required (NOT NULL) value missing
+B,UnitStay,787,entry_datetime,missing_required,,required (NOT NULL) value missing
+B,UnitStay,854,entry_datetime,missing_required,,required (NOT NULL) value missing
+B,UnitStay,316,entry_datetime,missing_required,,required (NOT NULL) value missing
+B,ClinicalNote,1243,suspected_condition,missing_required,,required (NOT NULL) value missing
+B,ClinicalNote,1326,suspected_condition,missing_required,,required (NOT NULL) value missing
+B,ClinicalNote,1387,suspected_condition,missing_required,,required (NOT NULL) value missing
+B,ClinicalNote,522,suspected_condition,missing_required,,required (NOT NULL) value missing
+B,ClinicalNote,122,suspected_condition,missing_required,,required (NOT NULL) value missing
+B,ClinicalNote,1238,suspected_condition,missing_required,,required (NOT NULL) value missing
+B,ClinicalNote,1794,suspected_condition,missing_required,,required (NOT NULL) value missing
+B,ClinicalNote,507,suspected_condition,missing_required,,required (NOT NULL) value missing
+B,RadiologyExamination,152,body_area,missing_required,,required (NOT NULL) value missing
+B,RadiologyExamination,299,body_area,missing_required,,required (NOT NULL) value missing
+B,RadiologyExamination,43,body_area,missing_required,,required (NOT NULL) value missing
+B,Healthcare_Professional,63,last_name,missing_required,,required (NOT NULL) value missing
+B,TriageAssessment,13,body_temp,unit_inconsistency,"98,6",Fahrenheit value in Celsius field
+B,TriageAssessment,278,body_temp,unit_inconsistency,"98,6",Fahrenheit value in Celsius field
+B,TriageAssessment,300,heart_rate,invalid_numeric,0,value outside valid range or not a number
+B,TriageAssessment,59,heart_rate,invalid_numeric,412,value outside valid range or not a number
+B,TriageAssessment,24,body_temp,unit_inconsistency,"98,6",Fahrenheit value in Celsius field
+B,TriageAssessment,220,oxygen_sat,invalid_numeric,-5%,value outside valid range or not a number
+B,TriageAssessment,327,pain_level,invalid_numeric,severe,value outside valid range or not a number
+B,TriageAssessment,124,oxygen_sat,invalid_numeric,140%,value outside valid range or not a number
+B,TriageAssessment,311,oxygen_sat,invalid_numeric,-5%,value outside valid range or not a number
+B,Admission,141,patient_id,broken_reference,5395,patient does not exist
+B,Admission,81,patient_id,broken_reference,5843,patient does not exist
+B,Diagnosis,853,admission_id,broken_reference,7978,admission does not exist
+B,Diagnosis,965,admission_id,broken_reference,7929,admission does not exist
+B,Diagnosis,506,admission_id,broken_reference,8064,admission does not exist
+B,RadiologyExamination,44,order_id,broken_reference,7450,diagnostic order does not exist
+B,RadiologyExamination,227,order_id,broken_reference,7188,diagnostic order does not exist
+B,GeneralWardRecord,777,admission_id,broken_reference,7950,admission does not exist
+B,GeneralWardRecord,677,admission_id,broken_reference,8035,admission does not exist
+B,GeneralWardRecord,201,admission_id,broken_reference,7532,admission does not exist
+B,Diagnosis,970,icd9_code,broken_reference,410.7,code not in ICD-9 dictionary
+B,Diagnosis,239,icd9_code,broken_reference,410.7,code not in ICD-9 dictionary
+B,Diagnosis,574,icd9_code,broken_reference,999.99,code not in ICD-9 dictionary
+B,Diagnosis,734,icd9_code,broken_reference,V99.9,code not in ICD-9 dictionary
+B,Diagnosis,281,icd9_code,broken_reference,410.7,code not in ICD-9 dictionary
+B,Diagnosis,765,icd9_code,broken_reference,999.99,code not in ICD-9 dictionary
+B,UnitStay,775,unit_id,broken_reference,98,unit does not exist
+B,UnitStay,669,unit_id,broken_reference,98,unit does not exist
+B,UnitStay,908,unit_id,broken_reference,98,unit does not exist
+B,Admission,280,admitting_healthcare_professional,broken_reference,873,healthcare professional does not exist
+B,SurgicalProcedure,44,surgeon_id,broken_reference,722,healthcare professional does not exist
+B,Diagnosis,26,diagnosing_physician_id,broken_reference,701,healthcare professional does not exist
+B,Diagnosis,447,diagnosing_physician_id,broken_reference,704,healthcare professional does not exist
+B,Diagnosis,524,diagnosing_physician_id,broken_reference,850,healthcare professional does not exist
+B,Diagnosis,262,patient_id,patient_admission_mismatch,244,admission 123 belongs to patient 68
+B,Diagnosis,185,patient_id,patient_admission_mismatch,66,admission 87 belongs to patient 46
+B,Diagnosis,243,patient_id,patient_admission_mismatch,202,admission 115 belongs to patient 64
+B,Diagnosis,503,patient_id,patient_admission_mismatch,51,admission 238 belongs to patient 133
+B,Diagnosis,334,patient_id,patient_admission_mismatch,73,admission 159 belongs to patient 85
+B,DiagnosticOrder,535,patient_id,patient_admission_mismatch,10,admission 316 belongs to patient 180
+B,DiagnosticOrder,264,patient_id,patient_admission_mismatch,33,admission 159 belongs to patient 85
+B,DiagnosticOrder,557,patient_id,patient_admission_mismatch,58,admission 329 belongs to patient 189
+B,Admission,246,discharge_datetime,chronology,2024-01-14 04:37:00,discharge before admission
+B,Admission,149,discharge_datetime,chronology,2024-12-23 01:40:00,discharge before admission
+B,UnitStay,891,exit_datetime,chronology,2025-04-23 19:03:00,unit exit before unit entry
+B,UnitStay,504,exit_datetime,chronology,2025-02-27 18:56:00,unit exit before unit entry
+B,UnitStay,32,exit_datetime,chronology,2024-05-25 22:00:00,unit exit before unit entry
+B,UnitStay,362,exit_datetime,chronology,2024-09-03 09:52:00,unit exit before unit entry
+B,UnitStay,215,exit_datetime,chronology,2024-05-17 23:24:00,unit exit before unit entry
+B,SurgicalProcedure,9,procedure_datetime,chronology,2025-08-14 14:43:00,procedure after discharge
+B,RadiologyReport,191,report_datetime,chronology,2024-07-20 03:21:00,report before the examination
+B,RadiologyReport,70,report_datetime,chronology,2026-03-28 04:54:00,report before the examination
+B,RadiologyReport,203,report_datetime,chronology,2025-09-01 00:52:00,report before the examination
+B,Diagnosis,483,diagnosis_datetime,chronology,2025-12-02 09:45:00,diagnosis before admission
+B,Diagnosis,564,diagnosis_datetime,chronology,2024-11-24 03:14:00,diagnosis before admission
+B,Diagnosis,798,diagnosis_datetime,chronology,2025-01-28 23:04:00,diagnosis before admission
+B,DiagnosticExamination,332,exam_datetime,chronology,2024-05-04 15:59:00,exam performed before it was ordered
+B,DiagnosticExamination,376,exam_datetime,chronology,2024-06-14 12:11:00,exam performed before it was ordered
+B,Patient,159,date_of_death,chronology,2024-03-05 18:51:00,death recorded before the patient's admissions
+B,Patient,223,date_of_death,chronology,2023-12-22 23:32:00,death recorded before the patient's admissions
+B,Patient,83,date_of_birth,chronology,2025-11-15,born after first admission
+B,Admission,452,discharge_datetime,status_inconsistency,,status Discharged but no discharge time
+B,Admission,243,discharge_datetime,status_inconsistency,2026-10-21 19:43:00,status Admitted (still in hospital) but a discharge time is filled in
+B,Admission,435,discharge_datetime,status_inconsistency,2026-10-23 04:51:00,status Admitted (still in hospital) but a discharge time is filled in
+B,Patient,148,life_status,status_inconsistency,Alive,admission 266 ended with status Deceased
+B,DischargeRecord,261,condition_at_discharge,status_inconsistency,Improved,admission status is Deceased
+B,Diagnosis,730,diagnosis_type,missing_primary_diagnosis,Secondary,admission 337 is completed but now has no primary diagnosis
+B,Diagnosis,671,diagnosis_type,missing_primary_diagnosis,Secondary,admission 313 is completed but now has no primary diagnosis
+B,Healthcare_Professional,3,specialty,text_format,Emergency  Medicine,capitalization/whitespace changed
+B,Healthcare_Professional,11,staff_type,text_format,Doctor  ,capitalization/whitespace changed
+B,Healthcare_Professional,16,last_name,text_format,Wagner  ,capitalization/whitespace changed
+B,Healthcare_Professional,43,staff_type,text_format, Nurse,capitalization/whitespace changed
+B,Healthcare_Professional,49,first_name,text_format,HUGO,capitalization/whitespace changed
+B,Healthcare_Professional,49,staff_type,text_format,NURSE,capitalization/whitespace changed
+B,Healthcare_Professional,50,last_name,text_format, Horvat,capitalization/whitespace changed
+B,Healthcare_Professional,57,staff_type,text_format, Radiologist,capitalization/whitespace changed
+B,Healthcare_Professional,62,staff_type,text_format,  Radiographer ,capitalization/whitespace changed
+B,Patient,18,gender,text_format,  Other ,capitalization/whitespace changed
+B,Patient,20,full_name,text_format,  Erik |García,capitalization/whitespace changed
+B,Patient,28,full_name,text_format,Eva|Romano  ,capitalization/whitespace changed
+B,Patient,37,gender,text_format, Male,capitalization/whitespace changed
+B,Patient,67,full_name,text_format,Hugo|Horvat  ,capitalization/whitespace changed
+B,Patient,70,gender,text_format,Female  ,capitalization/whitespace changed
+B,Patient,88,emergency_contact_name,text_format,Louis  Nielsen,capitalization/whitespace changed
+B,Patient,99,emergency_contact_name,text_format, Sofia López,capitalization/whitespace changed
+B,Patient,106,full_name,text_format,Inès|  Dubois ,capitalization/whitespace changed
+B,Patient,113,gender,text_format,  Male ,capitalization/whitespace changed
+B,Patient,118,full_name,text_format,erik|Bernard,capitalization/whitespace changed
+B,Patient,120,full_name,text_format,Tomas  |Bianchi,capitalization/whitespace changed
+B,Patient,121,life_status,text_format, Living,capitalization/whitespace changed
+B,Patient,147,gender,text_format,female,capitalization/whitespace changed
+B,Patient,149,full_name,text_format,  Marco |Ricci,capitalization/whitespace changed
+B,Patient,168,gender,text_format,  Female ,capitalization/whitespace changed
+B,Patient,176,gender,text_format, Female,capitalization/whitespace changed
+B,Patient,193,life_status,text_format,Living  ,capitalization/whitespace changed
+B,Patient,203,gender,text_format,  Male ,capitalization/whitespace changed
+B,Patient,214,life_status,text_format,Living  ,capitalization/whitespace changed
+B,Patient,227,gender,text_format,Female  ,capitalization/whitespace changed
+B,Patient,238,gender,text_format,Male  ,capitalization/whitespace changed
+B,Patient,256,life_status,text_format, Living,capitalization/whitespace changed
+B,Admission,14,admission_status,text_format,DISCHARGED,capitalization/whitespace changed
+B,Admission,18,admission_type,text_format, Emergency,capitalization/whitespace changed
+B,Admission,30,condition_on_arrival,text_format,STABLE,capitalization/whitespace changed
+B,Admission,48,condition_on_arrival,text_format,Serious  ,capitalization/whitespace changed
+B,Admission,52,admission_datetime,date_format_inconsistency,06 Dec 2024 22:33,month written as text
+B,Admission,79,admission_type,text_format,  Emergency ,capitalization/whitespace changed
+B,Admission,88,admission_status,text_format, Discharged,capitalization/whitespace changed
+B,Admission,113,admission_datetime,invalid_date,31/02/2024 08:00,day does not exist
+B,Admission,115,condition_on_arrival,text_format,Serious  ,capitalization/whitespace changed
+B,Admission,119,admission_type,text_format,emergency,capitalization/whitespace changed
+B,Admission,125,admission_type,text_format,URGENT,capitalization/whitespace changed
+B,Admission,139,admission_datetime,date_format_inconsistency,2024-06-29T03:27,ISO format in DD/MM/YYYY source
+B,Admission,139,admission_type,text_format,Planned  ,capitalization/whitespace changed
+B,Admission,146,condition_on_arrival,text_format, Fair,capitalization/whitespace changed
+B,Admission,146,discharge_datetime,invalid_date,31/02/2024 08:00,day does not exist
+B,Admission,151,condition_on_arrival,text_format,  Critical ,capitalization/whitespace changed
+B,Admission,153,admission_source,text_format,  GP Referral ,capitalization/whitespace changed
+B,Admission,155,admission_source,text_format,  A&E ,capitalization/whitespace changed
+B,Admission,155,admission_status,text_format,Discharged  ,capitalization/whitespace changed
+B,Admission,161,admission_status,text_format,  Discharged ,capitalization/whitespace changed
+B,Admission,162,admission_type,text_format,planned,capitalization/whitespace changed
+B,Admission,170,admission_type,text_format,Emergency  ,capitalization/whitespace changed
+B,Admission,177,admission_type,text_format,planned,capitalization/whitespace changed
+B,Admission,177,admission_source,text_format,GP Referral  ,capitalization/whitespace changed
+B,Admission,183,admission_status,text_format,Discharged  ,capitalization/whitespace changed
+B,Admission,198,condition_on_arrival,text_format, Critical,capitalization/whitespace changed
+B,Admission,201,condition_on_arrival,text_format,FAIR,capitalization/whitespace changed
+B,Admission,207,admission_status,text_format, Discharged,capitalization/whitespace changed
+B,Admission,214,discharge_datetime,date_format_inconsistency,08 Nov 2024 06:36,month written as text
+B,Admission,218,admission_status,text_format, Discharged,capitalization/whitespace changed
+B,Admission,229,condition_on_arrival,text_format,Critical  ,capitalization/whitespace changed
+B,Admission,246,admission_source,text_format, A&E,capitalization/whitespace changed
+B,Admission,254,admission_type,text_format,urgent,capitalization/whitespace changed
+B,Admission,258,admission_source,text_format, A&E,capitalization/whitespace changed
+B,Admission,267,admission_type,text_format,emergency,capitalization/whitespace changed
+B,Admission,279,admission_status,text_format,DISCHARGED,capitalization/whitespace changed
+B,Admission,290,admission_type,text_format,  Urgent ,capitalization/whitespace changed
+B,Admission,290,admission_source,text_format,A&E  ,capitalization/whitespace changed
+B,Admission,303,admission_source,text_format,GP  Referral,capitalization/whitespace changed
+B,Admission,305,admission_source,text_format,inter-hospital transfer,capitalization/whitespace changed
+B,Admission,307,condition_on_arrival,text_format,STABLE,capitalization/whitespace changed
+B,Admission,308,admission_type,text_format,emergency,capitalization/whitespace changed
+B,Admission,315,admission_datetime,invalid_date,07/18/2024 03:07,written MM/DD instead of DD/MM (month > 12)
+B,Admission,327,admission_type,text_format,Urgent  ,capitalization/whitespace changed
+B,Admission,329,condition_on_arrival,text_format,  Stable ,capitalization/whitespace changed
+B,Admission,332,condition_on_arrival,text_format,STABLE,capitalization/whitespace changed
+B,Admission,360,admission_source,text_format, A&E,capitalization/whitespace changed
+B,Admission,367,admission_status,text_format, Discharged,capitalization/whitespace changed
+B,Admission,373,admission_type,text_format,EMERGENCY,capitalization/whitespace changed
+B,Admission,376,admission_source,text_format,Outpatient  Clinic,capitalization/whitespace changed
+B,Admission,381,admission_source,text_format,Inter-hospital  Transfer,capitalization/whitespace changed
+B,Admission,382,admission_datetime,date_format_inconsistency,2025-09-06T03:14,ISO format in DD/MM/YYYY source
+B,Admission,388,admission_type,text_format, Emergency,capitalization/whitespace changed
+B,Admission,388,admission_source,text_format,a&e,capitalization/whitespace changed
+B,Admission,393,admission_type,text_format,Emergency  ,capitalization/whitespace changed
+B,Admission,408,admission_type,text_format, Urgent,capitalization/whitespace changed
+B,Admission,417,admission_type,text_format,emergency,capitalization/whitespace changed
+B,Admission,421,admission_type,text_format, Emergency,capitalization/whitespace changed
+B,Admission,438,discharge_datetime,invalid_date,31/02/2025 08:00,day does not exist
+B,Admission,454,admission_type,text_format,Urgent  ,capitalization/whitespace changed
+B,Admission,459,admission_status,text_format,TRANSFERRED OUT,capitalization/whitespace changed
+B,Admission,469,condition_on_arrival,text_format, Stable,capitalization/whitespace changed
+B,TriageAssessment,8,triage_datetime,date_format_inconsistency,28 Oct 2024 21:46,month written as text
+B,TriageAssessment,39,priority_level,text_format,P2  ,capitalization/whitespace changed
+B,TriageAssessment,43,priority_level,text_format,p1,capitalization/whitespace changed
+B,TriageAssessment,71,priority_level,text_format,  P2 ,capitalization/whitespace changed
+B,TriageAssessment,138,priority_level,text_format, P1,capitalization/whitespace changed
+B,TriageAssessment,179,priority_level,text_format,p2,capitalization/whitespace changed
+B,TriageAssessment,272,triage_datetime,date_format_inconsistency,2024-08-26T12:58,ISO format in DD/MM/YYYY source
+B,TriageAssessment,275,priority_level,text_format,  P3 ,capitalization/whitespace changed
+B,TriageAssessment,344,priority_level,text_format, P2,capitalization/whitespace changed
+B,Diagnosis,49,diagnosis_type,text_format,additional,capitalization/whitespace changed
+B,Diagnosis,92,diagnosis_datetime,date_format_inconsistency,2024-10-30T16:07,ISO format in DD/MM/YYYY source
+B,Diagnosis,98,diagnosis_type,text_format,Additional  ,capitalization/whitespace changed
+B,Diagnosis,173,diagnosis_type,text_format,Additional  ,capitalization/whitespace changed
+B,Diagnosis,178,diagnosis_datetime,ambiguous_date,10/04/2025 00:26,"written MM/DD instead of DD/MM (day <= 12, cannot be detected)"
+B,Diagnosis,206,diagnosis_type,text_format,Principal  ,capitalization/whitespace changed
+B,Diagnosis,268,diagnosis_type,text_format, Principal,capitalization/whitespace changed
+B,Diagnosis,278,diagnosis_type,text_format,PRINCIPAL,capitalization/whitespace changed
+B,Diagnosis,327,diagnosis_type,text_format, Additional,capitalization/whitespace changed
+B,Diagnosis,349,diagnosis_datetime,date_format_inconsistency,13 Apr 2025 10:16,month written as text
+B,Diagnosis,351,diagnosis_type,text_format,Additional  ,capitalization/whitespace changed
+B,Diagnosis,409,diagnosis_type,text_format,principal,capitalization/whitespace changed
+B,Diagnosis,464,diagnosis_datetime,date_format_inconsistency,31 Jan 2025 20:34,month written as text
+B,Diagnosis,507,diagnosis_type,text_format,additional,capitalization/whitespace changed
+B,Diagnosis,532,diagnosis_type,text_format,Principal  ,capitalization/whitespace changed
+B,Diagnosis,556,diagnosis_datetime,invalid_date,31/02/2025 08:00,day does not exist
+B,Diagnosis,590,diagnosis_type,text_format,PRINCIPAL,capitalization/whitespace changed
+B,Diagnosis,594,diagnosis_type,text_format,  Principal ,capitalization/whitespace changed
+B,Diagnosis,641,diagnosis_type,text_format, Principal,capitalization/whitespace changed
+B,Diagnosis,671,diagnosis_type,text_format,  Additional ,capitalization/whitespace changed
+B,Diagnosis,680,diagnosis_type,text_format,  Additional ,capitalization/whitespace changed
+B,Diagnosis,739,diagnosis_type,text_format,ADDITIONAL,capitalization/whitespace changed
+B,Diagnosis,749,diagnosis_type,text_format,  Additional ,capitalization/whitespace changed
+B,Diagnosis,792,diagnosis_type,text_format,ADDITIONAL,capitalization/whitespace changed
+B,Diagnosis,801,diagnosis_datetime,date_format_inconsistency,2025-07-06T20:02,ISO format in DD/MM/YYYY source
+B,Diagnosis,870,diagnosis_datetime,date_format_inconsistency,15 Jan 2025 07:37,month written as text
+B,Diagnosis,892,diagnosis_type,text_format,additional,capitalization/whitespace changed
+B,Diagnosis,896,diagnosis_type,text_format,  Additional ,capitalization/whitespace changed
+B,Diagnosis,916,diagnosis_type,text_format,Additional  ,capitalization/whitespace changed
+B,Diagnosis,917,diagnosis_type,text_format,principal,capitalization/whitespace changed
+B,Diagnosis,925,diagnosis_datetime,date_format_inconsistency,01 Aug 2024 20:22,month written as text
+B,Diagnosis,931,diagnosis_type,text_format,Additional  ,capitalization/whitespace changed
+B,Diagnosis,980,diagnosis_datetime,date_format_inconsistency,2024-12-26T05:57,ISO format in DD/MM/YYYY source
+B,Diagnosis,997,diagnosis_type,text_format,PRINCIPAL,capitalization/whitespace changed
+B,Diagnosis,1004,diagnosis_type,text_format, Additional,capitalization/whitespace changed
+B,ClinicalNote,7,note_type,text_format,daily review,capitalization/whitespace changed
+B,ClinicalNote,127,note_type,text_format,  Consult ,capitalization/whitespace changed
+B,ClinicalNote,133,note_datetime,invalid_date,31/02/2025 08:00,day does not exist
+B,ClinicalNote,210,note_type,text_format,DAILY REVIEW,capitalization/whitespace changed
+B,ClinicalNote,233,note_type,text_format,ADMISSION,capitalization/whitespace changed
+B,ClinicalNote,239,note_type,text_format, Daily Review,capitalization/whitespace changed
+B,ClinicalNote,296,note_type,text_format,daily review,capitalization/whitespace changed
+B,ClinicalNote,320,note_type,text_format,admission,capitalization/whitespace changed
+B,ClinicalNote,323,note_datetime,invalid_date,31/02/2025 08:00,day does not exist
+B,ClinicalNote,386,note_type,text_format,Daily Review  ,capitalization/whitespace changed
+B,ClinicalNote,427,note_datetime,date_format_inconsistency,2024-12-14T21:02,ISO format in DD/MM/YYYY source
+B,ClinicalNote,429,note_datetime,invalid_date,12/18/2024 21:32,written MM/DD instead of DD/MM (month > 12)
+B,ClinicalNote,454,note_type,text_format, Daily Review,capitalization/whitespace changed
+B,ClinicalNote,464,note_type,text_format,daily review,capitalization/whitespace changed
+B,ClinicalNote,474,note_type,text_format, Daily Review,capitalization/whitespace changed
+B,ClinicalNote,491,note_type,text_format,  Discharge Letter ,capitalization/whitespace changed
+B,ClinicalNote,530,note_type,text_format,  Daily Review ,capitalization/whitespace changed
+B,ClinicalNote,549,note_type,text_format, Admission,capitalization/whitespace changed
+B,ClinicalNote,576,note_datetime,date_format_inconsistency,2024-05-28T21:01,ISO format in DD/MM/YYYY source
+B,ClinicalNote,589,note_type,text_format, Daily Review,capitalization/whitespace changed
+B,ClinicalNote,599,note_type,text_format,daily review,capitalization/whitespace changed
+B,ClinicalNote,647,note_type,text_format,Daily  Review,capitalization/whitespace changed
+B,ClinicalNote,665,note_type,text_format,Admission  ,capitalization/whitespace changed
+B,ClinicalNote,690,note_type,text_format,DAILY REVIEW,capitalization/whitespace changed
+B,ClinicalNote,721,note_type,text_format,Discharge Letter  ,capitalization/whitespace changed
+B,ClinicalNote,760,note_datetime,invalid_date,31/02/2024 08:00,day does not exist
+B,ClinicalNote,814,note_type,text_format,DAILY REVIEW,capitalization/whitespace changed
+B,ClinicalNote,823,note_type,text_format,Daily Review  ,capitalization/whitespace changed
+B,ClinicalNote,849,note_type,text_format,DAILY REVIEW,capitalization/whitespace changed
+B,ClinicalNote,862,note_type,text_format,discharge letter,capitalization/whitespace changed
+B,ClinicalNote,885,note_type,text_format,DAILY REVIEW,capitalization/whitespace changed
+B,ClinicalNote,931,note_datetime,date_format_inconsistency,16 Jan 2024 21:34,month written as text
+B,ClinicalNote,975,note_type,text_format,Daily  Review,capitalization/whitespace changed
+B,ClinicalNote,1026,note_type,text_format,consult,capitalization/whitespace changed
+B,ClinicalNote,1034,note_type,text_format,  Daily Review ,capitalization/whitespace changed
+B,ClinicalNote,1078,note_datetime,date_format_inconsistency,2025-05-25T20:56,ISO format in DD/MM/YYYY source
+B,ClinicalNote,1101,note_datetime,date_format_inconsistency,25 Apr 2025 00:40,month written as text
+B,ClinicalNote,1103,note_type,text_format, Daily Review,capitalization/whitespace changed
+B,ClinicalNote,1123,note_type,text_format,consult,capitalization/whitespace changed
+B,ClinicalNote,1155,note_datetime,invalid_date,31/02/2025 08:00,day does not exist
+B,ClinicalNote,1159,note_datetime,invalid_date,31/02/2025 08:00,day does not exist
+B,ClinicalNote,1221,note_type,text_format, Daily Review,capitalization/whitespace changed
+B,ClinicalNote,1241,note_datetime,invalid_date,04/17/2025 19:19,written MM/DD instead of DD/MM (month > 12)
+B,ClinicalNote,1319,note_datetime,invalid_date,12/24/2025 00:00,written MM/DD instead of DD/MM (month > 12)
+B,ClinicalNote,1349,note_type,text_format, Daily Review,capitalization/whitespace changed
+B,ClinicalNote,1354,note_type,text_format,daily review,capitalization/whitespace changed
+B,ClinicalNote,1422,note_datetime,date_format_inconsistency,2025-06-24T16:29,ISO format in DD/MM/YYYY source
+B,ClinicalNote,1434,note_type,text_format,Daily Review  ,capitalization/whitespace changed
+B,ClinicalNote,1435,note_datetime,ambiguous_date,05/07/2024 00:01,"written MM/DD instead of DD/MM (day <= 12, cannot be detected)"
+B,ClinicalNote,1445,note_type,text_format,Daily Review  ,capitalization/whitespace changed
+B,ClinicalNote,1458,note_type,text_format, Admission,capitalization/whitespace changed
+B,ClinicalNote,1474,note_type,text_format,Daily  Review,capitalization/whitespace changed
+B,ClinicalNote,1486,note_datetime,date_format_inconsistency,2024-11-27T08:49,ISO format in DD/MM/YYYY source
+B,ClinicalNote,1537,note_type,text_format,Discharge  Letter,capitalization/whitespace changed
+B,ClinicalNote,1557,note_type,text_format,Daily Review  ,capitalization/whitespace changed
+B,ClinicalNote,1643,note_type,text_format,Admission  ,capitalization/whitespace changed
+B,ClinicalNote,1643,note_datetime,invalid_date,08/17/2025 00:21,written MM/DD instead of DD/MM (month > 12)
+B,ClinicalNote,1661,note_type,text_format,daily review,capitalization/whitespace changed
+B,ClinicalNote,1692,note_type,text_format, Daily Review,capitalization/whitespace changed
+B,ClinicalNote,1702,note_type,text_format,admission,capitalization/whitespace changed
+B,ClinicalNote,1707,note_datetime,invalid_date,31/02/2025 08:00,day does not exist
+B,ClinicalNote,1708,note_datetime,invalid_date,31/02/2025 08:00,day does not exist
+B,ClinicalNote,1720,note_type,text_format,  Admission ,capitalization/whitespace changed
+B,ClinicalNote,1721,note_type,text_format,daily review,capitalization/whitespace changed
+B,ClinicalNote,1753,note_type,text_format,  Discharge Letter ,capitalization/whitespace changed
+B,ClinicalNote,1823,note_type,text_format,DAILY REVIEW,capitalization/whitespace changed
+B,ClinicalNote,1873,note_type,text_format, Daily Review,capitalization/whitespace changed
+B,ClinicalNote,1915,note_datetime,date_format_inconsistency,2025-01-01T01:23,ISO format in DD/MM/YYYY source
+B,ClinicalNote,1934,note_type,text_format,  Daily Review ,capitalization/whitespace changed
+B,ClinicalNote,1955,note_datetime,date_format_inconsistency,25 Aug 2025 00:37,month written as text
+B,DischargeRecord,12,condition_at_discharge,text_format,Improved  ,capitalization/whitespace changed
+B,DischargeRecord,13,condition_at_discharge,text_format,Stable  ,capitalization/whitespace changed
+B,DischargeRecord,14,discharge_destination,text_format,other hospital,capitalization/whitespace changed
+B,DischargeRecord,40,condition_at_discharge,text_format,stable,capitalization/whitespace changed
+B,DischargeRecord,71,discharge_destination,text_format,rehabilitation facility,capitalization/whitespace changed
+B,DischargeRecord,74,condition_at_discharge,text_format,IMPROVED,capitalization/whitespace changed
+B,DischargeRecord,96,discharge_destination,text_format, Other Hospital,capitalization/whitespace changed
+B,DischargeRecord,105,condition_at_discharge,text_format,IMPROVED,capitalization/whitespace changed
+B,DischargeRecord,114,discharge_destination,text_format,Rehabilitation  Facility,capitalization/whitespace changed
+B,DischargeRecord,171,discharge_destination,text_format,  Other Hospital ,capitalization/whitespace changed
+B,DischargeRecord,175,discharge_destination,text_format,long-term care,capitalization/whitespace changed
+B,DischargeRecord,180,condition_at_discharge,text_format,  Improved ,capitalization/whitespace changed
+B,DischargeRecord,247,discharge_destination,text_format, Home,capitalization/whitespace changed
+B,DischargeRecord,251,discharge_destination,text_format,  Home ,capitalization/whitespace changed
+B,DischargeRecord,268,condition_at_discharge,text_format,Died  ,capitalization/whitespace changed
+B,DischargeRecord,274,condition_at_discharge,text_format,Improved  ,capitalization/whitespace changed
+B,DischargeRecord,336,condition_at_discharge,text_format,Stable  ,capitalization/whitespace changed
+B,DischargeRecord,369,discharge_destination,text_format,Home  with  Home  Care,capitalization/whitespace changed
+B,DischargeRecord,401,condition_at_discharge,text_format,  Stable ,capitalization/whitespace changed
+B,DischargeRecord,405,discharge_destination,text_format,Rehabilitation  Facility,capitalization/whitespace changed
+B,DischargeRecord,406,condition_at_discharge,text_format,  Unchanged ,capitalization/whitespace changed
+B,DischargeRecord,418,condition_at_discharge,text_format, Stable,capitalization/whitespace changed
+B,DiagnosticOrder,39,order_status,text_format,completed,capitalization/whitespace changed
+B,DiagnosticOrder,42,order_status,text_format,COMPLETED,capitalization/whitespace changed
+B,DiagnosticOrder,65,order_status,text_format,COMPLETED,capitalization/whitespace changed
+B,DiagnosticOrder,79,order_status,text_format,Completed  ,capitalization/whitespace changed
+B,DiagnosticOrder,85,priority,text_format, Routine,capitalization/whitespace changed
+B,DiagnosticOrder,123,order_status,text_format,completed,capitalization/whitespace changed
+B,DiagnosticOrder,131,order_status,text_format,completed,capitalization/whitespace changed
+B,DiagnosticOrder,145,order_status,text_format,Completed  ,capitalization/whitespace changed
+B,DiagnosticOrder,208,priority,text_format,  Urgent ,capitalization/whitespace changed
+B,DiagnosticOrder,223,priority,text_format,  Urgent ,capitalization/whitespace changed
+B,DiagnosticOrder,285,request_datetime,invalid_date,31/02/2024 08:00,day does not exist
+B,DiagnosticOrder,311,priority,text_format,Routine  ,capitalization/whitespace changed
+B,DiagnosticOrder,312,priority,text_format,IMMEDIATE,capitalization/whitespace changed
+B,DiagnosticOrder,329,request_datetime,date_format_inconsistency,2025-07-11T04:23,ISO format in DD/MM/YYYY source
+B,DiagnosticOrder,337,order_status,text_format,COMPLETED,capitalization/whitespace changed
+B,DiagnosticOrder,356,order_status,text_format,COMPLETED,capitalization/whitespace changed
+B,DiagnosticOrder,385,order_status,text_format,COMPLETED,capitalization/whitespace changed
+B,DiagnosticOrder,393,order_status,text_format,  Completed ,capitalization/whitespace changed
+B,DiagnosticOrder,395,priority,text_format,URGENT,capitalization/whitespace changed
+B,DiagnosticOrder,401,request_datetime,invalid_date,12/23/2024 21:28,written MM/DD instead of DD/MM (month > 12)
+B,DiagnosticOrder,401,priority,text_format, Routine,capitalization/whitespace changed
+B,DiagnosticOrder,418,priority,text_format,ROUTINE,capitalization/whitespace changed
+B,DiagnosticOrder,423,order_status,text_format,Completed  ,capitalization/whitespace changed
+B,DiagnosticOrder,451,order_status,text_format, Completed,capitalization/whitespace changed
+B,DiagnosticOrder,472,priority,text_format,Routine  ,capitalization/whitespace changed
+B,DiagnosticOrder,491,order_status,text_format, Completed,capitalization/whitespace changed
+B,DiagnosticOrder,499,order_status,text_format,  Completed ,capitalization/whitespace changed
+B,DiagnosticOrder,515,order_status,text_format,  Completed ,capitalization/whitespace changed
+B,DiagnosticOrder,519,order_status,text_format,completed,capitalization/whitespace changed
+B,DiagnosticOrder,527,order_status,text_format,Completed  ,capitalization/whitespace changed
+B,DiagnosticOrder,557,request_datetime,ambiguous_date,06/02/2025 06:26,"written MM/DD instead of DD/MM (day <= 12, cannot be detected)"
+B,DiagnosticOrder,580,priority,text_format, Urgent,capitalization/whitespace changed
+B,DiagnosticOrder,625,priority,text_format,  Routine ,capitalization/whitespace changed
+B,DiagnosticOrder,641,priority,text_format,  Immediate ,capitalization/whitespace changed
+B,DiagnosticOrder,654,request_datetime,invalid_date,11/23/2024 17:39,written MM/DD instead of DD/MM (month > 12)
+B,DiagnosticOrder,661,priority,text_format,urgent,capitalization/whitespace changed
+B,DiagnosticOrder,679,order_status,text_format,COMPLETED,capitalization/whitespace changed
+B,DiagnosticOrder,720,priority,text_format,Immediate  ,capitalization/whitespace changed
+B,DiagnosticOrder,738,priority,text_format,routine,capitalization/whitespace changed
+B,DiagnosticOrder,753,priority,text_format,Routine  ,capitalization/whitespace changed
+B,DiagnosticOrder,767,request_datetime,date_format_inconsistency,2025-07-04T12:36,ISO format in DD/MM/YYYY source
+B,DiagnosticOrder,778,priority,text_format,  Routine ,capitalization/whitespace changed
+B,DiagnosticExamination,62,exam_type,text_format, Coagulation Panel,capitalization/whitespace changed
+B,DiagnosticExamination,93,exam_datetime,date_format_inconsistency,2024-09-03T08:06,ISO format in DD/MM/YYYY source
+B,DiagnosticExamination,103,exam_status,text_format,COMPLETED,capitalization/whitespace changed
+B,DiagnosticExamination,105,exam_status,text_format,  Completed ,capitalization/whitespace changed
+B,DiagnosticExamination,106,exam_datetime,date_format_inconsistency,15 Aug 2025 03:13,month written as text
+B,DiagnosticExamination,134,exam_type,text_format,BLOOD CULTURE,capitalization/whitespace changed
+B,DiagnosticExamination,197,exam_status,text_format,Completed  ,capitalization/whitespace changed
+B,DiagnosticExamination,199,exam_type,text_format,electrocardiogram,capitalization/whitespace changed
+B,DiagnosticExamination,210,exam_status,text_format,completed,capitalization/whitespace changed
+B,DiagnosticExamination,216,exam_status,text_format,COMPLETED,capitalization/whitespace changed
+B,DiagnosticExamination,246,exam_type,text_format, Troponin Panel,capitalization/whitespace changed
+B,DiagnosticExamination,250,exam_type,text_format,Lipid Panel  ,capitalization/whitespace changed
+B,DiagnosticExamination,253,exam_status,text_format,  Completed ,capitalization/whitespace changed
+B,DiagnosticExamination,255,exam_status,text_format,completed,capitalization/whitespace changed
+B,DiagnosticExamination,256,exam_status,text_format,  Completed ,capitalization/whitespace changed
+B,DiagnosticExamination,259,exam_type,text_format,Complete  Blood  Count,capitalization/whitespace changed
+B,DiagnosticExamination,301,exam_type,text_format,  Complete Blood Count ,capitalization/whitespace changed
+B,DiagnosticExamination,330,exam_status,text_format,Completed  ,capitalization/whitespace changed
+B,DiagnosticExamination,341,exam_type,text_format,SPUTUM CULTURE,capitalization/whitespace changed
+B,DiagnosticExamination,364,exam_status,text_format,completed,capitalization/whitespace changed
+B,DiagnosticExamination,374,exam_type,text_format,Coagulation Panel  ,capitalization/whitespace changed
+B,DiagnosticExamination,382,exam_status,text_format,COMPLETED,capitalization/whitespace changed
+B,DiagnosticExamination,395,exam_type,text_format,Complete Blood Count  ,capitalization/whitespace changed
+B,DiagnosticExamination,397,exam_status,text_format,Completed  ,capitalization/whitespace changed
+B,DiagnosticExamination,419,exam_type,text_format,  Electroencephalogram ,capitalization/whitespace changed
+B,RadiologyExamination,16,exam_status,text_format,completed,capitalization/whitespace changed
+B,RadiologyExamination,26,body_area,text_format,ABDOMEN,capitalization/whitespace changed
+B,RadiologyExamination,28,exam_datetime,invalid_date,31/02/2024 08:00,day does not exist
+B,RadiologyExamination,45,exam_type,text_format, Ultrasound,capitalization/whitespace changed
+B,RadiologyExamination,46,exam_type,text_format,Ct,capitalization/whitespace changed
+B,RadiologyExamination,47,exam_status,text_format,  Completed ,capitalization/whitespace changed
+B,RadiologyExamination,49,body_area,text_format,HIP,capitalization/whitespace changed
+B,RadiologyExamination,77,exam_datetime,date_format_inconsistency,25 Aug 2024 10:59,month written as text
+B,RadiologyExamination,109,exam_status,text_format,completed,capitalization/whitespace changed
+B,RadiologyExamination,114,body_area,text_format,Head  ,capitalization/whitespace changed
+B,RadiologyExamination,145,exam_type,text_format, X-Ray,capitalization/whitespace changed
+B,RadiologyExamination,156,exam_type,text_format,X-Ray  ,capitalization/whitespace changed
+B,RadiologyExamination,163,body_area,text_format, Chest,capitalization/whitespace changed
+B,RadiologyExamination,176,body_area,text_format, Abdomen,capitalization/whitespace changed
+B,RadiologyExamination,179,exam_type,text_format,X-Ray  ,capitalization/whitespace changed
+B,RadiologyExamination,249,exam_status,text_format,COMPLETED,capitalization/whitespace changed
+B,RadiologyExamination,258,exam_type,text_format,x-ray,capitalization/whitespace changed
+B,RadiologyExamination,280,exam_status,text_format,COMPLETED,capitalization/whitespace changed
+B,RadiologyExamination,314,exam_type,text_format,ULTRASOUND,capitalization/whitespace changed
+B,RadiologyExamination,319,exam_datetime,ambiguous_date,07/03/2025 08:05,"written MM/DD instead of DD/MM (day <= 12, cannot be detected)"
+B,RadiologyExamination,322,body_area,text_format,  Neck Vessels ,capitalization/whitespace changed
+B,RadiologyExamination,329,exam_status,text_format,Completed  ,capitalization/whitespace changed
+B,RadiologyReport,282,report_datetime,date_format_inconsistency,04 Oct 2024 23:29,month written as text
+B,RadiologyReport,308,report_datetime,invalid_date,31/02/2026 08:00,day does not exist
+B,UnitStay,54,exit_datetime,date_format_inconsistency,26 Jun 2025 07:22,month written as text
+B,UnitStay,63,exit_datetime,date_format_inconsistency,05 Dec 2025 17:53,month written as text
+B,UnitStay,84,exit_datetime,date_format_inconsistency,11 Mar 2024 10:32,month written as text
+B,UnitStay,114,entry_datetime,date_format_inconsistency,06 May 2025 10:24,month written as text
+B,UnitStay,142,entry_datetime,date_format_inconsistency,29 Sep 2024 19:29,month written as text
+B,UnitStay,178,entry_datetime,invalid_date,01/19/2024 22:53,written MM/DD instead of DD/MM (month > 12)
+B,UnitStay,224,entry_datetime,date_format_inconsistency,2025-02-10T23:48,ISO format in DD/MM/YYYY source
+B,UnitStay,411,entry_datetime,invalid_date,31/02/2025 08:00,day does not exist
+B,UnitStay,467,exit_datetime,date_format_inconsistency,17 Jan 2024 04:38,month written as text
+B,UnitStay,514,exit_datetime,date_format_inconsistency,21 Jan 2024 10:32,month written as text
+B,UnitStay,546,exit_datetime,date_format_inconsistency,2024-12-15T14:29,ISO format in DD/MM/YYYY source
+B,UnitStay,586,exit_datetime,date_format_inconsistency,2025-03-24T15:46,ISO format in DD/MM/YYYY source
+B,UnitStay,749,exit_datetime,date_format_inconsistency,2024-11-27T19:21,ISO format in DD/MM/YYYY source
+B,UnitStay,935,exit_datetime,invalid_date,31/02/2024 08:00,day does not exist
+B,UnitStay,941,entry_datetime,date_format_inconsistency,2025-03-31T04:00,ISO format in DD/MM/YYYY source
+B,CriticalCareRecord,86,record_datetime,invalid_date,09/29/2024 06:46,written MM/DD instead of DD/MM (month > 12)
+B,CriticalCareRecord,297,record_datetime,date_format_inconsistency,2025-03-23T15:38,ISO format in DD/MM/YYYY source
+B,CriticalCareRecord,397,record_datetime,invalid_date,05/18/2025 00:02,written MM/DD instead of DD/MM (month > 12)
+B,GeneralWardRecord,33,record_datetime,date_format_inconsistency,2024-06-02T08:45,ISO format in DD/MM/YYYY source
+B,GeneralWardRecord,74,record_datetime,date_format_inconsistency,2025-06-21T00:36,ISO format in DD/MM/YYYY source
+B,GeneralWardRecord,146,record_datetime,invalid_date,03/13/2025 04:04,written MM/DD instead of DD/MM (month > 12)
+B,GeneralWardRecord,393,record_datetime,invalid_date,31/02/2024 08:00,day does not exist
+B,GeneralWardRecord,580,record_datetime,date_format_inconsistency,2024-05-06T23:43,ISO format in DD/MM/YYYY source
+B,Patient,232,(record),duplicate_exact,,identical record appears twice
+B,Patient,92,(record),duplicate_exact,,identical record appears twice
+B,Patient,47,(record),duplicate_exact,,identical record appears twice
+B,Admission,281,(record),duplicate_exact,,identical record appears twice
+B,Admission,260,(record),duplicate_exact,,identical record appears twice
+B,Admission,188,(record),duplicate_exact,,identical record appears twice
+B,Admission,178,(record),duplicate_exact,,identical record appears twice
+B,Admission,9,(record),duplicate_exact,,identical record appears twice
+B,TriageAssessment,302,(record),duplicate_exact,,identical record appears twice
+B,TriageAssessment,240,(record),duplicate_exact,,identical record appears twice
+B,TriageAssessment,204,(record),duplicate_exact,,identical record appears twice
+B,TriageAssessment,135,(record),duplicate_exact,,identical record appears twice
+B,Diagnosis,965,(record),duplicate_exact,,identical record appears twice
+B,Diagnosis,940,(record),duplicate_exact,,identical record appears twice
+B,Diagnosis,917,(record),duplicate_exact,,identical record appears twice
+B,Diagnosis,851,(record),duplicate_exact,,identical record appears twice
+B,Diagnosis,679,(record),duplicate_exact,,identical record appears twice
+B,Diagnosis,619,(record),duplicate_exact,,identical record appears twice
+B,Diagnosis,587,(record),duplicate_exact,,identical record appears twice
+B,Diagnosis,585,(record),duplicate_exact,,identical record appears twice
+B,Diagnosis,529,(record),duplicate_exact,,identical record appears twice
+B,Diagnosis,314,(record),duplicate_exact,,identical record appears twice
+B,Diagnosis,220,(record),duplicate_exact,,identical record appears twice
+B,Diagnosis,141,(record),duplicate_exact,,identical record appears twice
+B,ClinicalNote,1938,(record),duplicate_exact,,identical record appears twice
+B,ClinicalNote,1852,(record),duplicate_exact,,identical record appears twice
+B,ClinicalNote,1826,(record),duplicate_exact,,identical record appears twice
+B,ClinicalNote,1460,(record),duplicate_exact,,identical record appears twice
+B,ClinicalNote,1432,(record),duplicate_exact,,identical record appears twice
+B,ClinicalNote,1412,(record),duplicate_exact,,identical record appears twice
+B,ClinicalNote,1346,(record),duplicate_exact,,identical record appears twice
+B,ClinicalNote,1343,(record),duplicate_exact,,identical record appears twice
+B,ClinicalNote,1294,(record),duplicate_exact,,identical record appears twice
+B,ClinicalNote,1266,(record),duplicate_exact,,identical record appears twice
+B,ClinicalNote,792,(record),duplicate_exact,,identical record appears twice
+B,ClinicalNote,742,(record),duplicate_exact,,identical record appears twice
+B,ClinicalNote,691,(record),duplicate_exact,,identical record appears twice
+B,ClinicalNote,620,(record),duplicate_exact,,identical record appears twice
+B,ClinicalNote,402,(record),duplicate_exact,,identical record appears twice
+B,ClinicalNote,213,(record),duplicate_exact,,identical record appears twice
+B,UnitStay,955,(record),duplicate_exact,,identical record appears twice
+B,UnitStay,924,(record),duplicate_exact,,identical record appears twice
+B,UnitStay,766,(record),duplicate_exact,,identical record appears twice
+B,UnitStay,599,(record),duplicate_exact,,identical record appears twice
+B,UnitStay,555,(record),duplicate_exact,,identical record appears twice
+B,UnitStay,446,(record),duplicate_exact,,identical record appears twice
+B,UnitStay,104,(record),duplicate_exact,,identical record appears twice
+B,UnitStay,64,(record),duplicate_exact,,identical record appears twice
+B,GeneralWardRecord,721,(record),duplicate_exact,,identical record appears twice
+B,GeneralWardRecord,601,(record),duplicate_exact,,identical record appears twice
+B,GeneralWardRecord,389,(record),duplicate_exact,,identical record appears twice
+B,GeneralWardRecord,339,(record),duplicate_exact,,identical record appears twice
+B,GeneralWardRecord,314,(record),duplicate_exact,,identical record appears twice
+B,GeneralWardRecord,183,(record),duplicate_exact,,identical record appears twice
+B,GeneralWardRecord,136,(record),duplicate_exact,,identical record appears twice
+B,Healthcare_Professional,48,(record),duplicate_exact,,identical record appears twice
+B,Healthcare_Professional,18,(record),duplicate_exact,,identical record appears twice
+B,ICD9_Code,285.9,(record),duplicate_exact,,identical record appears twice
+B,Admission,337,(row),malformed_record,truncated,row cut off after 5 of 11 fields (export interrupted); file episodes.csv
+B,Admission,394,(row),malformed_record,extra_field,stray ';' inside a text value gives 12 fields; file episodes.csv
+B,TriageAssessment,93,(row),malformed_record,truncated,row cut off after 6 of 13 fields (export interrupted); file triage.csv
+B,TriageAssessment,180,(row),malformed_record,extra_field,stray ';' inside a text value gives 14 fields; file triage.csv
+B,Diagnosis,511,(row),malformed_record,truncated,row cut off after 3 of 7 fields (export interrupted); file diagnoses.csv
+B,Diagnosis,889,(row),malformed_record,extra_field,stray ';' inside a text value gives 8 fields; file diagnoses.csv
+C,Patient,241,patient_id,duplicate_entity,241,"same person as patient 93 (same insurance no. and DOB, name written differently); admission 181 is filed under this duplicate"
+C,Patient,242,patient_id,duplicate_entity,242,"same person as patient 116 (same insurance no. and DOB, name written differently); admission 223 is filed under this duplicate"
+C,Patient,243,patient_id,duplicate_entity,243,"same person as patient 127 (same insurance no. and DOB, name written differently); admission 244 is filed under this duplicate"
+C,Patient,244,patient_id,duplicate_entity,244,"same person as patient 232 (same insurance no. and DOB, name written differently)"
+C,Patient,245,patient_id,duplicate_entity,245,"same person as patient 235 (same insurance no. and DOB, name written differently)"
+C,Patient,246,patient_id,duplicate_entity,246,"same person as patient 190 (same insurance no. and DOB, name written differently); admission 356 is filed under this duplicate"
+C,Patient,68,date_of_birth,missing_required,,required (NOT NULL) value missing
+C,Patient,128,date_of_birth,missing_required,,required (NOT NULL) value missing
+C,Patient,106,date_of_birth,missing_required,,required (NOT NULL) value missing
+C,Patient,205,health_insurance_num,missing_required,,required (NOT NULL) value missing
+C,Patient,165,health_insurance_num,missing_required,,required (NOT NULL) value missing
+C,Admission,448,admission_type,missing_required,,required (NOT NULL) value missing
+C,Admission,95,admission_type,missing_required,,required (NOT NULL) value missing
+C,Admission,242,admission_type,missing_required,,required (NOT NULL) value missing
+C,Admission,302,admission_datetime,missing_required,,required (NOT NULL) value missing
+C,Admission,213,admission_datetime,missing_required,,required (NOT NULL) value missing
+C,TriageAssessment,250,heart_rate,missing_required,,required (NOT NULL) value missing
+C,TriageAssessment,3,heart_rate,missing_required,,required (NOT NULL) value missing
+C,TriageAssessment,288,priority_level,missing_required,,required (NOT NULL) value missing
+C,TriageAssessment,255,priority_level,missing_required,,required (NOT NULL) value missing
+C,Diagnosis,363,icd9_code,missing_required,,required (NOT NULL) value missing
+C,Diagnosis,650,icd9_code,missing_required,,required (NOT NULL) value missing
+C,Diagnosis,673,icd9_code,missing_required,,required (NOT NULL) value missing
+C,Diagnosis,888,icd9_code,missing_required,,required (NOT NULL) value missing
+C,UnitStay,92,entry_datetime,missing_required,,required (NOT NULL) value missing
+C,UnitStay,16,entry_datetime,missing_required,,required (NOT NULL) value missing
+C,UnitStay,853,entry_datetime,missing_required,,required (NOT NULL) value missing
+C,ClinicalNote,280,suspected_condition,missing_required,,required (NOT NULL) value missing
+C,ClinicalNote,282,suspected_condition,missing_required,,required (NOT NULL) value missing
+C,ClinicalNote,1608,suspected_condition,missing_required,,required (NOT NULL) value missing
+C,ClinicalNote,752,suspected_condition,missing_required,,required (NOT NULL) value missing
+C,ClinicalNote,244,suspected_condition,missing_required,,required (NOT NULL) value missing
+C,ClinicalNote,1554,suspected_condition,missing_required,,required (NOT NULL) value missing
+C,ClinicalNote,721,suspected_condition,missing_required,,required (NOT NULL) value missing
+C,RadiologyExamination,205,body_area,missing_required,,required (NOT NULL) value missing
+C,RadiologyExamination,303,body_area,missing_required,,required (NOT NULL) value missing
+C,RadiologyExamination,172,body_area,missing_required,,required (NOT NULL) value missing
+C,Healthcare_Professional,24,last_name,missing_required,,required (NOT NULL) value missing
+C,TriageAssessment,142,body_temp,unit_inconsistency,98.6,Fahrenheit value in Celsius field
+C,TriageAssessment,225,body_temp,unit_inconsistency,98.6,Fahrenheit value in Celsius field
+C,TriageAssessment,352,heart_rate,invalid_numeric,-12,value outside valid range or not a number
+C,TriageAssessment,26,oxygen_sat,invalid_numeric,140,value outside valid range or not a number
+C,TriageAssessment,42,oxygen_sat,invalid_numeric,-5,value outside valid range or not a number
+C,TriageAssessment,113,oxygen_sat,invalid_numeric,140,value outside valid range or not a number
+C,TriageAssessment,241,body_temp,invalid_numeric,3.7,value outside valid range or not a number
+C,TriageAssessment,63,heart_rate,invalid_numeric,412,value outside valid range or not a number
+C,TriageAssessment,128,oxygen_sat,invalid_numeric,0,value outside valid range or not a number
+C,Diagnosis,773,icd9_code,broken_reference,250.5,code not in ICD-9 dictionary
+C,Diagnosis,154,icd9_code,broken_reference,V99.9,code not in ICD-9 dictionary
+C,Diagnosis,253,icd9_code,broken_reference,250.5,code not in ICD-9 dictionary
+C,Diagnosis,792,icd9_code,broken_reference,123.45,code not in ICD-9 dictionary
+C,Diagnosis,701,icd9_code,broken_reference,123.45,code not in ICD-9 dictionary
+C,Diagnosis,781,icd9_code,broken_reference,V99.9,code not in ICD-9 dictionary
+C,UnitStay,690,unit_id,broken_reference,98,unit does not exist
+C,UnitStay,246,unit_id,broken_reference,98,unit does not exist
+C,UnitStay,771,unit_id,broken_reference,99,unit does not exist
+C,Admission,127,admitting_healthcare_professional,broken_reference,701,healthcare professional does not exist
+C,SurgicalProcedure,67,surgeon_id,broken_reference,808,healthcare professional does not exist
+C,Diagnosis,6,diagnosing_physician_id,broken_reference,779,healthcare professional does not exist
+C,Diagnosis,201,diagnosing_physician_id,broken_reference,508,healthcare professional does not exist
+C,Diagnosis,729,diagnosing_physician_id,broken_reference,827,healthcare professional does not exist
+C,Diagnosis,745,patient_id,patient_admission_mismatch,108,admission 346 belongs to patient 186
+C,Diagnosis,57,patient_id,patient_admission_mismatch,58,admission 26 belongs to patient 15
+C,Diagnosis,484,patient_id,patient_admission_mismatch,190,admission 226 belongs to patient 118
+C,Diagnosis,22,patient_id,patient_admission_mismatch,148,admission 13 belongs to patient 7
+C,Diagnosis,885,patient_id,patient_admission_mismatch,214,admission 415 belongs to patient 219
+C,DiagnosticOrder,204,patient_id,patient_admission_mismatch,74,admission 106 belongs to patient 53
+C,DiagnosticOrder,679,patient_id,patient_admission_mismatch,199,admission 362 belongs to patient 192
+C,DiagnosticOrder,102,patient_id,patient_admission_mismatch,131,admission 51 belongs to patient 27
+C,Admission,155,discharge_datetime,chronology,2024-06-20 00:51:00,discharge before admission
+C,Admission,33,discharge_datetime,chronology,2025-02-10 02:27:00,discharge before admission
+C,UnitStay,672,exit_datetime,chronology,2026-03-11 08:03:00,unit exit before unit entry
+C,UnitStay,709,exit_datetime,chronology,2024-04-13 07:06:00,unit exit before unit entry
+C,UnitStay,560,exit_datetime,chronology,2026-03-05 23:32:00,unit exit before unit entry
+C,UnitStay,729,exit_datetime,chronology,2025-06-02 02:41:00,unit exit before unit entry
+C,UnitStay,753,exit_datetime,chronology,2025-01-31 19:00:00,unit exit before unit entry
+C,SurgicalProcedure,69,procedure_datetime,chronology,2024-07-27 16:53:00,procedure after discharge
+C,RadiologyReport,92,report_datetime,chronology,2025-08-16 20:35:00,report before the examination
+C,RadiologyReport,265,report_datetime,chronology,2024-08-13 08:02:00,report before the examination
+C,RadiologyReport,134,report_datetime,chronology,2024-07-25 18:23:00,report before the examination
+C,Diagnosis,204,diagnosis_datetime,chronology,2024-10-26 03:06:00,diagnosis before admission
+C,Diagnosis,757,diagnosis_datetime,chronology,2024-12-19 20:37:00,diagnosis before admission
+C,Diagnosis,682,diagnosis_datetime,chronology,2025-12-16 03:27:00,diagnosis before admission
+C,DiagnosticExamination,261,exam_datetime,chronology,2024-05-08 06:41:00,exam performed before it was ordered
+C,DiagnosticExamination,371,exam_datetime,chronology,2024-03-10 07:33:00,exam performed before it was ordered
+C,Patient,70,date_of_death,chronology,2023-05-01 12:29:00,death recorded before the patient's admissions
+C,Patient,82,date_of_death,chronology,2024-08-09 18:49:00,death recorded before the patient's admissions
+C,Patient,219,date_of_birth,chronology,2025-04-12,born after first admission
+C,Admission,141,discharge_datetime,status_inconsistency,,status Discharged but no discharge time
+C,Admission,120,discharge_datetime,status_inconsistency,2026-10-22 23:54:00,status Admitted (still in hospital) but a discharge time is filled in
+C,Admission,130,discharge_datetime,status_inconsistency,2026-10-30 01:25:00,status Admitted (still in hospital) but a discharge time is filled in
+C,Patient,112,life_status,status_inconsistency,Alive,admission 217 ended with status Deceased
+C,DischargeRecord,375,condition_at_discharge,status_inconsistency,Improved,admission status is Deceased
+C,Diagnosis,164,diagnosis_type,missing_primary_diagnosis,Secondary,admission 71 is completed but now has no primary diagnosis
+C,Diagnosis,528,diagnosis_type,missing_primary_diagnosis,Secondary,admission 248 is completed but now has no primary diagnosis
+C,Healthcare_Professional,3,last_name,text_format, Tanaka,capitalization/whitespace changed
+C,Healthcare_Professional,12,first_name,text_format,lakshmi,capitalization/whitespace changed
+C,Healthcare_Professional,15,specialty,text_format,CRITICAL CARE,capitalization/whitespace changed
+C,Healthcare_Professional,25,last_name,text_format,PHAM,capitalization/whitespace changed
+C,Healthcare_Professional,45,specialty,text_format,  Ward ,capitalization/whitespace changed
+C,Healthcare_Professional,56,specialty,text_format,  Diagnostic Radiology ,capitalization/whitespace changed
+C,Unit,8,unit_name,text_format,SURGICAL WARD 4A,capitalization/whitespace changed
+C,Patient,1,life_status,text_format,A  ,capitalization/whitespace changed
+C,Patient,13,emergency_contact_name,text_format,Vikram  Li,capitalization/whitespace changed
+C,Patient,15,full_name,text_format,Jun| Choi,capitalization/whitespace changed
+C,Patient,17,full_name,text_format, Linh|Gupta,capitalization/whitespace changed
+C,Patient,26,emergency_contact_name,text_format, Jun Suzuki,capitalization/whitespace changed
+C,Patient,30,emergency_contact_name,text_format,MEI WONGSAKUL,capitalization/whitespace changed
+C,Patient,35,gender,text_format, M,capitalization/whitespace changed
+C,Patient,35,emergency_contact_name,text_format, Kenji Choi,capitalization/whitespace changed
+C,Patient,45,gender,text_format,F  ,capitalization/whitespace changed
+C,Patient,49,emergency_contact_name,text_format,DAICHI HUANG,capitalization/whitespace changed
+C,Patient,68,full_name,text_format,DAICHI|Zhang,capitalization/whitespace changed
+C,Patient,98,gender,text_format, M,capitalization/whitespace changed
+C,Patient,117,life_status,text_format,A  ,capitalization/whitespace changed
+C,Patient,129,full_name,text_format,vikram|Patel,capitalization/whitespace changed
+C,Patient,136,gender,text_format,f,capitalization/whitespace changed
+C,Patient,140,gender,text_format,M  ,capitalization/whitespace changed
+C,Patient,144,full_name,text_format,sakura|Rahman,capitalization/whitespace changed
+C,Patient,168,full_name,text_format,RAHUL|Choi,capitalization/whitespace changed
+C,Patient,170,life_status,text_format,A  ,capitalization/whitespace changed
+C,Patient,192,life_status,text_format,  D ,capitalization/whitespace changed
+C,Patient,208,gender,text_format, M,capitalization/whitespace changed
+C,Patient,230,emergency_contact_name,text_format,  Hao Choi ,capitalization/whitespace changed
+C,Patient,231,full_name,text_format,  Hao |Chen,capitalization/whitespace changed
+C,Patient,238,gender,text_format,  F ,capitalization/whitespace changed
+C,Admission,10,admission_type,text_format,EMG  ,capitalization/whitespace changed
+C,Admission,12,condition_on_arrival,text_format,Stable  ,capitalization/whitespace changed
+C,Admission,14,admission_status,text_format,Dc,capitalization/whitespace changed
+C,Admission,15,admission_source,text_format,ed,capitalization/whitespace changed
+C,Admission,26,discharge_datetime,invalid_date,0000/00/00 00:00:00,placeholder zero date
+C,Admission,34,admission_source,text_format,  ED ,capitalization/whitespace changed
+C,Admission,35,admission_type,text_format,ele,capitalization/whitespace changed
+C,Admission,39,admission_source,text_format,Ed,capitalization/whitespace changed
+C,Admission,68,admission_type,text_format,urg,capitalization/whitespace changed
+C,Admission,69,admission_source,text_format,trf,capitalization/whitespace changed
+C,Admission,71,discharge_datetime,invalid_date,0000/00/00 00:00:00,placeholder zero date
+C,Admission,84,admission_type,text_format, ELE,capitalization/whitespace changed
+C,Admission,88,admission_type,text_format,Emg,capitalization/whitespace changed
+C,Admission,104,discharge_datetime,date_format_inconsistency,20250128144600,compact format without separators
+C,Admission,106,admission_datetime,invalid_date,0000/00/00 00:00:00,placeholder zero date
+C,Admission,113,admission_source,text_format,  ED ,capitalization/whitespace changed
+C,Admission,121,condition_on_arrival,text_format,Stable  ,capitalization/whitespace changed
+C,Admission,122,admission_source,text_format, REF,capitalization/whitespace changed
+C,Admission,129,admission_source,text_format,Opd,capitalization/whitespace changed
+C,Admission,139,admission_type,text_format,ELE  ,capitalization/whitespace changed
+C,Admission,147,admission_status,text_format, DC,capitalization/whitespace changed
+C,Admission,156,admission_status,text_format, DC,capitalization/whitespace changed
+C,Admission,157,admission_type,text_format, EMG,capitalization/whitespace changed
+C,Admission,166,admission_source,text_format,Ed,capitalization/whitespace changed
+C,Admission,192,admission_status,text_format,Trf,capitalization/whitespace changed
+C,Admission,193,condition_on_arrival,text_format,serious,capitalization/whitespace changed
+C,Admission,194,admission_type,text_format,Urg,capitalization/whitespace changed
+C,Admission,194,admission_status,text_format,  DC ,capitalization/whitespace changed
+C,Admission,206,admission_type,text_format,ELE  ,capitalization/whitespace changed
+C,Admission,229,admission_type,text_format,urg,capitalization/whitespace changed
+C,Admission,229,admission_status,text_format,Dc,capitalization/whitespace changed
+C,Admission,235,condition_on_arrival,text_format, Serious,capitalization/whitespace changed
+C,Admission,238,admission_status,text_format,DC  ,capitalization/whitespace changed
+C,Admission,247,admission_status,text_format,  DC ,capitalization/whitespace changed
+C,Admission,256,admission_status,text_format,DC  ,capitalization/whitespace changed
+C,Admission,272,admission_status,text_format,Dc,capitalization/whitespace changed
+C,Admission,278,admission_source,text_format,ED  ,capitalization/whitespace changed
+C,Admission,282,admission_type,text_format,ELE  ,capitalization/whitespace changed
+C,Admission,284,admission_datetime,invalid_date,2024/02/30 09:00:00,day does not exist
+C,Admission,292,admission_type,text_format,Urg,capitalization/whitespace changed
+C,Admission,296,admission_source,text_format,REF  ,capitalization/whitespace changed
+C,Admission,297,discharge_datetime,invalid_date,0000/00/00 00:00:00,placeholder zero date
+C,Admission,300,discharge_datetime,invalid_date,0000/00/00 00:00:00,placeholder zero date
+C,Admission,316,admission_source,text_format, ED,capitalization/whitespace changed
+C,Admission,317,admission_datetime,invalid_date,2025/02/30 09:00:00,day does not exist
+C,Admission,317,admission_source,text_format,REF  ,capitalization/whitespace changed
+C,Admission,317,discharge_datetime,invalid_date,2025/02/30 09:00:00,day does not exist
+C,Admission,324,admission_datetime,invalid_date,0000/00/00 00:00:00,placeholder zero date
+C,Admission,330,admission_type,text_format,emg,capitalization/whitespace changed
+C,Admission,336,admission_source,text_format,  OPD ,capitalization/whitespace changed
+C,Admission,341,condition_on_arrival,text_format,SERIOUS,capitalization/whitespace changed
+C,Admission,365,admission_source,text_format,ed,capitalization/whitespace changed
+C,Admission,378,admission_source,text_format,Ed,capitalization/whitespace changed
+C,Admission,381,admission_type,text_format,ele,capitalization/whitespace changed
+C,Admission,382,condition_on_arrival,text_format,STABLE,capitalization/whitespace changed
+C,Admission,390,admission_source,text_format,ed,capitalization/whitespace changed
+C,Admission,395,admission_status,text_format,dc,capitalization/whitespace changed
+C,Admission,398,admission_status,text_format,DC  ,capitalization/whitespace changed
+C,Admission,406,condition_on_arrival,text_format,STABLE,capitalization/whitespace changed
+C,Admission,406,discharge_datetime,date_format_inconsistency,20240408030800,compact format without separators
+C,Admission,412,admission_source,text_format,Ed,capitalization/whitespace changed
+C,Admission,435,admission_type,text_format,emg,capitalization/whitespace changed
+C,TriageAssessment,48,priority_level,text_format,  2 ,capitalization/whitespace changed
+C,TriageAssessment,76,priority_level,text_format,2  ,capitalization/whitespace changed
+C,TriageAssessment,91,priority_level,text_format, 1,capitalization/whitespace changed
+C,TriageAssessment,111,priority_level,text_format, 2,capitalization/whitespace changed
+C,TriageAssessment,140,priority_level,text_format,  3 ,capitalization/whitespace changed
+C,TriageAssessment,147,priority_level,text_format, 1,capitalization/whitespace changed
+C,TriageAssessment,153,priority_level,text_format,  2 ,capitalization/whitespace changed
+C,TriageAssessment,157,priority_level,text_format, 2,capitalization/whitespace changed
+C,TriageAssessment,170,priority_level,text_format,3  ,capitalization/whitespace changed
+C,TriageAssessment,174,triage_datetime,date_format_inconsistency,20240524124300,compact format without separators
+C,TriageAssessment,189,priority_level,text_format,1  ,capitalization/whitespace changed
+C,TriageAssessment,216,triage_datetime,invalid_date,2024/02/30 09:00:00,day does not exist
+C,TriageAssessment,242,triage_datetime,invalid_date,2024/02/30 09:00:00,day does not exist
+C,TriageAssessment,302,priority_level,text_format, 1,capitalization/whitespace changed
+C,TriageAssessment,319,priority_level,text_format, 2,capitalization/whitespace changed
+C,TriageAssessment,354,triage_datetime,invalid_date,0000/00/00 00:00:00,placeholder zero date
+C,Diagnosis,42,diagnosis_type,text_format,p,capitalization/whitespace changed
+C,Diagnosis,43,diagnosis_type,text_format,s,capitalization/whitespace changed
+C,Diagnosis,56,diagnosis_type,text_format,S  ,capitalization/whitespace changed
+C,Diagnosis,58,diagnosis_type,text_format,P  ,capitalization/whitespace changed
+C,Diagnosis,159,diagnosis_type,text_format,  S ,capitalization/whitespace changed
+C,Diagnosis,258,diagnosis_type,text_format,p,capitalization/whitespace changed
+C,Diagnosis,270,diagnosis_type,text_format,S  ,capitalization/whitespace changed
+C,Diagnosis,277,diagnosis_type,text_format, S,capitalization/whitespace changed
+C,Diagnosis,281,diagnosis_type,text_format,  S ,capitalization/whitespace changed
+C,Diagnosis,311,diagnosis_type,text_format, P,capitalization/whitespace changed
+C,Diagnosis,313,diagnosis_type,text_format,  P ,capitalization/whitespace changed
+C,Diagnosis,315,diagnosis_type,text_format,  S ,capitalization/whitespace changed
+C,Diagnosis,350,diagnosis_type,text_format, S,capitalization/whitespace changed
+C,Diagnosis,353,diagnosis_datetime,invalid_date,2026/02/30 09:00:00,day does not exist
+C,Diagnosis,355,diagnosis_datetime,invalid_date,0000/00/00 00:00:00,placeholder zero date
+C,Diagnosis,508,diagnosis_type,text_format, S,capitalization/whitespace changed
+C,Diagnosis,510,diagnosis_type,text_format,s,capitalization/whitespace changed
+C,Diagnosis,524,diagnosis_type,text_format,S  ,capitalization/whitespace changed
+C,Diagnosis,536,diagnosis_type,text_format,  S ,capitalization/whitespace changed
+C,Diagnosis,721,diagnosis_type,text_format,S  ,capitalization/whitespace changed
+C,Diagnosis,755,diagnosis_type,text_format,  P ,capitalization/whitespace changed
+C,Diagnosis,766,diagnosis_type,text_format,P  ,capitalization/whitespace changed
+C,Diagnosis,782,diagnosis_type,text_format,  P ,capitalization/whitespace changed
+C,Diagnosis,850,diagnosis_type,text_format,  S ,capitalization/whitespace changed
+C,Diagnosis,938,diagnosis_type,text_format,S  ,capitalization/whitespace changed
+C,ClinicalNote,57,note_type,text_format, DCS,capitalization/whitespace changed
+C,ClinicalNote,89,note_type,text_format,PRG  ,capitalization/whitespace changed
+C,ClinicalNote,146,note_type,text_format,ADM  ,capitalization/whitespace changed
+C,ClinicalNote,146,note_datetime,date_format_inconsistency,20250812020700,compact format without separators
+C,ClinicalNote,279,note_type,text_format,Adm,capitalization/whitespace changed
+C,ClinicalNote,298,note_type,text_format,prg,capitalization/whitespace changed
+C,ClinicalNote,365,note_type,text_format,  CON ,capitalization/whitespace changed
+C,ClinicalNote,367,note_type,text_format,  ADM ,capitalization/whitespace changed
+C,ClinicalNote,367,note_datetime,invalid_date,0000/00/00 00:00:00,placeholder zero date
+C,ClinicalNote,372,note_type,text_format, PRG,capitalization/whitespace changed
+C,ClinicalNote,379,note_type,text_format,dcs,capitalization/whitespace changed
+C,ClinicalNote,434,note_datetime,date_format_inconsistency,20250412074200,compact format without separators
+C,ClinicalNote,473,note_type,text_format,PRG  ,capitalization/whitespace changed
+C,ClinicalNote,493,note_type,text_format, CON,capitalization/whitespace changed
+C,ClinicalNote,495,note_type,text_format,adm,capitalization/whitespace changed
+C,ClinicalNote,529,note_datetime,invalid_date,0000/00/00 00:00:00,placeholder zero date
+C,ClinicalNote,567,note_type,text_format,  DCS ,capitalization/whitespace changed
+C,ClinicalNote,574,note_type,text_format,adm,capitalization/whitespace changed
+C,ClinicalNote,596,note_type,text_format, DCS,capitalization/whitespace changed
+C,ClinicalNote,604,note_type,text_format,Prg,capitalization/whitespace changed
+C,ClinicalNote,670,note_type,text_format, PRG,capitalization/whitespace changed
+C,ClinicalNote,700,note_type,text_format,Adm,capitalization/whitespace changed
+C,ClinicalNote,814,note_type,text_format,  ADM ,capitalization/whitespace changed
+C,ClinicalNote,823,note_datetime,date_format_inconsistency,20260409183900,compact format without separators
+C,ClinicalNote,851,note_type,text_format,  PRG ,capitalization/whitespace changed
+C,ClinicalNote,893,note_type,text_format,Prg,capitalization/whitespace changed
+C,ClinicalNote,900,note_type,text_format,  PRG ,capitalization/whitespace changed
+C,ClinicalNote,922,note_type,text_format,  PRG ,capitalization/whitespace changed
+C,ClinicalNote,954,note_type,text_format,Adm,capitalization/whitespace changed
+C,ClinicalNote,977,note_type,text_format,adm,capitalization/whitespace changed
+C,ClinicalNote,1011,note_type,text_format,dcs,capitalization/whitespace changed
+C,ClinicalNote,1058,note_datetime,invalid_date,2025/02/30 09:00:00,day does not exist
+C,ClinicalNote,1073,note_type,text_format,  PRG ,capitalization/whitespace changed
+C,ClinicalNote,1174,note_type,text_format,DCS  ,capitalization/whitespace changed
+C,ClinicalNote,1211,note_type,text_format,adm,capitalization/whitespace changed
+C,ClinicalNote,1279,note_type,text_format, ADM,capitalization/whitespace changed
+C,ClinicalNote,1289,note_type,text_format,Dcs,capitalization/whitespace changed
+C,ClinicalNote,1291,note_type,text_format,dcs,capitalization/whitespace changed
+C,ClinicalNote,1335,note_datetime,invalid_date,2024/02/30 09:00:00,day does not exist
+C,ClinicalNote,1362,note_type,text_format,ADM  ,capitalization/whitespace changed
+C,ClinicalNote,1412,note_type,text_format,  ADM ,capitalization/whitespace changed
+C,ClinicalNote,1437,note_type,text_format,DCS  ,capitalization/whitespace changed
+C,ClinicalNote,1446,note_type,text_format,  PRG ,capitalization/whitespace changed
+C,ClinicalNote,1458,note_datetime,invalid_date,2024/02/30 09:00:00,day does not exist
+C,ClinicalNote,1474,note_type,text_format,ADM  ,capitalization/whitespace changed
+C,ClinicalNote,1502,note_datetime,date_format_inconsistency,20241110191200,compact format without separators
+C,ClinicalNote,1532,note_type,text_format, CON,capitalization/whitespace changed
+C,ClinicalNote,1598,note_type,text_format, ADM,capitalization/whitespace changed
+C,ClinicalNote,1628,note_datetime,invalid_date,2024/02/30 09:00:00,day does not exist
+C,ClinicalNote,1687,note_datetime,invalid_date,2025/02/30 09:00:00,day does not exist
+C,ClinicalNote,1691,note_datetime,date_format_inconsistency,20250924130500,compact format without separators
+C,ClinicalNote,1705,note_type,text_format,Prg,capitalization/whitespace changed
+C,ClinicalNote,1748,note_type,text_format, PRG,capitalization/whitespace changed
+C,ClinicalNote,1749,note_type,text_format,dcs,capitalization/whitespace changed
+C,SurgicalProcedure,56,procedure_datetime,invalid_date,0000/00/00 00:00:00,placeholder zero date
+C,SurgicalProcedure,62,procedure_datetime,invalid_date,0000/00/00 00:00:00,placeholder zero date
+C,DischargeRecord,40,discharge_destination,text_format,Home  ,capitalization/whitespace changed
+C,DischargeRecord,62,condition_at_discharge,text_format,DEC  ,capitalization/whitespace changed
+C,DischargeRecord,65,condition_at_discharge,text_format,  IMP ,capitalization/whitespace changed
+C,DischargeRecord,90,discharge_destination,text_format,HOME,capitalization/whitespace changed
+C,DischargeRecord,115,discharge_destination,text_format,  Long-Term Care ,capitalization/whitespace changed
+C,DischargeRecord,147,discharge_destination,text_format,  Rehabilitation Facility ,capitalization/whitespace changed
+C,DischargeRecord,151,discharge_destination,text_format, Home,capitalization/whitespace changed
+C,DischargeRecord,157,discharge_destination,text_format, Home,capitalization/whitespace changed
+C,DischargeRecord,164,discharge_destination,text_format,other hospital,capitalization/whitespace changed
+C,DischargeRecord,179,discharge_destination,text_format, Home,capitalization/whitespace changed
+C,DischargeRecord,180,discharge_destination,text_format,  Home with Home Care ,capitalization/whitespace changed
+C,DischargeRecord,193,condition_at_discharge,text_format,STB  ,capitalization/whitespace changed
+C,DischargeRecord,229,discharge_destination,text_format,HOME,capitalization/whitespace changed
+C,DischargeRecord,236,condition_at_discharge,text_format,IMP  ,capitalization/whitespace changed
+C,DischargeRecord,256,discharge_destination,text_format,HOME,capitalization/whitespace changed
+C,DischargeRecord,284,condition_at_discharge,text_format,Stb,capitalization/whitespace changed
+C,DischargeRecord,289,discharge_destination,text_format,  Home ,capitalization/whitespace changed
+C,DischargeRecord,290,discharge_destination,text_format, Rehabilitation Facility,capitalization/whitespace changed
+C,DischargeRecord,316,condition_at_discharge,text_format,  IMP ,capitalization/whitespace changed
+C,DischargeRecord,330,condition_at_discharge,text_format,Unc,capitalization/whitespace changed
+C,DischargeRecord,333,discharge_destination,text_format,  Home ,capitalization/whitespace changed
+C,DischargeRecord,395,condition_at_discharge,text_format,IMP  ,capitalization/whitespace changed
+C,DischargeRecord,403,discharge_destination,text_format,Home  ,capitalization/whitespace changed
+C,DischargeRecord,416,discharge_destination,text_format,HOME,capitalization/whitespace changed
+C,DiagnosticOrder,5,priority,text_format,u,capitalization/whitespace changed
+C,DiagnosticOrder,16,order_status,text_format,  Completed ,capitalization/whitespace changed
+C,DiagnosticOrder,31,request_datetime,invalid_date,0000/00/00 00:00:00,placeholder zero date
+C,DiagnosticOrder,34,request_datetime,invalid_date,2026/02/30 09:00:00,day does not exist
+C,DiagnosticOrder,40,request_datetime,invalid_date,2025/02/30 09:00:00,day does not exist
+C,DiagnosticOrder,46,priority,text_format,  S ,capitalization/whitespace changed
+C,DiagnosticOrder,97,priority,text_format,  S ,capitalization/whitespace changed
+C,DiagnosticOrder,111,priority,text_format,r,capitalization/whitespace changed
+C,DiagnosticOrder,118,request_datetime,invalid_date,0000/00/00 00:00:00,placeholder zero date
+C,DiagnosticOrder,121,priority,text_format, U,capitalization/whitespace changed
+C,DiagnosticOrder,128,priority,text_format, U,capitalization/whitespace changed
+C,DiagnosticOrder,148,order_status,text_format, Completed,capitalization/whitespace changed
+C,DiagnosticOrder,156,priority,text_format, U,capitalization/whitespace changed
+C,DiagnosticOrder,164,order_status,text_format,COMPLETED,capitalization/whitespace changed
+C,DiagnosticOrder,178,order_status,text_format,Completed  ,capitalization/whitespace changed
+C,DiagnosticOrder,225,order_status,text_format, Completed,capitalization/whitespace changed
+C,DiagnosticOrder,243,order_status,text_format,  Completed ,capitalization/whitespace changed
+C,DiagnosticOrder,248,order_status,text_format,Completed  ,capitalization/whitespace changed
+C,DiagnosticOrder,263,priority,text_format,U  ,capitalization/whitespace changed
+C,DiagnosticOrder,268,priority,text_format,  U ,capitalization/whitespace changed
+C,DiagnosticOrder,278,request_datetime,date_format_inconsistency,20250714145700,compact format without separators
+C,DiagnosticOrder,299,order_status,text_format,COMPLETED,capitalization/whitespace changed
+C,DiagnosticOrder,301,order_status,text_format, Completed,capitalization/whitespace changed
+C,DiagnosticOrder,304,order_status,text_format,completed,capitalization/whitespace changed
+C,DiagnosticOrder,306,priority,text_format,r,capitalization/whitespace changed
+C,DiagnosticOrder,329,request_datetime,invalid_date,0000/00/00 00:00:00,placeholder zero date
+C,DiagnosticOrder,348,request_datetime,date_format_inconsistency,20240507043200,compact format without separators
+C,DiagnosticOrder,354,order_status,text_format,Completed  ,capitalization/whitespace changed
+C,DiagnosticOrder,384,order_status,text_format,completed,capitalization/whitespace changed
+C,DiagnosticOrder,396,priority,text_format,  S ,capitalization/whitespace changed
+C,DiagnosticOrder,410,priority,text_format,  S ,capitalization/whitespace changed
+C,DiagnosticOrder,427,order_status,text_format,  Completed ,capitalization/whitespace changed
+C,DiagnosticOrder,461,priority,text_format, R,capitalization/whitespace changed
+C,DiagnosticOrder,467,order_status,text_format, Cancelled,capitalization/whitespace changed
+C,DiagnosticOrder,476,priority,text_format,r,capitalization/whitespace changed
+C,DiagnosticOrder,477,priority,text_format,U  ,capitalization/whitespace changed
+C,DiagnosticOrder,514,order_status,text_format, Completed,capitalization/whitespace changed
+C,DiagnosticOrder,565,order_status,text_format,  Completed ,capitalization/whitespace changed
+C,DiagnosticOrder,603,order_status,text_format,COMPLETED,capitalization/whitespace changed
+C,DiagnosticOrder,610,order_status,text_format,  Completed ,capitalization/whitespace changed
+C,DiagnosticOrder,612,order_status,text_format, Completed,capitalization/whitespace changed
+C,DiagnosticOrder,621,order_status,text_format,Pending  ,capitalization/whitespace changed
+C,DiagnosticOrder,646,order_status,text_format,  Completed ,capitalization/whitespace changed
+C,DiagnosticOrder,661,priority,text_format,R  ,capitalization/whitespace changed
+C,DiagnosticOrder,684,order_status,text_format,COMPLETED,capitalization/whitespace changed
+C,DiagnosticOrder,690,order_status,text_format,Completed  ,capitalization/whitespace changed
+C,DiagnosticOrder,765,priority,text_format,R  ,capitalization/whitespace changed
+C,DiagnosticOrder,768,priority,text_format,u,capitalization/whitespace changed
+C,DiagnosticOrder,772,order_status,text_format,completed,capitalization/whitespace changed
+C,DiagnosticOrder,781,order_status,text_format,completed,capitalization/whitespace changed
+C,DiagnosticOrder,796,order_status,text_format,Cancelled  ,capitalization/whitespace changed
+C,DiagnosticOrder,812,request_datetime,date_format_inconsistency,20250103135200,compact format without separators
+C,DiagnosticExamination,3,exam_type,text_format,COMPLETE BLOOD COUNT,capitalization/whitespace changed
+C,DiagnosticExamination,6,exam_status,text_format,COMPLETED,capitalization/whitespace changed
+C,DiagnosticExamination,40,exam_status,text_format,completed,capitalization/whitespace changed
+C,DiagnosticExamination,67,exam_datetime,invalid_date,2024/02/30 09:00:00,day does not exist
+C,DiagnosticExamination,105,exam_type,text_format, Liver Function Panel,capitalization/whitespace changed
+C,DiagnosticExamination,111,exam_status,text_format,completed,capitalization/whitespace changed
+C,DiagnosticExamination,170,exam_type,text_format,Complete  Blood  Count,capitalization/whitespace changed
+C,DiagnosticExamination,174,exam_status,text_format,COMPLETED,capitalization/whitespace changed
+C,DiagnosticExamination,178,exam_datetime,date_format_inconsistency,20250717125100,compact format without separators
+C,DiagnosticExamination,185,exam_type,text_format, Arterial Blood Gas,capitalization/whitespace changed
+C,DiagnosticExamination,196,exam_status,text_format,completed,capitalization/whitespace changed
+C,DiagnosticExamination,222,exam_status,text_format,  Completed ,capitalization/whitespace changed
+C,DiagnosticExamination,312,exam_type,text_format,COMPLETE BLOOD COUNT,capitalization/whitespace changed
+C,DiagnosticExamination,330,exam_type,text_format, Electrocardiogram,capitalization/whitespace changed
+C,DiagnosticExamination,331,exam_type,text_format, Lipid Panel,capitalization/whitespace changed
+C,DiagnosticExamination,334,exam_status,text_format,Completed  ,capitalization/whitespace changed
+C,DiagnosticExamination,351,exam_status,text_format,Completed  ,capitalization/whitespace changed
+C,DiagnosticExamination,369,exam_status,text_format,  Completed ,capitalization/whitespace changed
+C,DiagnosticExamination,374,exam_status,text_format,Completed  ,capitalization/whitespace changed
+C,DiagnosticExamination,407,exam_status,text_format,COMPLETED,capitalization/whitespace changed
+C,DiagnosticExamination,436,exam_status,text_format, Completed,capitalization/whitespace changed
+C,DiagnosticExamination,440,exam_datetime,invalid_date,0000/00/00 00:00:00,placeholder zero date
+C,RadiologyExamination,6,exam_type,text_format,  Ultrasound ,capitalization/whitespace changed
+C,RadiologyExamination,12,exam_status,text_format, Completed,capitalization/whitespace changed
+C,RadiologyExamination,20,exam_type,text_format,  X-Ray ,capitalization/whitespace changed
+C,RadiologyExamination,80,exam_type,text_format,  CT ,capitalization/whitespace changed
+C,RadiologyExamination,89,exam_type,text_format,ULTRASOUND,capitalization/whitespace changed
+C,RadiologyExamination,96,exam_type,text_format,  X-Ray ,capitalization/whitespace changed
+C,RadiologyExamination,100,exam_type,text_format,  CT ,capitalization/whitespace changed
+C,RadiologyExamination,102,exam_datetime,date_format_inconsistency,20240828012300,compact format without separators
+C,RadiologyExamination,111,body_area,text_format,chest,capitalization/whitespace changed
+C,RadiologyExamination,130,exam_status,text_format,  Completed ,capitalization/whitespace changed
+C,RadiologyExamination,132,body_area,text_format, Neck Vessels,capitalization/whitespace changed
+C,RadiologyExamination,132,exam_status,text_format, Completed,capitalization/whitespace changed
+C,RadiologyExamination,158,exam_status,text_format, Completed,capitalization/whitespace changed
+C,RadiologyExamination,163,exam_status,text_format, Completed,capitalization/whitespace changed
+C,RadiologyExamination,190,exam_type,text_format,  X-Ray ,capitalization/whitespace changed
+C,RadiologyExamination,220,exam_status,text_format, Completed,capitalization/whitespace changed
+C,RadiologyExamination,236,body_area,text_format,PELVIS,capitalization/whitespace changed
+C,RadiologyExamination,239,exam_status,text_format,  Completed ,capitalization/whitespace changed
+C,RadiologyExamination,253,exam_type,text_format,ct,capitalization/whitespace changed
+C,RadiologyExamination,255,exam_type,text_format, Ultrasound,capitalization/whitespace changed
+C,RadiologyExamination,257,body_area,text_format,head,capitalization/whitespace changed
+C,RadiologyExamination,264,exam_status,text_format,COMPLETED,capitalization/whitespace changed
+C,RadiologyExamination,310,exam_status,text_format,COMPLETED,capitalization/whitespace changed
+C,RadiologyReport,86,report_datetime,date_format_inconsistency,20240712133300,compact format without separators
+C,RadiologyReport,166,report_datetime,date_format_inconsistency,20250127084400,compact format without separators
+C,RadiologyReport,194,report_datetime,invalid_date,2024/02/30 09:00:00,day does not exist
+C,RadiologyReport,196,report_datetime,invalid_date,0000/00/00 00:00:00,placeholder zero date
+C,RadiologyReport,213,report_datetime,invalid_date,2025/02/30 09:00:00,day does not exist
+C,UnitStay,26,entry_datetime,invalid_date,0000/00/00 00:00:00,placeholder zero date
+C,UnitStay,37,entry_datetime,invalid_date,0000/00/00 00:00:00,placeholder zero date
+C,UnitStay,43,exit_datetime,invalid_date,0000/00/00 00:00:00,placeholder zero date
+C,UnitStay,218,exit_datetime,invalid_date,0000/00/00 00:00:00,placeholder zero date
+C,UnitStay,225,exit_datetime,date_format_inconsistency,20250819234300,compact format without separators
+C,UnitStay,354,entry_datetime,invalid_date,2025/02/30 09:00:00,day does not exist
+C,UnitStay,409,entry_datetime,invalid_date,0000/00/00 00:00:00,placeholder zero date
+C,UnitStay,460,entry_datetime,invalid_date,0000/00/00 00:00:00,placeholder zero date
+C,UnitStay,462,exit_datetime,invalid_date,2024/02/30 09:00:00,day does not exist
+C,UnitStay,485,exit_datetime,invalid_date,2024/02/30 09:00:00,day does not exist
+C,UnitStay,526,exit_datetime,invalid_date,0000/00/00 00:00:00,placeholder zero date
+C,UnitStay,533,entry_datetime,invalid_date,2025/02/30 09:00:00,day does not exist
+C,UnitStay,707,entry_datetime,invalid_date,2025/02/30 09:00:00,day does not exist
+C,UnitStay,745,exit_datetime,date_format_inconsistency,20250622174700,compact format without separators
+C,UnitStay,798,exit_datetime,date_format_inconsistency,20240311061300,compact format without separators
+C,UnitStay,893,exit_datetime,date_format_inconsistency,20250118144100,compact format without separators
+C,CriticalCareRecord,36,record_datetime,invalid_date,0000/00/00 00:00:00,placeholder zero date
+C,CriticalCareRecord,56,record_datetime,invalid_date,2024/02/30 09:00:00,day does not exist
+C,CriticalCareRecord,73,record_datetime,invalid_date,2024/02/30 09:00:00,day does not exist
+C,CriticalCareRecord,118,record_datetime,invalid_date,0000/00/00 00:00:00,placeholder zero date
+C,GeneralWardRecord,662,record_datetime,invalid_date,0000/00/00 00:00:00,placeholder zero date
+C,GeneralWardRecord,682,record_datetime,invalid_date,0000/00/00 00:00:00,placeholder zero date
+C,GeneralWardRecord,717,record_datetime,date_format_inconsistency,20250205105500,compact format without separators
+C,Patient,127,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,Patient,65,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,Admission,323,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,Admission,239,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,Admission,146,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,Admission,93,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,TriageAssessment,308,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,TriageAssessment,278,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,TriageAssessment,132,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,TriageAssessment,83,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,Diagnosis,919,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,Diagnosis,917,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,Diagnosis,872,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,Diagnosis,725,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,Diagnosis,612,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,Diagnosis,536,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,Diagnosis,299,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,Diagnosis,269,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,Diagnosis,264,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,Diagnosis,171,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,Diagnosis,150,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,Diagnosis,56,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,ClinicalNote,1701,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,ClinicalNote,1422,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,ClinicalNote,1374,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,ClinicalNote,1070,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,ClinicalNote,873,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,ClinicalNote,702,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,ClinicalNote,537,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,ClinicalNote,261,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,ClinicalNote,223,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,ClinicalNote,208,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,ClinicalNote,71,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,ClinicalNote,63,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,ClinicalNote,56,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,ClinicalNote,19,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,ClinicalNote,1,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,UnitStay,639,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,UnitStay,629,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,UnitStay,548,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,UnitStay,540,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,UnitStay,480,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,UnitStay,453,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,UnitStay,348,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,GeneralWardRecord,646,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,GeneralWardRecord,594,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,GeneralWardRecord,576,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,GeneralWardRecord,542,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,GeneralWardRecord,537,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,GeneralWardRecord,403,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,GeneralWardRecord,141,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,Healthcare_Professional,64,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,Healthcare_Professional,39,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,ICD9_Code,453.40,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+C,Patient,,(element),malformed_record,empty pid,unusable patient element with no valid identifier
+C,Patient,??,(element),malformed_record,non-numeric pid,unusable patient element with no valid identifier
+C,Patient,(none),(element),malformed_record,no pid attribute,unusable patient element with no valid identifier
+C,Admission,75,aid,malformed_record,N/A,admission identifier unreadable
+D,Patient,256,patient_id,duplicate_entity,256,"same person as patient 136 (same insurance no. and DOB, name written differently); admission 270 is filed under this duplicate"
+D,Patient,257,patient_id,duplicate_entity,257,"same person as patient 44 (same insurance no. and DOB, name written differently); admission 102 is filed under this duplicate"
+D,Patient,258,patient_id,duplicate_entity,258,"same person as patient 94 (same insurance no. and DOB, name written differently)"
+D,Patient,259,patient_id,duplicate_entity,259,"same person as patient 129 (same insurance no. and DOB, name written differently)"
+D,Patient,260,patient_id,duplicate_entity,260,"same person as patient 221 (same insurance no. and DOB, name written differently); admission 430 is filed under this duplicate"
+D,Patient,261,patient_id,duplicate_entity,261,"same person as patient 175 (same insurance no. and DOB, name written differently); admission 353 is filed under this duplicate"
+D,Patient,203,date_of_birth,missing_required,,required (NOT NULL) value missing
+D,Patient,10,date_of_birth,missing_required,,required (NOT NULL) value missing
+D,Patient,172,date_of_birth,missing_required,,required (NOT NULL) value missing
+D,Patient,127,health_insurance_num,missing_required,,required (NOT NULL) value missing
+D,Patient,24,health_insurance_num,missing_required,,required (NOT NULL) value missing
+D,Admission,485,admission_type,missing_required,,required (NOT NULL) value missing
+D,Admission,9,admission_type,missing_required,,required (NOT NULL) value missing
+D,Admission,171,admission_type,missing_required,,required (NOT NULL) value missing
+D,Admission,414,admission_datetime,missing_required,,required (NOT NULL) value missing
+D,Admission,116,admission_datetime,missing_required,,required (NOT NULL) value missing
+D,TriageAssessment,53,heart_rate,missing_required,,required (NOT NULL) value missing
+D,TriageAssessment,350,heart_rate,missing_required,,required (NOT NULL) value missing
+D,TriageAssessment,264,priority_level,missing_required,,required (NOT NULL) value missing
+D,TriageAssessment,103,priority_level,missing_required,,required (NOT NULL) value missing
+D,Diagnosis,986,icd9_code,missing_required,,required (NOT NULL) value missing
+D,Diagnosis,783,icd9_code,missing_required,,required (NOT NULL) value missing
+D,Diagnosis,985,icd9_code,missing_required,,required (NOT NULL) value missing
+D,Diagnosis,206,icd9_code,missing_required,,required (NOT NULL) value missing
+D,UnitStay,247,entry_datetime,missing_required,,required (NOT NULL) value missing
+D,UnitStay,47,entry_datetime,missing_required,,required (NOT NULL) value missing
+D,UnitStay,716,entry_datetime,missing_required,,required (NOT NULL) value missing
+D,ClinicalNote,502,suspected_condition,missing_required,,required (NOT NULL) value missing
+D,ClinicalNote,2008,suspected_condition,missing_required,,required (NOT NULL) value missing
+D,ClinicalNote,955,suspected_condition,missing_required,,required (NOT NULL) value missing
+D,ClinicalNote,989,suspected_condition,missing_required,,required (NOT NULL) value missing
+D,ClinicalNote,1668,suspected_condition,missing_required,,required (NOT NULL) value missing
+D,ClinicalNote,50,suspected_condition,missing_required,,required (NOT NULL) value missing
+D,ClinicalNote,1864,suspected_condition,missing_required,,required (NOT NULL) value missing
+D,ClinicalNote,1898,suspected_condition,missing_required,,required (NOT NULL) value missing
+D,RadiologyExamination,318,body_area,missing_required,,required (NOT NULL) value missing
+D,RadiologyExamination,42,body_area,missing_required,,required (NOT NULL) value missing
+D,RadiologyExamination,175,body_area,missing_required,,required (NOT NULL) value missing
+D,Healthcare_Professional,18,last_name,missing_required,,required (NOT NULL) value missing
+D,TriageAssessment,216,body_temp,unit_inconsistency,310.2,Kelvin value in Celsius field
+D,TriageAssessment,170,body_temp,unit_inconsistency,310.2,Kelvin value in Celsius field
+D,TriageAssessment,83,body_temp,unit_inconsistency,310.2,Kelvin value in Celsius field
+D,TriageAssessment,54,heart_rate,invalid_numeric,0,value outside valid range or not a number
+D,TriageAssessment,87,heart_rate,invalid_numeric,412,value outside valid range or not a number
+D,TriageAssessment,372,oxygen_sat,unit_inconsistency,97,percent written into a fraction field (should be 0.97)
+D,TriageAssessment,165,heart_rate,invalid_numeric,999,value outside valid range or not a number
+D,TriageAssessment,128,oxygen_sat,invalid_numeric,1.4,value outside valid range or not a number
+D,TriageAssessment,100,heart_rate,invalid_numeric,999,value outside valid range or not a number
+D,Diagnosis,953,icd9_code,broken_reference,250.5,code not in ICD-9 dictionary
+D,Diagnosis,388,icd9_code,broken_reference,410.7,code not in ICD-9 dictionary
+D,Diagnosis,693,icd9_code,broken_reference,999.99,code not in ICD-9 dictionary
+D,Diagnosis,443,icd9_code,broken_reference,250.5,code not in ICD-9 dictionary
+D,Diagnosis,452,icd9_code,broken_reference,V99.9,code not in ICD-9 dictionary
+D,Diagnosis,39,icd9_code,broken_reference,250.5,code not in ICD-9 dictionary
+D,UnitStay,671,unit_id,broken_reference,99,unit does not exist
+D,UnitStay,870,unit_id,broken_reference,98,unit does not exist
+D,UnitStay,54,unit_id,broken_reference,98,unit does not exist
+D,Admission,125,admitting_healthcare_professional,broken_reference,684,healthcare professional does not exist
+D,SurgicalProcedure,30,surgeon_id,broken_reference,766,healthcare professional does not exist
+D,Diagnosis,350,diagnosing_physician_id,broken_reference,533,healthcare professional does not exist
+D,Diagnosis,262,diagnosing_physician_id,broken_reference,639,healthcare professional does not exist
+D,Diagnosis,722,diagnosing_physician_id,broken_reference,775,healthcare professional does not exist
+D,Diagnosis,692,patient_id,patient_admission_mismatch,201,admission 319 belongs to patient 161
+D,Diagnosis,507,patient_id,patient_admission_mismatch,141,admission 231 belongs to patient 113
+D,Diagnosis,714,patient_id,patient_admission_mismatch,114,admission 332 belongs to patient 167
+D,Diagnosis,658,patient_id,patient_admission_mismatch,136,admission 304 belongs to patient 152
+D,Diagnosis,749,patient_id,patient_admission_mismatch,53,admission 347 belongs to patient 173
+D,DiagnosticOrder,329,patient_id,patient_admission_mismatch,145,admission 180 belongs to patient 84
+D,DiagnosticOrder,252,patient_id,patient_admission_mismatch,3,admission 131 belongs to patient 60
+D,DiagnosticOrder,740,patient_id,patient_admission_mismatch,247,admission 422 belongs to patient 218
+D,Admission,395,discharge_datetime,chronology,2024-07-24 10:53:00,discharge before admission
+D,Admission,323,discharge_datetime,chronology,2024-06-21 02:42:00,discharge before admission
+D,UnitStay,218,exit_datetime,chronology,2026-04-14 05:26:00,unit exit before unit entry
+D,UnitStay,913,exit_datetime,chronology,2025-07-23 15:21:00,unit exit before unit entry
+D,UnitStay,174,exit_datetime,chronology,2024-08-05 00:04:00,unit exit before unit entry
+D,UnitStay,105,exit_datetime,chronology,2025-01-01 21:30:00,unit exit before unit entry
+D,UnitStay,333,exit_datetime,chronology,2024-11-25 14:41:00,unit exit before unit entry
+D,SurgicalProcedure,72,procedure_datetime,chronology,2025-10-25 06:10:00,procedure after discharge
+D,RadiologyReport,190,report_datetime,chronology,2025-12-07 15:19:00,report before the examination
+D,RadiologyReport,342,report_datetime,chronology,2025-01-11 13:20:00,report before the examination
+D,RadiologyReport,248,report_datetime,chronology,2024-12-14 21:25:00,report before the examination
+D,Diagnosis,790,diagnosis_datetime,chronology,2025-02-02 15:51:00,diagnosis before admission
+D,Diagnosis,138,diagnosis_datetime,chronology,2025-01-30 16:06:00,diagnosis before admission
+D,Diagnosis,562,diagnosis_datetime,chronology,2025-05-26 07:54:00,diagnosis before admission
+D,DiagnosticExamination,22,exam_datetime,chronology,2025-08-28 11:49:00,exam performed before it was ordered
+D,DiagnosticExamination,40,exam_datetime,chronology,2025-09-03 00:11:00,exam performed before it was ordered
+D,Patient,12,date_of_death,chronology,2024-07-03 02:54:00,death recorded before the patient's admissions
+D,Patient,176,date_of_death,chronology,2025-04-18 05:30:00,death recorded before the patient's admissions
+D,Patient,208,date_of_birth,chronology,2025-10-27,born after first admission
+D,Admission,21,discharge_datetime,status_inconsistency,,status Discharged but no discharge time
+D,Admission,71,discharge_datetime,status_inconsistency,2026-10-18 10:59:00,status Admitted (still in hospital) but a discharge time is filled in
+D,Admission,368,discharge_datetime,status_inconsistency,2026-10-25 06:13:00,status Admitted (still in hospital) but a discharge time is filled in
+D,Patient,13,life_status,status_inconsistency,Alive,admission 30 ended with status Deceased
+D,DischargeRecord,294,condition_at_discharge,status_inconsistency,Improved,admission status is Deceased
+D,Diagnosis,540,diagnosis_type,missing_primary_diagnosis,Secondary,admission 250 is completed but now has no primary diagnosis
+D,Diagnosis,799,diagnosis_type,missing_primary_diagnosis,Secondary,admission 369 is completed but now has no primary diagnosis
+D,Healthcare_Professional,1,first_name,text_format,  Zanele ,capitalization/whitespace changed
+D,Healthcare_Professional,1,staff_type,text_format,  doctor ,capitalization/whitespace changed
+D,Healthcare_Professional,3,specialty,text_format,EMERGENCY_MEDICINE,capitalization/whitespace changed
+D,Healthcare_Professional,7,first_name,text_format,  Ama ,capitalization/whitespace changed
+D,Healthcare_Professional,7,staff_type,text_format,DOCTOR,capitalization/whitespace changed
+D,Healthcare_Professional,10,staff_type,text_format,  doctor ,capitalization/whitespace changed
+D,Healthcare_Professional,13,first_name,text_format,Tunde  ,capitalization/whitespace changed
+D,Healthcare_Professional,25,staff_type,text_format,  surgeon ,capitalization/whitespace changed
+D,Healthcare_Professional,26,specialty,text_format, orthopedic_surgery,capitalization/whitespace changed
+D,Healthcare_Professional,38,last_name,text_format,osei,capitalization/whitespace changed
+D,Healthcare_Professional,41,last_name,text_format,Banda  ,capitalization/whitespace changed
+D,Healthcare_Professional,41,specialty,text_format,Critical_Care,capitalization/whitespace changed
+D,Healthcare_Professional,42,specialty,text_format, critical_care,capitalization/whitespace changed
+D,Healthcare_Professional,55,first_name,text_format,IMANI,capitalization/whitespace changed
+D,Unit,4,unit_name,text_format,  General ICU ,capitalization/whitespace changed
+D,Patient,47,full_name,text_format,Musa|KHUMALO,capitalization/whitespace changed
+D,Patient,88,full_name,text_format,Bongani  |Botha,capitalization/whitespace changed
+D,Patient,102,gender,text_format, female,capitalization/whitespace changed
+D,Patient,110,emergency_contact_name,text_format,  Zuri Achieng ,capitalization/whitespace changed
+D,Patient,117,full_name,text_format,AMA|Owusu,capitalization/whitespace changed
+D,Patient,136,full_name,text_format,Juma| Sithole,capitalization/whitespace changed
+D,Patient,146,emergency_contact_name,text_format,tendai owusu,capitalization/whitespace changed
+D,Patient,152,full_name,text_format,Amara| Okafor,capitalization/whitespace changed
+D,Patient,180,full_name,text_format,ADAEZE|Ndlovu,capitalization/whitespace changed
+D,Patient,183,gender,text_format,male  ,capitalization/whitespace changed
+D,Patient,184,emergency_contact_name,text_format,Tunde Mahlangu  ,capitalization/whitespace changed
+D,Patient,187,emergency_contact_name,text_format, Fatima Osei,capitalization/whitespace changed
+D,Patient,220,gender,text_format,male  ,capitalization/whitespace changed
+D,Patient,223,full_name,text_format,Thandiwe|Botha  ,capitalization/whitespace changed
+D,Patient,231,full_name,text_format,Abebe| Botha,capitalization/whitespace changed
+D,Patient,240,gender,text_format,male  ,capitalization/whitespace changed
+D,Patient,256,full_name,text_format,juma  |sithole,capitalization/whitespace changed
+D,Admission,2,admission_status,text_format, discharged,capitalization/whitespace changed
+D,Admission,3,admission_source,text_format,casualty  ,capitalization/whitespace changed
+D,Admission,7,admission_status,text_format,discharged  ,capitalization/whitespace changed
+D,Admission,14,admission_source,text_format,Casualty,capitalization/whitespace changed
+D,Admission,23,admission_datetime,date_format_inconsistency,1723633920000,epoch milliseconds (UTC)
+D,Admission,27,admission_source,text_format,Casualty,capitalization/whitespace changed
+D,Admission,35,admission_source,text_format,casualty  ,capitalization/whitespace changed
+D,Admission,37,condition_on_arrival,text_format,Fair,capitalization/whitespace changed
+D,Admission,43,condition_on_arrival,text_format,stable  ,capitalization/whitespace changed
+D,Admission,45,admission_status,text_format,discharged  ,capitalization/whitespace changed
+D,Admission,49,admission_source,text_format, casualty,capitalization/whitespace changed
+D,Admission,51,admission_status,text_format,DISCHARGED,capitalization/whitespace changed
+D,Admission,72,condition_on_arrival,text_format,FAIR,capitalization/whitespace changed
+D,Admission,79,admission_source,text_format,REFERRAL,capitalization/whitespace changed
+D,Admission,90,admission_datetime,ambiguous_date,2024-12-02T01:07:00,timestamp without time-zone offset
+D,Admission,90,admission_source,text_format,casualty  ,capitalization/whitespace changed
+D,Admission,99,condition_on_arrival,text_format,Fair,capitalization/whitespace changed
+D,Admission,138,condition_on_arrival,text_format,Fair,capitalization/whitespace changed
+D,Admission,149,admission_status,text_format,DISCHARGED,capitalization/whitespace changed
+D,Admission,161,discharge_datetime,date_format_inconsistency,1713163080000,epoch milliseconds (UTC)
+D,Admission,172,admission_datetime,date_format_inconsistency,1727765520000,epoch milliseconds (UTC)
+D,Admission,203,admission_datetime,date_format_inconsistency,2025-10-20T11:24:00Z,same instant written in UTC (Z) instead of +02:00
+D,Admission,219,admission_type,text_format,emergency  ,capitalization/whitespace changed
+D,Admission,229,admission_status,text_format, discharged,capitalization/whitespace changed
+D,Admission,238,condition_on_arrival,text_format,Stable,capitalization/whitespace changed
+D,Admission,239,admission_type,text_format,Elective,capitalization/whitespace changed
+D,Admission,256,admission_type,text_format,Urgent,capitalization/whitespace changed
+D,Admission,268,condition_on_arrival,text_format, serious,capitalization/whitespace changed
+D,Admission,275,condition_on_arrival,text_format,CRITICAL,capitalization/whitespace changed
+D,Admission,284,admission_status,text_format,Discharged,capitalization/whitespace changed
+D,Admission,288,admission_type,text_format,Emergency,capitalization/whitespace changed
+D,Admission,292,condition_on_arrival,text_format,  fair ,capitalization/whitespace changed
+D,Admission,296,admission_source,text_format, transfer,capitalization/whitespace changed
+D,Admission,304,admission_source,text_format,  casualty ,capitalization/whitespace changed
+D,Admission,310,admission_status,text_format,Discharged,capitalization/whitespace changed
+D,Admission,338,admission_type,text_format, emergency,capitalization/whitespace changed
+D,Admission,347,discharge_datetime,date_format_inconsistency,2024-10-31T07:15:00Z,same instant written in UTC (Z) instead of +02:00
+D,Admission,364,admission_status,text_format, discharged,capitalization/whitespace changed
+D,Admission,369,condition_on_arrival,text_format,Fair,capitalization/whitespace changed
+D,Admission,372,admission_status,text_format, discharged,capitalization/whitespace changed
+D,Admission,391,admission_source,text_format,  casualty ,capitalization/whitespace changed
+D,Admission,401,discharge_datetime,date_format_inconsistency,1749190440000,epoch milliseconds (UTC)
+D,Admission,405,admission_source,text_format, casualty,capitalization/whitespace changed
+D,Admission,406,discharge_datetime,invalid_date,2025-02-30T08:00:00+02:00,day does not exist
+D,Admission,415,discharge_datetime,date_format_inconsistency,1742220840000,epoch milliseconds (UTC)
+D,Admission,436,admission_source,text_format,casualty  ,capitalization/whitespace changed
+D,Admission,453,admission_source,text_format,  casualty ,capitalization/whitespace changed
+D,Admission,455,admission_type,text_format,urgent  ,capitalization/whitespace changed
+D,Admission,465,admission_source,text_format,casualty  ,capitalization/whitespace changed
+D,Admission,467,admission_source,text_format,Transfer,capitalization/whitespace changed
+D,Admission,478,admission_source,text_format,  transfer ,capitalization/whitespace changed
+D,TriageAssessment,24,priority_level,text_format,  green ,capitalization/whitespace changed
+D,TriageAssessment,52,priority_level,text_format,YELLOW,capitalization/whitespace changed
+D,TriageAssessment,158,priority_level,text_format,  yellow ,capitalization/whitespace changed
+D,TriageAssessment,203,priority_level,text_format,  yellow ,capitalization/whitespace changed
+D,TriageAssessment,207,priority_level,text_format,  red ,capitalization/whitespace changed
+D,TriageAssessment,280,priority_level,text_format,yellow  ,capitalization/whitespace changed
+D,TriageAssessment,288,triage_datetime,invalid_date,2024-02-30T08:00:00+02:00,day does not exist
+D,TriageAssessment,293,priority_level,text_format, red,capitalization/whitespace changed
+D,TriageAssessment,324,triage_datetime,ambiguous_date,2024-09-19T04:10:00,timestamp without time-zone offset
+D,TriageAssessment,356,priority_level,text_format, yellow,capitalization/whitespace changed
+D,TriageAssessment,366,priority_level,text_format,RED,capitalization/whitespace changed
+D,Diagnosis,23,diagnosis_datetime,ambiguous_date,2024-06-29T22:55:00,timestamp without time-zone offset
+D,Diagnosis,28,diagnosis_type,text_format,secondary  ,capitalization/whitespace changed
+D,Diagnosis,34,diagnosis_datetime,ambiguous_date,2025-02-12T09:25:00,timestamp without time-zone offset
+D,Diagnosis,137,diagnosis_type,text_format,SECONDARY,capitalization/whitespace changed
+D,Diagnosis,164,diagnosis_type,text_format,Secondary,capitalization/whitespace changed
+D,Diagnosis,166,diagnosis_datetime,invalid_date,2025-02-30T08:00:00+02:00,day does not exist
+D,Diagnosis,183,icd9_code,icd9_format,70.54,leading zero lost (should be 070.54)
+D,Diagnosis,187,diagnosis_type,text_format,  primary ,capitalization/whitespace changed
+D,Diagnosis,238,diagnosis_datetime,date_format_inconsistency,2026-03-16T09:43:00Z,same instant written in UTC (Z) instead of +02:00
+D,Diagnosis,287,icd9_code,icd9_format,38.9,leading zero lost (should be 038.9)
+D,Diagnosis,363,icd9_code,icd9_format,70.54,leading zero lost (should be 070.54)
+D,Diagnosis,380,icd9_code,icd9_format,70.54,leading zero lost (should be 070.54)
+D,Diagnosis,395,diagnosis_type,text_format,Primary,capitalization/whitespace changed
+D,Diagnosis,396,diagnosis_type,text_format,  primary ,capitalization/whitespace changed
+D,Diagnosis,407,diagnosis_type,text_format,primary  ,capitalization/whitespace changed
+D,Diagnosis,411,diagnosis_datetime,date_format_inconsistency,2024-12-10T10:11:00Z,same instant written in UTC (Z) instead of +02:00
+D,Diagnosis,415,diagnosis_type,text_format, secondary,capitalization/whitespace changed
+D,Diagnosis,456,icd9_code,icd9_format,38.9,leading zero lost (should be 038.9)
+D,Diagnosis,458,icd9_code,icd9_format,8.45,leading zero lost (should be 008.45)
+D,Diagnosis,475,diagnosis_type,text_format,Secondary,capitalization/whitespace changed
+D,Diagnosis,522,diagnosis_type,text_format,primary  ,capitalization/whitespace changed
+D,Diagnosis,591,diagnosis_type,text_format,Secondary,capitalization/whitespace changed
+D,Diagnosis,612,diagnosis_type,text_format,secondary  ,capitalization/whitespace changed
+D,Diagnosis,638,diagnosis_type,text_format,Secondary,capitalization/whitespace changed
+D,Diagnosis,640,diagnosis_type,text_format, primary,capitalization/whitespace changed
+D,Diagnosis,646,diagnosis_datetime,ambiguous_date,2025-09-19T19:50:00,timestamp without time-zone offset
+D,Diagnosis,653,diagnosis_type,text_format,  secondary ,capitalization/whitespace changed
+D,Diagnosis,671,icd9_code,icd9_format,70.54,leading zero lost (should be 070.54)
+D,Diagnosis,689,diagnosis_datetime,invalid_date,2026-02-30T08:00:00+02:00,day does not exist
+D,Diagnosis,724,icd9_code,icd9_format,70.54,leading zero lost (should be 070.54)
+D,Diagnosis,727,diagnosis_type,text_format, primary,capitalization/whitespace changed
+D,Diagnosis,731,diagnosis_type,text_format,PRIMARY,capitalization/whitespace changed
+D,Diagnosis,778,icd9_code,icd9_format,70.54,leading zero lost (should be 070.54)
+D,Diagnosis,779,diagnosis_type,text_format,secondary  ,capitalization/whitespace changed
+D,Diagnosis,807,diagnosis_type,text_format,  primary ,capitalization/whitespace changed
+D,Diagnosis,830,icd9_code,icd9_format,8.45,leading zero lost (should be 008.45)
+D,Diagnosis,881,diagnosis_datetime,date_format_inconsistency,2025-06-16T10:38:00Z,same instant written in UTC (Z) instead of +02:00
+D,Diagnosis,912,icd9_code,icd9_format,70.54,leading zero lost (should be 070.54)
+D,Diagnosis,934,diagnosis_datetime,invalid_date,2024-02-30T08:00:00+02:00,day does not exist
+D,Diagnosis,939,diagnosis_type,text_format,  primary ,capitalization/whitespace changed
+D,ClinicalNote,1,note_type,text_format,  admission_note ,capitalization/whitespace changed
+D,ClinicalNote,4,note_type,text_format, discharge_summary,capitalization/whitespace changed
+D,ClinicalNote,50,note_datetime,date_format_inconsistency,2025-07-25T13:28:00Z,same instant written in UTC (Z) instead of +02:00
+D,ClinicalNote,53,note_type,text_format,Progress_Note,capitalization/whitespace changed
+D,ClinicalNote,69,note_type,text_format,Progress_Note,capitalization/whitespace changed
+D,ClinicalNote,75,note_type,text_format,  progress_note ,capitalization/whitespace changed
+D,ClinicalNote,132,note_type,text_format, discharge_summary,capitalization/whitespace changed
+D,ClinicalNote,211,note_type,text_format,DISCHARGE_SUMMARY,capitalization/whitespace changed
+D,ClinicalNote,216,note_type,text_format,discharge_summary  ,capitalization/whitespace changed
+D,ClinicalNote,235,note_datetime,ambiguous_date,2024-05-23T13:53:00,timestamp without time-zone offset
+D,ClinicalNote,271,note_type,text_format,Discharge_Summary,capitalization/whitespace changed
+D,ClinicalNote,295,note_type,text_format, admission_note,capitalization/whitespace changed
+D,ClinicalNote,315,note_type,text_format, consult_note,capitalization/whitespace changed
+D,ClinicalNote,345,note_type,text_format,  progress_note ,capitalization/whitespace changed
+D,ClinicalNote,365,note_datetime,date_format_inconsistency,2025-07-19T14:31:00Z,same instant written in UTC (Z) instead of +02:00
+D,ClinicalNote,383,note_type,text_format,  progress_note ,capitalization/whitespace changed
+D,ClinicalNote,384,note_type,text_format,  progress_note ,capitalization/whitespace changed
+D,ClinicalNote,398,note_datetime,invalid_date,2024-02-30T08:00:00+02:00,day does not exist
+D,ClinicalNote,464,note_type,text_format,  progress_note ,capitalization/whitespace changed
+D,ClinicalNote,475,note_type,text_format,  discharge_summary ,capitalization/whitespace changed
+D,ClinicalNote,481,note_type,text_format,  discharge_summary ,capitalization/whitespace changed
+D,ClinicalNote,494,note_type,text_format,discharge_summary  ,capitalization/whitespace changed
+D,ClinicalNote,501,note_datetime,date_format_inconsistency,1752342840000,epoch milliseconds (UTC)
+D,ClinicalNote,520,note_type,text_format, progress_note,capitalization/whitespace changed
+D,ClinicalNote,550,note_type,text_format,Progress_Note,capitalization/whitespace changed
+D,ClinicalNote,553,note_datetime,date_format_inconsistency,1772961540000,epoch milliseconds (UTC)
+D,ClinicalNote,575,note_type,text_format,PROGRESS_NOTE,capitalization/whitespace changed
+D,ClinicalNote,577,note_datetime,date_format_inconsistency,2025-03-14T08:22:00Z,same instant written in UTC (Z) instead of +02:00
+D,ClinicalNote,579,note_datetime,invalid_date,2025-02-30T08:00:00+02:00,day does not exist
+D,ClinicalNote,630,note_type,text_format,discharge_summary  ,capitalization/whitespace changed
+D,ClinicalNote,662,note_type,text_format, admission_note,capitalization/whitespace changed
+D,ClinicalNote,674,note_type,text_format,Admission_Note,capitalization/whitespace changed
+D,ClinicalNote,698,note_datetime,date_format_inconsistency,2024-08-09T05:41:00Z,same instant written in UTC (Z) instead of +02:00
+D,ClinicalNote,731,note_datetime,date_format_inconsistency,1768498200000,epoch milliseconds (UTC)
+D,ClinicalNote,804,note_datetime,invalid_date,2024-02-30T08:00:00+02:00,day does not exist
+D,ClinicalNote,868,note_type,text_format,  progress_note ,capitalization/whitespace changed
+D,ClinicalNote,888,note_type,text_format,ADMISSION_NOTE,capitalization/whitespace changed
+D,ClinicalNote,889,note_type,text_format,PROGRESS_NOTE,capitalization/whitespace changed
+D,ClinicalNote,1063,note_datetime,invalid_date,2025-02-30T08:00:00+02:00,day does not exist
+D,ClinicalNote,1073,note_type,text_format, admission_note,capitalization/whitespace changed
+D,ClinicalNote,1094,note_type,text_format,Progress_Note,capitalization/whitespace changed
+D,ClinicalNote,1099,note_datetime,date_format_inconsistency,2024-10-15T21:47:00Z,same instant written in UTC (Z) instead of +02:00
+D,ClinicalNote,1108,note_type,text_format,Consult_Note,capitalization/whitespace changed
+D,ClinicalNote,1131,note_type,text_format,admission_note  ,capitalization/whitespace changed
+D,ClinicalNote,1162,note_type,text_format, progress_note,capitalization/whitespace changed
+D,ClinicalNote,1176,note_type,text_format, admission_note,capitalization/whitespace changed
+D,ClinicalNote,1299,note_datetime,date_format_inconsistency,1759109280000,epoch milliseconds (UTC)
+D,ClinicalNote,1303,note_datetime,invalid_date,2026-02-30T08:00:00+02:00,day does not exist
+D,ClinicalNote,1327,note_type,text_format,discharge_summary  ,capitalization/whitespace changed
+D,ClinicalNote,1330,note_datetime,date_format_inconsistency,1792853460000,epoch milliseconds (UTC)
+D,ClinicalNote,1425,note_type,text_format, admission_note,capitalization/whitespace changed
+D,ClinicalNote,1463,note_type,text_format, admission_note,capitalization/whitespace changed
+D,ClinicalNote,1491,note_type,text_format,admission_note  ,capitalization/whitespace changed
+D,ClinicalNote,1513,note_type,text_format,  admission_note ,capitalization/whitespace changed
+D,ClinicalNote,1514,note_type,text_format, progress_note,capitalization/whitespace changed
+D,ClinicalNote,1539,note_type,text_format,PROGRESS_NOTE,capitalization/whitespace changed
+D,ClinicalNote,1558,note_type,text_format,progress_note  ,capitalization/whitespace changed
+D,ClinicalNote,1564,note_type,text_format, progress_note,capitalization/whitespace changed
+D,ClinicalNote,1566,note_type,text_format, progress_note,capitalization/whitespace changed
+D,ClinicalNote,1573,note_datetime,date_format_inconsistency,1764640140000,epoch milliseconds (UTC)
+D,ClinicalNote,1610,note_datetime,date_format_inconsistency,2024-06-01T05:41:00Z,same instant written in UTC (Z) instead of +02:00
+D,ClinicalNote,1643,note_datetime,date_format_inconsistency,1719451620000,epoch milliseconds (UTC)
+D,ClinicalNote,1649,note_type,text_format, discharge_summary,capitalization/whitespace changed
+D,ClinicalNote,1694,note_datetime,date_format_inconsistency,2025-05-09T14:24:00Z,same instant written in UTC (Z) instead of +02:00
+D,ClinicalNote,1701,note_type,text_format,  progress_note ,capitalization/whitespace changed
+D,ClinicalNote,1703,note_type,text_format,  discharge_summary ,capitalization/whitespace changed
+D,ClinicalNote,1707,note_type,text_format, progress_note,capitalization/whitespace changed
+D,ClinicalNote,1741,note_type,text_format, progress_note,capitalization/whitespace changed
+D,ClinicalNote,1778,note_type,text_format,PROGRESS_NOTE,capitalization/whitespace changed
+D,ClinicalNote,1786,note_type,text_format,admission_note  ,capitalization/whitespace changed
+D,ClinicalNote,1807,note_type,text_format,progress_note  ,capitalization/whitespace changed
+D,ClinicalNote,1838,note_datetime,invalid_date,2025-02-30T08:00:00+02:00,day does not exist
+D,ClinicalNote,1861,note_type,text_format,Admission_Note,capitalization/whitespace changed
+D,ClinicalNote,1876,note_type,text_format,ADMISSION_NOTE,capitalization/whitespace changed
+D,ClinicalNote,1878,note_type,text_format, progress_note,capitalization/whitespace changed
+D,ClinicalNote,1887,note_type,text_format,Admission_Note,capitalization/whitespace changed
+D,ClinicalNote,1893,note_datetime,date_format_inconsistency,1758118200000,epoch milliseconds (UTC)
+D,ClinicalNote,1939,note_type,text_format,PROGRESS_NOTE,capitalization/whitespace changed
+D,ClinicalNote,1957,note_datetime,ambiguous_date,2026-10-30T22:12:00,timestamp without time-zone offset
+D,ClinicalNote,1965,note_type,text_format, admission_note,capitalization/whitespace changed
+D,ClinicalNote,1982,note_datetime,ambiguous_date,2025-03-21T11:25:00,timestamp without time-zone offset
+D,ClinicalNote,2006,note_datetime,ambiguous_date,2024-07-07T01:11:00,timestamp without time-zone offset
+D,DischargeRecord,22,condition_at_discharge,text_format,UNCHANGED,capitalization/whitespace changed
+D,DischargeRecord,33,condition_at_discharge,text_format,  improved ,capitalization/whitespace changed
+D,DischargeRecord,64,condition_at_discharge,text_format,  improved ,capitalization/whitespace changed
+D,DischargeRecord,69,discharge_destination,text_format,Home,capitalization/whitespace changed
+D,DischargeRecord,70,discharge_destination,text_format,home_with_home_care  ,capitalization/whitespace changed
+D,DischargeRecord,79,condition_at_discharge,text_format,IMPROVED,capitalization/whitespace changed
+D,DischargeRecord,91,discharge_destination,text_format, long-term_care,capitalization/whitespace changed
+D,DischargeRecord,100,condition_at_discharge,text_format, stable,capitalization/whitespace changed
+D,DischargeRecord,125,discharge_destination,text_format,long-term_care  ,capitalization/whitespace changed
+D,DischargeRecord,127,discharge_destination,text_format,  home ,capitalization/whitespace changed
+D,DischargeRecord,136,condition_at_discharge,text_format,Stable,capitalization/whitespace changed
+D,DischargeRecord,142,discharge_destination,text_format,  rehabilitation_facility ,capitalization/whitespace changed
+D,DischargeRecord,149,discharge_destination,text_format,REHABILITATION_FACILITY,capitalization/whitespace changed
+D,DischargeRecord,160,condition_at_discharge,text_format,Improved,capitalization/whitespace changed
+D,DischargeRecord,168,discharge_destination,text_format,  long-term_care ,capitalization/whitespace changed
+D,DischargeRecord,176,condition_at_discharge,text_format, deceased,capitalization/whitespace changed
+D,DischargeRecord,185,condition_at_discharge,text_format,stable  ,capitalization/whitespace changed
+D,DischargeRecord,208,condition_at_discharge,text_format,IMPROVED,capitalization/whitespace changed
+D,DischargeRecord,219,discharge_destination,text_format,other_hospital  ,capitalization/whitespace changed
+D,DischargeRecord,221,discharge_destination,text_format, home,capitalization/whitespace changed
+D,DischargeRecord,223,discharge_destination,text_format,  home ,capitalization/whitespace changed
+D,DischargeRecord,317,condition_at_discharge,text_format,Stable,capitalization/whitespace changed
+D,DischargeRecord,388,discharge_destination,text_format,Rehabilitation_Facility,capitalization/whitespace changed
+D,DischargeRecord,406,condition_at_discharge,text_format,IMPROVED,capitalization/whitespace changed
+D,DischargeRecord,408,condition_at_discharge,text_format, improved,capitalization/whitespace changed
+D,DischargeRecord,410,condition_at_discharge,text_format,improved  ,capitalization/whitespace changed
+D,DischargeRecord,431,discharge_destination,text_format,HOME_WITH_HOME_CARE,capitalization/whitespace changed
+D,DischargeRecord,432,condition_at_discharge,text_format, improved,capitalization/whitespace changed
+D,DischargeRecord,434,discharge_destination,text_format,home  ,capitalization/whitespace changed
+D,DischargeRecord,456,condition_at_discharge,text_format,IMPROVED,capitalization/whitespace changed
+D,DiagnosticOrder,6,priority,text_format,routine  ,capitalization/whitespace changed
+D,DiagnosticOrder,52,order_status,text_format,Completed,capitalization/whitespace changed
+D,DiagnosticOrder,57,priority,text_format,Stat,capitalization/whitespace changed
+D,DiagnosticOrder,66,order_status,text_format,completed  ,capitalization/whitespace changed
+D,DiagnosticOrder,118,priority,text_format,  routine ,capitalization/whitespace changed
+D,DiagnosticOrder,148,order_status,text_format,Completed,capitalization/whitespace changed
+D,DiagnosticOrder,162,priority,text_format,  stat ,capitalization/whitespace changed
+D,DiagnosticOrder,181,request_datetime,invalid_date,2024-02-30T08:00:00+02:00,day does not exist
+D,DiagnosticOrder,234,priority,text_format,  routine ,capitalization/whitespace changed
+D,DiagnosticOrder,249,order_status,text_format,CANCELLED,capitalization/whitespace changed
+D,DiagnosticOrder,253,request_datetime,ambiguous_date,2025-06-25T09:32:00,timestamp without time-zone offset
+D,DiagnosticOrder,301,order_status,text_format,  completed ,capitalization/whitespace changed
+D,DiagnosticOrder,310,priority,text_format,routine  ,capitalization/whitespace changed
+D,DiagnosticOrder,335,priority,text_format,Routine,capitalization/whitespace changed
+D,DiagnosticOrder,339,priority,text_format,  routine ,capitalization/whitespace changed
+D,DiagnosticOrder,352,request_datetime,invalid_date,2026-02-30T08:00:00+02:00,day does not exist
+D,DiagnosticOrder,373,priority,text_format,Routine,capitalization/whitespace changed
+D,DiagnosticOrder,396,priority,text_format, urgent,capitalization/whitespace changed
+D,DiagnosticOrder,404,order_status,text_format,  completed ,capitalization/whitespace changed
+D,DiagnosticOrder,408,request_datetime,ambiguous_date,2025-01-06T17:36:00,timestamp without time-zone offset
+D,DiagnosticOrder,426,priority,text_format,  urgent ,capitalization/whitespace changed
+D,DiagnosticOrder,457,order_status,text_format, completed,capitalization/whitespace changed
+D,DiagnosticOrder,473,priority,text_format,Urgent,capitalization/whitespace changed
+D,DiagnosticOrder,509,priority,text_format, urgent,capitalization/whitespace changed
+D,DiagnosticOrder,543,order_status,text_format,completed  ,capitalization/whitespace changed
+D,DiagnosticOrder,544,priority,text_format, urgent,capitalization/whitespace changed
+D,DiagnosticOrder,570,priority,text_format,urgent  ,capitalization/whitespace changed
+D,DiagnosticOrder,597,priority,text_format,urgent  ,capitalization/whitespace changed
+D,DiagnosticOrder,602,order_status,text_format,Completed,capitalization/whitespace changed
+D,DiagnosticOrder,606,request_datetime,date_format_inconsistency,1746764880000,epoch milliseconds (UTC)
+D,DiagnosticOrder,613,priority,text_format, stat,capitalization/whitespace changed
+D,DiagnosticOrder,690,priority,text_format,ROUTINE,capitalization/whitespace changed
+D,DiagnosticOrder,714,request_datetime,ambiguous_date,2026-01-03T11:41:00,timestamp without time-zone offset
+D,DiagnosticOrder,717,request_datetime,date_format_inconsistency,2024-09-21T05:04:00Z,same instant written in UTC (Z) instead of +02:00
+D,DiagnosticOrder,735,order_status,text_format,completed  ,capitalization/whitespace changed
+D,DiagnosticOrder,749,order_status,text_format,  completed ,capitalization/whitespace changed
+D,DiagnosticOrder,762,priority,text_format,routine  ,capitalization/whitespace changed
+D,DiagnosticOrder,779,priority,text_format,  stat ,capitalization/whitespace changed
+D,DiagnosticOrder,786,order_status,text_format,  completed ,capitalization/whitespace changed
+D,DiagnosticOrder,791,order_status,text_format,COMPLETED,capitalization/whitespace changed
+D,DiagnosticOrder,798,priority,text_format, routine,capitalization/whitespace changed
+D,DiagnosticOrder,803,priority,text_format,Routine,capitalization/whitespace changed
+D,DiagnosticOrder,824,priority,text_format,routine  ,capitalization/whitespace changed
+D,DiagnosticOrder,843,priority,text_format,Urgent,capitalization/whitespace changed
+D,DiagnosticExamination,61,exam_status,text_format,Completed,capitalization/whitespace changed
+D,DiagnosticExamination,80,exam_type,text_format,  arterial_blood_gas ,capitalization/whitespace changed
+D,DiagnosticExamination,107,exam_type,text_format,  arterial_blood_gas ,capitalization/whitespace changed
+D,DiagnosticExamination,113,exam_status,text_format,Completed,capitalization/whitespace changed
+D,DiagnosticExamination,158,exam_status,text_format,Completed,capitalization/whitespace changed
+D,DiagnosticExamination,183,exam_type,text_format,complete_blood_count  ,capitalization/whitespace changed
+D,DiagnosticExamination,210,exam_type,text_format, complete_blood_count,capitalization/whitespace changed
+D,DiagnosticExamination,211,exam_status,text_format,Completed,capitalization/whitespace changed
+D,DiagnosticExamination,218,exam_type,text_format, electroencephalogram,capitalization/whitespace changed
+D,DiagnosticExamination,242,exam_status,text_format,Completed,capitalization/whitespace changed
+D,DiagnosticExamination,280,exam_type,text_format,ELECTROCARDIOGRAM,capitalization/whitespace changed
+D,DiagnosticExamination,298,exam_type,text_format, lactate_level,capitalization/whitespace changed
+D,DiagnosticExamination,345,exam_status,text_format,  completed ,capitalization/whitespace changed
+D,DiagnosticExamination,360,exam_type,text_format,  electroencephalogram ,capitalization/whitespace changed
+D,DiagnosticExamination,361,exam_type,text_format,troponin_panel  ,capitalization/whitespace changed
+D,DiagnosticExamination,372,exam_type,text_format,Liver_Function_Panel,capitalization/whitespace changed
+D,DiagnosticExamination,382,exam_status,text_format, completed,capitalization/whitespace changed
+D,DiagnosticExamination,384,exam_type,text_format, coagulation_panel,capitalization/whitespace changed
+D,DiagnosticExamination,393,exam_status,text_format, completed,capitalization/whitespace changed
+D,RadiologyExamination,3,exam_type,text_format, ultrasound,capitalization/whitespace changed
+D,RadiologyExamination,9,exam_status,text_format, completed,capitalization/whitespace changed
+D,RadiologyExamination,18,exam_status,text_format,  completed ,capitalization/whitespace changed
+D,RadiologyExamination,22,exam_status,text_format,Completed,capitalization/whitespace changed
+D,RadiologyExamination,49,exam_type,text_format,x-ray  ,capitalization/whitespace changed
+D,RadiologyExamination,63,body_area,text_format,chest  ,capitalization/whitespace changed
+D,RadiologyExamination,83,exam_datetime,ambiguous_date,2026-06-06T20:12:00,timestamp without time-zone offset
+D,RadiologyExamination,86,exam_type,text_format,Ct,capitalization/whitespace changed
+D,RadiologyExamination,98,body_area,text_format,Chest,capitalization/whitespace changed
+D,RadiologyExamination,102,body_area,text_format,chest  ,capitalization/whitespace changed
+D,RadiologyExamination,103,exam_datetime,date_format_inconsistency,1743376800000,epoch milliseconds (UTC)
+D,RadiologyExamination,107,body_area,text_format,abdomen  ,capitalization/whitespace changed
+D,RadiologyExamination,121,body_area,text_format,CHEST,capitalization/whitespace changed
+D,RadiologyExamination,124,exam_datetime,date_format_inconsistency,2026-02-09T14:09:00Z,same instant written in UTC (Z) instead of +02:00
+D,RadiologyExamination,135,exam_type,text_format,ULTRASOUND,capitalization/whitespace changed
+D,RadiologyExamination,162,exam_type,text_format,ct  ,capitalization/whitespace changed
+D,RadiologyExamination,195,exam_type,text_format,  ct ,capitalization/whitespace changed
+D,RadiologyExamination,198,exam_type,text_format,CT,capitalization/whitespace changed
+D,RadiologyExamination,206,exam_type,text_format,ultrasound  ,capitalization/whitespace changed
+D,RadiologyExamination,231,body_area,text_format,  chest ,capitalization/whitespace changed
+D,RadiologyExamination,234,exam_type,text_format,Ct,capitalization/whitespace changed
+D,RadiologyExamination,244,exam_type,text_format,x-ray  ,capitalization/whitespace changed
+D,RadiologyExamination,250,exam_datetime,date_format_inconsistency,1712791080000,epoch milliseconds (UTC)
+D,RadiologyExamination,257,exam_datetime,date_format_inconsistency,2025-05-09T09:00:00Z,same instant written in UTC (Z) instead of +02:00
+D,RadiologyExamination,271,body_area,text_format,abdomen  ,capitalization/whitespace changed
+D,RadiologyExamination,278,body_area,text_format,Brain,capitalization/whitespace changed
+D,RadiologyExamination,285,exam_status,text_format,COMPLETED,capitalization/whitespace changed
+D,RadiologyExamination,286,exam_type,text_format, ct,capitalization/whitespace changed
+D,RadiologyExamination,294,exam_status,text_format,completed  ,capitalization/whitespace changed
+D,RadiologyExamination,312,exam_status,text_format, completed,capitalization/whitespace changed
+D,RadiologyExamination,315,exam_status,text_format,completed  ,capitalization/whitespace changed
+D,RadiologyExamination,320,body_area,text_format,PELVIS,capitalization/whitespace changed
+D,RadiologyExamination,328,exam_type,text_format,  mri ,capitalization/whitespace changed
+D,RadiologyExamination,341,exam_status,text_format, completed,capitalization/whitespace changed
+D,RadiologyExamination,342,body_area,text_format, chest,capitalization/whitespace changed
+D,RadiologyExamination,356,exam_datetime,ambiguous_date,2024-05-31T11:47:00,timestamp without time-zone offset
+D,RadiologyReport,31,report_datetime,date_format_inconsistency,2024-11-30T09:31:00Z,same instant written in UTC (Z) instead of +02:00
+D,RadiologyReport,43,report_datetime,date_format_inconsistency,1755647160000,epoch milliseconds (UTC)
+D,RadiologyReport,284,report_datetime,invalid_date,2024-02-30T08:00:00+02:00,day does not exist
+D,RadiologyReport,317,report_datetime,ambiguous_date,2026-10-23T10:45:00,timestamp without time-zone offset
+D,RadiologyReport,318,report_datetime,date_format_inconsistency,1743054300000,epoch milliseconds (UTC)
+D,UnitStay,28,exit_datetime,date_format_inconsistency,2024-12-26T04:08:00Z,same instant written in UTC (Z) instead of +02:00
+D,UnitStay,34,entry_datetime,ambiguous_date,2026-10-15T09:20:00,timestamp without time-zone offset
+D,UnitStay,59,entry_datetime,date_format_inconsistency,1733818320000,epoch milliseconds (UTC)
+D,UnitStay,112,entry_datetime,date_format_inconsistency,1761798840000,epoch milliseconds (UTC)
+D,UnitStay,166,entry_datetime,ambiguous_date,2025-02-19T15:25:00,timestamp without time-zone offset
+D,UnitStay,196,entry_datetime,ambiguous_date,2024-07-25T16:55:00,timestamp without time-zone offset
+D,UnitStay,341,exit_datetime,invalid_date,2025-02-30T08:00:00+02:00,day does not exist
+D,UnitStay,415,entry_datetime,date_format_inconsistency,1736092200000,epoch milliseconds (UTC)
+D,UnitStay,635,exit_datetime,date_format_inconsistency,2025-09-26T23:05:00Z,same instant written in UTC (Z) instead of +02:00
+D,UnitStay,674,entry_datetime,date_format_inconsistency,1764566280000,epoch milliseconds (UTC)
+D,UnitStay,690,exit_datetime,ambiguous_date,2024-11-08T03:20:00,timestamp without time-zone offset
+D,UnitStay,702,exit_datetime,date_format_inconsistency,2026-01-09T13:44:00Z,same instant written in UTC (Z) instead of +02:00
+D,UnitStay,751,exit_datetime,date_format_inconsistency,1722891600000,epoch milliseconds (UTC)
+D,UnitStay,775,entry_datetime,invalid_date,2024-02-30T08:00:00+02:00,day does not exist
+D,UnitStay,820,entry_datetime,date_format_inconsistency,2025-09-21T02:41:00Z,same instant written in UTC (Z) instead of +02:00
+D,UnitStay,906,exit_datetime,ambiguous_date,2025-04-17T00:17:00,timestamp without time-zone offset
+D,UnitStay,934,entry_datetime,invalid_date,2024-02-30T08:00:00+02:00,day does not exist
+D,CriticalCareRecord,67,record_datetime,date_format_inconsistency,1769647500000,epoch milliseconds (UTC)
+D,CriticalCareRecord,83,record_datetime,date_format_inconsistency,2026-03-05T04:26:00Z,same instant written in UTC (Z) instead of +02:00
+D,CriticalCareRecord,155,record_datetime,ambiguous_date,2025-10-22T06:04:00,timestamp without time-zone offset
+D,CriticalCareRecord,215,record_datetime,ambiguous_date,2024-10-15T02:35:00,timestamp without time-zone offset
+D,CriticalCareRecord,220,record_datetime,date_format_inconsistency,1724209680000,epoch milliseconds (UTC)
+D,CriticalCareRecord,256,record_datetime,invalid_date,2024-02-30T08:00:00+02:00,day does not exist
+D,GeneralWardRecord,223,record_datetime,ambiguous_date,2025-02-21T03:20:00,timestamp without time-zone offset
+D,GeneralWardRecord,490,record_datetime,date_format_inconsistency,2024-09-26T13:54:00Z,same instant written in UTC (Z) instead of +02:00
+D,GeneralWardRecord,616,record_datetime,date_format_inconsistency,2025-08-25T12:59:00Z,same instant written in UTC (Z) instead of +02:00
+D,GeneralWardRecord,617,record_datetime,date_format_inconsistency,1706162700000,epoch milliseconds (UTC)
+D,GeneralWardRecord,737,record_datetime,invalid_date,2025-02-30T08:00:00+02:00,day does not exist
+D,GeneralWardRecord,820,record_datetime,ambiguous_date,2025-03-20T03:19:00,timestamp without time-zone offset
+D,Patient,248,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,Patient,230,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,Patient,117,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,Admission,430,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,Admission,309,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,Admission,259,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,Admission,225,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,Admission,218,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,TriageAssessment,185,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,TriageAssessment,145,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,TriageAssessment,59,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,TriageAssessment,16,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,Diagnosis,1033,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,Diagnosis,1006,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,Diagnosis,915,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,Diagnosis,868,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,Diagnosis,687,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,Diagnosis,633,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,Diagnosis,572,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,Diagnosis,460,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,Diagnosis,370,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,Diagnosis,202,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,Diagnosis,87,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,Diagnosis,46,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,Diagnosis,32,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,ClinicalNote,1807,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,ClinicalNote,1600,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,ClinicalNote,1581,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,ClinicalNote,1473,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,ClinicalNote,1314,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,ClinicalNote,1239,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,ClinicalNote,1229,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,ClinicalNote,942,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,ClinicalNote,903,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,ClinicalNote,823,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,ClinicalNote,817,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,ClinicalNote,752,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,ClinicalNote,623,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,ClinicalNote,405,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,ClinicalNote,402,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,ClinicalNote,360,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,UnitStay,803,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,UnitStay,691,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,UnitStay,680,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,UnitStay,531,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,UnitStay,524,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,UnitStay,280,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,UnitStay,221,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,UnitStay,110,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,GeneralWardRecord,814,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,GeneralWardRecord,759,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,GeneralWardRecord,717,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,GeneralWardRecord,709,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,GeneralWardRecord,584,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,GeneralWardRecord,452,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,GeneralWardRecord,313,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,GeneralWardRecord,150,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,Healthcare_Professional,49,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,Healthcare_Professional,5,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,ICD9_Code,571.2,(record),duplicate_exact,,identical record appears twice (nested children listed once)
+D,Patient,(none),(entry),malformed_record,string instead of object,unusable entry in patients array
+D,Patient,(none),(entry),malformed_record,empty object,unusable entry in patients array
+D,Patient,(none),(entry),malformed_record,"null identifier, wrong types",unusable entry in patients array
+D,Admission,(none),(entry),malformed_record,string instead of object,inside encounters of patientRef 103

@@ -1,0 +1,891 @@
+WardRecordId|AdmitID|RecordDatetime|FollowUpExaminations|MedicationsTreatments|ProgressNotes|AdditionalTests|RecoveryEval
+1|1|07/02/2025 01:23 AM|Wound review|Regular inhalers|Eating and drinking well|N/A|Progressing as expected
+2|1|07/02/2025 06:00 AM|Repeat ECG|Low molecular weight heparin|Mild pain, controlled|Renal function|Ready for discharge planning
+3|1|07/03/2025 01:34 AM|Physiotherapy assessment|Regular inhalers|Clinically improving||Slower than expected
+4|2|11/22/2025 01:36 AM|Repeat bloods in 48 h|Analgesia as required|Clinically improving|Liver function|Slower than expected
+5|2|11/24/2025 11:21 AM|Repeat ECG|Oral iron supplements|Mobilizing independently|N/A|Ready for discharge planning
+6|3|01/08/2026 04:59 PM|Wound review|Analgesia as required|Clinically improving|Liver function|Progressing as expected
+7|4|05/02/2025 09:02 AM|Repeat ECG|Regular inhalers|Mild pain, controlled|Full blood count|Stable
+8|4|05/02/2025 02:41 AM|Physiotherapy assessment|Low molecular weight heparin|Awaiting physiotherapy clearance||Progressing as expected
+9|5|06/20/2025 06:23 AM|Repeat ECG|Oral iron supplements|Awaiting physiotherapy clearance|Full blood count|Ready for discharge planning
+10|5|06/21/2025 09:37 AM|Physiotherapy assessment|Oral antibiotics|Mobilizing independently|Renal function|Ready for discharge planning
+11|5|06/23/2025 05:46 AM|Repeat ECG|Oral antibiotics|Eating and drinking well|Liver function|Progressing as expected
+12|6|08/18/2024 06:34 AM|Physiotherapy assessment|Low molecular weight heparin|Mobilizing independently|Full blood count|Stable
+13|6|08/18/2024 07:17 PM|Physiotherapy assessment|Analgesia as required|Mobilizing independently|Full blood count|Stable
+14|7|09/02/2024 03:48 AM|Repeat ECG|Analgesia as required|Mild pain, controlled|Renal function|Slower than expected
+15|7|09/02/2024 12:07 PM|Repeat ECG|Analgesia as required|Awaiting physiotherapy clearance|Renal function|Ready for discharge planning
+16|8|07/30/2025 12:58 AM|Wound review|Oral antibiotics|Awaiting physiotherapy clearance|Liver function|Ready for discharge planning
+17|8|07/31/2025 07:20 PM|Repeat ECG|Regular inhalers|Eating and drinking well|N/A|Slower than expected
+18|9|08/18/2025 11:40 PM|Wound review|Oral antibiotics|Eating and drinking well|Full blood count|Ready for discharge planning
+19|9|08/24/2025 11:33 PM|Repeat bloods in 48 h|Regular inhalers|Awaiting physiotherapy clearance||Ready for discharge planning
+20|9|08/26/2025 03:43 AM|Repeat bloods in 48 h|Analgesia as required|Eating and drinking well|Renal function|Progressing as expected
+21|10|01/12/2026 04:25 PM|Repeat bloods in 48 h|Oral antibiotics|Clinically improving|Liver function|Ready for discharge planning
+22|11|02/20/2024 07:53 AM|Wound review|Oral antibiotics|Clinically improving|Liver function|Stable
+23|12|05/22/2024 07:57 AM|Physiotherapy assessment|Low molecular weight heparin|Mild pain, controlled||Progressing as expected
+24|13|08/04/2024 06:40 PM|Repeat bloods in 48 h|Oral antibiotics|Eating and drinking well|Full blood count|Stable
+25|14|10/25/2024 03:41 AM|Repeat bloods in 48 h|Oral iron supplements|Mild pain, controlled|N/A|Ready for discharge planning
+26|14|10/23/2024 12:37 AM|Repeat ECG|Low molecular weight heparin|Awaiting physiotherapy clearance|Renal function|Progressing as expected
+27|14|10/22/2024 12:51 PM|Physiotherapy assessment|Oral iron supplements|Awaiting physiotherapy clearance|N/A|Progressing as expected
+28|15|02/01/2025 03:58 PM|Repeat bloods in 48 h|Regular inhalers|Mild pain, controlled|N/A|Ready for discharge planning
+29|15|02/02/2025 02:01 AM|Repeat bloods in 48 h|Oral antibiotics|Clinically improving|Full blood count|Slower than expected
+30|16|12/19/2024 09:24 PM|Repeat ECG|Oral iron supplements|Eating and drinking well||Ready for discharge planning
+31|17|06/02/2024 07:18 PM|Repeat bloods in 48 h|Regular inhalers|Mild pain, controlled|N/A|Stable
+32|17|06/01/2024 10:23 PM|Wound review|Regular inhalers|Awaiting physiotherapy clearance|N/A|Ready for discharge planning
+33|18|04/30/2024 11:42 AM|Physiotherapy assessment|Analgesia as required|Awaiting physiotherapy clearance|N/A|Stable
+34|18|04/28/2024 10:36 AM|Repeat ECG|Analgesia as required|Mobilizing independently|Renal function|Ready for discharge planning
+35|18|04/28/2024 12:19 PM|Wound review|Oral iron supplements|Mobilizing independently|Full blood count|Stable
+36|19|05/21/2025 10:41 PM|Repeat bloods in 48 h|Analgesia as required|Awaiting physiotherapy clearance|Renal function|Ready for discharge planning
+37|19|05/24/2025 05:05 AM|Repeat ECG|Regular inhalers|Mobilizing independently|N/A|Slower than expected
+38|19|05/23/2025 07:45 PM|Wound review|Oral iron supplements|Mild pain, controlled|Renal function|Slower than expected
+39|20|05/29/2024 09:45 PM|Repeat ECG|Analgesia as required|Eating and drinking well||Slower than expected
+40|20|05/25/2024 04:44 AM|Repeat ECG|Oral iron supplements|Clinically improving|N/A|Progressing as expected
+41|21|01/24/2025 08:36 AM|Repeat bloods in 48 h|Low molecular weight heparin|Eating and drinking well|Liver function|Progressing as expected
+42|21|01/22/2025 10:07 AM|Physiotherapy assessment|Regular inhalers|Mobilizing independently|Full blood count|Progressing as expected
+43|21|01/20/2025 06:12 PM|Repeat ECG|Regular inhalers|Mobilizing independently|Renal function|Slower than expected
+44|22|04/23/2024 06:50 PM|Repeat ECG|Oral iron supplements|Mobilizing independently|Full blood count|Stable
+45|23|01/11/2024 04:41 AM|Repeat bloods in 48 h|Low molecular weight heparin|Awaiting physiotherapy clearance|Full blood count|Slower than expected
+46|24|11/17/2024 10:59 AM|Physiotherapy assessment|Low molecular weight heparin|Mobilizing independently|N/A|Ready for discharge planning
+47|24|11/18/2024 06:58 AM|Wound review|Oral iron supplements|Eating and drinking well|N/A|Progressing as expected
+48|26|08/22/2024 04:35 AM|Repeat ECG|Oral iron supplements|Mild pain, controlled|N/A|Stable
+49|26|08/19/2024 06:07 AM|Wound review|Analgesia as required|Mobilizing independently|Full blood count|Slower than expected
+50|27|12/18/2024 05:44 PM|Physiotherapy assessment|Low molecular weight heparin|Clinically improving|N/A|Stable
+51|28|04/17/2025 02:19 PM|Physiotherapy assessment|Analgesia as required|Mobilizing independently|Renal function|Slower than expected
+52|29|03/06/2024 03:56 AM|Repeat bloods in 48 h|Low molecular weight heparin|Clinically improving|N/A|Ready for discharge planning
+53|29|03/10/2024 09:25 PM|Physiotherapy assessment|Analgesia as required|Eating and drinking well|N/A|Progressing as expected
+54|29|03/05/2024 02:02 PM|Repeat ECG|Low molecular weight heparin|Awaiting physiotherapy clearance|Renal function|Progressing as expected
+55|30|02/11/2024 11:12 AM|Repeat ECG|Analgesia as required|Awaiting physiotherapy clearance|Full blood count|Progressing as expected
+56|31|05/01/2024 04:31 AM|Wound review|Low molecular weight heparin|Clinically improving|Renal function|Progressing as expected
+57|32|01/20/2024 10:34 AM|Repeat ECG|Regular inhalers|Clinically improving||Stable
+58|32|01/21/2024 04:59 PM|Repeat ECG|Low molecular weight heparin|Mobilizing independently|Full blood count|Progressing as expected
+59|33|01/07/2024 07:13 PM|Repeat bloods in 48 h|Low molecular weight heparin|Mobilizing independently|Renal function|Progressing as expected
+60|33|01/07/2024 10:29 AM|Wound review|Oral iron supplements|Awaiting physiotherapy clearance|Liver function|Stable
+61|34|02/06/2024 02:24 PM|Physiotherapy assessment|Oral iron supplements|Clinically improving|Renal function|Slower than expected
+62|35|11/07/2025 05:37 AM|Wound review|Oral antibiotics|Clinically improving|Renal function|Ready for discharge planning
+63|35|11/08/2025 08:25 AM|Repeat ECG|Low molecular weight heparin|Eating and drinking well|N/A|Progressing as expected
+64|35|11/03/2025 07:18 AM|Repeat ECG|Low molecular weight heparin|Mobilizing independently|Liver function|Progressing as expected
+65|36|01/29/2026 08:19 AM|Wound review|Low molecular weight heparin|Clinically improving|Full blood count|Ready for discharge planning
+66|36|01/26/2026 02:11 AM|Repeat bloods in 48 h|Regular inhalers|Awaiting physiotherapy clearance|N/A|Ready for discharge planning
+67|37|12/05/2024 07:41 AM|Wound review|Oral iron supplements|Clinically improving|N/A|Stable
+68|38|04/15/2025 06:32 AM|Repeat ECG|Regular inhalers|Clinically improving|N/A|Progressing as expected
+69|39|08/13/2025 04:24 AM|Repeat ECG|Regular inhalers|Clinically improving|Full blood count|Ready for discharge planning
+70|39|08/15/2025 09:46 AM|Wound review|Analgesia as required|Clinically improving|N/A|Ready for discharge planning
+71|40|08/15/2024 01:57 PM|Wound review|Oral antibiotics|Awaiting physiotherapy clearance|Full blood count|Progressing as expected
+72|42|09/11/2024 08:08 AM|Physiotherapy assessment|Oral iron supplements|Awaiting physiotherapy clearance|N/A|Progressing as expected
+73|43|12/17/2024 03:21 AM|Physiotherapy assessment|Oral iron supplements|Mild pain, controlled|Full blood count|Slower than expected
+74|43|12/14/2024 10:26 AM|Repeat ECG|Oral antibiotics|Eating and drinking well|Full blood count|Progressing as expected
+75|44|11/03/2024 09:10 AM|Repeat bloods in 48 h|Regular inhalers|Mobilizing independently|Full blood count|Progressing as expected
+76|44|11/03/2024 03:49 PM|Physiotherapy assessment|Oral iron supplements|Eating and drinking well|Liver function|Stable
+77|45|11/22/2024 06:58 AM|Repeat bloods in 48 h|Regular inhalers|Awaiting physiotherapy clearance|Liver function|Slower than expected
+78|46|09/23/2024 12:01 PM|Repeat ECG|Low molecular weight heparin|Awaiting physiotherapy clearance|N/A|Progressing as expected
+79|46|09/26/2024 11:52 PM|Repeat ECG|Analgesia as required|Clinically improving|N/A|Progressing as expected
+80|47|01/30/2025 08:58 AM|Repeat bloods in 48 h|Oral antibiotics|Mild pain, controlled||Ready for discharge planning
+81|48|05/22/2025 12:21 AM|Physiotherapy assessment|Oral antibiotics|Mild pain, controlled|Liver function|Stable
+82|49|07/10/2025 06:21 PM|Repeat ECG|Regular inhalers|Mobilizing independently|N/A|Stable
+83|49|07/12/2025 05:39 PM|Repeat bloods in 48 h|Low molecular weight heparin|Mobilizing independently|Full blood count|Ready for discharge planning
+84|49|07/06/2025 05:50 PM|Repeat ECG|Oral antibiotics|Clinically improving|Liver function|Ready for discharge planning
+85|50|03/10/2024 09:32 AM|Wound review|Low molecular weight heparin|Mobilizing independently|Liver function|Ready for discharge planning
+86|50|03/11/2024 09:56 AM|Wound review|Low molecular weight heparin|Mobilizing independently|Full blood count|Progressing as expected
+87|50|03/07/2024 10:00 AM|Repeat ECG|Low molecular weight heparin|Awaiting physiotherapy clearance|N/A|Stable
+88|51|05/21/2024 04:00 AM|Repeat ECG|Low molecular weight heparin|Awaiting physiotherapy clearance|N/A|Ready for discharge planning
+89|52|10/12/2024 07:09 AM|Repeat bloods in 48 h|Oral iron supplements|Awaiting physiotherapy clearance|Liver function|Ready for discharge planning
+90|52|10/13/2024 08:55 PM|Repeat ECG|Oral iron supplements|Mobilizing independently|N/A|Slower than expected
+91|53|02/19/2025 05:27 PM|Physiotherapy assessment|Analgesia as required|Awaiting physiotherapy clearance|N/A|Progressing as expected
+92|53|02/14/2025 09:07 PM|Physiotherapy assessment|Oral antibiotics|Awaiting physiotherapy clearance|N/A|Stable
+93|53|02/16/2025 12:25 PM|Repeat ECG|Low molecular weight heparin|Mild pain, controlled|N/A|Stable
+94|54|04/16/2025 02:01 AM|Physiotherapy assessment|Low molecular weight heparin|Mobilizing independently|Full blood count|Slower than expected
+95|55|06/21/2025 05:21 AM|Physiotherapy assessment|Low molecular weight heparin|Mild pain, controlled|Renal function|Slower than expected
+96|55|06/19/2025 09:56 AM|Repeat ECG|Oral antibiotics|Awaiting physiotherapy clearance|Liver function|Ready for discharge planning
+97|55|06/24/2025 06:42 AM|Repeat bloods in 48 h|Oral antibiotics|Mild pain, controlled||Slower than expected
+98|56|06/13/2025 01:22 AM|Repeat bloods in 48 h|Regular inhalers|Mild pain, controlled|N/A|Progressing as expected
+99|57|09/09/2025 10:33 PM|Physiotherapy assessment|Oral antibiotics|Clinically improving|Liver function|Stable
+100|58|04/28/2025 04:02 AM|Wound review|Oral iron supplements|Awaiting physiotherapy clearance|Liver function|Stable
+101|58|04/27/2025 01:50 AM|Repeat ECG|Low molecular weight heparin|Mobilizing independently|N/A|Stable
+102|58|04/25/2025 08:18 AM|Repeat ECG|Low molecular weight heparin|Awaiting physiotherapy clearance|Renal function|Progressing as expected
+103|59|09/12/2025 07:13 PM|Wound review|Analgesia as required|Mobilizing independently||Slower than expected
+104|60|09/16/2025 07:37 PM|Physiotherapy assessment|Regular inhalers|Eating and drinking well|Full blood count|Progressing as expected
+105|61|10/31/2026 02:19 PM|Physiotherapy assessment|Oral iron supplements|Eating and drinking well|N/A|Slower than expected
+106|61|10/31/2026 05:54 PM|Repeat ECG|Low molecular weight heparin|Eating and drinking well||Ready for discharge planning
+107|61|10/31/2026 07:32 AM|Physiotherapy assessment|Oral iron supplements|Awaiting physiotherapy clearance|Renal function|Ready for discharge planning
+108|62|04/21/2024 08:34 PM|Wound review|Regular inhalers|Awaiting physiotherapy clearance||Stable
+109|63|05/11/2024 05:28 PM|Physiotherapy assessment|Analgesia as required|Clinically improving|Liver function|Slower than expected
+110|63|05/12/2024 03:40 PM|Wound review|Analgesia as required|Clinically improving|Liver function|Stable
+111|63|05/14/2024 01:08 AM|Repeat bloods in 48 h|Regular inhalers|Awaiting physiotherapy clearance|Renal function|Progressing as expected
+112|64|11/27/2025 10:57 PM|Repeat ECG|Low molecular weight heparin|Eating and drinking well|Full blood count|Stable
+113|65|06/01/2025 04:07 PM|Wound review|Regular inhalers|Awaiting physiotherapy clearance|Renal function|Ready for discharge planning
+114|65|06/03/2025 02:31 AM|Repeat ECG|Analgesia as required|Awaiting physiotherapy clearance|Renal function|Ready for discharge planning
+115|66|07/08/2025 08:09 PM|Repeat ECG|Low molecular weight heparin|Mild pain, controlled|Liver function|Ready for discharge planning
+116|66|07/04/2025 01:22 PM|Repeat bloods in 48 h|Oral antibiotics|Mild pain, controlled|N/A|Progressing as expected
+117|66|07/06/2025 07:03 AM|Wound review|Analgesia as required|Mobilizing independently|Liver function|Ready for discharge planning
+118|67|09/20/2025 11:42 AM|Physiotherapy assessment|Oral iron supplements|Mild pain, controlled|Full blood count|Ready for discharge planning
+119|67|09/15/2025 11:12 AM|Physiotherapy assessment|Regular inhalers|Eating and drinking well|Liver function|Ready for discharge planning
+120|67|09/18/2025 07:06 AM|Repeat ECG|Oral iron supplements|Eating and drinking well||Stable
+121|68|04/18/2024 09:33 PM|Physiotherapy assessment|Oral antibiotics|Awaiting physiotherapy clearance|Liver function|Slower than expected
+122|68|04/14/2024 07:45 PM|Repeat bloods in 48 h|Low molecular weight heparin|Mild pain, controlled|Full blood count|Slower than expected
+123|69|02/25/2024 10:32 AM|Wound review|Low molecular weight heparin|Mild pain, controlled||Ready for discharge planning
+124|70|07/02/2024 09:21 AM|Repeat bloods in 48 h|Analgesia as required|Clinically improving|Renal function|Progressing as expected
+125|71|10/01/2024 05:37 AM|Wound review|Oral antibiotics|Eating and drinking well|Full blood count|Slower than expected
+126|72|09/14/2024 05:41 PM|Repeat bloods in 48 h|Low molecular weight heparin|Eating and drinking well|Renal function|Progressing as expected
+127|72|09/10/2024 06:13 AM|Repeat ECG|Low molecular weight heparin|Mobilizing independently|N/A|Progressing as expected
+128|72|09/13/2024 05:47 PM|Repeat bloods in 48 h|Oral antibiotics|Awaiting physiotherapy clearance|N/A|Ready for discharge planning
+129|73|04/09/2025 03:14 PM|Repeat bloods in 48 h|Regular inhalers|Mild pain, controlled||Ready for discharge planning
+130|74|01/15/2024 04:36 AM|Repeat bloods in 48 h|Regular inhalers|Awaiting physiotherapy clearance|Renal function|Stable
+131|74|01/20/2024 10:01 PM|Wound review|Oral antibiotics|Mobilizing independently|Liver function|Progressing as expected
+132|74|01/13/2024 05:55 PM|Physiotherapy assessment|Oral antibiotics|Clinically improving|Renal function|Stable
+133|75|12/12/2025 07:19 AM|Repeat bloods in 48 h|Analgesia as required|Eating and drinking well|Full blood count|Stable
+96|55|06/19/2025 09:56 AM|Repeat ECG|Oral antibiotics|Awaiting physiotherapy clearance|Liver function|Ready for discharge planning
+134|76|04/24/2024 12:07 PM|Wound review|Oral iron supplements|Clinically improving|Liver function|Stable
+135|76|04/28/2024 04:17 PM|Wound review|Regular inhalers|Mobilizing independently|N/A|Ready for discharge planning
+136|76|04/24/2024 02:16 AM|Repeat ECG|Oral iron supplements|Clinically improving|Renal function|Slower than expected
+137|77|07/22/2024 05:07 AM|Repeat ECG|Analgesia as required|Awaiting physiotherapy clearance|N/A|Stable
+138|78|10/09/2024 04:26 PM|Physiotherapy assessment|Regular inhalers|Mild pain, controlled|N/A|Progressing as expected
+139|78|10/10/2024 02:39 AM|Wound review|Oral antibiotics|Clinically improving|Renal function|Stable
+140|78|10/06/2024 08:10 AM|Wound review|Analgesia as required|Eating and drinking well||Ready for discharge planning
+141|79|10/29/2024 07:54 AM|Wound review|Oral iron supplements|Mobilizing independently|Full blood count|Progressing as expected
+142|80|03/31/2025 11:58 PM|Repeat bloods in 48 h|Low molecular weight heparin|Clinically improving|N/A|Progressing as expected
+143|80|03/30/2025 07:14 PM|Physiotherapy assessment|Analgesia as required|Awaiting physiotherapy clearance|Liver function|Ready for discharge planning
+144|80|03/31/2025 01:56 PM|Physiotherapy assessment|Analgesia as required|Eating and drinking well|N/A|Progressing as expected
+145|81|04/29/2025 11:46 AM|Repeat ECG|Low molecular weight heparin|Awaiting physiotherapy clearance|Liver function|Slower than expected
+146|81|05/03/2025 06:51 PM|Wound review|Oral antibiotics|Clinically improving|Liver function|Ready for discharge planning
+147|81|04/28/2025 09:39 PM|Physiotherapy assessment|Regular inhalers|Awaiting physiotherapy clearance|N/A|Progressing as expected
+148|82|05/28/2025 09:40 PM|Wound review|Analgesia as required|Clinically improving||Slower than expected
+149|83|01/09/2024 01:46 PM|Wound review|Oral antibiotics|Mobilizing independently|Renal function|Ready for discharge planning
+150|84|02/21/2024 05:22 AM|Repeat ECG|Low molecular weight heparin|Mobilizing independently|Renal function|Ready for discharge planning
+151|85|05/20/2024 03:31 PM|Repeat bloods in 48 h|Oral iron supplements|Clinically improving|Liver function|Ready for discharge planning
+152|85|05/18/2024 07:18 PM|Repeat ECG|Analgesia as required|Eating and drinking well|N/A|Ready for discharge planning
+153|85|05/19/2024 03:25 PM|Repeat bloods in 48 h|Regular inhalers|Eating and drinking well|N/A|Ready for discharge planning
+154|86|10/16/2024 12:42 AM|Repeat bloods in 48 h|Oral iron supplements|Mobilizing independently|Liver function|Ready for discharge planning
+155|86|10/22/2024 01:31 AM|Physiotherapy assessment|Regular inhalers|Awaiting physiotherapy clearance|Full blood count|Slower than expected
+156|86|10/20/2024 12:51 PM|Repeat bloods in 48 h|Oral iron supplements|Awaiting physiotherapy clearance|N/A|Slower than expected
+157|87|12/11/2024 11:30 AM|Repeat ECG|Regular inhalers|Mobilizing independently|Renal function|Slower than expected
+158|88|07/19/2025 07:56 AM|Repeat ECG|Oral antibiotics|Mild pain, controlled|N/A|Slower than expected
+159|88|07/21/2025 03:26 AM|Wound review|Oral antibiotics|Mild pain, controlled|N/A|Stable
+160|89|12/17/2024 11:15 PM|Repeat bloods in 48 h|Low molecular weight heparin|Mild pain, controlled|Renal function|Progressing as expected
+161|89|12/14/2024 08:33 PM|Wound review|Oral antibiotics|Eating and drinking well||Stable
+162|90|06/10/2024 12:08 AM|Repeat ECG|Regular inhalers|Eating and drinking well|N/A|Ready for discharge planning
+163|90|06/09/2024 05:17 PM|Physiotherapy assessment|Analgesia as required|Mild pain, controlled|Liver function|Ready for discharge planning
+164|91|10/06/2024 07:39 PM|Wound review|Regular inhalers|Mobilizing independently|Full blood count|Stable
+165|91|10/07/2024 12:31 AM|Repeat bloods in 48 h|Analgesia as required|Eating and drinking well|Liver function|Slower than expected
+166|92|08/28/2024 12:35 AM|Wound review|Low molecular weight heparin|Clinically improving|N/A|Stable
+167|93|10/01/2024 07:17 AM|Repeat bloods in 48 h|Analgesia as required|Awaiting physiotherapy clearance|Renal function|Slower than expected
+168|94|11/09/2024 05:05 PM|Physiotherapy assessment|Oral iron supplements|Awaiting physiotherapy clearance|Full blood count|Ready for discharge planning
+169|94|11/08/2024 12:20 PM|Wound review|Oral iron supplements|Eating and drinking well|N/A|Ready for discharge planning
+170|94|11/07/2024 05:38 PM|Wound review|Oral iron supplements|Mobilizing independently|Full blood count|Progressing as expected
+171|95|01/13/2025 12:54 AM|Physiotherapy assessment|Oral iron supplements|Eating and drinking well|Liver function|Progressing as expected
+172|95|01/11/2025 09:29 AM|Wound review|Oral antibiotics|Mild pain, controlled|Liver function|Progressing as expected
+173|96|08/06/2024 05:50 AM|Repeat bloods in 48 h|Regular inhalers|Awaiting physiotherapy clearance|Liver function|Slower than expected
+174|96|08/04/2024 09:13 PM|Physiotherapy assessment|Analgesia as required|Awaiting physiotherapy clearance|N/A|Stable
+175|97|10/05/2024 04:53 AM|Repeat bloods in 48 h|Analgesia as required|Mild pain, controlled|N/A|Slower than expected
+176|97|10/02/2024 01:27 AM|Repeat ECG|Low molecular weight heparin|Mild pain, controlled|N/A|Slower than expected
+177|97|10/03/2024 04:05 PM|Repeat bloods in 48 h|Low molecular weight heparin|Awaiting physiotherapy clearance|Full blood count|Progressing as expected
+178|98|12/05/2024 09:22 PM|Physiotherapy assessment|Oral antibiotics|Clinically improving|N/A|Slower than expected
+179|98|12/05/2024 04:34 PM|Repeat bloods in 48 h|Low molecular weight heparin|Eating and drinking well|Full blood count|Slower than expected
+180|99|09/08/2024 10:00 PM|Repeat bloods in 48 h|Oral iron supplements|Awaiting physiotherapy clearance|Full blood count|Ready for discharge planning
+181|99|09/13/2024 04:29 AM|Physiotherapy assessment|Analgesia as required|Eating and drinking well|N/A|Progressing as expected
+182|99|09/13/2024 08:17 AM|Wound review|Regular inhalers|Awaiting physiotherapy clearance||Slower than expected
+183|100|04/28/2024 11:35 PM|Repeat ECG|Oral iron supplements|Mild pain, controlled|Renal function|Slower than expected
+184|101|06/29/2024 12:25 AM|Repeat ECG|Analgesia as required|Clinically improving|N/A|Ready for discharge planning
+185|101|06/28/2024 04:37 AM|Repeat bloods in 48 h|Oral antibiotics|Clinically improving|Liver function|Progressing as expected
+186|101|07/06/2024 08:01 AM|Repeat bloods in 48 h|Analgesia as required|Mobilizing independently|N/A|Stable
+187|102|08/30/2024 08:22 PM|Repeat bloods in 48 h|Regular inhalers|Mobilizing independently||Slower than expected
+188|103|11/17/2024 01:24 AM|Repeat bloods in 48 h|Oral antibiotics|Awaiting physiotherapy clearance|Liver function|Ready for discharge planning
+189|103|11/17/2024 05:19 PM|Physiotherapy assessment|Oral antibiotics|Mild pain, controlled|Liver function|Stable
+190|104|01/09/2025 11:42 PM|Physiotherapy assessment|Oral iron supplements|Clinically improving|Full blood count|Ready for discharge planning
+191|104|01/08/2025 09:45 AM|Repeat ECG|Regular inhalers|Clinically improving|N/A|Ready for discharge planning
+192|105|03/11/2024 01:07 AM|Wound review|Analgesia as required|Awaiting physiotherapy clearance|N/A|Slower than expected
+193|107|04/06/2026 08:39 AM|Repeat bloods in 48 h|Oral antibiotics|Mobilizing independently|Full blood count|Stable
+194|108|04/28/2025 08:48 PM|Physiotherapy assessment|Regular inhalers|Clinically improving|Full blood count|Stable
+195|108|04/28/2025 08:18 PM|Wound review|Regular inhalers|Mild pain, controlled|N/A|Stable
+196|109|09/01/25 05:07 PM|Repeat bloods in 48 h|Oral iron supplements|Mild pain, controlled|N/A|Ready for discharge planning
+197|109|09/05/2025 09:36 AM|Repeat ECG|Regular inhalers|Eating and drinking well|Liver function|Slower than expected
+198|110|12/17/2024 01:29 AM|Physiotherapy assessment|Analgesia as required|Clinically improving|N/A|Progressing as expected
+199|110|12/17/2024 07:17 PM|Repeat ECG|Oral antibiotics|Mild pain, controlled|Liver function|Ready for discharge planning
+200|111|01/06/2025 02:22 PM|Repeat ECG|Regular inhalers|Mobilizing independently|N/A|Progressing as expected
+201|111|01/07/2025 10:12 AM|Repeat ECG|Oral iron supplements|Awaiting physiotherapy clearance|N/A|Stable
+202|112|02/18/2025 03:26 AM|Repeat ECG|Regular inhalers|Mobilizing independently|N/A|Progressing as expected
+203|113|04/18/2025 02:26 PM|Physiotherapy assessment|Regular inhalers|Awaiting physiotherapy clearance|Full blood count|Stable
+204|113|04/20/2025 08:21 PM|Repeat ECG|Regular inhalers|Clinically improving|Full blood count|Ready for discharge planning
+205|115|01/21/2026 09:01 PM|Physiotherapy assessment|Oral antibiotics|Awaiting physiotherapy clearance|N/A|Ready for discharge planning
+206|115|01/19/2026 04:17 PM|Physiotherapy assessment|Oral antibiotics|Eating and drinking well|Renal function|Progressing as expected
+207|116|02/28/2024 03:29 PM|Wound review|Low molecular weight heparin|Mobilizing independently|Renal function|Progressing as expected
+208|116|02/29/2024 02:01 PM|Repeat ECG|Regular inhalers|Mild pain, controlled|Renal function|Stable
+209|117|05/17/2024 11:20 AM|Wound review|Regular inhalers|Mild pain, controlled|N/A|Progressing as expected
+210|117|05/18/2024 12:01 PM|Physiotherapy assessment|Low molecular weight heparin|Awaiting physiotherapy clearance|Full blood count|Stable
+211|118|09/07/2024 05:03 AM|Wound review|Regular inhalers|Mild pain, controlled|N/A|Stable
+212|119|10/31/2026 03:23 PM|Wound review|Regular inhalers|Awaiting physiotherapy clearance|N/A|Slower than expected
+213|120|09/16/2024 04:19 AM|Repeat ECG|Low molecular weight heparin|Awaiting physiotherapy clearance|Full blood count|Slower than expected
+214|121|01/29/2025 06:24 PM|Physiotherapy assessment|Oral antibiotics|Awaiting physiotherapy clearance|N/A|Ready for discharge planning
+215|121|01/31/2025 09:43 AM|Physiotherapy assessment|Analgesia as required|Awaiting physiotherapy clearance|Liver function|Progressing as expected
+216|122|06/17/2025 01:12 AM|Physiotherapy assessment|Oral iron supplements|Awaiting physiotherapy clearance|Liver function|Ready for discharge planning
+217|122|06/10/2025 03:41 PM|Wound review|Oral antibiotics|Mild pain, controlled|Renal function|Progressing as expected
+218|122|06/12/2025 10:08 AM|Repeat ECG|Oral antibiotics|Eating and drinking well|Liver function|Stable
+219|123|08/29/2025 10:23 AM|Repeat ECG|Low molecular weight heparin|Mild pain, controlled|Liver function|Ready for discharge planning
+220|124|02/08/2026 08:30 PM|Repeat bloods in 48 h|Oral antibiotics|Clinically improving|N/A|Slower than expected
+221|124|02/11/2026 06:23 PM|Repeat bloods in 48 h|Regular inhalers|Mild pain, controlled|Renal function|Ready for discharge planning
+222|125|05/16/2025 01:38 AM|Wound review|Low molecular weight heparin|Eating and drinking well||Progressing as expected
+223|125|05/15/2025 09:03 AM|Repeat bloods in 48 h|Analgesia as required|Mobilizing independently||Stable
+224|126|06/28/2025 09:26 PM|Wound review|Oral antibiotics|Eating and drinking well|Full blood count|Ready for discharge planning
+225|127|10/12/2024 02:43 AM|Physiotherapy assessment|Analgesia as required|Clinically improving|Liver function|Progressing as expected
+226|127|10/15/2024 11:21 AM|Repeat bloods in 48 h|Low molecular weight heparin|Mild pain, controlled|N/A|Progressing as expected
+227|128|04/21/2025 11:50 PM|Physiotherapy assessment|Analgesia as required|Awaiting physiotherapy clearance|Renal function|Progressing as expected
+228|128|04/20/2025 07:18 PM|Repeat ECG|Low molecular weight heparin|Mobilizing independently|Liver function|Progressing as expected
+229|128|04/21/2025 11:02 AM|Repeat bloods in 48 h|Low molecular weight heparin|Eating and drinking well|Renal function|Progressing as expected
+230|129|05/28/2024 06:45 AM|Repeat bloods in 48 h|Oral antibiotics|Mobilizing independently|N/A|Stable
+231|129|05/28/2024 12:51 PM|Physiotherapy assessment|Regular inhalers|Mobilizing independently|N/A|Stable
+232|130|09/11/2024 04:09 AM|Repeat bloods in 48 h|Low molecular weight heparin|Clinically improving|Full blood count|Slower than expected
+233|131|12/31/2024 01:42 AM|Repeat bloods in 48 h|Low molecular weight heparin|Clinically improving|N/A|Ready for discharge planning
+234|132|10/29/2025 05:38 AM|Repeat bloods in 48 h|Oral antibiotics|Clinically improving|N/A|Ready for discharge planning
+235|132|10/27/2025 05:13 PM|Repeat bloods in 48 h|Oral iron supplements|Awaiting physiotherapy clearance|Liver function|Stable
+236|133|02/09/2024 06:27 PM|Wound review|Low molecular weight heparin|Mild pain, controlled|Liver function|Progressing as expected
+237|133|02/10/2024 02:21 AM|Repeat bloods in 48 h|Analgesia as required|Mobilizing independently|Liver function|Ready for discharge planning
+238|133|02/07/2024 08:20 AM|Wound review|Oral antibiotics|Mobilizing independently|Renal function|Stable
+239|134|05/17/2024 05:44 PM|Wound review|Regular inhalers|Clinically improving|Liver function|Progressing as expected
+240|135|10/07/2024 05:45 PM|Repeat ECG|Low molecular weight heparin|Awaiting physiotherapy clearance|N/A|Stable
+241|135|10/14/2024 08:13 AM|Repeat bloods in 48 h|Low molecular weight heparin|Clinically improving|Renal function|Progressing as expected
+242|135|10/09/2024 07:48 AM|Physiotherapy assessment|Oral antibiotics|Eating and drinking well|N/A|Progressing as expected
+243|136|02/03/2025 08:51 PM|Wound review|Oral antibiotics|Mild pain, controlled|Full blood count|Stable
+244|137|05/10/2024 12:58 PM|Wound review|Oral antibiotics|Clinically improving|Renal function|Slower than expected
+245|137|05/09/2024 08:59 PM|Repeat ECG|Regular inhalers|Clinically improving|Renal function|Slower than expected
+246|137|05/06/2024 01:50 PM|Repeat bloods in 48 h|Low molecular weight heparin|Mobilizing independently|Renal function|Stable
+247|138|06/05/2024 03:57 PM|Wound review|Regular inhalers|Clinically improving|N/A|Ready for discharge planning
+248|139|11/06/2024 07:35 AM|Repeat bloods in 48 h|Oral iron supplements|Clinically improving|Full blood count|Stable
+249|139|11/03/2024 04:43 PM|Physiotherapy assessment|Low molecular weight heparin|Clinically improving|N/A|Stable
+250|140|07/12/2025 01:57 PM|Repeat ECG|Analgesia as required|Mild pain, controlled|Renal function|Ready for discharge planning
+251|141|12/28/2024 02:22 PM|Repeat bloods in 48 h|Low molecular weight heparin|Awaiting physiotherapy clearance|Full blood count|Stable
+252|141|12/26/2024 08:53 AM|Repeat ECG|Analgesia as required|Clinically improving|Renal function|Stable
+253|142|06/19/2024 12:38 PM|Wound review|Analgesia as required|Mobilizing independently|Renal function|Ready for discharge planning
+254|142|06/22/2024 11:26 AM|Repeat bloods in 48 h|Analgesia as required|Mild pain, controlled|Full blood count|Ready for discharge planning
+255|143|03/28/2025 09:46 AM|Physiotherapy assessment|Oral iron supplements|Clinically improving|Full blood count|Ready for discharge planning
+256|143|03/26/2025 01:15 PM|Repeat ECG|Low molecular weight heparin|Clinically improving|N/A|Ready for discharge planning
+257|144|06/15/2025 07:45 PM|Wound review|Low molecular weight heparin|Awaiting physiotherapy clearance||Slower than expected
+258|145|02/22/2025 08:09 PM|Wound review|Analgesia as required|Clinically improving|N/A|Ready for discharge planning
+259|146|04/18/2025 10:01 AM|Repeat bloods in 48 h|Regular inhalers|Awaiting physiotherapy clearance|N/A|Ready for discharge planning
+260|147|10/05/2024 09:12 AM|Wound review|Oral iron supplements|Mobilizing independently|Renal function|Progressing as expected
+261|148|12/22/2024 09:47 AM|Repeat ECG|Low molecular weight heparin|Mild pain, controlled|Liver function|Progressing as expected
+262|150|07/27/2025 01:56 AM|Repeat bloods in 48 h|Low molecular weight heparin|Mild pain, controlled|N/A|Ready for discharge planning
+263|150|07/27/2025 09:46 PM|Repeat bloods in 48 h|Oral antibiotics|Clinically improving|Full blood count|Progressing as expected
+264|151|01/29/2026 09:46 PM|Repeat bloods in 48 h|Regular inhalers|Eating and drinking well|Renal function|Progressing as expected
+265|151|02/01/2026 12:07 PM|Repeat bloods in 48 h|Low molecular weight heparin|Eating and drinking well|Renal function|Ready for discharge planning
+266|151|01/30/2026 01:31 AM|Physiotherapy assessment|Regular inhalers|Mobilizing independently||Ready for discharge planning
+267|152|02/07/2025 03:38 PM|Repeat bloods in 48 h|Oral antibiotics|Awaiting physiotherapy clearance|Liver function|Ready for discharge planning
+268|153|03/27/2025 01:57 PM|Repeat ECG|Oral iron supplements|Clinically improving||Slower than expected
+269|154|04/26/2025 03:31 AM|Repeat bloods in 48 h|Analgesia as required|Awaiting physiotherapy clearance|Full blood count|Ready for discharge planning
+270|155|08/27/2025 11:30 PM|Repeat ECG|Analgesia as required|Clinically improving|N/A|Stable
+271|155|08/30/2025 02:06 AM|Wound review|Regular inhalers|Clinically improving|Liver function|Ready for discharge planning
+272|155|08/26/2025 03:51 PM|Repeat bloods in 48 h|Low molecular weight heparin|Awaiting physiotherapy clearance|Liver function|Progressing as expected
+273|156|08/23/2024 01:56 PM|Wound review|Regular inhalers|Awaiting physiotherapy clearance|N/A|Stable
+274|156|08/26/2024 01:43 PM|Repeat bloods in 48 h|Regular inhalers|Mobilizing independently|Renal function|Slower than expected
+275|157|12/28/2024 05:38 AM|Physiotherapy assessment|Oral iron supplements|Mobilizing independently||Ready for discharge planning
+276|157|12/28/2024 04:25 PM|Wound review|Low molecular weight heparin|Mild pain, controlled|Full blood count|Stable
+277|158|05/20/2025 03:42 PM|Repeat ECG|Regular inhalers|Clinically improving|Liver function|Ready for discharge planning
+278|158|05/22/2025 10:32 AM|Physiotherapy assessment|Oral antibiotics|Eating and drinking well||Progressing as expected
+279|158|05/25/2025 04:09 PM|Physiotherapy assessment|Oral iron supplements|Mild pain, controlled|N/A|Stable
+280|159|10/17/2025 04:49 PM|Repeat ECG|Low molecular weight heparin|Mild pain, controlled|Liver function|Ready for discharge planning
+281|160|06/20/2024 05:24 AM|Repeat bloods in 48 h|Low molecular weight heparin|Mild pain, controlled|Renal function|Stable
+282|160|06/24/2024 07:34 AM|Repeat ECG|Analgesia as required|Mobilizing independently|Full blood count|Ready for discharge planning
+283|160|06/20/2024 09:35 PM|Physiotherapy assessment|Oral iron supplements|Mild pain, controlled|Liver function|Stable
+284|161|10/03/2024 08:45 PM|Wound review|Oral iron supplements|Mild pain, controlled|Liver function|Stable
+285|161|10/07/2024 12:33 PM|Repeat bloods in 48 h|Regular inhalers|Mild pain, controlled|N/A|Stable
+286|162|10/27/2024 04:07 PM|Repeat ECG|Analgesia as required|Eating and drinking well|Liver function|Slower than expected
+287|162|10/25/2024 12:47 PM|Repeat ECG|Oral iron supplements|Awaiting physiotherapy clearance||Progressing as expected
+288|163|03/19/2025 06:53 AM|Wound review|Regular inhalers|Clinically improving|Full blood count|Ready for discharge planning
+289|163|03/16/2025 10:20 AM|Physiotherapy assessment|Analgesia as required|Mobilizing independently||Progressing as expected
+290|163|03/23/2025 04:56 AM|Repeat ECG|Oral iron supplements|Awaiting physiotherapy clearance|N/A|Slower than expected
+291|164|03/13/2024 02:27 PM|Physiotherapy assessment|Oral iron supplements|Awaiting physiotherapy clearance|N/A|Progressing as expected
+292|165|09/01/2024 09:51 PM|Wound review|Oral antibiotics|Clinically improving|Full blood count|Slower than expected
+293|165|08/30/2024 02:04 AM|Repeat ECG|Low molecular weight heparin|Awaiting physiotherapy clearance|N/A|Stable
+294|165|08/28/2024 02:00 PM|Repeat ECG|Analgesia as required|Clinically improving|N/A|Slower than expected
+295|166|03/19/2024 10:32 AM|Wound review|Oral iron supplements|Awaiting physiotherapy clearance|Full blood count|Ready for discharge planning
+296|166|03/19/2024 08:37 AM|Repeat ECG|Oral iron supplements|Mobilizing independently|N/A|Slower than expected
+297|167|04/10/2024 12:31 AM|Repeat bloods in 48 h|Oral iron supplements|Awaiting physiotherapy clearance|Liver function|Slower than expected
+298|167|04/08/2024 12:49 PM|Repeat ECG|Regular inhalers|Eating and drinking well|Liver function|Ready for discharge planning
+299|167|04/08/2024 11:35 PM|Repeat ECG|Analgesia as required|Eating and drinking well|N/A|Slower than expected
+300|168|08/07/2024 06:42 AM|Repeat ECG|Low molecular weight heparin|Mobilizing independently|N/A|Stable
+301|168|08/09/2024 04:04 AM|Physiotherapy assessment|Oral antibiotics|Clinically improving|N/A|Ready for discharge planning
+302|168|08/08/2024 09:49 AM|Wound review|Low molecular weight heparin|Mild pain, controlled|Liver function|Slower than expected
+303|169|09/30/2024 08:03 PM|Physiotherapy assessment|Regular inhalers|Mobilizing independently|Full blood count|Slower than expected
+304|169|10/04/2024 03:51 AM|Wound review|Low molecular weight heparin|Awaiting physiotherapy clearance|Full blood count|Stable
+305|169|10/03/2024 05:16 PM|Wound review|Regular inhalers|Clinically improving|Renal function|Ready for discharge planning
+306|170|09/28/2024 05:43 PM|Physiotherapy assessment|Oral antibiotics|Awaiting physiotherapy clearance|Liver function|Ready for discharge planning
+307|171|08/08/2025 01:28 PM|Wound review|Oral iron supplements|Mild pain, controlled|N/A|Slower than expected
+308|172|12/24/2025 03:10 AM|Physiotherapy assessment|Low molecular weight heparin|Clinically improving|Liver function|Progressing as expected
+309|172|12/23/2025 12:26 PM|Repeat ECG|Oral antibiotics|Mobilizing independently|Liver function|Slower than expected
+310|172|12/25/2025 01:45 AM|Repeat ECG|Oral antibiotics|Awaiting physiotherapy clearance|Renal function|Slower than expected
+311|173|05/09/2025 11:22 PM|Wound review|Oral antibiotics|Mild pain, controlled|Full blood count|Ready for discharge planning
+312|173|05/11/2025 10:39 PM|Repeat ECG|Low molecular weight heparin|Awaiting physiotherapy clearance|N/A|Ready for discharge planning
+313|173|05/11/2025 08:31 AM|Repeat bloods in 48 h|Analgesia as required|Clinically improving|Renal function|Ready for discharge planning
+314|174|07/13/2025 01:18 PM|Repeat ECG|Low molecular weight heparin|Mobilizing independently|Liver function|Slower than expected
+315|174|07/09/2025 06:08 PM|Physiotherapy assessment|Low molecular weight heparin|Mobilizing independently|Full blood count|Slower than expected
+316|174|07/11/2025 03:01 PM|Repeat ECG|Low molecular weight heparin|Clinically improving|Liver function|Stable
+317|175|02/15/2025 08:25 AM|Wound review|Oral iron supplements|Mobilizing independently||Ready for discharge planning
+318|177|02/29/2024 05:05 PM|Repeat bloods in 48 h|Low molecular weight heparin|Eating and drinking well|N/A|Ready for discharge planning
+319|178|07/04/2024 07:13 PM|Wound review|Oral iron supplements|Awaiting physiotherapy clearance|N/A|Stable
+320|178|07/06/2024 02:47 AM|Wound review|Low molecular weight heparin|Clinically improving|Renal function|Ready for discharge planning
+321|179|04/30/2024 05:30 AM|Wound review|Analgesia as required|Awaiting physiotherapy clearance|Liver function|Stable
+322|180|05/12/2024 01:08 PM|Repeat bloods in 48 h|Oral iron supplements|Mild pain, controlled||Progressing as expected
+323|180|05/13/2024 05:20 PM|Wound review|Oral iron supplements|Mobilizing independently|Full blood count|Ready for discharge planning
+324|181|04/17/2025 12:37 AM|Wound review|Oral antibiotics|Mild pain, controlled|N/A|Progressing as expected
+325|181|04/14/2025 04:40 AM|Repeat ECG|Low molecular weight heparin|Awaiting physiotherapy clearance|Liver function|Stable
+326|182|07/23/2025 08:01 AM|Repeat ECG|Low molecular weight heparin|Awaiting physiotherapy clearance|N/A|Stable
+327|182|07/26/2025 01:52 AM|Repeat bloods in 48 h|Analgesia as required|Awaiting physiotherapy clearance|N/A|Progressing as expected
+328|182|07/25/2025 11:03 PM|Repeat bloods in 48 h|Analgesia as required|Clinically improving|N/A|Progressing as expected
+329|183|11/07/2025 09:19 AM|Repeat ECG|Regular inhalers|Clinically improving|Renal function|Ready for discharge planning
+330|183|11/05/2025 10:38 AM|Physiotherapy assessment|Oral iron supplements|Awaiting physiotherapy clearance|N/A|Slower than expected
+331|184|04/01/2026 11:21 PM|Repeat bloods in 48 h|Analgesia as required|Awaiting physiotherapy clearance|Liver function|Slower than expected
+332|184|04/02/2026 07:46 PM|Physiotherapy assessment|Analgesia as required|Mobilizing independently|Full blood count|Slower than expected
+333|185|08/03/2024 09:42 AM|Repeat bloods in 48 h|Low molecular weight heparin|Mobilizing independently|Liver function|Stable
+334|185|08/05/2024 08:43 PM|Repeat bloods in 48 h|Low molecular weight heparin|Mild pain, controlled|N/A|Stable
+335|186|12/17/2024 02:09 AM|Physiotherapy assessment|Low molecular weight heparin|Mobilizing independently||Slower than expected
+336|186|12/16/2024 09:20 PM|Repeat bloods in 48 h|Regular inhalers|Eating and drinking well||Progressing as expected
+337|187|03/06/2024 04:05 AM|Wound review|Oral antibiotics|Clinically improving||Slower than expected
+338|187|03/04/2024 05:54 PM|Repeat bloods in 48 h|Regular inhalers|Mobilizing independently|N/A|Stable
+339|188|08/01/2024 04:03 PM|Wound review|Oral iron supplements|Awaiting physiotherapy clearance|Liver function|Slower than expected
+340|188|08/02/2024 10:08 AM|Physiotherapy assessment|Low molecular weight heparin|Awaiting physiotherapy clearance||Slower than expected
+341|188|08/04/2024 06:11 PM|Physiotherapy assessment|Low molecular weight heparin|Awaiting physiotherapy clearance|Renal function|Stable
+342|189|03/16/2025 10:42 AM|Repeat ECG|Regular inhalers|Awaiting physiotherapy clearance|Full blood count|Stable
+343|190|05/09/2025 07:36 PM|Repeat ECG|Analgesia as required|Eating and drinking well|Liver function|Ready for discharge planning
+344|190|05/11/2025 03:47 AM|Wound review|Oral antibiotics|Awaiting physiotherapy clearance|N/A|Ready for discharge planning
+345|191|08/21/2025 02:27 PM|Wound review|Oral antibiotics|Clinically improving|Full blood count|Ready for discharge planning
+346|191|08/17/2025 08:22 PM|Repeat ECG|Low molecular weight heparin|Clinically improving|Full blood count|Slower than expected
+347|191|08/25/2025 07:26 AM|Physiotherapy assessment|Low molecular weight heparin|Eating and drinking well||Slower than expected
+348|192|11/06/2025 11:55 PM|Repeat ECG|Analgesia as required|Clinically improving|N/A|Progressing as expected
+349|192|11/28/2025 05:31 AM|Repeat bloods in 48 h|Low molecular weight heparin|Mobilizing independently||Slower than expected
+350|192|11/24/2025 05:53 AM|Wound review|Low molecular weight heparin|Awaiting physiotherapy clearance|Liver function|Stable
+351|192|11/25/2025 09:05 PM|Physiotherapy assessment|Oral antibiotics|Mild pain, controlled||Progressing as expected
+352|193|06/13/2025 03:52 PM|Wound review|Regular inhalers|Eating and drinking well|N/A|Ready for discharge planning
+353|193|06/09/2025 02:38 PM|Physiotherapy assessment|Analgesia as required|Mild pain, controlled|Liver function|Ready for discharge planning
+354|193|06/09/2025 10:57 PM|Wound review|Oral antibiotics|Eating and drinking well|Full blood count|Progressing as expected
+355|194|05/22/2025 06:31 AM|Physiotherapy assessment|Analgesia as required|Mobilizing independently|Liver function|Slower than expected
+356|194|05/20/2025 05:50 PM|Repeat ECG|Analgesia as required|Awaiting physiotherapy clearance|N/A|Stable
+357|195|08/25/2025 04:26 PM|Physiotherapy assessment|Oral antibiotics|Eating and drinking well|N/A|Progressing as expected
+358|196|12/02/2024 05:54 PM|Wound review|Analgesia as required|Mobilizing independently|N/A|Ready for discharge planning
+359|196|12/02/2024 04:07 AM|Wound review|Analgesia as required|Awaiting physiotherapy clearance|Full blood count|Progressing as expected
+360|197|09/12/2024 08:18 PM|Physiotherapy assessment|Oral iron supplements|Eating and drinking well|Full blood count|Progressing as expected
+361|198|02/17/2026 04:48 PM|Repeat bloods in 48 h|Oral antibiotics|Mild pain, controlled|Liver function|Stable
+362|198|02/18/2026 04:32 AM|Wound review|Oral antibiotics|Mild pain, controlled|Full blood count|Ready for discharge planning
+363|199|06/15/2025 02:32 AM|Wound review|Oral iron supplements|Eating and drinking well|Renal function|Slower than expected
+364|200|09/30/2024 10:53 AM|Physiotherapy assessment|Low molecular weight heparin|Mild pain, controlled|Full blood count|Ready for discharge planning
+365|200|09/28/2024 07:41 AM|Repeat bloods in 48 h|Oral antibiotics|Mild pain, controlled|N/A|Ready for discharge planning
+366|200|10/01/2024 01:24 PM|Wound review|Low molecular weight heparin|Awaiting physiotherapy clearance||Slower than expected
+367|201|07/08/2024 08:44 PM|Physiotherapy assessment|Low molecular weight heparin|Awaiting physiotherapy clearance|N/A|Stable
+368|201|07/08/2024 02:25 AM|Repeat bloods in 48 h|Oral antibiotics|Eating and drinking well|Renal function|Stable
+369|201|07/07/2024 03:20 PM|Wound review|Oral iron supplements|Eating and drinking well|Renal function|Slower than expected
+370|203|08/05/2025 01:04 PM|Repeat bloods in 48 h|Analgesia as required|Eating and drinking well||Slower than expected
+371|203|08/05/2025 08:19 AM|Wound review|Oral iron supplements|Eating and drinking well|Renal function|Stable
+372|203|08/05/2025 04:17 PM|Repeat bloods in 48 h|Low molecular weight heparin|Mild pain, controlled|Liver function|Stable
+373|204|09/22/2025 05:56 AM|Wound review|Oral antibiotics|Awaiting physiotherapy clearance|Liver function|Slower than expected
+374|204|09/22/2025 03:16 PM|Repeat bloods in 48 h|Oral iron supplements|Mild pain, controlled|Liver function|Progressing as expected
+375|206|08/09/2024 09:58 PM|Wound review|Regular inhalers|Clinically improving|Renal function|Slower than expected
+376|206|08/08/2024 10:04 PM|Physiotherapy assessment|Oral antibiotics|Mild pain, controlled|Full blood count|Stable
+377|207|03/08/2026 03:57 AM|Repeat bloods in 48 h|Low molecular weight heparin|Clinically improving|N/A|Stable
+378|207|03/09/2026 01:29 AM|Physiotherapy assessment|Oral antibiotics|Mobilizing independently|Renal function|Stable
+379|208|03/02/2024 02:35 PM|Physiotherapy assessment|Oral iron supplements|Clinically improving|Renal function|Ready for discharge planning
+380|208|03/02/2024 10:51 AM|Repeat bloods in 48 h|Regular inhalers|Mild pain, controlled|Renal function|Slower than expected
+381|208|03/01/2024 07:13 PM|Repeat bloods in 48 h|Oral antibiotics|Awaiting physiotherapy clearance|N/A|Progressing as expected
+382|209|04/27/2024 10:20 AM|Wound review|Low molecular weight heparin|Awaiting physiotherapy clearance|N/A|Stable
+383|209|05/05/2024 03:00 AM|Physiotherapy assessment|Oral antibiotics|Eating and drinking well|Renal function|Stable
+384|209|05/01/2024 06:24 AM|Repeat ECG|Regular inhalers|Clinically improving|N/A|Ready for discharge planning
+385|210|08/14/2024 06:16 PM|Wound review|Regular inhalers|Clinically improving|N/A|Progressing as expected
+386|210|08/13/2024 07:01 PM|Physiotherapy assessment|Regular inhalers|Awaiting physiotherapy clearance|Renal function|Ready for discharge planning
+387|211|09/22/2024 07:17 AM|Wound review|Analgesia as required|Awaiting physiotherapy clearance|Full blood count|Slower than expected
+388|211|09/18/2024 08:55 PM|Repeat bloods in 48 h|Analgesia as required|Eating and drinking well|Liver function|Progressing as expected
+389|212|12/20/2024 02:21 AM|Physiotherapy assessment|Analgesia as required|Awaiting physiotherapy clearance|N/A|Ready for discharge planning
+390|212|12/18/2024 11:27 PM|Repeat ECG|Low molecular weight heparin|Mobilizing independently|Renal function|Ready for discharge planning
+391|212|12/17/2024 08:53 PM|Physiotherapy assessment|Oral antibiotics|Mild pain, controlled|Full blood count|Stable
+392|213|02/28/2025 08:10 PM|Repeat bloods in 48 h|Low molecular weight heparin|Eating and drinking well|Full blood count|Slower than expected
+393|213|03/02/2025 03:30 AM|Physiotherapy assessment|Analgesia as required|Mobilizing independently|Full blood count|Stable
+394|214|06/02/2025 03:55 PM|Physiotherapy assessment|Analgesia as required|Mild pain, controlled||Slower than expected
+395|215|10/27/2025 03:24 AM|Repeat ECG|Low molecular weight heparin|Eating and drinking well|Liver function|Ready for discharge planning
+396|215|10/27/2025 01:15 AM|Physiotherapy assessment|Regular inhalers|Eating and drinking well|N/A|Ready for discharge planning
+397|216|01/11/2025 09:48 AM|Repeat bloods in 48 h|Oral iron supplements|Eating and drinking well|Liver function|Ready for discharge planning
+398|216|01/08/2025 08:28 AM|Repeat bloods in 48 h|Oral antibiotics|Clinically improving|N/A|Slower than expected
+399|217|06/14/2024 06:22 AM|Wound review|Low molecular weight heparin|Mild pain, controlled|Renal function|Ready for discharge planning
+400|217|06/10/2024 12:26 PM|Repeat ECG|Oral antibiotics|Mild pain, controlled|N/A|Stable
+401|217|06/09/2024 11:55 PM|Physiotherapy assessment|Oral iron supplements|Mild pain, controlled|N/A|Slower than expected
+402|218|11/13/2024 01:21 PM|Repeat ECG|Low molecular weight heparin|Clinically improving|Full blood count|Progressing as expected
+403|218|11/15/2024 03:42 AM|Repeat bloods in 48 h|Oral iron supplements|Eating and drinking well|N/A|Ready for discharge planning
+404|219|06/01/2025 12:52 AM|Wound review|Regular inhalers|Mobilizing independently|N/A|Progressing as expected
+405|219|05/31/2025 11:11 AM|Repeat bloods in 48 h|Regular inhalers|Clinically improving|Full blood count|Progressing as expected
+406|220|10/02/2024 03:34 PM|Wound review|Regular inhalers|Mobilizing independently|Renal function|Ready for discharge planning
+407|221|07/12/2024 02:05 PM|Wound review|Analgesia as required|Mobilizing independently|Full blood count|Slower than expected
+408|221|07/17/2024 10:51 AM|Repeat bloods in 48 h|Low molecular weight heparin|Awaiting physiotherapy clearance||Ready for discharge planning
+409|221|07/13/2024 06:38 PM|Wound review|Oral antibiotics|Mobilizing independently|Renal function|Ready for discharge planning
+410|222|11/27/2024 07:53 AM|Repeat bloods in 48 h|Oral iron supplements|Mild pain, controlled|N/A|Ready for discharge planning
+411|222|11/25/2024 10:16 PM|Repeat ECG|Oral iron supplements|Mild pain, controlled|Full blood count|Slower than expected
+412|223|05/09/2025 04:00 PM|Physiotherapy assessment|Analgesia as required|Mild pain, controlled|Renal function|Slower than expected
+413|223|05/08/2025 08:52 AM|Repeat ECG|Oral iron supplements|Awaiting physiotherapy clearance|N/A|Stable
+414|224|09/20/2024 04:27 PM|Physiotherapy assessment|Oral antibiotics|Clinically improving|N/A|Stable
+415|224|09/23/2024 08:16 AM|Repeat bloods in 48 h|Oral iron supplements|Mobilizing independently|Renal function|Stable
+416|225|04/10/2025 04:37 PM|Wound review|Oral antibiotics|Mild pain, controlled|Renal function|Slower than expected
+417|226|05/02/2024 06:49 PM|Repeat bloods in 48 h|Regular inhalers|Awaiting physiotherapy clearance|Liver function|Slower than expected
+418|227|02/30/2024 10:15 AM|Wound review|Oral iron supplements|Eating and drinking well|N/A|Stable
+419|227|09/26/2024 03:39 AM|Repeat ECG|Regular inhalers|Eating and drinking well|Liver function|Ready for discharge planning
+420|228|12/21/2024 07:29 AM|Physiotherapy assessment|Oral antibiotics|Mobilizing independently|Full blood count|Progressing as expected
+421|228|12/17/2024 11:52 AM|Wound review|Oral iron supplements|Clinically improving|Liver function|Ready for discharge planning
+422|228|12/22/2024 12:46 PM|Wound review|Oral antibiotics|Eating and drinking well|Full blood count|Ready for discharge planning
+423|229|02/21/2026 08:01 AM|Repeat bloods in 48 h|Regular inhalers|Mild pain, controlled|Liver function|Stable
+424|230|02/03/2026 04:03 AM|Physiotherapy assessment|Regular inhalers|Clinically improving|Full blood count|Progressing as expected
+425|230|02/01/2026 02:17 PM|Wound review|Oral antibiotics|Mild pain, controlled|Liver function|Stable
+426|230|01/30/2026 05:23 PM|Physiotherapy assessment|Analgesia as required|Awaiting physiotherapy clearance|N/A|Stable
+427|231|12/08/2024 06:36 AM|Repeat ECG|Low molecular weight heparin|Eating and drinking well|N/A|Stable
+428|231|12/07/2024 04:41 PM|Physiotherapy assessment|Oral iron supplements|Mobilizing independently|Liver function|Progressing as expected
+429|231|12/06/2024 06:04 PM|Repeat bloods in 48 h|Analgesia as required|Mobilizing independently|N/A|Ready for discharge planning
+430|232|04/27/2025 10:51 AM|Wound review|Regular inhalers|Awaiting physiotherapy clearance|Full blood count|Stable
+431|232|04/28/2025 02:32 AM|Wound review|Regular inhalers|Clinically improving|Full blood count|Ready for discharge planning
+432|233|06/14/2025 02:59 AM|Repeat ECG|Analgesia as required|Clinically improving||Slower than expected
+433|234|01/01/2026 05:25 AM|Repeat ECG|Regular inhalers|Mobilizing independently||Ready for discharge planning
+434|235|04/20/2025 12:43 PM|Wound review|Oral iron supplements|Awaiting physiotherapy clearance|Renal function|Ready for discharge planning
+435|235|04/19/2025 07:33 PM|Wound review|Regular inhalers|Mobilizing independently||Slower than expected
+436|235|04/20/2025 12:13 PM|Physiotherapy assessment|Oral antibiotics|Mobilizing independently|N/A|Ready for discharge planning
+437|236|07/25/2025 04:47 PM|Repeat bloods in 48 h|Oral antibiotics|Awaiting physiotherapy clearance|N/A|Progressing as expected
+438|236|07/26/2025 10:11 PM|Wound review|Oral iron supplements|Mobilizing independently|Full blood count|Stable
+439|236|07/30/2025 12:06 AM|Physiotherapy assessment|Analgesia as required|Mobilizing independently|N/A|Stable
+440|237|08/06/2024 12:08 PM|Repeat bloods in 48 h|Analgesia as required|Clinically improving||Slower than expected
+441|237|08/09/2024 05:14 PM|Repeat ECG|Oral antibiotics|Clinically improving|Liver function|Slower than expected
+442|238|11/14/2024 01:39 AM|Repeat bloods in 48 h|Oral iron supplements|Mobilizing independently|Renal function|Slower than expected
+443|239|04/13/2025 02:55 AM|Repeat ECG|Oral antibiotics|Mild pain, controlled|N/A|Progressing as expected
+444|239|04/15/2025 09:39 PM|Repeat ECG|Low molecular weight heparin|Eating and drinking well|Renal function|Ready for discharge planning
+445|239|04/15/2025 06:07 PM|Wound review|Low molecular weight heparin|Clinically improving|Renal function|Ready for discharge planning
+446|240|10/21/2026 02:43 PM|Wound review|Regular inhalers|Eating and drinking well|N/A|Slower than expected
+447|240|10/24/2026 10:27 AM|Wound review|Low molecular weight heparin|Mild pain, controlled|N/A|Stable
+448|240|10/23/2026 05:25 AM|Repeat bloods in 48 h|Analgesia as required|Mild pain, controlled|N/A|Stable
+449|241|09/01/2024 01:28 AM|Physiotherapy assessment|Low molecular weight heparin|Eating and drinking well|Full blood count|Slower than expected
+450|241|08/27/2024 11:27 AM|Repeat ECG|Regular inhalers|Eating and drinking well||Ready for discharge planning
+451|241|08/27/2024 08:53 AM|Repeat bloods in 48 h|Oral iron supplements|Awaiting physiotherapy clearance|Renal function|Progressing as expected
+452|242|03/01/2024 03:01 PM|Repeat ECG|Oral antibiotics|Clinically improving|Full blood count|Stable
+453|242|03/05/2024 02:57 AM|Wound review|Analgesia as required|Mild pain, controlled|Full blood count|Ready for discharge planning
+454|243|03/09/2024 08:25 PM|Wound review|Oral antibiotics|Mobilizing independently||Slower than expected
+455|243|03/13/2024 04:22 AM|Repeat ECG|Oral antibiotics|Eating and drinking well||Ready for discharge planning
+456|243|03/09/2024 10:46 PM|Repeat bloods in 48 h|Oral antibiotics|Clinically improving||Ready for discharge planning
+457|244|04/09/2024 10:46 AM|Repeat ECG|Oral iron supplements|Mild pain, controlled|Liver function|Stable
+458|244|04/11/2024 09:59 AM|Physiotherapy assessment|Analgesia as required|Mild pain, controlled|N/A|Progressing as expected
+459|244|04/09/2024 07:47 PM|Repeat bloods in 48 h|Low molecular weight heparin|Mild pain, controlled|Full blood count|Slower than expected
+460|245|11/08/2024 08:44 PM|Repeat bloods in 48 h|Oral iron supplements|Mild pain, controlled|N/A|Slower than expected
+461|245|11/07/2024 09:48 AM|Wound review|Oral iron supplements|Eating and drinking well|Renal function|Slower than expected
+462|246|06/28/2024 10:58 AM|Physiotherapy assessment|Regular inhalers|Awaiting physiotherapy clearance|Full blood count|Stable
+463|247|11/20/2024 08:48 PM|Wound review|Oral antibiotics|Mobilizing independently|Full blood count|Ready for discharge planning
+464|247|11/19/2024 09:13 PM|Wound review|Oral iron supplements|Mild pain, controlled|N/A|Ready for discharge planning
+465|248|01/02/2025 06:08 AM|Wound review|Regular inhalers|Clinically improving|N/A|Stable
+466|249|04/26/2025 08:58 AM|Repeat bloods in 48 h|Oral iron supplements|Awaiting physiotherapy clearance|Full blood count|Stable
+467|249|04/24/2025 12:27 AM|Physiotherapy assessment|Oral antibiotics|Eating and drinking well|N/A|Progressing as expected
+468|250|09/05/2025 11:34 AM|Physiotherapy assessment|Low molecular weight heparin|Mild pain, controlled|Liver function|Stable
+469|250|09/09/2025 04:01 AM|Wound review|Oral iron supplements|Mild pain, controlled|Full blood count|Progressing as expected
+470|250|09/04/2025 08:16 PM|Repeat bloods in 48 h|Regular inhalers|Eating and drinking well|Liver function|Progressing as expected
+471|251|10/17/2025 10:09 PM|Repeat ECG|Analgesia as required|Mobilizing independently|Full blood count|Slower than expected
+472|251|10/17/2025 03:55 PM|Repeat bloods in 48 h|Analgesia as required|Eating and drinking well|Liver function|Stable
+473|252|01/23/2024 11:09 AM|Physiotherapy assessment|Oral iron supplements|Eating and drinking well|Full blood count|Progressing as expected
+474|252|01/28/2024 05:52 AM|Physiotherapy assessment|Oral antibiotics|Mobilizing independently|Full blood count|Stable
+475|252|01/28/2024 01:14 AM|Wound review|Oral antibiotics|Clinically improving|Full blood count|Stable
+476|253|09/13/2025 04:57 AM|Repeat bloods in 48 h|Low molecular weight heparin|Awaiting physiotherapy clearance|Renal function|Slower than expected
+477|253|09/12/2025 07:36 AM|Repeat bloods in 48 h|Regular inhalers|Clinically improving|N/A|Slower than expected
+478|254|03/24/2026 12:23 AM|Physiotherapy assessment|Analgesia as required|Clinically improving|Renal function|Progressing as expected
+479|254|03/24/2026 05:39 PM|Repeat bloods in 48 h|Regular inhalers|Clinically improving|Liver function|Progressing as expected
+480|255|08/02/2025 01:29 AM|Repeat ECG|Analgesia as required|Mobilizing independently|Renal function|Ready for discharge planning
+481|256|09/14/2025 08:07 PM|Physiotherapy assessment|Analgesia as required|Eating and drinking well|Full blood count|Slower than expected
+482|256|09/11/2025 08:48 AM|Repeat ECG|Analgesia as required|Eating and drinking well|Renal function|Progressing as expected
+483|257|12/23/2025 04:28 PM|Repeat ECG|Low molecular weight heparin|Eating and drinking well|N/A|Ready for discharge planning
+484|258|03/20/2025 09:53 AM|Physiotherapy assessment|Oral iron supplements|Mobilizing independently|Full blood count|Slower than expected
+485|258|03/19/2025 06:28 PM|Wound review|Analgesia as required|Mild pain, controlled||Stable
+486|259|08/28/2025 03:42 PM|Repeat bloods in 48 h|Analgesia as required|Clinically improving|Full blood count|Ready for discharge planning
+487|259|08/30/2025 05:44 AM|Repeat bloods in 48 h|Analgesia as required|Eating and drinking well|Liver function|Slower than expected
+488|260|12/03/2024 12:07 AM|Physiotherapy assessment|Regular inhalers|Mobilizing independently|Liver function|Ready for discharge planning
+489|260|12/05/2024 01:24 PM|Repeat bloods in 48 h|Oral iron supplements|Mild pain, controlled||Slower than expected
+490|260|12/08/2024 10:10 AM|Wound review|Low molecular weight heparin|Mild pain, controlled|Liver function|Slower than expected
+491|261|04/15/2025 11:01 PM|Repeat ECG|Regular inhalers|Eating and drinking well|Liver function|Progressing as expected
+492|262|06/22/2025 01:47 AM|Repeat bloods in 48 h|Analgesia as required|Eating and drinking well|N/A|Ready for discharge planning
+493|263|10/28/2025 12:35 PM|Physiotherapy assessment|Oral iron supplements|Mild pain, controlled|Liver function|Ready for discharge planning
+494|263|10/26/2025 11:03 PM|Wound review|Oral iron supplements|Mild pain, controlled|Full blood count|Slower than expected
+495|263|10/29/2025 12:32 AM|Repeat ECG|Oral antibiotics|Awaiting physiotherapy clearance|Renal function|Progressing as expected
+496|264|01/09/2026 09:05 AM|Physiotherapy assessment|Oral iron supplements|Mild pain, controlled|Renal function|Progressing as expected
+497|264|01/04/2026 11:13 AM|Repeat bloods in 48 h|Oral iron supplements|Clinically improving|N/A|Slower than expected
+498|265|07/30/2024 12:16 PM|Repeat bloods in 48 h|Regular inhalers|Eating and drinking well|Full blood count|Slower than expected
+499|265|07/27/2024 12:36 PM|Repeat bloods in 48 h|Oral antibiotics|Eating and drinking well|N/A|Progressing as expected
+500|265|07/26/2024 10:21 AM|Physiotherapy assessment|Oral antibiotics|Mobilizing independently|Renal function|Slower than expected
+501|266|11/06/2024 01:59 PM|Physiotherapy assessment|Regular inhalers|Eating and drinking well|Liver function|Ready for discharge planning
+502|266|11/02/2024 06:59 PM|Wound review|Regular inhalers|Mild pain, controlled|Full blood count|Progressing as expected
+503|266|11/03/2024 01:48 AM|Repeat ECG|Oral iron supplements|Clinically improving|N/A|Ready for discharge planning
+504|267|12/14/2024 10:06 PM|Physiotherapy assessment|Analgesia as required|Mobilizing independently|Liver function|Slower than expected
+505|267|12/17/2024 01:32 AM|Physiotherapy assessment|Analgesia as required|Eating and drinking well|Full blood count|Stable
+506|267|12/20/2024 10:47 PM|Wound review|Oral antibiotics|Mobilizing independently|Liver function|Stable
+507|269|03/30/2025 06:18 AM|Repeat ECG|Regular inhalers|Clinically improving|Renal function|Ready for discharge planning
+508|269|03/30/2025 02:18 PM|Wound review|Oral iron supplements|Mobilizing independently|Renal function|Slower than expected
+509|269|03/30/2025 08:00 PM|Physiotherapy assessment|Oral antibiotics|Eating and drinking well|Liver function|Slower than expected
+510|270|09/23/2024 05:29 AM|Physiotherapy assessment|Oral iron supplements|Clinically improving|Full blood count|Slower than expected
+511|270|10/01/2024 09:00 PM|Repeat ECG|Oral iron supplements|Clinically improving|Renal function|Stable
+512|271|07/19/2024 03:56 PM|Repeat bloods in 48 h|Oral iron supplements|Awaiting physiotherapy clearance|Liver function|Stable
+513|272|2024-11-24 04:28|Wound review|Analgesia as required|Awaiting physiotherapy clearance|Renal function|Slower than expected
+514|272|11/23/2024 07:32 PM|Wound review|Oral antibiotics|Mild pain, controlled|N/A|Stable
+515|272|11/26/2024 04:50 AM|Repeat ECG|Oral antibiotics|Clinically improving|Liver function|Slower than expected
+516|273|01/16/2025 08:45 AM|Wound review|Analgesia as required|Clinically improving|Full blood count|Slower than expected
+517|273|01/22/2025 10:49 AM|Wound review|Analgesia as required|Mild pain, controlled|Renal function|Slower than expected
+518|273|01/21/2025 12:39 AM|Repeat ECG|Oral iron supplements|Mobilizing independently|Renal function|Ready for discharge planning
+519|274|06/20/2025 09:23 AM|Wound review|Low molecular weight heparin|Clinically improving|N/A|Ready for discharge planning
+520|274|06/20/2025 04:45 AM|Wound review|Oral antibiotics|Awaiting physiotherapy clearance||Progressing as expected
+521|275|07/09/2025 06:48 PM|Wound review|Analgesia as required|Awaiting physiotherapy clearance|N/A|Stable
+522|275|07/07/2025 06:47 AM|Physiotherapy assessment|Oral iron supplements|Mild pain, controlled|Liver function|Ready for discharge planning
+523|275|07/06/2025 12:41 PM|Physiotherapy assessment|Low molecular weight heparin|Clinically improving||Slower than expected
+524|276|04/08/2025 05:12 PM|Wound review|Oral iron supplements|Clinically improving|Liver function|Slower than expected
+525|276|04/09/2025 12:30 AM|Physiotherapy assessment|Low molecular weight heparin|Awaiting physiotherapy clearance|Liver function|Stable
+526|277|03/07/2025 04:38 PM|Repeat bloods in 48 h|Oral antibiotics|Clinically improving|N/A|Slower than expected
+527|277|03/09/2025 03:49 AM|Repeat ECG|Oral antibiotics|Mild pain, controlled|N/A|Stable
+528|278|01/27/2024 03:32 AM|Repeat bloods in 48 h|Regular inhalers|Mobilizing independently|N/A|Ready for discharge planning
+529|278|01/30/2024 07:36 PM|Repeat bloods in 48 h|Oral iron supplements|Mobilizing independently|Liver function|Ready for discharge planning
+530|278|01/28/2024 05:43 PM|Physiotherapy assessment|Analgesia as required|Mild pain, controlled|Full blood count|Progressing as expected
+531|279|07/17/2025 02:45 AM|Wound review|Oral iron supplements|Mobilizing independently|Full blood count|Stable
+532|281|11/20/2025 02:22 AM|Wound review|Analgesia as required|Clinically improving|Liver function|Ready for discharge planning
+533|281|11/21/2025 07:56 AM|Wound review|Oral iron supplements|Mild pain, controlled|Liver function|Progressing as expected
+534|282|03/18/2026 04:08 PM|Repeat ECG|Regular inhalers|Mobilizing independently|Full blood count|Progressing as expected
+535|8298|06/07/2025 03:32 PM|Repeat ECG|Analgesia as required|Mobilizing independently|N/A|Ready for discharge planning
+536|283|06/07/2025 04:24 PM|Physiotherapy assessment|Oral antibiotics|Awaiting physiotherapy clearance|N/A|Slower than expected
+537|284|08/19/2025 01:43 AM|Repeat bloods in 48 h|Regular inhalers|Mobilizing independently|Liver function|Ready for discharge planning
+538|284|08/19/2025 04:40 PM|Repeat ECG|Oral iron supplements|Mild pain, controlled|N/A|Stable
+539|284|08/16/2025 03:08 AM|Repeat bloods in 48 h|Oral iron supplements|Eating and drinking well||Slower than expected
+540|285|01/02/2026 02:54 PM|Repeat ECG|Regular inhalers|Eating and drinking well|Renal function|Ready for discharge planning
+541|285|01/02/2026 04:41 PM|Repeat ECG|Oral iron supplements|Clinically improving|Renal function|Ready for discharge planning
+542|286|12/30/2025 01:50 PM|Physiotherapy assessment|Low molecular weight heparin|Mild pain, controlled|Full blood count|Slower than expected
+543|286|12/31/2025 07:39 PM|Wound review|Oral iron supplements|Clinically improving|N/A|Slower than expected
+544|286|01/04/2026 12:44 PM|Repeat ECG|Oral iron supplements|Mild pain, controlled|Liver function|Progressing as expected
+545|287|30/11/2024 12:44 AM|Physiotherapy assessment|Low molecular weight heparin|Mild pain, controlled|Liver function|Slower than expected
+546|287|11/29/2024 07:29 AM|Repeat ECG|Regular inhalers|Awaiting physiotherapy clearance|Liver function|Slower than expected
+547|288|06/16/2024 11:42 AM|Repeat ECG|Oral iron supplements|Awaiting physiotherapy clearance||Slower than expected
+548|289|11/09/2024 09:33 AM|Repeat bloods in 48 h|Low molecular weight heparin|Clinically improving|Full blood count|Progressing as expected
+549|290|03/28/2025 10:42 PM|Repeat bloods in 48 h|Oral iron supplements|Clinically improving|Renal function|Stable
+550|290|03/29/2025 01:35 AM|Repeat bloods in 48 h|Oral iron supplements|Awaiting physiotherapy clearance|Liver function|Progressing as expected
+551|291|06/21/2025 09:45 AM|Physiotherapy assessment|Low molecular weight heparin|Mobilizing independently|Renal function|Slower than expected
+552|291|06/25/2025 11:46 AM|Repeat bloods in 48 h|Regular inhalers|Eating and drinking well|Renal function|Ready for discharge planning
+553|291|06/28/2025 06:47 AM|Repeat bloods in 48 h|Low molecular weight heparin|Mobilizing independently||Ready for discharge planning
+554|292|10/09/2025 11:14 PM|Wound review|Analgesia as required|Awaiting physiotherapy clearance|Liver function|Slower than expected
+555|292|10/13/2025 01:23 AM|Wound review|Oral antibiotics|Mobilizing independently|N/A|Progressing as expected
+556|292|10/12/2025 02:06 PM|Wound review|Analgesia as required|Awaiting physiotherapy clearance|Renal function|Slower than expected
+557|293|03/03/2026 09:24 AM|Repeat bloods in 48 h|Oral antibiotics|Eating and drinking well||Slower than expected
+558|294|02/21/2026 08:26 AM|Wound review|Regular inhalers|Clinically improving|Liver function|Ready for discharge planning
+559|294|02/20/2026 10:21 PM|Repeat ECG|Oral iron supplements|Mild pain, controlled|N/A|Progressing as expected
+560|295|04/02/2025 06:27 AM|Repeat ECG|Analgesia as required|Awaiting physiotherapy clearance|N/A|Slower than expected
+561|295|04/02/2025 06:24 AM|Repeat ECG|Analgesia as required|Mobilizing independently|Liver function|Progressing as expected
+562|297|07/19/2025 05:42 AM|Physiotherapy assessment|Analgesia as required|Awaiting physiotherapy clearance|Full blood count|Progressing as expected
+563|297|07/20/2025 08:36 AM|Repeat bloods in 48 h|Analgesia as required|Eating and drinking well|Full blood count|Ready for discharge planning
+564|297|07/19/2025 05:50 AM|Repeat ECG|Regular inhalers|Mobilizing independently|Liver function|Slower than expected
+565|298|09/04/2025 12:36 AM|Repeat bloods in 48 h|Regular inhalers|Eating and drinking well||Stable
+566|298|09/02/2025 07:10 PM|Physiotherapy assessment|Analgesia as required|Awaiting physiotherapy clearance|Liver function|Stable
+567|300|05/28/2025 04:56 PM|Physiotherapy assessment|Regular inhalers|Eating and drinking well|N/A|Ready for discharge planning
+568|301|08/14/2025 12:46 PM|Physiotherapy assessment|Oral antibiotics|Mild pain, controlled|Renal function|Progressing as expected
+569|301|08/15/2025 02:50 PM|Wound review|Analgesia as required|Mobilizing independently|Full blood count|Slower than expected
+570|302|08/07/2024 08:43 PM|Physiotherapy assessment|Oral iron supplements|Mild pain, controlled|N/A|Progressing as expected
+571|302|08/04/2024 11:00 AM|Physiotherapy assessment|Low molecular weight heparin|Mild pain, controlled|Full blood count|Stable
+572|302|08/05/2024 10:42 PM|Physiotherapy assessment|Oral iron supplements|Mobilizing independently|Liver function|Progressing as expected
+573|303|10/09/2024 01:32 PM|Repeat bloods in 48 h|Regular inhalers|Mobilizing independently|N/A|Progressing as expected
+574|304|12/30/2024 10:23 AM|Repeat bloods in 48 h|Regular inhalers|Awaiting physiotherapy clearance||Slower than expected
+575|304|12/30/2024 10:36 AM|Repeat ECG|Oral antibiotics|Mild pain, controlled|Liver function|Slower than expected
+576|305|08/06/2025 06:38 PM|Repeat bloods in 48 h|Oral iron supplements|Awaiting physiotherapy clearance|N/A|Slower than expected
+577|305|08/05/2025 09:04 PM|Repeat ECG|Analgesia as required|Clinically improving|Liver function|Stable
+578|305|08/10/2025 03:14 PM|Wound review|Oral antibiotics|Mobilizing independently|Full blood count|Slower than expected
+579|306|10/30/2024 12:50 AM|Physiotherapy assessment|Analgesia as required|Mild pain, controlled|Full blood count|Progressing as expected
+580|306|10/26/2024 12:43 PM|Physiotherapy assessment|Analgesia as required|Awaiting physiotherapy clearance|N/A|Stable
+581|307|02/15/2024 11:39 AM|Wound review|Oral iron supplements|Mobilizing independently||Progressing as expected
+582|308|03/20/2024 04:11 PM|Repeat ECG|Oral iron supplements|Mild pain, controlled|Full blood count|Progressing as expected
+583|8256|03/20/2024 04:49 AM|Repeat ECG|Analgesia as required|Eating and drinking well|Liver function|Slower than expected
+584|309|05/30/2024 02:50 PM|Repeat bloods in 48 h|Oral antibiotics|Eating and drinking well|Liver function|Stable
+585|309|05/30/2024 05:10 AM|Wound review|Oral antibiotics|Awaiting physiotherapy clearance||Ready for discharge planning
+586|310|07/04/2024 10:26 AM|Repeat bloods in 48 h|Regular inhalers|Eating and drinking well|N/A|Stable
+587|310|06/29/2024 07:14 PM|Repeat ECG|Low molecular weight heparin|Mild pain, controlled|Full blood count|Stable
+588|310|07/04/2024 10:13 AM|Repeat bloods in 48 h|Analgesia as required|Clinically improving|N/A|Stable
+589|311|07/23/2024 05:04 AM|Physiotherapy assessment|Low molecular weight heparin|Mobilizing independently|Liver function|Slower than expected
+590|312|08/16/2024 01:27 AM|Repeat ECG|Low molecular weight heparin|Clinically improving||Slower than expected
+591|313|01/20/2025 07:52 PM|Repeat bloods in 48 h|Oral iron supplements|Eating and drinking well|Full blood count|Progressing as expected
+592|313|01/18/2025 12:44 PM|Physiotherapy assessment|Low molecular weight heparin|Awaiting physiotherapy clearance|N/A|Ready for discharge planning
+593|313|01/13/2025 07:57 AM|Physiotherapy assessment|Oral antibiotics|Eating and drinking well|Liver function|Progressing as expected
+594|314|09/01/2024 09:02 PM|Physiotherapy assessment|Oral iron supplements|Clinically improving|Liver function|Slower than expected
+595|314|08/27/2024 03:13 PM|Repeat ECG|Oral iron supplements|Awaiting physiotherapy clearance|Full blood count|Stable
+596|314|08/27/2024 09:34 PM|Repeat bloods in 48 h|Low molecular weight heparin|Mobilizing independently|Full blood count|Ready for discharge planning
+597|315|04/23/2024 07:33 PM|Wound review|Oral iron supplements|Mild pain, controlled|N/A|Ready for discharge planning
+598|316|07/31/2024 10:35 PM|Repeat bloods in 48 h|Analgesia as required|Mobilizing independently|Full blood count|Stable
+599|316|08/03/2024 06:58 AM|Repeat ECG|Low molecular weight heparin|Clinically improving||Slower than expected
+600|316|08/02/2024 12:31 AM|Physiotherapy assessment|Oral iron supplements|Mild pain, controlled|Full blood count|Slower than expected
+601|317|11/09/2024 04:54 PM|Wound review|Oral iron supplements|Awaiting physiotherapy clearance|N/A|Progressing as expected
+602|317|11/11/2024 08:15 PM|Repeat bloods in 48 h|Low molecular weight heparin|Mild pain, controlled|N/A|Ready for discharge planning
+603|317|11/12/2024 09:15 AM|Repeat ECG|Low molecular weight heparin|Clinically improving||Progressing as expected
+604|318|03/24/2025 06:20 AM|Wound review|Low molecular weight heparin|Clinically improving|Full blood count|Slower than expected
+605|318|03/24/2025 10:21 PM|Repeat ECG|Regular inhalers|Awaiting physiotherapy clearance|Liver function|Stable
+606|319|06/06/2025 11:27 AM|Wound review|Analgesia as required|Mobilizing independently|Full blood count|Progressing as expected
+607|319|06/04/2025 06:45 PM|Physiotherapy assessment|Low molecular weight heparin|Mild pain, controlled|Renal function|Progressing as expected
+608|320|01/04/2026 06:36 AM|Repeat bloods in 48 h|Analgesia as required|Mobilizing independently|N/A|Ready for discharge planning
+609|320|01/05/2026 11:34 PM|Physiotherapy assessment|Oral antibiotics|Awaiting physiotherapy clearance|N/A|Progressing as expected
+610|320|01/04/2026 03:32 PM|Repeat bloods in 48 h|Oral iron supplements|Awaiting physiotherapy clearance|Renal function|Ready for discharge planning
+611|321|03/15/2024 12:29 AM|Physiotherapy assessment|Regular inhalers|Mild pain, controlled||Ready for discharge planning
+612|321|03/17/2024 12:22 AM|Repeat bloods in 48 h|Low molecular weight heparin|Awaiting physiotherapy clearance|Liver function|Progressing as expected
+613|322|05/18/2024 09:30 PM|Repeat bloods in 48 h|Analgesia as required|Mild pain, controlled|N/A|Slower than expected
+614|322|05/18/2024 04:36 PM|Wound review|Analgesia as required|Eating and drinking well|N/A|Progressing as expected
+615|323|06/20/2024 01:36 PM|Wound review|Oral antibiotics|Mobilizing independently|N/A|Stable
+616|324|10/31/2026 06:57 AM|Wound review|Regular inhalers|Awaiting physiotherapy clearance|Liver function|Stable
+617|326|02/17/2024 03:03 PM|Physiotherapy assessment|Regular inhalers|Eating and drinking well|Renal function|Progressing as expected
+618|326|02/13/2024 08:33 PM|Physiotherapy assessment|Oral antibiotics|Clinically improving||Ready for discharge planning
+619|326|02/14/2024 11:13 AM|Repeat bloods in 48 h|Analgesia as required|Mild pain, controlled|Renal function|Ready for discharge planning
+620|327|05/19/2024 10:08 PM|Repeat ECG|Oral iron supplements|Awaiting physiotherapy clearance|Renal function|Progressing as expected
+621|327|05/22/2024 12:10 PM|Repeat ECG|Oral iron supplements|Clinically improving|Full blood count|Stable
+622|327|05/18/2024 04:48 PM|Physiotherapy assessment|Oral iron supplements|Mobilizing independently|N/A|Ready for discharge planning
+623|328|08/03/2024 12:12 AM|Wound review|Oral iron supplements|Eating and drinking well|N/A|Slower than expected
+624|328|07/30/2024 05:51 PM|Physiotherapy assessment|Oral antibiotics|Mild pain, controlled|N/A|Progressing as expected
+625|328|07/30/2024 04:58 PM|Repeat ECG|Analgesia as required|Clinically improving|N/A|Ready for discharge planning
+626|329|10/19/2024 11:48 AM|Repeat bloods in 48 h|Oral iron supplements|Eating and drinking well|Liver function|Slower than expected
+627|329|10/20/2024 09:54 AM|Wound review|Oral antibiotics|Mild pain, controlled|Renal function|Progressing as expected
+628|329|10/17/2024 04:04 AM|Repeat bloods in 48 h|Low molecular weight heparin|Mobilizing independently|Renal function|Stable
+629|330|02/14/2025 11:50 PM|Repeat ECG|Low molecular weight heparin|Mobilizing independently|Renal function|Stable
+630|331|05/05/2025 02:23 AM|Physiotherapy assessment|Regular inhalers|Mild pain, controlled|Renal function|Stable
+631|331|05/05/2025 12:34 PM|Repeat ECG|Regular inhalers|Mild pain, controlled||Stable
+632|331|05/07/2025 03:08 AM|Physiotherapy assessment|Oral iron supplements|Clinically improving|Liver function|Slower than expected
+633|332|04/12/2025 02:54 AM|Wound review|Low molecular weight heparin|Eating and drinking well|Full blood count|Progressing as expected
+634|333|10/28/2024 05:15 AM|Repeat bloods in 48 h|Analgesia as required|Mild pain, controlled|Full blood count|Stable
+635|333|10/25/2024 07:26 PM|Repeat ECG|Analgesia as required|Awaiting physiotherapy clearance|Renal function|Stable
+636|333|10/24/2024 08:48 AM|Repeat ECG|Analgesia as required|Eating and drinking well|N/A|Stable
+637|334|05/09/2024 06:15 AM|Wound review|Oral iron supplements|Mild pain, controlled|Liver function|Ready for discharge planning
+638|335|07/11/2024 08:36 PM|Physiotherapy assessment|Low molecular weight heparin|Mild pain, controlled|Liver function|Stable
+639|336|10/07/2024 10:49 PM|Wound review|Analgesia as required|Awaiting physiotherapy clearance|Full blood count|Stable
+640|336|10/03/2024 10:16 PM|Repeat ECG|Low molecular weight heparin|Mobilizing independently|Liver function|Progressing as expected
+641|336|10/02/2024 11:27 AM|Repeat bloods in 48 h|Oral antibiotics|Clinically improving|Full blood count|Ready for discharge planning
+642|337|03/03/2025 02:07 AM|Repeat ECG|Low molecular weight heparin|Eating and drinking well|Renal function|Progressing as expected
+643|338|07/14/2025 09:13 AM|Wound review|Regular inhalers|Eating and drinking well|Renal function|Progressing as expected
+644|339|08/24/2025 10:40 AM|Repeat ECG|Analgesia as required|Awaiting physiotherapy clearance|N/A|Stable
+645|339|08/27/2025 10:10 PM|Repeat ECG|Low molecular weight heparin|Eating and drinking well|Liver function|Progressing as expected
+646|340|10/24/2026 10:42 AM|Repeat ECG|Analgesia as required|Mobilizing independently|N/A|Stable
+647|340|10/29/2026 06:00 AM|Wound review|Analgesia as required|Awaiting physiotherapy clearance|Full blood count|Ready for discharge planning
+648|340|10/26/2026 07:14 AM|Repeat bloods in 48 h|Analgesia as required|Mobilizing independently|Full blood count|Stable
+649|341|07/23/2024 12:28 AM|Physiotherapy assessment|Oral iron supplements|Eating and drinking well|N/A|Slower than expected
+650|341|07/22/2024 11:07 AM|Wound review|Low molecular weight heparin|Mobilizing independently|Liver function|Ready for discharge planning
+651|343|04/12/2025 01:31 AM|Physiotherapy assessment|Regular inhalers|Clinically improving|Full blood count|Slower than expected
+652|343|04/14/2025 08:41 AM|Physiotherapy assessment|Analgesia as required|Mild pain, controlled||Progressing as expected
+653|343|04/13/2025 05:57 PM|Repeat ECG|Oral antibiotics|Mobilizing independently|Renal function|Ready for discharge planning
+654|344|06/18/2025 12:47 PM|Physiotherapy assessment|Low molecular weight heparin|Awaiting physiotherapy clearance||Progressing as expected
+655|346|03/02/2024 12:33 AM|Repeat ECG|Low molecular weight heparin|Eating and drinking well|Renal function|Progressing as expected
+656|346|03/04/2024 09:12 AM|Physiotherapy assessment|Oral iron supplements|Awaiting physiotherapy clearance|N/A|Slower than expected
+657|347|05/06/2024 05:27 PM|Physiotherapy assessment|Analgesia as required|Eating and drinking well||Slower than expected
+658|348|06/18/2024 06:08 PM|Physiotherapy assessment|Analgesia as required|Mobilizing independently|N/A|Progressing as expected
+659|349|01/25/2025 02:16 AM|Physiotherapy assessment|Analgesia as required|Clinically improving|N/A|Stable
+660|349|01/24/2025 05:06 AM|Physiotherapy assessment|Regular inhalers|Mild pain, controlled|N/A|Slower than expected
+661|350|03/18/2025 08:33 AM|Wound review|Oral antibiotics|Awaiting physiotherapy clearance|N/A|Stable
+662|350|03/15/2025 05:30 PM|Repeat ECG|Analgesia as required|Clinically improving|N/A|Slower than expected
+663|350|03/14/2025 04:35 PM|Repeat ECG|Oral antibiotics|Mobilizing independently|Full blood count|Ready for discharge planning
+664|351|07/22/2025 05:41 PM|Physiotherapy assessment|Regular inhalers|Clinically improving|Liver function|Slower than expected
+665|351|07/17/2025 01:10 AM|Repeat bloods in 48 h|Low molecular weight heparin|Awaiting physiotherapy clearance|N/A|Ready for discharge planning
+666|351|07/18/2025 04:41 PM|Wound review|Oral antibiotics|Awaiting physiotherapy clearance||Slower than expected
+667|352|10/05/2025 10:21 AM|Physiotherapy assessment|Low molecular weight heparin|Eating and drinking well|Liver function|Ready for discharge planning
+668|353|07/31/2025 06:17 PM|Repeat ECG|Oral iron supplements|Mobilizing independently|Renal function|Ready for discharge planning
+669|353|07/26/2025 09:43 PM|Wound review|Analgesia as required|Eating and drinking well|N/A|Ready for discharge planning
+670|353|07/29/2025 11:26 AM|Repeat ECG|Oral iron supplements|Awaiting physiotherapy clearance|Full blood count|Progressing as expected
+671|354|10/24/2025 04:45 AM|Repeat ECG|Oral antibiotics|Clinically improving|N/A|Ready for discharge planning
+672|355|01/23/2025 03:37 AM|Physiotherapy assessment|Oral iron supplements|Clinically improving|Full blood count|Slower than expected
+673|356|08/07/2024 03:32 PM|Repeat bloods in 48 h|Oral antibiotics|Awaiting physiotherapy clearance|Full blood count|Ready for discharge planning
+674|357|12/10/2024 12:26 AM|Repeat ECG|Low molecular weight heparin|Mild pain, controlled|N/A|Slower than expected
+675|358|03/21/2025 06:09 PM|Wound review|Low molecular weight heparin|Mild pain, controlled|N/A|Ready for discharge planning
+676|358|03/25/2025 04:16 PM|Repeat ECG|Regular inhalers|Mobilizing independently|Full blood count|Stable
+677|359|02/12/2025 10:09 PM|Wound review|Regular inhalers|Mild pain, controlled||Slower than expected
+678|359|02/15/2025 12:03 AM|Wound review|Regular inhalers|Mild pain, controlled|Renal function|Slower than expected
+679|360|04/07/2025 12:59 AM|Repeat ECG|Low molecular weight heparin|Mild pain, controlled||Ready for discharge planning
+680|360|04/07/2025 07:00 AM|Wound review|Oral iron supplements|Mobilizing independently|Full blood count|Stable
+681|361|10/30/2026 04:41 AM|Repeat ECG|Oral iron supplements|Clinically improving|Renal function|Ready for discharge planning
+682|361|10/31/2026 05:14 AM|Physiotherapy assessment|Regular inhalers|Awaiting physiotherapy clearance|Liver function|Progressing as expected
+683|362|04/11/2024 03:12 PM|Wound review|Oral antibiotics|Mild pain, controlled|Full blood count|Ready for discharge planning
+544|286|01/04/2026 12:44 PM|Repeat ECG|Oral iron supplements|Mild pain, controlled|Liver function|Progressing as expected
+684|362|04/09/2024 07:30 PM|Repeat bloods in 48 h|Analgesia as required|Awaiting physiotherapy clearance|Liver function|Ready for discharge planning
+685|364|03/13/2024 06:03 AM|Repeat bloods in 48 h|Oral iron supplements|Mobilizing independently|Full blood count|Slower than expected
+686|364|03/10/2024 10:20 AM|Wound review|Regular inhalers|Eating and drinking well||Stable
+687|364|03/13/2024 06:21 AM|Wound review|Oral iron supplements|Mobilizing independently|Full blood count|Progressing as expected
+688|365|04/25/2024 01:24 PM|Repeat ECG|Low molecular weight heparin|Awaiting physiotherapy clearance||Slower than expected
+689|366|11/27/2025 06:35 AM|Wound review|Low molecular weight heparin|Clinically improving|Liver function|Ready for discharge planning
+690|366|11/30/2025 03:32 PM|Wound review|Oral iron supplements|Mild pain, controlled|Full blood count|Ready for discharge planning
+691|366|11/30/2025 06:57 PM|Repeat bloods in 48 h|Low molecular weight heparin|Clinically improving|Liver function|Ready for discharge planning
+692|367|02/26/2024 05:21 PM|Physiotherapy assessment|Analgesia as required|Awaiting physiotherapy clearance|N/A|Progressing as expected
+693|367|02/28/2024 11:25 PM|Repeat bloods in 48 h|Oral antibiotics|Clinically improving|Renal function|Slower than expected
+694|367|02/29/2024 10:49 AM|Repeat bloods in 48 h|Low molecular weight heparin|Mobilizing independently|N/A|Stable
+695|368|04/23/2024 02:59 AM|Repeat ECG|Analgesia as required|Eating and drinking well|Renal function|Progressing as expected
+696|368|04/24/2024 10:40 PM|Physiotherapy assessment|Oral iron supplements|Mobilizing independently|Full blood count|Slower than expected
+697|369|06/22/2024 09:14 PM|Wound review|Oral iron supplements|Awaiting physiotherapy clearance|N/A|Progressing as expected
+698|369|06/23/2024 12:41 AM|Repeat ECG|Low molecular weight heparin|Clinically improving|N/A|Slower than expected
+699|370|08/23/2024 04:26 PM|Repeat bloods in 48 h|Analgesia as required|Mild pain, controlled|Renal function|Slower than expected
+700|371|11/05/2025 10:21 PM|Repeat bloods in 48 h|Oral iron supplements|Eating and drinking well||Slower than expected
+701|372|06/26/2025 02:21 PM|Repeat ECG|Analgesia as required|Mild pain, controlled|Full blood count|Progressing as expected
+702|373|09/19/2025 07:12 PM|Physiotherapy assessment|Analgesia as required|Mobilizing independently|Liver function|Ready for discharge planning
+703|373|09/19/2025 05:22 PM|Repeat ECG|Regular inhalers|Clinically improving|Renal function|Ready for discharge planning
+704|374|03/23/2024 07:37 AM|Repeat bloods in 48 h|Regular inhalers|Awaiting physiotherapy clearance|Renal function|Ready for discharge planning
+705|374|03/19/2024 11:48 PM|Wound review|Analgesia as required|Mobilizing independently|Renal function|Progressing as expected
+706|374|03/19/2024 11:46 PM|Physiotherapy assessment|Regular inhalers|Eating and drinking well||Progressing as expected
+707|375|06/25/2024 03:39 AM|Wound review|Oral antibiotics|Clinically improving|Full blood count|Progressing as expected
+708|375|06/27/2024 09:46 AM|Physiotherapy assessment|Regular inhalers|Awaiting physiotherapy clearance|Full blood count|Stable
+709|375|06/26/2024 12:53 PM|Physiotherapy assessment|Oral iron supplements|Mobilizing independently|Renal function|Stable
+710|376|04/12/2024 03:29 PM|Physiotherapy assessment|Oral iron supplements|Mobilizing independently|Liver function|Stable
+711|376|04/13/2024 09:30 AM|Wound review|Regular inhalers|Mild pain, controlled||Ready for discharge planning
+712|377|05/29/2025 12:46 PM|Repeat bloods in 48 h|Analgesia as required|Clinically improving|Renal function|Slower than expected
+713|377|05/28/2025 03:16 PM|Wound review|Regular inhalers|Clinically improving|Liver function|Ready for discharge planning
+714|378|01/22/2025 06:19 AM|Repeat ECG|Oral antibiotics|Awaiting physiotherapy clearance||Progressing as expected
+670|353|07/29/2025 11:26 AM|Repeat ECG|Oral iron supplements|Awaiting physiotherapy clearance|Full blood count|Progressing as expected
+715|378|01/23/2025 09:18 AM|Wound review|Oral antibiotics|Mild pain, controlled|N/A|Ready for discharge planning
+716|378|01/20/2025 06:40 AM|Repeat ECG|Regular inhalers|Awaiting physiotherapy clearance|Renal function|Ready for discharge planning
+717|379|03/05/2025 09:31 PM|Wound review|Analgesia as required|Eating and drinking well|Full blood count|Slower than expected
+718|379|2025-03-05 23:40|Repeat ECG|Low molecular weight heparin|Mobilizing independently|Renal function|Progressing as expected
+719|380|05/27/2024 03:26 AM|Repeat ECG|Low molecular weight heparin|Mild pain, controlled|N/A|Slower than expected
+720|382|01/26/2025 10:31 PM|Repeat bloods in 48 h|Oral antibiotics|Mobilizing independently|Full blood count|Progressing as expected
+721|382|01/23/2025 10:13 AM|Repeat ECG|Regular inhalers|Mild pain, controlled|N/A|Ready for discharge planning
+722|382|01/19/2025 02:01 PM|Repeat bloods in 48 h|Low molecular weight heparin|Clinically improving|Full blood count|Progressing as expected
+723|383|05/26/2025 05:23 PM|Repeat ECG|Oral antibiotics|Mild pain, controlled|Renal function|Stable
+724|384|03/16/2025 05:12 AM|Repeat ECG|Low molecular weight heparin|Awaiting physiotherapy clearance|N/A|Slower than expected
+725|384|03/14/2025 10:55 PM|Physiotherapy assessment|Oral iron supplements|Mobilizing independently|Liver function|Slower than expected
+726|384|03/16/2025 11:08 AM|Repeat bloods in 48 h|Analgesia as required|Eating and drinking well|Full blood count|Progressing as expected
+727|385|10/29/2026 04:02 PM|Repeat bloods in 48 h|Oral antibiotics|Clinically improving|Full blood count|Ready for discharge planning
+728|385|10/26/2026 08:58 PM|Wound review|Oral iron supplements|Eating and drinking well|Renal function|Progressing as expected
+729|385|10/26/2026 07:16 PM|Repeat bloods in 48 h|Analgesia as required|Mobilizing independently|Renal function|Stable
+730|386|10/16/2025 02:10 PM|Repeat bloods in 48 h|Oral iron supplements|Mobilizing independently|Liver function|Progressing as expected
+731|386|10/17/2025 07:45 AM|Wound review|Low molecular weight heparin|Clinically improving|Full blood count|Slower than expected
+732|387|12/17/2025 11:54 PM|Repeat ECG|Oral antibiotics|Mild pain, controlled|Liver function|Slower than expected
+733|387|12/14/2025 09:45 PM|Repeat ECG|Oral antibiotics|Mobilizing independently|N/A|Slower than expected
+734|387|12/16/2025 05:37 PM|Wound review|Oral antibiotics|Awaiting physiotherapy clearance|N/A|Stable
+735|388|02/16/2026 02:11 AM|Repeat bloods in 48 h|Low molecular weight heparin|Eating and drinking well|N/A|Slower than expected
+736|388|02/16/2026 11:41 AM|Wound review|Oral antibiotics|Clinically improving||Progressing as expected
+737|388|02/14/2026 01:43 AM|Repeat bloods in 48 h|Oral iron supplements|Clinically improving|N/A|Ready for discharge planning
+738|389|03/05/2025 05:38 AM|Wound review|Analgesia as required|Clinically improving|Renal function|Ready for discharge planning
+739|389|03/02/2025 08:51 AM|Repeat bloods in 48 h|Oral iron supplements|Mobilizing independently|Renal function|Slower than expected
+740|390|01/09/2025 02:15 PM|Repeat ECG|Low molecular weight heparin|Eating and drinking well|Full blood count|Stable
+741|391|04/08/2024 02:06 AM|Repeat bloods in 48 h|Low molecular weight heparin|Awaiting physiotherapy clearance|Renal function|Slower than expected
+742|391|04/06/2024 10:55 AM|Repeat ECG|Regular inhalers|Clinically improving|Full blood count|Slower than expected
+743|391|04/02/2024 02:16 PM|Wound review|Regular inhalers|Awaiting physiotherapy clearance|Renal function|Progressing as expected
+744|393|11/21/2024 05:18 PM|Repeat bloods in 48 h|Oral iron supplements|Clinically improving|Full blood count|Progressing as expected
+745|393|11/24/2024 03:46 AM|Physiotherapy assessment|Low molecular weight heparin|Clinically improving|Full blood count|Progressing as expected
+746|393|11/28/2024 01:57 AM|Repeat ECG|Regular inhalers|Clinically improving|Full blood count|Progressing as expected
+747|394|01/20/2025 07:19 PM|Wound review|Low molecular weight heparin|Mobilizing independently|Renal function|Slower than expected
+748|394|01/19/2025 03:57 AM|Repeat bloods in 48 h|Low molecular weight heparin|Mobilizing independently|Full blood count|Stable
+749|394|01/18/2025 06:10 AM|Physiotherapy assessment|Oral iron supplements|Eating and drinking well|Liver function|Slower than expected
+750|395|03/26/2025 02:52 AM|Repeat ECG|Low molecular weight heparin|Clinically improving|N/A|Ready for discharge planning
+751|395|03/24/2025 05:40 AM|Wound review|Low molecular weight heparin|Awaiting physiotherapy clearance|Liver function|Ready for discharge planning
+752|396|06/11/2025 07:32 AM|Repeat ECG|Oral antibiotics|Eating and drinking well||Slower than expected
+753|396|06/10/2025 05:05 PM|Physiotherapy assessment|Regular inhalers|Mild pain, controlled|N/A|Ready for discharge planning
+754|397|05/04/2025 12:49 PM|Wound review|Low molecular weight heparin|Mild pain, controlled|Renal function|Slower than expected
+755|397|05/06/2025 03:51 PM|Physiotherapy assessment|Oral iron supplements|Eating and drinking well|Full blood count|Stable
+756|397|05/03/2025 09:29 PM|Wound review|Analgesia as required|Mobilizing independently|Full blood count|Progressing as expected
+757|398|09/12/2025 10:35 AM|Repeat bloods in 48 h|Regular inhalers|Clinically improving|N/A|Stable
+758|399|02/02/2026 10:30 PM|Physiotherapy assessment|Regular inhalers|Mobilizing independently|Full blood count|Slower than expected
+759|399|01/31/2026 10:54 AM|Physiotherapy assessment|Oral antibiotics|Mild pain, controlled|Renal function|Progressing as expected
+760|400|10/31/2025 09:48 PM|Repeat ECG|Analgesia as required|Eating and drinking well|Renal function|Ready for discharge planning
+761|400|10/30/2025 12:01 PM|Wound review|Oral antibiotics|Clinically improving|Renal function|Slower than expected
+762|400|10/29/2025 11:30 AM|Repeat ECG|Analgesia as required|Clinically improving|Renal function|Progressing as expected
+763|401|02/05/2025 06:35 AM|Wound review|Regular inhalers|Mild pain, controlled|Full blood count|Slower than expected
+764|401|02/05/2025 03:17 AM|Repeat bloods in 48 h|Oral antibiotics|Clinically improving|Renal function|Progressing as expected
+765|402|04/30/2025 07:20 AM|Repeat bloods in 48 h|Low molecular weight heparin|Clinically improving|Renal function|Stable
+766|402|04/30/2025 06:20 PM|Repeat ECG|Regular inhalers|Clinically improving|Liver function|Slower than expected
+767|403|07/10/2025 01:58 AM|Physiotherapy assessment|Regular inhalers|Mild pain, controlled|Renal function|Ready for discharge planning
+768|403|07/07/2025 10:27 AM|Repeat bloods in 48 h|Regular inhalers|Mobilizing independently|N/A|Progressing as expected
+769|404|10/14/2025 03:56 AM|Physiotherapy assessment|Oral antibiotics|Eating and drinking well|Renal function|Stable
+770|404|10/17/2025 12:31 AM|Physiotherapy assessment|Analgesia as required|Mild pain, controlled|N/A|Slower than expected
+771|404|10/15/2025 11:36 AM|Repeat ECG|Oral antibiotics|Mild pain, controlled|Full blood count|Stable
+772|405|05/18/2025 12:21 PM|Wound review|Regular inhalers|Eating and drinking well|Liver function|Progressing as expected
+773|406|04/01/2025 11:16 AM|Repeat bloods in 48 h|Regular inhalers|Clinically improving|Full blood count|Stable
+774|406|04/01/2025 06:59 PM|Physiotherapy assessment|Analgesia as required|Clinically improving||Stable
+775|407|07/30/2025 11:15 PM|Repeat ECG|Analgesia as required|Awaiting physiotherapy clearance|Full blood count|Ready for discharge planning
+776|408|05/26/2024 05:41 AM|Physiotherapy assessment|Regular inhalers|Eating and drinking well|Liver function|Ready for discharge planning
+777|408|05/25/2024 01:43 PM|Repeat ECG|Analgesia as required|Awaiting physiotherapy clearance|Full blood count|Stable
+778|409|06/16/2024 04:27 AM|Wound review|Low molecular weight heparin|Clinically improving|Liver function|Stable
+779|409|14/06/2024 07:54 PM|Repeat bloods in 48 h|Analgesia as required|Eating and drinking well|Full blood count|Slower than expected
+780|410|10/29/2024 03:08 AM|Repeat ECG|Regular inhalers|Awaiting physiotherapy clearance|Full blood count|Stable
+781|410|10/28/2024 02:01 PM|Repeat ECG|Oral iron supplements|Eating and drinking well|N/A|Progressing as expected
+782|410|10/26/2024 06:58 PM|Repeat ECG|Analgesia as required|Clinically improving|Renal function|Ready for discharge planning
+783|411|12/15/2024 10:05 PM|Physiotherapy assessment|Oral iron supplements|Clinically improving|Liver function|Slower than expected
+784|411|12/16/2024 03:34 PM|Repeat bloods in 48 h|Oral antibiotics|Mild pain, controlled|Full blood count|Stable
+785|412|08/24/2024 02:41 AM|Physiotherapy assessment|Regular inhalers|Mild pain, controlled|N/A|Progressing as expected
+786|412|08/21/2024 10:34 PM|Repeat ECG|Regular inhalers|Mobilizing independently||Slower than expected
+787|412|08/20/2024 11:24 AM|Physiotherapy assessment|Oral iron supplements|Eating and drinking well|N/A|Slower than expected
+788|413|12/10/2024 11:04 PM|Repeat ECG|Oral antibiotics|Eating and drinking well|Renal function|Progressing as expected
+789|414|04/22/2025 01:33 AM|Wound review|Analgesia as required|Mobilizing independently|N/A|Ready for discharge planning
+790|415|06/05/2025 12:11 PM|Physiotherapy assessment|Analgesia as required|Eating and drinking well|Full blood count|Slower than expected
+791|415|06/05/2025 05:13 AM|Physiotherapy assessment|Low molecular weight heparin|Clinically improving|Renal function|Stable
+792|415|06/10/2025 08:22 AM|Repeat ECG|Oral antibiotics|Eating and drinking well|N/A|Slower than expected
+793|416|02/27/2024 10:31 PM|Repeat ECG|Low molecular weight heparin|Mobilizing independently|Liver function|Slower than expected
+794|416|02/27/2024 05:00 PM|Repeat bloods in 48 h|Low molecular weight heparin|Mobilizing independently|Full blood count|Stable
+795|416|03/02/2024 09:41 AM|Wound review|Regular inhalers|Eating and drinking well|N/A|Stable
+796|417|07/19/2024 08:42 PM|Repeat bloods in 48 h|Regular inhalers|Eating and drinking well|Liver function|Slower than expected
+797|417|07/19/2024 05:01 PM|Wound review|Oral antibiotics|Clinically improving|Full blood count|Progressing as expected
+798|418|03/18/2025 08:24 PM|Repeat bloods in 48 h|Analgesia as required|Mild pain, controlled|Liver function|Ready for discharge planning
+799|418|03/18/2025 10:22 PM|Wound review|Analgesia as required|Mobilizing independently|Renal function|Slower than expected
+800|419|04/28/2025 11:29 AM|Wound review|Oral antibiotics|Awaiting physiotherapy clearance||Stable
+801|419|04/27/2025 09:51 PM|Repeat ECG|Analgesia as required|Mild pain, controlled|Renal function|Progressing as expected
+802|419|04/30/2025 03:20 PM|Repeat bloods in 48 h|Oral iron supplements|Mobilizing independently|Liver function|Stable
+803|420|09/11/2025 07:26 AM|Repeat bloods in 48 h|Oral iron supplements|Mobilizing independently|Liver function|Ready for discharge planning
+804|420|09/12/2025 08:42 AM|Repeat bloods in 48 h|Low molecular weight heparin|Mobilizing independently|N/A|Ready for discharge planning
+805|421|10/03/2025 04:04 PM|Repeat ECG|Low molecular weight heparin|Clinically improving|Liver function|Slower than expected
+806|421|10/05/2025 04:26 PM|Physiotherapy assessment|Oral antibiotics|Awaiting physiotherapy clearance|Renal function|Progressing as expected
+807|422|10/05/2025 11:13 PM|Physiotherapy assessment|Analgesia as required|Eating and drinking well||Slower than expected
+808|422|10/02/2025 04:21 PM|Wound review|Low molecular weight heparin|Mobilizing independently|Liver function|Stable
+809|422|10/03/2025 10:34 AM|Physiotherapy assessment|Analgesia as required|Eating and drinking well|Full blood count|Progressing as expected
+810|423|02/25/2026 11:14 AM|Wound review|Oral iron supplements|Mild pain, controlled|Liver function|Progressing as expected
+811|423|02/21/2026 04:02 AM|Repeat bloods in 48 h|Low molecular weight heparin|Eating and drinking well|Renal function|Slower than expected
+812|424|11/30/2025 02:38 AM|Repeat bloods in 48 h|Oral iron supplements|Mobilizing independently|N/A|Progressing as expected
+813|425|05/11/2026 11:53 AM|Physiotherapy assessment|Oral iron supplements|Mobilizing independently|Renal function|Stable
+421|228|12/17/2024 11:52 AM|Wound review|Oral iron supplements|Clinically improving|Liver function|Ready for discharge planning
+814|425|05/09/2026 10:29 PM|Physiotherapy assessment|Low molecular weight heparin|Mobilizing independently||Progressing as expected
+815|425|05/06/2026 01:14 AM|Repeat ECG|Regular inhalers|Awaiting physiotherapy clearance|Full blood count|Stable
+816|426|08/05/2024 01:47 AM|Wound review|Low molecular weight heparin|Mild pain, controlled|Liver function|Ready for discharge planning
+817|426|08/03/2024 05:46 PM|Repeat ECG|Oral iron supplements|Mobilizing independently||Stable
+818|7831|09/15/2024 02:57 PM|Repeat ECG|Analgesia as required|Awaiting physiotherapy clearance|Full blood count|Slower than expected
+819|428|11/16/2025 03:25 PM|Physiotherapy assessment|Regular inhalers|Mild pain, controlled|N/A|Slower than expected
+820|428|11/18/2025 10:21 AM|Physiotherapy assessment|Oral iron supplements|Clinically improving|Full blood count|Slower than expected
+821|429|01/22/2024 10:03 AM|Physiotherapy assessment|Oral antibiotics|Clinically improving|Liver function|Progressing as expected
+822|429|01/20/2024 12:40 PM|Repeat bloods in 48 h|Oral antibiotics|Mobilizing independently|Liver function|Progressing as expected
+823|430|04/30/2024 09:09 PM|Physiotherapy assessment|Low molecular weight heparin|Clinically improving|Full blood count|Slower than expected
+824|431|05/28/2024 09:23 AM|Repeat bloods in 48 h|Low molecular weight heparin|Mobilizing independently|N/A|Slower than expected
+825|431|05/29/2024 06:51 PM|Wound review|Regular inhalers|Mild pain, controlled|Renal function|Slower than expected
+826|432|02/18/2025 03:32 AM|Wound review|Analgesia as required|Clinically improving|Liver function|Ready for discharge planning
+827|432|02/17/2025 09:24 PM|Wound review|Low molecular weight heparin|Eating and drinking well|Renal function|Ready for discharge planning
+828|433|12/15/2024 01:20 PM|Repeat bloods in 48 h|Analgesia as required|Eating and drinking well||Ready for discharge planning
+829|433|12/14/2024 10:39 AM|Repeat bloods in 48 h|Analgesia as required|Clinically improving|Renal function|Progressing as expected
+830|434|06/24/2024 07:18 AM|Repeat ECG|Analgesia as required|Eating and drinking well||Ready for discharge planning
+831|434|06/28/2024 10:23 AM|Repeat ECG|Oral iron supplements|Awaiting physiotherapy clearance||Slower than expected
+832|434|06/24/2024 05:35 AM|Physiotherapy assessment|Oral iron supplements|Clinically improving|Full blood count|Stable
+833|435|04/22/2025 10:30 PM|Repeat bloods in 48 h|Regular inhalers|Mild pain, controlled|Full blood count|Progressing as expected
+834|435|04/22/2025 03:54 AM|Physiotherapy assessment|Low molecular weight heparin|Clinically improving|Liver function|Ready for discharge planning
+324|181|04/17/2025 12:37 AM|Wound review|Oral antibiotics|Mild pain, controlled|N/A|Progressing as expected
+835|435|04/22/2025 09:50 PM|Physiotherapy assessment|Regular inhalers|Mobilizing independently|N/A|Progressing as expected
+836|436|03/18/2025 12:35 PM|Wound review|Low molecular weight heparin|Clinically improving|Renal function|Progressing as expected
+837|436|03/17/2025 09:54 PM|Repeat ECG|Analgesia as required|Awaiting physiotherapy clearance|Full blood count|Slower than expected
+838|438|07/22/2024 04:52 PM|Repeat ECG|Oral antibiotics|Clinically improving|N/A|Slower than expected
+839|438|07/22/2024 05:11 PM|Wound review|Low molecular weight heparin|Clinically improving|N/A|Stable
+840|439|10/07/2024 11:22 AM|Physiotherapy assessment|Oral antibiotics|Mobilizing independently|N/A|Slower than expected
+841|439|10/07/2024 09:20 AM|Repeat bloods in 48 h|Regular inhalers|Eating and drinking well|N/A|Slower than expected
+842|440|06/23/2024 08:01 AM|Physiotherapy assessment|Oral iron supplements|Mild pain, controlled||Progressing as expected
+843|441|08/21/2024 05:46 PM|Repeat ECG|Analgesia as required|Mild pain, controlled|Liver function|Ready for discharge planning
+844|441|08/22/2024 11:01 PM|Physiotherapy assessment|Low molecular weight heparin|Clinically improving|Renal function|Ready for discharge planning
+845|442|12/18/2024 02:07 PM|Repeat ECG|Regular inhalers|Eating and drinking well|Full blood count|Slower than expected
+846|444|03/26/2024 01:57 AM|Repeat ECG|Regular inhalers|Mobilizing independently|N/A|Progressing as expected
+847|444|03/18/2024 04:58 PM|Wound review|Oral antibiotics|Eating and drinking well|N/A|Slower than expected
+848|444|03/22/2024 11:04 PM|Repeat bloods in 48 h|Oral antibiotics|Mobilizing independently|N/A|Stable
+849|446|02/29/2024 09:44 PM|Wound review|Low molecular weight heparin|Eating and drinking well|Renal function|Slower than expected
+850|447|03/25/2024 09:14 AM|Repeat bloods in 48 h|Analgesia as required|Eating and drinking well|Renal function|Ready for discharge planning
+851|448|08/02/2024 02:39 PM|Repeat bloods in 48 h|Regular inhalers|Mild pain, controlled|N/A|Stable
+852|448|08/05/2024 05:27 PM|Repeat bloods in 48 h|Regular inhalers|Mild pain, controlled|N/A|Ready for discharge planning
+853|448|08/08/2024 10:53 PM|Physiotherapy assessment|Regular inhalers|Clinically improving|Liver function|Progressing as expected
+854|449|11/07/2024 12:00 PM|Physiotherapy assessment|Analgesia as required|Mobilizing independently|Liver function|Ready for discharge planning
+855|449|11/07/2024 07:22 AM|Physiotherapy assessment|Regular inhalers|Eating and drinking well|N/A|Progressing as expected
+856|449|11/07/2024 11:55 AM|Wound review|Regular inhalers|Mobilizing independently|Renal function|Stable
+857|450|10/26/2026 09:16 AM|Repeat ECG|Oral iron supplements|Clinically improving|N/A|Ready for discharge planning
+858|450|10/28/2026 03:52 AM|Repeat ECG|Low molecular weight heparin|Awaiting physiotherapy clearance|Full blood count|Progressing as expected
+859|450|10/26/2026 04:18 PM|Repeat ECG|Oral antibiotics|Awaiting physiotherapy clearance|N/A|Ready for discharge planning
+860|451|06/20/2025 02:57 PM|Wound review|Regular inhalers|Awaiting physiotherapy clearance|N/A|Progressing as expected
+861|452|10/26/2026 11:54 PM|Repeat ECG|Oral iron supplements|Awaiting physiotherapy clearance||Progressing as expected
+862|452|10/23/2026 01:38 PM|Physiotherapy assessment|Oral antibiotics|Clinically improving|Renal function|Stable
+755|397|05/06/2025 03:51 PM|Physiotherapy assessment|Oral iron supplements|Eating and drinking well|Full blood count|Stable
+863|452|10/25/2026 07:24 PM|Physiotherapy assessment|Regular inhalers|Mild pain, controlled|Liver function|Progressing as expected
+864|453|07/18/2025 10:03 PM|Repeat ECG|Regular inhalers|Mobilizing independently|N/A|Progressing as expected
+865|453|07/18/2025 06:01 PM|Repeat ECG|Low molecular weight heparin|Clinically improving|Liver function|Slower than expected
+866|454|12/13/2025 04:40 PM|Repeat ECG|Oral iron supplements|Eating and drinking well|Full blood count|Slower than expected
+867|454|12/12/2025 06:17 PM|Repeat bloods in 48 h|Analgesia as required|Awaiting physiotherapy clearance||Ready for discharge planning
+868|455|05/02/2026 10:26 PM|Repeat bloods in 48 h|Analgesia as required|Awaiting physiotherapy clearance|Full blood count|Ready for discharge planning
+552|291|06/25/2025 11:46 AM|Repeat bloods in 48 h|Regular inhalers|Eating and drinking well|Renal function|Ready for discharge planning
+869|455|05/02/2026 04:29 PM|Repeat bloods in 48 h|Analgesia as required|Eating and drinking well|N/A|Progressing as expected
+870|456|07/09/2024 12:38 PM|Repeat bloods in 48 h|Low molecular weight heparin|Eating and drinking well|N/A|Progressing as expected
+871|456|07/09/2024 01:46 PM|Physiotherapy assessment|Oral iron supplements|Eating and drinking well|Liver function|Slower than expected
+872|456|07/05/2024 04:47 PM|Repeat bloods in 48 h|Low molecular weight heparin|Mild pain, controlled|Full blood count|Slower than expected
+873|457|01/15/2024 02:46 AM|Repeat ECG|Regular inhalers|Awaiting physiotherapy clearance|N/A|Stable
+874|458|05/12/2024 10:27 AM|Physiotherapy assessment|Low molecular weight heparin|Clinically improving|Renal function|Ready for discharge planning
+875|458|05/12/2024 06:44 PM|Repeat bloods in 48 h|Oral iron supplements|Clinically improving|N/A|Progressing as expected
+876|458|05/12/2024 08:32 AM|Physiotherapy assessment|Regular inhalers|Mobilizing independently|Full blood count|Stable
+877|459|10/29/2024 06:26 AM|Repeat bloods in 48 h|Regular inhalers|Mild pain, controlled|Liver function|Progressing as expected
+878|459|10/28/2024 12:41 AM|Physiotherapy assessment|Oral iron supplements|Clinically improving||Slower than expected
+879|459|10/28/2024 03:06 AM|Physiotherapy assessment|Oral iron supplements|Mild pain, controlled|N/A|Progressing as expected
+880|460|01/22/2025 01:31 PM|Repeat ECG|Oral antibiotics|Awaiting physiotherapy clearance|Full blood count|Slower than expected
+881|460|01/20/2025 07:29 AM|Physiotherapy assessment|Low molecular weight heparin|Eating and drinking well|Renal function|Stable
+882|461|05/24/2025 12:13 PM|Repeat bloods in 48 h|Low molecular weight heparin|Mild pain, controlled|N/A|Ready for discharge planning
+883|461|05/24/2025 08:32 PM|Repeat bloods in 48 h|Analgesia as required|Awaiting physiotherapy clearance|N/A|Stable

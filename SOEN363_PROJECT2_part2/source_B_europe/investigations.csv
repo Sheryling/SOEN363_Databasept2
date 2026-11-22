@@ -1,0 +1,433 @@
+diag_exam_id;order_id;exam_type;exam_datetime;performed_by_id;result;exam_status
+1;7;Urinalysis;12/07/2025 10:49;66;Unremarkable;Completed
+2;8;Basic Metabolic Panel;13/07/2025 03:11;67;Within normal limits;Completed
+3;9;Urinalysis;11/08/2025 04:35;67;Nitrite positive, leukocytes +++;Completed
+4;10;Complete Blood Count;12/08/2025 07:40;70;Within normal limits;Completed
+5;13;Arterial Blood Gas;24/01/2024 06:01;64;pH 7.31, pCO2 58, pO2 62;Completed
+6;15;Sputum Culture;10/06/2024 12:27;66;Within normal limits;Completed
+7;17;Coagulation Panel;31/10/2024 04:00;70;Mildly abnormal;Completed
+8;21;Liver Function Panel;17/10/2026 02:20;68;Within normal limits;Completed
+9;24;Sputum Culture;29/01/2024 04:24;70;Mildly abnormal;Completed
+10;26;Sputum Culture;21/05/2024 21:45;68;Abnormal - see comment;Completed
+11;30;Tumor Markers;28/09/2024 02:58;68;Within normal limits;Completed
+12;33;Coagulation Panel;13/01/2025 11:40;68;Abnormal - see comment;Completed
+13;34;Complete Blood Count;13/01/2025 13:55;65;Abnormal - see comment;Completed
+14;37;Blood Culture;08/10/2025 05:08;70;Gram-negative rods isolated;Completed
+15;39;Lipase;22/05/2024 19:44;70;Lipase 45 U/L (normal);Completed
+16;42;Complete Blood Count;06/02/2025 08:26;68;Within normal limits;Completed
+17;43;Coagulation Panel;05/02/2025 18:38;66;Within normal limits;Completed
+18;46;Arterial Blood Gas;03/04/2025 05:17;66;pH 7.42, pCO2 39, pO2 88;Completed
+19;47;Complete Blood Count;03/04/2025 09:51;66;Mildly abnormal;Completed
+20;49;Blood Glucose;25/06/2025 18:44;65;Mildly abnormal;Completed
+21;52;Tumor Markers;21/04/2025 11:06;66;Within normal limits;Completed
+22;54;Complete Blood Count;11/08/2025 10:14;67;Abnormal - see comment;Completed
+23;55;Liver Function Panel;16/09/2025 11:17;65;Mildly abnormal;Completed
+24;56;Complete Blood Count;16/09/2025 16:40;64;Mildly abnormal;Completed
+25;59;Toxicology Screen;11/03/2025 22:45;69;Within normal limits;Completed
+26;60;Complete Blood Count;16/09/2024 01:40;64;Mildly abnormal;Completed
+27;61;Arterial Blood Gas;23/12/2024 02:17;64;pH 7.31, pCO2 58, pO2 62;Completed
+28;63;Sputum Culture;14/01/2024 04:16;64;Within normal limits;Completed
+29;65;Arterial Blood Gas;05/05/2024 05:33;70;pH 7.42, pCO2 39, pO2 88;Completed
+30;66;Sputum Culture;04/05/2024 17:52;69;Mildly abnormal;Completed
+31;69;Sputum Culture;13/03/2024 17:07;70;Abnormal - see comment;Completed
+32;70;Complete Blood Count;07/08/2024 11:23;68;Mildly abnormal;Completed
+33;72;Electrocardiogram;17/05/2024 06:35;65;Atrial fibrillation, rate 112;Completed
+34;73;Electrocardiogram;04/07/2024 08:03;66;Atrial fibrillation, rate 112;Completed
+35;75;Electroencephalogram;24/08/2025 18:19;66;Mildly abnormal;Completed
+36;77;Toxicology Screen;15/10/2025 01:02;69;Mildly abnormal;Completed
+37;78;Liver Function Panel;13/10/2025 01:38;64;Abnormal - see comment;Completed
+38;79;Complete Blood Count;05/09/2024 21:04;64;Mildly abnormal;Completed
+39;80;Toxicology Screen;08/12/2024 13:02;69;Within normal limits;Completed
+40;81;Complete Blood Count;08/12/2024 07:58;68;Abnormal - see comment;Completed
+41;82;Complete Blood Count;27/03/2025 01:51;64;Within normal limits;Completed
+42;84;Liver Function Panel;07/05/2025 15:30;69;Abnormal - see comment;Completed
+43;85;Complete Blood Count;16/01/2024 23:16;65;Within normal limits;Completed
+44;86;Complete Blood Count;29/01/2024 15:50;66;Within normal limits;Completed
+45;87;Electrocardiogram;06/03/2026 08:59;64;ST depression V4-V6;Completed
+46;90;Sputum Culture;08/10/2025 17:24;66;Mildly abnormal;Completed
+47;91;Complete Blood Count;07/10/2025 20:26;69;Mildly abnormal;Completed
+48;93;Complete Blood Count;07/03/2026 00:15;65;Within normal limits;Completed
+49;94;Arterial Blood Gas;07/03/2026 15:14;69;pH 7.42, pCO2 39, pO2 88;Completed
+50;96;Complete Blood Count;18/10/2024 02:46;70;Within normal limits;Completed
+51;98;Blood Glucose;30/09/2024 23:26;70;Abnormal - see comment;Completed
+52;99;Complete Blood Count;19/01/2025 01:58;67;Abnormal - see comment;Completed
+53;101;Sputum Culture;20/04/2025 04:16;70;Within normal limits;Completed
+54;106;Arterial Blood Gas;20/02/2024 03:33;69;pH 7.31, pCO2 58, pO2 62;Completed
+55;107;Sputum Culture;18/02/2024 12:30;70;Mildly abnormal;Completed
+56;110;Liver Function Panel;19/06/2024 07:36;67;Abnormal - see comment;Completed
+57;111;Complete Blood Count;20/06/2024 03:01;66;Within normal limits;Completed
+58;112;Complete Blood Count;27/10/2024 17:21;70;Within normal limits;Completed
+59;113;Liver Function Panel;27/10/2024 13:11;70;Mildly abnormal;Completed
+60;117;Troponin Panel;24/01/2025 15:44;64;Troponin I 2.4 ng/mL (elevated);Completed
+61;118;Electrocardiogram;25/01/2025 01:07;67;ST depression V4-V6;Completed
+62;120; Coagulation Panel;12/09/2025 23:50;67;Within normal limits;Completed
+63;123;Lipase;13/11/2024 15:08;64;Lipase 1240 U/L (elevated);Completed
+64;124;Electroencephalogram;16/07/2025 03:16;65;Mildly abnormal;Completed
+65;125;Complete Blood Count;15/07/2025 21:51;69;Within normal limits;Completed
+66;126;Arterial Blood Gas;22/01/2026 02:50;65;pH 7.31, pCO2 58, pO2 62;Completed
+67;127;Lipase;27/12/2024 12:08;69;Lipase 45 U/L (normal);Completed
+68;128;Liver Function Panel;07/03/2025 16:40;69;Mildly abnormal;Completed
+69;129;Toxicology Screen;02/08/2025 14:42;69;Within normal limits;Completed
+70;130;Urinalysis;04/10/2025 13:04;66;Nitrite positive, leukocytes +++;Completed
+71;131;Complete Blood Count;05/10/2025 05:24;69;Mildly abnormal;Completed
+72;132;Blood Culture;15/01/2024 22:45;64;Gram-negative rods isolated;Completed
+73;135;Basic Metabolic Panel;22/07/2024 01:08;68;Abnormal - see comment;Completed
+74;137;Complete Blood Count;14/10/2024 19:58;65;Mildly abnormal;Completed
+75;138;Coagulation Panel;14/10/2024 00:18;69;Mildly abnormal;Completed
+76;139;Coagulation Panel;17/03/2026 18:09;67;Abnormal - see comment;Completed
+77;142;Liver Function Panel;15/11/2024 14:45;67;Within normal limits;Completed
+78;145;Complete Blood Count;13/01/2024 01:17;67;Mildly abnormal;Completed
+79;146;Liver Function Panel;13/06/2024 08:10;65;Within normal limits;Completed
+80;147;Complete Blood Count;14/06/2024 00:25;70;Within normal limits;Completed
+81;149;Liver Function Panel;28/07/2025 11:24;66;Mildly abnormal;Completed
+82;152;Sputum Culture;20/05/2025 06:42;65;Within normal limits;Completed
+83;153;Complete Blood Count;20/05/2025 10:05;69;Abnormal - see comment;Completed
+84;155;Blood Culture;15/11/2025 10:25;65;Gram-negative rods isolated;Completed
+85;157;Sputum Culture;11/03/2026 18:04;68;Mildly abnormal;Completed
+86;160;Blood Glucose;16/02/2024 05:48;67;Within normal limits;Completed
+87;161;Complete Blood Count;18/02/2024 11:22;64;Within normal limits;Completed
+88;162;Lipid Panel;25/09/2024 10:52;66;Abnormal - see comment;Completed
+89;163;Liver Function Panel;04/01/2025 13:18;65;Mildly abnormal;Completed
+90;166;Toxicology Screen;14/08/2024 05:05;68;Within normal limits;Completed
+91;167;Complete Blood Count;06/02/2025 07:20;68;Within normal limits;Completed
+92;169;Lactate Level;02/09/2024 05:04;66;Mildly abnormal;Completed
+93;170;Complete Blood Count;2024-09-03T08:06;67;Mildly abnormal;Completed
+94;171;Toxicology Screen;13/10/2024 06:12;70;Mildly abnormal;Completed
+95;174;Urinalysis;30/03/2026 13:22;67;Unremarkable;Completed
+96;182;Lipid Panel;13/08/2025 15:28;69;Abnormal - see comment;Completed
+97;183;Sputum Culture;13/03/2024 08:16;64;Mildly abnormal;Completed
+98;186;Troponin Panel;11/12/2024 03:39;64;Troponin I < 0.01 ng/mL (normal);Completed
+99;188;Coagulation Panel;25/08/2024 16:56;70;Within normal limits;Completed
+100;189;Sputum Culture;12/10/2025 20:57;67;Abnormal - see comment;Completed
+101;190;Liver Function Panel;04/08/2025 02:55;67;Mildly abnormal;Completed
+102;192;Lipid Panel;29/09/2025 07:28;66;Mildly abnormal;Completed
+103;193;Lipase;09/02/2026 05:45;65;Lipase 1240 U/L (elevated);COMPLETED
+104;194;Liver Function Panel;08/02/2026 22:46;67;Within normal limits;Completed
+105;195;Arterial Blood Gas;13/11/2024 13:32;64;pH 7.31, pCO2 58, pO2 62;  Completed 
+106;197;Coagulation Panel;15 Aug 2025 03:13;67;Abnormal - see comment;Completed
+107;200;Lipase;07/12/2025 21:05;64;Lipase 1240 U/L (elevated);Completed
+108;203;Lactate Level;12/03/2025 07:32;69;Within normal limits;Completed
+109;204;Liver Function Panel;26/09/2024 13:27;65;Mildly abnormal;Completed
+110;205;Lipase;26/09/2024 01:50;69;Lipase 45 U/L (normal);Completed
+111;207;Toxicology Screen;21/01/2025 00:17;65;Within normal limits;Completed
+112;210;Coagulation Panel;21/02/2025 23:03;67;Within normal limits;Completed
+113;211;Urinalysis;20/06/2025 00:24;66;Unremarkable;Completed
+114;212;Blood Culture;18/06/2025 19:54;69;No growth at 48 hours;Completed
+115;214;Liver Function Panel;16/11/2025 12:54;66;Abnormal - see comment;Completed
+116;217;Complete Blood Count;19/07/2025 20:00;67;Abnormal - see comment;Completed
+117;220;Urinalysis;30/06/2024 19:38;66;Unremarkable;Completed
+118;221;Blood Glucose;30/06/2024 18:11;70;Abnormal - see comment;Completed
+119;224;Blood Culture;09/11/2024 06:39;66;Gram-negative rods isolated;Completed
+120;225;Urinalysis;10/11/2024 00:25;66;Nitrite positive, leukocytes +++;Completed
+121;226;Electrocardiogram;24/03/2024 04:54;64;ST depression V4-V6;Completed
+122;227;Lipid Panel;25/03/2024 07:54;65;Mildly abnormal;Completed
+123;231;Complete Blood Count;18/09/2024 08:18;66;Abnormal - see comment;Completed
+124;233;Coagulation Panel;06/09/2024 06:12;68;Mildly abnormal;Completed
+125;234;Complete Blood Count;04/09/2024 10:49;68;Mildly abnormal;Completed
+126;237;Electrocardiogram;27/02/2024 15:51;68;ST depression V4-V6;Completed
+127;238;Troponin Panel;27/02/2024 19:38;68;Troponin I < 0.01 ng/mL (normal);Completed
+128;240;Liver Function Panel;05/08/2024 19:14;65;Mildly abnormal;Completed
+129;241;Complete Blood Count;04/08/2024 04:26;66;Mildly abnormal;Completed
+130;244;Coagulation Panel;24/12/2024 23:56;64;Within normal limits;Completed
+131;245;Complete Blood Count;24/12/2024 12:32;65;Within normal limits;Completed
+132;247;Electrocardiogram;05/10/2024 16:14;65;Atrial fibrillation, rate 112;Completed
+133;248;Lipid Panel;05/10/2024 01:11;65;Mildly abnormal;Completed
+134;250;BLOOD CULTURE;25/12/2024 20:10;70;No growth at 48 hours;Completed
+135;251;Lactate Level;25/12/2024 07:39;67;Abnormal - see comment;Completed
+136;252;Complete Blood Count;02/08/2024 20:21;68;Abnormal - see comment;Completed
+137;254;Liver Function Panel;14/06/2025 09:54;68;Abnormal - see comment;Completed
+138;255;Electrocardiogram;22/10/2025 17:05;66;Atrial fibrillation, rate 112;Completed
+139;256;Troponin Panel;21/10/2025 13:09;65;Troponin I < 0.01 ng/mL (normal);Completed
+140;260;Complete Blood Count;05/08/2025 20:24;66;Mildly abnormal;Completed
+141;261;Tumor Markers;06/08/2025 10:18;70;Within normal limits;Completed
+142;262;Complete Blood Count;01/01/2026 07:56;70;Mildly abnormal;Completed
+143;265;Complete Blood Count;06/05/2025 02:57;70;Mildly abnormal;Completed
+144;268;Electroencephalogram;03/12/2024 17:18;70;Mildly abnormal;Completed
+145;269;Coagulation Panel;06/12/2024 02:48;65;Within normal limits;Completed
+146;271;Electrocardiogram;05/05/2025 06:16;69;ST depression V4-V6;Completed
+147;276;Electroencephalogram;12/05/2025 20:04;64;Mildly abnormal;Completed
+148;278;Blood Culture;03/10/2025 13:33;65;Gram-negative rods isolated;Completed
+149;280;Lactate Level;01/05/2024 23:22;70;Mildly abnormal;Completed
+150;285;Electroencephalogram;25/02/2024 07:24;64;Within normal limits;Completed
+151;286;Complete Blood Count;23/02/2024 14:52;69;Within normal limits;Completed
+152;289;Coagulation Panel;17/10/2024 20:02;68;Mildly abnormal;Completed
+153;290;Toxicology Screen;24/01/2025 20:27;68;Mildly abnormal;Completed
+154;292;Complete Blood Count;25/10/2026 17:39;64;Within normal limits;Completed
+155;295;Liver Function Panel;25/11/2025 19:02;66;Abnormal - see comment;Completed
+156;296;Complete Blood Count;24/11/2025 16:48;68;Abnormal - see comment;Completed
+157;298;Complete Blood Count;05/09/2024 07:09;69;Abnormal - see comment;Completed
+158;299;Liver Function Panel;05/09/2024 20:16;70;Abnormal - see comment;Completed
+159;301;Complete Blood Count;02/12/2024 16:46;64;Abnormal - see comment;Completed
+160;303;Complete Blood Count;12/02/2025 07:57;69;Mildly abnormal;Completed
+161;304;Liver Function Panel;10/02/2025 10:39;64;Mildly abnormal;Completed
+162;305;Electroencephalogram;03/12/2024 16:39;64;Mildly abnormal;Completed
+163;306;Complete Blood Count;29/04/2025 05:47;67;Abnormal - see comment;Completed
+164;307;Liver Function Panel;27/04/2025 12:08;68;Within normal limits;Completed
+165;309;Basic Metabolic Panel;07/02/2024 09:19;64;Abnormal - see comment;Completed
+166;310;Urinalysis;08/02/2024 06:53;66;Unremarkable;Completed
+167;312;Lipase;01/02/2024 22:16;65;Lipase 45 U/L (normal);Completed
+168;314;Complete Blood Count;04/05/2024 08:33;64;Abnormal - see comment;Completed
+169;317;Complete Blood Count;18/12/2024 04:45;69;Mildly abnormal;Completed
+170;318;Lipid Panel;13/05/2025 05:51;66;Within normal limits;Completed
+171;319;Troponin Panel;11/05/2025 03:06;64;Troponin I 2.4 ng/mL (elevated);Completed
+172;322;Electroencephalogram;04/12/2025 03:33;65;Within normal limits;Completed
+173;323;Lactate Level;14/07/2024 21:05;67;Abnormal - see comment;Completed
+174;327;Liver Function Panel;21/02/2025 14:08;66;Mildly abnormal;Completed
+175;328;Liver Function Panel;13/04/2025 15:46;68;Abnormal - see comment;Completed
+176;330;Toxicology Screen;10/07/2025 05:53;67;Abnormal - see comment;Completed
+177;331;Complete Blood Count;27/07/2025 03:53;65;Within normal limits;Completed
+178;332;Blood Glucose;28/01/2025 14:41;67;Within normal limits;Completed
+179;333;Basic Metabolic Panel;27/01/2025 15:30;68;Abnormal - see comment;Completed
+180;335;Complete Blood Count;27/08/2025 09:18;65;Mildly abnormal;Completed
+181;337;Troponin Panel;04/06/2024 02:03;65;Troponin I < 0.01 ng/mL (normal);Completed
+182;339;Liver Function Panel;07/12/2024 23:23;68;Mildly abnormal;Completed
+183;340;Complete Blood Count;08/12/2024 18:32;67;Abnormal - see comment;Completed
+184;342;Electroencephalogram;27/07/2025 15:24;65;Mildly abnormal;Completed
+185;343;Complete Blood Count;25/07/2025 03:02;66;Abnormal - see comment;Completed
+186;346;Complete Blood Count;30/09/2025 15:06;64;Mildly abnormal;Completed
+187;348;Complete Blood Count;01/11/2025 01:27;69;Mildly abnormal;Completed
+188;350;Complete Blood Count;27/04/2024 02:14;65;Mildly abnormal;Completed
+189;352;Lipid Panel;25/08/2025 14:06;67;Within normal limits;Completed
+190;357;Lactate Level;22/06/2024 12:04;70;Within normal limits;Completed
+191;359;Basic Metabolic Panel;20/07/2024 21:48;69;Abnormal - see comment;Completed
+192;362;Lactate Level;23/09/2025 11:06;68;Abnormal - see comment;Completed
+193;363;Coagulation Panel;21/10/2026 06:41;65;Mildly abnormal;Completed
+194;365;Complete Blood Count;30/12/2024 03:50;67;Within normal limits;Completed
+195;366;Coagulation Panel;29/12/2024 10:30;64;Abnormal - see comment;Completed
+196;368;Electrocardiogram;24/01/2025 17:49;64;ST depression V4-V6;Completed
+197;369;Troponin Panel;24/01/2025 14:30;67;Troponin I < 0.01 ng/mL (normal);Completed  
+198;371;Lipid Panel;28/06/2025 15:37;66;Mildly abnormal;Completed
+199;372;electrocardiogram;30/06/2025 01:36;64;Atrial fibrillation, rate 112;Completed
+200;374;Troponin Panel;09/09/2024 05:12;64;Troponin I 2.4 ng/mL (elevated);Completed
+201;375;Lipid Panel;10/09/2024 20:57;68;Abnormal - see comment;Completed
+202;377;Lipid Panel;01/01/2025 11:03;70;Abnormal - see comment;Completed
+203;378;Electrocardiogram;31/12/2024 10:39;69;Atrial fibrillation, rate 112;Completed
+204;381;Troponin Panel;21/07/2024 10:45;70;Troponin I < 0.01 ng/mL (normal);Completed
+205;382;Electrocardiogram;22/07/2024 09:13;67;Sinus tachycardia;Completed
+206;383;Electroencephalogram;07/10/2024 21:11;67;Abnormal - see comment;Completed
+207;385;Coagulation Panel;15/11/2025 02:40;70;Within normal limits;Completed
+208;386;Electroencephalogram;15/11/2025 09:29;66;Mildly abnormal;Completed
+209;389;Electrocardiogram;18/01/2024 07:17;70;Sinus tachycardia;Completed
+210;392;Liver Function Panel;17/02/2026 22:21;65;Within normal limits;completed
+211;397;Sputum Culture;13/03/2025 02:11;67;Within normal limits;Completed
+212;400;Complete Blood Count;03/11/2024 10:58;64;Within normal limits;Completed
+213;401;Sputum Culture;23/12/2024 23:54;67;Abnormal - see comment;Completed
+214;403;Complete Blood Count;21/02/2025 22:44;66;Abnormal - see comment;Completed
+215;406;Electrocardiogram;27/02/2024 21:47;64;ST depression V4-V6;Completed
+216;408;Complete Blood Count;07/05/2024 00:46;69;Mildly abnormal;COMPLETED
+217;410;Complete Blood Count;01/08/2024 13:14;70;Within normal limits;Completed
+218;411;Complete Blood Count;04/10/2024 21:40;69;Within normal limits;Completed
+219;412;Electroencephalogram;05/10/2024 03:09;69;Abnormal - see comment;Completed
+220;415;Lactate Level;23/02/2025 20:20;70;Abnormal - see comment;Completed
+221;417;Troponin Panel;24/04/2025 11:49;68;Troponin I 2.4 ng/mL (elevated);Completed
+222;418;Lipid Panel;26/04/2025 09:46;66;Mildly abnormal;Completed
+223;421;Complete Blood Count;12/07/2025 17:54;66;Within normal limits;Completed
+224;423;Complete Blood Count;25/11/2025 14:53;65;Mildly abnormal;Completed
+225;424;Liver Function Panel;24/11/2025 19:42;66;Within normal limits;Completed
+226;425;Complete Blood Count;16/01/2024 01:23;67;Mildly abnormal;Completed
+227;426;Urinalysis;17/01/2024 21:48;67;Nitrite positive, leukocytes +++;Completed
+228;427;Liver Function Panel;01/05/2024 07:38;70;Mildly abnormal;Completed
+229;428;Lipid Panel;16/04/2024 21:37;68;Mildly abnormal;Completed
+230;430;Complete Blood Count;09/07/2024 04:03;69;Abnormal - see comment;Completed
+231;431;Electroencephalogram;10/07/2024 06:23;68;Abnormal - see comment;Completed
+232;433;Complete Blood Count;09/11/2024 23:41;69;Abnormal - see comment;Completed
+233;435;Liver Function Panel;05/06/2024 17:44;69;Mildly abnormal;Completed
+234;436;Lipase;08/06/2024 00:14;65;Lipase 1240 U/L (elevated);Completed
+235;438;Coagulation Panel;28/09/2024 06:31;67;Mildly abnormal;Completed
+236;441;Coagulation Panel;27/12/2024 09:18;64;Mildly abnormal;Completed
+237;442;Complete Blood Count;27/12/2024 01:04;70;Abnormal - see comment;Completed
+238;444;Electrocardiogram;24/09/2024 07:47;68;Atrial fibrillation, rate 112;Completed
+239;447;Lipase;12/01/2025 00:27;64;Lipase 45 U/L (normal);Completed
+240;448;Liver Function Panel;11/01/2025 07:50;67;Within normal limits;Completed
+241;449;Lipase;20/05/2025 05:17;69;Lipase 1240 U/L (elevated);Completed
+242;452;Lipase;13/10/2024 08:46;69;Lipase 1240 U/L (elevated);Completed
+243;455;Complete Blood Count;18/08/2024 22:56;68;Abnormal - see comment;Completed
+244;456;Troponin Panel;03/10/2024 05:50;64;Troponin I 2.4 ng/mL (elevated);Completed
+245;459;Lactate Level;17/06/2025 22:32;68;Mildly abnormal;Completed
+246;463; Troponin Panel;13/09/2024 19:24;67;Troponin I 2.4 ng/mL (elevated);Completed
+247;465;Coagulation Panel;27/03/2025 12:33;64;Abnormal - see comment;Completed
+248;470;Sputum Culture;09/03/2025 13:57;70;Abnormal - see comment;Completed
+249;471;Lipid Panel;14/06/2025 16:51;66;Abnormal - see comment;Completed
+250;476;Lipid Panel  ;31/08/2025 13:07;70;Abnormal - see comment;Completed
+251;477;Lipid Panel;17/03/2025 20:02;64;Mildly abnormal;Completed
+252;479;Complete Blood Count;10/07/2025 09:14;65;Abnormal - see comment;Completed
+253;480;Urinalysis;05/12/2025 18:56;65;Nitrite positive, leukocytes +++;  Completed 
+254;483;Coagulation Panel;12/11/2024 12:48;68;Mildly abnormal;Completed
+255;484;Complete Blood Count;13/11/2024 11:23;65;Abnormal - see comment;completed
+256;487;Coagulation Panel;09/12/2024 14:07;68;Mildly abnormal;  Completed 
+257;489;Liver Function Panel;31/07/2024 23:38;65;Within normal limits;Completed
+258;491;Sputum Culture;21/08/2024 09:44;65;Abnormal - see comment;Completed
+259;492;Complete  Blood  Count;25/08/2024 01:39;68;Within normal limits;Completed
+260;493;Urinalysis;11/11/2025 17:15;67;Nitrite positive, leukocytes +++;Completed
+261;496;Complete Blood Count;29/07/2024 11:10;70;Within normal limits;Completed
+262;497;Blood Glucose;28/07/2024 06:44;66;Mildly abnormal;Completed
+263;499;Troponin Panel;23/04/2024 12:06;66;Troponin I 2.4 ng/mL (elevated);Completed
+264;500;Electrocardiogram;22/04/2024 17:02;67;ST depression V4-V6;Completed
+265;501;Complete Blood Count;19/08/2024 04:16;65;Mildly abnormal;Completed
+266;505;Coagulation Panel;03/11/2025 01:16;66;Abnormal - see comment;Completed
+267;506;Complete Blood Count;01/11/2025 14:12;65;Abnormal - see comment;Completed
+268;510;Complete Blood Count;19/04/2025 08:26;64;Abnormal - see comment;Completed
+269;511;Blood Culture;20/04/2025 02:59;67;No growth at 48 hours;Completed
+270;512;Complete Blood Count;04/07/2025 10:54;67;Within normal limits;Completed
+271;514;Lactate Level;14/11/2025 21:52;65;Within normal limits;Completed
+272;522;Complete Blood Count;19/08/2024 09:24;68;Within normal limits;Completed
+273;526;Toxicology Screen;03/02/2025 03:49;70;Abnormal - see comment;Completed
+274;527;Liver Function Panel;03/02/2025 21:21;69;Within normal limits;Completed
+275;528;Troponin Panel;07/04/2024 13:08;66;Troponin I < 0.01 ng/mL (normal);Completed
+276;531;Complete Blood Count;10/07/2025 18:00;64;Within normal limits;Completed
+277;533;Electroencephalogram;08/09/2024 09:55;68;Within normal limits;Completed
+278;536;Liver Function Panel;18/10/2026 09:57;67;Abnormal - see comment;Completed
+279;537;Electrocardiogram;31/08/2025 04:56;65;Sinus tachycardia;Completed
+280;538;Lipid Panel;29/08/2025 12:25;66;Within normal limits;Completed
+281;540;Complete Blood Count;06/01/2026 18:47;66;Abnormal - see comment;Completed
+282;541;Toxicology Screen;24/11/2024 02:04;64;Mildly abnormal;Completed
+283;544;Toxicology Screen;05/02/2025 03:23;64;Within normal limits;Completed
+284;546;Complete Blood Count;28/03/2025 04:42;65;Mildly abnormal;Completed
+285;547;Coagulation Panel;30/03/2025 05:14;69;Mildly abnormal;Completed
+286;549;Urinalysis;03/03/2025 15:42;66;Unremarkable;Completed
+287;550;Tumor Markers;23/10/2026 23:09;64;Within normal limits;Completed
+288;552;Lactate Level;22/10/2024 11:47;69;Within normal limits;Completed
+289;554;Liver Function Panel;06/02/2024 00:09;65;Mildly abnormal;Completed
+290;555;Complete Blood Count;04/06/2024 00:33;64;Mildly abnormal;Completed
+291;556;Urinalysis;22/02/2025 08:36;69;Unremarkable;Completed
+292;558;Complete Blood Count;02/06/2025 13:58;69;Within normal limits;Completed
+293;561;Complete Blood Count;07/02/2026 18:45;66;Mildly abnormal;Completed
+294;566;Complete Blood Count;19/01/2026 20:52;66;Within normal limits;Completed
+295;567;Liver Function Panel;19/01/2026 02:50;65;Within normal limits;Completed
+296;568;Troponin Panel;23/01/2025 03:24;66;Troponin I < 0.01 ng/mL (normal);Completed
+297;569;Complete Blood Count;25/06/2025 22:56;65;Mildly abnormal;Completed
+298;571;Toxicology Screen;04/11/2024 09:31;69;Within normal limits;Completed
+299;572;Lipase;01/03/2025 12:36;69;Lipase 45 U/L (normal);Completed
+300;573;Troponin Panel;24/06/2025 11:39;68;Troponin I < 0.01 ng/mL (normal);Completed
+301;576;  Complete Blood Count ;11/09/2025 16:38;64;Abnormal - see comment;Completed
+302;578;Complete Blood Count;28/04/2024 17:54;67;Mildly abnormal;Completed
+303;582;Complete Blood Count;24/08/2024 15:03;69;Mildly abnormal;Completed
+304;584;Toxicology Screen;21/01/2025 22:17;69;Within normal limits;Completed
+305;585;Liver Function Panel;22/01/2025 04:23;67;Mildly abnormal;Completed
+306;588;Complete Blood Count;26/11/2025 18:30;69;Within normal limits;Completed
+307;591;Electrocardiogram;08/11/2024 10:53;69;Atrial fibrillation, rate 112;Completed
+308;592;Electrocardiogram;28/01/2026 08:14;64;ST depression V4-V6;Completed
+309;594;Lipase;19/11/2024 04:17;66;Lipase 1240 U/L (elevated);Completed
+310;597;Complete Blood Count;17/01/2025 22:28;68;Mildly abnormal;Completed
+311;598;Electroencephalogram;18/01/2025 09:56;67;Mildly abnormal;Completed
+312;599;Liver Function Panel;15/08/2024 23:18;64;Within normal limits;Completed
+313;600;Blood Glucose;16/01/2025 15:14;69;Abnormal - see comment;Completed
+314;602;Complete Blood Count;21/11/2024 19:11;68;Within normal limits;Completed
+315;603;Liver Function Panel;21/11/2024 21:07;69;Within normal limits;Completed
+316;605;Troponin Panel;19/12/2024 11:21;66;Troponin I 2.4 ng/mL (elevated);Completed
+317;606;Lipid Panel;19/12/2024 19:50;64;Within normal limits;Completed
+318;609;Tumor Markers;29/12/2024 01:49;68;Within normal limits;Completed
+319;610;Coagulation Panel;19/05/2025 01:10;64;Abnormal - see comment;Completed
+320;613;Complete Blood Count;16/07/2025 18:37;69;Mildly abnormal;Completed
+321;614;Coagulation Panel;21/11/2025 16:51;64;Abnormal - see comment;Completed
+322;615;Electroencephalogram;20/11/2025 03:41;65;Abnormal - see comment;Completed
+323;617;Lipid Panel;20/11/2024 07:27;66;Mildly abnormal;Completed
+324;619;Complete Blood Count;05/12/2024 03:54;70;Abnormal - see comment;Completed
+325;620;Lipase;05/12/2024 10:28;65;Lipase 1240 U/L (elevated);Completed
+326;621;Arterial Blood Gas;21/01/2025 03:55;69;pH 7.31, pCO2 58, pO2 62;Completed
+327;622;Arterial Blood Gas;09/07/2025 21:38;69;pH 7.42, pCO2 39, pO2 88;Completed
+328;623;Sputum Culture;10/07/2025 02:34;67;Within normal limits;Completed
+329;626;Urinalysis;15/08/2025 04:22;66;Nitrite positive, leukocytes +++;Completed
+330;628;Tumor Markers;26/08/2025 21:46;68;Mildly abnormal;Completed  
+331;630;Complete Blood Count;08/11/2025 17:13;70;Within normal limits;Completed
+332;631;Complete Blood Count;04/05/2024 15:59;66;Abnormal - see comment;Completed
+333;633;Electroencephalogram;15/08/2024 05:29;70;Abnormal - see comment;Completed
+334;636;Electrocardiogram;11/11/2024 22:01;67;ST depression V4-V6;Completed
+335;637;Troponin Panel;11/11/2024 10:54;70;Troponin I 2.4 ng/mL (elevated);Completed
+336;639;Troponin Panel;06/02/2025 00:53;67;Troponin I 2.4 ng/mL (elevated);Completed
+337;641;Complete Blood Count;07/07/2025 09:07;64;Within normal limits;Completed
+338;642;Complete Blood Count;15/03/2025 19:41;70;Abnormal - see comment;Completed
+339;644;Urinalysis;13/08/2025 03:35;66;Nitrite positive, leukocytes +++;Completed
+340;646;Blood Glucose;16/11/2025 15:24;67;Within normal limits;Completed
+341;648;SPUTUM CULTURE;04/01/2025 08:40;69;Mildly abnormal;Completed
+342;649;Coagulation Panel;21/05/2025 03:39;70;Mildly abnormal;Completed
+343;650;Troponin Panel;07/09/2025 05:34;64;Troponin I 2.4 ng/mL (elevated);Completed
+344;651;Electrocardiogram;06/09/2025 17:10;65;Atrial fibrillation, rate 112;Completed
+345;654;Complete Blood Count;23/11/2024 19:13;64;Abnormal - see comment;Completed
+346;655;Liver Function Panel;07/03/2025 01:46;69;Abnormal - see comment;Completed
+347;657;Liver Function Panel;20/07/2025 14:31;64;Abnormal - see comment;Completed
+348;658;Complete Blood Count;20/07/2025 06:38;70;Abnormal - see comment;Completed
+349;660;Liver Function Panel;19/05/2024 15:38;70;Abnormal - see comment;Completed
+350;662;Complete Blood Count;04/10/2024 15:58;69;Within normal limits;Completed
+351;663;Toxicology Screen;17/10/2024 12:10;69;Mildly abnormal;Completed
+352;664;Lipase;03/12/2024 22:57;65;Lipase 45 U/L (normal);Completed
+353;666;Urinalysis;16/12/2024 02:41;70;Unremarkable;Completed
+354;667;Lactate Level;15/12/2024 16:37;69;Abnormal - see comment;Completed
+355;670;Liver Function Panel;19/08/2025 02:00;64;Within normal limits;Completed
+356;671;Electrocardiogram;19/01/2026 04:56;66;Atrial fibrillation, rate 112;Completed
+357;673;Complete Blood Count;28/11/2025 13:49;67;Abnormal - see comment;Completed
+358;675;Troponin Panel;07/04/2024 20:24;67;Troponin I < 0.01 ng/mL (normal);Completed
+359;676;Lipid Panel;08/04/2024 13:55;70;Abnormal - see comment;Completed
+360;677;Troponin Panel;26/04/2024 10:18;69;Troponin I 2.4 ng/mL (elevated);Completed
+361;678;Electrocardiogram;27/04/2024 11:20;69;Atrial fibrillation, rate 112;Completed
+362;679;Liver Function Panel;17/09/2024 13:33;66;Abnormal - see comment;Completed
+363;680;Sputum Culture;09/02/2024 21:52;64;Mildly abnormal;Completed
+364;682;Complete Blood Count;18/04/2025 17:32;65;Within normal limits;completed
+365;683;Liver Function Panel;17/04/2025 23:38;65;Mildly abnormal;Completed
+366;685;Urinalysis;26/02/2025 04:37;67;Nitrite positive, leukocytes +++;Completed
+367;686;Lactate Level;24/02/2025 18:33;69;Within normal limits;Completed
+368;689;Lipid Panel;01/02/2025 14:13;69;Abnormal - see comment;Completed
+369;691;Arterial Blood Gas;01/09/2024 01:53;68;pH 7.42, pCO2 39, pO2 88;Completed
+370;692;Sputum Culture;01/09/2024 03:14;70;Abnormal - see comment;Completed
+371;693;Lipid Panel;17/01/2025 14:17;69;Mildly abnormal;Completed
+372;695;Blood Culture;05/10/2024 14:03;70;No growth at 48 hours;Completed
+373;696;Complete Blood Count;12/03/2025 08:10;68;Abnormal - see comment;Completed
+374;697;Coagulation Panel  ;12/03/2025 21:34;66;Abnormal - see comment;Completed
+375;700;Arterial Blood Gas;10/11/2024 14:34;70;pH 7.31, pCO2 58, pO2 62;Completed
+376;703;Blood Glucose;14/06/2024 12:11;68;Mildly abnormal;Completed
+377;706;Liver Function Panel;17/01/2025 16:10;64;Within normal limits;Completed
+378;708;Complete Blood Count;11/01/2024 05:50;65;Abnormal - see comment;Completed
+379;710;Sputum Culture;04/02/2024 06:05;65;Abnormal - see comment;Completed
+380;712;Complete Blood Count;10/07/2024 04:39;70;Abnormal - see comment;Completed
+381;713;Basic Metabolic Panel;29/04/2024 03:34;66;Mildly abnormal;Completed
+382;714;Complete Blood Count;31/08/2024 09:08;64;Abnormal - see comment;COMPLETED
+383;715;Liver Function Panel;03/12/2024 01:13;66;Within normal limits;Completed
+384;716;Lipase;03/12/2024 03:39;66;Lipase 1240 U/L (elevated);Completed
+385;718;Urinalysis;05/05/2025 17:49;65;Nitrite positive, leukocytes +++;Completed
+386;721;Blood Culture;08/03/2024 12:02;66;No growth at 48 hours;Completed
+387;722;Lactate Level;09/03/2024 22:07;64;Abnormal - see comment;Completed
+388;725;Electroencephalogram;14/08/2024 12:05;69;Within normal limits;Completed
+389;726;Coagulation Panel;12/08/2024 14:03;69;Within normal limits;Completed
+390;728;Lipid Panel;26/04/2025 19:55;69;Mildly abnormal;Completed
+391;729;Lipid Panel;23/05/2024 12:12;69;Abnormal - see comment;Completed
+392;731;Complete Blood Count;24/03/2024 04:01;64;Abnormal - see comment;Completed
+393;733;Blood Culture;22/05/2024 20:05;64;No growth at 48 hours;Completed
+394;734;Urinalysis;21/05/2024 09:20;69;Unremarkable;Completed
+395;736;Complete Blood Count  ;19/11/2025 14:52;65;Mildly abnormal;Completed
+396;737;Complete Blood Count;07/11/2024 21:12;70;Within normal limits;Completed
+397;738;Blood Glucose;07/11/2024 18:11;66;Abnormal - see comment;Completed  
+398;741;Blood Culture;07/07/2025 18:13;65;Gram-negative rods isolated;Completed
+399;743;Liver Function Panel;05/08/2025 10:04;65;Within normal limits;Completed
+400;745;Electrocardiogram;07/07/2024 23:30;65;Sinus tachycardia;Completed
+401;747;Arterial Blood Gas;22/10/2024 01:07;67;pH 7.42, pCO2 39, pO2 88;Completed
+402;749;Complete Blood Count;04/03/2025 00:39;70;Abnormal - see comment;Completed
+403;750;Coagulation Panel;09/04/2025 21:45;64;Abnormal - see comment;Completed
+404;752;Complete Blood Count;09/05/2025 15:24;64;Within normal limits;Completed
+405;753;Liver Function Panel;14/09/2025 19:12;67;Abnormal - see comment;Completed
+406;755;Blood Glucose;24/04/2025 13:08;64;Within normal limits;Completed
+407;756;Complete Blood Count;21/02/2025 14:53;70;Mildly abnormal;Completed
+408;757;Liver Function Panel;29/05/2025 05:54;66;Mildly abnormal;Completed
+409;758;Lipase;28/05/2025 22:34;67;Lipase 45 U/L (normal);Completed
+410;763;Liver Function Panel;08/04/2024 22:21;67;Abnormal - see comment;Completed
+411;764;Sputum Culture;03/04/2025 03:31;70;Within normal limits;Completed
+412;767;Complete Blood Count;04/07/2025 13:00;68;Abnormal - see comment;Completed
+413;768;Blood Culture;04/07/2025 13:21;66;No growth at 48 hours;Completed
+414;771;Blood Glucose;05/09/2025 14:59;67;Abnormal - see comment;Completed
+415;772;Basic Metabolic Panel;05/09/2025 12:37;65;Mildly abnormal;Completed
+416;774;Complete Blood Count;21/03/2025 11:06;70;Mildly abnormal;Completed
+417;775;Coagulation Panel;22/03/2025 13:57;65;Abnormal - see comment;Completed
+418;777;Complete Blood Count;12/09/2025 18:29;67;Within normal limits;Completed
+419;778;  Electroencephalogram ;11/09/2025 19:20;67;Mildly abnormal;Completed
+420;780;Coagulation Panel;26/08/2024 16:11;70;Abnormal - see comment;Completed
+421;781;Complete Blood Count;24/08/2024 14:16;67;Mildly abnormal;Completed
+422;784;Complete Blood Count;27/12/2024 17:50;67;Within normal limits;Completed
+423;785;Coagulation Panel;31/01/2025 16:59;67;Mildly abnormal;Completed
+424;786;Complete Blood Count;30/01/2025 16:46;70;Mildly abnormal;Completed
+425;787;Blood Culture;09/03/2025 17:53;67;No growth at 48 hours;Completed
+426;788;Lipid Panel;27/01/2025 10:07;65;Mildly abnormal;Completed
+427;791;Basic Metabolic Panel;28/09/2024 03:46;70;Abnormal - see comment;Completed
+428;794;Sputum Culture;22/06/2025 09:01;69;Within normal limits;Completed
+429;795;Complete Blood Count;23/06/2025 01:58;65;Within normal limits;Completed
+430;798;Sputum Culture;17/05/2025 13:24;67;Abnormal - see comment;Completed
+431;799;Liver Function Panel;25/08/2025 08:00;67;Mildly abnormal;Completed
+432;802;Arterial Blood Gas;06/08/2024 06:01;66;pH 7.42, pCO2 39, pO2 88;Completed

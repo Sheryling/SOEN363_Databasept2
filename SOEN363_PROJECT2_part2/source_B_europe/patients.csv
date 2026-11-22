@@ -1,0 +1,260 @@
+patient_no;insurance_number;patient_name;birth_date;sex;address;phone_number;emergency_contact_name;emergency_contact_number;vital_status;date_of_death
+1;EU-582-689-9411;Nora Martin;18/09/1951;Female;Rue des Lilas 111, 76074 Valmont;+44 20 7946 0735;NULL;;Living;
+2;EU-617-643-7198;Alba Müller;14/07/1968;Female;Kerkstraat 107, 52326 Santa Clara de Mar;+44 20 7946 0480;;NULL;Living;
+3;EU-271-818-3140;Jan Andersson;09/02/1997;Male;;+44 20 7946 0467;Oliver Andersson;+44 20 7946 0025;Living;
+4;EU-564-437-6511;Léa Bianchi;16/01/1997;Female;Calle del Olmo 57, 57700 Rosenau;+44 20 7946 0864;Anna Bianchi;+44 20 7946 0389;Living;NULL
+5;EU-680-976-1076;Eva Martin;13/12/1995;;Lindenweg 101, 11171 Santa Clara de Mar;+44 20 7946 0524;Hugo Martin;+44 20 7946 0881;Living;
+6;EU-777-116-3716;Louis Novak;03/12/1987;Male;Rosenstraße 56, 19823 Valmont;+44 20 7946 0576;Felix Novak;+44 20 7946 0250;Living;
+7;EU-927-250-7604;Jan Fernández;02/02/1989;Male;Rosenstraße 11, 82873 Oosterwijk;+44 20 7946 0179;Nils Fernández;+44 20 7946 0209;Living;
+8;EU-806-893-8060;Elena Fernández;10/08/1943;Female;Via Verdi 38, 75388 Rosenau;+44 20 7946 0649;NULL;NULL;Living;
+9;INTL-39941525;Léa Rossi;26/12/1958;Female;Lindenweg 40, 35506 Oosterwijk;+44 20 7946 0840;Freya Rossi;+44 20 7946 0489;Living;
+10;INTL-95670964;Leon Schmidt;08/10/1980;Male;Kerkstraat 66, 90311 Oosterwijk;NULL;Leon Schmidt;+44 20 7946 0203;Living;
+11;EU-383-801-2032;Clara Jansen;03/11/1960;Female;Kerkstraat 45, 50286 Valmont;+44 20 7946 0998;;NULL;Living;NULL
+12;EU-271-720-7695;Marco Fernández;02/10/1950;Male;Via Verdi 4, 83688 Oosterwijk;+44 20 7946 0063;Tomas Fernández;+44 20 7946 0914;Deceased;28/06/2025 04:10
+13;EU-181-826-9254;Nils Bernard;21/07/1987;Male;Kerkstraat 28, 60175 Rosenau;;Sofia Bernard;+44 20 7946 0595;Living;NULL
+14;EU-339-440-2040;Elena Müller;15/08/1957;Female;Rosenstraße 48, 46292 Valmont;+44 20 7946 0024;Hugo Müller;+44 20 7946 0140;Living;
+15;INTL-18181574;Felix García;14/04/1943;Male;Rosenstraße 38, 18508 Rosenau;+44 20 7946 0160;Louis García;+44 20 7946 0367;Living;
+16;INTL-79510217;Oliver Romano;10/10/1958;Male;Calle del Olmo 46, 96575 Valmont;+44 20 7946 0297;Lena Romano;+44 20 7946 0069;Living;
+17;EU-180-951-2135;Erik Müller;26/02/1983;Male;NULL;+44 20 7946 0683;Mateo Müller;+44 20 7946 0714;Living;NULL
+18;EU-916-836-2138;Leon López;13/04/1999;  Other ;Rue des Lilas 78, 13477 Rosenau;+44 20 7946 0293;Inès López;+44 20 7946 0130;Living;
+19;EU-357-570-1587;Nora Bianchi;24/08/1960;Female;Rue des Lilas 102, 59717 Oosterwijk;+44 20 7946 0332;Marie Bianchi;+44 20 7946 0803;Deceased;14/05/2024 15:04
+20;EU-497-444-4979;  Erik  García;21/11/1942;Male;Lindenweg 119, 84754 Santa Clara de Mar;+44 20 7946 0678;Clara García;+44 20 7946 0655;Living;
+21;INTL-56203524;Felix Schmidt;22/06/1970;Male;Calle del Olmo 65, 54207 Valmont;+44 20 7946 0939;Freya Schmidt;+44 20 7946 0653;Living;
+22;INTL-26922524;Felix Horvat;18/07/1952;Male;Calle del Olmo 18, 90613 Oosterwijk;+44 20 7946 0878;Tomas Horvat;+44 20 7946 0934;Living;NULL
+23;EU-926-459-8386;Chiara Fischer;06/05/1948;Female;Lindenweg 98, 27676 Rosenau;+44 20 7946 0164;Emma Fischer;+44 20 7946 0529;Deceased;30/08/2025 14:51
+24;EU-498-711-6377;Pablo Wagner;22/12/1982;Male;Lindenweg 107, 55386 Oosterwijk;+44 20 7946 0594;Pablo Wagner;+44 20 7946 0668;Living;NULL
+25;EU-989-756-8543;Nils Müller;19/05/1962;Male;Kerkstraat 42, 86452 Bellacqua;+44 20 7946 0137;Léa Müller;+44 20 7946 0287;Living;NULL
+26;EU-181-406-5282;Sofia Rossi;15/12/2013;Female;Rosenstraße 111, 69076 Rosenau;+44 20 7946 0757;Emma Rossi;+44 20 7946 0200;Living;
+27;INTL-45132476;Elena Nielsen;11/01/1961;Female;Rue des Lilas 17, 98015 Rosenau;+44 20 7946 0778;Louis Nielsen;+44 20 7946 0787;Living;NULL
+28;INTL-65596694;Eva Romano  ;28/01/1941;Female;Rosenstraße 71, 47476 Rosenau;+44 20 7946 0302;NULL;;Living;NULL
+29;EU-623-505-5300;Pablo Rossi;12/02/2002;Male;Kerkstraat 51, 32033 Santa Clara de Mar;;Oliver Rossi;+44 20 7946 0247;Living;
+30;EU-287-991-5069;Oliver Nielsen;27/04/1940;Male;Rue des Lilas 93, 57343 Bellacqua;+44 20 7946 0400;Tomas Nielsen;+44 20 7946 0821;Living;NULL
+31;EU-825-597-6806;Louis Fernández;16/06/1959;Male;Rue des Lilas 74, 11966 Oosterwijk;+44 20 7946 0137;Pablo Fernández;+44 20 7946 0248;Living;
+32;EU-687-115-9661;Oliver López;12/02/1970;Male;Rosenstraße 54, 31296 Santa Clara de Mar;+44 20 7946 0944;Pablo López;+44 20 7946 0478;Living;NULL
+33;EU-310-339-9678;Hugo Weber;11/06/1938;Male;Kerkstraat 93, 67465 Santa Clara de Mar;+44 20 7946 0168;Chiara Weber;+44 20 7946 0819;Deceased;07/03/2026 17:21
+34;EU-310-956-6518;Tomas García;22/01/1938;Male;Kerkstraat 56, 45689 Oosterwijk;+44 20 7946 0015;Marie García;+44 20 7946 0863;Living;NULL
+35;EU-723-206-7611;Marie Bianchi;12/11/1952;Female;Kerkstraat 99, 18280 Valmont;+44 20 7946 0553;Tomas Bianchi;+44 20 7946 0756;Living;NULL
+36;EU-651-584-5087;Lukas Weber;15/02/1996;Male;Calle del Olmo 28, 71235 Rosenau;+44 20 7946 0066;Tomas Weber;+44 20 7946 0573;Living;
+37;EU-310-528-2704;Pablo Ricci;04/01/1934; Male;Via Verdi 84, 35089 Valmont;+44 20 7946 0855;Alba Ricci;+44 20 7946 0961;Living;NULL
+38;EU-511-425-1503;Matteo Ricci;24/11/1933;Male;Calle del Olmo 2, 52261 Santa Clara de Mar;+44 20 7946 0114;Léa Ricci;+44 20 7946 0291;Living;NULL
+39;EU-543-566-9249;Alba García;03/01/1998;Female;Via Verdi 27, 88106 Santa Clara de Mar;+44 20 7946 0778;Erik García;+44 20 7946 0742;Living;
+40;EU-741-557-8335;Clara Weber;06/03/1988;Female;Via Verdi 15, 27836 Oosterwijk;+44 20 7946 0735;Inès Weber;+44 20 7946 0815;Living;
+41;INTL-32566580;Evelyn Thomas;12/07/1959;Female;NULL;+44 20 7946 0574;Mateo Dubois;+44 20 7946 0789;Living;NULL
+42;EU-526-507-9893;Anna Martin;13/12/2002;Female;Rosenstraße 35, 56483 Rosenau;+44 20 7946 0510;Pablo Martin;+44 20 7946 0522;Living;
+43;EU-568-314-3200;Pablo Kowalski;05/07/1951;Male;Via Verdi 11, 31701 Rosenau;+44 20 7946 0950;NULL;NULL;Living;NULL
+44;EU-632-998-3930;Pablo Novak;09/07/1984;Male;Lindenweg 63, 72247 Rosenau;+44 20 7946 0409;Emma Novak;+44 20 7946 0290;Living;
+45;EU-773-185-2811;Lena Weber;;NULL;Kerkstraat 106, 91807 Oosterwijk;+44 20 7946 0285;Matteo Weber;+44 20 7946 0491;Living;NULL
+46;EU-756-629-3848;Louis Weber;14/07/1989;Male;;+44 20 7946 0415;Marco Weber;+44 20 7946 0975;Living;NULL
+47;INTL-32952938;Harper Smith;11/05/1967;Female;Kerkstraat 3, 20452 Rosenau;+44 20 7946 0861;Léa Schmidt;+44 20 7946 0910;Deceased;24/03/2026 18:42
+48;EU-265-361-8642;Alba Ricci;19/08/1939;Female;Rosenstraße 34, 79652 Valmont;+44 20 7946 0396;Elena Ricci;+44 20 7946 0705;Living;
+49;EU-571-535-2771;Erik Jansen;04/09/1954;Male;Kerkstraat 17, 72028 Valmont;+44 20 7946 0617;Clara Jansen;+44 20 7946 0309;Living;NULL
+50;EU-333-978-2259;Julia Andersson;20/04/1965;Female;Via Verdi 98, 37540 Bellacqua;NULL;Erik Andersson;+44 20 7946 0318;Living;
+51;EU-479-812-5145;Marie Rossi;11/04/1976;Female;Rue des Lilas 114, 84866 Rosenau;+44 20 7946 0360;Oliver Rossi;+44 20 7946 0535;Living;NULL
+52;EU-776-349-9719;Elena Fischer;14/01/1943;Female;Rosenstraße 91, 61378 Rosenau;+44 20 7946 0428;Pierre Fischer;+44 20 7946 0134;Living;
+53;INTL-31761109;Isabella Taylor;20/02/1939;Female;NULL;+44 20 7946 0454;Lukas Romano;+44 20 7946 0326;Living;
+54;EU-938-630-4680;Pablo Fischer;24/10/1972;Male;Kerkstraat 14, 94032 Oosterwijk;+44 20 7946 0702;Sofia Fischer;+44 20 7946 0320;Living;
+55;EU-170-435-9854;Elena Bianchi;15/02/1977;Female;Rosenstraße 49, 36298 Rosenau;;NULL;;Living;NULL
+56;NULL;Mateo López;14/04/1998;Male;Lindenweg 17, 43153 Oosterwijk;+44 20 7946 0470;Lena López;+44 20 7946 0288;Living;NULL
+57;EU-778-143-2912;Lena Bernard;20/09/1998;Female;Via Verdi 110, 45904 Santa Clara de Mar;+44 20 7946 0614;Clara Bernard;+44 20 7946 0544;Living;
+58;EU-215-319-4698;Hugo Bianchi;05/12/1933;Male;Kerkstraat 65, 94716 Bellacqua;+44 20 7946 0204;Lukas Bianchi;+44 20 7946 0438;Living;
+59;INTL-66945133;Ava Anderson;18/01/1970;Female;Via Verdi 31, 69129 Rosenau;+44 20 7946 0789;Julia López;+44 20 7946 0179;Deceased;11/04/2026 07:12
+60;EU-848-254-4935;Julia Fernández;19/03/1962;Female;Kerkstraat 113, 58683 Rosenau;+44 20 7946 0173;Leon Fernández;+44 20 7946 0909;Living;
+61;EU-457-788-3181;Anna Rossi;27/01/1934;Female;Rue des Lilas 36, 51205 Rosenau;+44 20 7946 0853;Oliver Rossi;+44 20 7946 0277;Living;NULL
+62;EU-793-881-9457;Emma Dubois;13/01/1947;Female;Via Verdi 104, 44043 Bellacqua;+44 20 7946 0491;Louis Dubois;+44 20 7946 0598;Living;
+63;EU-407-201-4619;Clara Fischer;05/07/2003;Female;Lindenweg 49, 14283 Santa Clara de Mar;+44 20 7946 0096;Oliver Fischer;+44 20 7946 0639;Living;NULL
+64;EU-983-216-3725;Marie Silva;25/11/1954;Female;Via Verdi 69, 51809 Bellacqua;+44 20 7946 0230;Pierre Silva;+44 20 7946 0703;Living;
+65;EU-960-769-4869;Nils Petit;09/11/1994;Male;Rue des Lilas 55, 80458 Rosenau;+44 20 7946 0213;Marie Petit;+44 20 7946 0760;Deceased;20/12/2024 13:59
+66;EU-808-697-2994;Nora Ricci;01/10/1990;Female;;+44 20 7946 0753;Pablo Ricci;+44 20 7946 0499;Living;
+67;EU-222-678-8149;Hugo Horvat  ;04/11/1940;Male;NULL;+44 20 7946 0019;Oliver Horvat;+44 20 7946 0717;Living;
+68;EU-720-824-9053;Marie Novak;10/06/1983;Female;Rue des Lilas 117, 71694 Oosterwijk;+44 20 7946 0202;Pablo Novak;+44 20 7946 0957;Living;NULL
+69;EU-329-405-1605;Marie Horvat;01/02/1962;Female;Calle del Olmo 64, 81409 Santa Clara de Mar;+44 20 7946 0171;Emma Horvat;+44 20 7946 0375;Living;
+70;EU-774-831-9339;Lena Müller;07/09/1963;Female  ;Lindenweg 29, 96421 Bellacqua;+44 20 7946 0045;Tomas Müller;+44 20 7946 0001;Living;NULL
+71;EU-481-166-3183;Nils Martin;14/06/1933;Male;Rosenstraße 118, 96279 Rosenau;+44 20 7946 0318;Clara Martin;+44 20 7946 0226;Living;
+72;EU-564-613-7704;Marie Dubois;27/11/1946;Female;Rue des Lilas 68, 66945 Santa Clara de Mar;+44 20 7946 0381;Sofia Dubois;+44 20 7946 0693;Living;NULL
+73;EU-728-306-7914;Erik Novak;16/11/1994;Male;Lindenweg 6, 33692 Santa Clara de Mar;+44 20 7946 0441;Léa Novak;+44 20 7946 0433;Living;NULL
+74;EU-857-678-3817;Tomas Schmidt;18/09/1995;Male;Via Verdi 14, 28550 Rosenau;+44 20 7946 0188;Marco Schmidt;+44 20 7946 0394;Deceased;31/07/2024 10:18
+75;EU-473-356-8530;Pierre Fernández;24/04/1939;Male;NULL;+44 20 7946 0198;Erik Fernández;+44 20 7946 0958;Living;
+76;EU-484-704-2878;Matteo Bernard;01/07/1998;Male;Rue des Lilas 39, 77840 Bellacqua;+44 20 7946 0854;NULL;;Deceased;06/09/2024 13:50
+77;EU-317-292-6199;Chiara Weber;25/06/1963;Female;Rue des Lilas 109, 74632 Valmont;+44 20 7946 0120;Pierre Weber;+44 20 7946 0545;Living;NULL
+78;EU-861-455-1304;Matteo Romano;27/06/2004;Male;Via Verdi 44, 38432 Oosterwijk;+44 20 7946 0399;Chiara Romano;+44 20 7946 0246;Living;NULL
+79;EU-563-650-4897;Clara Lefebvre;27/08/1939;Female;Rosenstraße 102, 87455 Rosenau;+44 20 7946 0002;Jan Lefebvre;+44 20 7946 0902;Living;
+80;EU-134-249-1276;Inès Fernández;15/10/1953;Female;Calle del Olmo 106, 46592 Rosenau;+44 20 7946 0898;Alba Fernández;+44 20 7946 0536;Living;NULL
+81;EU-365-912-8546;Pierre Rossi;08/04/2001;Male;Rosenstraße 55, 55029 Rosenau;+44 20 7946 0727;Clara Rossi;+44 20 7946 0365;Living;NULL
+82;EU-430-186-3934;Lena Rossi;24/08/1978;Female;Lindenweg 96, 98186 Rosenau;+44 20 7946 0212;Freya Rossi;+44 20 7946 0509;Living;
+83;EU-575-364-6051;Felix Novak;15/11/2025;Male;Lindenweg 7, 36118 Oosterwijk;+44 20 7946 0960;NULL;NULL;Living;NULL
+84;EU-436-837-7800;Chiara Moreau;28/08/1955;Female;NULL;+44 20 7946 0290;Nora Moreau;+44 20 7946 0059;Living;
+85;EU-498-922-4665;Elena Nielsen;09/02/1988;Female;Rosenstraße 34, 86832 Bellacqua;;Lena Nielsen;+44 20 7946 0995;Living;
+86;EU-730-890-9263;Sofia Ricci;15/04/1944;Female;Via Verdi 20, 98964 Rosenau;+44 20 7946 0315;Nils Ricci;+44 20 7946 0735;Living;NULL
+87;EU-789-163-4788;Inès Andersson;27/06/1950;Female;Kerkstraat 23, 98083 Rosenau;+44 20 7946 0626;Tomas Andersson;+44 20 7946 0665;Living;
+88;EU-366-193-1466;Oliver Nielsen;26/08/1957;Male;Calle del Olmo 77, 77852 Bellacqua;+44 20 7946 0638;Louis  Nielsen;+44 20 7946 0092;Living;
+89;EU-636-263-9477;Eva Moreau;24/03/1966;Female;Kerkstraat 68, 91859 Oosterwijk;+44 20 7946 0722;;NULL;Living;NULL
+90;EU-495-228-3522;Inès Nielsen;15/01/1966;Female;Lindenweg 19, 59756 Santa Clara de Mar;+44 20 7946 0438;Clara Nielsen;+44 20 7946 0105;Living;
+91;EU-825-310-7006;Tomas Müller;22/04/1992;Male;Via Verdi 38, 92444 Oosterwijk;+44 20 7946 0891;Felix Müller;+44 20 7946 0844;Living;
+92;EU-892-584-5234;Lena Jansen;25/11/1997;Female;Rosenstraße 106, 34397 Oosterwijk;+44 20 7946 0274;Lena Jansen;+44 20 7946 0025;Living;
+93;EU-747-545-3933;Hugo Müller;18/01/1959;Male;Rosenstraße 85, 28556 Bellacqua;+44 20 7946 0642;Clara Müller;+44 20 7946 0157;Living;
+94;EU-324-897-8907;Louis Moreau;05/12/1984;Male;Lindenweg 1, 20186 Bellacqua;+44 20 7946 0004;Léa Moreau;+44 20 7946 0258;Living;
+95;EU-351-406-2463;Nils Nielsen;15/05/1974;Male;Lindenweg 77, 87923 Oosterwijk;+44 20 7946 0567;Chiara Nielsen;+44 20 7946 0263;Living;NULL
+96;EU-105-725-3553;Nils Moreau;25/11/1946;Male;Via Verdi 41, 44268 Rosenau;+44 20 7946 0920;Erik Moreau;+44 20 7946 0216;Living;NULL
+97;EU-790-403-4756;Leon Müller;27/12/1951;Male;Calle del Olmo 87, 31122 Santa Clara de Mar;;Mateo Müller;+44 20 7946 0593;Living;
+98;EU-829-375-2870;Louis Müller;19/02/1973;Male;Lindenweg 30, 78179 Bellacqua;;;;Living;NULL
+99;EU-561-489-9740;Emma López;14/01/1955;Female;Calle del Olmo 27, 61251 Bellacqua;+44 20 7946 0141; Sofia López;+44 20 7946 0369;Living;
+100;EU-648-800-3377;Nils Moreau;11/05/1934;Male;Kerkstraat 119, 58842 Bellacqua;+44 20 7946 0788;Clara Moreau;+44 20 7946 0384;Deceased;14/05/2025 14:00
+101;EU-322-165-2902;Louis Müller;04/12/1979;Male;Kerkstraat 96, 87851 Santa Clara de Mar;+44 20 7946 0904;Elena Müller;+44 20 7946 0070;Living;
+102;EU-250-366-6128;Felix Müller;21/09/1961;Male;Rue des Lilas 120, 47612 Oosterwijk;+44 20 7946 0796;Elena Müller;+44 20 7946 0127;Living;
+103;EU-632-822-1024;Elena Petit;10/01/1983;Female;;+44 20 7946 0375;NULL;NULL;Living;NULL
+104;EU-154-256-1386;Lukas Nielsen;25/07/1958;Male;Rue des Lilas 59, 26493 Santa Clara de Mar;+44 20 7946 0200;Freya Nielsen;+44 20 7946 0215;Living;NULL
+105;EU-283-742-2285;Freya Romano;14/04/1946;Female;Rue des Lilas 11, 26670 Santa Clara de Mar;+44 20 7946 0223;;NULL;Living;
+106;EU-304-666-1608;Inès   Dubois ;02/01/1981;Female;Kerkstraat 53, 54918 Oosterwijk;+44 20 7946 0955;Nils Dubois;+44 20 7946 0000;Living;
+107;EU-386-249-6775;Tomas Moreau;24/10/1970;Male;Lindenweg 79, 97154 Oosterwijk;+44 20 7946 0016;Léa Moreau;+44 20 7946 0255;Living;
+108;EU-499-287-1599;Felix Ricci;04/07/2002;Male;Rosenstraße 63, 74882 Oosterwijk;+44 20 7946 0810;Emma Ricci;+44 20 7946 0586;Living;
+109;EU-760-169-3161;Julia Kowalski;11/11/1954;Female;Calle del Olmo 63, 28782 Valmont;+44 20 7946 0735;Lena Kowalski;+44 20 7946 0503;Living;
+110;EU-550-136-8460;Léa Bernard;03/04/1935;Female;Calle del Olmo 55, 85950 Santa Clara de Mar;+44 20 7946 0730;Chiara Bernard;+44 20 7946 0791;Living;NULL
+92;EU-892-584-5234;Lena Jansen;25/11/1997;Female;Rosenstraße 106, 34397 Oosterwijk;+44 20 7946 0274;Lena Jansen;+44 20 7946 0025;Living;
+111;EU-331-451-3307;Pierre Lefebvre;15/12/1975;Male;Via Verdi 82, 51984 Santa Clara de Mar;+44 20 7946 0632;Oliver Lefebvre;+44 20 7946 0242;Living;
+112;EU-569-851-6248;Leon Lefebvre;18/08/1972;Male;Calle del Olmo 88, 87116 Valmont;+44 20 7946 0390;Sofia Lefebvre;+44 20 7946 0275;Living;NULL
+113;EU-382-556-1486;Pierre López;08/02/1998;  Male ;Lindenweg 87, 85505 Valmont;+44 20 7946 0623;Erik López;+44 20 7946 0773;Living;
+47;INTL-32952938;Harper Smith;11/05/1967;Female;Kerkstraat 3, 20452 Rosenau;+44 20 7946 0861;Léa Schmidt;+44 20 7946 0910;Deceased;24/03/2026 18:42
+114;EU-295-880-8286;Leon Silva;03/06/1984;Male;Kerkstraat 99, 36406 Bellacqua;+44 20 7946 0916;Nora Silva;+44 20 7946 0647;Deceased;24/09/2025 08:31
+115;EU-551-625-3751;Emma Schmidt;12/04/1987;Female;Kerkstraat 75, 78614 Bellacqua;+44 20 7946 0674;Chiara Schmidt;+44 20 7946 0194;Living;
+116;EU-786-536-9764;Elena Fernández;07/02/1976;Female;Rue des Lilas 3, 22883 Oosterwijk;+44 20 7946 0125;Sofia Fernández;+44 20 7946 0468;Living;
+117;EU-482-944-8035;Eva López;06/06/1934;Female;Rosenstraße 106, 65068 Santa Clara de Mar;+44 20 7946 0425;Emma López;+44 20 7946 0011;Living;
+118;EU-931-223-7504;erik Bernard;14/05/1950;Male;Rue des Lilas 118, 71777 Oosterwijk;+44 20 7946 0180;Chiara Bernard;+44 20 7946 0397;Living;
+119;EU-885-961-4542;Lukas Fischer;15/10/1942;Male;Lindenweg 63, 73975 Valmont;+44 20 7946 0468;Lena Fischer;+44 20 7946 0956;Living;NULL
+120;EU-214-377-8673;Tomas   Bianchi;25/09/1998;Male;Lindenweg 114, 56906 Oosterwijk;+44 20 7946 0204;Leon Bianchi;+44 20 7946 0351;Living;NULL
+121;EU-422-248-8959;Julia Weber;22/07/1971;Female;Rosenstraße 117, 16155 Bellacqua;+44 20 7946 0132;Pierre Weber;+44 20 7946 0055; Living;
+122;EU-919-276-5450;Oliver Jansen;20/05/1949;Male;Calle del Olmo 93, 87657 Oosterwijk;+44 20 7946 0890;Léa Jansen;+44 20 7946 0698;Living;NULL
+123;EU-494-432-3538;Mason Clark;12/07/1932;Female;Kerkstraat 84, 55826 Valmont;+44 20 7946 0599;Eva Fischer;+44 20 7946 0704;Living;NULL
+124;EU-694-888-1765;Tomas Martin;15/07/1993;Male;Lindenweg 51, 93640 Bellacqua;+44 20 7946 0795;Pierre Martin;+44 20 7946 0839;Living;NULL
+125;EU-691-383-5968;Hugo Ricci;19/08/1969;Male;Lindenweg 62, 10154 Santa Clara de Mar;+44 20 7946 0607;Lena Ricci;+44 20 7946 0520;Living;
+126;EU-500-439-8724;Alba Müller;04/01/1956;Female;Kerkstraat 84, 12623 Valmont;+44 20 7946 0136;Leon Müller;+44 20 7946 0016;Living;NULL
+127;EU-402-934-4407;Julia Martin;18/06/1980;Female;Lindenweg 84, 53205 Bellacqua;+44 20 7946 0792;Clara Martin;+44 20 7946 0494;Living;
+128;EU-481-967-9526;Erik Schmidt;15/08/1975;Male;Lindenweg 115, 95960 Valmont;+44 20 7946 0145;NULL;;Living;NULL
+129;EU-297-915-7205;Logan Tremblay;26/09/1960;Male;NULL;+44 20 7946 0038;NULL;;Living;
+130;EU-447-341-4439;Erik Lefebvre;24/09/1960;Male;Via Verdi 11, 33992 Bellacqua;+44 20 7946 0145;Jan Lefebvre;+44 20 7946 0131;Living;
+131;EU-822-262-7688;Clara Fischer;19/02/1992;Female;Via Verdi 104, 88458 Oosterwijk;+44 20 7946 0441;Lena Fischer;+44 20 7946 0362;Living;
+132;EU-940-196-2122;Eva Jansen;24/07/1999;Female;Lindenweg 73, 70884 Rosenau;+44 20 7946 0775;Lukas Jansen;+44 20 7946 0358;Living;NULL
+133;EU-166-447-3764;Louis Dubois;09/05/1982;Male;Calle del Olmo 6, 76345 Rosenau;+44 20 7946 0260;Oliver Dubois;+44 20 7946 0646;Living;
+134;EU-429-584-2944;Louis Schmidt;23/04/1963;Male;Lindenweg 79, 79258 Santa Clara de Mar;+44 20 7946 0219;Anna Schmidt;+44 20 7946 0375;Living;NULL
+135;EU-871-281-5742;Elena Horvat;13/08/1979;Female;Kerkstraat 30, 31660 Oosterwijk;+44 20 7946 0541;Anna Horvat;+44 20 7946 0925;Living;NULL
+136;EU-848-638-7793;Felix López;14/11/1964;Male;Rosenstraße 67, 46284 Santa Clara de Mar;+44 20 7946 0307;Lukas López;+44 20 7946 0404;Deceased;15/07/2025 21:20
+137;EU-131-928-2435;Matteo Bernard;25/10/1999;Male;Calle del Olmo 93, 41687 Bellacqua;+44 20 7946 0185;Oliver Bernard;+44 20 7946 0517;Living;NULL
+138;EU-119-812-5674;Clara Martin;19/09/1956;Female;Rosenstraße 36, 10578 Santa Clara de Mar;+44 20 7946 0327;Sofia Martin;+44 20 7946 0523;Living;NULL
+139;EU-560-100-2061;Julia Dubois;11/11/1964;Female;Kerkstraat 30, 45467 Valmont;+44 20 7946 0029;Louis Dubois;+44 20 7946 0515;Living;
+140;EU-193-444-9550;Inès Bernard;23/08/1971;Female;NULL;+44 20 7946 0629;Léa Bernard;+44 20 7946 0756;Living;
+141;EU-174-974-2627;Nora Bernard;13/05/2002;Female;Rue des Lilas 23, 34249 Bellacqua;+44 20 7946 0960;Lena Bernard;+44 20 7946 0134;Living;
+142;EU-749-999-1299;Lena Jansen;19/04/1951;Female;Calle del Olmo 76, 85937 Rosenau;+44 20 7946 0872;Leon Jansen;+44 20 7946 0479;Living;
+143;EU-327-463-8861;Oliver Rossi;08/12/1967;Male;Lindenweg 45, 94868 Valmont;+44 20 7946 0810;;NULL;Living;
+144;EU-960-392-2332;Erik Lefebvre;;Male;Via Verdi 113, 60548 Oosterwijk;+44 20 7946 0272;Lena Lefebvre;+44 20 7946 0359;Living;
+145;EU-449-348-3351;Marie Müller;10/04/1954;Female;Lindenweg 37, 63672 Oosterwijk;+44 20 7946 0044;;;Deceased;09/06/2025 00:00
+146;EU-765-208-9396;Nils Bianchi;20/12/1966;Male;Via Verdi 89, 42621 Santa Clara de Mar;+44 20 7946 0573;Lukas Bianchi;+44 20 7946 0899;Living;
+147;EU-614-153-8562;Emma Bianchi;26/05/1955;female;Rue des Lilas 49, 96008 Valmont;+44 20 7946 0909;Pierre Bianchi;+44 20 7946 0240;Living;NULL
+148;EU-935-503-8021;Inès Wagner;10/02/1984;Female;Lindenweg 61, 99081 Rosenau;+44 20 7946 0642;NULL;NULL;Living;NULL
+149;EU-994-994-6091;  Marco  Ricci;14/04/1963;Male;Rue des Lilas 77, 72375 Oosterwijk;+44 20 7946 0925;Lena Ricci;+44 20 7946 0689;Deceased;07/12/2024 01:20
+150;EU-471-263-8197;Matteo Müller;16/06/1968;Male;;+44 20 7946 0754;NULL;;Living;
+151;EU-913-571-4817;Lukas Martin;24/10/1932;Male;Rosenstraße 30, 11284 Santa Clara de Mar;+44 20 7946 0276;Nils Martin;+44 20 7946 0466;Living;
+152;EU-468-310-3810;Pablo Petit;23/10/1989;Male;NULL;+44 20 7946 0678;Emma Petit;+44 20 7946 0036;Living;
+153;EU-427-787-5269;Oliver Kowalski;08/11/2018;Male;Calle del Olmo 36, 39860 Oosterwijk;+44 20 7946 0390;Eva Kowalski;+44 20 7946 0239;Deceased;17/04/2025 20:43
+154;EU-728-721-7745;Hugo Schmidt;28/11/2002;Male;Calle del Olmo 88, 69344 Oosterwijk;+44 20 7946 0876;Erik Schmidt;+44 20 7946 0374;Deceased;20/10/2025 09:09
+155;EU-327-400-9411;Pablo Rossi;15/05/1937;Other;Kerkstraat 80, 59662 Rosenau;+44 20 7946 0425;Elena Rossi;+44 20 7946 0989;Living;
+156;EU-985-340-5621;Anna Wagner;17/03/1979;Female;Rue des Lilas 49, 12979 Valmont;+44 20 7946 0986;NULL;NULL;Living;NULL
+157;EU-659-597-8905;Alba Weber;13/12/1937;Female;Via Verdi 80, 44026 Santa Clara de Mar;+44 20 7946 0724;Lena Weber;+44 20 7946 0518;Living;
+158;EU-771-459-6385;Clara Weber;25/08/1992;Female;Rue des Lilas 94, 58339 Bellacqua;+44 20 7946 0650;Léa Weber;+44 20 7946 0079;Living;
+159;EU-198-776-6423;Marie Lefebvre;04/05/1982;Female;NULL;+44 20 7946 0256;Nora Lefebvre;+44 20 7946 0326;Deceased;05/03/2024 18:51
+160;EU-402-791-3279;Eva Horvat;05/05/1986;Female;Calle del Olmo 113, 36843 Santa Clara de Mar;+44 20 7946 0281;Anna Horvat;+44 20 7946 0351;Living;
+161;EU-103-441-8617;Emma Moreau;08/01/1993;Female;Calle del Olmo 62, 49856 Rosenau;+44 20 7946 0597;Clara Moreau;+44 20 7946 0990;Living;NULL
+162;EU-427-333-5237;Mateo Ricci;27/07/1936;Male;Via Verdi 80, 14079 Rosenau;+44 20 7946 0717;Nils Ricci;+44 20 7946 0570;Deceased;22/08/2024 09:14
+163;EU-178-598-5477;Freya Fernández;02/10/1948;Female;Rue des Lilas 34, 66903 Santa Clara de Mar;+44 20 7946 0415;;;Living;
+164;EU-242-397-1274;Felix Jansen;07/07/1987;Male;Rosenstraße 111, 85669 Valmont;+44 20 7946 0807;Louis Jansen;+44 20 7946 0653;Living;
+165;EU-928-776-5104;Lukas Bernard;27/12/2011;Male;Via Verdi 50, 14854 Oosterwijk;+44 20 7946 0781;;NULL;Living;
+166;EU-774-598-3808;Louis Horvat;14/05/1975;Male;Rosenstraße 38, 61629 Santa Clara de Mar;+44 20 7946 0016;Sofia Horvat;+44 20 7946 0800;Living;
+167;EU-256-404-8496;Oliver Romano;25/12/1969;Male;Rosenstraße 27, 96464 Bellacqua;+44 20 7946 0752;Leon Romano;+44 20 7946 0516;Living;
+168;EU-662-593-6553;Clara Novak;25/12/1985;  Female ;Kerkstraat 57, 16499 Oosterwijk;+44 20 7946 0709;Eva Novak;+44 20 7946 0903;Living;NULL
+169;EU-517-274-3517;Leon López;23/11/1971;Male;Kerkstraat 3, 79434 Bellacqua;+44 20 7946 0788;Matteo López;+44 20 7946 0352;Living;
+170;EU-919-487-4112;Felix García;20/08/1987;Male;Lindenweg 82, 83130 Valmont;;Chiara García;+44 20 7946 0423;Living;
+171;EU-751-775-1669;Elena Weber;27/07/1988;Female;Kerkstraat 58, 42003 Santa Clara de Mar;+44 20 7946 0573;NULL;NULL;Living;
+172;EU-153-169-5582;Freya García;13/08/1965;Female;Calle del Olmo 100, 20588 Valmont;+44 20 7946 0023;Matteo García;+44 20 7946 0531;Living;
+173;EU-356-269-9942;Eva Schmidt;06/11/2013;Female;Via Verdi 117, 36557 Rosenau;NULL;Eva Schmidt;+44 20 7946 0720;Living;NULL
+174;NULL;Jan Horvat;21/11/1937;Male;Kerkstraat 3, 14320 Santa Clara de Mar;+44 20 7946 0997;Erik Horvat;+44 20 7946 0586;Living;
+175;EU-274-770-5392;Matteo Wagner;18/02/1964;Male;Lindenweg 84, 41956 Bellacqua;NULL;Inès Wagner;+44 20 7946 0668;Living;NULL
+176;EU-891-905-5343;Clara Martin;09/10/1973; Female;Via Verdi 111, 26845 Rosenau;+44 20 7946 0780;Erik Martin;+44 20 7946 0896;Living;NULL
+177;EU-908-707-9795;Hugo Wagner;25/10/2018;Male;Rosenstraße 94, 75848 Valmont;+44 20 7946 0879;Eva Wagner;+44 20 7946 0727;Living;NULL
+178;EU-224-238-4605;Marco Dubois;08/01/1991;Male;Via Verdi 106, 44028 Oosterwijk;+44 20 7946 0258;;;Living;NULL
+179;EU-263-641-7108;Oliver Moreau;16/11/1945;Male;Via Verdi 10, 36746 Rosenau;+44 20 7946 0635;Lukas Moreau;+44 20 7946 0372;Living;
+180;EU-456-414-1303;Nora Weber;09/12/1934;Female;Calle del Olmo 39, 12994 Oosterwijk;+44 20 7946 0008;Hugo Weber;+44 20 7946 0268;Living;NULL
+181;EU-554-677-7118;Elena Schmidt;21/02/1939;Female;Rosenstraße 44, 47301 Valmont;+44 20 7946 0684;Louis Schmidt;+44 20 7946 0988;Living;
+182;EU-732-158-8203;Erik Silva;21/11/1947;Male;Rosenstraße 12, 60569 Oosterwijk;+44 20 7946 0547;Jan Silva;+44 20 7946 0070;Living;
+183;EU-161-873-3847;Freya Horvat;12/02/1936;Female;Via Verdi 49, 28229 Rosenau;+44 20 7946 0456;Pablo Horvat;+44 20 7946 0990;Living;NULL
+184;EU-502-313-4844;Erik Fernández;09/07/1981;Male;Rue des Lilas 33, 95905 Santa Clara de Mar;;Eva Fernández;+44 20 7946 0060;Living;
+185;EU-969-536-8459;Oliver Wagner;10/01/1941;Male;Kerkstraat 19, 29036 Oosterwijk;+44 20 7946 0964;Mateo Wagner;+44 20 7946 0820;Living;NULL
+186;EU-544-544-2779;Erik Weber;10/03/1957;Male;Rue des Lilas 99, 26429 Santa Clara de Mar;+44 20 7946 0843;NULL;NULL;Living;
+187;EU-427-579-4262;Marie Romano;26/11/1945;Female;Calle del Olmo 19, 75704 Bellacqua;+44 20 7946 0386;Alba Romano;+44 20 7946 0558;Living;
+188;EU-994-658-3789;Matteo Kowalski;28/02/1936;Male;Lindenweg 80, 51386 Rosenau;+44 20 7946 0952;NULL;;Living;
+189;EU-587-599-7264;Léa Kowalski;10/11/1998;Female;Kerkstraat 14, 24734 Valmont;+44 20 7946 0889;;NULL;Living;
+190;EU-517-561-6810;Oliver Nielsen;09/06/1964;Male;Calle del Olmo 11, 46097 Valmont;+44 20 7946 0864;NULL;;Living;NULL
+191;EU-102-774-7473;Freya Wagner;04/01/1976;Female;Rosenstraße 28, 57059 Santa Clara de Mar;+44 20 7946 0530;Matteo Wagner;+44 20 7946 0361;Living;
+192;EU-501-550-6156;Marco Horvat;03/02/1965;Male;Via Verdi 5, 68916 Rosenau;+44 20 7946 0480;Pierre Horvat;+44 20 7946 0137;Living;
+193;EU-963-675-7887;Pablo Petit;08/02/1933;Male;Kerkstraat 95, 86560 Oosterwijk;+44 20 7946 0073;Clara Petit;+44 20 7946 0413;Living  ;NULL
+194;EU-328-891-6711;Leon García;27/12/1982;Male;Calle del Olmo 74, 77064 Bellacqua;+44 20 7946 0509;Eva García;+44 20 7946 0195;Living;
+195;EU-608-578-4820;Freya Horvat;;Female;Kerkstraat 28, 46989 Santa Clara de Mar;+44 20 7946 0397;Erik Horvat;+44 20 7946 0759;Living;NULL
+196;EU-646-774-2861;Emma García;25/06/1969;Female;Via Verdi 36, 68358 Bellacqua;+44 20 7946 0231;Pablo García;+44 20 7946 0843;Deceased;20/01/2025 07:44
+197;EU-429-599-9062;Oliver Kowalski;02/03/1943;Male;Rosenstraße 28, 43757 Valmont;NULL;Chiara Kowalski;+44 20 7946 0881;Living;NULL
+198;EU-792-534-7197;Clara Ricci;23/01/1957;NULL;Rosenstraße 22, 14884 Santa Clara de Mar;+44 20 7946 0736;Pierre Ricci;+44 20 7946 0330;Living;
+199;EU-334-517-6683;Julia Petit;24/10/1977;Female;Lindenweg 14, 11202 Oosterwijk;+44 20 7946 0968;;;Living;
+200;EU-162-912-9485;Nils García;23/10/1974;Male;Rue des Lilas 10, 41945 Rosenau;+44 20 7946 0151;Matteo García;+44 20 7946 0520;Living;NULL
+201;EU-514-473-9804;Louis Schmidt;04/09/1963;Male;Calle del Olmo 93, 50387 Bellacqua;+44 20 7946 0187;Sofia Schmidt;+44 20 7946 0217;Living;
+202;EU-569-374-8962;Alba Rossi;12/11/1957;Female;NULL;+44 20 7946 0805;Sofia Rossi;+44 20 7946 0357;Living;NULL
+203;EU-823-308-9812;Pierre Jansen;17/11/1934;  Male ;Rosenstraße 19, 99930 Santa Clara de Mar;+44 20 7946 0018;;;Living;
+204;EU-628-596-4724;Eva Dubois;11/01/1986;Female;Kerkstraat 71, 41836 Oosterwijk;+44 20 7946 0542;;;Living;NULL
+205;EU-365-167-3275;Jan Bianchi;10/09/1988;Male;Rue des Lilas 104, 11373 Santa Clara de Mar;+44 20 7946 0257;Lukas Bianchi;+44 20 7946 0785;Living;
+206;EU-928-699-4924;Anna Novak;13/06/1967;Female;Calle del Olmo 102, 31115 Santa Clara de Mar;+44 20 7946 0504;Clara Novak;+44 20 7946 0160;Living;
+207;EU-315-644-2506;Anna López;17/11/1965;Female;Kerkstraat 31, 51772 Oosterwijk;+44 20 7946 0997;;;Living;NULL
+208;EU-438-165-3874;Julia Bianchi;02/12/1978;Female;Rue des Lilas 42, 90863 Bellacqua;+44 20 7946 0250;;;Living;
+209;EU-359-534-2065;Mateo Andersson;13/08/1933;Male;Via Verdi 62, 64685 Bellacqua;+44 20 7946 0983;Felix Andersson;+44 20 7946 0601;Living;NULL
+210;EU-221-808-8270;Felix Romano;10/06/1997;Male;Calle del Olmo 28, 87109 Santa Clara de Mar;+44 20 7946 0009;Louis Romano;+44 20 7946 0527;Living;NULL
+211;EU-360-466-5464;Nils López;02/01/1991;Male;;+44 20 7946 0362;;;Living;NULL
+212;EU-304-989-8285;Matteo Horvat;06/08/1969;Male;Rue des Lilas 60, 25012 Bellacqua;+44 20 7946 0389;;;Living;NULL
+213;EU-753-104-5705;Oliver Fischer;18/02/1951;Male;Rosenstraße 40, 84084 Oosterwijk;+44 20 7946 0165;Lena Fischer;+44 20 7946 0893;Living;
+214;EU-646-292-8910;Inès López;01/06/1997;Female;Calle del Olmo 43, 79624 Oosterwijk;NULL;Erik López;+44 20 7946 0245;Living  ;
+215;EU-841-139-4507;Clara Horvat;13/01/1945;Female;Lindenweg 20, 73809 Valmont;+44 20 7946 0621;Louis Horvat;+44 20 7946 0428;Living;
+216;EU-465-853-7414;Clara Novak;14/05/1964;Female;Calle del Olmo 108, 88919 Bellacqua;+44 20 7946 0924;Lukas Novak;+44 20 7946 0281;Living;
+217;EU-680-480-6112;Alba Jansen;27/12/1959;Female;Calle del Olmo 85, 20452 Santa Clara de Mar;+44 20 7946 0462;Elena Jansen;+44 20 7946 0963;Living;
+218;EU-838-435-3714;Leon Müller;09/08/1933;Male;Rue des Lilas 75, 71023 Rosenau;+44 20 7946 0255;Marco Müller;+44 20 7946 0394;Living;
+219;EU-312-706-9037;Chiara Rossi;09/02/1955;Female;Rue des Lilas 86, 76200 Santa Clara de Mar;+44 20 7946 0832;;;Living;
+220;EU-731-133-2672;Léa Fernández;16/10/1980;Female;Rosenstraße 111, 80574 Santa Clara de Mar;+44 20 7946 0867;NULL;;Living;
+221;EU-709-492-7307;Erik Lefebvre;02/07/1975;Male;Rosenstraße 12, 72440 Santa Clara de Mar;NULL;Marie Lefebvre;+44 20 7946 0971;Living;
+222;EU-746-691-1703;Alba Bianchi;08/03/1956;Female;Via Verdi 32, 70542 Rosenau;+44 20 7946 0813;;NULL;Living;NULL
+223;EU-686-818-6352;Elena Lefebvre;19/03/2017;Female;Rue des Lilas 37, 29929 Oosterwijk;+44 20 7946 0251;Nora Lefebvre;+44 20 7946 0887;Deceased;22/12/2023 23:32
+224;EU-670-898-8827;Emma Jansen;18/12/1995;Female;Via Verdi 107, 87569 Oosterwijk;+44 20 7946 0558;Pablo Jansen;+44 20 7946 0408;Deceased;02/05/2025 20:32
+225;EU-837-630-3165;Chiara Andersson;08/08/1940;Female;Rosenstraße 25, 29731 Rosenau;+44 20 7946 0875;Clara Andersson;+44 20 7946 0980;Living;
+226;EU-839-670-3040;Anna Kowalski;18/07/1980;Female;Via Verdi 118, 87057 Oosterwijk;+44 20 7946 0319;;;Living;
+227;EU-252-205-6269;Anna Ricci;14/01/1934;Female  ;Lindenweg 31, 17726 Valmont;+44 20 7946 0696;Alba Ricci;+44 20 7946 0819;Living;NULL
+228;EU-346-656-7535;Felix Novak;02/08/1942;Male;Via Verdi 56, 38443 Bellacqua;+44 20 7946 0632;NULL;;Living;
+229;EU-577-793-4152;Felix Jansen;15/07/1998;Male;Kerkstraat 63, 66214 Santa Clara de Mar;+44 20 7946 0496;Elena Jansen;+44 20 7946 0353;Living;NULL
+230;EU-741-754-4793;Mateo Rossi;12/07/1983;Male;Kerkstraat 115, 42301 Bellacqua;;Clara Rossi;+44 20 7946 0331;Living;NULL
+231;EU-155-509-4889;Marie Fischer;03/02/1936;Female;Calle del Olmo 103, 95805 Valmont;+44 20 7946 0613;Lukas Fischer;+44 20 7946 0711;Living;
+232;EU-822-826-6447;Oliver Andersson;07/04/1932;Male;;NULL;Hugo Andersson;+44 20 7946 0697;Living;
+233;EU-636-237-6068;Pablo Novak;23/12/1994;Male;Rue des Lilas 101, 93294 Santa Clara de Mar;+44 20 7946 0280;Jan Novak;+44 20 7946 0997;Living;
+234;EU-222-592-9545;Inès Kowalski;21/10/1978;Female;Calle del Olmo 77, 14561 Rosenau;+44 20 7946 0022;Pierre Kowalski;+44 20 7946 0306;Living;NULL
+235;EU-339-955-7181;Tomas Dubois;20/05/1979;Male;Calle del Olmo 61, 23125 Santa Clara de Mar;+44 20 7946 0602;Nora Dubois;+44 20 7946 0742;Living;NULL
+236;EU-660-527-9976;Jan Fischer;15/09/1968;Male;Rosenstraße 32, 16555 Rosenau;+44 20 7946 0773;Emma Fischer;+44 20 7946 0450;Living;NULL
+237;EU-284-911-6232;Freya Nielsen;21/06/1935;Other;Calle del Olmo 53, 41159 Valmont;;Freya Nielsen;+44 20 7946 0854;Living;NULL
+238;EU-798-393-9412;Felix Moreau;28/06/1947;Male  ;Kerkstraat 13, 68686 Oosterwijk;+44 20 7946 0830;;NULL;Living;
+239;EU-194-863-4647;Alba Ricci;17/07/1988;Female;Via Verdi 47, 91790 Valmont;+44 20 7946 0709;Hugo Ricci;+44 20 7946 0825;Deceased;17/10/2024 12:14
+240;EU-765-955-8350;Leon Jansen;03/11/1940;Male;Lindenweg 16, 45232 Santa Clara de Mar;+44 20 7946 0193;Lena Jansen;+44 20 7946 0481;Living;NULL
+241;EU-762-187-6089;Tomas Bianchi;25/07/1972;Male;Via Verdi 54, 51373 Oosterwijk;+44 20 7946 0447;Hugo Bianchi;+44 20 7946 0631;Living;NULL
+242;EU-764-768-4552;Anna Ricci;19/04/1999;Female;Via Verdi 73, 36779 Rosenau;+44 20 7946 0004;;;Deceased;29/02/2024 22:18
+243;EU-260-764-5396;Elena Silva;03/09/1992;Female;Rosenstraße 114, 41223 Rosenau;+44 20 7946 0522;;;Living;
+244;EU-421-688-6116;Inès Jansen;09/10/1936;Female;Calle del Olmo 72, 36969 Valmont;+44 20 7946 0005;NULL;NULL;Living;
+245;EU-814-817-4044;Sofia Martin;15/06/1945;Female;Rue des Lilas 85, 12670 Santa Clara de Mar;+44 20 7946 0677;Alba Martin;+44 20 7946 0270;Living;NULL
+246;EU-576-608-3732;Inès Bianchi;08/06/1954;Female;Rosenstraße 56, 14616 Santa Clara de Mar;+44 20 7946 0217;Marie Bianchi;+44 20 7946 0551;Living;NULL
+247;EU-663-883-7024;Eva Kowalski;24/05/1976;Female;;+44 20 7946 0150;Tomas Kowalski;+44 20 7946 0117;Living;
+248;EU-446-159-5492;Eva Martin;21/04/1999;Female;Calle del Olmo 10, 62415 Bellacqua;;Nils Martin;+44 20 7946 0435;Living;NULL
+249;EU-915-301-6489;Marco Ricci;09/11/1955;Male;Rue des Lilas 107, 20767 Valmont;+44 20 7946 0127;Matteo Ricci;+44 20 7946 0045;Living;NULL
+250;EU-150-525-6551;Leon Moreau;05/03/1934;Male;Calle del Olmo 109, 61326 Rosenau;+44 20 7946 0774;;;Living;NULL
+251;EU-386-249-6775;tomas moreau;24/10/1970;Male;Lindenweg 79, 97154 Oosterwijk;NULL;Léa Moreau;+44 20 7946 0255;Living;
+252;EU-919-487-4112;Felix   García;20/08/1987;Male;Lindenweg 82, 83130 Valmont;;Chiara García;+44 20 7946 0423;Living;NULL
+253;EU-983-216-3725;Marie   Silva;25/11/1954;Female;Via Verdi 69, 51809 Bellacqua;;Pierre Silva;+44 20 7946 0703;Living;NULL
+254;EU-913-571-4817;lukas martin;24/10/1932;Male;Rosenstraße 30, 11284 Santa Clara de Mar;;Nils Martin;+44 20 7946 0466;Living;NULL
+255;EU-310-956-6518;Tomas   García;22/01/1938;Male;Kerkstraat 56, 45689 Oosterwijk;+44 20 7946 0015;Marie García;+44 20 7946 0863;Living;NULL
+232;EU-822-826-6447;Oliver Andersson;07/04/1932;Male;;NULL;Hugo Andersson;+44 20 7946 0697;Living;
+256;EU-274-770-5392;Matteo   Wagner;18/02/1964;Male;Lindenweg 84, 41956 Bellacqua;NULL;Inès Wagner;+44 20 7946 0668; Living;NULL

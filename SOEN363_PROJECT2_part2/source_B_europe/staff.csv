@@ -1,0 +1,73 @@
+staff_no;first_name;last_name;role;specialty
+1;Lukas;Romano;Doctor;Emergency Medicine
+2;Felix;Müller;Doctor;Emergency Medicine
+3;Nora;Jansen;Doctor;Emergency  Medicine
+4;Pablo;Fernández;Doctor;Emergency Medicine
+5;Mateo;Novak;Doctor;Internal Medicine
+6;Nils;Andersson;Doctor;Internal Medicine
+7;Léa;Wagner;Doctor;Internal Medicine
+8;Jan;Fischer;Doctor;Cardiology
+9;Oliver;Romano;Doctor;Cardiology
+10;Pierre;Wagner;Doctor;Pulmonology
+11;Freya;Martin;Doctor  ;Pulmonology
+12;Felix;Jansen;Doctor;Neurology
+13;Marco;Petit;Doctor;Neurology
+14;Matteo;Horvat;Doctor;Critical Care
+15;Sofia;Rossi;Doctor;Critical Care
+16;Marco;Wagner  ;Doctor;Critical Care
+17;Freya;Schmidt;Doctor;Gastroenterology
+18;Felix;Novak;Doctor;Oncology
+19;Marie;Wagner;Doctor;Oncology
+20;Elena;López;Doctor;Nephrology
+21;Elena;Fischer;Doctor;Endocrinology
+22;Pierre;Kowalski;Doctor;Infectious Disease
+23;Anna;Müller;Surgeon;General Surgery
+24;Lena;Martin;Surgeon;General Surgery
+25;Inès;Dubois;Surgeon;General Surgery
+26;Sofia;Nielsen;Surgeon;Orthopedic Surgery
+27;Anna;García;Surgeon;Orthopedic Surgery
+28;Felix;Müller;Surgeon;Cardiothoracic Surgery
+29;Pablo;Weber;Surgeon;Neurosurgery
+30;Emma;Fischer;Surgeon;Vascular Surgery
+31;Pablo;Ricci;Nurse;Emergency
+32;Hugo;Silva;Nurse;Emergency
+33;Eva;Romano;Nurse;Emergency
+34;Marco;Kowalski;Nurse;Emergency
+35;Léa;Martin;Nurse;Emergency
+36;Marco;Silva;Nurse;Emergency
+37;Freya;Fernández;Nurse;Critical Care
+38;Marco;Moreau;Nurse;Critical Care
+39;Sofia;Müller;Nurse;Critical Care
+40;Elena;Lefebvre;Nurse;Critical Care
+41;Pablo;Novak;Nurse;Critical Care
+42;Erik;Andersson;Nurse;Critical Care
+43;Alba;Wagner; Nurse;Ward
+44;Anna;Müller;Nurse;Ward
+45;Julia;Jansen;Nurse;Ward
+46;Clara;Moreau;Nurse;Ward
+47;Mateo;Jansen;Nurse;Ward
+18;Felix;Novak;Doctor;Oncology
+48;Nora;Fischer;Nurse;Ward
+49;HUGO;García;NURSE;
+50;Louis; Horvat;Nurse;
+51;Erik;Müller;Nurse;
+52;Tomas;Schmidt;Nurse;
+53;Freya;Weber;Radiologist;Diagnostic Radiology
+54;Matteo;Andersson;Radiologist;Diagnostic Radiology
+55;Alba;Romano;Radiologist;Diagnostic Radiology
+56;Jan;Jansen;Radiologist;Diagnostic Radiology
+57;Marie;Romano; Radiologist;Diagnostic Radiology
+58;Marie;Nielsen;Radiographer;CT
+59;Mateo;Jansen;Radiographer;MRI
+60;Léa;Silva;Radiographer;Ultrasound
+48;Nora;Fischer;Nurse;Ward
+61;Lukas;Dubois;Radiographer;General Radiography
+62;Hugo;Schmidt;  Radiographer ;
+63;Marie;NULL;Radiographer;
+64;Louis;Fischer;Biomedical Scientist;Clinical Chemistry
+65;Jan;Fernández;Biomedical Scientist;Hematology
+66;Pierre;Fernández;Biomedical Scientist;Microbiology
+67;Freya;Schmidt;Biomedical Scientist;NULL
+68;Nils;Schmidt;Biomedical Scientist;NULL
+69;Alba;Bernard;Biomedical Scientist;Clinical Chemistry
+70;Sofia;Andersson;Biomedical Scientist;NULL

@@ -1,0 +1,13 @@
+ward_no;ward_name;ward_category
+1;Emergency Department;A&E
+2;Medical ICU;Medical ICU
+3;Surgical ICU;Surgical ICU
+4;General ICU;Intensive Care
+5;Coronary Care Unit;Coronary Care
+6;Medicine Ward 3A;Ward
+7;Medicine Ward 3B;Ward
+8;Surgical Ward 4A;Ward
+9;Cardiology Ward 5;Ward
+10;Orthopedic Ward 6;Ward
+11;Oncology Ward 7;Ward
+12;Step-Down Unit;HDU

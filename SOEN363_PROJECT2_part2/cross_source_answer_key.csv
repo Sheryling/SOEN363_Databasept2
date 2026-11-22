@@ -1,0 +1,81 @@
+match_group,match_type,source,continent,local_patient_id,name,date_of_birth,insurance_number
+1,certain_match,A,North America,6,Evelyn Thomas,1959-07-12,INTL-32566580
+1,certain_match,B,Europe,41,Evelyn Thomas,1959-07-12,INTL-32566580
+2,certain_match,A,North America,7,Emma Wilson,1980-08-15,INTL-47916894
+2,certain_match,C,Asia,42,Emma Wilson,1980-08-15,INTL-47916894
+3,certain_match,A,North America,8,Lucas Walker,1944-04-28,INTL-68924156
+3,certain_match,D,Africa,43,Lucas Walker,1944-04-28,INTL-68924156
+4,certain_match,B,Europe,9,Léa Rossi,1958-12-26,INTL-39941525
+4,certain_match,C,Asia,44,Léa Rossi,1958-12-26,INTL-39941525
+5,certain_match,B,Europe,10,Leon Schmidt,1980-10-08,INTL-95670964
+5,certain_match,D,Africa,45,Leon Schmidt,1980-10-08,INTL-95670964
+6,certain_match,C,Asia,11,Yuki Li,2000-04-02,INTL-16222973
+6,certain_match,D,Africa,46,Yuki Li,2000-04-02,INTL-16222973
+7,certain_match,A,North America,12,Harper Smith,1967-05-11,INTL-32952938
+7,certain_match,B,Europe,47,Harper Smith,1967-05-11,INTL-32952938
+8,certain_match,A,North America,13,Dylan Roy,1958-04-08,INTL-55429617
+8,certain_match,C,Asia,48,Dylan Roy,1958-04-08,INTL-55429617
+9,certain_match,A,North America,14,Olivia Jackson,1987-09-15,INTL-62027153
+9,certain_match,D,Africa,49,Olivia Jackson,1987-09-15,INTL-62027153
+10,certain_match,B,Europe,15,Felix García,1943-04-14,INTL-18181574
+10,certain_match,C,Asia,50,Felix García,1943-04-14,INTL-18181574
+11,certain_match,B,Europe,16,Oliver Romano,1958-10-10,INTL-79510217
+11,certain_match,D,Africa,51,Oliver Romano,1958-10-10,INTL-79510217
+12,certain_match,C,Asia,17,Linh Gupta,1959-04-03,INTL-22320272
+12,certain_match,D,Africa,52,Linh Gupta,1959-04-03,INTL-22320272
+13,certain_match,A,North America,18,Isabella Taylor,1939-02-20,INTL-31761109
+13,certain_match,B,Europe,53,Isabella Taylor,1939-02-20,INTL-31761109
+14,certain_match,A,North America,19,Samuel Smith,1955-09-22,INTL-31460959
+14,certain_match,C,Asia,54,Samuel Smith,1955-09-22,INTL-31460959
+15,certain_match,A,North America,20,Lucas Morgan,1939-09-21,INTL-42064421
+15,certain_match,D,Africa,55,Lucas Morgan,1939-09-21,INTL-42064421
+16,certain_match,B,Europe,21,Felix Schmidt,1970-06-22,INTL-56203524
+16,certain_match,C,Asia,56,Felix Schmidt,1970-06-22,INTL-56203524
+17,certain_match,B,Europe,22,Felix Horvat,1952-07-18,INTL-26922524
+17,certain_match,D,Africa,57,Felix Horvat,1952-07-18,INTL-26922524
+18,certain_match,C,Asia,23,Hiroshi Suzuki,1974-11-24,INTL-65167006
+18,certain_match,D,Africa,58,Hiroshi Suzuki,1974-11-24,INTL-65167006
+19,certain_match,A,North America,24,Ava Anderson,1970-01-18,INTL-66945133
+19,certain_match,B,Europe,59,Ava Anderson,1970-01-18,INTL-66945133
+20,certain_match,A,North America,25,Dylan Taylor,1994-04-04,INTL-90183229
+20,certain_match,C,Asia,60,Dylan Taylor,1994-04-04,INTL-90183229
+21,certain_match,A,North America,26,Mia Anderson,1983-12-27,INTL-96992180
+21,certain_match,D,Africa,61,Mia Anderson,1983-12-27,INTL-96992180
+22,certain_match,B,Europe,27,Elena Nielsen,1961-01-11,INTL-45132476
+22,certain_match,C,Asia,62,Elena Nielsen,1961-01-11,INTL-45132476
+23,certain_match,B,Europe,28,Eva Romano,1941-01-28,INTL-65596694
+23,certain_match,D,Africa,63,Eva Romano,1941-01-28,INTL-65596694
+24,certain_match,C,Asia,29,Arjun Rahman,1986-06-11,INTL-12626036
+24,certain_match,D,Africa,64,Arjun Rahman,1986-06-11,INTL-12626036
+25,uncertain_match,A,North America,81,Amelia Martin,1990-03-08,2980513505-JJ
+25,uncertain_match,D,Africa,91,Amelia Martin,1990-03-08,MA945150419
+26,uncertain_match,B,Europe,82,Lena Rossi,1978-08-24,EU-430-186-3934
+26,uncertain_match,C,Asia,92,Lena Rossi,1978-08-24,JP83320917
+27,uncertain_match,B,Europe,83,Felix Novak,1958-12-18,EU-575-364-6051
+27,uncertain_match,D,Africa,93,Felix Novak,1958-12-18,MA199170482
+28,uncertain_match,C,Asia,84,Somchai Singh,1998-03-08,JP98870802
+28,uncertain_match,D,Africa,94,Somchai Singh,1998-03-08,MA345453375
+29,different_person_same_name,B,Europe,111,Pierre Lefebvre,1975-12-15,EU-331-451-3307
+29,different_person_same_name,D,Africa,121,Pierre Lefebvre,1949-04-04,MA515129139
+30,different_person_same_name,C,Asia,112,Sakura Chen,2002-01-26,JP72010591
+30,different_person_same_name,D,Africa,122,Sakura Chen,1936-11-03,MA733622174
+31,different_person_same_name,A,North America,113,Mason Clark,1993-07-11,4794418959-EE
+31,different_person_same_name,B,Europe,123,Mason Clark,1932-07-12,EU-494-432-3538
+32,different_person_same_name,A,North America,114,Evelyn Morgan,1954-03-18,2632658691-FF
+32,different_person_same_name,C,Asia,124,Evelyn Morgan,1981-08-20,JP41714695
+33,different_person_same_name,A,North America,115,Lucas White,1941-03-24,4086343282-AF
+33,different_person_same_name,D,Africa,125,Lucas White,1962-08-12,MA896857411
+34,different_person_same_name,B,Europe,116,Elena Fernández,1976-02-07,EU-786-536-9764
+34,different_person_same_name,C,Asia,126,Elena Fernández,1932-07-26,JP30650205
+35,different_person_same_name,B,Europe,117,Eva López,1934-06-06,EU-482-944-8035
+35,different_person_same_name,D,Africa,127,Eva López,1961-08-20,MA925231490
+36,different_person_same_name,C,Asia,118,Hao Lee,2003-09-09,JP25575409
+36,different_person_same_name,D,Africa,128,Hao Lee,1998-05-09,MA147780894
+37,different_person_same_name,A,North America,119,Logan Tremblay,1956-07-22,6350303712-DC
+37,different_person_same_name,B,Europe,129,Logan Tremblay,1960-09-26,EU-297-915-7205
+38,different_person_same_name,A,North America,120,Samuel Moore,1956-01-01,4132909876-BF
+38,different_person_same_name,C,Asia,130,Samuel Moore,1948-06-15,JP37807557
+39,different_person_same_name,A,North America,121,Charlotte Lewis,1979-11-04,6899251502-BB
+39,different_person_same_name,D,Africa,131,Charlotte Lewis,1934-07-20,MA349787450
+40,different_person_same_name,B,Europe,122,Oliver Jansen,1949-05-20,EU-919-276-5450
+40,different_person_same_name,C,Asia,132,Oliver Jansen,1960-11-27,JP38903624

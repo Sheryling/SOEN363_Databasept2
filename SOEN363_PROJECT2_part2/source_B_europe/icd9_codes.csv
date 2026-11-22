@@ -1,0 +1,63 @@
+icd9;official_title;description;disease_category
+008.45;Intestinal infection due to Clostridium difficile;C. difficile colitis;Infectious and Parasitic Diseases
+038.9;Unspecified septicemia;Bloodstream infection, organism not specified;Infectious and Parasitic Diseases
+042;Human immunodeficiency virus [HIV] disease;HIV disease;Infectious and Parasitic Diseases
+070.54;Chronic hepatitis C without mention of hepatic coma;Chronic hepatitis C;Infectious and Parasitic Diseases
+153.9;Malignant neoplasm of colon, unspecified site;Colon cancer;Neoplasms
+162.9;Malignant neoplasm of bronchus and lung, unspecified;Lung cancer;Neoplasms
+174.9;Malignant neoplasm of breast (female), unspecified;Breast cancer;Neoplasms
+185;Malignant neoplasm of prostate;Prostate cancer;Neoplasms
+250.00;Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled;Type 2 diabetes without complication;Endocrine, Nutritional and Metabolic Diseases, and Immunity Disorders
+250.13;Diabetes with ketoacidosis, type I [juvenile type], uncontrolled;Diabetic ketoacidosis, type 1;Endocrine, Nutritional and Metabolic Diseases, and Immunity Disorders
+276.1;Hyposmolality and/or hyponatremia;Low blood sodium;Endocrine, Nutritional and Metabolic Diseases, and Immunity Disorders
+276.51;Dehydration;Dehydration;Endocrine, Nutritional and Metabolic Diseases, and Immunity Disorders
+285.9;Anemia, unspecified;Anemia;Diseases of the Blood and Blood-Forming Organs
+296.20;Major depressive affective disorder, single episode, unspecified;Major depression, single episode;Mental Disorders
+303.00;Acute alcoholic intoxication in alcoholism, unspecified;Acute alcohol intoxication;Mental Disorders
+345.90;Epilepsy, unspecified, without mention of intractable epilepsy;Epilepsy;Diseases of the Nervous System and Sense Organs
+401.9;Unspecified essential hypertension;High blood pressure;Diseases of the Circulatory System
+410.11;Acute myocardial infarction of other anterior wall, initial episode of care;Anterior wall heart attack;Diseases of the Circulatory System
+410.71;Subendocardial infarction, initial episode of care;NSTEMI heart attack;Diseases of the Circulatory System
+414.01;Coronary atherosclerosis of native coronary artery;Coronary artery disease;Diseases of the Circulatory System
+415.19;Other pulmonary embolism and infarction;Pulmonary embolism;Diseases of the Circulatory System
+427.31;Atrial fibrillation;Atrial fibrillation;Diseases of the Circulatory System
+428.0;Congestive heart failure, unspecified;Heart failure;Diseases of the Circulatory System
+285.9;Anemia, unspecified;Anemia;Diseases of the Blood and Blood-Forming Organs
+430;Subarachnoid hemorrhage;Subarachnoid bleed;Diseases of the Circulatory System
+431;Intracerebral hemorrhage;Bleeding within the brain;Diseases of the Circulatory System
+434.91;Cerebral artery occlusion, unspecified with cerebral infarction;Ischemic stroke;Diseases of the Circulatory System
+453.40;Acute venous embolism and thrombosis of unspecified deep vessels of lower extremity;Deep vein thrombosis of leg;Diseases of the Circulatory System
+486;Pneumonia, organism unspecified;Pneumonia;Diseases of the Respiratory System
+491.21;Obstructive chronic bronchitis with (acute) exacerbation;COPD exacerbation;Diseases of the Respiratory System
+493.92;Asthma, unspecified type, with (acute) exacerbation;Asthma attack;Diseases of the Respiratory System
+496;Chronic airway obstruction, not elsewhere classified;Chronic obstructive pulmonary disease;Diseases of the Respiratory System
+518.81;Acute respiratory failure;Acute respiratory failure;Diseases of the Respiratory System
+540.9;Acute appendicitis without mention of peritonitis;Acute appendicitis;Diseases of the Digestive System
+550.90;Inguinal hernia, without mention of obstruction or gangrene, unilateral or unspecified (not specified as recurrent);Inguinal hernia;Diseases of the Digestive System
+560.9;Unspecified intestinal obstruction;Bowel obstruction;Diseases of the Digestive System
+571.2;Alcoholic cirrhosis of liver;Alcoholic liver cirrhosis;Diseases of the Digestive System
+574.00;Calculus of gallbladder with acute cholecystitis, without mention of obstruction;Gallstones with acute gallbladder inflammation;Diseases of the Digestive System
+577.0;Acute pancreatitis;Acute pancreatitis;Diseases of the Digestive System
+578.9;Hemorrhage of gastrointestinal tract, unspecified;Gastrointestinal bleeding;Diseases of the Digestive System
+584.9;Acute kidney failure, unspecified;Acute kidney injury;Diseases of the Genitourinary System
+585.9;Chronic kidney disease, unspecified;Chronic kidney disease;Diseases of the Genitourinary System
+599.0;Urinary tract infection, site not specified;Urinary tract infection;Diseases of the Genitourinary System
+682.6;Cellulitis and abscess of leg, except foot;Leg cellulitis;Diseases of the Skin and Subcutaneous Tissue
+715.96;Osteoarthrosis, unspecified whether generalized or localized, lower leg;Knee osteoarthritis;Diseases of the Musculoskeletal System and Connective Tissue
+724.2;Lumbago;Low back pain;Diseases of the Musculoskeletal System and Connective Tissue
+780.2;Syncope and collapse;Fainting;Symptoms, Signs, and Ill-Defined Conditions
+780.39;Other convulsions;Seizure;Symptoms, Signs, and Ill-Defined Conditions
+780.60;Fever, unspecified;Fever;Symptoms, Signs, and Ill-Defined Conditions
+786.50;Chest pain, unspecified;Chest pain;Symptoms, Signs, and Ill-Defined Conditions
+787.01;Nausea with vomiting;Nausea and vomiting;Symptoms, Signs, and Ill-Defined Conditions
+789.00;Abdominal pain, unspecified site;Abdominal pain;Symptoms, Signs, and Ill-Defined Conditions
+805.4;Closed fracture of lumbar vertebra without mention of spinal cord injury;Lumbar spine fracture;Injury and Poisoning
+813.42;Other closed fractures of distal end of radius (alone);Wrist fracture;Injury and Poisoning
+820.8;Closed fracture of unspecified part of neck of femur;Hip fracture;Injury and Poisoning
+850.9;Concussion, unspecified;Concussion;Injury and Poisoning
+852.20;Subdural hemorrhage following injury without mention of open intracranial wound, unspecified state of consciousness;Traumatic subdural bleed;Injury and Poisoning
+995.91;Sepsis;Sepsis;Injury and Poisoning
+995.92;Severe sepsis;Severe sepsis;Injury and Poisoning
+997.31;Ventilator associated pneumonia;Ventilator-associated pneumonia;Injury and Poisoning
+998.59;Other postoperative infection;Post-operative infection;Injury and Poisoning
+V58.11;Encounter for antineoplastic chemotherapy;Chemotherapy session;Supplementary Classification of Factors Influencing Health Status and Contact with Health Services

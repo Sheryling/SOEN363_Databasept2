@@ -1,0 +1,364 @@
+TriageID|AdmitID|NurseID|TriageDatetime|BP|HR|PainScore|Symptoms|Allergies|CurrentMedication|TriageLevel|TempF|SpO2Pct
+1|1|34|06/28/2025 08:39 PM|129/75|79|3|Worst headache of life|None known|None|LOW|98.4|98
+2|2|32|11/21/2025 05:17 PM|141/92|103|7|Redness and discharge at surgical wound|Codeine|Furosemide|MEDIUM|100.2|96
+3|3|35|01/01/2026 08:44 AM|137/84|105|5|Chest tightness with sweating|None known|Metformin, Atorvastatin|MEDIUM|98.4|95
+4|4|33|04/30/2025 08:14 AM|113/72|101|3|Hip pain, unable to bear weight after fall|Latex|Warfarin|MEDIUM|100.9|93
+5|6|36|08/16/2024 05:39 PM|111/62|84|2|Painful swollen calf|None known|Metformin, Atorvastatin|LOW|97.3|99
+6|7|33|09/01/2024 12:03 PM|173/97|141|8|Fever, chills and confusion|None known|Amlodipine|HIGH|97.2|90
+7|8|32|07/29/2025 01:06 AM|134/85|63|4|Fatigue and dizziness|Penicillin|Warfarin|LOW|99.1|99
+8|9|33|08/18/2025 03:52 AM|125/80|104|8|Redness and discharge at surgical wound|None known|Levothyroxine|MEDIUM|97.7|94
+9|10|34|01/12/2026 11:18 AM|119/78|98|7|Intoxicated, vomiting|None known|Salbutamol inhaler|MEDIUM|99.5|97
+10|12|36|05/16/2024 07:40 PM|135/88|109|5|Chest pain radiating to left arm|None known|Warfarin|MEDIUM|98.8|94
+11|13|33|07/30/2024 07:16 PM|139/91|104|3|Chest pain radiating to left arm|Codeine|Amlodipine|MEDIUM|97.9|93
+12|14|31|10/19/2024 02:42 AM|122/80|104|5|Chest pain radiating to left arm|Codeine|None|MEDIUM|100.2|94
+13|15|34|01/26/2025 07:57 PM|94/57|121|8|Chest pain radiating to left arm|None known|None|HIGH|99.7|89
+14|16|34|12/07/2024 07:12 AM|80/53|111|8|Wheezing and shortness of breath|None known|Metformin, Atorvastatin|HIGH|98.4|84
+15|17|35|05/29/2024 05:23 AM|126/71|88|5|Red, hot, swollen lower leg|None known|Warfarin|MEDIUM|99.7|95
+16|18|32|04/25/2024 03:31 PM|130/74|87|4|Right lower quadrant abdominal pain|Iodinated contrast|Amlodipine|MEDIUM|99.7|96
+17|19|35|05/16/2025 04:33 PM|133/74|87|5|Worst headache of life|Penicillin|None|LOW|98.2|98
+18|20|32|05/24/2024 07:26 PM|139/94|90|2|Increasing breathlessness over 3 days|None known|Atorvastatin|LOW|99.3|99
+19|21|35|01/13/2025 05:17 PM|189/119|109|8|Fever with low blood pressure|None known|Amlodipine|HIGH|103.5|86
+20|24|31|11/14/2024 10:38 PM|124/69|84|4|Fever, chills and confusion|None known|Aspirin|LOW  |97.5|100
+21|25|36|02/26/2024 09:32 AM|190/124|113|9|Leg swelling and orthopnea|None known|Atorvastatin|HIGH|101.3|88
+22|26|34|08/14/2024 01:33 AM|95/53|111|8|Palpitations and dizziness|None known|Salbutamol inhaler|HIGH|103.8|86
+126|162|34|10/22/2024 06:13 PM|95/57|121|8|Hip pain, unable to bear weight after fall|Iodinated contrast|None|HIGH|100.9 | see attached|93
+23|28|32|04/16/2025 12:28 PM|181/118|110|9|Unintentional weight loss|None known|Warfarin|HIGH|99.9|86
+24|29|32|03/05/2024 02:00 AM|127/78|91|7|Productive cough with fever|None known|Furosemide|MEDIUM|99.0|92
+25|31|33|04/25/2024 03:08 AM|84/49|115|10|Palpitations and dizziness|Codeine|Warfarin|HIGH|101.5|92
+26|32|35|01/18/2024 06:15 AM|129/71|86|3|Extreme thirst and vomiting|None known|None|LOW|99.1|99
+27|33|35|01/03/2024 07:53 AM|84/51|105|7|Witnessed generalized seizure|None known|None|HIGH|101.7|92
+28|34|31|01/26/2024 01:30 PM|113/64|106|7|Chest pain radiating to left arm|None known|Atorvastatin|MEDIUM|98.6|92
+29|35|34|2025-11-02 06:07|111/71|86|5|Painful groin bulge|Codeine|None|LOW|99.7|96
+30|36|34|01/23/2026 12:06 PM|110/61|94|5|Head injury after fall|Penicillin|Metformin|MEDIUM|98.1|92
+31|38|35|03/27/2025 07:16 PM|96/53|109|8|Worst headache of life|Peanuts|Amlodipine|HIGH|97.7|87
+32|39|35|08/07/2025 05:57 PM|146/86|95|6|Fever, chills and confusion|Codeine|None|MEDIUM|98.1|94
+33|41|31|09/20/2024 09:53 PM|98/63|105|6|Right lower quadrant abdominal pain|Penicillin|Atorvastatin|HIGH|101.3|90
+34|42|32|09/10/2024 03:00 AM|86/51|125|9|Chronic knee pain limiting walking|Codeine|Levothyroxine|HIGH|97.5|92
+35|43|34|12/13/2024 11:18 PM|112/62|92|6|Witnessed generalized seizure|None known|Metformin, Atorvastatin|MEDIUM|99.0|96
+36|44|33|10/29/2024 09:14 PM|122/71|100|5|Chest tightness with sweating|Peanuts|Salbutamol inhaler|MEDIUM|99.7|93
+37|45|31|11/22/2024 12:14 AM|118/72|86|0|Palpitations and dizziness|Penicillin|Levothyroxine|LOW|99.5|95
+38|46|33|09/22/2024 06:42 AM|126/80|84|5|Productive cough with fever|None known|Furosemide|LOW|99.1|99
+39|47|31|01/27/2025 01:02 AM|88/49|144|10|Brief loss of consciousness|Codeine|None|HIGH|98.6|92
+40|49|36|07/05/2025 09:00 PM|109/60|69|3|Head injury after fall|Sulfa drugs|Metformin|LOW|97.2|98
+41|50|33|03/04/2024 06:08 PM|144/83|87|7|Increasing breathlessness over 3 days|None known|None|MEDIUM|98.4|96
+42|51|34|05/20/2024 06:51 PM|91/53|102|9|Chest tightness with sweating|Sulfa drugs|Warfarin|HIGH|101.3|88
+43|52|33|10/11/2024 05:53 AM|126/83|105|3|Fever with low blood pressure|Peanuts|Furosemide|MEDIUM|101.3|95
+44|53|31|02/10/2025 12:14 AM|96/55|117|10|Wheezing and shortness of breath|None known|None|HIGH|99.7|85
+45|54|36|04/09/2025 02:15 AM|177/101|115|10|Fatigue and dizziness|None known|None|HIGH|100.9|88
+46|55|36|06/05/2025 11:27 AM|156/91|127|8|Worst headache of life|Sulfa drugs|Warfarin|HIGH|100.0|91
+47|56|33|06/11/2025 04:51 AM|126/84|91|1|Increasing breathlessness over 3 days|None known|None|LOW|98.6|96
+48|57|34|09/08/2025 12:10 PM|126/85|96|6|Extreme thirst and vomiting|Sulfa drugs|Metformin|MEDIUM|98.1|94
+49|58|36|04/24/2025 10:43 PM|130/88|71|0|Wheezing and shortness of breath|Penicillin|Lisinopril|LOW|97.9|96
+50|59|33|09/11/2025 10:01 AM|112/72|62|5|Vomiting and abdominal distension|None known|Salbutamol inhaler|LOW|97.5|98
+51|60|33|09/16/2025 10:15 AM|116/69|95|4|Breast lump|None known|None|LOW|98.2|99
+52|61|35|10/25/2026 01:06 PM|149/83|103|5|Abdominal swelling and jaundice|Codeine|Furosemide|MEDIUM|97.7|95
+53|62|31|04/17/2024 09:53 AM|136/91|85|6|Pleuritic chest pain|None known|Metformin|MEDIUM|99.9|95
+54|63|32|05/06/2024 03:47 PM|111/66|88|6|Reduced urine output and swelling|Peanuts|Aspirin|MEDIUM|99.7|93
+55|65|34|06/01/2025 01:10 AM|134/76|95|1|Right lower quadrant abdominal pain|None known|Furosemide|LOW|99.3|99
+56|67|35|09/13/2025 08:56 AM|111/74|101|7|Head injury after fall|Codeine|Salbutamol inhaler|MEDIUM|100.2|96
+57|68|36|04/13/2024 07:39 PM|88/57|104|7|Increasing breathlessness over 3 days|Sulfa drugs|None|HIGH|99.9|93
+58|69|33|2024-02-14 09:28|95/60|135|10|Palpitations and dizziness|None known|Lisinopril|HIGH|101.1|88
+59|71|34|09/16/2024 09:29 AM|167/106|108|9|Chest tightness with sweating|Iodinated contrast|Furosemide|HIGH|102.2|91
+60|72|34|08/29/2024 10:38 AM|127/81|101|7|Pleuritic chest pain|None known|Metformin|MEDIUM|99.3|93
+61|74|35|01/04/2024 09:34 PM|127/85|88|5|Head injury after fall|None known|Aspirin|MEDIUM|98.8|93
+62|76|33|04/23/2024 04:36 PM|111/74|86|6|Black tarry stools|Peanuts|None|MEDIUM|99.1|97
+63|78|33|10/06/2024 12:07 AM|139/88|107|7|Severe lower back pain after fall|None known|None|MEDIUM|97.7|97
+64|80|34|03/23/2025 08:05 PM|99/61|128|10|Chest tightness with sweating|None known|Metformin, Atorvastatin|HIGH|100.9|88
+65|81|36|04/28/2025 03:06 PM|119/70|105|3|Fatigue and dizziness|None known|Atorvastatin|MEDIUM|97.7|92
+66|83|32|01/08/2024 08:33 PM|185/118|115|9|Hip pain, unable to bear weight after fall|Peanuts|Levothyroxine|HIGH|100.9|87
+67|84|31|02/19/2024 02:46 PM|137/89|70|2|Breast lump|None known|None|LOW|99.0|95
+68|85|33|05/13/2024 02:14 AM|126/70|72|4|Right lower quadrant abdominal pain|Sulfa drugs|Amlodipine|LOW|97.7|100
+69|86|34|10/02/2024 07:24 AM|185/109|107|8|Hip pain, unable to bear weight after fall|None known|Metformin|HIGH|99.7|92
+70|87|33|12/07/2024 05:22 AM|157/97|115|7|Pleuritic chest pain|Penicillin|None|HIGH|99.3|92
+71|88|32|07/18/2025 12:29 PM|141/90|92|7|Witnessed generalized seizure|Penicillin|Lisinopril|MEDIUM|100.9|96
+72|90|32|06/08/2024 05:35 AM|113/67|110|7|Chronic knee pain limiting walking|Penicillin|Salbutamol inhaler|MEDIUM|100.2|92
+73|92|34|08/26/2024 06:00 PM|143/94|89|6|Increasing breathlessness over 3 days|None known|Warfarin|MEDIUM|99.5|94
+74|94|34|11/04/2024 11:43 PM|184/114|101|6|Productive cough with fever|Iodinated contrast|Metformin|HIGH|102.0|93
+75|96|32|08/02/2024 04:26 PM|100/56|140|7|Extreme thirst and vomiting|None known|Levothyroxine|HIGH|101.5|91
+76|97|31|09/19/2024 07:13 AM|95/52|130|10|Reduced urine output and swelling|Sulfa drugs|Metformin|HIGH|97.9|86
+77|98|32|12/05/2024 05:08 AM|157/102|123|7|Redness and discharge at surgical wound|None known|None|HIGH|102.6|85
+78|99|32|09/06/2024 05:21 PM|135/78|109|3|Head injury after fall|Sulfa drugs|Warfarin|MEDIUM|101.1|94
+79|100|31|04/28/2024 06:57 PM|128/78|109|8|Redness and discharge at surgical wound|None known|Salbutamol inhaler|MEDIUM|98.6|97
+80|101|34|06/24/2024 11:08 AM|127/71|86|1|Worst headache of life|None known|Furosemide|LOW|98.2|100
+81|103|32|11/09/2024 06:36 AM|172/112|144|7|Black tarry stools|None known|Atorvastatin|HIGH|101.7|91
+82|105|33|03/09/2024 08:17 PM|138/82|79|2|Hip pain, unable to bear weight after fall|None known|Amlodipine|LOW|97.7|98
+83|106|32|04/14/2024 12:34 AM|117/72|88|7|Brief loss of consciousness|Penicillin|Furosemide|MEDIUM|97.9|95
+84|107|32|04/04/2026 02:28 AM|128/78|96|8|Right lower quadrant abdominal pain|None known|Aspirin|MEDIUM|100.4|92
+85|108|34|04/28/2025 02:22 AM|150/96|87|8|Red, hot, swollen lower leg|Codeine|Warfarin|MEDIUM|101.3|95
+86|109|33|08/27/2025 11:14 PM|87/52|109|7|Fever, chills and confusion|None known|None|HIGH  |100.9|86
+87|110|31|12/05/2024 09:23 AM|163/101|141|9|Fever with low blood pressure|Peanuts|Aspirin|HIGH|97.3|93
+88|111|36|01/02/2025 05:55 AM|115/69|100|7|Witnessed generalized seizure|None known|None|MEDIUM|100.8|93
+89|112|33|02/12/2025 09:36 PM|174/115|128|6|Fever, chills and confusion|Latex|Furosemide|HIGH|97.0|92
+90|113|31|04/12/2025 06:01 AM|93/59|107|9|Leg swelling and orthopnea|None known|Atorvastatin|HIGH|102.0|91
+91|114|34|03/12/2024 02:20 PM|82/52|142|9|Fever, chills and confusion|None known|None|HIGH|100.2|86
+92|115|34|01/12/2026 10:03 PM|87/59|121|10|Productive cough with fever|None known|Metformin, Atorvastatin|HIGH|97.3|85
+93|116|31|02/26/2024 03:31 PM|124/75|106|5|Confusion and muscle cramps|None known|Warfarin|MEDIUM|98.2|94
+94|118|31|09/06/2024 05:38 AM|129/73|95|5|Hip pain, unable to bear weight after fall|None known|Metformin, Atorvastatin|MEDIUM|99.9|92
+95|119|34|10/25/2026 05:44 AM|85/50|127|6|Red, hot, swollen lower leg|Penicillin|Metformin, Atorvastatin|HIGH|101.7|90
+96|120|36|09/10/2024 06:49 AM|157/104|109|8|Fever with low blood pressure|Peanuts|Amlodipine|HIGH|98.1|84
+97|121|36|01/27/2025 07:30 AM|161/108|137|8|Abdominal swelling and jaundice|Iodinated contrast|Amlodipine|HIGH|100.6|93
+98|122|36|06/10/2025 04:49 AM|147/95|100|8|Palpitations and dizziness|Peanuts|Furosemide|MEDIUM|99.3|93
+99|125|31|05/13/2025 03:03 AM|127/81|85|2|Wrist deformity after fall|Latex|Warfarin|LOW|99.1|99
+100|127|31|10/11/2024 10:09 AM|150/87|94|6|Hip pain, unable to bear weight after fall|Sulfa drugs|Levothyroxine|MEDIUM|100.4|94
+101|128|33|04/16/2025 09:53 PM|129/72|71|2|Intoxicated, vomiting|Penicillin|Aspirin|LOW|97.3|95
+102|129|32|05/26/2024 10:58 AM|119/74|80|1|Shortness of breath on exertion|Latex|Metformin, Atorvastatin|LOW|99.1|95
+103|130|32|09/10/2024 03:39 AM|123/76|65|3|Increasing breathlessness over 3 days|Iodinated contrast|Furosemide|LOW|97.3|98
+104|132|35|10/20/2025 04:19 AM|179/105|132|10|Reduced urine output and swelling|None known|Amlodipine|HIGH|98.2|92
+105|133|35|02/05/2024 09:50 AM|100/64|102|7|Extreme thirst and vomiting|None known|Furosemide|HIGH|98.1|90
+106|134|34|05/14/2024 11:20 PM|143/81|N/A|6|Pleuritic chest pain|Latex|Amlodipine|MEDIUM|100.2|94
+107|135|33|10/06/2024 12:01 PM|155/100|141|9|Chest tightness with sweating|Codeine|Amlodipine|HIGH|98.8|84
+108|137|33|04/27/2024 05:09 PM|164/108|139|10|Palpitations and dizziness|Penicillin|None|HIGH|100.8|92
+109|139|31|10/22/2024 04:34 PM|97/62|113|6|Shortness of breath on exertion|None known|None|HIGH|98.1|86
+110|140|34|07/12/2025 02:05 AM|129/71|88|6|Fever, chills and confusion|None known|None|MEDIUM|100.8|92
+111|141|31|12/25/2024 08:59 PM|111/62|103|4|Painful swollen calf|Iodinated contrast|Metformin, Atorvastatin|MEDIUM|99.9|96
+112|143|33|03/23/2025 09:17 PM|136/86|60|5|Severe lower back pain after fall|None known|None|LOW|97.3|95
+113|144|36|06/14/2025 02:41 PM|182/108|132|8|Diarrhea and abdominal cramps|Codeine|Metformin|HIGH|101.7|86
+114|145|31|02/20/2025 04:30 AM|156/90|130|7|Wheezing and shortness of breath|Sulfa drugs|Warfarin|HIGH|102.4|86
+115|147|36|10/02/2024 02:26 PM|119/69|87|1|Intoxicated, vomiting|Latex|None||97.7|96
+116|149|32|08/06/2024 07:02 AM|132/88|107|8|Palpitations and dizziness|Iodinated contrast|None|MEDIUM|99.3|93
+117|150|32|07/25/2025 02:44 AM|134/76|94|5|Wheezing and shortness of breath|None known|Metformin|LOW|97.3|95
+118|151|33|01/29/2026 04:17 AM|113/74|83|4|Vomiting and abdominal distension|None known|None|LOW|99.3|100
+119|153|34|03/22/2025 11:33 AM|174/103|103|7|Palpitations and dizziness|Peanuts|Metformin|HIGH|99.5|88
+120|155|35|08/23/2025 01:35 PM|121/75|93|8|Redness and discharge at surgical wound|Penicillin|Levothyroxine|MEDIUM|101.3|97
+121|156|35|08/21/2024 08:18 AM|139/91|92|3|Confusion and muscle cramps|None known|None|MEDIUM|98.8|96
+122|157|36|12/21/2024 02:11 AM|158/96|114|10|Pleuritic chest pain|Codeine|Lisinopril|HIGH|102.7|91
+123|159|36|10/16/2025 06:24 PM|105/62|62|5|Chest tightness with sweating|Codeine|Salbutamol inhaler|LOW|97.7|99
+124|160|32|06/18/2024 10:54 PM|132/76|64|3|Intoxicated, vomiting|Peanuts|Metformin|LOW|98.2|100
+125|161|32|10/03/2024 11:21 AM|164/103|106|7|Chronic knee pain limiting walking|None known|None|HIGH|99.9|85
+126|162|34|10/22/2024 06:13 PM|95/57|121|8|Hip pain, unable to bear weight after fall|Iodinated contrast|None|HIGH|100.9|93
+127|163|34|02/28/2025 01:15 PM|185/111|141|9|Chest pain radiating to left arm|Iodinated contrast|Atorvastatin|HIGH|100.4|88
+128|164|36|03/13/2024 12:46 AM|116/74|88|5|Fatigue and dizziness|Penicillin|Atorvastatin|MEDIUM|98.4|95
+129|165|36|08/26/2024 06:40 AM|136/81|92|5|Increasing breathlessness over 3 days|None known|None|MEDIUM|100.2|96
+130|167|35|04/05/2024 09:34 PM|126/83|83|2|Change in bowel habits|Codeine|Amlodipine|LOW|99.1|95
+131|168|32|08/04/2024 06:44 PM|131/81|94|4|Cough with blood-streaked sputum|None known|None|LOW|98.8|97
+132|169|36|09/22/2024 08:41 AM|91/57|107|6|Increasing breathlessness over 3 days|None known|Amlodipine|HIGH|98.1|93
+133|170|34|09/27/2024 09:39 PM|124/81|87|1|Hip pain, unable to bear weight after fall|None known|Levothyroxine|LOW|97.2|98
+134|172|34|12/22/2025 02:45 PM|96/58|108|6|Unintentional weight loss|Sulfa drugs|Aspirin|HIGH|98.1|91
+135|173|32|05/05/2025 12:07 AM|80/51|104|7|Chest tightness with sweating|None known|Warfarin|HIGH|100.6|93
+136|174|34|07/03/2025 11:27 PM|185/124|117|10|Productive cough with fever|None known|None|HIGH|101.5|93
+137|175|34|01/28/2025 07:02 AM|97/57|124|6|Worst headache of life|Penicillin|None|HIGH|103.1|86
+138|176|34|01/13/2024 12:06 PM|100/56|115|10|Productive cough with fever|Sulfa drugs|Lisinopril|HIGH|99.1|85
+139|178|33|07/02/2024 08:41 PM|121/72|85|4|Breast lump|Penicillin|Warfarin|MEDIUM|98.6|95
+140|181|33|04/13/2025 05:29 PM|81/53|129|7|Hip pain, unable to bear weight after fall|Sulfa drugs|Furosemide|HIGH|103.6|92
+141|182|31|07/22/2025 09:08 AM|136/82|106|5|Shortness of breath on exertion|Sulfa drugs|None|MEDIUM|99.5|95
+142|183|33|11/03/2025 01:26 PM|114/75|61|4|Wheezing and shortness of breath|Latex|Metformin|LOW|37.2|97
+143|184|32|03/21/2026 05:08 AM|157/103|123|10|Productive cough with fever|Iodinated contrast|Lisinopril|HIGH|103.6|87
+144|185|33|08/01/2024 08:56 PM|132/83|88|6|Right lower quadrant abdominal pain|Iodinated contrast|Atorvastatin|MEDIUM|97.9|93
+145|186|35|12/10/2024 06:52 PM|87/53|100|7|Pleuritic chest pain|Peanuts|Aspirin|HIGH|103.3|84
+146|187|34|03/01/2024 04:41 AM|137/91|88|5|Leg swelling and orthopnea|Sulfa drugs|None|MEDIUM|98.8|96
+147|188|32|07/25/2024 06:50 PM|148/84|103|8|Fever, chills and confusion|Sulfa drugs|Aspirin|MEDIUM|98.6|96
+148|189|32|03/07/2025 05:58 AM|126/74|110|6|Fatigue and dizziness|Iodinated contrast|Aspirin|MEDIUM|98.2|96
+149|190|33|05/09/2025 05:04 AM|150/99|96|4|Right lower quadrant abdominal pain|Iodinated contrast|Levothyroxine|MEDIUM|98.1|95
+150|191|34|08/16/2025 07:24 AM|116/70|88|5|Sudden right-sided weakness and slurred speech|Iodinated contrast|None|MEDIUM|98.6|95
+151|192|34|11/06/2025 08:50 PM|169/114|138|8|Severe lower back pain after fall|None known|Furosemide|HIGH|102.9|92
+152|193|32|06/05/2025 09:54 PM|164/101|104|6|Palpitations and dizziness|Sulfa drugs|None|HIGH|98.6|90
+153|196|35|11/29/2024 11:08 PM|119/76|86|5|Fatigue and dizziness|None known|Amlodipine|LOW|98.6|99
+154|198|32|02/17/2026 10:03 AM|84/53|102|10|Sudden right-sided weakness and slurred speech|None known|None|HIGH|97.5|86
+155|200|36|09/25/2024 07:46 PM|100/55|115|10|Worst headache of life|Peanuts|Aspirin|HIGH|98.6|89
+156|201|35|07/07/2024 08:29 AM|125/84|65|2|Witnessed generalized seizure|Penicillin|Furosemide|LOW|98.6|100
+157|202|33|01/07/2025 05:46 PM|96/58|108|7|Red, hot, swollen lower leg|Sulfa drugs|Levothyroxine|HIGH|99.0|87
+158|203|33|08/01/2025 08:53 PM|133/80|69|2|Black tarry stools|Iodinated contrast|Metformin|LOW|97.5|97
+159|204|36|09/21/2025 09:19 AM|130/75|71|0|Brief loss of consciousness|Peanuts|None|LOW|98.2|95
+160|205|34|06/03/2025 02:44 PM|88/58|113|10|Sudden right-sided weakness and slurred speech|Iodinated contrast|None|HIGH|102.0|85
+161|207|31|03/01/2026 10:01 PM|166/111|114|6|Confusion and muscle cramps|Penicillin|Metformin|HIGH|97.3|88
+162|208|33|02/26/2024 08:47 AM|106/66|70|5|Shortness of breath on exertion|Latex|Metformin|LOW|99.3|98
+163|211|31|09/17/2024 02:16 PM|125/84|87|6|Reduced urine output and swelling|None known|None|MEDIUM|99.1|93
+164|212|36|12/13/2024 04:22 AM|140/81|110|5|Leg swelling and orthopnea|None known|Furosemide|MEDIUM|99.0|97
+165|213|35|02/26/2025 08:22 AM|145/89|94|6|Witnessed generalized seizure|None known|Levothyroxine|MEDIUM|101.3|96
+166|215|35|10/11/2025 06:20 AM|88/57|132|9|Chest tightness with sweating|None known|None|HIGH|97.3|88
+167|216|33|01/07/2025 10:46 PM|116/76|eighty|3|Leg swelling and orthopnea|Codeine|Aspirin|LOW|97.9|95
+168|217|34|06/03/2024 02:22 AM|155/99|100|8|Sudden right-sided weakness and slurred speech|None known|Metformin|HIGH|100.8|87
+169|219|31|05/27/2025 04:04 PM|89/51|116|9|Worst headache of life|Peanuts|None|HIGH|102.6|92
+170|221|35|06/29/2024 11:06 PM|170/100|115|9|Wheezing and shortness of breath|None known|Levothyroxine|HIGH|100.0|91
+171|223|35|05/05/2025 09:58 AM|161/106|124|10|Reduced urine output and swelling|Sulfa drugs|Levothyroxine|HIGH|100.0|90
+172|225|36|04/10/2025 09:32 AM|126/73|92|7|Confusion and muscle cramps|None known|Levothyroxine|MEDIUM|-98.6|93
+173|227|34|09/21/2024 06:19 AM|139/87|67|2|Wheezing and shortness of breath|None known|None|LOW|98.2|97
+174|228|33|12/13/2024 09:07 PM|112/65|87|5|Wheezing and shortness of breath|Iodinated contrast|Metformin, Atorvastatin|LOW|98.8|100
+175|229|34|02/06/2026 12:04 PM|139/86|89|6|Brief loss of consciousness|None known|Levothyroxine|MEDIUM|99.7|92
+176|230|32|01/19/2026 05:37 PM|169/97|108|10|Chest tightness with sweating|None known|Metformin, Atorvastatin|HIGH|100.6|89
+177|231|34|11/28/2024 11:50 PM|176/111|128|10|Fever, chills and confusion|None known|Lisinopril|HIGH|101.5|93
+178|233|35|06/07/2025 04:32 AM|171/98|110|10|Hip pain, unable to bear weight after fall|Peanuts|None|HIGH|100.8|85
+179|235|34|04/17/2025 11:19 AM|133/84|82|1|Severe lower back pain after fall|None known|Metformin, Atorvastatin|LOW|97.5|97
+180|236|36|07/19/2025 03:20 PM|138/84|88|7|Right lower quadrant abdominal pain|Codeine|Metformin|MEDIUM|97.9|94
+181|237|35|08/01/2024 08:47 AM|98/60|116|10|Pleuritic chest pain|None known|Warfarin|HIGH|99.7|92
+153|196|35|11/29/2024 11:08 PM|119/76|86|5|Fatigue and dizziness|None known|Amlodipine|LOW|98.6|99
+182|238|31|10/31/2024 03:49 PM|140/79|98|5|Shortness of breath on exertion|None known|Lisinopril|MEDIUM|99.9|94
+183|239|31|04/10/2025 12:19 AM|131/76|88|3|Wrist deformity after fall|None known|Salbutamol inhaler|MEDIUM|98.8|92
+184|240|33|10/19/2026 08:43 PM|125/81|88|3|Witnessed generalized seizure|Iodinated contrast|Furosemide|MEDIUM|97.9|94
+185|241|35|08/23/2024 03:22 PM|134/76|98|8|Pleuritic chest pain|Penicillin|None|MEDIUM|99.1|94
+186|242|36|02/29/2024 04:03 AM|119/71|101|8|Fever, chills and confusion|None known|None|MEDIUM|100.9|95
+187|244|34|04/04/2024 01:37 AM|90/57|134|6|Palpitations and dizziness|Penicillin|Lisinopril|HIGH|97.9|85
+188|245|34|11/06/2024 08:33 PM|117/73|92|3|Redness and discharge at surgical wound|Peanuts|None|MEDIUM|99.7|94
+189|247|32|11/18/2024 10:43 AM|141/83|102|4|Increasing breathlessness over 3 days|None known|None|MEDIUM|98.2|97
+190|249|36|04/17/2025 01:55 PM|187/125|145|6|Chest tightness with sweating|Codeine|Amlodipine|HIGH|102.6|87
+191|250|33|08/29/2025 05:41 PM|86/53|115|9|Diarrhea and abdominal cramps|None known|Lisinopril|HIGH|97.3|84
+192|251|35|10/15/2025 02:37 AM|131/78|98|8|Intoxicated, vomiting|Latex|None|MEDIUM|99.5|93
+193|252|34|01/22/2024 03:38 PM|147/93|95|4|Severe lower back pain after fall|None known|Furosemide|MEDIUM|98.6|93
+194|253|32|09/04/2025 10:04 AM|86/54|134|8|Shortness of breath on exertion|Latex|Levothyroxine|HIGH|99.1|88
+195|254|34|03/13/2026 12:14 AM|129/81|79|4|Chest pain radiating to left arm|Peanuts|Metformin, Atorvastatin|LOW|97.7|100
+196|255|33|07/31/2025 01:40 PM|126/81|95|5|Chest pain radiating to left arm|Latex|Metformin, Atorvastatin|MEDIUM|100.2|95
+197|256|32|09/09/2025 07:28 PM|126/78|82|0|Productive cough with fever|Latex|Lisinopril|  LOW |99.3|100
+198|258|34|03/18/2025 05:07 AM|146/82|85|15|Pleuritic chest pain|Penicillin|Metformin, Atorvastatin|MEDIUM|98.2|93
+199|259|32|08/27/2025 09:54 PM|122/79|72|2|Increasing breathlessness over 3 days|Iodinated contrast|Metformin|LOW|98.6|96
+200|260|36|12/01/2024 04:43 AM|122/77|76|0|Painful groin bulge|Codeine|Aspirin|LOW|99.0|100
+201|261|35|04/11/2025 09:12 PM|99/61|110|6|Chest pain radiating to left arm|None known|Salbutamol inhaler|HIGH|98.1|93
+202|263|36|10/10/2025 01:06 AM|175/98|139|9|Leg swelling and orthopnea|None known|Lisinopril|HIGH|97.7|91
+203|264|33|01/03/2026 09:28 PM|138/81|94|6|Red, hot, swollen lower leg|Sulfa drugs|Lisinopril|MEDIUM|97.5|96
+204|265|33|07/21/2024 01:17 AM|138/86|93|8|Sudden right-sided weakness and slurred speech|Penicillin|Atorvastatin|MEDIUM|99.0|94
+205|266|35|11/01/2024 12:46 AM|139/87|65|0|Wrist deformity after fall|Penicillin|Metformin|N/A|97.9|99
+206|267|34|12/11/2024 05:26 PM|110/71|106|7|Head injury after fall|Sulfa drugs|None|MEDIUM|99.1|97
+207|268|36|05/01/2025 07:58 AM|131/75|109|7|Diarrhea and abdominal cramps|Penicillin|Furosemide|MEDIUM  |100.0|94
+208|269|34|03/28/2025 09:47 PM|118/68|96|4|Witnessed generalized seizure|None known|None|MEDIUM|100.4|93
+209|272|33|11/20/2024 05:57 PM|97/64|115|9|Reduced urine output and swelling|Latex|Warfarin|HIGH|99.3|88
+210|273|33|01/15/2025 08:22 AM|114/64|83|3|Witnessed generalized seizure|None known|None|LOW|99.7|95
+211|275|32|07/05/2025 05:56 AM|128/72|95|6|Fever, chills and confusion|Codeine|Warfarin|MEDIUM|98.2|95
+212|276|35|04/07/2025 08:46 PM|134/88|109|5|Change in bowel habits|Penicillin|Metformin, Atorvastatin|MEDIUM|99.7|93
+213|277|35|03/06/2025 12:08 AM|118/72|92|6|Sudden right-sided weakness and slurred speech|None known|Aspirin|MEDIUM|97.7|95
+214|278|34|01/13/2024 07:40 AM|92/58|114|7|Increasing breathlessness over 3 days|Penicillin|Amlodipine|HIGH|103.6|84
+215|279|31|07/16/2025 05:07 PM|110/61|109|3|Unintentional weight loss|Peanuts|Aspirin|MEDIUM|99.0|95
+216|280|33|10/05/2025 11:13 AM|188/108|144|8|Chest tightness with sweating|None known|None|HIGH|97.0|86
+217|281|33|11/19/2025 06:48 PM|130/87|108|3|Increasing breathlessness over 3 days|None known|Amlodipine| MEDIUM|97.7|97
+218|282|36|03/17/2026 11:28 PM|176/98|136|7|Pleuritic chest pain|None known|Levothyroxine|HIGH|100.8|91
+219|283|35|06/07/2025 05:08 AM|140/90|85|5|Chest tightness with sweating|None known|Furosemide|MEDIUM|100.9|93
+220|284|36|08/03/2025 11:48 AM|169/104|108|8|Worst headache of life|None known|Metformin, Atorvastatin|HIGH|99.5|93
+221|285|31|01/02/2026 11:00 AM|119/65|110|8|Cough with blood-streaked sputum|Peanuts|Metformin|MEDIUM|99.3|93
+222|286|34|12/27/2025 11:30 AM|183/121|112|8|Abdominal swelling and jaundice|None known|Warfarin|HIGH|98.2|93
+223|287|31|11/28/2024 11:44 AM|121/78|93|3|Hip pain, unable to bear weight after fall|None known|Aspirin|MEDIUM|100.0|95
+224|291|34|06/19/2025 01:18 PM|114/64|106|4|Fever with low blood pressure|None known|Amlodipine|MEDIUM|100.9|97
+225|292|31|10/02/2025 12:06 PM|177/106|140|6|Shortness of breath on exertion|Sulfa drugs|Atorvastatin|HIGH|101.7|84
+226|293|31|03/01/2026 06:29 PM|106/65|78|3|Productive cough with fever|None known|Aspirin|LOW|99.3|99
+227|294|33|02/19/2026 04:18 AM|139/78|87|7|Reduced urine output and swelling|None known|Aspirin|MEDIUM|98.8|97
+228|295|36|04/02/2025 04:47 AM|123/83|74|2|Brief loss of consciousness|None known|Atorvastatin|LOW|98.4|98
+229|296|35|08/31/2025 12:20 PM|90/49|141|7|Witnessed generalized seizure|None known|None|HIGH|101.3|86
+230|297|35|07/09/2025 04:49 PM|118/77|92|4|Fever with low blood pressure|None known|Warfarin|MEDIUM|100.6|92
+231|299|34|01/16/2026 03:25 AM|171/105|108|9|Red, hot, swollen lower leg|Peanuts|None|HIGH|102.7|93
+232|302|34|07/31/2024 11:38 PM|134/87|95|3|Severe lower back pain after fall|Penicillin|Warfarin|MEDIUM|100.4|96
+233|304|35|12/11/2024 01:22 AM|96/58|126|6|Shortness of breath on exertion|Iodinated contrast|Lisinopril|HIGH|100.4|89
+234|305|33|08/03/2025 08:13 AM|185/102|134|7|Chest tightness with sweating|Iodinated contrast|Furosemide|HIGH|98.1|93
+235|306|35|10/25/2024 05:56 AM|134/90|68|3|Pleuritic chest pain|Codeine|None|LOW|99.0|97
+183|239|31|04/10/2025 12:19 AM|131/76|88|3|Wrist deformity after fall|None known|Salbutamol inhaler|MEDIUM|98.8|92
+236|307|31|02/14/2024 01:14 PM|111/67|92|4|Chronic knee pain limiting walking|Peanuts|None|MEDIUM|97.7|92
+237|309|32|05/27/2024 11:46 AM|147/95|107|4|Worst headache of life|None known|Levothyroxine|MEDIUM|97.9|92
+238|310|33|06/25/2024 07:21 PM|175/107|101|6|Palpitations and dizziness|None known|Metformin|HIGH|99.1|93
+239|312|34|08/15/2024 03:25 AM|129/79|88|5|Diarrhea and abdominal cramps|None known|Metformin|MEDIUM|97.7|92
+240|313|31|01/12/2025 06:12 PM|137/76|92|6|Cough with blood-streaked sputum|Penicillin|Atorvastatin|MEDIUM|99.3|93
+241|314|33|08/26/2024 01:41 PM|111/64|96|6|Shortness of breath on exertion|None known|Levothyroxine|MEDIUM|97.7|95
+242|316|36|07/27/2024 11:43 PM|113/72|91|2|Palpitations and dizziness|None known|Metformin, Atorvastatin|LOW|99.3|95
+243|317|35|11/07/2024 10:28 AM|122/67|86|3|Leg swelling and orthopnea|Codeine|Aspirin|MEDIUM|97.7|97
+244|318|33|03/21/2025 09:11 PM|131/86|91|8|Right lower quadrant abdominal pain|None known|Warfarin|MEDIUM|99.5|95
+245|319|34|06/02/2025 12:45 AM|184/122|130|6|Leg swelling and orthopnea|None known|Levothyroxine|  HIGH |100.9|88
+246|320|36|12/23/2025 12:46 PM|93/55|109|7|Fever, chills and confusion|Iodinated contrast|Metformin|HIGH|96.8|87
+247|321|35|03/13/2024 05:59 PM|140/80|106|7|Confusion and muscle cramps|Peanuts|Furosemide|MEDIUM|100.4|95
+248|322|33|05/15/2024 12:57 PM|158/100|115|6|Painful swollen calf|Peanuts|None|HIGH|99.1|84
+249|324|31|10/28/2026 11:22 PM|95/63|103|9|Reduced urine output and swelling|Codeine|None|HIGH|102.0|86
+250|325|31|01/02/2025 11:50 PM|163/100|144|7|Chest tightness with sweating|None known|Lisinopril|HIGH|102.7|88
+251|326|31|02/10/2024 02:12 AM|134/79|101|3|Fatigue and dizziness|None known|None|MEDIUM|100.8|95
+252|327|32|05/15/2024 03:47 AM|127/76|110|7|Witnessed generalized seizure|Penicillin|None|MEDIUM|100.0|94
+253|328|32|07/27/2024 11:30 PM|116/78|102|7|Extreme thirst and vomiting|Latex|None|MEDIUM|100.9|94
+254|329|31|10/13/2024 09:07 PM|116/70|85|8|Red, hot, swollen lower leg|None known|Furosemide|MEDIUM|98.2|97
+255|330|33|02/11/2025 09:00 PM|123/76|108|3|Increasing breathlessness over 3 days|Peanuts|Warfarin|MEDIUM|100.9|94
+256|331|35|04/20/2025 05:58 PM|121/76|96|8|Witnessed generalized seizure|None known|Metformin|MEDIUM|97.9|93
+257|333|31|10/24/2024 12:17 AM|128/76|86|4|Pleuritic chest pain|Codeine|Metformin, Atorvastatin|LOW|97.3|98
+258|334|33|04/22/2024 05:42 PM|85/53|109|6|Diarrhea and abdominal cramps|Iodinated contrast|Metformin, Atorvastatin|HIGH|97.0|88
+259|335|34|07/04/2024 09:25 AM|172/109|103|9|Productive cough with fever|Iodinated contrast|Aspirin|HIGH|103.6|90
+260|336|32|10/02/2024 06:50 AM|115/69|80|5|Worst headache of life|Penicillin|Atorvastatin|LOW|97.3|98
+261|338|36|07/09/2025 03:56 AM|99/58|100|8|Confusion and muscle cramps|None known|None|HIGH|100.9|86
+262|339|35|08/22/2025 07:48 PM|110/66|107|4|Abdominal swelling and jaundice|Peanuts|None|MEDIUM|98.8|97
+263|340|32|10/22/2026 02:52 AM|83/45|116|6|Chest pain radiating to left arm|Penicillin|Metformin, Atorvastatin|HIGH|102.9|93
+264|341|32|07/22/2024 03:24 AM|118/74|103|6|Wrist deformity after fall|Iodinated contrast|Metformin, Atorvastatin|MEDIUM|99.1|92
+265|342|36|09/10/2025 03:50 AM|84/51|131|9|Head injury after fall|Iodinated contrast|Metformin, Atorvastatin|HIGH|99.0|91
+266|343|36|04/11/2025 09:39 AM|127/75|88|4|Painful swollen calf|Peanuts|Metformin|MEDIUM|99.9|93
+267|346|31|02/29/2024 01:21 PM|115/73|95|4|Black tarry stools|Peanuts|Atorvastatin|MEDIUM|97.9|92
+268|347|31|05/05/2024 03:57 PM|115/72|91|0|Painful groin bulge|None known|None|LOW|97.5|98
+36|44|33|10/29/2024 09:14 PM|122/71|100
+269|348|36|06/16/2024 05:19 PM|129/80|110|6|Reduced urine output and swelling|None known|Metformin|MEDIUM|100.6|97
+270|349|36|01/21/2025 07:37 PM|109/69|83|0|Diarrhea and abdominal cramps|Penicillin|None|LOW|98.2|99
+271|350|35|03/11/2025 02:01 AM|141/89|98|8|Palpitations and dizziness|Penicillin|Warfarin|MEDIUM|97.7|96
+272|351|32|07/08/2025 02:09 PM|137/88|88|5|Shortness of breath on exertion|None known|Salbutamol inhaler|MEDIUM|99.5|97
+273|352|36|10/04/2025 12:11 AM|120/66|108|4|Vomiting and abdominal distension|None known|Metformin, Atorvastatin|MEDIUM|98.8|93
+274|353|36|07/19/2025 03:00 AM|84/53|101|8|Wheezing and shortness of breath|Peanuts|Levothyroxine|HIGH|98.6|0
+275|355|36|01/15/2025 12:17 PM|150/90|94|3|Productive cough with fever|Penicillin|Salbutamol inhaler|MEDIUM|98.8|97
+276|356|33|08/06/2024 07:20 AM|130/71|86|5|Head injury after fall|None known|Amlodipine|LOW|98.4|99
+277|358|31|03/16/2025 01:50 PM|190/126|113|6|Productive cough with fever|Codeine|Amlodipine|HIGH|100.9|91
+278|359|33|02/04/2025 05:39 AM|158/102|119|10|Worst headache of life|Iodinated contrast|None|HIGH|97.5|88
+279|360|36|04/02/2025 09:05 PM|128/75|87|3|Red, hot, swollen lower leg|None known|Amlodipine|MEDIUM|100.0|96
+280|361|36|10/27/2026 01:49 AM|99/66|140|7|Wrist deformity after fall|None known|Metformin, Atorvastatin|HIGH|103.3|85
+281|363|33|09/07/2024 11:10 AM|124/79|94|3|Wheezing and shortness of breath|None known|Metformin, Atorvastatin|MEDIUM|99.3|95
+282|364|34|03/03/2024 09:55 PM|129/78|86|5|Chest tightness with sweating|Codeine|Metformin|MEDIUM|99.7|95
+283|366|36|11/26/2025 12:11 PM|117/69|108|8|Chest pain radiating to left arm|Peanuts|None|MEDIUM|101.1|93
+284|367|32|02/24/2024 04:11 PM|144/79|105|6|Breast lump|None known|Lisinopril|MEDIUM|98.1|95
+285|368|35|04/17/2024 04:12 PM|145/92|102|8|Red, hot, swollen lower leg|None known|None|MEDIUM|37.2|95
+286|369|35|06/20/2024 08:24 AM|127/85|91|0|Painful swollen calf|None known|Aspirin|LOW|97.7|98
+287|370|33|08/21/2024 04:55 AM|133/80|67|5|Worst headache of life|Latex|Lisinopril|LOW|98.2|96
+288|372|32|06/25/2025 09:35 AM|115/75|110|4|Redness and discharge at surgical wound|None known|Atorvastatin|MEDIUM|98.2|94
+289|375|33|06/21/2024 11:47 AM|179/118|100|9|Worst headache of life|None known|Metformin, Atorvastatin|HIGH|100.8|87
+290|376|32|04/09/2024 11:25 PM|134/89|105|4|Reduced urine output and swelling|None known|Lisinopril|MEDIUM|99.3|96
+291|377|32|05/28/2025 03:46 AM|184/121|133|8|Breast lump|None known|None|HIGH|99.9|86
+292|378|33|01/14/2025 03:34 PM|167/101|132|7|Chest tightness with sweating|None known|Levothyroxine|HIGH|103.5|0
+293|379|36|03/01/2025 05:29 PM|114/76|95|4|Shortness of breath on exertion|Codeine|Levothyroxine|MEDIUM|100.6|95
+294|380|34|05/19/2024 05:32 PM|110/72|107|8|Pleuritic chest pain|None known|Amlodipine|MEDIUM|98.1|93
+295|381|32|07/04/2024 12:34 PM|160/99|-12|6|Leg swelling and orthopnea|None known|Metformin|HIGH|97.0|87
+296|385|31|10/23/2026 06:44 PM|120/73|105|5|Red, hot, swollen lower leg|None known|Metformin, Atorvastatin|MEDIUM|99.0|94
+297|386|35|10/12/2025 10:40 PM|131/88|84|1|Worst headache of life|None known|Amlodipine|LOW|99.5|96
+298|387|36|12/09/2025 01:53 PM|136/82|85|8|Reduced urine output and swelling|None known|Metformin|MEDIUM|101.1|97
+299|388|33|02/09/2026 11:30 PM|117/79|74|0|Painful swollen calf|None known|Levothyroxine|LOW|97.9|96
+300|390|34|01/09/2025 03:09 AM|137/93|106|4|Leg swelling and orthopnea|None known|Salbutamol inhaler|MEDIUM|100.2|93
+301|391|33|04/02/2024 03:22 AM|94/53|145|9|Chest tightness with sweating|Peanuts|Levothyroxine|HIGH|100.9|88
+302|392|34|04/19/2024 10:37 PM|158/99|138|9|Worst headache of life|Peanuts|Aspirin|HIGH|101.3|84
+303|393|34|11/21/2024 08:03 AM|140/84|65|1|Wheezing and shortness of breath|None known|Metformin|LOW|98.4|100
+304|394|35|01/14/2025 03:25 PM|129/71|106|3|Painful groin bulge|Sulfa drugs|Amlodipine|MEDIUM|98.1|95
+305|395|31|03/19/2025 10:44 AM|86/50|110|6|Head injury after fall|None known|None|HIGH|101.1|88
+228|295|36|04/02/2025 04:47 AM|123/83|74|2|Brief loss of consciousness|None known|Atorvastatin|LOW|98.4|98
+306|397|35|04/29/2025 11:42 PM|125/77|78|0|Hip pain, unable to bear weight after fall|None known|Aspirin|LOW|99.1|95
+307|398|32|09/10/2025 12:24 AM|117/71|86|5|Wheezing and shortness of breath|Peanuts|Furosemide|MEDIUM|99.3|93
+308|399|34|01/30/2026 11:56 AM|88/55|139|10|Fever with low blood pressure|Peanuts|Aspirin|HIGH|98.4|88
+309|400|33|10/26/2025 10:14 PM|114/71|94|3|Diarrhea and abdominal cramps|Latex|Levothyroxine|MEDIUM|99.9|95
+310|402|34|04/28/2025 08:54 PM|116/68|69|2|Wrist deformity after fall|Latex|Lisinopril|LOW|98.1|97
+311|404|35|10/04/2025 09:11 PM|87/49|104|6|Increasing breathlessness over 3 days|None known|Metformin|HIGH|99.5|92
+312|405|32|05/16/2025 03:19 AM|109/66|95|3|Redness and discharge at surgical wound|Sulfa drugs|Levothyroxine|LOW|99.3|96
+313|406|33|03/30/2025 01:12 PM|162/98|144|10|Wheezing and shortness of breath|None known|None|HIGH|102.7|89
+314|407|35|07/30/2025 04:19 PM|139/76|94|4|Intoxicated, vomiting|Sulfa drugs|Atorvastatin|MEDIUM|100.8|93
+315|409|36|06/08/2024 12:21 AM|186/112|132|10|Black tarry stools|Latex|None|HIGH|102.4|88
+316|410|32|10/26/2024 06:53 AM|125/83|88|4|Confusion and muscle cramps|None known|Warfarin|MEDIUM|99.7|97
+317|411|36|12/15/2024 12:49 AM|132/88|88|6|Redness and discharge at surgical wound|None known|Levothyroxine|MEDIUM|98.4|96
+318|412|32|08/11/2024 11:09 AM|114/75|99|3|Red, hot, swollen lower leg|Latex|Lisinopril|MEDIUM|99.5|95
+319|414|32|04/20/2025 09:34 PM|122/81|103|6|Extreme thirst and vomiting|None known|Atorvastatin|MEDIUM|98.4|96
+320|415|35|05/30/2025 01:32 PM|129/75|96|5|Extreme thirst and vomiting|None known|Metformin, Atorvastatin|MEDIUM|98.8|97
+321|416|34|02/27/2024 02:26 PM|124/74|85|8|Abdominal swelling and jaundice|Peanuts|Metformin, Atorvastatin|MEDIUM|99.7|95
+322|417|32|07/18/2024 01:18 PM|136/88|95|5|Unintentional weight loss|None known|Furosemide|MEDIUM|99.9|96
+323|418|31|03/18/2025 02:47 PM|114/68|90|4|Productive cough with fever|Sulfa drugs|None|MEDIUM|100.9|97
+324|419|34|04/14/2025 08:17 AM|122/71|109|8|Productive cough with fever|Peanuts|Amlodipine|MEDIUM|100.9|101
+325|420|31|09/08/2025 07:15 AM|180/117|140|6|Wheezing and shortness of breath|Iodinated contrast|Aspirin|HIGH|98.6|90
+326|421|36|09/30/2025 07:23 AM|140/81|90|3|Abdominal swelling and jaundice|Penicillin|None|MEDIUM|100.8|97
+327|422|35|10/02/2025 08:08 AM|124/71|89|5|Red, hot, swollen lower leg|Latex|Metformin, Atorvastatin|MEDIUM|98.2|95
+328|423|32|02/20/2026 02:57 PM|132/89|87|1|Severe lower back pain after fall|Peanuts|None|LOW|99.5|95
+329|425|36|04/20/2026 12:35 PM|177/103|120|6|Shortness of breath on exertion|Penicillin|Furosemide|HIGH|97.3|91
+330|426|31|07/28/2024 11:22 PM|181/104|118|8|Chronic knee pain limiting walking|Latex|Furosemide|HIGH|102.6|86
+331|427|34|09/12/2024 10:08 PM|147/81|103|8|Extreme thirst and vomiting|Latex|Lisinopril|MEDIUM|101.1|93
+332|429|35|01/18/2024 09:44 PM|87/49|133|7|Right lower quadrant abdominal pain|Latex|None|HIGH|98.1|88
+333|430|34|04/24/2024 05:09 AM|179/117|N/A|7|Leg swelling and orthopnea|Latex|Levothyroxine|HIGH|102.2|92
+334|431|36|05/25/2024 02:08 PM|139/89|87|6|Pleuritic chest pain|None known|Furosemide|MEDIUM|98.4|94
+335|434|31|06/19/2024 09:12 PM|100/65|118|10|Worst headache of life|Codeine|Levothyroxine|HIGH|99.3|84
+336|436|34|03/15/2025 10:07 AM|115/67|62|0|Abdominal swelling and jaundice|None known|Lisinopril|LOW|99.5|95
+337|437|32|07/28/2025 01:35 AM|117/78|92|3|Shortness of breath on exertion|Iodinated contrast|None|LOW|99.0|95
+338|439|32|10/06/2024 09:25 AM|125/75|93|8|Low mood and poor sleep|Sulfa drugs|Metformin|MEDIUM|98.8|94
+339|440|36|06/10/2024 12:15 AM|94/52|144|10|Painful groin bulge|None known|Furosemide|HIGH|99.0|84
+340|441|35|08/16/2024 11:20 PM|120/66|93|6|Redness and discharge at surgical wound|Latex|None|MEDIUM|99.5|94
+341|443|36|02/25/2025 11:08 AM|171/103|125|8|Leg swelling and orthopnea|Peanuts|Levothyroxine|HIGH|102.7|86
+342|444|33|03/08/2024 04:43 PM|166/91|109|8|Witnessed generalized seizure|Iodinated contrast|Metformin|HIGH|98.4|92
+343|445|34|06/14/2024 12:14 PM|162/109|113|7|Diarrhea and abdominal cramps|Codeine|Lisinopril|HIGH|101.1|86
+344|447|31|03/24/2024 04:39 AM|111/63|105|7|Sudden right-sided weakness and slurred speech|Codeine|None|MEDIUM|99.5|92
+345|448|36|07/28/2024 04:44 PM|141/85|100|3|Wheezing and shortness of breath|Iodinated contrast|Salbutamol inhaler|MEDIUM|100.8|95
+346|449|31|11/03/2024 07:31 AM|86/49|111|7|Diarrhea and abdominal cramps|None known|Metformin, Atorvastatin|High|100.2|92
+347|451|35|06/19/2025 07:59 AM|80/45|120|7|Extreme thirst and vomiting|None known|None|HIGH|98.6|93
+348|453|32|07/12/2025 05:17 AM|100/57|142|6|Fever with low blood pressure|Latex|None|HIGH|100.2|91
+349|454|31|12/12/2025 02:22 AM|141/85|103|6|Painful swollen calf|Iodinated contrast|Atorvastatin|MEDIUM|100.8|94
+350|455|35|04/29/2026 05:55 AM|129/82|101|6|Pleuritic chest pain|None known|Levothyroxine|MEDIUM|98.8|95
+108|137|33|04/27/2024 05:09 PM|164/108|139|10|Palpitations and dizziness|Penicillin|None|HIGH|100.8|92
+351|456|34|07/02/2024 05:18 PM|117/68|63|4|Wheezing and shortness of breath|Sulfa drugs|Aspirin|LOW|97.9|99
+352|457|34|01/14/2024 07:38 PM|114/72|77|1|Pleuritic chest pain|None known|Lisinopril|LOW|97.7|96
+353|458|35|04/25/2024 10:15 PM|136/80|89|4|Chest tightness with sweating|None known|Amlodipine|MEDIUM|97.9|97
+354|459|34|10/11/2024 05:34 PM|146/81|86|4|Head injury after fall|Latex|Metformin|MEDIUM|99.1|92
+355|460|31|01/19/2025 08:32 PM|126/85|80|5|Unintentional weight loss|None known|None|LOW|99.5|100
+356|461|33|05/24/2025 02:35 AM|138/81|96|6|Chest pain radiating to left arm|Latex|Furosemide|MEDIUM|99.0|97
+357|462|34|10/04/2024 03:57 AM|97/61|124|8|Palpitations and dizziness|None known|Levothyroxine|HIGH|99.7|89

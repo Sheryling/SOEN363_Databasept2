@@ -1,0 +1,111 @@
+operation_no;episode_no;surgeon_no;operation;operation_datetime;outcome
+1;9;26;Open Reduction Internal Fixation;29/10/2024 14:56;Successful, minor bleeding controlled
+2;12;24;Inguinal Hernia Repair;16/10/2026 03:11;"Completed; patient transferred to recovery area"
+3;16;27;Hip Hemiarthroplasty;22/06/2024 20:44;Successful, minor bleeding controlled
+4;17;25;Colectomy;28/09/2024 23:00;Successful, minor bleeding controlled
+5;18;27;Hip Hemiarthroplasty;13/01/2025 07:40;"Completed; patient transferred to recovery area"
+6;22;23;Laparoscopic Cholecystectomy;22/05/2024 19:17;Successful, no complications
+7;24;26;Spinal Fusion;05/02/2025 07:58;
+8;26;27;Spinal Fusion;09/11/2025 17:37;Successful, drain left in situ
+9;32;24;Laparoscopic Appendectomy;14/08/2025 14:43;
+10;34;23;Lobectomy;07/01/2025 17:17;Successful, drain left in situ
+11;35;24;Laparoscopic Appendectomy;26/10/2024 06:31;Successful, minor bleeding controlled
+12;36;27;Spinal Fusion;10/10/2024 07:41;Successful, minor bleeding controlled
+13;48;28;Permanent Pacemaker Insertion;20/04/2025 01:55;Successful, minor bleeding controlled
+14;49;29;Craniotomy;29/08/2025 07:33;"Completed; patient transferred to recovery area"
+15;53;25;Radical Prostatectomy;27/03/2025 04:54;NULL
+16;54;24;Exploratory Laparotomy;06/05/2025 10:46;"Completed; patient transferred to recovery area"
+17;56;26;Spinal Fusion;01/02/2024 03:55;"Completed; patient transferred to recovery area"
+18;66;26;Open Reduction Internal Fixation;18/01/2025 02:39;Successful, no complications
+19;70;28;Chest Tube Insertion;20/02/2024 17:40;"Completed; patient transferred to recovery area"
+20;71;23;Radical Prostatectomy;20/06/2024 18:02;Successful, drain left in situ
+21;72;24;Colectomy;27/10/2024 10:30;Successful, drain left in situ
+22;73;26;Open Reduction Internal Fixation;29/12/2024 21:43;Successful, minor bleeding controlled
+23;77;25;Exploratory Laparotomy;13/11/2024 19:31;Successful, minor bleeding controlled
+24;78;24;Exploratory Laparotomy;12/03/2025 16:27;NULL
+25;79;29;Burr Hole Evacuation;17/07/2025 22:37;Successful, minor bleeding controlled
+26;81;25;Exploratory Laparotomy;29/12/2024 14:05;Successful, minor bleeding controlled
+27;82;23;Inguinal Hernia Repair;07/03/2025 19:00;Successful, no complications
+28;88;27;Spinal Fusion;14/10/2024 05:52;
+29;89;29;Burr Hole Evacuation;22/03/2026 02:59;"Completed; patient transferred to recovery area"
+30;91;23;Exploratory Laparotomy;15/01/2024 09:34;Complicated by transient arrhythmia, stabilized
+31;94;28;Percutaneous Coronary Intervention;23/10/2025 10:16;Complicated by transient arrhythmia, stabilized
+32;102;25;Mastectomy;20/05/2024 17:23;Complicated by transient arrhythmia, stabilized
+33;113;28;Percutaneous Coronary Intervention;11/08/2024 16:08;Complicated by transient arrhythmia, stabilized
+34;117;27;Spinal Fusion;07/08/2024 15:15;Complicated by transient arrhythmia, stabilized
+35;118;28;Percutaneous Coronary Intervention;10/12/2024 09:30;"Completed; patient transferred to recovery area"
+36;123;25;Exploratory Laparotomy;07/02/2026 21:46;Successful, no complications
+37;128;25;Upper GI Endoscopy;05/12/2025 03:16;"Completed; patient transferred to recovery area"
+38;133;26;Total Knee Arthroplasty;21/02/2025 11:23;Successful, drain left in situ
+39;140;28;Permanent Pacemaker Insertion;06/10/2024 11:09;Successful, minor bleeding controlled
+40;144;25;Inguinal Hernia Repair;19/09/2024 23:27;Successful, no complications
+41;149;27;Spinal Fusion;24/12/2024 21:02;Successful, no complications
+42;156;24;Port-a-Cath Insertion;05/08/2025 23:24;Successful, drain left in situ
+43;163;23;Inguinal Hernia Repair;06/03/2026 03:55;Successful, drain left in situ
+44;164;722;Mechanical Thrombectomy;16/05/2025 18:52;"Completed; patient transferred to recovery area"
+45;171;27;Spinal Fusion;18/10/2024 07:22;Complicated by transient arrhythmia, stabilized
+46;175;29;Craniotomy;24/09/2025 14:39;"Completed; patient transferred to recovery area"
+47;178;26;Total Knee Arthroplasty;02/12/2024 10:13;"Completed; patient transferred to recovery area"
+48;191;24;Exploratory Laparotomy;25/02/2025 23:04;Complicated by transient arrhythmia, stabilized
+49;193;25;Laparoscopic Cholecystectomy;13/04/2025 17:21;
+50;195;25;Upper GI Endoscopy;26/07/2025 17:26;Complicated by transient arrhythmia, stabilized
+51;202;27;Hip Hemiarthroplasty;29/09/2025 23:43;Successful, minor bleeding controlled
+52;206;25;Upper GI Endoscopy;22/01/2026 11:34;
+53;210;26;Spinal Fusion;14/04/2024 03:42;"Completed; patient transferred to recovery area"
+54;215;26;Spinal Fusion;29/12/2024 15:18;Successful, no complications
+55;216;28;Coronary Artery Bypass Graft;25/01/2025 14:57;Successful, drain left in situ
+56;219;28;Coronary Artery Bypass Graft;31/12/2024 06:49;"Completed; patient transferred to recovery area"
+57;228;23;Exploratory Laparotomy;18/02/2026 08:43;Successful, drain left in situ
+58;237;25;Mastectomy;21/01/2024 14:50;Successful, minor bleeding controlled
+59;242;28;Permanent Pacemaker Insertion;27/04/2025 13:50;Successful, no complications
+60;253;26;Open Reduction Internal Fixation;29/09/2024 14:48;Successful, minor bleeding controlled
+61;255;27;Open Reduction Internal Fixation;01/01/2025 02:09;
+62;257;25;Inguinal Hernia Repair;12/01/2025 09:18;Successful, no complications
+63;265;26;Spinal Fusion;22/04/2025 18:57;Complicated by transient arrhythmia, stabilized
+64;270;28;Coronary Artery Bypass Graft;11/09/2024 06:22;Complicated by transient arrhythmia, stabilized
+65;275;28;Percutaneous Coronary Intervention;22/06/2025 11:59;"Completed; patient transferred to recovery area"
+66;276;23;Mastectomy;20/09/2025 20:59;Successful, no complications
+67;282;26;Hip Hemiarthroplasty;12/11/2024 20:28;Successful, no complications
+68;284;28;Percutaneous Coronary Intervention;24/05/2025 14:55;Successful, drain left in situ
+69;285;25;Colectomy;02/08/2024 00:36;"Completed; patient transferred to recovery area"
+70;289;24;Laparoscopic Appendectomy;31/05/2024 07:27;Successful, drain left in situ
+71;291;28;Coronary Artery Bypass Graft;23/04/2024 13:08;"Completed; patient transferred to recovery area"
+72;294;24;Upper GI Endoscopy;08/03/2025 13:04;Complicated by transient arrhythmia, stabilized
+73;302;24;Upper GI Endoscopy;26/10/2026 11:09;Successful, drain left in situ
+74;308;28;Permanent Pacemaker Insertion;06/04/2024 16:13;Successful, no complications
+75;311;25;Laparoscopic Cholecystectomy;22/04/2025 06:06;Complicated by transient arrhythmia, stabilized
+76;314;23;Mastectomy;18/12/2025 21:42;Successful, drain left in situ
+77;316;24;Exploratory Laparotomy;16/10/2026 12:36;Successful, drain left in situ
+78;319;24;Laparoscopic Cholecystectomy;04/01/2026 16:52;Successful, no complications
+79;322;26;Spinal Fusion;28/03/2025 17:33;Successful, minor bleeding controlled
+80;324;23;Radical Prostatectomy;23/10/2026 01:22;Complicated by transient arrhythmia, stabilized
+81;332;25;Laparoscopic Appendectomy;28/03/2025 00:56;Successful, no complications
+82;333;27;Open Reduction Internal Fixation;24/07/2025 20:40;
+83;335;24;Exploratory Laparotomy;19/01/2026 20:32;Successful, minor bleeding controlled
+84;342;26;Spinal Fusion;07/08/2025 01:58;NULL
+85;345;27;Spinal Fusion;02/07/2024 20:31;Successful, drain left in situ
+86;348;25;Port-a-Cath Insertion;27/06/2025 10:59;NULL
+87;352;28;Permanent Pacemaker Insertion;31/01/2026 12:59;Successful, minor bleeding controlled
+88;353;25;Inguinal Hernia Repair;19/11/2024 13:53;Complicated by transient arrhythmia, stabilized
+89;355;25;Exploratory Laparotomy;16/08/2024 11:26;Complicated by transient arrhythmia, stabilized
+90;359;23;Laparoscopic Appendectomy;30/04/2025 06:29;Successful, minor bleeding controlled
+91;361;24;Radical Prostatectomy;29/12/2024 23:09;"Completed; patient transferred to recovery area"
+92;366;23;Upper GI Endoscopy;05/12/2024 00:53;Successful, no complications
+93;376;25;Radical Prostatectomy;06/07/2025 17:57;Successful, minor bleeding controlled
+94;386;24;Upper GI Endoscopy;24/07/2025 15:28;Successful, drain left in situ
+95;387;24;Laparoscopic Appendectomy;20/05/2024 08:24;Complicated by transient arrhythmia, stabilized
+96;391;25;Mastectomy;03/04/2025 00:15;Successful, minor bleeding controlled
+97;395;23;Colectomy;21/08/2025 16:27;Complicated by transient arrhythmia, stabilized
+98;398;30;Dialysis Catheter Insertion;28/04/2026 04:46;Successful, drain left in situ
+99;401;24;Laparoscopic Cholecystectomy;18/09/2024 13:31;NULL
+100;405;28;Percutaneous Coronary Intervention;03/02/2025 05:02;Successful, drain left in situ
+101;409;26;Open Reduction Internal Fixation;13/03/2025 08:00;Successful, minor bleeding controlled
+102;411;27;Open Reduction Internal Fixation;25/07/2024 02:36;
+103;432;24;Laparoscopic Cholecystectomy;28/07/2024 17:48;Successful, no complications
+104;435;28;Percutaneous Coronary Intervention;22/10/2026 07:41;Successful, minor bleeding controlled
+105;440;26;Total Knee Arthroplasty;10/05/2025 03:43;Successful, drain left in situ
+106;447;23;Lobectomy;08/04/2024 16:38;"Completed; patient transferred to recovery area"
+107;451;23;Upper GI Endoscopy;29/02/2024 09:58;Successful, no complications
+108;452;27;Total Knee Arthroplasty;22/03/2025 01:03;"Completed; patient transferred to recovery area"
+109;455;28;Permanent Pacemaker Insertion;09/11/2025 03:26;Successful, drain left in situ
+110;459;26;Open Reduction Internal Fixation;31/01/2025 07:25;Successful, drain left in situ
