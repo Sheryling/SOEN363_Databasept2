@@ -1,3 +1,7 @@
+import numbers
+import re
+import xml.etree.ElementTree as ET
+
 import pandas as pd
 
 tables = {}
@@ -52,9 +56,66 @@ tags_C = ["staff", "ward", "icdEntry", "patient", "admission", "triage", "diagno
           "note", "surgery", "discharge", "order", "labExam", "imaging", "report",
           "wardStay", "ccRecord", "wardRound"]
 
+root_C = ET.parse("source_C_asia/sakura_bay_export.xml").getroot()
+c_element_context = {}
+
+
+def collect_c_context(element, inherited):
+    context = inherited.copy()
+    context_columns = {
+        "patient": ("pid", "pid"),
+        "admission": ("aid", "aid"),
+        "order": ("orderId", "orderId"),
+        "imaging": ("examId", "examId"),
+        "wardStay": ("stayId", "stayId"),
+    }
+    if element.tag in context_columns:
+        context_column, attribute = context_columns[element.tag]
+        context[context_column] = element.get(attribute)
+
+    c_element_context[id(element)] = context
+    for child in element:
+        collect_c_context(child, context)
+
+
+collect_c_context(root_C, {})
+
 for tag in tags_C:
     key = "C_" + tag
-    df = pd.read_xml("source_C_asia/sakura_bay_export.xml", xpath=".//" + tag, parser="etree")
+    if tag == "triage":
+        records = []
+        for element in root_C.findall(".//triage"):
+            record = {"triageId": element.get("triageId")}
+            for child in element:
+                if child.tag == "bloodPressure":
+                    systolic = child.findtext("systolic")
+                    diastolic = child.findtext("diastolic")
+                    record["bloodPressure"] = (
+                        f"{systolic}/{diastolic}"
+                        if systolic is not None and diastolic is not None
+                        else None
+                    )
+                    record["bloodPressure.systolic"] = systolic
+                    record["bloodPressure.diastolic"] = diastolic
+                else:
+                    record[child.tag] = child.text
+            records.append(record)
+        df = pd.DataFrame.from_records(records)
+    else:
+        df = pd.read_xml("source_C_asia/sakura_bay_export.xml",
+                         xpath=".//" + tag, parser="etree")
+
+    elements = root_C.findall(".//" + tag)
+    if len(elements) == len(df):
+        context_columns = set().union(
+            *(c_element_context[id(element)].keys() for element in elements)
+        ) if elements else set()
+        for column in context_columns:
+            if column not in df.columns:
+                df[column] = [
+                    c_element_context[id(element)].get(column)
+                    for element in elements
+                ]
 
     # Records with no usable ID (missing, or not a number)
     # Ward codes (W01) and ICD-9 codes (V58.11) are not numbers on purpose, so they are only checked for missing
@@ -541,6 +602,7 @@ date_time_columns = {
     "A_UNIT_STAYS": ["InDT", "OutDT"],
     "A_WARD_RECORDS": ["RecordDatetime"],
     "B_critical_care_obs": ["record_datetime"],
+    "B_episodes": ["episode_start", "episode_end"],
     "B_diagnoses": ["diagnosis_datetime"],
     "B_imaging_reports": ["report_datetime"],
     "B_imaging": ["exam_datetime"],
@@ -565,7 +627,7 @@ date_time_columns = {
     "C_wardStay": ["inTime", "outTime"],
     "C_ccRecord": ["recordDatetime"],
     "C_wardRound": ["recordDatetime"],
-    "D_patients": ["dob"],
+    "D_patients": ["dob", "deceasedAt"],
     "D_encounters": ["admittedAt", "dischargedAt"],
     "D_triage": ["triageDatetime"],
     "D_diagnoses": ["diagnosisDatetime"],
@@ -724,6 +786,1395 @@ print("Invalid/inconsistent date values detected:", total_date_issues)
 print("Safely corrected date values:", total_corrected_dates)
 print("Unresolved date values:", total_unresolved_dates)
 print("Records quarantined due to required invalid dates:", total_date_quarantined)
+
+# 5 - Numeric Values and Units
+# ---------------------------------- numeric value and unit rules ---------------------------------------
+# 1. plausibility bounds are broad and flag data-quality issues, not clinical decision thresholds
+# 2. invalid values are set to pd.NA in the standardized columns
+# 3. original source columns remain unchanged
+# -------------------------------------------------------------------------------------------------------
+triage_columns = {
+    "A_TRIAGE": {
+        "id": "TriageID", "blood_pressure": "BP", "heart_rate": "HR",
+        "pain_level": "PainScore", "body_temp": "TempF", "oxygen_sat": "SpO2Pct",
+    },
+    "B_triage": {
+        "id": "triage_id", "blood_pressure": "blood_pressure", "heart_rate": "heart_rate",
+        "pain_level": "pain_level", "body_temp": "temp_c", "oxygen_sat": "spo2",
+    },
+    "C_triage": {
+        "id": "triageId", "blood_pressure": "bloodPressure",
+        "systolic": "bloodPressure.systolic", "diastolic": "bloodPressure.diastolic",
+        "heart_rate": "heartRate", "pain_level": "painLevel",
+        "body_temp": "temperatureC", "oxygen_sat": "spo2",
+    },
+    "D_triage": {
+        "id": "triageId", "systolic": "bloodPressure.systolic",
+        "diastolic": "bloodPressure.diastolic", "heart_rate": "heartRate",
+        "pain_level": "painLevel", "body_temp": "tempCelsius",
+        "oxygen_sat": "spo2Fraction",
+    },
+}
+
+numeric_quality_flags = []
+numeric_conversion_counts = {}
+
+def parse_numeric_value(value):
+    if pd.isna(value):
+        return None
+    text = str(value).strip().lower().replace(",", ".")
+    text = re.sub(r"\s*(?:mmhg|bpm|%|°c|°f|c|f)\s*$", "", text)
+    try:
+        return float(text)
+    except ValueError:
+        return None
+
+def add_numeric_flag(table_name, row, field, raw_value, flag, details):
+    numeric_quality_flags.append({
+        "table": table_name,
+        "record_id": row[triage_columns[table_name]["id"]],
+        "field": field,
+        "raw_value": raw_value,
+        "flag": flag,
+        "details": details,
+    })
+
+def is_in_range(value, minimum, maximum):
+    return value is not None and minimum <= value <= maximum
+
+for table_name, columns in triage_columns.items():
+    table = cleaned_tables[table_name]
+    source = table_name[0]
+    systolic_values = []
+    diastolic_values = []
+    heart_rate_values = []
+    pain_level_values = []
+    body_temp_values = []
+    oxygen_sat_values = []
+    normal_unit_conversions = 0
+
+    for _, row in table.iterrows():
+        if "systolic" in columns:
+            systolic_raw = row[columns["systolic"]]
+            diastolic_raw = row[columns["diastolic"]]
+            systolic = parse_numeric_value(systolic_raw)
+            diastolic = parse_numeric_value(diastolic_raw)
+            blood_pressure_raw = f"{systolic_raw}/{diastolic_raw}"
+        else:
+            blood_pressure_raw = row[columns["blood_pressure"]]
+            pressure_match = re.fullmatch(
+                r"\s*([-+]?\d+(?:[.,]\d+)?)\s*/\s*([-+]?\d+(?:[.,]\d+)?)"
+                r"(?:\s*mmhg)?\s*",
+                str(blood_pressure_raw),
+                flags=re.IGNORECASE,
+            )
+            if pressure_match:
+                systolic = parse_numeric_value(pressure_match.group(1))
+                diastolic = parse_numeric_value(pressure_match.group(2))
+            else:
+                systolic = diastolic = None
+
+        if systolic is None or diastolic is None:
+            add_numeric_flag(
+                table_name, row, "blood_pressure", blood_pressure_raw,
+                "invalid_numeric", "Expected numeric systolic/diastolic values in mmHg.",
+            )
+            systolic_values.append(pd.NA)
+            diastolic_values.append(pd.NA)
+        elif not (40 <= systolic <= 300 and 20 <= diastolic <= 200 and systolic > diastolic):
+            add_numeric_flag(
+                table_name, row, "blood_pressure", blood_pressure_raw,
+                "invalid_numeric",
+                "Expected systolic 40-300 mmHg, diastolic 20-200 mmHg, and systolic greater than diastolic.",
+            )
+            systolic_values.append(pd.NA)
+            diastolic_values.append(pd.NA)
+        else:
+            systolic_values.append(systolic)
+            diastolic_values.append(diastolic)
+
+        heart_rate_raw = row[columns["heart_rate"]]
+        heart_rate = parse_numeric_value(heart_rate_raw)
+        if not is_in_range(heart_rate, 1, 300):
+            add_numeric_flag(
+                table_name, row, "heart_rate", heart_rate_raw, "invalid_numeric",
+                "Expected a numeric heart rate from 1 to 300 beats per minute.",
+            )
+            heart_rate_values.append(pd.NA)
+        else:
+            heart_rate_values.append(heart_rate)
+
+        pain_level_raw = row[columns["pain_level"]]
+        pain_level = parse_numeric_value(pain_level_raw)
+        if not is_in_range(pain_level, 0, 10):
+            add_numeric_flag(
+                table_name, row, "pain_level", pain_level_raw, "invalid_numeric",
+                "Expected a numeric pain score from 0 to 10.",
+            )
+            pain_level_values.append(pd.NA)
+        else:
+            pain_level_values.append(pain_level)
+
+        body_temp_raw = row[columns["body_temp"]]
+        body_temp = parse_numeric_value(body_temp_raw)
+        standardized_temp = None
+        if source == "A" and is_in_range(body_temp, 25, 45):
+            standardized_temp = body_temp
+            add_numeric_flag(
+                table_name, row, "body_temp", body_temp_raw, "unit_inconsistency_corrected",
+                "Celsius value found in the Fahrenheit field; retained as Celsius.",
+            )
+        elif source in ("B", "C") and is_in_range(body_temp, 80, 120):
+            standardized_temp = (body_temp - 32) * 5 / 9
+            add_numeric_flag(
+                table_name, row, "body_temp", body_temp_raw, "unit_inconsistency_corrected",
+                "Fahrenheit value found in the Celsius field; converted to Celsius.",
+            )
+        elif source == "D" and is_in_range(body_temp, 273.15, 373.15):
+            standardized_temp = body_temp - 273.15
+            add_numeric_flag(
+                table_name, row, "body_temp", body_temp_raw, "unit_inconsistency_corrected",
+                "Kelvin value found in the Celsius field; converted to Celsius.",
+            )
+        elif source == "A" and is_in_range(body_temp, 80, 120):
+            standardized_temp = (body_temp - 32) * 5 / 9
+            normal_unit_conversions += 1
+        elif is_in_range(body_temp, 25, 45):
+            standardized_temp = body_temp
+
+        if standardized_temp is None or not is_in_range(standardized_temp, 25, 45):
+            add_numeric_flag(
+                table_name, row, "body_temp", body_temp_raw, "invalid_numeric",
+                "Could not interpret a valid body temperature in the source's expected units.",
+            )
+            body_temp_values.append(pd.NA)
+        else:
+            body_temp_values.append(standardized_temp)
+
+        oxygen_sat_raw = row[columns["oxygen_sat"]]
+        oxygen_sat = parse_numeric_value(oxygen_sat_raw)
+        if source == "D" and is_in_range(oxygen_sat, 0.000001, 1):
+            standardized_oxygen_sat = oxygen_sat * 100
+            normal_unit_conversions += 1
+        elif source == "D" and is_in_range(oxygen_sat, 50, 100):
+            standardized_oxygen_sat = oxygen_sat
+            add_numeric_flag(
+                table_name, row, "oxygen_sat", oxygen_sat_raw, "unit_inconsistency_corrected",
+                "Percent value found in the fraction field; converted to a 0-1 fraction then standardized to percent.",
+            )
+        elif source == "D" and oxygen_sat is not None and 1 < oxygen_sat < 50:
+            standardized_oxygen_sat = None
+        elif source != "D" and is_in_range(oxygen_sat, 0.000001, 1):
+            standardized_oxygen_sat = oxygen_sat * 100
+            add_numeric_flag(
+                table_name, row, "oxygen_sat", oxygen_sat_raw, "unit_inconsistency_corrected",
+                "Fraction found in a percent field; converted to percentage.",
+            )
+        else:
+            standardized_oxygen_sat = oxygen_sat
+
+        if not is_in_range(standardized_oxygen_sat, 0.000001, 100):
+            add_numeric_flag(
+                table_name, row, "oxygen_sat", oxygen_sat_raw, "invalid_numeric",
+                "Expected oxygen saturation greater than 0 and at most 100 percent.",
+            )
+            oxygen_sat_values.append(pd.NA)
+        else:
+            oxygen_sat_values.append(standardized_oxygen_sat)
+
+    table["blood_pressure_systolic_mmhg"] = pd.array(systolic_values, dtype="Float64")
+    table["blood_pressure_diastolic_mmhg"] = pd.array(diastolic_values, dtype="Float64")
+    table["heart_rate_bpm"] = pd.array(heart_rate_values, dtype="Float64")
+    table["pain_level_0_10"] = pd.array(pain_level_values, dtype="Float64")
+    table["body_temp_c"] = pd.array(body_temp_values, dtype="Float64")
+    table["oxygen_sat_pct"] = pd.array(oxygen_sat_values, dtype="Float64")
+    numeric_conversion_counts[table_name] = normal_unit_conversions
+
+print("\nNumeric/unit standardization:")
+for table_name, table in triage_columns.items():
+    table_flags = [flag for flag in numeric_quality_flags if flag["table"] == table_name]
+    invalid_count = sum(flag["flag"] == "invalid_numeric" for flag in table_flags)
+    unit_count = sum(flag["flag"] == "unit_inconsistency_corrected" for flag in table_flags)
+    print(table_name, "standardized records:", len(cleaned_tables[table_name]),
+          "invalid values flagged:", invalid_count, "unit inconsistencies corrected:", unit_count,
+          "routine unit conversions:", numeric_conversion_counts[table_name])
+
+print("Total invalid numeric values flagged:",
+      sum(flag["flag"] == "invalid_numeric" for flag in numeric_quality_flags))
+print("Total unit inconsistencies corrected:",
+      sum(flag["flag"] == "unit_inconsistency_corrected" for flag in numeric_quality_flags))
+for flag in numeric_quality_flags:
+    print(
+        flag["table"], "record", flag["record_id"], flag["field"],
+        "raw value:", repr(flag["raw_value"]), "-", flag["flag"] + ":",
+        flag["details"],
+    )
+
+
+# 6 - Clinical Categories
+# ---------------------------------- clinical category mapping rules ------------------------------------
+# 1. map source-specific labels to one documented set of canonical values
+# 2. unknown or invalid categories are converted to pd.NA
+# 3. each unknown or invalid category is preserved as a flag for review
+# -------------------------------------------------------------------------------------------------------
+
+category_quality_flags= []
+
+# Admission types
+admission_type_mappings = {
+    "A_ADMISSIONS": {"column": "AdmissionType",
+                     "map": {"ELECTIVE": "ELECTIVE",
+                             "URGENT": "URGENT",
+                             "EMERGENCY": "EMERGENCY"}},
+    "B_episodes": {"column": "episode_type",
+                   "map": {"PLANNED": "ELECTIVE",
+                           "URGENT": "URGENT",
+                           "EMERGENCY": "EMERGENCY"}},
+    "C_admission": {"column": "admitType",
+                    "map": {"ELE": "ELECTIVE",
+                            "URG": "URGENT",
+                            "EMG": "EMERGENCY"}},
+    "D_encounters": {"column": "encounterType",
+                     "map": {"elective": "ELECTIVE",
+                             "urgent": "URGENT",
+                             "emergency": "EMERGENCY"}},
+}
+
+for table_name, config in admission_type_mappings.items():
+    table = cleaned_tables[table_name]
+    column = config["column"]
+    canonical_values = []
+
+    for raw_value in table[column]:
+        normalized = str(raw_value).strip().upper()
+        canonical = config["map"].get(normalized)
+
+        if pd.isna(raw_value):
+            canonical_values.append(pd.NA)
+        elif canonical is None:
+            canonical_values.append(pd.NA)
+            category_quality_flags.append({
+                "table": table_name,
+                "field": column,
+                "raw_value": raw_value,
+                "flag": "unknown_admission_type",
+            })
+        else:
+            canonical_values.append(canonical)
+
+    table["admission_type_canonical"] = pd.array(
+        canonical_values,
+        dtype="string",
+    )
+
+#Triage Priorities
+triage_priority_mappings = {
+    "A_TRIAGE": {
+        "column": "TriageLevel",
+        "map": {
+            "LOW": "LOW",
+            "MEDIUM": "MEDIUM",
+            "HIGH": "HIGH",
+        },
+    },
+    "B_triage": {
+        "column": "triage_category",
+        "map": {
+            "P1": "HIGH",
+            "P2": "MEDIUM",
+            "P3": "LOW",
+        },
+    },
+    "C_triage": {
+        "column": "triageLevel",
+        "map": {
+            "1": "HIGH",
+            "2": "MEDIUM",
+            "3": "LOW",
+        },
+    },
+    "D_triage": {
+        "column": "triageColour",
+        "map": {
+            "red": "HIGH",
+            "yellow": "MEDIUM",
+            "green": "LOW",
+        },
+    },
+}
+
+for table_name, config in triage_priority_mappings.items():
+    table = cleaned_tables[table_name]
+    column = config["column"]
+    canonical_values = []
+
+    for raw_value in table[column]:
+        if pd.isna(raw_value):
+            canonical_values.append(pd.NA)
+            continue
+
+        normalized = str(raw_value).strip().upper()
+        canonical = config["map"].get(normalized)
+
+        if canonical is None:
+            canonical_values.append(pd.NA)
+            category_quality_flags.append({
+                "table": table_name,
+                "field": column,
+                "raw_value": raw_value,
+                "flag": "unknown_triage_priority",
+            })
+        else:
+            canonical_values.append(canonical)
+
+    table["triage_priority_canonical"] = pd.array(
+        canonical_values,
+        dtype="string",
+    )
+
+# Unit types
+unit_type_mappings = {
+    "A_UNITS": {
+        "column": "UnitType",
+        "map": {
+            "ED": "EMERGENCY",
+            "MICU": "MEDICAL_ICU",
+            "SICU": "SURGICAL_ICU",
+            "ICU": "GENERAL_ICU",
+            "CCU": "CORONARY_CARE",
+            "MED/SURG": "GENERAL_WARD",
+            "STEPDOWN": "STEP_DOWN",
+        },
+    },
+    "B_wards": {
+        "column": "ward_category",
+        "map": {
+            "ED": "EMERGENCY",
+            "MICU": "MEDICAL_ICU",
+            "SICU": "SURGICAL_ICU",
+            "ICU": "GENERAL_ICU",
+            "CCU": "CORONARY_CARE",
+            "MED/SURG": "GENERAL_WARD",
+            "STEPDOWN": "STEP_DOWN",
+        },
+    },
+    "C_ward": {
+        "column": "wardCategory",
+        "map": {
+            "ER": "EMERGENCY",
+            "MICU": "MEDICAL_ICU",
+            "SICU": "SURGICAL_ICU",
+            "ICU": "GENERAL_ICU",
+            "CCU": "CORONARY_CARE",
+            "GW": "GENERAL_WARD",
+            "SDU": "STEP_DOWN",
+        },
+    },
+    "D_units": {
+        "column": "unitKind",
+        "map": {
+            "casualty": "EMERGENCY",
+            "micu": "MEDICAL_ICU",
+            "sicu": "SURGICAL_ICU",
+            "icu": "GENERAL_ICU",
+            "ccu": "CORONARY_CARE",
+            "general_ward": "GENERAL_WARD",
+            "high_care": "STEP_DOWN",
+        },
+    },
+}
+
+for table_name, config in unit_type_mappings.items():
+    table = cleaned_tables[table_name]
+    column = config["column"]
+    canonical_values = []
+
+    for raw_value in table[column]:
+        if pd.isna(raw_value):
+            canonical_values.append(pd.NA)
+            continue
+
+        normalized = str(raw_value).strip().upper()
+        canonical = config["map"].get(normalized)
+
+        if canonical is None:
+            canonical_values.append(pd.NA)
+            category_quality_flags.append({
+                "table": table_name,
+                "field": column,
+                "raw_value": raw_value,
+                "flag": "unknown_unit_type",
+            })
+        else:
+            canonical_values.append(canonical)
+
+    table["unit_type_canonical"] = pd.array(
+        canonical_values,
+        dtype="string",
+    )
+
+# Admission/status categories
+status_mappings = {
+    "AdmissionStatus": {
+        "DISCHARGED": "DISCHARGED",
+        "TRANSFERRED OUT": "TRANSFERRED",
+        "TRANSFERRED": "TRANSFERRED",
+        "ADMITTED": "ACTIVE",
+        "ACTIVE": "ACTIVE",
+    },
+    "episode_status": {
+        "DISCHARGED": "DISCHARGED",
+        "TRANSFERRED OUT": "TRANSFERRED",
+        "TRANSFERRED": "TRANSFERRED",
+        "ADMITTED": "ACTIVE",
+        "ACTIVE": "ACTIVE",
+    },
+    "encounterStatus": {
+        "discharged": "DISCHARGED",
+        "transferred": "TRANSFERRED",
+        "active": "ACTIVE",
+    },
+}
+
+for table_name, table in cleaned_tables.items():
+    for column in table.columns:
+        if column not in status_mappings:
+            continue
+
+        canonical_values = []
+        mapping = status_mappings[column]
+
+        for raw_value in table[column]:
+            if pd.isna(raw_value):
+                canonical_values.append(pd.NA)
+                continue
+
+            normalized = str(raw_value).strip().upper()
+            canonical = mapping.get(normalized)
+
+            if canonical is None:
+                canonical_values.append(pd.NA)
+                category_quality_flags.append({
+                    "table": table_name,
+                    "field": column,
+                    "raw_value": raw_value,
+                    "flag": "unknown_status",
+                })
+            else:
+                canonical_values.append(canonical)
+
+        table[f"{column}_canonical"] = pd.array(
+            canonical_values,
+            dtype="string",
+        )
+
+# Summary output
+print("\nClinical category standardization:")
+print("Category flags:", len(category_quality_flags))
+
+for flag in category_quality_flags:
+    print(
+        flag["table"],
+        "field:",
+        flag["field"],
+        "raw value:",
+        repr(flag["raw_value"]),
+        "-",
+        flag["flag"],
+    )
+
+
+# 7 - Missing Parent Records and Inconsistent References
+import math
+import pandas as pd
+
+# What to do when an OPTIONAL reference points to a parent that doesn't exist:
+#   True  -> set the reference to null, keep the row, log it
+#   False -> quarantine the row
+NULL_DANGLING_OPTIONAL_REFS = True
+MAX_PASSES = 20
+
+# Snapshot of raw parents, used to tell whether a parent never existed or was
+# removed earlier. Reference checks use the current cleaned tables.
+reference_parent_snapshot = {
+    name: table.copy(deep=True)
+    for name, table in tables.items()
+}
+
+
+def reference_key(value, numeric_id=False):
+    if pd.isna(value):
+        return None
+
+    text = str(value).strip()
+    if not text:
+        return None
+
+    if numeric_id:
+        try:
+            number = float(text)
+        except ValueError:
+            return text
+
+        if math.isfinite(number) and number.is_integer():
+            return str(int(number))
+
+    return text
+
+
+def key_set(dataframe, column, numeric_id):
+    keys = {
+        reference_key(value, numeric_id)
+        for value in dataframe[column]
+    }
+    keys.discard(None)
+    return keys
+
+
+def ref(child, fk, parent, pk, field, numeric=True, required=True):
+    return {
+        "child": child,
+        "fk": fk,
+        "parent": parent,
+        "pk": pk,
+        "field": field,
+        "numeric": numeric,
+        "required": required,
+    }
+
+
+def staff(child, fk, field, parent, pk, numeric=True):
+    # Staff references are optional here; align this with the Phase 1 schema.
+    return ref(child, fk, parent, pk, field, numeric, required=False)
+
+
+reference_rules = [
+    # Source A
+    ref("A_ADMISSIONS", "PatID", "A_PATIENTS", "PatID", "patient_id"),
+    staff("A_ADMISSIONS", "AdmittingMD", "admitting_healthcare_professional",
+          "A_STAFF", "StaffID"),
+    ref("A_TRIAGE", "AdmitID", "A_ADMISSIONS", "AdmitID", "admission_id"),
+    staff("A_TRIAGE", "NurseID", "nurse_id", "A_STAFF", "StaffID"),
+    ref("A_CLINICAL_NOTES", "AdmitID", "A_ADMISSIONS", "AdmitID",
+        "admission_id"),
+    staff("A_CLINICAL_NOTES", "PhysicianId", "physician_id",
+          "A_STAFF", "StaffID"),
+    ref("A_DIAGNOSES", "AdmitID", "A_ADMISSIONS", "AdmitID",
+        "admission_id"),
+    ref("A_DIAGNOSES", "PatID", "A_PATIENTS", "PatID", "patient_id"),
+    ref("A_DIAGNOSES", "ICD9Code", "A_ICD9_DICT", "ICD9Code",
+        "icd9_code", numeric=False),
+    staff("A_DIAGNOSES", "DiagnosingPhysicianId",
+          "diagnosing_physician_id", "A_STAFF", "StaffID"),
+    ref("A_SURGERIES", "AdmitID", "A_ADMISSIONS", "AdmitID",
+        "admission_id"),
+    staff("A_SURGERIES", "SurgeonId", "surgeon_id", "A_STAFF", "StaffID"),
+    ref("A_DISCHARGES", "AdmitID", "A_ADMISSIONS", "AdmitID",
+        "admission_id"),
+    staff("A_DISCHARGES", "ResponsiblePhysicianId",
+          "responsible_physician_id", "A_STAFF", "StaffID"),
+    ref("A_DIAG_ORDERS", "AdmitID", "A_ADMISSIONS", "AdmitID",
+        "admission_id"),
+    ref("A_DIAG_ORDERS", "PatID", "A_PATIENTS", "PatID", "patient_id"),
+    staff("A_DIAG_ORDERS", "RequestingPhysicianId",
+          "requesting_physician_id", "A_STAFF", "StaffID"),
+    ref("A_RAD_EXAMS", "AdmitID", "A_ADMISSIONS", "AdmitID",
+        "admission_id"),
+    ref("A_RAD_EXAMS", "OrderID", "A_DIAG_ORDERS", "OrderID", "order_id"),
+    staff("A_RAD_EXAMS", "ReferringPhysicianId",
+          "referring_physician_id", "A_STAFF", "StaffID"),
+    staff("A_RAD_EXAMS", "RadTechId", "rad_tech_id", "A_STAFF", "StaffID"),
+    ref("A_RAD_REPORTS", "RadExamID", "A_RAD_EXAMS", "RadExamID",
+        "rad_exam_id"),
+    staff("A_RAD_REPORTS", "RadiologistId", "radiologist_id",
+          "A_STAFF", "StaffID"),
+    ref("A_LAB_EXAMS", "OrderID", "A_DIAG_ORDERS", "OrderID", "order_id"),
+    staff("A_LAB_EXAMS", "PerformedById", "performed_by_id",
+          "A_STAFF", "StaffID"),
+    ref("A_UNIT_STAYS", "AdmitID", "A_ADMISSIONS", "AdmitID",
+        "admission_id"),
+    ref("A_UNIT_STAYS", "UnitID", "A_UNITS", "UnitID", "unit_id"),
+    staff("A_UNIT_STAYS", "ResponsiblePhysicianId",
+          "responsible_physician_id", "A_STAFF", "StaffID"),
+    ref("A_ICU_RECORDS", "StayID", "A_UNIT_STAYS", "StayID", "unit_stay_id"),
+    ref("A_WARD_RECORDS", "AdmitID", "A_ADMISSIONS", "AdmitID",
+        "admission_id"),
+
+    # Source B
+    ref("B_episodes", "patient_no", "B_patients", "patient_no", "patient_id"),
+    staff("B_episodes", "admitting_clinician",
+          "admitting_healthcare_professional", "B_staff", "staff_no"),
+    ref("B_triage", "episode_no", "B_episodes", "episode_no", "admission_id"),
+    staff("B_triage", "nurse_id", "nurse_id", "B_staff", "staff_no"),
+    ref("B_notes", "episode_no", "B_episodes", "episode_no", "admission_id"),
+    staff("B_notes", "physician_id", "physician_id", "B_staff", "staff_no"),
+    ref("B_diagnoses", "episode_no", "B_episodes", "episode_no",
+        "admission_id"),
+    ref("B_diagnoses", "patient_no", "B_patients", "patient_no", "patient_id"),
+    ref("B_diagnoses", "icd9", "B_icd9_codes", "icd9", "icd9_code",
+        numeric=False),
+    staff("B_diagnoses", "diagnosing_physician_id",
+          "diagnosing_physician_id", "B_staff", "staff_no"),
+    ref("B_operations", "episode_no", "B_episodes", "episode_no",
+        "admission_id"),
+    staff("B_operations", "surgeon_no", "surgeon_id", "B_staff", "staff_no"),
+    ref("B_discharges", "episode_no", "B_episodes", "episode_no",
+        "admission_id"),
+    staff("B_discharges", "responsible_physician_id",
+          "responsible_physician_id", "B_staff", "staff_no"),
+    ref("B_orders", "episode_no", "B_episodes", "episode_no", "admission_id"),
+    ref("B_orders", "patient_no", "B_patients", "patient_no", "patient_id"),
+    staff("B_orders", "requesting_physician_id",
+          "requesting_physician_id", "B_staff", "staff_no"),
+    ref("B_imaging", "episode_no", "B_episodes", "episode_no",
+        "admission_id"),
+    ref("B_imaging", "order_id", "B_orders", "order_id", "order_id"),
+    staff("B_imaging", "referring_physician_id",
+          "referring_physician_id", "B_staff", "staff_no"),
+    staff("B_imaging", "rad_tech_id", "rad_tech_id", "B_staff", "staff_no"),
+    ref("B_imaging_reports", "rad_exam_id", "B_imaging", "exam_id",
+        "rad_exam_id"),
+    staff("B_imaging_reports", "radiologist_id", "radiologist_id",
+          "B_staff", "staff_no"),
+    ref("B_investigations", "order_id", "B_orders", "order_id", "order_id"),
+    staff("B_investigations", "performed_by_id", "performed_by_id",
+          "B_staff", "staff_no"),
+    ref("B_ward_stays", "episode_no", "B_episodes", "episode_no",
+        "admission_id"),
+    ref("B_ward_stays", "ward_no", "B_wards", "ward_no", "unit_id"),
+    staff("B_ward_stays", "responsible_physician_id",
+          "responsible_physician_id", "B_staff", "staff_no"),
+    ref("B_critical_care_obs", "ward_stay_no", "B_ward_stays",
+        "ward_stay_no", "unit_stay_id"),
+    ref("B_ward_obs", "episode_no", "B_episodes", "episode_no",
+        "admission_id"),
+
+    # Source C: explicit foreign-key columns
+    ref("C_diagnosis", "pid", "C_patient", "pid", "patient_id"),
+    ref("C_diagnosis", "icdCode", "C_icdEntry", "icdCode", "icd9_code",
+        numeric=False),
+    staff("C_diagnosis", "diagnosingPhysicianId",
+          "diagnosing_physician_id", "C_staff", "staffNo"),
+    ref("C_order", "pid", "C_patient", "pid", "patient_id"),
+    staff("C_order", "requestingPhysicianId",
+          "requesting_physician_id", "C_staff", "staffNo"),
+    ref("C_imaging", "aid", "C_admission", "aid", "admission_id"),
+    staff("C_imaging", "referringPhysicianId",
+          "referring_physician_id", "C_staff", "staffNo"),
+    staff("C_imaging", "radTechId", "rad_tech_id", "C_staff", "staffNo"),
+    staff("C_labExam", "performedById", "performed_by_id",
+          "C_staff", "staffNo"),
+    ref("C_wardStay", "wardCode", "C_ward", "wardCode", "unit_id",
+        numeric=False),
+
+    # Source D
+    ref("D_encounters", "patientRef", "D_patients", "patientRef",
+        "patient_id", numeric=False),
+    staff("D_encounters", "admittingHealthcareProfessional",
+          "admitting_healthcare_professional", "D_staff", "staffRef",
+          numeric=False),
+    ref("D_triage", "encounterId", "D_encounters", "encounterId",
+        "admission_id"),
+    staff("D_triage", "nurseId", "nurse_id", "D_staff", "staffRef",
+          numeric=False),
+    ref("D_diagnoses", "patientRef", "D_patients", "patientRef",
+        "patient_id", numeric=False),
+    ref("D_diagnoses", "encounterId", "D_encounters", "encounterId",
+        "admission_id"),
+    ref("D_diagnoses", "icd9", "D_icd9Dictionary", "icd9", "icd9_code",
+        numeric=False),
+    staff("D_diagnoses", "diagnosingPhysicianId",
+          "diagnosing_physician_id", "D_staff", "staffRef", numeric=False),
+    ref("D_notes", "encounterId", "D_encounters", "encounterId",
+        "admission_id"),
+    staff("D_notes", "physicianId", "physician_id", "D_staff", "staffRef",
+          numeric=False),
+    ref("D_procedures", "encounterId", "D_encounters", "encounterId",
+        "admission_id"),
+    staff("D_procedures", "surgeonId", "surgeon_id", "D_staff", "staffRef",
+          numeric=False),
+    ref("D_discharge", "encounterId", "D_encounters", "encounterId",
+        "admission_id"),
+    staff("D_discharge", "responsiblePhysicianId",
+          "responsible_physician_id", "D_staff", "staffRef", numeric=False),
+    ref("D_orders", "patientRef", "D_patients", "patientRef",
+        "patient_id", numeric=False),
+    ref("D_orders", "encounterId", "D_encounters", "encounterId",
+        "admission_id"),
+    staff("D_orders", "requestingPhysicianId",
+          "requesting_physician_id", "D_staff", "staffRef", numeric=False),
+    ref("D_imaging", "encounterId", "D_encounters", "encounterId",
+        "admission_id"),
+    ref("D_imaging", "orderId", "D_orders", "orderId", "order_id"),
+    staff("D_imaging", "referringPhysicianId",
+          "referring_physician_id", "D_staff", "staffRef", numeric=False),
+    staff("D_imaging", "radTechId", "rad_tech_id", "D_staff", "staffRef",
+          numeric=False),
+    ref("D_labResults", "orderId", "D_orders", "orderId", "order_id"),
+    staff("D_labResults", "performedById", "performed_by_id",
+          "D_staff", "staffRef", numeric=False),
+    ref("D_report", "examId", "D_imaging", "examId", "rad_exam_id"),
+    staff("D_report", "radiologistId", "radiologist_id",
+          "D_staff", "staffRef", numeric=False),
+    ref("D_movements", "encounterId", "D_encounters", "encounterId",
+        "admission_id"),
+    ref("D_movements", "unitCode", "D_units", "unitCode", "unit_id",
+        numeric=False),
+    staff("D_movements", "responsiblePhysicianId",
+          "responsible_physician_id", "D_staff", "staffRef", numeric=False),
+    ref("D_criticalCareObservations", "movementId", "D_movements",
+        "movementId", "unit_stay_id"),
+    ref("D_wardRounds", "encounterId", "D_encounters", "encounterId",
+        "admission_id"),
+]
+
+# Source C has nested parent links only if the XML loader propagated the IDs
+# into child rows. The rules are skipped with a warning if those columns are absent.
+pending_reference_rules = [
+    ref("C_admission", "pid", "C_patient", "pid", "patient_id"),
+    ref("C_triage", "aid", "C_admission", "aid", "admission_id"),
+    ref("C_clinicalNote", "aid", "C_admission", "aid", "admission_id"),
+    ref("C_diagnosis", "aid", "C_admission", "aid", "admission_id"),
+    ref("C_surgery", "aid", "C_admission", "aid", "admission_id"),
+    ref("C_discharge", "aid", "C_admission", "aid", "admission_id"),
+    ref("C_order", "aid", "C_admission", "aid", "admission_id"),
+    ref("C_wardStay", "aid", "C_admission", "aid", "admission_id"),
+]
+
+# Compare patient and admission identifiers on rows that contain both.
+consistency_rules = [
+    ("A_DIAGNOSES", "PatID", "AdmitID",
+     "A_ADMISSIONS", "AdmitID", "PatID", True, True),
+    ("A_DIAG_ORDERS", "PatID", "AdmitID",
+     "A_ADMISSIONS", "AdmitID", "PatID", True, True),
+    ("B_diagnoses", "patient_no", "episode_no",
+     "B_episodes", "episode_no", "patient_no", True, True),
+    ("B_orders", "patient_no", "episode_no",
+     "B_episodes", "episode_no", "patient_no", True, True),
+    ("D_diagnoses", "patientRef", "encounterId",
+     "D_encounters", "encounterId", "patientRef", False, True),
+    ("D_orders", "patientRef", "encounterId",
+     "D_encounters", "encounterId", "patientRef", False, True),
+]
+
+reference_quality_flags = []
+_quarantine_parts = {}
+
+
+def _id_column(table_name):
+    return required_attribute_mappings[table_name][0]
+
+
+def _log(table_name, dataframe, index, field, raw_value,
+         parent_table, reason, action):
+    id_column = _id_column(table_name)
+    record_id = (
+        dataframe.at[index, id_column]
+        if id_column in dataframe.columns
+        else None
+    )
+
+    reference_quality_flags.append({
+        "table": table_name,
+        "row_index": index,
+        "record_id": record_id,
+        "field": field,
+        "raw_value": raw_value,
+        "missing_parent_table": parent_table,
+        "reason": reason,
+        "action": action,
+    })
+
+
+def _quarantine(table_name, mask, reasons, rule_id):
+    dataframe = cleaned_tables[table_name]
+    quarantined = dataframe[mask].copy()
+    quarantined["quarantine_step"] = "7_references"
+    quarantined["quarantine_rule"] = rule_id
+    quarantined["quarantine_reason"] = reasons[mask]
+    _quarantine_parts.setdefault(table_name, []).append(quarantined)
+    cleaned_tables[table_name] = dataframe[~mask]
+
+
+def _check_rule(rule):
+    """Check one foreign-key rule and return whether data changed."""
+    child_name = rule["child"]
+    fk = rule["fk"]
+    parent_name = rule["parent"]
+    pk = rule["pk"]
+
+    child = cleaned_tables[child_name]
+    if child.empty:
+        return False
+
+    clean_parent_keys = key_set(
+        cleaned_tables[parent_name],
+        pk,
+        rule["numeric"],
+    )
+    raw_parent_keys = key_set(
+        reference_parent_snapshot[parent_name],
+        pk,
+        rule["numeric"],
+    )
+
+    keys = child[fk].map(
+        lambda value: reference_key(value, rule["numeric"])
+    )
+    is_null = keys.isna()
+    dangling = keys.notna() & ~keys.isin(clean_parent_keys)
+    parent_removed = dangling & keys.isin(raw_parent_keys)
+    parent_never_existed = dangling & ~keys.isin(raw_parent_keys)
+    rule_id = f"ref:{child_name}.{fk}->{parent_name}.{pk}"
+
+    reasons = pd.Series("", index=child.index, dtype=object)
+    reasons[parent_removed] = (
+        f"Parent in {parent_name} was quarantined or removed earlier "
+        f"({rule['field']})"
+    )
+    reasons[parent_never_existed] = (
+        f"Referenced parent does not exist in {parent_name} "
+        f"({rule['field']})"
+    )
+
+    if rule["required"]:
+        reasons[is_null] = (
+            f"Required parent reference is missing ({rule['field']})"
+        )
+        bad = is_null | dangling
+        if not bad.any():
+            return False
+
+        for index in child.index[bad]:
+            _log(
+                child_name, child, index, rule["field"],
+                child.at[index, fk], parent_name, reasons[index],
+                "quarantined",
+            )
+
+        _quarantine(child_name, bad, reasons, rule_id)
+        return True
+
+    # Null optional references are allowed. Dangling values are logged and
+    # nulled, unless configuration requests quarantine instead.
+    if not dangling.any():
+        return False
+
+    if NULL_DANGLING_OPTIONAL_REFS:
+        for index in child.index[dangling]:
+            _log(
+                child_name, child, index, rule["field"],
+                child.at[index, fk], parent_name, reasons[index],
+                "set_to_null",
+            )
+
+        cleaned_tables[child_name][fk] = (
+            child[fk].astype(object).where(~dangling, None)
+        )
+    else:
+        for index in child.index[dangling]:
+            _log(
+                child_name, child, index, rule["field"],
+                child.at[index, fk], parent_name, reasons[index],
+                "quarantined",
+            )
+
+        _quarantine(child_name, dangling, reasons, rule_id)
+
+    return True
+
+
+def _check_consistency(rule):
+    """Check that the row's patient matches the referenced admission."""
+    (
+        child_name, patient_column, admission_column,
+        admission_table, admission_id_column, admission_patient_column,
+        numeric_patient_id, numeric_admission_id,
+    ) = rule
+
+    child = cleaned_tables[child_name]
+    if child.empty:
+        return False
+
+    admissions = cleaned_tables[admission_table]
+
+    # Skip ambiguous admissions that map to more than one patient.
+    admission_patients = {}
+    for admission_id, patient_id in zip(
+        admissions[admission_id_column],
+        admissions[admission_patient_column],
+    ):
+        normalized_admission = reference_key(
+            admission_id,
+            numeric_admission_id,
+        )
+        normalized_patient = reference_key(
+            patient_id,
+            numeric_patient_id,
+        )
+
+        if normalized_admission is not None and normalized_patient is not None:
+            admission_patients.setdefault(normalized_admission, set()).add(
+                normalized_patient
+            )
+
+    admission_patients = {
+        admission_id: next(iter(patient_ids))
+        for admission_id, patient_ids in admission_patients.items()
+        if len(patient_ids) == 1
+    }
+
+    patients = child[patient_column].map(
+        lambda value: reference_key(value, numeric_patient_id)
+    )
+    admission_ids = child[admission_column].map(
+        lambda value: reference_key(value, numeric_admission_id)
+    )
+    expected_patients = admission_ids.map(admission_patients)
+
+    mismatched = (
+        patients.notna()
+        & expected_patients.notna()
+        & (patients != expected_patients)
+    )
+    if not mismatched.any():
+        return False
+
+    reasons = pd.Series(
+        "Patient and admission references belong to different patients",
+        index=child.index,
+        dtype=object,
+    )
+
+    for index in child.index[mismatched]:
+        _log(
+            child_name,
+            child,
+            index,
+            "patient_id",
+            child.at[index, patient_column],
+            admission_table,
+            reasons[index],
+            "quarantined",
+        )
+
+    _quarantine(
+        child_name,
+        mismatched,
+        reasons,
+        f"consistency:{child_name}.{patient_column}/{admission_column}",
+    )
+    return True
+
+
+def enforce_references():
+    """Run reference checks until no more rows are changed."""
+    for table_name, dataframe in cleaned_tables.items():
+        assert dataframe.index.is_unique, (
+            f"{table_name}: index must be unique before Step 7"
+        )
+
+    active_rules = list(reference_rules)
+    for rule in pending_reference_rules:
+        if (
+            rule["child"] in cleaned_tables
+            and rule["parent"] in tables
+            and rule["fk"] in cleaned_tables[rule["child"]].columns
+            and rule["pk"] in tables[rule["parent"]].columns
+        ):
+            active_rules.append(rule)
+        else:
+            print(
+                "WARNING: skipped nested rule "
+                f"{rule['child']}.{rule['fk']} -> "
+                f"{rule['parent']}.{rule['pk']} "
+                "(column not available)"
+            )
+
+    # Fail clearly for typos in the main rules.
+    for rule in active_rules:
+        for table_name in (rule["child"], rule["parent"]):
+            if table_name not in tables:
+                raise KeyError(
+                    f"Unknown table in reference rule: {table_name}"
+                )
+
+        if rule["fk"] not in cleaned_tables[rule["child"]].columns:
+            raise KeyError(
+                f"Missing column {rule['child']}.{rule['fk']}"
+            )
+        if rule["pk"] not in tables[rule["parent"]].columns:
+            raise KeyError(
+                f"Missing column {rule['parent']}.{rule['pk']}"
+            )
+
+    for pass_number in range(1, MAX_PASSES + 1):
+        changed = False
+
+        for rule in active_rules:
+            changed |= _check_rule(rule)
+
+        for rule in consistency_rules:
+            changed |= _check_consistency(rule)
+
+        print(
+            f"Step 7 pass {pass_number}: "
+            f"{'changes made' if changed else 'stable'}"
+        )
+
+        if not changed:
+            break
+    else:
+        raise RuntimeError(
+            "Step 7 did not converge; check for circular rules"
+        )
+
+
+enforce_references()
+
+reference_quarantine_tables = {
+    table_name: pd.concat(parts)
+    for table_name, parts in _quarantine_parts.items()
+}
+reference_flags_df = pd.DataFrame(reference_quality_flags)
+
+print("\nMissing-parent and inconsistent-reference summary:")
+print("Violations logged:", len(reference_flags_df))
+print(
+    "Rows quarantined:",
+    sum(
+        len(dataframe)
+        for dataframe in reference_quarantine_tables.values()
+    ),
+)
+
+if not reference_flags_df.empty:
+    print(
+        reference_flags_df.groupby(["table", "field", "action"])
+        .size()
+        .rename("count")
+        .reset_index()
+        .to_string(index=False)
+    )
+
+# 8 - Chronology
+# ---------------------------------- chronology validation rules ----------------------------------------
+# 1. check admission, discharge, unit-stay, examination, procedure, and report timestamps using cleaned datetime values
+# 2. quarantine admissions where the discharge time is before the admission time
+# 3. quarantine unit stays where the exit time is before the entry time or outside the admission period
+# 4. quarantine examinations, procedures, diagnoses, and notes that fall outside the admission period
+# 5. quarantine examinations performed before their order, and reports written before their examination
+# 6. quarantine patients with a date of death before an admission, or a date of birth after the first admission
+# 7. a missing discharge or exit time is valid for an open stay and is not a chronology violation
+# 8. skip any check where a required timestamp is missing or null; those cases are handled by earlier steps
+# 9. no swapping or correction of timestamps; unresolved rows go to quarantine with a rule ID and a reason
+# 10. rerun the Step 7 reference checks afterward so children of quarantined admissions are also quarantined
+# -------------------------------------------------------------------------------------------------------
+chronology_quality_flags = []
+chronology_invalid_rows = {}
+
+
+def chronology_timestamp(value):
+    if pd.isna(value):
+        return None
+    timestamp = pd.Timestamp(value)
+    if timestamp.tzinfo is not None:
+        timestamp = timestamp.tz_convert(None)
+    return timestamp
+
+
+def chronology_reference_key(value):
+    return reference_key(value, numeric_id=isinstance(value, numbers.Number))
+
+
+def add_chronology_flag(table_name, row_index, field, raw_value, reason):
+    id_column = required_attribute_mappings[table_name][0]
+    record = cleaned_tables[table_name].loc[row_index]
+    chronology_quality_flags.append({
+        "table": table_name,
+        "row_index": row_index,
+        "record_id": record[id_column] if id_column in record.index else None,
+        "field": field,
+        "raw_value": raw_value,
+        "reason": reason,
+    })
+    chronology_invalid_rows.setdefault(table_name, set()).add(row_index)
+
+
+def check_timestamp_pair(table_name, earlier_column, later_column,
+                         reason, violated_when):
+    table = cleaned_tables[table_name]
+    if earlier_column not in table.columns or later_column not in table.columns:
+        return
+
+    for row_index, row in table.iterrows():
+        earlier = chronology_timestamp(row[earlier_column])
+        later = chronology_timestamp(row[later_column])
+        if earlier is None or later is None:
+            continue
+
+        invalid = (
+            earlier > later
+            if violated_when == "earlier_after_later"
+            else earlier < later
+        )
+        if invalid:
+            add_chronology_flag(
+                table_name,
+                row_index,
+                later_column,
+                row[later_column],
+                reason,
+            )
+
+
+def check_event_against_parent(child_name, child_time_column, child_fk,
+                               parent_name, parent_pk, parent_time_column,
+                               violation, reason):
+    child = cleaned_tables[child_name]
+    parent = cleaned_tables[parent_name]
+    if child.empty or parent.empty:
+        return
+
+    if child_fk not in child.columns or parent_pk not in parent.columns:
+        return
+    if child_time_column not in child.columns:
+        return
+    if parent_time_column not in parent.columns:
+        return
+
+    parent_times = {}
+    for _, parent_row in parent.iterrows():
+        key = chronology_reference_key(parent_row[parent_pk])
+        timestamp = chronology_timestamp(parent_row[parent_time_column])
+        if key is not None and timestamp is not None:
+            parent_times.setdefault(key, set()).add(timestamp)
+
+    # Do not guess if the parent identifier is duplicated with conflicting times.
+    parent_times = {
+        key: next(iter(values))
+        for key, values in parent_times.items()
+        if len(values) == 1
+    }
+
+    for row_index, row in child.iterrows():
+        key = chronology_reference_key(row[child_fk])
+        event_time = chronology_timestamp(row[child_time_column])
+        parent_time = parent_times.get(key)
+        if key is None or event_time is None or parent_time is None:
+            continue
+
+        invalid = (
+            event_time < parent_time
+            if violation == "before"
+            else event_time > parent_time
+        )
+        if invalid:
+            add_chronology_flag(
+                child_name,
+                row_index,
+                child_time_column,
+                row[child_time_column],
+                reason,
+            )
+
+
+# Admission discharge must not precede admission.
+for table_name, admit_column, discharge_column in [
+    ("A_ADMISSIONS", "AdmitDT", "DischDT"),
+    ("B_episodes", "episode_start", "episode_end"),
+    ("C_admission", "admitTime", "dischargeTime"),
+    ("D_encounters", "admittedAt", "dischargedAt"),
+]:
+    check_timestamp_pair(
+        table_name,
+        admit_column,
+        discharge_column,
+        "Discharge precedes admission",
+        "earlier_after_later",
+    )
+
+# Unit exit must not precede unit entry.
+for table_name, entry_column, exit_column in [
+    ("A_UNIT_STAYS", "InDT", "OutDT"),
+    ("B_ward_stays", "ward_in", "ward_out"),
+    ("C_wardStay", "inTime", "outTime"),
+    ("D_movements", "inAt", "outAt"),
+]:
+    check_timestamp_pair(
+        table_name,
+        entry_column,
+        exit_column,
+        "Unit exit precedes unit entry",
+        "earlier_after_later",
+    )
+
+# Related-event chronology rules:
+# child event must be at/after the parent event ("before"),
+# or at/before it ("after").
+related_time_rules = [
+    # Diagnosis must not precede its admission.
+    ("A_DIAGNOSES", "DiagnosisDatetime", "AdmitID",
+     "A_ADMISSIONS", "AdmitID", "AdmitDT", "before",
+     "Diagnosis precedes admission"),
+    ("B_diagnoses", "diagnosis_datetime", "episode_no",
+     "B_episodes", "episode_no", "episode_start", "before",
+     "Diagnosis precedes admission"),
+    ("C_diagnosis", "diagnosisDatetime", "aid",
+     "C_admission", "aid", "admitTime", "before",
+     "Diagnosis precedes admission"),
+    ("D_diagnoses", "diagnosisDatetime", "encounterId",
+     "D_encounters", "encounterId", "admittedAt", "before",
+     "Diagnosis precedes admission"),
+
+    # Procedures must not occur after discharge.
+    ("A_SURGERIES", "ProcedureDatetime", "AdmitID",
+     "A_ADMISSIONS", "AdmitID", "DischDT", "after",
+     "Procedure occurs after discharge"),
+    ("B_operations", "operation_datetime", "episode_no",
+     "B_episodes", "episode_no", "episode_end", "after",
+     "Procedure occurs after discharge"),
+    ("C_surgery", "procedureDatetime", "aid",
+     "C_admission", "aid", "dischargeTime", "after",
+     "Procedure occurs after discharge"),
+    ("D_procedures", "procedureDatetime", "encounterId",
+     "D_encounters", "encounterId", "dischargedAt", "after",
+     "Procedure occurs after discharge"),
+
+    # Diagnostic examinations must not occur before their orders.
+    ("A_LAB_EXAMS", "ExamDatetime", "OrderID",
+     "A_DIAG_ORDERS", "OrderID", "RequestDatetime", "before",
+     "Examination occurs before it was ordered"),
+    ("B_investigations", "exam_datetime", "order_id",
+     "B_orders", "order_id", "request_datetime", "before",
+     "Examination occurs before it was ordered"),
+    ("C_labExam", "examDatetime", "orderId",
+     "C_order", "orderId", "requestDatetime", "before",
+     "Examination occurs before it was ordered"),
+    ("D_labResults", "examDatetime", "orderId",
+     "D_orders", "orderId", "requestDatetime", "before",
+     "Examination occurs before it was ordered"),
+
+    # Radiology examinations must not occur before their orders.
+    ("A_RAD_EXAMS", "ExamDatetime", "OrderID",
+     "A_DIAG_ORDERS", "OrderID", "RequestDatetime", "before",
+     "Examination occurs before it was ordered"),
+    ("B_imaging", "exam_datetime", "order_id",
+     "B_orders", "order_id", "request_datetime", "before",
+     "Examination occurs before it was ordered"),
+    ("C_imaging", "examDatetime", "orderId",
+     "C_order", "orderId", "requestDatetime", "before",
+     "Examination occurs before it was ordered"),
+    ("D_imaging", "examDatetime", "orderId",
+     "D_orders", "orderId", "requestDatetime", "before",
+     "Examination occurs before it was ordered"),
+
+    # Reports must not precede the examination they describe.
+    ("A_RAD_REPORTS", "ReportDatetime", "RadExamID",
+     "A_RAD_EXAMS", "RadExamID", "ExamDatetime", "before",
+     "Report precedes examination"),
+    ("B_imaging_reports", "report_datetime", "rad_exam_id",
+     "B_imaging", "exam_id", "exam_datetime", "before",
+     "Report precedes examination"),
+    ("C_report", "reportDatetime", "examId",
+     "C_imaging", "examId", "examDatetime", "before",
+     "Report precedes examination"),
+    ("D_report", "reportDatetime", "examId",
+     "D_imaging", "examId", "examDatetime", "before",
+     "Report precedes examination"),
+]
+
+for rule in related_time_rules:
+    check_event_against_parent(*rule)
+
+# Patient birth/death dates must be compatible with their first admission.
+patient_admission_rules = [
+    ("A_PATIENTS", "PatID", "DOB", "DeathDT",
+     "A_ADMISSIONS", "PatID", "AdmitDT"),
+    ("B_patients", "patient_no", "birth_date", "date_of_death",
+     "B_episodes", "patient_no", "episode_start"),
+    ("C_patient", "pid", "birthDate", "deathTime",
+     "C_admission", "pid", "admitTime"),
+    ("D_patients", "patientRef", "dob", "deceasedAt",
+     "D_encounters", "patientRef", "admittedAt"),
+]
+
+for (patient_table, patient_id_column, birth_column, death_column,
+     admission_table, admission_patient_column, admission_time_column) in patient_admission_rules:
+    patients = cleaned_tables[patient_table]
+    admissions = cleaned_tables[admission_table]
+
+    first_admission = {}
+    for _, admission in admissions.iterrows():
+        patient_id = chronology_reference_key(
+            admission[admission_patient_column]
+        )
+        admitted_at = chronology_timestamp(admission[admission_time_column])
+        if patient_id is not None and admitted_at is not None:
+            if patient_id not in first_admission or admitted_at < first_admission[patient_id]:
+                first_admission[patient_id] = admitted_at
+
+    for row_index, patient in patients.iterrows():
+        patient_id = chronology_reference_key(patient[patient_id_column])
+        first_admitted_at = first_admission.get(patient_id)
+        if first_admitted_at is None:
+            continue
+
+        birth = chronology_timestamp(patient[birth_column])
+        if birth is not None and birth > first_admitted_at:
+            add_chronology_flag(
+                patient_table,
+                row_index,
+                birth_column,
+                patient[birth_column],
+                "Date of birth is after the patient's first admission",
+            )
+
+        death = chronology_timestamp(patient[death_column])
+        if death is not None and death < first_admitted_at:
+            add_chronology_flag(
+                patient_table,
+                row_index,
+                death_column,
+                patient[death_column],
+                "Date of death is before the patient's first admission",
+            )
+
+# Quarantine each chronology-invalid row once after all rules have run.
+chronology_quarantine_tables = {}
+for table_name, row_indexes in chronology_invalid_rows.items():
+    rows = cleaned_tables[table_name].loc[sorted(row_indexes)].copy()
+    reason_by_index = {}
+    for row_index in row_indexes:
+        reason_by_index[row_index] = "; ".join(
+            flag["reason"]
+            for flag in chronology_quality_flags
+            if flag["table"] == table_name and flag["row_index"] == row_index
+        )
+    rows["quarantine_step"] = "8_chronology"
+    rows["quarantine_reason"] = [
+        reason_by_index[row_index] for row_index in rows.index
+    ]
+    chronology_quarantine_tables[table_name] = rows
+    cleaned_tables[table_name] = cleaned_tables[table_name].drop(
+        index=list(row_indexes)
+    )
+
+chronology_flags_df = pd.DataFrame(chronology_quality_flags)
+print("\nChronology validation summary:")
+print("Chronology violations:", len(chronology_flags_df))
+print(
+    "Rows quarantined:",
+    sum(len(rows) for rows in chronology_quarantine_tables.values()),
+)
+if not chronology_flags_df.empty:
+    print(
+        chronology_flags_df.groupby(["table", "field"])
+        .size()
+        .rename("count")
+        .reset_index()
+        .to_string(index=False)
+    )
 
 # -------------------------------- representative before/after examples --------------------------------
 print("\nRepresentative before/after cleaning examples:")
