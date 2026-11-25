@@ -101,6 +101,21 @@ for tag in tags_C:
                     record[child.tag] = child.text
             records.append(record)
         df = pd.DataFrame.from_records(records)
+    elif tag == "patient":
+        records = []
+        for element in root_C.findall(".//patient"):
+            record = {"pid": element.get("pid")}
+            for child in element:
+                if child.tag == "admissions":
+                    continue
+                if child.tag == "name":
+                    fam = (child.findtext("family") or "").strip()
+                    giv = (child.findtext("given") or "").strip()
+                    record["name"] = f"{giv} {fam}".strip() or None
+                else:
+                    record[child.tag] = child.text
+            records.append(record)
+        df = pd.DataFrame.from_records(records)
     else:
         df = pd.read_xml("source_C_asia/sakura_bay_export.xml",
                          xpath=".//" + tag, parser="etree")
@@ -545,7 +560,7 @@ for table_name, required_columns in required_attribute_mappings.items():
 # standardizing whitespace in text columns
 for table_name, table in cleaned_tables.items():
     for column in table.select_dtypes(include="str").columns:
-        table[column] = table[column].str.strip()
+        table[column] = table[column].str.strip().str.replace(r"\s+", " ", regex=True)
         table[column] = table[column].replace("", pd.NA)
 
 # checking if whitespace cleaning might have created any new missing required values
@@ -557,8 +572,20 @@ for table_name, required_columns in required_attribute_mappings.items():
         text_missing_required_records[table_name] = table[missing_required].copy()
         print(table_name, "records missing required values after text cleaning:", missing_required.sum())
 
+# quarantining records missing required attributes after text cleaning
+text_quarantine_tables = {}
+for table_name, records in text_missing_required_records.items():
+    required_columns = required_attribute_mappings[table_name]
+    quarantined = records.copy()
+    quarantined["quarantine_reason"] = quarantined[required_columns].apply(
+        lambda row: "Missing required attribute(s) after text cleaning: " + ", ".join(row.index[row.isna()]),
+        axis=1,
+    )
+    text_quarantine_tables[table_name] = quarantined
+    cleaned_tables[table_name] = cleaned_tables[table_name].drop(index=quarantined.index)
+
 # standardizing capitalization in appropriate text columns
-capitalization_columns = ["PatientName", "patient_name", "name", "FirstName", "LastName", "first_name", "last_name", "firstName", "lastName", "UnitName", "unit_name", "ward_name", "wardName"]
+capitalization_columns = ["PatientName", "patient_name", "name", "name.first", "name.last", "FirstName", "LastName", "first_name", "last_name", "firstName", "lastName", "UnitName", "unit_name", "ward_name", "wardName"]
 for table_name, table in cleaned_tables.items():
     for column in capitalization_columns:
         if column in table.columns:
@@ -682,13 +709,11 @@ for table_name, columns in date_time_columns.items():
 
 # valid date/time formats that can be corrected safely
 alternative_date_formats = {
-    "A": ["%m/%d/%y %I:%M %p", "%Y-%m-%d %H:%M", "%d/%m/%Y %I:%M %p"],
-    "B": ["%Y-%m-%dT%H:%M", "%d %b %Y %H:%M", "%m/%d/%Y %H:%M"],
+    "A": ["%Y-%m-%d %H:%M"],
+    "B": ["%Y-%m-%dT%H:%M", "%d %b %Y %H:%M"],
     "C": ["%Y%m%d%H%M%S"]
 }
-alternative_date_only_formats = {
-    ("A_PATIENTS", "DOB"): ["%m/%d/%y"]
-}
+alternative_date_only_formats = {}
 
 # converting valid and safely correctable dates/timestamps
 unresolved_date_values = {}
@@ -990,6 +1015,40 @@ for table_name, columns in triage_columns.items():
     table["oxygen_sat_pct"] = pd.array(oxygen_sat_values, dtype="Float64")
     numeric_conversion_counts[table_name] = normal_unit_conversions
 
+numeric_required_columns = [
+    "blood_pressure_systolic_mmhg",
+    "blood_pressure_diastolic_mmhg",
+    "heart_rate_bpm",
+    "pain_level_0_10",
+    "body_temp_c",
+    "oxygen_sat_pct",
+]
+
+# quarantining records that have invalid/unresolved required numeric values
+numeric_quarantine_tables = {}
+for table_name in triage_columns:
+    table = cleaned_tables[table_name]
+    invalid_required = table[numeric_required_columns].isna().any(axis=1)
+    if invalid_required.any():
+        records = table[invalid_required].copy()
+        records["quarantine_reason"] = records[numeric_required_columns].apply(
+            lambda row: "Invalid/unresolved required numeric value(s): " + ", ".join(row.index[row.isna()]),
+            axis=1,
+        )
+        numeric_quarantine_tables[table_name] = records
+
+# removing records with invalid/unresolved required numeric values from cleaned tables
+for table_name, records in numeric_quarantine_tables.items():
+    cleaned_tables[table_name] = cleaned_tables[table_name].drop(index=records.index)
+
+# making sure that no unresolved required numeric values remain
+for table_name in triage_columns:
+    remaining_invalid_numeric = cleaned_tables[table_name][numeric_required_columns].isna().any(axis=1).sum()
+    if remaining_invalid_numeric > 0:
+        print(table_name, "records still have invalid required numeric values:", remaining_invalid_numeric)
+
+total_numeric_quarantined = sum(len(records) for records in numeric_quarantine_tables.values())
+
 print("\nNumeric/unit standardization:")
 for table_name, table in triage_columns.items():
     table_flags = [flag for flag in numeric_quality_flags if flag["table"] == table_name]
@@ -1003,6 +1062,7 @@ print("Total invalid numeric values flagged:",
       sum(flag["flag"] == "invalid_numeric" for flag in numeric_quality_flags))
 print("Total unit inconsistencies corrected:",
       sum(flag["flag"] == "unit_inconsistency_corrected" for flag in numeric_quality_flags))
+print("Records quarantined due to invalid required numeric values:", total_numeric_quarantined)
 for flag in numeric_quality_flags:
     print(
         flag["table"], "record", flag["record_id"], flag["field"],
@@ -1014,263 +1074,193 @@ for flag in numeric_quality_flags:
 # 6 - Clinical Categories
 # ---------------------------------- clinical category mapping rules ------------------------------------
 # 1. map source-specific labels to one documented set of canonical values
-# 2. unknown or invalid categories are converted to pd.NA
-# 3. each unknown or invalid category is preserved as a flag for review
+# 2. unknown or invalid categories are converted to pd.NA and flagged for review
+# 3. records with unresolved required canonical categories are quarantined
 # -------------------------------------------------------------------------------------------------------
 
-category_quality_flags= []
+category_quality_flags = []
+category_required_columns = {}
+
+
+def apply_category_mapping(table_name, source_column, canonical_column, mapping, flag_name, required=True):
+    table = cleaned_tables[table_name]
+    canonical_values = []
+    for raw_value in table[source_column]:
+        if pd.isna(raw_value):
+            canonical_values.append(pd.NA)
+            continue
+        normalized = str(raw_value).strip().upper()
+        canonical = mapping.get(normalized)
+        if canonical is None:
+            canonical_values.append(pd.NA)
+            category_quality_flags.append({
+                "table": table_name,
+                "field": source_column,
+                "raw_value": raw_value,
+                "flag": flag_name,
+            })
+        else:
+            canonical_values.append(canonical)
+    table[canonical_column] = pd.array(canonical_values, dtype="string")
+    if required:
+        category_required_columns.setdefault(table_name, []).append(canonical_column)
+
 
 # Admission types
 admission_type_mappings = {
-    "A_ADMISSIONS": {"column": "AdmissionType",
-                     "map": {"ELECTIVE": "ELECTIVE",
-                             "URGENT": "URGENT",
-                             "EMERGENCY": "EMERGENCY"}},
-    "B_episodes": {"column": "episode_type",
-                   "map": {"PLANNED": "ELECTIVE",
-                           "URGENT": "URGENT",
-                           "EMERGENCY": "EMERGENCY"}},
-    "C_admission": {"column": "admitType",
-                    "map": {"ELE": "ELECTIVE",
-                            "URG": "URGENT",
-                            "EMG": "EMERGENCY"}},
-    "D_encounters": {"column": "encounterType",
-                     "map": {"elective": "ELECTIVE",
-                             "urgent": "URGENT",
-                             "emergency": "EMERGENCY"}},
+    "A_ADMISSIONS": {"column": "AdmissionType", "map": {"ELECTIVE": "Elective", "URGENT": "Urgent", "EMERGENCY": "Emergency"}},
+    "B_episodes": {"column": "episode_type", "map": {"PLANNED": "Elective", "URGENT": "Urgent", "EMERGENCY": "Emergency"}},
+    "C_admission": {"column": "admitType", "map": {"ELE": "Elective", "URG": "Urgent", "EMG": "Emergency"}},
+    "D_encounters": {"column": "encounterType", "map": {"ELECTIVE": "Elective", "URGENT": "Urgent", "EMERGENCY": "Emergency"}},
 }
-
 for table_name, config in admission_type_mappings.items():
-    table = cleaned_tables[table_name]
-    column = config["column"]
-    canonical_values = []
+    apply_category_mapping(table_name, config["column"], "admission_type_canonical", config["map"], "unknown_admission_type")
 
-    for raw_value in table[column]:
-        normalized = str(raw_value).strip().upper()
-        canonical = config["map"].get(normalized)
-
-        if pd.isna(raw_value):
-            canonical_values.append(pd.NA)
-        elif canonical is None:
-            canonical_values.append(pd.NA)
-            category_quality_flags.append({
-                "table": table_name,
-                "field": column,
-                "raw_value": raw_value,
-                "flag": "unknown_admission_type",
-            })
-        else:
-            canonical_values.append(canonical)
-
-    table["admission_type_canonical"] = pd.array(
-        canonical_values,
-        dtype="string",
-    )
-
-#Triage Priorities
-triage_priority_mappings = {
-    "A_TRIAGE": {
-        "column": "TriageLevel",
-        "map": {
-            "LOW": "LOW",
-            "MEDIUM": "MEDIUM",
-            "HIGH": "HIGH",
-        },
-    },
-    "B_triage": {
-        "column": "triage_category",
-        "map": {
-            "P1": "HIGH",
-            "P2": "MEDIUM",
-            "P3": "LOW",
-        },
-    },
-    "C_triage": {
-        "column": "triageLevel",
-        "map": {
-            "1": "HIGH",
-            "2": "MEDIUM",
-            "3": "LOW",
-        },
-    },
-    "D_triage": {
-        "column": "triageColour",
-        "map": {
-            "red": "HIGH",
-            "yellow": "MEDIUM",
-            "green": "LOW",
-        },
-    },
+# Admission sources
+admission_source_mappings = {
+    "A_ADMISSIONS": {"column": "AdmissionSource", "map": {"ER": "Emergency Department", "REFERRAL": "Physician Referral", "TRANSFER IN": "Transfer from Another Hospital", "CLINIC": "Clinic"}},
+    "B_episodes": {"column": "referral_source", "map": {"A&E": "Emergency Department", "GP REFERRAL": "Physician Referral", "INTER-HOSPITAL TRANSFER": "Transfer from Another Hospital", "OUTPATIENT CLINIC": "Clinic"}},
+    "C_admission": {"column": "admissionSource", "map": {"ED": "Emergency Department", "REF": "Physician Referral", "TRF": "Transfer from Another Hospital", "OPD": "Clinic"}},
+    "D_encounters": {"column": "arrivalMode", "map": {"CASUALTY": "Emergency Department", "REFERRAL": "Physician Referral", "TRANSFER": "Transfer from Another Hospital", "CLINIC": "Clinic"}},
 }
+for table_name, config in admission_source_mappings.items():
+    apply_category_mapping(table_name, config["column"], "admission_source_canonical", config["map"], "unknown_admission_source")
 
+# Triage priorities
+triage_priority_mappings = {
+    "A_TRIAGE": {"column": "TriageLevel", "map": {"LOW": "Low", "MEDIUM": "Medium", "HIGH": "High"}},
+    "B_triage": {"column": "triage_category", "map": {"P1": "High", "P2": "Medium", "P3": "Low"}},
+    "C_triage": {"column": "triageLevel", "map": {"1": "High", "2": "Medium", "3": "Low"}},
+    "D_triage": {"column": "triageColour", "map": {"RED": "High", "YELLOW": "Medium", "GREEN": "Low"}},
+}
 for table_name, config in triage_priority_mappings.items():
-    table = cleaned_tables[table_name]
-    column = config["column"]
-    canonical_values = []
-
-    for raw_value in table[column]:
-        if pd.isna(raw_value):
-            canonical_values.append(pd.NA)
-            continue
-
-        normalized = str(raw_value).strip().upper()
-        canonical = config["map"].get(normalized)
-
-        if canonical is None:
-            canonical_values.append(pd.NA)
-            category_quality_flags.append({
-                "table": table_name,
-                "field": column,
-                "raw_value": raw_value,
-                "flag": "unknown_triage_priority",
-            })
-        else:
-            canonical_values.append(canonical)
-
-    table["triage_priority_canonical"] = pd.array(
-        canonical_values,
-        dtype="string",
-    )
+    apply_category_mapping(table_name, config["column"], "triage_priority_canonical", config["map"], "unknown_triage_priority")
 
 # Unit types
 unit_type_mappings = {
-    "A_UNITS": {
-        "column": "UnitType",
-        "map": {
-            "ED": "EMERGENCY",
-            "MICU": "MEDICAL_ICU",
-            "SICU": "SURGICAL_ICU",
-            "ICU": "GENERAL_ICU",
-            "CCU": "CORONARY_CARE",
-            "MED/SURG": "GENERAL_WARD",
-            "STEPDOWN": "STEP_DOWN",
-        },
-    },
-    "B_wards": {
-        "column": "ward_category",
-        "map": {
-            "ED": "EMERGENCY",
-            "MICU": "MEDICAL_ICU",
-            "SICU": "SURGICAL_ICU",
-            "ICU": "GENERAL_ICU",
-            "CCU": "CORONARY_CARE",
-            "MED/SURG": "GENERAL_WARD",
-            "STEPDOWN": "STEP_DOWN",
-        },
-    },
-    "C_ward": {
-        "column": "wardCategory",
-        "map": {
-            "ER": "EMERGENCY",
-            "MICU": "MEDICAL_ICU",
-            "SICU": "SURGICAL_ICU",
-            "ICU": "GENERAL_ICU",
-            "CCU": "CORONARY_CARE",
-            "GW": "GENERAL_WARD",
-            "SDU": "STEP_DOWN",
-        },
-    },
-    "D_units": {
-        "column": "unitKind",
-        "map": {
-            "casualty": "EMERGENCY",
-            "micu": "MEDICAL_ICU",
-            "sicu": "SURGICAL_ICU",
-            "icu": "GENERAL_ICU",
-            "ccu": "CORONARY_CARE",
-            "general_ward": "GENERAL_WARD",
-            "high_care": "STEP_DOWN",
-        },
-    },
+    "A_UNITS": {"column": "UnitType", "map": {"ED": "Emergency", "MICU": "MICU", "SICU": "SICU", "ICU": "ICU", "CCU": "CCU", "MED/SURG": "General Ward", "STEPDOWN": "Step-Down"}},
+    "B_wards": {"column": "ward_category", "map": {"A&E": "Emergency", "MEDICAL ICU": "MICU", "SURGICAL ICU": "SICU", "INTENSIVE CARE": "ICU", "CORONARY CARE": "CCU", "WARD": "General Ward", "HDU": "Step-Down"}},
+    "C_ward": {"column": "wardCategory", "map": {"ER": "Emergency", "MICU": "MICU", "SICU": "SICU", "ICU": "ICU", "CCU": "CCU", "GW": "General Ward", "SDU": "Step-Down"}},
+    "D_units": {"column": "unitKind", "map": {"CASUALTY": "Emergency", "MICU": "MICU", "SICU": "SICU", "ICU": "ICU", "CCU": "CCU", "GENERAL_WARD": "General Ward", "HIGH_CARE": "Step-Down"}},
 }
-
 for table_name, config in unit_type_mappings.items():
-    table = cleaned_tables[table_name]
-    column = config["column"]
-    canonical_values = []
+    apply_category_mapping(table_name, config["column"], "unit_type_canonical", config["map"], "unknown_unit_type")
 
-    for raw_value in table[column]:
-        if pd.isna(raw_value):
-            canonical_values.append(pd.NA)
-            continue
-
-        normalized = str(raw_value).strip().upper()
-        canonical = config["map"].get(normalized)
-
-        if canonical is None:
-            canonical_values.append(pd.NA)
-            category_quality_flags.append({
-                "table": table_name,
-                "field": column,
-                "raw_value": raw_value,
-                "flag": "unknown_unit_type",
-            })
-        else:
-            canonical_values.append(canonical)
-
-    table["unit_type_canonical"] = pd.array(
-        canonical_values,
-        dtype="string",
-    )
-
-# Admission/status categories
+# Admission statuses
 status_mappings = {
-    "AdmissionStatus": {
-        "DISCHARGED": "DISCHARGED",
-        "TRANSFERRED OUT": "TRANSFERRED",
-        "TRANSFERRED": "TRANSFERRED",
-        "ADMITTED": "ACTIVE",
-        "ACTIVE": "ACTIVE",
-    },
-    "episode_status": {
-        "DISCHARGED": "DISCHARGED",
-        "TRANSFERRED OUT": "TRANSFERRED",
-        "TRANSFERRED": "TRANSFERRED",
-        "ADMITTED": "ACTIVE",
-        "ACTIVE": "ACTIVE",
-    },
-    "encounterStatus": {
-        "discharged": "DISCHARGED",
-        "transferred": "TRANSFERRED",
-        "active": "ACTIVE",
-    },
+    "A_ADMISSIONS": {"column": "AdmissionStatus", "map": {"DISCHARGED": "Discharged", "INPATIENT": "Admitted", "ADMITTED": "Admitted", "ACTIVE": "Admitted", "EXPIRED": "Deceased", "DECEASED": "Deceased", "TRANSFERRED OUT": "Transferred", "TRANSFERRED": "Transferred"}},
+    "B_episodes": {"column": "episode_status", "map": {"DISCHARGED": "Discharged", "IN HOSPITAL": "Admitted", "ADMITTED": "Admitted", "ACTIVE": "Admitted", "DIED": "Deceased", "DECEASED": "Deceased", "TRANSFERRED OUT": "Transferred", "TRANSFERRED": "Transferred"}},
+    "C_admission": {"column": "status", "map": {"DC": "Discharged", "ACT": "Admitted", "DEC": "Deceased", "TRF": "Transferred"}},
+    "D_encounters": {"column": "encounterStatus", "map": {"DISCHARGED": "Discharged", "ADMITTED": "Admitted", "ACTIVE": "Admitted", "DECEASED": "Deceased", "TRANSFERRED": "Transferred"}},
 }
+for table_name, config in status_mappings.items():
+    apply_category_mapping(table_name, config["column"], "admission_status_canonical", config["map"], "unknown_status")
 
-for table_name, table in cleaned_tables.items():
-    for column in table.columns:
-        if column not in status_mappings:
-            continue
+# Diagnosis types
+diagnosis_type_mappings = {
+    "A_DIAGNOSES": {"column": "DiagnosisType", "map": {"PRIMARY": "Primary", "SECONDARY": "Secondary"}},
+    "B_diagnoses": {"column": "diagnosis_type", "map": {"PRINCIPAL": "Primary", "ADDITIONAL": "Secondary"}},
+    "C_diagnosis": {"column": "diagnosisType", "map": {"P": "Primary", "S": "Secondary"}},
+    "D_diagnoses": {"column": "diagnosisType", "map": {"PRIMARY": "Primary", "SECONDARY": "Secondary"}},
+}
+for table_name, config in diagnosis_type_mappings.items():
+    apply_category_mapping(table_name, config["column"], "diagnosis_type_canonical", config["map"], "unknown_diagnosis_type")
 
-        canonical_values = []
-        mapping = status_mappings[column]
+# Clinical note types
+note_type_mappings = {
+    "A_CLINICAL_NOTES": {"column": "NoteType", "map": {"ADMIT NOTE": "Admission Note", "PROGRESS": "Progress Note", "DC SUMMARY": "Discharge Summary", "CONSULT": "Consultation Note"}},
+    "B_notes": {"column": "note_type", "map": {"ADMISSION": "Admission Note", "DAILY REVIEW": "Progress Note", "DISCHARGE LETTER": "Discharge Summary", "CONSULT": "Consultation Note"}},
+    "C_note": {"column": "noteType", "map": {"ADM": "Admission Note", "PRG": "Progress Note", "DCS": "Discharge Summary", "CON": "Consultation Note"}},
+    "D_notes": {"column": "noteType", "map": {"ADMISSION_NOTE": "Admission Note", "PROGRESS_NOTE": "Progress Note", "DISCHARGE_SUMMARY": "Discharge Summary", "CONSULT_NOTE": "Consultation Note"}},
+}
+for table_name, config in note_type_mappings.items():
+    apply_category_mapping(table_name, config["column"], "note_type_canonical", config["map"], "unknown_note_type")
 
-        for raw_value in table[column]:
-            if pd.isna(raw_value):
-                canonical_values.append(pd.NA)
-                continue
+# Condition at discharge
+discharge_condition_mappings = {
+    "A_DISCHARGES": {"column": "ConditionAtDischarge", "map": {"IMPROVED": "Improved", "STABLE": "Stable", "UNCHANGED": "Unchanged", "EXPIRED": "Deceased"}},
+    "B_discharges": {"column": "condition_at_discharge", "map": {"IMPROVED": "Improved", "STABLE": "Stable", "UNCHANGED": "Unchanged", "DIED": "Deceased"}},
+    "C_discharge": {"column": "conditionAtDischarge", "map": {"IMP": "Improved", "STB": "Stable", "UNC": "Unchanged", "DEC": "Deceased"}},
+    "D_discharge": {"column": "conditionAtDischarge", "map": {"IMPROVED": "Improved", "STABLE": "Stable", "UNCHANGED": "Unchanged", "DECEASED": "Deceased"}},
+}
+for table_name, config in discharge_condition_mappings.items():
+    apply_category_mapping(table_name, config["column"], "condition_at_discharge_canonical", config["map"], "unknown_condition_at_discharge")
 
-            normalized = str(raw_value).strip().upper()
-            canonical = mapping.get(normalized)
+# Life status
+life_status_mappings = {
+    "A_PATIENTS": {"column": "VitalStatus", "map": {"ALIVE": "Alive", "DECEASED": "Deceased"}},
+    "B_patients": {"column": "vital_status", "map": {"LIVING": "Alive", "DECEASED": "Deceased"}},
+    "C_patient": {"column": "vitalStatus", "map": {"A": "Alive", "D": "Deceased"}},
+    "D_patients": {"column": "isDeceased", "map": {"FALSE": "Alive", "TRUE": "Deceased"}},
+}
+for table_name, config in life_status_mappings.items():
+    apply_category_mapping(table_name, config["column"], "life_status_canonical", config["map"], "unknown_life_status")
 
-            if canonical is None:
-                canonical_values.append(pd.NA)
-                category_quality_flags.append({
-                    "table": table_name,
-                    "field": column,
-                    "raw_value": raw_value,
-                    "flag": "unknown_status",
-                })
-            else:
-                canonical_values.append(canonical)
+# Gender (optional in Phase 1 schema)
+gender_mappings = {
+    "A_PATIENTS": {"column": "Sex", "map": {"M": "Male", "F": "Female", "X": "Other"}},
+    "B_patients": {"column": "sex", "map": {"MALE": "Male", "FEMALE": "Female", "OTHER": "Other"}},
+    "C_patient": {"column": "sex", "map": {"M": "Male", "F": "Female", "O": "Other"}},
+    "D_patients": {"column": "gender", "map": {"MALE": "Male", "FEMALE": "Female", "OTHER": "Other"}},
+}
+for table_name, config in gender_mappings.items():
+    apply_category_mapping(table_name, config["column"], "gender_canonical", config["map"], "unknown_gender", required=False)
 
-        table[f"{column}_canonical"] = pd.array(
-            canonical_values,
-            dtype="string",
+# Staff types
+staff_type_mappings = {
+    "A_STAFF": {"column": "StaffType", "map": {"MD": "Physician", "SURGEON": "Surgeon", "RN": "Nurse", "RADIOLOGIST": "Radiologist", "RAD TECH": "Radiology Technician", "LAB TECH": "Lab Technician"}},
+    "B_staff": {"column": "role", "map": {"DOCTOR": "Physician", "SURGEON": "Surgeon", "NURSE": "Nurse", "RADIOLOGIST": "Radiologist", "RADIOGRAPHER": "Radiology Technician", "BIOMEDICAL SCIENTIST": "Lab Technician"}},
+    "C_staff": {"column": "role", "map": {"DR": "Physician", "SG": "Surgeon", "NS": "Nurse", "RD": "Radiologist", "RT": "Radiology Technician", "LT": "Lab Technician"}},
+    "D_staff": {"column": "cadre", "map": {"DOCTOR": "Physician", "SURGEON": "Surgeon", "NURSE": "Nurse", "RADIOLOGIST": "Radiologist", "RADIOGRAPHER": "Radiology Technician", "LAB_TECHNOLOGIST": "Lab Technician"}},
+}
+for table_name, config in staff_type_mappings.items():
+    apply_category_mapping(table_name, config["column"], "staff_type_canonical", config["map"], "unknown_staff_type")
+
+# Order priority (optional) & order/exam statuses (required)
+order_priority_mappings = {
+    "A_DIAG_ORDERS": {"column": "Priority", "map": {"STAT": "STAT", "URGENT": "Urgent", "ROUTINE": "Routine"}},
+    "B_orders": {"column": "priority", "map": {"IMMEDIATE": "STAT", "URGENT": "Urgent", "ROUTINE": "Routine"}},
+    "C_order": {"column": "priority", "map": {"S": "STAT", "U": "Urgent", "R": "Routine"}},
+    "D_orders": {"column": "priority", "map": {"STAT": "STAT", "URGENT": "Urgent", "ROUTINE": "Routine"}},
+}
+for table_name, config in order_priority_mappings.items():
+    apply_category_mapping(table_name, config["column"], "priority_canonical", config["map"], "unknown_order_priority", required=False)
+
+order_status_map = {"COMPLETED": "Completed", "PENDING": "Pending", "CANCELLED": "Cancelled"}
+for table_name, col in [("A_DIAG_ORDERS", "OrderStatus"), ("B_orders", "order_status"), ("C_order", "orderStatus"), ("D_orders", "orderStatus")]:
+    apply_category_mapping(table_name, col, "order_status_canonical", order_status_map, "unknown_order_status")
+
+exam_status_map = {"COMPLETED": "Completed", "PENDING": "Pending", "CANCELLED": "Cancelled"}
+for table_name, col in [
+    ("A_RAD_EXAMS", "ExamStatus"), ("A_LAB_EXAMS", "ExamStatus"),
+    ("B_imaging", "exam_status"), ("B_investigations", "exam_status"),
+    ("C_imaging", "examStatus"), ("C_labExam", "examStatus"),
+    ("D_imaging", "examStatus"), ("D_labResults", "examStatus"),
+]:
+    apply_category_mapping(table_name, col, "exam_status_canonical", exam_status_map, "unknown_exam_status")
+
+# quarantining records that have unresolved required clinical categories
+category_quarantine_tables = {}
+for table_name, req_cols in category_required_columns.items():
+    table = cleaned_tables[table_name]
+    invalid_required = table[req_cols].isna().any(axis=1)
+    if invalid_required.any():
+        records = table[invalid_required].copy()
+        records["quarantine_reason"] = records[req_cols].apply(
+            lambda row: "Invalid/unresolved required category value(s): " + ", ".join(row.index[row.isna()]),
+            axis=1,
         )
+        category_quarantine_tables[table_name] = records
+
+for table_name, records in category_quarantine_tables.items():
+    cleaned_tables[table_name] = cleaned_tables[table_name].drop(index=records.index)
+
+total_category_quarantined = sum(len(records) for records in category_quarantine_tables.values())
 
 # Summary output
 print("\nClinical category standardization:")
 print("Category flags:", len(category_quality_flags))
+print("Records quarantined due to invalid required categories:", total_category_quarantined)
 
 for flag in category_quality_flags:
     print(
@@ -1284,18 +1274,13 @@ for flag in category_quality_flags:
     )
 
 
-# 7 - Missing Parent Records and Inconsistent References
+
 import math
 import pandas as pd
 
-# What to do when an OPTIONAL reference points to a parent that doesn't exist:
-#   True  -> set the reference to null, keep the row, log it
-#   False -> quarantine the row
 NULL_DANGLING_OPTIONAL_REFS = True
 MAX_PASSES = 20
 
-# Snapshot of raw parents, used to tell whether a parent never existed or was
-# removed earlier. Reference checks use the current cleaned tables.
 reference_parent_snapshot = {
     name: table.copy(deep=True)
     for name, table in tables.items()
@@ -1344,7 +1329,6 @@ def ref(child, fk, parent, pk, field, numeric=True, required=True):
 
 
 def staff(child, fk, field, parent, pk, numeric=True):
-    # Staff references are optional here; align this with the Phase 1 schema.
     return ref(child, fk, parent, pk, field, numeric, required=False)
 
 
@@ -1362,7 +1346,7 @@ reference_rules = [
     ref("A_DIAGNOSES", "AdmitID", "A_ADMISSIONS", "AdmitID",
         "admission_id"),
     ref("A_DIAGNOSES", "PatID", "A_PATIENTS", "PatID", "patient_id"),
-    ref("A_DIAGNOSES", "ICD9Code", "A_ICD9_DICT", "ICD9Code",
+    ref("A_DIAGNOSES", "icd9_code_canonical", "A_ICD9_DICT", "icd9_code_canonical",
         "icd9_code", numeric=False),
     staff("A_DIAGNOSES", "DiagnosingPhysicianId",
           "diagnosing_physician_id", "A_STAFF", "StaffID"),
@@ -1481,8 +1465,8 @@ reference_rules = [
         "patient_id", numeric=False),
     ref("D_diagnoses", "encounterId", "D_encounters", "encounterId",
         "admission_id"),
-    ref("D_diagnoses", "icd9", "D_icd9Dictionary", "icd9", "icd9_code",
-        numeric=False),
+    ref("D_diagnoses", "icd9_code_canonical", "D_icd9Dictionary", "icd9_code_canonical",
+        "icd9_code", numeric=False),
     staff("D_diagnoses", "diagnosingPhysicianId",
           "diagnosing_physician_id", "D_staff", "staffRef", numeric=False),
     ref("D_notes", "encounterId", "D_encounters", "encounterId",
@@ -1533,12 +1517,17 @@ reference_rules = [
 pending_reference_rules = [
     ref("C_admission", "pid", "C_patient", "pid", "patient_id"),
     ref("C_triage", "aid", "C_admission", "aid", "admission_id"),
-    ref("C_clinicalNote", "aid", "C_admission", "aid", "admission_id"),
+    ref("C_note", "aid", "C_admission", "aid", "admission_id"),
     ref("C_diagnosis", "aid", "C_admission", "aid", "admission_id"),
     ref("C_surgery", "aid", "C_admission", "aid", "admission_id"),
     ref("C_discharge", "aid", "C_admission", "aid", "admission_id"),
     ref("C_order", "aid", "C_admission", "aid", "admission_id"),
+    ref("C_labExam", "orderId", "C_order", "orderId", "order_id"),
+    ref("C_imaging", "orderId", "C_order", "orderId", "order_id"),
+    ref("C_report", "examId", "C_imaging", "examId", "rad_exam_id"),
     ref("C_wardStay", "aid", "C_admission", "aid", "admission_id"),
+    ref("C_ccRecord", "stayId", "C_wardStay", "stayId", "unit_stay_id"),
+    ref("C_wardRound", "aid", "C_admission", "aid", "admission_id"),
 ]
 
 # Compare patient and admission identifiers on rows that contain both.
@@ -1551,11 +1540,47 @@ consistency_rules = [
      "B_episodes", "episode_no", "patient_no", True, True),
     ("B_orders", "patient_no", "episode_no",
      "B_episodes", "episode_no", "patient_no", True, True),
+    ("C_diagnosis", "pid", "aid",
+     "C_admission", "aid", "pid", True, True),
+    ("C_order", "pid", "aid",
+     "C_admission", "aid", "pid", True, True),
     ("D_diagnoses", "patientRef", "encounterId",
      "D_encounters", "encounterId", "patientRef", False, True),
     ("D_orders", "patientRef", "encounterId",
      "D_encounters", "encounterId", "patientRef", False, True),
 ]
+
+
+def normalize_icd9_code(value, source):
+    if pd.isna(value):
+        return pd.NA
+    code = str(value).strip().upper()
+    if not code:
+        return pd.NA
+    if source == "A":
+        # Source A dictionary uses undotted codes; strip dots so valid dotted codes match.
+        return code.replace(".", "")
+    if source == "D":
+        # Restore missing leading zeros on numeric ICD-9 codes (e.g. 38.9 -> 038.9).
+        head, *rest = code.split(".", 1)
+        if head.isdigit() and len(head) < 3:
+            head = head.zfill(3)
+        return f"{head}.{rest[0]}" if rest else head
+    return code
+
+
+for tbl, col, src in [
+    ("A_ICD9_DICT", "ICD9Code", "A"), ("A_DIAGNOSES", "ICD9Code", "A"),
+    ("D_icd9Dictionary", "icd9", "D"), ("D_diagnoses", "icd9", "D"),
+]:
+    cleaned_tables[tbl]["icd9_code_canonical"] = pd.array(
+        [normalize_icd9_code(v, src) for v in cleaned_tables[tbl][col]],
+        dtype="string",
+    )
+    reference_parent_snapshot[tbl]["icd9_code_canonical"] = pd.array(
+        [normalize_icd9_code(v, src) for v in reference_parent_snapshot[tbl][col]],
+        dtype="string",
+    )
 
 reference_quality_flags = []
 _quarantine_parts = {}
@@ -1778,9 +1803,9 @@ def enforce_references():
     for rule in pending_reference_rules:
         if (
             rule["child"] in cleaned_tables
-            and rule["parent"] in tables
+            and rule["parent"] in cleaned_tables
             and rule["fk"] in cleaned_tables[rule["child"]].columns
-            and rule["pk"] in tables[rule["parent"]].columns
+            and rule["pk"] in cleaned_tables[rule["parent"]].columns
         ):
             active_rules.append(rule)
         else:
@@ -1794,7 +1819,7 @@ def enforce_references():
     # Fail clearly for typos in the main rules.
     for rule in active_rules:
         for table_name in (rule["child"], rule["parent"]):
-            if table_name not in tables:
+            if table_name not in cleaned_tables:
                 raise KeyError(
                     f"Unknown table in reference rule: {table_name}"
                 )
@@ -1803,7 +1828,7 @@ def enforce_references():
             raise KeyError(
                 f"Missing column {rule['child']}.{rule['fk']}"
             )
-        if rule["pk"] not in tables[rule["parent"]].columns:
+        if rule["pk"] not in cleaned_tables[rule["parent"]].columns:
             raise KeyError(
                 f"Missing column {rule['parent']}.{rule['pk']}"
             )
@@ -2082,6 +2107,76 @@ related_time_rules = [
     ("D_report", "reportDatetime", "examId",
      "D_imaging", "examId", "examDatetime", "before",
      "Report precedes examination"),
+
+    # Events must fall within their admission period 
+    ("A_DIAGNOSES", "DiagnosisDatetime", "AdmitID", "A_ADMISSIONS", "AdmitID", "DischDT", "after", "Diagnosis occurs after discharge"),
+    ("B_diagnoses", "diagnosis_datetime", "episode_no", "B_episodes", "episode_no", "episode_end", "after", "Diagnosis occurs after discharge"),
+    ("C_diagnosis", "diagnosisDatetime", "aid", "C_admission", "aid", "dischargeTime", "after", "Diagnosis occurs after discharge"),
+    ("D_diagnoses", "diagnosisDatetime", "encounterId", "D_encounters", "encounterId", "dischargedAt", "after", "Diagnosis occurs after discharge"),
+
+    ("A_SURGERIES", "ProcedureDatetime", "AdmitID", "A_ADMISSIONS", "AdmitID", "AdmitDT", "before", "Procedure precedes admission"),
+    ("B_operations", "operation_datetime", "episode_no", "B_episodes", "episode_no", "episode_start", "before", "Procedure precedes admission"),
+    ("C_surgery", "procedureDatetime", "aid", "C_admission", "aid", "admitTime", "before", "Procedure precedes admission"),
+    ("D_procedures", "procedureDatetime", "encounterId", "D_encounters", "encounterId", "admittedAt", "before", "Procedure precedes admission"),
+
+    ("A_TRIAGE", "TriageDatetime", "AdmitID", "A_ADMISSIONS", "AdmitID", "AdmitDT", "before", "Triage precedes admission"),
+    ("B_triage", "triage_datetime", "episode_no", "B_episodes", "episode_no", "episode_start", "before", "Triage precedes admission"),
+    ("C_triage", "triageDatetime", "aid", "C_admission", "aid", "admitTime", "before", "Triage precedes admission"),
+    ("D_triage", "triageDatetime", "encounterId", "D_encounters", "encounterId", "admittedAt", "before", "Triage precedes admission"),
+    ("A_TRIAGE", "TriageDatetime", "AdmitID", "A_ADMISSIONS", "AdmitID", "DischDT", "after", "Triage occurs after discharge"),
+    ("B_triage", "triage_datetime", "episode_no", "B_episodes", "episode_no", "episode_end", "after", "Triage occurs after discharge"),
+    ("C_triage", "triageDatetime", "aid", "C_admission", "aid", "dischargeTime", "after", "Triage occurs after discharge"),
+    ("D_triage", "triageDatetime", "encounterId", "D_encounters", "encounterId", "dischargedAt", "after", "Triage occurs after discharge"),
+
+    ("A_CLINICAL_NOTES", "NoteDatetime", "AdmitID", "A_ADMISSIONS", "AdmitID", "AdmitDT", "before", "Note precedes admission"),
+    ("B_notes", "note_datetime", "episode_no", "B_episodes", "episode_no", "episode_start", "before", "Note precedes admission"),
+    ("C_note", "noteDatetime", "aid", "C_admission", "aid", "admitTime", "before", "Note precedes admission"),
+    ("D_notes", "noteDatetime", "encounterId", "D_encounters", "encounterId", "admittedAt", "before", "Note precedes admission"),
+    ("A_CLINICAL_NOTES", "NoteDatetime", "AdmitID", "A_ADMISSIONS", "AdmitID", "DischDT", "after", "Note occurs after discharge"),
+    ("B_notes", "note_datetime", "episode_no", "B_episodes", "episode_no", "episode_end", "after", "Note occurs after discharge"),
+    ("C_note", "noteDatetime", "aid", "C_admission", "aid", "dischargeTime", "after", "Note occurs after discharge"),
+    ("D_notes", "noteDatetime", "encounterId", "D_encounters", "encounterId", "dischargedAt", "after", "Note occurs after discharge"),
+
+    ("A_DIAG_ORDERS", "RequestDatetime", "AdmitID", "A_ADMISSIONS", "AdmitID", "AdmitDT", "before", "Order precedes admission"),
+    ("B_orders", "request_datetime", "episode_no", "B_episodes", "episode_no", "episode_start", "before", "Order precedes admission"),
+    ("C_order", "requestDatetime", "aid", "C_admission", "aid", "admitTime", "before", "Order precedes admission"),
+    ("D_orders", "requestDatetime", "encounterId", "D_encounters", "encounterId", "admittedAt", "before", "Order precedes admission"),
+    ("A_DIAG_ORDERS", "RequestDatetime", "AdmitID", "A_ADMISSIONS", "AdmitID", "DischDT", "after", "Order occurs after discharge"),
+    ("B_orders", "request_datetime", "episode_no", "B_episodes", "episode_no", "episode_end", "after", "Order occurs after discharge"),
+    ("C_order", "requestDatetime", "aid", "C_admission", "aid", "dischargeTime", "after", "Order occurs after discharge"),
+    ("D_orders", "requestDatetime", "encounterId", "D_encounters", "encounterId", "dischargedAt", "after", "Order occurs after discharge"),
+
+    ("A_RAD_EXAMS", "ExamDatetime", "AdmitID", "A_ADMISSIONS", "AdmitID", "DischDT", "after", "Radiology exam occurs after discharge"),
+    ("B_imaging", "exam_datetime", "episode_no", "B_episodes", "episode_no", "episode_end", "after", "Radiology exam occurs after discharge"),
+    ("C_imaging", "examDatetime", "aid", "C_admission", "aid", "dischargeTime", "after", "Radiology exam occurs after discharge"),
+    ("D_imaging", "examDatetime", "encounterId", "D_encounters", "encounterId", "dischargedAt", "after", "Radiology exam occurs after discharge"),
+
+    ("A_UNIT_STAYS", "InDT", "AdmitID", "A_ADMISSIONS", "AdmitID", "AdmitDT", "before", "Unit entry precedes admission"),
+    ("B_ward_stays", "ward_in", "episode_no", "B_episodes", "episode_no", "episode_start", "before", "Unit entry precedes admission"),
+    ("C_wardStay", "inTime", "aid", "C_admission", "aid", "admitTime", "before", "Unit entry precedes admission"),
+    ("D_movements", "inAt", "encounterId", "D_encounters", "encounterId", "admittedAt", "before", "Unit entry precedes admission"),
+    ("A_UNIT_STAYS", "OutDT", "AdmitID", "A_ADMISSIONS", "AdmitID", "DischDT", "after", "Unit exit occurs after discharge"),
+    ("B_ward_stays", "ward_out", "episode_no", "B_episodes", "episode_no", "episode_end", "after", "Unit exit occurs after discharge"),
+    ("C_wardStay", "outTime", "aid", "C_admission", "aid", "dischargeTime", "after", "Unit exit occurs after discharge"),
+    ("D_movements", "outAt", "encounterId", "D_encounters", "encounterId", "dischargedAt", "after", "Unit exit occurs after discharge"),
+
+    ("A_ICU_RECORDS", "RecordDatetime", "StayID", "A_UNIT_STAYS", "StayID", "InDT", "before", "Critical care record precedes unit entry"),
+    ("B_critical_care_obs", "record_datetime", "ward_stay_no", "B_ward_stays", "ward_stay_no", "ward_in", "before", "Critical care record precedes unit entry"),
+    ("C_ccRecord", "recordDatetime", "stayId", "C_wardStay", "stayId", "inTime", "before", "Critical care record precedes unit entry"),
+    ("D_criticalCareObservations", "recordDatetime", "movementId", "D_movements", "movementId", "inAt", "before", "Critical care record precedes unit entry"),
+    ("A_ICU_RECORDS", "RecordDatetime", "StayID", "A_UNIT_STAYS", "StayID", "OutDT", "after", "Critical care record occurs after unit exit"),
+    ("B_critical_care_obs", "record_datetime", "ward_stay_no", "B_ward_stays", "ward_stay_no", "ward_out", "after", "Critical care record occurs after unit exit"),
+    ("C_ccRecord", "recordDatetime", "stayId", "C_wardStay", "stayId", "outTime", "after", "Critical care record occurs after unit exit"),
+    ("D_criticalCareObservations", "recordDatetime", "movementId", "D_movements", "movementId", "outAt", "after", "Critical care record occurs after unit exit"),
+
+    ("A_WARD_RECORDS", "RecordDatetime", "AdmitID", "A_ADMISSIONS", "AdmitID", "AdmitDT", "before", "Ward record precedes admission"),
+    ("B_ward_obs", "record_datetime", "episode_no", "B_episodes", "episode_no", "episode_start", "before", "Ward record precedes admission"),
+    ("C_wardRound", "recordDatetime", "aid", "C_admission", "aid", "admitTime", "before", "Ward record precedes admission"),
+    ("D_wardRounds", "recordDatetime", "encounterId", "D_encounters", "encounterId", "admittedAt", "before", "Ward record precedes admission"),
+    ("A_WARD_RECORDS", "RecordDatetime", "AdmitID", "A_ADMISSIONS", "AdmitID", "DischDT", "after", "Ward record occurs after discharge"),
+    ("B_ward_obs", "record_datetime", "episode_no", "B_episodes", "episode_no", "episode_end", "after", "Ward record occurs after discharge"),
+    ("C_wardRound", "recordDatetime", "aid", "C_admission", "aid", "dischargeTime", "after", "Ward record occurs after discharge"),
+    ("D_wardRounds", "recordDatetime", "encounterId", "D_encounters", "encounterId", "dischargedAt", "after", "Ward record occurs after discharge"),
 ]
 
 for rule in related_time_rules:
@@ -2159,6 +2254,14 @@ for table_name, row_indexes in chronology_invalid_rows.items():
     cleaned_tables[table_name] = cleaned_tables[table_name].drop(
         index=list(row_indexes)
     )
+
+# Rerun Step 7 reference checks so children of chronology-quarantined parents are also quarantined.
+enforce_references()
+reference_quarantine_tables = {
+    table_name: pd.concat(parts)
+    for table_name, parts in _quarantine_parts.items()
+}
+reference_flags_df = pd.DataFrame(reference_quality_flags)
 
 chronology_flags_df = pd.DataFrame(chronology_quality_flags)
 print("\nChronology validation summary:")
@@ -2257,3 +2360,607 @@ for table_name, columns in date_time_columns.items():
             break
     if date_example_found:
         break
+
+
+# ============================================================
+#       TASK 3: INTEGRATE THE SOURCES AND REFINE THE SCHEMA
+# ============================================================
+
+SOURCE_METADATA = [
+    {"source_code": "A", "continent": "North America"},
+    {"source_code": "B", "continent": "Europe"},
+    {"source_code": "C", "continent": "Asia"},
+    {"source_code": "D", "continent": "Africa"},
+]
+
+# getvalue of row[col]  
+def getVal(row, col):
+    v = row[col] if col in row.index else pd.NA
+    return None if pd.isna(v) else v
+
+# Make sure the time value follows the proper format
+def formatDate(value):
+    if pd.isna(value):
+        return None
+    ts = pd.Timestamp(value)
+    if ts.tzinfo is not None:
+        ts = ts.tz_convert(None)
+    return ts.strftime("%Y-%m-%d")
+
+def formatDateTime(value):
+    if pd.isna(value):
+        return None
+    ts = pd.Timestamp(value)
+    if ts.tzinfo is not None:
+        ts = ts.tz_convert(None)
+    return ts.strftime("%Y-%m-%d %H:%M:%S")
+
+def normalizePersonName(raw_name, source):
+    if pd.isna(raw_name):
+        return None
+    text = re.sub(r"\s+", " ", str(raw_name).strip())
+    if source == "A" and "," in text:
+        last, first = [part.strip() for part in text.split(",", 1)]
+        text = f"{first} {last}".strip()
+    return text.title()
+
+def nameKey(name):
+    return re.sub(r"\s+", " ", str(name).strip().lower()) if name else ""
+
+def sourceIdStr(value, numeric):
+    k = reference_key(value, numeric_id=numeric)
+    return k if k is not None else str(value).strip()
+
+# track old -> new IDs so nothing breaks
+global_id_maps = {
+    "Healthcare_Professional": {},
+    "Unit": {},
+    "ICD9_Code": {},
+    "Patient": {},
+    "Admission": {},
+    "TriageAssessment": {},
+    "ClinicalNote": {},
+    "Diagnosis": {},
+    "SurgicalProcedure": {},
+    "DischargeRecord": {},
+    "DiagnosticOrder": {},
+    "RadiologyExamination": {},
+    "RadiologyReport": {},
+    "DiagnosticExamination": {},
+    "UnitStay": {},
+    "CriticalCareRecord": {},
+    "GeneralWardRecord": {},
+}
+identifier_mapping_rows = []
+uncertain_patient_matches = []
+
+
+def recordMapping(entity_name, source_code, original_id, global_id):
+    identifier_mapping_rows.append({
+        "mapping_id": len(identifier_mapping_rows) + 1,
+        "entity_name": entity_name,
+        "source_code": source_code,
+        "original_source_id": str(original_id),
+        "global_id": str(global_id),
+    })
+
+
+def mapFk(entity_name, source_code, raw_fk, numeric=True):
+    if pd.isna(raw_fk):
+        return None
+    key = (source_code, sourceIdStr(raw_fk, numeric))
+    return global_id_maps[entity_name].get(key)
+
+
+# Source_System
+integrated_tables = {
+    "Source_System": pd.DataFrame(SOURCE_METADATA),
+}
+
+# ICD9_Code 
+undotted_to_dotted = {}
+for table, col in [("B_icd9_codes", "icd9"), ("C_icdEntry", "icdCode"), ("D_icd9Dictionary", "icd9_code_canonical")]:
+    for val in cleaned_tables[table][col].dropna():
+        dotted = str(val).strip().upper()
+        undotted_to_dotted[dotted.replace(".", "")] = dotted
+
+icd9_rows = {}
+for source, table, col, title_col, desc_col, cat_col in [
+    ("A", "A_ICD9_DICT", "icd9_code_canonical", "OfficialTitle", "Description", "DiseaseCategory"),
+    ("B", "B_icd9_codes", "icd9", "official_title", "description", "disease_category"),
+    ("C", "C_icdEntry", "icdCode", "officialTitle", "description", "diseaseCategory"),
+    ("D", "D_icd9Dictionary", "icd9_code_canonical", "officialTitle", "description", "diseaseCategory"),
+]:
+    for _, row in cleaned_tables[table].iterrows():
+        raw_code = str(row[col]).strip().upper()
+        canon_code = undotted_to_dotted.get(raw_code.replace(".", ""), raw_code)
+        global_id_maps["ICD9_Code"][(source, raw_code)] = canon_code
+        recordMapping("ICD9_Code", source, raw_code, canon_code)
+        if canon_code not in icd9_rows:
+            icd9_rows[canon_code] = {
+                "icd9_code": canon_code,
+                "official_title": getVal(row, title_col),
+                "description": getVal(row, desc_col),
+                "disease_category": getVal(row, cat_col),
+            }
+integrated_tables["ICD9_Code"] = pd.DataFrame(list(icd9_rows.values()))
+
+# Healthcare_Professional
+staff_rows = []
+for source, table, id_col, first_name_col, last_name_col, specialty_col, is_num in [
+    ("A", "A_STAFF", "StaffID", "FirstName", "LastName", "Specialty", True),
+    ("B", "B_staff", "staff_no", "first_name", "last_name", "specialty", True),
+    ("C", "C_staff", "staffNo", "firstName", "lastName", "specialty", True),
+    ("D", "D_staff", "staffRef", "firstName", "lastName", "specialty", False),
+]:
+    for _, row in cleaned_tables[table].iterrows():
+        orig_id = sourceIdStr(row[id_col], is_num)
+        new_id = len(staff_rows) + 1
+        global_id_maps["Healthcare_Professional"][(source, orig_id)] = new_id
+        recordMapping("Healthcare_Professional", source, orig_id, new_id)
+        staff_rows.append({
+            "staff_id": new_id,
+            "first_name": getVal(row, first_name_col),
+            "last_name": getVal(row, last_name_col),
+            "staff_type": getVal(row, "staff_type_canonical"),
+            "specialty": getVal(row, specialty_col),
+        })
+integrated_tables["Healthcare_Professional"] = pd.DataFrame(staff_rows)
+
+# Unit
+unit_rows = []
+for source, table, id_col, name_col, is_num in [
+    ("A", "A_UNITS", "UnitID", "UnitName", True),
+    ("B", "B_wards", "ward_no", "ward_name", True),
+    ("C", "C_ward", "wardCode", "wardName", False),
+    ("D", "D_units", "unitCode", "unitName", True),
+]:
+    for _, row in cleaned_tables[table].iterrows():
+        orig_id = sourceIdStr(row[id_col], is_num)
+        new_id = len(unit_rows) + 1
+        global_id_maps["Unit"][(source, orig_id)] = new_id
+        recordMapping("Unit", source, orig_id, new_id)
+        unit_rows.append({
+            "unit_id": new_id,
+            "unit_name": getVal(row, name_col),
+            "unit_type": getVal(row, "unit_type_canonical"),
+        })
+integrated_tables["Unit"] = pd.DataFrame(unit_rows)
+
+# Patient (merge exact/same-source dupes, dump uncertain ones separately)
+patient_rows = []
+same_src_index = {}      
+cross_src_index = {}     
+name_dob_index = {}      
+
+patient_sources = [
+    ("A", "A_PATIENTS", "PatID", "HealthCardNo", "PatientName", "DOB", "Address", "Phone", "EmergencyContactName", "EmergencyContactNumber", "DeathDT", True),
+    ("B", "B_patients", "patient_no", "insurance_number", "patient_name", "birth_date", "address", "phone_number", "emergency_contact_name", "emergency_contact_number", "date_of_death", True),
+    ("C", "C_patient", "pid", "insuranceNo", "name", "birthDate", "address", "tel", "emergencyContactName", "emergencyContactNumber", "deathTime", True),
+    ("D", "D_patients", "patientRef", "medicalAidNumber", None, "dob", "address", "phoneNumber", "emergencyContactName", "emergencyContactNumber", "deceasedAt", True),
+]
+
+for source, table, id_col, hin_col, name_col, dob_col, addr_col, phone_col, emerg_name_col, emerg_phone_col, death_col, is_num in patient_sources:
+    for _, row in cleaned_tables[table].iterrows():
+        orig_id = sourceIdStr(row[id_col], is_num)
+        raw_name = (
+            f"{getVal(row, 'name.first') or ''} {getVal(row, 'name.last') or ''}".strip()
+            if name_col is None else getVal(row, name_col)
+        )
+        full_name = normalizePersonName(raw_name, source)
+        hin = str(getVal(row, hin_col)).strip()
+        dob_str = formatDate(row[dob_col])
+        dod_str = formatDateTime(row[death_col])
+        life_status = getVal(row, "life_status_canonical")
+        hin_key = hin.upper()
+        name_key_val = nameKey(full_name)
+
+        rec_data = {
+            "health_insurance_num": hin,
+            "full_name": full_name,
+            "date_of_birth": dob_str,
+            "gender": getVal(row, "gender_canonical"),
+            "address": getVal(row, addr_col),
+            "phone_number": getVal(row, phone_col),
+            "emergency_contact_name": getVal(row, emerg_name_col),
+            "emergency_contact_number": getVal(row, emerg_phone_col),
+            "life_status": life_status,
+            "date_of_death": dod_str,
+        }
+
+        if (source, hin_key, dob_str) in same_src_index:
+            new_id = same_src_index[(source, hin_key, dob_str)]
+            existing = patient_rows[new_id - 1]
+            for col, val in rec_data.items():
+                if existing[col] is None and val is not None:
+                    existing[col] = val
+            if life_status == "Deceased":
+                existing["life_status"] = "Deceased"
+            global_id_maps["Patient"][(source, orig_id)] = new_id
+            recordMapping("Patient", source, orig_id, new_id)
+            continue
+
+        if (hin_key, name_key_val, dob_str) in cross_src_index:
+            new_id = cross_src_index[(hin_key, name_key_val, dob_str)]
+            existing = patient_rows[new_id - 1]
+            for col, val in rec_data.items():
+                if existing[col] is None and val is not None:
+                    existing[col] = val
+            if life_status == "Deceased":
+                existing["life_status"] = "Deceased"
+                if dod_str is not None:
+                    existing["date_of_death"] = dod_str
+            global_id_maps["Patient"][(source, orig_id)] = new_id
+            recordMapping("Patient", source, orig_id, new_id)
+            continue
+
+        new_id = len(patient_rows) + 1
+        patient_rows.append({"patient_id": new_id, **rec_data})
+        global_id_maps["Patient"][(source, orig_id)] = new_id
+        recordMapping("Patient", source, orig_id, new_id)
+        same_src_index[(source, hin_key, dob_str)] = new_id
+        cross_src_index[(hin_key, name_key_val, dob_str)] = new_id
+
+        for prev_gid, prev_src, prev_hin in name_dob_index.get((name_key_val, dob_str), []):
+            if prev_hin != hin_key:
+                uncertain_patient_matches.append({
+                    "match_id": len(uncertain_patient_matches) + 1,
+                    "patient_id_1": prev_gid,
+                    "patient_id_2": new_id,
+                    "reason": "Same full_name and date_of_birth with different health_insurance_num",
+                })
+        name_dob_index.setdefault((name_key_val, dob_str), []).append((new_id, source, hin_key))
+
+integrated_tables["Patient"] = pd.DataFrame(patient_rows)
+integrated_tables["Uncertain_Patient_Match"] = pd.DataFrame(
+    uncertain_patient_matches,
+    columns=["match_id", "patient_id_1", "patient_id_2", "reason"],
+)
+
+# Admission
+admission_rows = []
+for source, table, id_col, patient_col, doctor_col, admit_col, reason_col, insurance_col, arrival_cond_col, discharge_col, patient_is_num, staff_is_num in [
+    ("A", "A_ADMISSIONS", "AdmitID", "PatID", "AdmittingMD", "AdmitDT", "Reason", "InsuranceInfo", "ConditionOnArrival", "DischDT", True, True),
+    ("B", "B_episodes", "episode_no", "patient_no", "admitting_clinician", "episode_start", "reason", "insurance_info", "condition_on_arrival", "episode_end", True, True),
+    ("C", "C_admission", "aid", "pid", "admittingHealthcareProfessional", "admitTime", "reason", "insuranceInfo", "conditionOnArrival", "dischargeTime", True, True),
+    ("D", "D_encounters", "encounterId", "patientRef", "admittingHealthcareProfessional", "admittedAt", "reason", "insuranceInfo", "conditionOnArrival", "dischargedAt", True, False),
+]:
+    for _, row in cleaned_tables[table].iterrows():
+        orig_id = sourceIdStr(row[id_col], True)
+        new_id = len(admission_rows) + 1
+        global_id_maps["Admission"][(source, orig_id)] = new_id
+        recordMapping("Admission", source, orig_id, new_id)
+        admission_rows.append({
+            "admission_id": new_id,
+            "patient_id": mapFk("Patient", source, row[patient_col], patient_is_num),
+            "admitting_healthcare_professional": mapFk("Healthcare_Professional", source, row[doctor_col], staff_is_num),
+            "admission_datetime": formatDateTime(row[admit_col]),
+            "admission_type": getVal(row, "admission_type_canonical"),
+            "admission_source": getVal(row, "admission_source_canonical"),
+            "reason": getVal(row, reason_col),
+            "insurance_info": getVal(row, insurance_col),
+            "condition_on_arrival": getVal(row, arrival_cond_col),
+            "discharge_datetime": formatDateTime(row[discharge_col]),
+            "admission_status": getVal(row, "admission_status_canonical"),
+        })
+integrated_tables["Admission"] = pd.DataFrame(admission_rows)
+
+# TriageAssessment
+triage_rows = []
+for source, table, id_col, admit_id_col, nurse_col, date_col, symptoms_col, allergies_col, meds_col, staff_is_num in [
+    ("A", "A_TRIAGE", "TriageID", "AdmitID", "NurseID", "TriageDatetime", "Symptoms", "Allergies", "CurrentMedication", True),
+    ("B", "B_triage", "triage_id", "episode_no", "nurse_id", "triage_datetime", "symptoms", "allergies", "current_medication", True),
+    ("C", "C_triage", "triageId", "aid", "nurseId", "triageDatetime", "symptoms", "allergies", "currentMedication", True),
+    ("D", "D_triage", "triageId", "encounterId", "nurseId", "triageDatetime", "symptoms", "allergies", "currentMedication", False),
+]:
+    for _, row in cleaned_tables[table].iterrows():
+        orig_id = sourceIdStr(row[id_col], True)
+        new_id = len(triage_rows) + 1
+        global_id_maps["TriageAssessment"][(source, orig_id)] = new_id
+        recordMapping("TriageAssessment", source, orig_id, new_id)
+        triage_rows.append({
+            "triage_id": new_id,
+            "admission_id": mapFk("Admission", source, row[admit_id_col], True),
+            "nurse_id": mapFk("Healthcare_Professional", source, row[nurse_col], staff_is_num),
+            "triage_datetime": formatDateTime(row[date_col]),
+            "blood_pressure": f"{int(round(row['blood_pressure_systolic_mmhg']))}/{int(round(row['blood_pressure_diastolic_mmhg']))}",
+            "heart_rate": int(round(row["heart_rate_bpm"])),
+            "pain_level": int(round(row["pain_level_0_10"])),
+            "symptoms": getVal(row, symptoms_col),
+            "allergies": getVal(row, allergies_col),
+            "current_medication": getVal(row, meds_col),
+            "priority_level": getVal(row, "triage_priority_canonical"),
+            "body_temp": round(float(row["body_temp_c"]), 1),
+            "oxygen_sat": int(round(row["oxygen_sat_pct"])),
+        })
+integrated_tables["TriageAssessment"] = pd.DataFrame(triage_rows)
+
+# ClinicalNote
+note_rows = []
+for source, table, id_col, admit_id_col, physician_col, date_col, symptoms_col, exam_col, findings_col, suspected_col, planned_col, treatment_col, note_text_col, staff_is_num in [
+    ("A", "A_CLINICAL_NOTES", "NoteId", "AdmitID", "PhysicianId", "NoteDatetime", "Symptoms", "PhysicalExam", "InitialFindings", "SuspectedCondition", "PlannedExaminations", "InitialTreatment", "NoteText", True),
+    ("B", "B_notes", "note_id", "episode_no", "physician_id", "note_datetime", "symptoms", "physical_exam", "initial_findings", "suspected_condition", "planned_examinations", "initial_treatment", "note_text", True),
+    ("C", "C_note", "noteId", "aid", "physicianId", "noteDatetime", "symptoms", "physicalExam", "initialFindings", "suspectedCondition", "plannedExaminations", "initialTreatment", "noteText", True),
+    ("D", "D_notes", "noteId", "encounterId", "physicianId", "noteDatetime", "symptoms", "physicalExam", "initialFindings", "suspectedCondition", "plannedExaminations", "initialTreatment", "noteText", False),
+]:
+    for _, row in cleaned_tables[table].iterrows():
+        orig_id = sourceIdStr(row[id_col], True)
+        new_id = len(note_rows) + 1
+        global_id_maps["ClinicalNote"][(source, orig_id)] = new_id
+        recordMapping("ClinicalNote", source, orig_id, new_id)
+        note_rows.append({
+            "note_id": new_id,
+            "admission_id": mapFk("Admission", source, row[admit_id_col], True),
+            "physician_id": mapFk("Healthcare_Professional", source, row[physician_col], staff_is_num),
+            "note_type": getVal(row, "note_type_canonical"),
+            "note_datetime": formatDateTime(row[date_col]),
+            "symptoms": getVal(row, symptoms_col),
+            "physical_exam": getVal(row, exam_col),
+            "initial_findings": getVal(row, findings_col),
+            "suspected_condition": getVal(row, suspected_col),
+            "planned_examinations": getVal(row, planned_col),
+            "initial_treatment": getVal(row, treatment_col),
+            "note_text": getVal(row, note_text_col),
+        })
+integrated_tables["ClinicalNote"] = pd.DataFrame(note_rows)
+
+# Diagnosis
+diag_rows = []
+for source, table, id_col, patient_col, admit_id_col, icd_col, date_col, physician_col, patient_is_num, staff_is_num in [
+    ("A", "A_DIAGNOSES", "DiagnosisId", "PatID", "AdmitID", "icd9_code_canonical", "DiagnosisDatetime", "DiagnosingPhysicianId", True, True),
+    ("B", "B_diagnoses", "diagnosis_id", "patient_no", "episode_no", "icd9", "diagnosis_datetime", "diagnosing_physician_id", True, True),
+    ("C", "C_diagnosis", "diagnosisId", "pid", "aid", "icdCode", "diagnosisDatetime", "diagnosingPhysicianId", True, True),
+    ("D", "D_diagnoses", "diagnosisId", "patientRef", "encounterId", "icd9_code_canonical", "diagnosisDatetime", "diagnosingPhysicianId", True, False),
+]:
+    for _, row in cleaned_tables[table].iterrows():
+        orig_id = sourceIdStr(row[id_col], True)
+        new_id = len(diag_rows) + 1
+        global_id_maps["Diagnosis"][(source, orig_id)] = new_id
+        recordMapping("Diagnosis", source, orig_id, new_id)
+        raw_icd = str(row[icd_col]).strip().upper()
+        diag_rows.append({
+            "diagnosis_id": new_id,
+            "patient_id": mapFk("Patient", source, row[patient_col], patient_is_num),
+            "admission_id": mapFk("Admission", source, row[admit_id_col], True),
+            "icd9_code": global_id_maps["ICD9_Code"][(source, raw_icd)],
+            "diagnosis_datetime": formatDateTime(row[date_col]),
+            "diagnosis_type": getVal(row, "diagnosis_type_canonical"),
+            "diagnosing_physician_id": mapFk("Healthcare_Professional", source, row[physician_col], staff_is_num),
+        })
+integrated_tables["Diagnosis"] = pd.DataFrame(diag_rows)
+
+# SurgicalProcedure
+surg_rows = []
+for source, table, id_col, admit_id_col, surgeon_col, proc_type_col, date_col, out_col, staff_is_num in [
+    ("A", "A_SURGERIES", "ProcedureId", "AdmitID", "SurgeonId", "ProcedureType", "ProcedureDatetime", "Outcome", True),
+    ("B", "B_operations", "operation_no", "episode_no", "surgeon_no", "operation", "operation_datetime", "outcome", True),
+    ("C", "C_surgery", "procedureId", "aid", "surgeonId", "procedureType", "procedureDatetime", "outcome", True),
+    ("D", "D_procedures", "procedureId", "encounterId", "surgeonId", "procedureType", "procedureDatetime", "outcome", False),
+]:
+    for _, row in cleaned_tables[table].iterrows():
+        orig_id = sourceIdStr(row[id_col], True)
+        new_id = len(surg_rows) + 1
+        global_id_maps["SurgicalProcedure"][(source, orig_id)] = new_id
+        recordMapping("SurgicalProcedure", source, orig_id, new_id)
+        surg_rows.append({
+            "procedure_id": new_id,
+            "admission_id": mapFk("Admission", source, row[admit_id_col], True),
+            "surgeon_id": mapFk("Healthcare_Professional", source, row[surgeon_col], staff_is_num),
+            "procedure_type": getVal(row, proc_type_col),
+            "procedure_datetime": formatDateTime(row[date_col]),
+            "outcome": getVal(row, out_col),
+        })
+integrated_tables["SurgicalProcedure"] = pd.DataFrame(surg_rows)
+
+# DischargeRecord
+disch_rows = []
+for source, table, id_col, admit_id_col, dest_col, meds_col, followup_instr_col, followup_appt_col, resp_phys_col, staff_is_num in [
+    ("A", "A_DISCHARGES", "DischargeId", "AdmitID", "DischargeDestination", "PrescribedMedications", "FollowUpInstructions", "FollowUpAppointments", "ResponsiblePhysicianId", True),
+    ("B", "B_discharges", "discharge_id", "episode_no", "discharge_destination", "prescribed_medications", "follow_up_instructions", "follow_up_appointments", "responsible_physician_id", True),
+    ("C", "C_discharge", "dischargeId", "aid", "dischargeDestination", "prescribedMedications", "followUpInstructions", "followUpAppointments", "responsiblePhysicianId", True),
+    ("D", "D_discharge", "dischargeId", "encounterId", "dischargeDestination", "prescribedMedications", "followUpInstructions", "followUpAppointments", "responsiblePhysicianId", False),
+]:
+    for _, row in cleaned_tables[table].iterrows():
+        orig_id = sourceIdStr(row[id_col], True)
+        new_id = len(disch_rows) + 1
+        global_id_maps["DischargeRecord"][(source, orig_id)] = new_id
+        recordMapping("DischargeRecord", source, orig_id, new_id)
+        disch_rows.append({
+            "discharge_id": new_id,
+            "admission_id": mapFk("Admission", source, row[admit_id_col], True),
+            "discharge_destination": getVal(row, dest_col),
+            "condition_at_discharge": getVal(row, "condition_at_discharge_canonical"),
+            "prescribed_medications": getVal(row, meds_col),
+            "follow_up_instructions": getVal(row, followup_instr_col),
+            "follow_up_appointments": getVal(row, followup_appt_col),
+            "responsible_physician_id": mapFk("Healthcare_Professional", source, row[resp_phys_col], staff_is_num),
+        })
+integrated_tables["DischargeRecord"] = pd.DataFrame(disch_rows)
+
+# DiagnosticOrder
+order_rows = []
+for source, table, id_col, admit_id_col, patient_col, physician_col, req_exam_col, date_col, reason_col, patient_is_num, staff_is_num in [
+    ("A", "A_DIAG_ORDERS", "OrderID", "AdmitID", "PatID", "RequestingPhysicianId", "RequestedExam", "RequestDatetime", "ClinicalReason", True, True),
+    ("B", "B_orders", "order_id", "episode_no", "patient_no", "requesting_physician_id", "requested_exam", "request_datetime", "clinical_reason", True, True),
+    ("C", "C_order", "orderId", "aid", "pid", "requestingPhysicianId", "requestedExam", "requestDatetime", "clinicalReason", True, True),
+    ("D", "D_orders", "orderId", "encounterId", "patientRef", "requestingPhysicianId", "requestedExam", "requestDatetime", "clinicalReason", True, False),
+]:
+    for _, row in cleaned_tables[table].iterrows():
+        orig_id = sourceIdStr(row[id_col], True)
+        new_id = len(order_rows) + 1
+        global_id_maps["DiagnosticOrder"][(source, orig_id)] = new_id
+        recordMapping("DiagnosticOrder", source, orig_id, new_id)
+        order_rows.append({
+            "order_id": new_id,
+            "admission_id": mapFk("Admission", source, row[admit_id_col], True),
+            "patient_id": mapFk("Patient", source, row[patient_col], patient_is_num),
+            "requesting_physician_id": mapFk("Healthcare_Professional", source, row[physician_col], staff_is_num),
+            "requested_exam": getVal(row, req_exam_col),
+            "request_datetime": formatDateTime(row[date_col]),
+            "clinical_reason": getVal(row, reason_col),
+            "priority": getVal(row, "priority_canonical"),
+            "order_status": getVal(row, "order_status_canonical"),
+        })
+integrated_tables["DiagnosticOrder"] = pd.DataFrame(order_rows)
+
+# RadiologyExamination
+rad_exam_rows = []
+for source, table, id_col, admit_id_col, exam_type_col, order_col, date_col, body_area_col, ref_phys_col, tech_col, image_col, staff_is_num in [
+    ("A", "A_RAD_EXAMS", "RadExamID", "AdmitID", "ExamType", "OrderID", "ExamDatetime", "BodyArea", "ReferringPhysicianId", "RadTechId", "ImageLink", True),
+    ("B", "B_imaging", "exam_id", "episode_no", "exam_type", "order_id", "exam_datetime", "body_area", "referring_physician_id", "rad_tech_id", "image_link", True),
+    ("C", "C_imaging", "examId", "aid", "examType", "orderId", "examDatetime", "bodyArea", "referringPhysicianId", "radTechId", "imageLink", True),
+    ("D", "D_imaging", "examId", "encounterId", "examType", "orderId", "examDatetime", "bodyArea", "referringPhysicianId", "radTechId", "imageLink", False),
+]:
+    for _, row in cleaned_tables[table].iterrows():
+        orig_id = sourceIdStr(row[id_col], True)
+        new_id = len(rad_exam_rows) + 1
+        global_id_maps["RadiologyExamination"][(source, orig_id)] = new_id
+        recordMapping("RadiologyExamination", source, orig_id, new_id)
+        rad_exam_rows.append({
+            "exam_id": new_id,
+            "admission_id": mapFk("Admission", source, row[admit_id_col], True),
+            "exam_type": getVal(row, exam_type_col),
+            "order_id": mapFk("DiagnosticOrder", source, row[order_col], True),
+            "exam_datetime": formatDateTime(row[date_col]),
+            "body_area": getVal(row, body_area_col),
+            "referring_physician_id": mapFk("Healthcare_Professional", source, row[ref_phys_col], staff_is_num),
+            "rad_tech_id": mapFk("Healthcare_Professional", source, row[tech_col], staff_is_num),
+            "exam_status": getVal(row, "exam_status_canonical"),
+            "image_link": getVal(row, image_col),
+        })
+integrated_tables["RadiologyExamination"] = pd.DataFrame(rad_exam_rows)
+
+# RadiologyReport
+rad_rep_rows = []
+for source, table, id_col, exam_col, radiologist_col, date_col, findings_col, interp_col, conclusion_col, staff_is_num in [
+    ("A", "A_RAD_REPORTS", "ReportId", "RadExamID", "RadiologistId", "ReportDatetime", "Findings", "Interpretation", "Conclusion", True),
+    ("B", "B_imaging_reports", "report_id", "rad_exam_id", "radiologist_id", "report_datetime", "findings", "interpretation", "conclusion", True),
+    ("C", "C_report", "reportId", "examId", "radiologistId", "reportDatetime", "findings", "interpretation", "conclusion", True),
+    ("D", "D_report", "reportId", "examId", "radiologistId", "reportDatetime", "findings", "interpretation", "conclusion", False),
+]:
+    for _, row in cleaned_tables[table].iterrows():
+        orig_id = sourceIdStr(row[id_col], True)
+        new_id = len(rad_rep_rows) + 1
+        global_id_maps["RadiologyReport"][(source, orig_id)] = new_id
+        recordMapping("RadiologyReport", source, orig_id, new_id)
+        rad_rep_rows.append({
+            "report_id": new_id,
+            "rad_exam_id": mapFk("RadiologyExamination", source, row[exam_col], True),
+            "radiologist_id": mapFk("Healthcare_Professional", source, row[radiologist_col], staff_is_num),
+            "report_datetime": formatDateTime(row[date_col]),
+            "findings": getVal(row, findings_col),
+            "interpretation": getVal(row, interp_col),
+            "conclusion": getVal(row, conclusion_col),
+        })
+integrated_tables["RadiologyReport"] = pd.DataFrame(rad_rep_rows)
+
+# DiagnosticExamination
+diag_exam_rows = []
+for source, table, id_col, order_col, exam_type_col, date_col, performed_by_col, result_col, staff_is_num in [
+    ("A", "A_LAB_EXAMS", "LabExamID", "OrderID", "ExamType", "ExamDatetime", "PerformedById", "Result", True),
+    ("B", "B_investigations", "diag_exam_id", "order_id", "exam_type", "exam_datetime", "performed_by_id", "result", True),
+    ("C", "C_labExam", "diagExamId", "orderId", "examType", "examDatetime", "performedById", "result", True),
+    ("D", "D_labResults", "diagExamId", "orderId", "examType", "examDatetime", "performedById", "result", False),
+]:
+    for _, row in cleaned_tables[table].iterrows():
+        orig_id = sourceIdStr(row[id_col], True)
+        new_id = len(diag_exam_rows) + 1
+        global_id_maps["DiagnosticExamination"][(source, orig_id)] = new_id
+        recordMapping("DiagnosticExamination", source, orig_id, new_id)
+        diag_exam_rows.append({
+            "diag_exam_id": new_id,
+            "order_id": mapFk("DiagnosticOrder", source, row[order_col], True),
+            "exam_type": getVal(row, exam_type_col),
+            "exam_datetime": formatDateTime(row[date_col]),
+            "performed_by_id": mapFk("Healthcare_Professional", source, row[performed_by_col], staff_is_num),
+            "result": getVal(row, result_col),
+            "exam_status": getVal(row, "exam_status_canonical"),
+        })
+integrated_tables["DiagnosticExamination"] = pd.DataFrame(diag_exam_rows)
+
+# UnitStay
+stay_rows = []
+for source, table, id_col, admit_id_col, unit_col, room_col, bed_col, in_col, out_col, physician_col, transfer_col, unit_is_num, staff_is_num in [
+    ("A", "A_UNIT_STAYS", "StayID", "AdmitID", "UnitID", "WardRoom", "BedNumber", "InDT", "OutDT", "ResponsiblePhysicianId", "TransferReason", True, True),
+    ("B", "B_ward_stays", "ward_stay_no", "episode_no", "ward_no", "ward_room", "bed_number", "ward_in", "ward_out", "responsible_physician_id", "transfer_reason", True, True),
+    ("C", "C_wardStay", "stayId", "aid", "wardCode", "wardRoom", "bedNumber", "inTime", "outTime", "responsiblePhysicianId", "transferReason", False, True),
+    ("D", "D_movements", "movementId", "encounterId", "unitCode", "wardRoom", "bedNumber", "inAt", "outAt", "responsiblePhysicianId", "transferReason", True, False),
+]:
+    for _, row in cleaned_tables[table].iterrows():
+        orig_id = sourceIdStr(row[id_col], True)
+        new_id = len(stay_rows) + 1
+        global_id_maps["UnitStay"][(source, orig_id)] = new_id
+        recordMapping("UnitStay", source, orig_id, new_id)
+        stay_rows.append({
+            "unit_stay_id": new_id,
+            "admission_id": mapFk("Admission", source, row[admit_id_col], True),
+            "unit_id": mapFk("Unit", source, row[unit_col], unit_is_num),
+            "ward_room": getVal(row, room_col),
+            "bed_number": getVal(row, bed_col),
+            "entry_datetime": formatDateTime(row[in_col]),
+            "exit_datetime": formatDateTime(row[out_col]),
+            "responsible_physician_id": mapFk("Healthcare_Professional", source, row[physician_col], staff_is_num),
+            "transfer_reason": getVal(row, transfer_col),
+        })
+integrated_tables["UnitStay"] = pd.DataFrame(stay_rows)
+
+# CriticalCareRecord
+cc_rows = []
+for source, table, id_col, unit_stay_col, date_col, vitals_col, meds_col, obs_col, result_col, progress_col, extra_exams_col, transfer_col in [
+    ("A", "A_ICU_RECORDS", "RecordId", "StayID", "RecordDatetime", "VitalSigns", "Medications", "Observations", "ResponseToTreatment", "PhysicianProgressNotes", "AdditionalDiagnosticExams", "Transferred"),
+    ("B", "B_critical_care_obs", "record_id", "ward_stay_no", "record_datetime", "vital_signs", "medications", "observations", "response_to_treatment", "physician_progress_notes", "additional_diagnostic_exams", "transferred"),
+    ("C", "C_ccRecord", "recordId", "stayId", "recordDatetime", "vitalSigns", "medications", "observations", "responseToTreatment", "physicianProgressNotes", "additionalDiagnosticExams", "transferred"),
+    ("D", "D_criticalCareObservations", "recordId", "movementId", "recordDatetime", "vitalSigns", "medications", "observations", "responseToTreatment", "physicianProgressNotes", "additionalDiagnosticExams", "transferred"),
+]:
+    for _, row in cleaned_tables[table].iterrows():
+        orig_id = sourceIdStr(row[id_col], True)
+        new_id = len(cc_rows) + 1
+        global_id_maps["CriticalCareRecord"][(source, orig_id)] = new_id
+        recordMapping("CriticalCareRecord", source, orig_id, new_id)
+        cc_rows.append({
+            "record_id": new_id,
+            "unit_stay_id": mapFk("UnitStay", source, row[unit_stay_col], True),
+            "record_datetime": formatDateTime(row[date_col]),
+            "vital_signs": getVal(row, vitals_col),
+            "medications": getVal(row, meds_col),
+            "observations": getVal(row, obs_col),
+            "response_to_treatment": getVal(row, result_col),
+            "physician_progress_notes": getVal(row, progress_col),
+            "additional_diagnostic_exams": getVal(row, extra_exams_col),
+            "transferred": getVal(row, transfer_col),
+        })
+integrated_tables["CriticalCareRecord"] = pd.DataFrame(cc_rows)
+
+# GeneralWardRecord
+ward_rows = []
+for source, table, id_col, admit_id_col, date_col, followup_col, meds_col, progress_col, tests_col, eval_col in [
+    ("A", "A_WARD_RECORDS", "WardRecordId", "AdmitID", "RecordDatetime", "FollowUpExaminations", "MedicationsTreatments", "ProgressNotes", "AdditionalTests", "RecoveryEval"),
+    ("B", "B_ward_obs", "ward_record_id", "episode_no", "record_datetime", "follow_up_examinations", "medications_treatments", "progress_notes", "additional_tests", "recovery_eval"),
+    ("C", "C_wardRound", "wardRecordId", "aid", "recordDatetime", "followUpExaminations", "medicationsTreatments", "progressNotes", "additionalTests", "recoveryEval"),
+    ("D", "D_wardRounds", "wardRecordId", "encounterId", "recordDatetime", "followUpExaminations", "medicationsTreatments", "progressNotes", "additionalTests", "recoveryEval"),
+]:
+    for _, row in cleaned_tables[table].iterrows():
+        orig_id = sourceIdStr(row[id_col], True)
+        new_id = len(ward_rows) + 1
+        global_id_maps["GeneralWardRecord"][(source, orig_id)] = new_id
+        recordMapping("GeneralWardRecord", source, orig_id, new_id)
+        ward_rows.append({
+            "ward_record_id": new_id,
+            "admission_id": mapFk("Admission", source, row[admit_id_col], True),
+            "record_datetime": formatDateTime(row[date_col]),
+            "follow_up_examinations": getVal(row, followup_col),
+            "medications_treatments": getVal(row, meds_col),
+            "progress_notes": getVal(row, progress_col),
+            "additional_tests": getVal(row, tests_col),
+            "recovery_eval": getVal(row, eval_col),
+        })
+integrated_tables["GeneralWardRecord"] = pd.DataFrame(ward_rows)
+
+integrated_tables["Source_ID_Mapping"] = pd.DataFrame(identifier_mapping_rows)
+
+print("\nTask 3 integration summary:")
+for tbl_name, table_df in integrated_tables.items():
+    print(f"  {tbl_name}: {len(table_df)} rows")
+patient_mapping_count = sum(1 for r in identifier_mapping_rows if r["entity_name"] == "Patient")
+print("Merged duplicate patient records:", patient_mapping_count - len(integrated_tables["Patient"]))
+print("Uncertain patient match pairs:", len(integrated_tables["Uncertain_Patient_Match"]))
