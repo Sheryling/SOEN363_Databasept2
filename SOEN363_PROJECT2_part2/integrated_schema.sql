@@ -16,7 +16,11 @@ CREATE TABLE Patient(
     emergency_contact_name VARCHAR(50),
     emergency_contact_number VARCHAR(20),
     life_status VARCHAR(10) NOT NULL,
-    date_of_death DATETIME
+    date_of_death DATETIME,
+    CHECK (gender IS NULL OR gender IN ('Female', 'Male', 'Other')),
+    CHECK (life_status IN ('Alive', 'Deceased')),
+    CHECK (date_of_death IS NULL OR life_status = 'Deceased'),
+    CHECK (date_of_death IS NULL OR date_of_death >= date_of_birth)
 );
 
 CREATE TABLE Healthcare_Professional(
@@ -24,13 +28,16 @@ CREATE TABLE Healthcare_Professional(
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
     staff_type VARCHAR(30) NOT NULL,
-    specialty VARCHAR(50)
+    specialty VARCHAR(50),
+    CHECK (staff_type IN ('Physician', 'Nurse', 'Surgeon', 'Radiologist',
+                          'Radiology Technician', 'Lab Technician'))
 );
 
 CREATE TABLE Unit(
     unit_id INTEGER PRIMARY KEY,
     unit_name VARCHAR(50) NOT NULL,
-    unit_type VARCHAR(20) NOT NULL
+    unit_type VARCHAR(20) NOT NULL,
+    CHECK (unit_type IN ('Emergency', 'General Ward', 'ICU', 'MICU', 'SICU', 'CCU', 'Step-Down'))
 );
 
 CREATE TABLE ICD9_Code(
@@ -51,7 +58,13 @@ CREATE TABLE Admission(
     insurance_info VARCHAR(50),
     condition_on_arrival VARCHAR(50) NOT NULL,
     discharge_datetime DATETIME,
-    admission_status VARCHAR(50) NOT NULL
+    admission_status VARCHAR(50) NOT NULL,
+    UNIQUE (admission_id, patient_id),
+    CHECK (admission_type IN ('Emergency', 'Urgent', 'Elective')),
+    CHECK (admission_source IN ('Emergency Department', 'Clinic', 'Physician Referral',
+                                'Transfer from Another Hospital')),
+    CHECK (admission_status IN ('Admitted', 'Discharged', 'Transferred', 'Deceased')),
+    CHECK (discharge_datetime IS NULL OR discharge_datetime > admission_datetime)
 );
 
 CREATE TABLE TriageAssessment(
@@ -67,7 +80,12 @@ CREATE TABLE TriageAssessment(
     current_medication VARCHAR(200) NOT NULL,
     priority_level VARCHAR(20) NOT NULL,
     body_temp DECIMAL(3,1) NOT NULL,
-    oxygen_sat INTEGER NOT NULL
+    oxygen_sat INTEGER NOT NULL,
+    CHECK (priority_level IN ('High', 'Medium', 'Low')),
+    CHECK (heart_rate BETWEEN 1 AND 300),
+    CHECK (pain_level BETWEEN 0 AND 10),
+    CHECK (body_temp BETWEEN 25 AND 45),
+    CHECK (oxygen_sat > 0 AND oxygen_sat <= 100)
 );
 
 CREATE TABLE ClinicalNote(
@@ -82,7 +100,8 @@ CREATE TABLE ClinicalNote(
     suspected_condition VARCHAR(200) NOT NULL,
     planned_examinations VARCHAR(200),
     initial_treatment VARCHAR(200),
-    note_text VARCHAR(200)
+    note_text VARCHAR(200),
+    CHECK (note_type IN ('Admission Note', 'Progress Note', 'Consultation Note', 'Discharge Summary'))
 );
 
 CREATE TABLE Diagnosis(
@@ -92,7 +111,9 @@ CREATE TABLE Diagnosis(
     icd9_code VARCHAR(20) NOT NULL REFERENCES ICD9_Code(icd9_code),
     diagnosis_datetime DATETIME NOT NULL,
     diagnosis_type VARCHAR(50) NOT NULL,
-    diagnosing_physician_id INTEGER REFERENCES Healthcare_Professional(staff_id)
+    diagnosing_physician_id INTEGER REFERENCES Healthcare_Professional(staff_id),
+    FOREIGN KEY (admission_id, patient_id) REFERENCES Admission(admission_id, patient_id),
+    CHECK (diagnosis_type IN ('Primary', 'Secondary'))
 );
 
 CREATE TABLE SurgicalProcedure(
@@ -112,7 +133,8 @@ CREATE TABLE DischargeRecord(
     prescribed_medications VARCHAR(200),
     follow_up_instructions VARCHAR(200),
     follow_up_appointments VARCHAR(200),
-    responsible_physician_id INTEGER REFERENCES Healthcare_Professional(staff_id)
+    responsible_physician_id INTEGER REFERENCES Healthcare_Professional(staff_id),
+    CHECK (condition_at_discharge IN ('Improved', 'Stable', 'Unchanged', 'Deceased'))
 );
 
 CREATE TABLE DiagnosticOrder(
@@ -124,7 +146,10 @@ CREATE TABLE DiagnosticOrder(
     request_datetime DATETIME NOT NULL,
     clinical_reason VARCHAR(200),
     priority VARCHAR(10),
-    order_status VARCHAR(20) NOT NULL
+    order_status VARCHAR(20) NOT NULL,
+    FOREIGN KEY (admission_id, patient_id) REFERENCES Admission(admission_id, patient_id),
+    CHECK (priority IS NULL OR priority IN ('Routine', 'Urgent', 'STAT')),
+    CHECK (order_status IN ('Pending', 'Completed', 'Cancelled'))
 );
 
 CREATE TABLE RadiologyExamination(
@@ -137,7 +162,8 @@ CREATE TABLE RadiologyExamination(
     referring_physician_id INTEGER REFERENCES Healthcare_Professional(staff_id),
     rad_tech_id INTEGER REFERENCES Healthcare_Professional(staff_id),
     exam_status VARCHAR(20) NOT NULL,
-    image_link VARCHAR(255)
+    image_link VARCHAR(255),
+    CHECK (exam_status IN ('Pending', 'Completed', 'Cancelled'))
 );
 
 CREATE TABLE RadiologyReport(
@@ -157,7 +183,8 @@ CREATE TABLE DiagnosticExamination(
     exam_datetime DATETIME NOT NULL,
     performed_by_id INTEGER REFERENCES Healthcare_Professional(staff_id),
     result TEXT,
-    exam_status VARCHAR(20) NOT NULL
+    exam_status VARCHAR(20) NOT NULL,
+    CHECK (exam_status IN ('Pending', 'Completed', 'Cancelled'))
 );
 
 CREATE TABLE UnitStay(
@@ -169,7 +196,8 @@ CREATE TABLE UnitStay(
     entry_datetime DATETIME NOT NULL,
     exit_datetime DATETIME,
     responsible_physician_id INTEGER REFERENCES Healthcare_Professional(staff_id),
-    transfer_reason VARCHAR(200) NOT NULL
+    transfer_reason VARCHAR(200) NOT NULL,
+    CHECK (exit_datetime IS NULL OR exit_datetime > entry_datetime)
 );
 
 CREATE TABLE CriticalCareRecord(
@@ -182,7 +210,8 @@ CREATE TABLE CriticalCareRecord(
     response_to_treatment TEXT,
     physician_progress_notes TEXT,
     additional_diagnostic_exams TEXT,
-    transferred VARCHAR(10)
+    transferred VARCHAR(10),
+    CHECK (transferred IS NULL OR transferred IN ('Yes', 'No'))
 );
 
 CREATE TABLE GeneralWardRecord(
@@ -209,5 +238,6 @@ CREATE TABLE Uncertain_Patient_Match(
     match_id INTEGER PRIMARY KEY,
     patient_id_1 INTEGER NOT NULL REFERENCES Patient(patient_id),
     patient_id_2 INTEGER NOT NULL REFERENCES Patient(patient_id),
-    reason VARCHAR(255) NOT NULL
+    reason VARCHAR(255) NOT NULL,
+    CHECK (patient_id_1 <> patient_id_2)
 );
