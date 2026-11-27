@@ -1,0 +1,108 @@
+=== TASK 5: DATA INTEGRITY VALIDATION ===
+
+[Primary keys are unique and non-null]
+  PASS  Source_System.source_code: 4 rows, 4 distinct, 0 null
+  PASS  ICD9_Code.icd9_code: 61 rows, 61 distinct, 0 null
+  PASS  Healthcare_Professional.staff_id: 276 rows, 276 distinct, 0 null
+  PASS  Unit.unit_id: 48 rows, 48 distinct, 0 null
+  PASS  Patient.patient_id: 933 rows, 933 distinct, 0 null
+  PASS  Uncertain_Patient_Match.match_id: 3 rows, 3 distinct, 0 null
+  PASS  Admission.admission_id: 1772 rows, 1772 distinct, 0 null
+  PASS  TriageAssessment.triage_id: 1328 rows, 1328 distinct, 0 null
+  PASS  ClinicalNote.note_id: 7244 rows, 7244 distinct, 0 null
+  PASS  Diagnosis.diagnosis_id: 3694 rows, 3694 distinct, 0 null
+  PASS  SurgicalProcedure.procedure_id: 446 rows, 446 distinct, 0 null
+  PASS  DischargeRecord.discharge_id: 1717 rows, 1717 distinct, 0 null
+  PASS  DiagnosticOrder.order_id: 3069 rows, 3069 distinct, 0 null
+  PASS  RadiologyExamination.exam_id: 1242 rows, 1242 distinct, 0 null
+  PASS  RadiologyReport.report_id: 1224 rows, 1224 distinct, 0 null
+  PASS  DiagnosticExamination.diag_exam_id: 1635 rows, 1635 distinct, 0 null
+  PASS  UnitStay.unit_stay_id: 3584 rows, 3584 distinct, 0 null
+  PASS  CriticalCareRecord.record_id: 1543 rows, 1543 distinct, 0 null
+  PASS  GeneralWardRecord.ward_record_id: 3363 rows, 3363 distinct, 0 null
+  PASS  Source_ID_Mapping.mapping_id: 33410 rows, 33410 distinct, 0 null
+
+[Foreign keys reference existing records]
+  PASS  0 violations
+
+[Every admission belongs to an existing patient]
+  PASS  0 violations
+
+[Every diagnosis references an existing admission]
+  PASS  0 violations
+
+[Every diagnosis references an existing ICD-9 code]
+  PASS  0 violations
+
+[Diagnosis: patient_id matches the admission's patient]
+  PASS  0 violations
+
+[DiagnosticOrder: patient_id matches the admission's patient]
+  PASS  0 violations
+
+[Discharge time is after admission time]
+  PASS  0 violations
+
+[Unit exit time is after unit entry time]
+  PASS  0 violations
+
+[Surgical procedures occur within the admission period]
+  PASS  0 violations
+
+[Radiology examinations occur within the admission period]
+  PASS  0 violations
+
+[Diagnostic examinations occur within the admission period]
+  PASS  0 violations
+
+[Unit stays occur within the admission period]
+  FAIL  2 violations
+    e.g. (2053, '2026-10-28 01:47:00', None, '2026-10-21 23:46:00', '2026-10-22 23:54:00')
+    e.g. (2809, '2026-10-21 10:54:00', None, '2026-10-16 18:13:00', '2026-10-18 08:59:00')
+
+[Every completed admission has at least one primary ICD-9 diagnosis]
+  FAIL  47 violations
+    e.g. (38, 'Discharged')
+    e.g. (54, 'Discharged')
+    e.g. (61, 'Discharged')
+
+[Completed admissions have a discharge time]
+  FAIL  10 violations
+    e.g. (57, 'Discharged')
+    e.g. (266, 'Discharged')
+    e.g. (573, 'Discharged')
+
+[Still-admitted patients have no discharge time]
+  FAIL  8 violations
+    e.g. (222, '2026-10-22 16:13:00')
+    e.g. (422, '2026-10-27 07:05:00')
+    e.g. (667, '2026-10-21 19:43:00')
+
+[Still-admitted patients have no discharge record]
+  PASS  0 violations
+
+[Discharge condition 'Deceased' only on Deceased admissions (and vice versa)]
+  FAIL  3 violations
+    e.g. (688, 'Deceased', 'Improved')
+    e.g. (1249, 'Deceased', 'Improved')
+    e.g. (1595, 'Deceased', 'Improved')
+
+[Deceased admissions belong to patients marked Deceased]
+  FAIL  4 violations
+    e.g. (106, 55, 'Alive')
+    e.g. (688, 376, 'Alive')
+    e.g. (1085, 574, 'Alive')
+
+[condition_on_arrival uses a standard label]
+  FAIL  901 violations
+    e.g. (1, 'STABLE')
+    e.g. (2, 'FAIR')
+    e.g. (3, 'CRITICAL')
+
+[Radiology exam_type uses a standard label]
+  FAIL  499 violations
+    e.g. (2, 'ULTRASOUND')
+    e.g. (3, 'X-RAY')
+    e.g. (4, 'ULTRASOUND')
+
+=== 8 check(s) failed ===
